@@ -7,6 +7,15 @@
     "engines": {
         "vscode": "^1.35.0"
     },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/BeardedBear/BeardedTheme"
+    },
+    "bugs": {
+        "url": "https://github.com/BeardedBear/BeardedTheme/issues",
+        "email": "germain.poirrier@gmail.com"
+    },
+    "homepage": "https://github.com/BeardedBear/BeardedTheme",
     "keywords": [
         "bearded",
         "theme",
