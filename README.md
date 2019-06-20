@@ -1,7 +1,29 @@
-This is a theme with a long beard.
+# Bearded Theme
 
-### Example
+## Most awesome feature
 
-<p align="center">
-  <img alt="Example" width="80%" src="https://raw.githubusercontent.com/BeardedBear/BeardedTheme/master/example.png">
-</p>
+- Elm compatibility ! WOW ! ❤️
+
+## Screenshot
+
+With HTML & SCSS (Click for larger view)
+
+<a href="https://raw.githubusercontent.com/BeardedBear/BeardedTheme/master/example.png" target="_BLANK">
+  <img alt="Example" src="https://raw.githubusercontent.com/BeardedBear/BeardedTheme/master/example.png">
+</a>
+
+Something's missing ? [create Issues](https://github.com/BeardedBear/BeardedTheme/issues) so that I can make the theme as compatible as possible ! ❤️ ;)
+
+## Installation
+
+- Open the Extensions sidebar in VS Code
+- Search for `Bearded Theme`
+- Click Install
+- Open the Command Palette with Ctrl+Shift+P or ⇧⌘P
+- Select Preferences: Color Theme and choose `Bearded Theme`.
+
+## License
+
+This theme is released under the MIT License.
+
+Designed by [BeardedBear](https://github.com/BeardedBear). follow me on [Twitter](https://twitter.com/Bearded__Bear) !
