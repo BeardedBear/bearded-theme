@@ -6,10 +6,16 @@
 
 ## Screenshot
 
-With HTML & SCSS (Click for larger view)
+HTML & SCSS (Click for larger view)
 
-<a href="https://raw.githubusercontent.com/BeardedBear/BeardedTheme/master/example.png" target="_BLANK">
-  <img alt="Example" src="https://raw.githubusercontent.com/BeardedBear/BeardedTheme/master/example.png">
+<a href="https://raw.githubusercontent.com/BeardedBear/BeardedTheme/master/search-html-scss.png" target="_BLANK">
+  <img alt="Example" src="https://raw.githubusercontent.com/BeardedBear/BeardedTheme/master/search-html-scss.png">
+</a>
+
+Elm & Terminal (Click for larger view)
+
+<a href="https://raw.githubusercontent.com/BeardedBear/BeardedTheme/master/search-elm-term.png" target="_BLANK">
+  <img alt="Example" src="https://raw.githubusercontent.com/BeardedBear/BeardedTheme/master/search-elm-term.png">
 </a>
 
 Something's missing ? [create Issues](https://github.com/BeardedBear/BeardedTheme/issues) so that I can make the theme as compatible as possible ! ❤️ ;)
@@ -17,7 +23,7 @@ Something's missing ? [create Issues](https://github.com/BeardedBear/BeardedThem
 ## Installation
 
 - Open the Extensions sidebar in VS Code
-- Search for `Bearded Theme`
+- Search for `Bearded`
 - Click Install
 - Open the Command Palette with Ctrl+Shift+P or ⇧⌘P
 - Select Preferences: Color Theme and choose `Bearded Theme`.
