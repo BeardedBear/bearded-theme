@@ -18,6 +18,12 @@ Elm & Terminal (Click for larger view)
   <img alt="Example" src="https://raw.githubusercontent.com/BeardedBear/BeardedTheme/master/screen-elm-term.png">
 </a>
 
+VueJS & JS (Click for larger view)
+
+<a href="https://raw.githubusercontent.com/BeardedBear/BeardedTheme/master/screen-vue-js.png" target="_BLANK">
+  <img alt="Example" src="https://raw.githubusercontent.com/BeardedBear/BeardedTheme/master/screen-vue-js.png">
+</a>
+
 Something's missing ? [create Issues](https://github.com/BeardedBear/BeardedTheme/issues) so that I can make the theme as compatible as possible ! ❤️ ;)
 
 ## Installation
