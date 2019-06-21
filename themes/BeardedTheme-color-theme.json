@@ -280,7 +280,7 @@
     "terminal.ansiBrightCyan": "#2fc6c9",
     "terminal.ansiBrightWhite": "#193549",
     "terminal.background": "#17191d",
-    "terminal.foreground": "#ffffff",
+    "terminal.foreground": "#e9e9e9",
     "terminalCursor.background": "#e09914",
     "terminalCursor.foreground": "#e09914",
 
