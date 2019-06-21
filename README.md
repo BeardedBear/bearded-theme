@@ -4,7 +4,9 @@
 
 - Elm compatibility ! WOW ! ❤️
 
-## Screenshot
+## Screenshots
+
+(Icon theme : [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme))
 
 HTML & SCSS (Click for larger view)
 
