@@ -1,10 +1,10 @@
 # Bearded Theme
 
-## Most awesome feature
+## ❤️ Most awesome feature
 
-- Elm compatibility ! WOW ! ❤️
+- Elm compatibility ! WOW !
 
-## Screenshots
+## 📷 Screenshots
 
 (Used font for screenshots : Operator Mono)
 
@@ -28,7 +28,7 @@ VueJS & JS (Click for larger view)
 
 Something's missing ? [create Issues](https://github.com/BeardedBear/BeardedTheme/issues) so that I can make the theme as compatible as possible ! ❤️ ;)
 
-## Installation
+## 🚀 Installation
 
 - Open the Extensions sidebar in VS Code
 - Search for `Bearded`
@@ -36,8 +36,9 @@ Something's missing ? [create Issues](https://github.com/BeardedBear/BeardedThem
 - Open the Command Palette with Ctrl+Shift+P or ⇧⌘P
 - Select Preferences: Color Theme and choose `Bearded Theme`.
 
-## License
+## 📄 License
 
 This theme is released under the MIT License.
 
-Designed by [BeardedBear](https://github.com/BeardedBear). follow me on [Twitter](https://twitter.com/Bearded__Bear) !
+Designed by [BeardedBear](https://github.com/BeardedBear).
+Follow me on [Twitter](https://twitter.com/Bearded__Bear) ! (You'll see, I never tweet)
