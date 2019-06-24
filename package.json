@@ -9,13 +9,13 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/BeardedBear/BeardedTheme"
+        "url": "https://github.com/BeardedBear/bearded-theme"
     },
     "bugs": {
-        "url": "https://github.com/BeardedBear/BeardedTheme/issues",
+        "url": "https://github.com/BeardedBear/bearded-theme/issues",
         "email": "germain.poirrier@gmail.com"
     },
-    "homepage": "https://github.com/BeardedBear/BeardedTheme",
+    "homepage": "https://github.com/BeardedBear/bearded-theme",
     "keywords": [
         "bearded",
         "theme",
