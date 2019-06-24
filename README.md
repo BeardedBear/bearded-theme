@@ -6,7 +6,7 @@
 
 ## Screenshots
 
-(Icon theme : [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme))
+(Used font for screenshots : Operator Mono)
 
 HTML & SCSS (Click for larger view)
 
