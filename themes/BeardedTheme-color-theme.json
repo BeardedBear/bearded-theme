@@ -20,146 +20,117 @@
     // red: d43636
     // punctuation: ffffff71
 
-    // activityBar
-    "activityBar.background": "#121316",
-    "activityBar.foreground": "#ffffff77",
-    "activityBar.border": "#21252b",
-    // "activityBar.dropBackground": "#0d3a58",
-    "activityBarBadge.background": "#8c5ae993",
-    "activityBarBadge.foreground": "#fff",
-
-    // badge
-    "badge.background": "#8c5ae993",
-    "badge.foreground": "#fff",
-
-    // button
-    "button.background": "#8c5ae9",
-    "button.foreground": "#fff",
-    // "button.hoverBackground": "#ff9d00",
-
-    // debug
-    "debugExceptionWidget.background": "#482e79",
-    "debugExceptionWidget.border": "#aaa",
-    "debugToolBar.background": "#482e79",
-
-    // description
-    "descriptionForeground": "#aaa",
-
-    // diff
-    "diffEditor.insertedTextBackground": "#4bb46e33",
-    "diffEditor.insertedTextBorder": "#4bb46e55",
-    "diffEditor.removedTextBackground": "#ee3a4333",
-    "diffEditor.removedTextBorder": "#ee3a4355",
-
-    // dropdown (ex: select in terminal)
-    "dropdown.background": "#21252b",
-    // "dropdown.border": "#21252b",
-    "dropdown.foreground": "#ffffffaf",
-
-    // editor
-    "editor.background": "#17191d",
-    "editor.foreground": "#fff",
-    // Okay this part is confusing as heck!
-    // Currently found item
-    "editor.findMatchBackground": "#FF720066",
-    // Other Found Items int the document
-    "editor.findMatchHighlightBackground": "#CAD40F66",
-    // "editor.findRangeHighlightBackground": "#243E51",
-    // When you hover over something and a popup shows, this highlights that thing
-    "editor.hoverHighlightBackground": "#e0991433",
-    // when you have something selected, but have lost focus on the editor
-    "editor.inactiveSelectionBackground": "#003b8b",
-    // current line styles
-    "editor.lineHighlightBackground": "#404f6148",
-    // "editor.lineHighlightBorder": "#45566b",
-    "editor.rangeHighlightBackground": "#1F4662",
-    // selected Text colours
-    // This is the standard Select colour
-    "editor.selectionBackground": "#205fa84b",
-    // This is the colour of the other matching elements
-    "editor.selectionHighlightBackground": "#97842d80",
-    // if you tab away you can colour it differently, but ill leave this one out
-    // "editor.inactiveSelectionBackground": "",
-    // Word Highlights! This happens when you move your cursor inside a variable
-    // Strong is the one where your cursor currently is
-    "editor.wordHighlightStrongBackground": "#ffffff21",
-    // and this one is the rest of them
-    "editor.wordHighlightBackground": "#ffffff21",
-    "editorBracketMatch.background": "#0d3a58",
-    "editorBracketMatch.border": "#e0991480",
-    "editorCodeLens.foreground": "#aaa",
-    "editorCursor.foreground": "#e09914",
-    // "editorError.border": "#d43636",
-    // "editorError.foreground": "#d43636",
-
-    // gutter
-    "editorGutter.background": "#17191D",
-    "editorGutter.addedBackground": "#3C9F4A",
-    "editorGutter.deletedBackground": "#A22929",
-    "editorGutter.modifiedBackground": "#26506D",
-
-    // editorGroup
-    "editorGroup.border": "#21252b",
-    "editorGroup.dropBackground": "#8c5ae915",
-
-    // editorGroupHeader
-    "editorGroupHeader.noTabsBackground": "#121316",
-    "editorGroupHeader.tabsBackground": "#121316",
-    "editorGroupHeader.tabsBorder": "#121316",
-
-    // editorHoverWidget
-    "editorHoverWidget.background": "#21252b",
-    "editorHoverWidget.border": "#ffffff2f",
-    "editorIndentGuide.background": "#ffffff0e",
-    "editorLineNumber.foreground": "#ffffff3a",
-    "editorLink.activeForeground": "#aaa",
-
-    // editorMarkerNavigation
-    "editorMarkerNavigation.background": "#3B536433",
-    "editorMarkerNavigationError.background": "#A22929",
-    "editorMarkerNavigationWarning.background": "#e09914",
-
-    // ruler
-    "editorOverviewRuler.border": "#ffffff00",
-    "editorOverviewRuler.commonContentForeground": "#e0991455",
-    "editorOverviewRuler.currentContentForeground": "#ee3a4355",
-    "editorOverviewRuler.incomingContentForeground": "#3ad90055",
-    "editorRuler.foreground": "#1F4662",
-
-    // editorSuggestWidget
-    "editorSuggestWidget.background": "#21252b",
-    "editorSuggestWidget.border": "#ffffff2c",
-    "editorSuggestWidget.foreground": "#ffffffb0",
-    "editorSuggestWidget.highlightForeground": "#e09914",
-    "editorSuggestWidget.selectedBackground": "#8c5ae94d",
-
-    // editorWarning (ex: search ctrl f)
-    "editorWarning.border": "#ffffff00",
-    "editorWarning.foreground": "#e09914",
-    "editorWhitespace.foreground": "#482e79",
-    "editorWidget.background": "#482e79",
-
-    // "editorWidget.border": "#8c5ae91a",
-    "errorForeground": "#A22929",
-    // extensionButton
-    "extensionButton.prominentBackground": "#0088ff",
-    "extensionButton.prominentForeground": "#fff",
-    "extensionButton.prominentHoverBackground": "#ff9d00",
-    "focusBorder": "#fdfdfd42",
-    "foreground": "#aaa",
-
+    // UI -------------------------------------------------
     // input
     "input.background": "#ffffff0c",
-    // "input.border": "#0d3a58",
     "input.foreground": "#ffffffb4",
     "input.placeholderForeground": "#aaa",
     "inputOption.activeBorder": "#ffffffb0",
     "inputValidation.errorBackground": "#193549",
     "inputValidation.errorBorder": "#e09914",
     "inputValidation.infoBackground": "#193549",
-    "inputValidation.infoBorder": "#0D3A58",
+    "inputValidation.infoBorder": "#8c5ae9",
     "inputValidation.warningBackground": "#193549",
     "inputValidation.warningBorder": "#e09914",
+    // progressBar
+    "progressBar.background": "#e09914",
+    // scrollbar
+    "scrollbar.shadow": "#00000000",
+    "scrollbarSlider.activeBackground": "#ffffff3f",
+    "scrollbarSlider.background": "#ffffff18",
+    "scrollbarSlider.hoverBackground": "#ffffff27",
+    // badge
+    "badge.background": "#8c5ae993",
+    "badge.foreground": "#fff",
+    // button
+    "button.background": "#8c5ae9",
+    "button.foreground": "#fff",
+    // debug
+    "debugExceptionWidget.background": "#482e79",
+    "debugExceptionWidget.border": "#aaa",
+    "debugToolBar.background": "#482e79",
+    // description
+    "descriptionForeground": "#aaa",
+    // dropdown (ex: select in terminal)
+    "dropdown.background": "#17191d",
+    "dropdown.border": "#21252b",
+    "dropdown.foreground": "#ffffff7c",
+    // extensionButton
+    "extensionButton.prominentBackground": "#8c5ae99d",
+    "extensionButton.prominentForeground": "#fff",
+    "extensionButton.prominentHoverBackground": "#8c5ae9",
+    "focusBorder": "#fdfdfd42",
+    "foreground": "#aaa",
+
+    // ACTIVITY BAR ------------------------------------
+    "activityBar.background": "#121316",
+    "activityBar.foreground": "#ffffff77",
+    "activityBar.border": "#21252b",
+    "activityBarBadge.background": "#8c5ae993",
+    "activityBarBadge.foreground": "#fff",
+
+    // EDITOR -------------------------------------------
+    "editor.background": "#17191d",
+    "editor.foreground": "#fff",
+    "editor.findMatchBackground": "#FF720066",
+    "editor.findMatchHighlightBackground": "#CAD40F66",
+    "editor.hoverHighlightBackground": "#8c5ae996",
+    "editor.inactiveSelectionBackground": "#003b8b",
+    "editor.lineHighlightBackground": "#404f6148",
+    "editor.rangeHighlightBackground": "#8c5ae921",
+    "editor.selectionBackground": "#8c5ae942",
+    "editor.selectionHighlightBackground": "#97842d80",
+    "editor.wordHighlightStrongBackground": "#ffffff21",
+    "editor.wordHighlightBackground": "#ffffff21",
+    "editorBracketMatch.background": "#8c5ae95d",
+    "editorBracketMatch.border": "#8c5ae996",
+    "editorCodeLens.foreground": "#aaa",
+    "editorCursor.foreground": "#e09914",
+    // gutter
+    "editorGutter.background": "#17191D",
+    "editorGutter.addedBackground": "#4bb46e",
+    "editorGutter.deletedBackground": "#d43636",
+    "editorGutter.modifiedBackground": "#318bc7",
+    // editorGroup
+    "editorGroup.border": "#21252b",
+    "editorGroup.dropBackground": "#8c5ae915",
+    // editorGroupHeader
+    "editorGroupHeader.noTabsBackground": "#121316",
+    "editorGroupHeader.tabsBackground": "#121316",
+    "editorGroupHeader.tabsBorder": "#121316",
+    // editorHoverWidget
+    "editorHoverWidget.background": "#21252b",
+    "editorHoverWidget.border": "#ffffff2f",
+    "editorIndentGuide.background": "#ffffff0e",
+    "editorLineNumber.foreground": "#ffffff3a",
+    "editorLink.activeForeground": "#aaa",
+    // editorMarkerNavigation
+    "editorMarkerNavigation.background": "#3B536433",
+    "editorMarkerNavigationError.background": "#A22929",
+    "editorMarkerNavigationWarning.background": "#e09914",
+    // ruler
+    "editorOverviewRuler.border": "#ffffff00",
+    "editorOverviewRuler.commonContentForeground": "#e0991455",
+    "editorOverviewRuler.currentContentForeground": "#ee3a4355",
+    "editorOverviewRuler.incomingContentForeground": "#3ad90055",
+    // "editorRuler.foreground": "#1F4662",
+    // editorSuggestWidget
+    "editorSuggestWidget.background": "#21252b",
+    "editorSuggestWidget.border": "#ffffff2c",
+    "editorSuggestWidget.foreground": "#ffffffb0",
+    "editorSuggestWidget.highlightForeground": "#e09914",
+    "editorSuggestWidget.selectedBackground": "#8c5ae94d",
+    // editorWarning (ex: search ctrl f)
+    "editorWarning.border": "#ffffff00",
+    "editorWarning.foreground": "#e09914",
+    "editorWhitespace.foreground": "#482e79",
+    "editorWidget.background": "#482e79",
+    "errorForeground": "#A22929",
+    // diff
+    "diffEditor.insertedTextBackground": "#4bb46e33",
+    "diffEditor.insertedTextBorder": "#4bb46e55",
+    "diffEditor.removedTextBackground": "#ee3a4333",
+    "diffEditor.removedTextBorder": "#ee3a4355",
 
     // SIDEBAR
     "sideBar.background": "#121316",
@@ -170,15 +141,12 @@
     "sideBarTitle.foreground": "#aaaaaa",
     // List
     "list.activeSelectionBackground": "#8c5ae938",
-    // "list.activeSelectionForeground": "#fff",
-    "list.dropBackground": "#0d3a58",
-    "list.focusBackground": "#0d3a58",
+    "list.dropBackground": "#8c5ae915",
+    "list.focusBackground": "#8c5ae9",
     "list.focusForeground": "#aaa",
     "list.highlightForeground": "#e09914",
-    "list.hoverBackground": "#121316",
     "list.hoverForeground": "#fff",
     "list.inactiveSelectionBackground": "#8c5ae938",
-    // "list.inactiveSelectionForeground": "#fff",
     // Git status colors in File Explorer
     "gitDecoration.modifiedResourceForeground": "#e09914",
     "gitDecoration.deletedResourceForeground": "#af6bfd",
@@ -198,13 +166,10 @@
     "merge.incomingContentBackground": "#185294",
     "merge.incomingHeaderBackground": "#185294",
     // notification colors - The colors below only apply for VS Code versions 1.21 and higher.
-    // "notificationCenter.border": "#e09914",
     "notificationCenterHeader.foreground": "#aaa",
     "notificationCenterHeader.background": "#482e79",
-    // "notificationToast.border": "#e09914",
     "notifications.foreground": "#aaa",
     "notifications.background": "#482e79",
-    // "notifications.border": "#e09914",
     "notificationLink.foreground": "#e09914",
     // panel
     "panel.background": "#17191d",
@@ -220,8 +185,8 @@
     "peekViewResult.background": "#15232d",
     "peekViewResult.fileForeground": "#aaa",
     "peekViewResult.lineForeground": "#fff",
-    "peekViewResult.matchHighlightBackground": "#0d3a58",
-    "peekViewResult.selectionBackground": "#0d3a58",
+    "peekViewResult.matchHighlightBackground": "#8c5ae9",
+    "peekViewResult.selectionBackground": "#8c5ae9",
     "peekViewResult.selectionForeground": "#fff",
     "peekViewTitle.background": "#15232d",
     "peekViewTitleDescription.foreground": "#aaa",
@@ -229,17 +194,11 @@
     // picker
     "pickerGroup.border": "#21252b",
     "pickerGroup.foreground": "#aaa",
-    // progressBar
-    "progressBar.background": "#e09914",
-    // scrollbar
-    "scrollbar.shadow": "#00000000",
-    "scrollbarSlider.activeBackground": "#ffffff3f",
-    "scrollbarSlider.background": "#ffffff18",
-    "scrollbarSlider.hoverBackground": "#ffffff27",
+
     // selection
     "selection.background": "#027dff",
 
-    // statusBar
+    // STATUS BAR ----------------------------------------------------
     "statusBar.background": "#21252b",
     "statusBar.border": "#21252b",
     "statusBar.debuggingBackground": "#8c5ae944",
@@ -247,13 +206,14 @@
     "statusBar.debuggingForeground": "#e09914",
     "statusBar.foreground": "#aaa",
     "statusBar.noFolderBackground": "#15232d",
-    "statusBar.noFolderBorder": "#0d3a58",
+    "statusBar.noFolderBorder": "#8c5ae9",
     "statusBar.noFolderForeground": "#aaa",
     "statusBarItem.activeBackground": "#0088ff",
     "statusBarItem.hoverBackground": "#482e79",
     "statusBarItem.prominentBackground": "#15232d",
     "statusBarItem.prominentHoverBackground": "#482e79",
-    // tab
+
+    // TABS -------------------------------------------------
     "tab.activeBackground": "#8c5ae91a",
     "tab.activeForeground": "#8c5ae9",
     "tab.border": "#21252b",
@@ -262,7 +222,8 @@
     "tab.inactiveForeground": "#ffffff4b",
     "tab.unfocusedActiveForeground": "#aaa",
     "tab.unfocusedInactiveForeground": "#aaa",
-    // --- workbench: terminal
+
+    // TERMINAL -------------------------------------------
     "terminal.ansiBlack": "#000000",
     "terminal.ansiRed": "#ff628c",
     "terminal.ansiGreen": "#4bb46e",
@@ -291,14 +252,12 @@
     "textLink.activeForeground": "#0088ff",
     "textLink.foreground": "#0088ff",
     "textPreformat.foreground": "#e09914",
-    "textSeparator.foreground": "#0d3a58",
+    "textSeparator.foreground": "#8c5ae9",
     "titleBar.activeBackground": "#15232D",
     "titleBar.activeForeground": "#ffffff",
     "titleBar.inactiveBackground": "#193549",
     "titleBar.inactiveForeground": "#ffffff33",
-    "walkThrough.embeddedEditorBackground": "#0d3a58",
-    // "welcomePage.buttonBackground": "#193549",
-    // "welcomePage.buttonHoverBackground": "#0d3a58",
+    "walkThrough.embeddedEditorBackground": "#8c5ae9",
     "widget.shadow": "#07070788"
   },
   "tokenColors": [
@@ -596,7 +555,12 @@
     },
     {
       "name": "[HTML] - Entity Name",
-      "scope": ["text.html.basic entity.name", "entity.name.tag.html"],
+      "scope": [
+        "text.html.basic entity.name",
+        "entity.name.tag.html",
+        "punctuation.definition.tag.begin.html",
+        "punctuation.definition.tag.end.html"
+      ],
       "settings": {
         "foreground": "#318bc7"
       }
@@ -670,6 +634,13 @@
       "scope": "entity.other.inherited-class.js",
       "settings": {
         "foreground": "#ccc"
+      }
+    },
+    {
+      "name": "[JAVASCRIPT] - template",
+      "scope": "punctuation.definition.template-expression",
+      "settings": {
+        "foreground": "#4fb99a"
       }
     },
     {
