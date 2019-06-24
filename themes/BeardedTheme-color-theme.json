@@ -7,7 +7,7 @@
     // main bg lighten: 121316
     // main bg lighten lighten: 21252b // borders
     // primary: 8c5ae9
-    // primary dark: 482e79
+    // primary dark: 322250
     // green: 4bb46e
     // green apple: 99c24e
     // yellow: e09914
@@ -46,9 +46,9 @@
     "button.background": "#8c5ae9",
     "button.foreground": "#fff",
     // debug
-    "debugExceptionWidget.background": "#482e79",
+    "debugExceptionWidget.background": "#322250",
     "debugExceptionWidget.border": "#aaa",
-    "debugToolBar.background": "#482e79",
+    "debugToolBar.background": "#322250",
     // description
     "descriptionForeground": "#aaa",
     // dropdown (ex: select in terminal)
@@ -124,8 +124,8 @@
     // editorWarning (ex: search ctrl f)
     "editorWarning.border": "#ffffff00",
     "editorWarning.foreground": "#e09914",
-    "editorWhitespace.foreground": "#482e79",
-    "editorWidget.background": "#482e79",
+    "editorWhitespace.foreground": "#322250",
+    "editorWidget.background": "#322250",
     "errorForeground": "#A22929",
     // diff
     "diffEditor.insertedTextBackground": "#4bb46e33",
@@ -143,8 +143,8 @@
     // List
     "list.activeSelectionBackground": "#8c5ae938",
     "list.dropBackground": "#8c5ae915",
-    "list.focusBackground": "#8c5ae9",
-    "list.focusForeground": "#aaa",
+    "list.focusBackground": "#8c5ae938",
+    "list.focusForeground": "#fff",
     "list.highlightForeground": "#e09914",
     "list.hoverBackground": "#ffffff0a",
     "list.hoverForeground": "#fff",
@@ -169,9 +169,9 @@
     "merge.incomingHeaderBackground": "#185294",
     // notification colors - The colors below only apply for VS Code versions 1.21 and higher.
     "notificationCenterHeader.foreground": "#aaa",
-    "notificationCenterHeader.background": "#482e79",
+    "notificationCenterHeader.background": "#322250",
     "notifications.foreground": "#aaa",
-    "notifications.background": "#482e79",
+    "notifications.background": "#322250",
     "notificationLink.foreground": "#e09914",
     // panel
     "panel.background": "#17191d",
@@ -211,9 +211,9 @@
     "statusBar.noFolderBorder": "#8c5ae9",
     "statusBar.noFolderForeground": "#aaa",
     "statusBarItem.activeBackground": "#0088ff",
-    "statusBarItem.hoverBackground": "#482e79",
+    "statusBarItem.hoverBackground": "#322250",
     "statusBarItem.prominentBackground": "#15232d",
-    "statusBarItem.prominentHoverBackground": "#482e79",
+    "statusBarItem.prominentHoverBackground": "#322250",
 
     // TABS -------------------------------------------------
     "tab.activeBackground": "#8c5ae91a",
