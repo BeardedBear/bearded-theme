@@ -79,6 +79,8 @@
     "editor.lineHighlightBackground": "#8c5ae90c",
     "editor.lineHighlightBorder": "#8c5ae91a",
     "editor.rangeHighlightBackground": "#8c5ae921",
+    // Bread
+    "breadcrumbPicker.background": "#17191d",
     // selection click
     "editor.selectionBackground": "#8c5ae938",
     "editor.selectionHighlightBorder": "#ffffff41",
@@ -248,18 +250,18 @@
     "terminalCursor.foreground": "#e09914",
 
     // textBlockQuote
-    "textBlockQuote.background": "#491919",
-    "textBlockQuote.border": "#0088ff",
-    "textCodeBlock.background": "#491f19",
-    "textLink.activeForeground": "#0088ff",
-    "textLink.foreground": "#0088ff",
+    "textBlockQuote.background": "#318bc734",
+    "textBlockQuote.border": "#318bc7b9",
+    "textCodeBlock.background": "#318bc734",
+    "textLink.activeForeground": "#318bc7",
+    "textLink.foreground": "#318bc7",
     "textPreformat.foreground": "#e09914",
     "textSeparator.foreground": "#8c5ae9",
     "titleBar.activeBackground": "#15232D",
     "titleBar.activeForeground": "#ffffff",
     "titleBar.inactiveBackground": "#193549",
     "titleBar.inactiveForeground": "#ffffff33",
-    "walkThrough.embeddedEditorBackground": "#8c5ae9",
+    "walkThrough.embeddedEditorBackground": "#00000025",
     "widget.shadow": "#07070788"
   },
   "tokenColors": [
@@ -350,7 +352,7 @@
     },
     {
       "name": "Meta Brace",
-      "scope": "meta.brace",
+      "scope": ["meta.brace", "source.js meta"],
       "settings": {
         "foreground": "#ffffffcc"
       }
@@ -362,7 +364,8 @@
         "meta.brace",
         "source.js punctuation.definition.parameters",
         "source.php punctuation.definition.parameters",
-        "source.python punctuation.definition.parameters"
+        "source.python punctuation.definition.parameters",
+        "punctuation.definition.template-expression"
       ],
       "settings": {
         "foreground": "#ffffff71"
@@ -371,13 +374,6 @@
     {
       "name": "Punctuation Parameters",
       "scope": "punctuation.definition.parameters",
-      "settings": {
-        "foreground": "#ffee80"
-      }
-    },
-    {
-      "name": "Punctuation Template Expression",
-      "scope": "punctuation.definition.template-expression",
       "settings": {
         "foreground": "#ffee80"
       }
@@ -419,7 +415,7 @@
       "name": "Support",
       "scope": "support",
       "settings": {
-        "foreground": "#4fb99a"
+        "foreground": "#dd6f2f"
       }
     },
     {
@@ -441,7 +437,9 @@
       "scope": [
         "variable",
         "punctuation.definition.variable.less",
-        "punctuation.definition.variable.php"
+        "punctuation.definition.variable.php",
+        "variable.language",
+        "entity.name.type.class.js"
       ],
       "settings": {
         "foreground": "#e4567c"
@@ -550,9 +548,13 @@
     },
     {
       "name": "[HTML] - Attribute",
-      "scope": ["entity.other.attribute-name.html"],
+      "scope": [
+        "entity.other.attribute-name.html",
+        "entity.other.attribute-name.localname.xml"
+      ],
       "settings": {
-        "foreground": "#e09914"
+        "foreground": "#e09914",
+        "fontStyle": "italic"
       }
     },
     {
@@ -561,7 +563,8 @@
         "text.html.basic entity.name",
         "entity.name.tag.html",
         "punctuation.definition.tag.begin.html",
-        "punctuation.definition.tag.end.html"
+        "punctuation.definition.tag.end.html",
+        "punctuation.definition.tag.xml"
       ],
       "settings": {
         "foreground": "#318bc7"
@@ -625,24 +628,10 @@
       }
     },
     {
-      "name": "[JAVASCRIPT] - Variable Language",
-      "scope": "variable.language, entity.name.type.class.js",
-      "settings": {
-        "foreground": "#cb55e2"
-      }
-    },
-    {
       "name": "[JAVASCRIPT] - Inherited Component",
       "scope": "entity.other.inherited-class.js",
       "settings": {
         "foreground": "#ccc"
-      }
-    },
-    {
-      "name": "[JAVASCRIPT] - template",
-      "scope": "punctuation.definition.template-expression",
-      "settings": {
-        "foreground": "#4fb99a"
       }
     },
     {
@@ -835,13 +824,6 @@
       "scope": "source.ts storage",
       "settings": {
         "foreground": "#318bc7"
-      }
-    },
-    {
-      "name": "[TYPESCRIPT] - Variable Language",
-      "scope": "variable.language, entity.name.type.class.ts, entity.name.type.class.tsx",
-      "settings": {
-        "foreground": "#cb55e2"
       }
     },
     {
