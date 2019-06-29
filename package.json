@@ -3,7 +3,7 @@
     "displayName": "Bearded Theme",
     "description": "The theme with a long beard.",
     "publisher": "BeardedBear",
-    "version": "0.0.15",
+    "version": "0.1.0",
     "engines": {
         "vscode": "^1.35.0"
     },
@@ -33,6 +33,11 @@
                 "label": "BeardedTheme",
                 "uiTheme": "vs-dark",
                 "path": "./themes/BeardedTheme-color-theme.json"
+            },
+            {
+                "label": "BeardedTheme Light",
+                "uiTheme": "vs",
+                "path": "./themes/BeardedThemeLight-color-theme.json"
             }
         ]
     }
