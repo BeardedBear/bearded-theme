@@ -222,9 +222,9 @@
     "tab.border": "#caced4",
     "tab.activeBorder": "#8544ff",
     "tab.inactiveBackground": "#ebecee",
-    "tab.inactiveForeground": "#0000004b",
-    "tab.unfocusedActiveForeground": "#aaa",
-    "tab.unfocusedInactiveForeground": "#aaa",
+    "tab.inactiveForeground": "#00000079",
+    "tab.unfocusedActiveForeground": "#0c0c0c73",
+    "tab.unfocusedInactiveForeground": "#0c0c0c73",
 
     // TERMINAL -------------------------------------------
     "terminal.ansiBlack": "#000000",
@@ -244,7 +244,7 @@
     "terminal.ansiBrightCyan": "#2fc6c9",
     "terminal.ansiBrightWhite": "#c7a8ff",
     "terminal.background": "#ffffff",
-    "terminal.foreground": "#e9e9e9",
+    "terminal.foreground": "#575757",
     "terminalCursor.background": "#e09914",
     "terminalCursor.foreground": "#e09914",
 
