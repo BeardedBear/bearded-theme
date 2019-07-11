@@ -4,7 +4,7 @@
   "type": "dark",
   "colors": {
     // main bg: 17191d
-    // main bg lighten: 1e2025
+    // main bg lighten: 1b1d22
     // main bg lighten lighten: 272c33 // borders
     // primary: 8c5ae9
     // primary dark: 322250
@@ -63,7 +63,7 @@
     "foreground": "#aaa",
 
     // ACTIVITY BAR ------------------------------------
-    "activityBar.background": "#1e2025",
+    "activityBar.background": "#1b1d22",
     "activityBar.foreground": "#ffffff77",
     "activityBar.border": "#272c33",
     "activityBarBadge.background": "#8c5ae993",
@@ -132,7 +132,7 @@
     "diffEditor.removedTextBorder": "#ee3a4355",
 
     // SIDEBAR
-    "sideBar.background": "#1e2025",
+    "sideBar.background": "#1b1d22",
     "sideBar.border": "#17191d",
     "sideBar.foreground": "#ffffff98",
     "sideBarSectionHeader.background": "#272c339f",
@@ -217,7 +217,7 @@
     // editorGroupHeader
     "editorGroupHeader.noTabsBackground": "#17191d",
     "editorGroupHeader.tabsBackground": "#17191d",
-    "editorGroupHeader.tabsBorder": "#17191d",
+    "editorGroupHeader.tabsBorder": "#272c33",
     "tab.activeBackground": "#8c5ae931",
     "tab.activeForeground": "#fff",
     // "tab.activeBorderTop": "#8c5ae9",
