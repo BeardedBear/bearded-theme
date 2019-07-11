@@ -4,8 +4,8 @@
   "type": "dark",
   "colors": {
     // main bg: 17191d
-    // main bg lighten: 121316
-    // main bg lighten lighten: 21252b // borders
+    // main bg lighten: 1e2025
+    // main bg lighten lighten: 272c33 // borders
     // primary: 8c5ae9
     // primary dark: 322250
     // green: 4bb46e
@@ -53,7 +53,7 @@
     "descriptionForeground": "#aaa",
     // dropdown (ex: select in terminal)
     "dropdown.background": "#17191d",
-    "dropdown.border": "#21252b",
+    "dropdown.border": "#272c33",
     "dropdown.foreground": "#ffffff7c",
     // extensionButton
     "extensionButton.prominentBackground": "#8c5ae99d",
@@ -63,9 +63,9 @@
     "foreground": "#aaa",
 
     // ACTIVITY BAR ------------------------------------
-    "activityBar.background": "#121316",
+    "activityBar.background": "#1e2025",
     "activityBar.foreground": "#ffffff77",
-    "activityBar.border": "#21252b",
+    "activityBar.border": "#272c33",
     "activityBarBadge.background": "#8c5ae993",
     "activityBarBadge.foreground": "#fff",
 
@@ -96,14 +96,10 @@
     "editorGutter.deletedBackground": "#d43636",
     "editorGutter.modifiedBackground": "#318bc7",
     // editorGroup
-    "editorGroup.border": "#21252b",
+    "editorGroup.border": "#272c33",
     "editorGroup.dropBackground": "#8c5ae915",
-    // editorGroupHeader
-    "editorGroupHeader.noTabsBackground": "#121316",
-    "editorGroupHeader.tabsBackground": "#121316",
-    "editorGroupHeader.tabsBorder": "#121316",
     // editorHoverWidget
-    "editorHoverWidget.background": "#21252b",
+    "editorHoverWidget.background": "#272c33",
     "editorHoverWidget.border": "#ffffff2f",
     "editorIndentGuide.background": "#ffffff0e",
     "editorLineNumber.foreground": "#ffffff3a",
@@ -118,7 +114,7 @@
     "editorOverviewRuler.currentContentForeground": "#ee3a4355",
     "editorOverviewRuler.incomingContentForeground": "#3ad90055",
     // editorSuggestWidget
-    "editorSuggestWidget.background": "#21252b",
+    "editorSuggestWidget.background": "#272c33",
     "editorSuggestWidget.border": "#ffffff2c",
     "editorSuggestWidget.foreground": "#ffffffb0",
     "editorSuggestWidget.highlightForeground": "#e09914",
@@ -136,10 +132,10 @@
     "diffEditor.removedTextBorder": "#ee3a4355",
 
     // SIDEBAR
-    "sideBar.background": "#121316",
+    "sideBar.background": "#1e2025",
     "sideBar.border": "#17191d",
     "sideBar.foreground": "#ffffff98",
-    "sideBarSectionHeader.background": "#21252b9f",
+    "sideBarSectionHeader.background": "#272c339f",
     "sideBarSectionHeader.foreground": "#fafafabb",
     "sideBarTitle.foreground": "#aaaaaa",
     // List
@@ -177,7 +173,7 @@
     "notificationLink.foreground": "#e09914",
     // panel
     "panel.background": "#17191d",
-    "panel.border": "#21252b",
+    "panel.border": "#272c33",
     "panelTitle.activeBorder": "#8c5ae9",
     "panelTitle.activeForeground": "#8c5ae9",
     "panelTitle.inactiveForeground": "#ffffff54",
@@ -196,15 +192,15 @@
     "peekViewTitleDescription.foreground": "#aaa",
     "peekViewTitleLabel.foreground": "#e09914",
     // picker
-    "pickerGroup.border": "#21252b",
+    "pickerGroup.border": "#272c33",
     "pickerGroup.foreground": "#aaa",
 
     // selection
     "selection.background": "#027dff",
 
     // STATUS BAR ----------------------------------------------------
-    "statusBar.background": "#21252b",
-    "statusBar.border": "#21252b",
+    "statusBar.background": "#272c33",
+    "statusBar.border": "#272c33",
     "statusBar.debuggingBackground": "#8c5ae944",
     "statusBar.debuggingBorder": "#8c5ae9",
     "statusBar.debuggingForeground": "#ffffffaf",
@@ -218,11 +214,16 @@
     "statusBarItem.prominentHoverBackground": "#322250",
 
     // TABS -------------------------------------------------
-    "tab.activeBackground": "#8c5ae91a",
-    "tab.activeForeground": "#8c5ae9",
-    "tab.border": "#21252b",
+    // editorGroupHeader
+    "editorGroupHeader.noTabsBackground": "#17191d",
+    "editorGroupHeader.tabsBackground": "#17191d",
+    "editorGroupHeader.tabsBorder": "#17191d",
+    "tab.activeBackground": "#8c5ae931",
+    "tab.activeForeground": "#fff",
+    // "tab.activeBorderTop": "#8c5ae9",
+    "tab.border": "#17191d",
     "tab.activeBorder": "#8c5ae9",
-    "tab.inactiveBackground": "#121316",
+    "tab.inactiveBackground": "#17191d",
     "tab.inactiveForeground": "#ffffff4b",
     "tab.unfocusedActiveForeground": "#aaa",
     "tab.unfocusedInactiveForeground": "#aaa",
