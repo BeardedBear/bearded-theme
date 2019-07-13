@@ -7,33 +7,28 @@
 ## 📷 Screenshots
 
 HTML & SCSS (Click for larger view)
-
 <a href="https://raw.githubusercontent.com/BeardedBear/bearded-theme/master/screen-html-scss.png" target="_BLANK">
-  <img alt="Example" src="https://raw.githubusercontent.com/BeardedBear/bearded-theme/master/screen-html-scss.png">
+<img alt="Example" src="https://raw.githubusercontent.com/BeardedBear/bearded-theme/master/screen-html-scss.png">
 </a>
 
 Elm & Terminal (Click for larger view)
-
 <a href="https://raw.githubusercontent.com/BeardedBear/bearded-theme/master/screen-elm-term.png" target="_BLANK">
-  <img alt="Example" src="https://raw.githubusercontent.com/BeardedBear/bearded-theme/master/screen-elm-term.png">
+<img alt="Example" src="https://raw.githubusercontent.com/BeardedBear/bearded-theme/master/screen-elm-term.png">
 </a>
 
 VueJS & JS (Click for larger view)
-
 <a href="https://raw.githubusercontent.com/BeardedBear/bearded-theme/master/screen-vue-js.png" target="_BLANK">
-  <img alt="Example" src="https://raw.githubusercontent.com/BeardedBear/bearded-theme/master/screen-vue-js.png">
+<img alt="Example" src="https://raw.githubusercontent.com/BeardedBear/bearded-theme/master/screen-vue-js.png">
 </a>
 
 Python & Shell (Click for larger view)
-
 <a href="https://raw.githubusercontent.com/BeardedBear/bearded-theme/master/screen-python-sh.png" target="_BLANK">
-  <img alt="Example" src="https://raw.githubusercontent.com/BeardedBear/bearded-theme/master/screen-python-sh.png">
+<img alt="Example" src="https://raw.githubusercontent.com/BeardedBear/bearded-theme/master/screen-python-sh.png">
 </a>
 
 Light theme (Click for larger view)
-
 <a href="https://raw.githubusercontent.com/BeardedBear/bearded-theme/master/screen-light.png" target="_BLANK">
-  <img alt="Example" src="https://raw.githubusercontent.com/BeardedBear/bearded-theme/master/screen-light.png">
+<img alt="Example" src="https://raw.githubusercontent.com/BeardedBear/bearded-theme/master/screen-light.png">
 </a>
 
 Something's missing ? [create Issues](https://github.com/BeardedBear/BeardedTheme/issues) so that I can make the theme as compatible as possible ! ❤️ ;)
