@@ -1,10 +1,11 @@
 module.exports.body = function(theme) {
   let activityBar = {
     "activityBar.background": theme.uibackgroundalt,
-    "activityBar.foreground": theme.default + "50",
+    "activityBar.foreground": theme.primary,
     "activityBar.border": theme.uiborder,
     "activityBarBadge.background": theme.primary,
-    "activityBarBadge.foreground": "#ffffff"
+    "activityBarBadge.foreground": "#ffffff",
+    "activityBar.inactiveForeground": theme.default + "50"
   };
   let badge = {
     "badge.background": theme.primary,
@@ -21,13 +22,15 @@ module.exports.body = function(theme) {
     "extensionButton.prominentHoverBackground": theme.primary
   };
   let common = {
-    focusBorder: theme.default + "50",
+    focusBorder: theme.primary + "aa",
     foreground: theme.default + "cc",
-    "widget.shadow": "#00000020",
+    "widget.shadow": theme.transparent,
     "selection.background": theme.primaryalt,
     "menu.background": theme.uibackground,
     "menu.border": theme.uiborder,
-    errorForeground: theme.red
+    errorForeground: theme.red,
+    contrastBorder: theme.primary + "50",
+    contrastActiveBorder: theme.transparent
   };
   let debug = {
     "debugExceptionWidget.background": theme.primaryalt,
@@ -41,7 +44,8 @@ module.exports.body = function(theme) {
     "diffEditor.insertedTextBackground": theme.green + "30",
     "diffEditor.insertedTextBorder": theme.transparent,
     "diffEditor.removedTextBackground": theme.red + "40",
-    "diffEditor.removedTextBorder": theme.transparent
+    "diffEditor.removedTextBorder": theme.transparent,
+    "diffEditor.border": theme.uiborder
   };
   let dropdown = {
     "dropdown.background": theme.uibackground,
@@ -52,14 +56,15 @@ module.exports.body = function(theme) {
     "editor.background": theme.uibackground,
     "editor.foreground": theme.default + "cc",
     "editor.findMatchBackground": theme.primary + "50",
-    "editor.findMatchBorder": theme.primary + "cc",
+    "editor.findMatchBorder": theme.primary + "50",
     "editor.findMatchHighlightBackground": theme.uibackground,
-    "editor.findMatchHighlightBorder": theme.default + "50",
+    "editor.findMatchHighlightBorder": theme.primary,
     "editor.hoverHighlightBackground": theme.primary + "50",
     "editor.lineHighlightBackground": theme.primary + "0c",
     "editor.lineHighlightBorder": theme.primary + "1a",
     "editor.rangeHighlightBackground": theme.primary + "21",
-    "editor.selectionBackground": theme.primary + "38",
+    "editor.selectionBackground": theme.primary + "40",
+    "editor.selectionForeground": theme.primary,
     "editor.inactiveSelectionBackground": theme.primary + "50",
     "editor.selectionHighlightBorder": theme.primary + "cc",
     "editor.wordHighlightStrongBackground": theme.default + "21",
@@ -73,7 +78,8 @@ module.exports.body = function(theme) {
     "editorHoverWidget.background": theme.uibackgroundalt,
     "editorHoverWidget.border": theme.uiborder,
     "editorIndentGuide.background": theme.default + "0e",
-    "editorLink.activeForeground": theme.default + "cc"
+    "editorLink.activeForeground": theme.default + "cc",
+    "editorWarning.border": theme.transparent
   };
   let editorMarker = {
     "editorMarkerNavigation.background": theme.default,
@@ -83,7 +89,8 @@ module.exports.body = function(theme) {
   let find = {
     "editorWarning.foreground": theme.yellow,
     "editorWhitespace.foreground": theme.primaryalt,
-    "editorWidget.background": theme.primaryalt
+    "editorWidget.background": theme.primaryalt,
+    "editorWidget.resizeBorder": theme.primary + "50"
   };
   let gutter = {
     "editorGutter.background": theme.uibackground,
@@ -94,8 +101,9 @@ module.exports.body = function(theme) {
     "editorLineNumber.activeForeground": theme.default
   };
   let input = {
-    "input.background": theme.grey + "15",
+    "input.background": theme.transparent,
     "input.foreground": theme.default,
+    "input.border": theme.grey + "aa",
     "input.placeholderForeground": theme.default + "cc",
     "inputOption.activeBorder": theme.primary,
     "inputValidation.errorBackground": theme.primaryalt,
@@ -140,6 +148,7 @@ module.exports.body = function(theme) {
     "notificationCenterHeader.background": theme.primaryalt,
     "notifications.foreground": theme.default + "cc",
     "notifications.background": theme.primaryalt,
+    "notifications.border": theme.primary + "50",
     "notificationLink.foreground": theme.yellow
   };
   let panel = {
@@ -183,7 +192,9 @@ module.exports.body = function(theme) {
     "sideBar.foreground": theme.default + "cc",
     "sideBarSectionHeader.background": theme.grey + "20",
     "sideBarSectionHeader.foreground": theme.default + "cc",
-    "sideBarTitle.foreground": theme.default
+    "sideBarTitle.foreground": theme.default,
+    "sideBarSectionHeader.border": theme.uiborder,
+    "tree.indentGuidesStroke": theme.default + "30"
   };
   let statusBar = {
     "statusBar.background": theme.uiborder,
@@ -215,6 +226,8 @@ module.exports.body = function(theme) {
     "tab.activeForeground": theme.default + "cc",
     "tab.border": theme.uibackground,
     "tab.activeBorder": theme.primary,
+    "tab.hoverBackground": theme.primary + "20",
+    "tab.unfocusedHoverBackground": theme.primary + "20",
     "tab.inactiveBackground": theme.uibackground,
     "tab.inactiveForeground": theme.default + "71",
     "tab.unfocusedActiveForeground": theme.default + "cc",
