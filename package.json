@@ -55,5 +55,13 @@
                 "path": "./themes/bearded-theme-light.json"
             }
         ]
+    },
+    "dependencies": {
+        "node": "^12.6.0",
+        "nodemon": "^1.19.1"
+    },
+    "scripts": {
+        "build": "node ./src/main.js",
+        "watch": "nodemon -L ./src/main.js"
     }
 }
