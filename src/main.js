@@ -36,7 +36,7 @@ function makeTheme(name, themeColors) {
 }
 
 makeTheme("anthracite", {
-  primary: "#5B7287",
+  primary: "#7E96AD",
   primaryalt: "#26323D",
   uiborder: "#272c33",
   uibackground: "#17191d",
