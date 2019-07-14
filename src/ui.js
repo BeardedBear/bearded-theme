@@ -58,7 +58,7 @@ module.exports.body = function(theme) {
     "editor.findMatchBackground": theme.primary + "50",
     "editor.findMatchBorder": theme.primary + "50",
     "editor.findMatchHighlightBackground": theme.uibackground,
-    "editor.findMatchHighlightBorder": "theme.primary",
+    "editor.findMatchHighlightBorder": theme.primary,
     "editor.hoverHighlightBackground": theme.primary + "50",
     "editor.lineHighlightBackground": theme.primary + "0c",
     "editor.lineHighlightBorder": theme.primary + "1a",
