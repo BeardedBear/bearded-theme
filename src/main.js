@@ -48,8 +48,8 @@ makeTheme("black", {
   primary: "#8C8C8C",
   primaryalt: "#3D3D3D",
   uiborder: "#191919",
-  uibackgroundalt: "#0F0F0F",
   uibackground: "#0C0C0C",
+  uibackgroundalt: "#0F0F0F",
   default: "#FFFFFF"
 });
 
@@ -57,8 +57,8 @@ makeTheme("purple", {
   primary: "#8544ff",
   primaryalt: "#322250",
   uiborder: "#2A1D38",
-  uibackgroundalt: "#16101E",
   uibackground: "#130E1A",
+  uibackgroundalt: "#16101E",
   default: "#FFFFFF"
 });
 
@@ -74,8 +74,8 @@ makeTheme("blue", {
 makeTheme("light", {
   primary: "#8544ff",
   primaryalt: "#c7a8ff",
-  default: "#000000",
   uiborder: "#caced4",
   uibackground: "#ffffff",
-  uibackgroundalt: "#ebecee"
+  uibackgroundalt: "#ebecee",
+  default: "#000000"
 });

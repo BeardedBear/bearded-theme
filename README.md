@@ -11,24 +11,39 @@
 <img alt="Example" src="https://raw.githubusercontent.com/BeardedBear/bearded-theme/master/themes.png">
 </a>
 
-HTML & SCSS (Click for larger view)
-<a href="https://raw.githubusercontent.com/BeardedBear/bearded-theme/master/screen-html-scss.png" target="_BLANK">
-<img alt="Example" src="https://raw.githubusercontent.com/BeardedBear/bearded-theme/master/screen-html-scss.png">
+Elm (Click for larger view)
+<a href="https://raw.githubusercontent.com/BeardedBear/bearded-theme/master/syntax-elm.png" target="_BLANK">
+<img alt="Example" src="https://raw.githubusercontent.com/BeardedBear/bearded-theme/master/syntax-elm.png">
 </a>
 
-Elm & Terminal (Click for larger view)
-<a href="https://raw.githubusercontent.com/BeardedBear/bearded-theme/master/screen-elm-term.png" target="_BLANK">
-<img alt="Example" src="https://raw.githubusercontent.com/BeardedBear/bearded-theme/master/screen-elm-term.png">
+HTML (Click for larger view)
+<a href="https://raw.githubusercontent.com/BeardedBear/bearded-theme/master/syntax-html.png" target="_BLANK">
+<img alt="Example" src="https://raw.githubusercontent.com/BeardedBear/bearded-theme/master/syntax-html.png">
 </a>
 
-VueJS & JS (Click for larger view)
-<a href="https://raw.githubusercontent.com/BeardedBear/bearded-theme/master/screen-vue-js.png" target="_BLANK">
-<img alt="Example" src="https://raw.githubusercontent.com/BeardedBear/bearded-theme/master/screen-vue-js.png">
+Javascript (Click for larger view)
+<a href="https://raw.githubusercontent.com/BeardedBear/bearded-theme/master/syntax-javascript.png" target="_BLANK">
+<img alt="Example" src="https://raw.githubusercontent.com/BeardedBear/bearded-theme/master/syntax-javascript.png">
 </a>
 
-Python & Shell (Click for larger view)
-<a href="https://raw.githubusercontent.com/BeardedBear/bearded-theme/master/screen-python-sh.png" target="_BLANK">
-<img alt="Example" src="https://raw.githubusercontent.com/BeardedBear/bearded-theme/master/screen-python-sh.png">
+SCSS (Click for larger view)
+<a href="https://raw.githubusercontent.com/BeardedBear/bearded-theme/master/syntax-scss.png" target="_BLANK">
+<img alt="Example" src="https://raw.githubusercontent.com/BeardedBear/bearded-theme/master/syntax-scss.png">
+</a>
+
+JSON (Click for larger view)
+<a href="https://raw.githubusercontent.com/BeardedBear/bearded-theme/master/syntax-json.png" target="_BLANK">
+<img alt="Example" src="https://raw.githubusercontent.com/BeardedBear/bearded-theme/master/syntax-json.png">
+</a>
+
+PHP (Click for larger view)
+<a href="https://raw.githubusercontent.com/BeardedBear/bearded-theme/master/syntax-php.png" target="_BLANK">
+<img alt="Example" src="https://raw.githubusercontent.com/BeardedBear/bearded-theme/master/syntax-php.png">
+</a>
+
+Python (Click for larger view)
+<a href="https://raw.githubusercontent.com/BeardedBear/bearded-theme/master/syntax-python.png" target="_BLANK">
+<img alt="Example" src="https://raw.githubusercontent.com/BeardedBear/bearded-theme/master/syntax-python.png">
 </a>
 
 Something's missing ? [create Issues](https://github.com/BeardedBear/BeardedTheme/issues) so that I can make the theme as compatible as possible ! ❤️ ;)
