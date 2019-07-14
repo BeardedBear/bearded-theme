@@ -17,146 +17,65 @@ const colors = {
   yellow: "#e09914"
 };
 
-//  LIGHT
+function makeTheme(name, themeColors) {
+  let theme = Object.assign(themeColors, colors);
+  let base = {
+    $schema: "vscode://schemas/color-theme",
+    name: "BeardedTheme " + name.charAt(0).toUpperCase() + name.slice(1),
+    colors: ui.body(theme),
+    tokenColors: syntax.body(theme)
+  };
 
-const lightTheme = Object.assign(
-  {
-    primary: "#8544ff",
-    primaryalt: "#c7a8ff",
-    default: "#000000",
-    uiborder: "#caced4",
-    uibackground: "#ffffff",
-    uibackgroundalt: "#ebecee"
-  },
-  colors
-);
+  fs.writeFile(
+    "themes/bearded-theme-" + name + ".json",
+    JSON.stringify(base),
+    (err, result) => {
+      if (err) console.log("error", err);
+    }
+  );
+}
 
-const base = {
-  $schema: "vscode://schemas/color-theme",
-  name: "BeardedTheme Light",
-  colors: ui.body(lightTheme),
-  tokenColors: syntax.body(lightTheme)
-};
-
-fs.writeFile("themes/bearded-theme-light.json", JSON.stringify(base), function(
-  err,
-  result
-) {
-  if (err) console.log("error", err);
+makeTheme("anthracite", {
+  primary: "#5B7287",
+  primaryalt: "#26323D",
+  uiborder: "#272c33",
+  uibackground: "#17191d",
+  uibackgroundalt: "#1b1d22",
+  default: "#FFFFFF"
 });
 
-// DARK BLUE
+makeTheme("black", {
+  primary: "#8C8C8C",
+  primaryalt: "#3D3D3D",
+  uiborder: "#191919",
+  uibackgroundalt: "#0F0F0F",
+  uibackground: "#0C0C0C",
+  default: "#FFFFFF"
+});
 
-const darkThemeBlue = Object.assign(
-  {
-    primary: "#008cff",
-    primaryalt: "#00447c",
-    uiborder: "#141E30",
-    uibackground: "#0B0F19",
-    uibackgroundalt: "#0D121E",
-    default: "#FFFFFF"
-  },
-  colors
-);
+makeTheme("purple", {
+  primary: "#8544ff",
+  primaryalt: "#322250",
+  uiborder: "#2A1D38",
+  uibackgroundalt: "#16101E",
+  uibackground: "#130E1A",
+  default: "#FFFFFF"
+});
 
-const basedarkblue = {
-  $schema: "vscode://schemas/color-theme",
-  name: "BeardedTheme Blue",
-  colors: ui.body(darkThemeBlue),
-  tokenColors: syntax.body(darkThemeBlue)
-};
+makeTheme("blue", {
+  primary: "#008cff",
+  primaryalt: "#00447c",
+  uiborder: "#141E30",
+  uibackground: "#0B0F19",
+  uibackgroundalt: "#0D121E",
+  default: "#FFFFFF"
+});
 
-fs.writeFile(
-  "themes/bearded-theme-blue.json",
-  JSON.stringify(basedarkblue),
-  function(err, result) {
-    if (err) console.log("error", err);
-  }
-);
-
-// DARK
-
-const darkTheme = Object.assign(
-  {
-    primary: "#8544ff",
-    primaryalt: "#322250",
-    uiborder: "#2A1D38",
-    uibackgroundalt: "#16101E",
-    uibackground: "#130E1A",
-    default: "#FFFFFF"
-  },
-  colors
-);
-
-const basedark = {
-  $schema: "vscode://schemas/color-theme",
-  name: "BeardedTheme",
-  colors: ui.body(darkTheme),
-  tokenColors: syntax.body(darkTheme)
-};
-
-fs.writeFile(
-  "themes/bearded-theme-purple.json",
-  JSON.stringify(basedark),
-  function(err, result) {
-    if (err) console.log("error", err);
-  }
-);
-
-// DARK BLACK
-
-const darkThemeBlack = Object.assign(
-  {
-    primary: "#8C8C8C",
-    primaryalt: "#3D3D3D",
-    uiborder: "#191919",
-    uibackgroundalt: "#0F0F0F",
-    uibackground: "#0C0C0C",
-    default: "#FFFFFF"
-  },
-  colors
-);
-
-const basedarkBlack = {
-  $schema: "vscode://schemas/color-theme",
-  name: "BeardedTheme Black",
-  colors: ui.body(darkThemeBlack),
-  tokenColors: syntax.body(darkThemeBlack)
-};
-
-fs.writeFile(
-  "themes/bearded-theme-black.json",
-  JSON.stringify(basedarkBlack),
-  function(err, result) {
-    if (err) console.log("error", err);
-  }
-);
-
-// DARK ANTHRACITE
-
-const darkThemeAnthracite = Object.assign(
-  {
-    primary: "#5B7287",
-    primaryalt: "#26323D",
-    uiborder: "#272c33",
-    uibackground: "#17191d",
-    uibackgroundalt: "#1b1d22",
-    default: "#FFFFFF"
-  },
-  colors
-);
-
-const basedarkAnthracite = {
-  $schema: "vscode://schemas/color-theme",
-  name: "BeardedTheme Black",
-  colors: ui.body(darkThemeAnthracite),
-  tokenColors: syntax.body(darkThemeAnthracite)
-};
-
-fs.writeFile(
-  "themes/bearded-theme-anthracite.json",
-  JSON.stringify(basedarkAnthracite),
-  function(err, result) {
-    if (err) console.log("error", err);
-  }
-);
+makeTheme("light", {
+  primary: "#8544ff",
+  primaryalt: "#c7a8ff",
+  default: "#000000",
+  uiborder: "#caced4",
+  uibackground: "#ffffff",
+  uibackgroundalt: "#ebecee"
+});
