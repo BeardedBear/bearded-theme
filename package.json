@@ -3,7 +3,7 @@
     "displayName": "Bearded Theme",
     "description": "The theme with a long beard.",
     "publisher": "BeardedBear",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "engines": {
         "vscode": "^1.35.0"
     },
@@ -30,9 +30,19 @@
     "contributes": {
         "themes": [
             {
+                "label": "BeardedTheme Anthracite",
+                "uiTheme": "hc-black",
+                "path": "./themes/bearded-theme-anthracite.json"
+            },
+            {
                 "label": "BeardedTheme Purple",
                 "uiTheme": "hc-black",
                 "path": "./themes/bearded-theme-purple.json"
+            },
+            {
+                "label": "BeardedTheme Black",
+                "uiTheme": "hc-black",
+                "path": "./themes/bearded-theme-black.json"
             },
             {
                 "label": "BeardedTheme Blue",

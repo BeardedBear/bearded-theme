@@ -269,7 +269,8 @@ module.exports.body = function(theme) {
     "titleBar.activeBackground": theme.uiborder,
     "titleBar.activeForeground": theme.default,
     "titleBar.inactiveBackground": theme.primaryalt,
-    "titleBar.inactiveForeground": theme.default + "33"
+    "titleBar.inactiveForeground": theme.default + "33",
+    "titleBar.border": theme.uiborder
   };
   return Object.assign(
     activityBar,
