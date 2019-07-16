@@ -72,10 +72,10 @@ makeTheme("blue", {
 });
 
 makeTheme("light", {
-  primary: "#8544ff",
-  primaryalt: "#c7a8ff",
-  uiborder: "#caced4",
+  primary: "#758ba1",
+  primaryalt: "#c3d3e0",
+  uiborder: "#cccccc",
   uibackground: "#ffffff",
-  uibackgroundalt: "#ebecee",
-  default: "#000000"
+  uibackgroundalt: "#f4f4f4",
+  default: "#444444"
 });
