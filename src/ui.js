@@ -185,7 +185,8 @@ module.exports.body = function(theme) {
     "scrollbar.shadow": theme.transparent,
     "scrollbarSlider.activeBackground": theme.default + "3f",
     "scrollbarSlider.background": theme.default + "18",
-    "scrollbarSlider.hoverBackground": theme.default + "27"
+    "scrollbarSlider.background": theme.default + "20",
+    "scrollbarSlider.hoverBackground": theme.default + "35"
   };
   let sidebar = {
     "sideBar.background": theme.uibackgroundalt,
