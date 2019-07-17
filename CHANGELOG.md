@@ -9,6 +9,8 @@
 ### Changes
 
 - Publish this changelog (never too late) 🎉
+- Better support for CS
+- Better support for java
 
 ### Fixes
 

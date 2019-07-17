@@ -228,6 +228,22 @@ module.exports.body = function(theme) {
       }
     }
   ];
+  let java = [
+    {
+      name: "[JAVA] - Storage modifier",
+      scope: ["storage.modifier.java"],
+      settings: {
+        foreground: theme.turquoize
+      }
+    },
+    {
+      name: "[JAVA] - Other object",
+      scope: ["variable.other.object.java"],
+      settings: {
+        foreground: theme.orange
+      }
+    }
+  ];
   let html = [
     {
       name: "[HTML] - Text",
@@ -704,6 +720,7 @@ module.exports.body = function(theme) {
       css,
       common,
       cs,
+      java,
       elm,
       ini,
       html,
