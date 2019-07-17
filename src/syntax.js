@@ -188,6 +188,46 @@ module.exports.body = function(theme) {
       }
     }
   ];
+  let cs = [
+    {
+      name: "[CS] - Types",
+      scope: ["keyword.type.cs", "storage.type.cs"],
+      settings: {
+        foreground: theme.purple
+      }
+    },
+    {
+      name: "[CS] - Functions",
+      scope: ["entity.name.function.cs"],
+      settings: {
+        foreground: theme.blue
+      }
+    },
+    {
+      name: "[CS] - Variables",
+      scope: [
+        "entity.name.variable.property.cs",
+        "entity.name.variable.field.cs"
+      ],
+      settings: {
+        foreground: theme.salmon
+      }
+    },
+    {
+      name: "[CS] - Storage modifier",
+      scope: ["storage.modifier.cs"],
+      settings: {
+        foreground: theme.turquoize
+      }
+    },
+    {
+      name: "[CS] - Other objects",
+      scope: ["variable.other.object.cs", "variable.other.object.property.cs"],
+      settings: {
+        foreground: theme.orange
+      }
+    }
+  ];
   let html = [
     {
       name: "[HTML] - Text",
@@ -663,6 +703,7 @@ module.exports.body = function(theme) {
     [].concat(
       css,
       common,
+      cs,
       elm,
       ini,
       html,
