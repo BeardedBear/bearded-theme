@@ -650,7 +650,8 @@ module.exports.body = function(theme) {
       name: "[JSON] - Support",
       scope: [
         "source.json support",
-        "punctuation.support.type.property-name.begin.json.comments punctuation"
+        "punctuation.support.type.property-name.begin.json.comments punctuation",
+        "entity.name.tag.yaml"
       ],
       settings: {
         foreground: theme.yellow
