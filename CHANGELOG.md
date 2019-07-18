@@ -2,11 +2,11 @@
 
 ## 1.3.0 - 2019-07-17
 
-### Features
+### New features
 
 - Add yml support
 
-### Changes
+### Enhancements
 
 - Publish this changelog (never too late) 🎉
 - Better support for CS
@@ -24,39 +24,39 @@
 
 ## 1.2.6 - 2019-07-16
 
-### Changes
+### Enhancements
 
 - Remove purple color on light theme
 
 ## 1.2.5 - 2019-07-14
 
-### Fixes
+### Enhancements
 
-- Fix match color
+- Improve lisibility of match color
 
 ## 1.2.4 - 2019-07-14
 
-### Changes
+### Enhancements
 
 - Optimize screenshots size
 - Update readme
 
 ## 1.2.0 - 2019-07-14
 
-### Features
+### New features
 
 - Add an anthracite variant
 - Add an black variant
 
 ## 1.1.0 - 2019-07-13
 
-### Features
+### New features
 
 - Add a blue variant
 
 ## 1.0.0 - 2019-07-05
 
-### Changes
+### Enhancements
 
 - Update readme
 - Make a build system with nodeJS
@@ -70,23 +70,20 @@
 
 ## 0.1.0 - 2019-06-29
 
-### Features
+### New features
 
 - Add light variant
 
 ## 0.0.15 - 2019-06-25
 
-### Added
+### Enhancements
 
 - Add new colors for syntax
-
-### Changes
-
 - Update screenshots url
 
 ## 0.0.13 - 2019-06-24
 
-### Changes
+### Enhancements
 
 - Update screenshots
 - Update readme
@@ -99,7 +96,7 @@
 
 - Fix selection color
 
-### Added
+### Enhancements
 
 - Add darker primary color variant
 
@@ -110,14 +107,14 @@
 - Fix terminal colors
 - Unifying colors
 
-### Changes
+### Enhancements
 
 - Update readme.
 - Update theme icon
 
 ## 0.0.7 - 2019-06-20
 
-### Added
+### Enhancements
 
 - Add screenshot for VueJS
 
@@ -127,13 +124,13 @@
 
 ## 0.0.5 - 2019-06-20
 
-### Changes
+### Enhancements
 
 - Update screenshots
 
 ## 0.0.4 - 2019-06-20
 
-### Changes
+### Enhancements
 
 - Update readme
 - Update tags
@@ -141,13 +138,11 @@
 
 ## 0.0.3 - 2019-06-20
 
-### Added
+### Enhancements
 
 - Add screenshot
 - Add theme description
 - Add theme icon
-
-### Changes
 
 - Change display name
 
