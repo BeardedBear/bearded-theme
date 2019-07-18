@@ -43,9 +43,9 @@ module.exports.body = function(theme) {
         "storage.type.cs",
         "meta.function.type-declaration.elm storage",
         "storage.type.elm",
-        "meta.object.member.js support",
         "support.type.primitive.ts",
-        "source.ts meta.type.annotation.ts entity.name.type.ts"
+        "source.ts meta.type.annotation.ts entity.name.type.ts",
+        "source.vue support.class.builtin.js"
       ],
       settings: {
         foreground: theme.purple
@@ -62,7 +62,7 @@ module.exports.body = function(theme) {
         "keyword.control.import.ts"
       ],
       settings: {
-        foreground: theme.orange
+        foreground: theme.yellow
       }
     },
     {
@@ -102,7 +102,8 @@ module.exports.body = function(theme) {
         "meta.tag.preprocessor.xml",
         "keyword.operator.assignment.js",
         "punctuation.definition.parameters.begin.ts",
-        "punctuation.definition.parameters.end.ts"
+        "punctuation.definition.parameters.end.ts",
+        "meta.tag.block.any.html"
       ],
       settings: {
         foreground: theme.default + "71"

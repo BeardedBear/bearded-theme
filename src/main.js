@@ -3,7 +3,7 @@ const ui = require("./ui");
 const fs = require("fs");
 
 const colors = {
-  blue: "#318bc7",
+  blue: "#329ce3",
   green: "#4bb46e",
   greenalt: "#99c24e",
   grey: "#808080",

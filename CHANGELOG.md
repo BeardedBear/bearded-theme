@@ -14,7 +14,7 @@
 - Better CS support
 - Better Java support
 - Better Vue support
-- Better TypeScript support
+- Better TypeScript
 
 ### Fixes
 

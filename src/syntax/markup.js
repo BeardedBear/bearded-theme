@@ -13,7 +13,8 @@ module.exports.body = function(theme) {
         "entity.other.attribute-name.html",
         "entity.other.attribute-name.localname.xml",
         "entity.other.attribute-name.xml",
-        "entity.other.attribute-name.js"
+        "entity.other.attribute-name.js",
+        "entity.other.attribute-name.id.html"
       ],
       settings: {
         foreground: theme.yellow,
@@ -33,7 +34,10 @@ module.exports.body = function(theme) {
         "support.class.component.js",
         "entity.name.tag.template.html",
         "entity.name.tag.script.html",
-        "entity.name.tag.style.html"
+        "entity.name.tag.style.html",
+        "entity.name.tag.block.any.html",
+        "entity.name.tag.other.html",
+        "entity.name.tag.inline.any.html"
       ],
       settings: {
         foreground: theme.blue
