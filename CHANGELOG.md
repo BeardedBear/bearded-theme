@@ -5,12 +5,13 @@
 ### New features
 
 - Add yml support
+- Add xml support
 
 ### Enhancements
 
 - Publish this changelog (never too late) 🎉
-- Better support for CS
-- Better support for java
+- Better CS support
+- Better Java support
 
 ### Fixes
 
