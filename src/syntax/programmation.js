@@ -27,7 +27,9 @@ module.exports.body = function(theme) {
         "entity.name.function.top_level.elm",
         "support.function",
         "entity.name.function.ts",
-        "meta.function-call.js support"
+        "meta.function-call.js support",
+        "entity.name.function.elixir",
+        "entity.name.function.go"
       ],
       settings: {
         foreground: theme.blue
@@ -45,7 +47,11 @@ module.exports.body = function(theme) {
         "storage.type.elm",
         "support.type.primitive.ts",
         "source.ts meta.type.annotation.ts entity.name.type.ts",
-        "source.vue support.class.builtin.js"
+        "source.vue support.class.builtin.js",
+        "storage.type.string.go",
+        "storage.type.boolean.go",
+        "storage.type.numeric.go",
+        "entity.name.type.go"
       ],
       settings: {
         foreground: theme.purple

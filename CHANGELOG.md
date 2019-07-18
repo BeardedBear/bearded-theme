@@ -11,10 +11,11 @@
 
 ### Enhancements
 
-- Better CS support
-- Better Java support
-- Better Vue support
-- Better TypeScript
+- Improve CS support
+- Improve Java support
+- Improve Vue support
+- Improve TypeScript
+- Improve Go support
 
 ### Fixes
 
