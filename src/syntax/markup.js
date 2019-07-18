@@ -30,7 +30,10 @@ module.exports.body = function(theme) {
         "punctuation.definition.tag.xml",
         "punctuation.definition.tag.begin.js",
         "punctuation.definition.tag.end.js",
-        "support.class.component.js"
+        "support.class.component.js",
+        "entity.name.tag.template.html",
+        "entity.name.tag.script.html",
+        "entity.name.tag.style.html"
       ],
       settings: {
         foreground: theme.blue

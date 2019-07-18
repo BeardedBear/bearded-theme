@@ -8,7 +8,8 @@ module.exports.body = function(theme) {
         "source.ruby",
         "source.shell",
         "source.sql",
-        "source.go"
+        "source.go",
+        "source.js"
       ],
       settings: {
         foreground: theme.default + "cc"
@@ -39,7 +40,8 @@ module.exports.body = function(theme) {
         "keyword.type.cs",
         "storage.type.cs",
         "meta.function.type-declaration.elm storage",
-        "storage.type.elm"
+        "storage.type.elm",
+        "meta.object.member.js support"
       ],
       settings: {
         foreground: theme.purple
@@ -99,7 +101,8 @@ module.exports.body = function(theme) {
       scope: [
         "meta.jsx.children",
         "meta.jsx.children.js",
-        "meta.jsx.children.tsx"
+        "meta.jsx.children.tsx",
+        "meta.function-call.js support"
       ],
       settings: {
         foreground: theme.default + "cc"

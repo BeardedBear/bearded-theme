@@ -6,12 +6,14 @@
 
 - Add yml support
 - Add xml support
+- Add jsx support
 
 ### Enhancements
 
 - Publish this changelog (never too late) 🎉
 - Better CS support
 - Better Java support
+- Better Vue support
 
 ### Fixes
 
