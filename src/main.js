@@ -10,7 +10,7 @@ const colors = {
   orange: "#ff7728",
   pink: "#cb55e2",
   purple: "#af6bfd",
-  red: "#ff4949",
+  red: "#cf3a3a",
   salmon: "#e4567c",
   transparent: "#00000000",
   turquoize: "#4fb99a",

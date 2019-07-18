@@ -22,10 +22,12 @@ module.exports.body = function(theme) {
         "source.js support.function",
         "source.php entity",
         "source.php support.function",
-        "source.ts storage",
         "entity.name.function.cs",
         "meta.function.type-declaration.elm entity",
-        "entity.name.function.top_level.elm"
+        "entity.name.function.top_level.elm",
+        "support.function",
+        "entity.name.function.ts",
+        "meta.function-call.js support"
       ],
       settings: {
         foreground: theme.blue
@@ -41,7 +43,9 @@ module.exports.body = function(theme) {
         "storage.type.cs",
         "meta.function.type-declaration.elm storage",
         "storage.type.elm",
-        "meta.object.member.js support"
+        "meta.object.member.js support",
+        "support.type.primitive.ts",
+        "source.ts meta.type.annotation.ts entity.name.type.ts"
       ],
       settings: {
         foreground: theme.purple
@@ -54,7 +58,8 @@ module.exports.body = function(theme) {
         "keyword.control.import.elm",
         "keyword.other.elm",
         "meta.module.name.elm support",
-        "meta.import.elm support"
+        "meta.import.elm support",
+        "keyword.control.import.ts"
       ],
       settings: {
         foreground: theme.orange
@@ -75,39 +80,7 @@ module.exports.body = function(theme) {
         foreground: theme.red
       }
     },
-    {
-      name: "Storage Type Function",
-      scope: "storage.type.function",
-      settings: {
-        foreground: theme.yellow
-      }
-    },
-    {
-      name: "Keyword",
-      scope: "keyword, storage.type.class",
-      settings: {
-        foreground: theme.yellow
-      }
-    },
-    {
-      name: "Meta",
-      scope: "meta",
-      settings: {
-        foreground: theme.blue
-      }
-    },
-    {
-      name: "Meta JSX",
-      scope: [
-        "meta.jsx.children",
-        "meta.jsx.children.js",
-        "meta.jsx.children.tsx",
-        "meta.function-call.js support"
-      ],
-      settings: {
-        foreground: theme.default + "cc"
-      }
-    },
+
     {
       name: "Meta Brace",
       scope: ["meta.brace", "source.js meta"],
@@ -127,29 +100,26 @@ module.exports.body = function(theme) {
         "source.ts punctuation.definition.parameters",
         "source.elm punctuation",
         "meta.tag.preprocessor.xml",
-        "keyword.operator.assignment.js"
+        "keyword.operator.assignment.js",
+        "punctuation.definition.parameters.begin.ts",
+        "punctuation.definition.parameters.end.ts"
       ],
       settings: {
         foreground: theme.default + "71"
       }
     },
-    {
-      name: "Punctuation Parameters",
-      scope: "punctuation.definition.parameters",
-      settings: {
-        foreground: theme.yellow
-      }
-    },
+
     {
       name: "Storage",
-      scope: "storage",
-      settings: {
-        foreground: theme.yellow
-      }
-    },
-    {
-      name: "Storage Type Arrow Function",
-      scope: "storage.type.function.arrow",
+      scope: [
+        "storage",
+        "source.ts storage",
+        "storage.type.function.arrow",
+        "punctuation.definition.parameters",
+        "storage.type.class",
+        "storage.type.function",
+        "keyword"
+      ],
       settings: {
         foreground: theme.yellow
       }
@@ -181,17 +151,18 @@ module.exports.body = function(theme) {
       }
     },
     {
+      name: "This",
+      scope: ["variable.language.this.js", "variable.language.this.ts"],
+      settings: {
+        foreground: theme.default + "cc",
+        fontStyle: "italic"
+      }
+    },
+    {
       name: "Support",
       scope: "support",
       settings: {
         foreground: theme.default + "cc"
-      }
-    },
-    {
-      name: "Support Function",
-      scope: "support.function",
-      settings: {
-        foreground: theme.yellow
       }
     },
     {
@@ -212,7 +183,8 @@ module.exports.body = function(theme) {
         "entity.name.variable.property.cs",
         "entity.name.variable.field.cs",
         "source.css variable",
-        "source.stylus variable"
+        "source.stylus variable",
+        "entity.name.type.ts"
       ],
       settings: {
         foreground: theme.salmon
@@ -229,7 +201,7 @@ module.exports.body = function(theme) {
   let cs = [
     {
       name: "[CS] - Storage modifier",
-      scope: ["storage.modifier.cs"],
+      scope: ["storage.modifier.cs", "storage.modifier.ts"],
       settings: {
         foreground: theme.turquoize,
         fontStyle: "italic"
@@ -296,13 +268,7 @@ module.exports.body = function(theme) {
         foreground: theme.turquoize
       }
     },
-    {
-      name: "[TYPESCRIPT] - Keyword",
-      scope: "source.ts keyword",
-      settings: {
-        foreground: theme.yellow
-      }
-    },
+
     {
       name: "[TYPESCRIPT] - Punctuation Arrow Parameters",
       scope: "meta.arrow.ts punctuation.definition.parameters",
