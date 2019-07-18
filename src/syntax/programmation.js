@@ -46,6 +46,19 @@ module.exports.body = function(theme) {
       }
     },
     {
+      name: "Import",
+      scope: [
+        "keyword.control.import.js",
+        "keyword.control.import.elm",
+        "keyword.other.elm",
+        "meta.module.name.elm support",
+        "meta.import.elm support"
+      ],
+      settings: {
+        foreground: theme.orange
+      }
+    },
+    {
       name: "Comment",
       scope: ["comment", "punctuation.definition.comment"],
       settings: {
@@ -110,7 +123,8 @@ module.exports.body = function(theme) {
         "punctuation.definition.template-expression",
         "source.ts punctuation.definition.parameters",
         "source.elm punctuation",
-        "meta.tag.preprocessor.xml"
+        "meta.tag.preprocessor.xml",
+        "keyword.operator.assignment.js"
       ],
       settings: {
         foreground: theme.default + "71"
@@ -167,7 +181,7 @@ module.exports.body = function(theme) {
       name: "Support",
       scope: "support",
       settings: {
-        foreground: theme.orange
+        foreground: theme.default + "cc"
       }
     },
     {
@@ -311,13 +325,7 @@ module.exports.body = function(theme) {
         foreground: theme.red
       }
     },
-    {
-      name: "[ELM] - Import",
-      scope: ["keyword.control.import.elm", "keyword.other.elm"],
-      settings: {
-        foreground: theme.greenalt
-      }
-    },
+
     {
       name: "[ELM] - Type Constructor",
       scope: ["source.elm constant"],
@@ -325,13 +333,7 @@ module.exports.body = function(theme) {
         foreground: theme.salmon
       }
     },
-    {
-      name: "[ELM] - Imports",
-      scope: ["meta.module.name.elm support", "meta.import.elm support"],
-      settings: {
-        foreground: theme.orange
-      }
-    },
+
     {
       name: "[ELM] - Meta",
       scope: ["source.elm meta"],

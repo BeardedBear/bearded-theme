@@ -12,7 +12,8 @@ module.exports.body = function(theme) {
       scope: [
         "entity.other.attribute-name.html",
         "entity.other.attribute-name.localname.xml",
-        "entity.other.attribute-name.xml"
+        "entity.other.attribute-name.xml",
+        "entity.other.attribute-name.js"
       ],
       settings: {
         foreground: theme.yellow,
@@ -26,7 +27,10 @@ module.exports.body = function(theme) {
         "entity.name.tag.html",
         "punctuation.definition.tag.begin.html",
         "punctuation.definition.tag.end.html",
-        "punctuation.definition.tag.xml"
+        "punctuation.definition.tag.xml",
+        "punctuation.definition.tag.begin.js",
+        "punctuation.definition.tag.end.js",
+        "support.class.component.js"
       ],
       settings: {
         foreground: theme.blue
