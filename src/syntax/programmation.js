@@ -16,6 +16,13 @@ module.exports.body = function(theme) {
       }
     },
     {
+      name: "Class",
+      scope: ["source.ts entity.name.type", "entity.name.type.class.python"],
+      settings: {
+        foreground: theme.turquoize
+      }
+    },
+    {
       name: "Entity / functions",
       scope: [
         "source.js entity",
@@ -29,7 +36,9 @@ module.exports.body = function(theme) {
         "entity.name.function.ts",
         "meta.function-call.js support",
         "entity.name.function.elixir",
-        "entity.name.function.go"
+        "entity.name.function.go",
+        "meta.function-call.python",
+        "entity.name.function.python"
       ],
       settings: {
         foreground: theme.blue
@@ -51,7 +60,8 @@ module.exports.body = function(theme) {
         "storage.type.string.go",
         "storage.type.boolean.go",
         "storage.type.numeric.go",
-        "entity.name.type.go"
+        "entity.name.type.go",
+        "support.type.exception.python"
       ],
       settings: {
         foreground: theme.purple
@@ -92,6 +102,20 @@ module.exports.body = function(theme) {
       scope: ["meta.brace", "source.js meta"],
       settings: {
         foreground: theme.default + "cc"
+      }
+    },
+    {
+      name: "Modifier",
+      scope: [
+        "storage.modifier.cs",
+        "storage.modifier.ts",
+        "storage.type.class",
+        "storage.type.function",
+        "storage.type.class.python"
+      ],
+      settings: {
+        foreground: theme.turquoize,
+        fontStyle: "italic"
       }
     },
     {
@@ -159,7 +183,12 @@ module.exports.body = function(theme) {
     },
     {
       name: "This",
-      scope: ["variable.language.this.js", "variable.language.this.ts"],
+      scope: [
+        "variable.language.this.js",
+        "variable.language.this.ts",
+        "variable.parameter.function.language.special.self.python",
+        "variable.language.special.self.python"
+      ],
       settings: {
         foreground: theme.default + "cc",
         fontStyle: "italic"
@@ -191,7 +220,8 @@ module.exports.body = function(theme) {
         "entity.name.variable.field.cs",
         "source.css variable",
         "source.stylus variable",
-        "entity.name.type.ts"
+        "entity.name.type.ts",
+        "support.variable.magic.python"
       ],
       settings: {
         foreground: theme.salmon
@@ -206,14 +236,6 @@ module.exports.body = function(theme) {
     }
   ];
   let cs = [
-    {
-      name: "[CS] - Storage modifier",
-      scope: ["storage.modifier.cs", "storage.modifier.ts"],
-      settings: {
-        foreground: theme.turquoize,
-        fontStyle: "italic"
-      }
-    },
     {
       name: "[CS] - Other objects",
       scope: ["variable.other.object.cs", "variable.other.object.property.cs"],
@@ -250,32 +272,7 @@ module.exports.body = function(theme) {
     }
   ];
 
-  let python = [
-    {
-      name: "[PYTHON]",
-      scope: ["storage.type.class", "storage.type.function"],
-      settings: {
-        foreground: theme.turquoize,
-        fontStyle: "italic"
-      }
-    },
-    {
-      name: "[PYTHON] - Self Argument",
-      scope: "variable.parameter.function.language.special.self.python",
-      settings: {
-        foreground: theme.pink
-      }
-    }
-  ];
   let typescript = [
-    {
-      name: "[TYPESCRIPT] - Entity Name Type",
-      scope: "source.ts entity.name.type",
-      settings: {
-        foreground: theme.turquoize
-      }
-    },
-
     {
       name: "[TYPESCRIPT] - Punctuation Arrow Parameters",
       scope: "meta.arrow.ts punctuation.definition.parameters",
@@ -319,6 +316,6 @@ module.exports.body = function(theme) {
     }
   ];
   return Object.assign(
-    [].concat(common, cs, java, elm, javascript, python, typescript)
+    [].concat(common, cs, java, elm, javascript, typescript)
   );
 };

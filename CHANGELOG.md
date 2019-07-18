@@ -16,6 +16,7 @@
 - Improve Vue support
 - Improve TypeScript
 - Improve Go support
+- Improve Python support
 
 ### Fixes
 
