@@ -53,6 +53,16 @@
                 "label": "BeardedTheme Light",
                 "uiTheme": "vs",
                 "path": "./themes/bearded-theme-light.json"
+            },
+            {
+                "label": "BeardedTheme Solarized Light",
+                "uiTheme": "vs",
+                "path": "./themes/bearded-theme-solarized-light.json"
+            },
+            {
+                "label": "BeardedTheme Solarized",
+                "uiTheme": "hc-black",
+                "path": "./themes/bearded-theme-solarized.json"
             }
         ]
     },

@@ -11,7 +11,7 @@ const colors = {
   pink: "#cb55e2",
   purple: "#af6bfd",
   red: "#cf3a3a",
-  salmon: "#e36887",
+  salmon: "#e85a7e",
   transparent: "#00000000",
   turquoize: "#52c7bd",
   yellow: "#e09914"
@@ -78,4 +78,22 @@ makeTheme("light", {
   uibackground: "#ffffff",
   uibackgroundalt: "#f4f4f4",
   default: "#444444"
+});
+
+makeTheme("solarized", {
+  primary: "#078BB7",
+  primaryalt: "#034359",
+  uiborder: "#133E4C",
+  uibackground: "#0d2b35",
+  uibackgroundalt: "#0F313D",
+  default: "#EDFAFF"
+});
+
+makeTheme("solarized-light", {
+  primary: "#A8A190",
+  primaryalt: "#D6CDB8",
+  uiborder: "#E0D9C9",
+  uibackground: "#FCF5E4",
+  uibackgroundalt: "#F2EADA",
+  default: "#244049"
 });

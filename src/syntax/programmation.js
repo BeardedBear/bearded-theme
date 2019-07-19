@@ -133,7 +133,8 @@ module.exports.body = function(theme) {
         "keyword.operator.assignment.js",
         "punctuation.definition.parameters.begin.ts",
         "punctuation.definition.parameters.end.ts",
-        "meta.tag.block.any.html"
+        "meta.tag.block.any.html",
+        "meta.tag.inline.any.html"
       ],
       settings: {
         foreground: theme.default + "71"

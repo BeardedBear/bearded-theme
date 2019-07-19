@@ -1,10 +1,12 @@
 # Changelog for Bearded Theme
 
-## 1.3.0 - 2019-07-17
+## 1.3.0 - 2019-07-19
 
 ### New features
 
 - Publish this changelog (never too late) 🎉
+- Add solarized dark variant
+- Add solarized light variant
 - Add yml support
 - Add xml support
 - Add jsx support
