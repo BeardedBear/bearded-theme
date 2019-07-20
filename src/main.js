@@ -7,7 +7,7 @@ const colors = {
   green: "#4bb46e",
   greenalt: "#99c24e",
   grey: "#808080",
-  orange: "#ff7728",
+  orange: "#de6721",
   pink: "#cb55e2",
   purple: "#af6bfd",
   red: "#cf3a3a",
@@ -17,8 +17,18 @@ const colors = {
   yellow: "#e09914"
 };
 
+const solarizedColors = {
+  yellow: "#b58900",
+  red: "#cb4b16",
+  purple: "#6c71c4",
+  blue: "#268bd2",
+  green: "#859900",
+  turquoize: "#2aa198",
+  salmon: "#d33682"
+};
+
 function makeTheme(name, themeColors) {
-  let theme = Object.assign(themeColors, colors);
+  let theme = Object.assign(colors, themeColors);
   let base = {
     $schema: "vscode://schemas/color-theme",
     name: "BeardedTheme " + name.charAt(0).toUpperCase() + name.slice(1),
@@ -80,20 +90,32 @@ makeTheme("light", {
   default: "#444444"
 });
 
-makeTheme("solarized", {
-  primary: "#078BB7",
-  primaryalt: "#034359",
-  uiborder: "#133E4C",
-  uibackground: "#0d2b35",
-  uibackgroundalt: "#0F313D",
-  default: "#EDFAFF"
-});
+makeTheme(
+  "solarized",
+  Object.assign(
+    {
+      primary: "#078BB7",
+      primaryalt: "#034359",
+      uiborder: "#133E4C",
+      uibackground: "#002b36",
+      uibackgroundalt: "#0F313D",
+      default: "#cedbdb"
+    },
+    solarizedColors
+  )
+);
 
-makeTheme("solarized-light", {
-  primary: "#A8A190",
-  primaryalt: "#D6CDB8",
-  uiborder: "#E0D9C9",
-  uibackground: "#FCF5E4",
-  uibackgroundalt: "#F2EADA",
-  default: "#244049"
-});
+makeTheme(
+  "solarized-light",
+  Object.assign(
+    {
+      primary: "#A8A190",
+      primaryalt: "#D6CDB8",
+      uiborder: "#E0D9C9",
+      uibackground: "#fdf6e3",
+      uibackgroundalt: "#eee8d5",
+      default: "#073642"
+    },
+    solarizedColors
+  )
+);

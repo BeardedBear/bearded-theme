@@ -99,7 +99,7 @@ module.exports.body = function(theme) {
     "editorGutter.deletedBackground": theme.red + "cc",
     "editorGutter.modifiedBackground": theme.blue + "cc",
     "editorLineNumber.foreground": theme.default + "40",
-    "editorLineNumber.activeForeground": theme.default
+    "editorLineNumber.activeForeground": theme.default + "bb"
   };
   let input = {
     "input.background": theme.transparent,
@@ -122,6 +122,7 @@ module.exports.body = function(theme) {
     "list.warningForeground": theme.orange,
     "list.focusForeground": theme.default + "cc",
     "list.highlightForeground": theme.yellow,
+    "list.activeSelectionForeground": theme.default + "cc",
     "list.hoverBackground": theme.grey + "20",
     "list.hoverForeground": theme.default + "cc",
     "list.inactiveSelectionBackground": theme.primary + "38",

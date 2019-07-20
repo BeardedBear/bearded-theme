@@ -8,8 +8,7 @@ module.exports.body = function(theme) {
         "source.ruby",
         "source.shell",
         "source.sql",
-        "source.go",
-        "source.js"
+        "source.go"
       ],
       settings: {
         foreground: theme.default + "cc"
@@ -17,9 +16,13 @@ module.exports.body = function(theme) {
     },
     {
       name: "Class",
-      scope: ["source.ts entity.name.type", "entity.name.type.class.python"],
+      scope: [
+        "source.ts entity.name.type",
+        "entity.name.type.class.python",
+        "source.tsx entity.name.type"
+      ],
       settings: {
-        foreground: theme.turquoize
+        foreground: theme.greenalt
       }
     },
     {
@@ -38,7 +41,8 @@ module.exports.body = function(theme) {
         "entity.name.function.elixir",
         "entity.name.function.go",
         "meta.function-call.python",
-        "entity.name.function.python"
+        "entity.name.function.python",
+        "entity.name.function.tsx"
       ],
       settings: {
         foreground: theme.blue
@@ -56,6 +60,8 @@ module.exports.body = function(theme) {
         "storage.type.elm",
         "support.type.primitive.ts",
         "source.ts meta.type.annotation.ts entity.name.type.ts",
+        "support.type.primitive.tsx",
+        "source.tsx meta.type.annotation.tsx entity.name.type.tsx",
         "source.vue support.class.builtin.js",
         "storage.type.string.go",
         "storage.type.boolean.go",
@@ -109,6 +115,7 @@ module.exports.body = function(theme) {
       scope: [
         "storage.modifier.cs",
         "storage.modifier.ts",
+        "storage.type.class.tsx",
         "storage.type.class",
         "storage.type.function",
         "storage.type.class.python"
@@ -133,8 +140,11 @@ module.exports.body = function(theme) {
         "keyword.operator.assignment.js",
         "punctuation.definition.parameters.begin.ts",
         "punctuation.definition.parameters.end.ts",
+        "punctuation.definition.parameters.begin.tsx",
+        "punctuation.definition.parameters.end.tsx",
         "meta.tag.block.any.html",
-        "meta.tag.inline.any.html"
+        "meta.tag.inline.any.html",
+        "keyword.operator.assignment.tsx"
       ],
       settings: {
         foreground: theme.default + "71"
@@ -188,10 +198,11 @@ module.exports.body = function(theme) {
         "variable.language.this.js",
         "variable.language.this.ts",
         "variable.parameter.function.language.special.self.python",
-        "variable.language.special.self.python"
+        "variable.language.special.self.python",
+        "support.module.elm"
       ],
       settings: {
-        foreground: theme.default + "cc",
+        foreground: theme.orange,
         fontStyle: "italic"
       }
     },
@@ -296,7 +307,7 @@ module.exports.body = function(theme) {
       name: "[ELM] - Accessor",
       scope: ["record.accessor.elm", "entity.name.record.field.accessor.elm"],
       settings: {
-        foreground: theme.red
+        foreground: theme.orange
       }
     },
 

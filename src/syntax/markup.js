@@ -14,7 +14,8 @@ module.exports.body = function(theme) {
         "entity.other.attribute-name.localname.xml",
         "entity.other.attribute-name.xml",
         "entity.other.attribute-name.js",
-        "entity.other.attribute-name.id.html"
+        "entity.other.attribute-name.id.html",
+        "entity.other.attribute-name.tsx"
       ],
       settings: {
         foreground: theme.yellow,
@@ -25,19 +26,22 @@ module.exports.body = function(theme) {
       name: "[HTML] - Entity Name",
       scope: [
         "text.html.basic entity.name",
-        "entity.name.tag.html",
         "punctuation.definition.tag.begin.html",
         "punctuation.definition.tag.end.html",
         "punctuation.definition.tag.xml",
         "punctuation.definition.tag.begin.js",
         "punctuation.definition.tag.end.js",
         "support.class.component.js",
+        "entity.name.tag.html",
         "entity.name.tag.template.html",
         "entity.name.tag.script.html",
         "entity.name.tag.style.html",
         "entity.name.tag.block.any.html",
         "entity.name.tag.other.html",
-        "entity.name.tag.inline.any.html"
+        "entity.name.tag.inline.any.html",
+        "support.class.component.tsx",
+        "punctuation.definition.tag.begin.tsx",
+        "punctuation.definition.tag.end.tsx"
       ],
       settings: {
         foreground: theme.blue

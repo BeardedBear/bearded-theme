@@ -1,5 +1,20 @@
 # Changelog for Bearded Theme
 
+## 1.3.1 - 2019-07-20
+
+### Fixes
+
+- Fix foreground color on list element selection
+- Fix color of externals in Elm
+- Fix weird white HTML character in JS
+- Fix active line number color
+
+### Enhancements
+
+- Improve Tsx support
+- Solarized themes : Better match with official solarized colors
+- Add color for this/self
+
 ## 1.3.0 - 2019-07-19
 
 ### New features
