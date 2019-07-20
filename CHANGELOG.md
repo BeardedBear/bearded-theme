@@ -14,6 +14,7 @@
 - Improve Tsx support
 - Solarized themes : Better match with official solarized colors
 - Add color for this/self
+- Update screeshots with solarized themes
 
 ## 1.3.0 - 2019-07-19
 

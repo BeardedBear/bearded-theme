@@ -51,8 +51,8 @@ module.exports.body = function(theme) {
       scope: [
         "source.css support",
         "source.css entity.name.tag",
-        "meta.property-list.css",
-        "meta.property-list.scss"
+        "source.css meta.property-list.css entity.name.tag.css",
+        "source.css.scss meta.property-list.scss entity.name.tag.css"
       ],
       settings: {
         foreground: theme.blue

@@ -23,7 +23,7 @@
         "dark",
         "elm"
     ],
-    "icon": "icon.png",
+    "icon": "./assets/icon.png",
     "categories": [
         "Themes"
     ],
