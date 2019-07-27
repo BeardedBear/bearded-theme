@@ -26,7 +26,7 @@ module.exports.body = function(theme) {
       }
     },
     {
-      name: "Entity / functions",
+      name: "#functions",
       scope: [
         "source.js entity",
         "source.js support.function",
@@ -42,14 +42,24 @@ module.exports.body = function(theme) {
         "entity.name.function.go",
         "meta.function-call.python",
         "entity.name.function.python",
-        "entity.name.function.tsx"
+        "entity.name.function.tsx",
+        "entity.name.function.ts",
+        "entity.name.function.lua"
       ],
       settings: {
         foreground: theme.blue
       }
     },
     {
-      name: "Type",
+      name: "#functions type",
+      scope: ["storage.type.function", "meta.function.lua keyword"],
+      settings: {
+        foreground: theme.purple,
+        fontStyle: "italic"
+      }
+    },
+    {
+      name: "#Type",
       scope: [
         "source.js storage.type.function",
         "source.php storage.type.function",
@@ -74,7 +84,7 @@ module.exports.body = function(theme) {
       }
     },
     {
-      name: "Import",
+      name: "#Import",
       scope: [
         "keyword.control.import.js",
         "keyword.control.import.elm",
@@ -111,13 +121,12 @@ module.exports.body = function(theme) {
       }
     },
     {
-      name: "Modifier",
+      name: "#Modifier",
       scope: [
         "storage.modifier.cs",
         "storage.modifier.ts",
         "storage.type.class.tsx",
         "storage.type.class",
-        "storage.type.function",
         "storage.type.class.python"
       ],
       settings: {
@@ -126,7 +135,7 @@ module.exports.body = function(theme) {
       }
     },
     {
-      name: "Punctuation",
+      name: "#Punctuation",
       scope: [
         "punctuation",
         "meta.brace",
@@ -144,7 +153,9 @@ module.exports.body = function(theme) {
         "punctuation.definition.parameters.end.tsx",
         "meta.tag.block.any.html",
         "meta.tag.inline.any.html",
-        "keyword.operator.assignment.tsx"
+        "keyword.operator.assignment.tsx",
+        "punctuation.definition.parameters.begin.lua",
+        "punctuation.definition.parameters.end.lua"
       ],
       settings: {
         foreground: theme.default + "71"
@@ -158,7 +169,6 @@ module.exports.body = function(theme) {
         "source.ts storage",
         "storage.type.function.arrow",
         "punctuation.definition.parameters",
-        "storage.type.class",
         "storage.type.function",
         "keyword"
       ],
@@ -307,7 +317,7 @@ module.exports.body = function(theme) {
       name: "[ELM] - Accessor",
       scope: ["record.accessor.elm", "entity.name.record.field.accessor.elm"],
       settings: {
-        foreground: theme.orange
+        foreground: theme.turquoize
       }
     },
 

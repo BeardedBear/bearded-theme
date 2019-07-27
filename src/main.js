@@ -5,7 +5,7 @@ const fs = require("fs");
 const colors = {
   blue: "#3e9dde",
   green: "#4bb46e",
-  greenalt: "#99c24e",
+  greenalt: "#739c28",
   grey: "#808080",
   orange: "#de6721",
   pink: "#cb55e2",
@@ -13,8 +13,8 @@ const colors = {
   red: "#cf3a3a",
   salmon: "#e85a7e",
   transparent: "#00000000",
-  turquoize: "#52c7bd",
-  yellow: "#e09914"
+  turquoize: "#2bada3",
+  yellow: "#d1961f"
 };
 
 const solarizedColors = {
@@ -51,7 +51,7 @@ makeTheme("anthracite", {
   uiborder: "#272c33",
   uibackground: "#17191d",
   uibackgroundalt: "#1b1d22",
-  default: "#FFFFFF"
+  default: "#E9E9E9"
 });
 
 makeTheme("black", {
@@ -60,7 +60,7 @@ makeTheme("black", {
   uiborder: "#191919",
   uibackground: "#0C0C0C",
   uibackgroundalt: "#0F0F0F",
-  default: "#FFFFFF"
+  default: "#E9E9E9"
 });
 
 makeTheme("purple", {
@@ -69,7 +69,7 @@ makeTheme("purple", {
   uiborder: "#2A1D38",
   uibackground: "#130E1A",
   uibackgroundalt: "#16101E",
-  default: "#FFFFFF"
+  default: "#E9E9E9"
 });
 
 makeTheme("blue", {
@@ -78,7 +78,7 @@ makeTheme("blue", {
   uiborder: "#141E30",
   uibackground: "#0B0F19",
   uibackgroundalt: "#0D121E",
-  default: "#FFFFFF"
+  default: "#E9E9E9"
 });
 
 makeTheme("light", {

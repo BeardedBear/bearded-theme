@@ -1,5 +1,14 @@
 # Changelog for Bearded Theme
 
+## 1.3.2 - 2019-07-27
+
+### Enhancements
+
+- Improve ts support
+- Improve lua support
+- Improve elm support
+- Unifying syntax colors
+
 ## 1.3.1 - 2019-07-20
 
 ### Fixes
