@@ -24,8 +24,6 @@ module.exports.body = function(theme) {
       name: "[CSS] - &",
       scope: [
         "entity.name.tag.reference.scss",
-        "keyword.control.at-rule.media.css punctuation",
-        "keyword.control.at-rule.import.scss",
         "entity.other.attribute-name.parent-selector.css punctuation"
       ],
       settings: {

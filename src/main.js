@@ -3,18 +3,18 @@ const ui = require("./ui");
 const fs = require("fs");
 
 const colors = {
-  blue: "#3e9dde",
-  green: "#4bb46e",
-  greenalt: "#739c28",
+  blue: "#4b9cd2",
+  green: "#4db36f",
+  greenalt: "#839f3c",
   grey: "#808080",
-  orange: "#de6721",
-  pink: "#cb55e2",
-  purple: "#af6bfd",
-  red: "#cf3a3a",
-  salmon: "#e85a7e",
+  orange: "#d2692d",
+  pink: "#c360d7",
+  purple: "#b17af0",
+  red: "#c24747",
+  salmon: "#e86687",
   transparent: "#00000000",
-  turquoize: "#2bada3",
-  yellow: "#d1961f"
+  turquoize: "#30a69c",
+  yellow: "#c49137"
 };
 
 const solarizedColors = {
@@ -46,26 +46,26 @@ function makeTheme(name, themeColors) {
 }
 
 makeTheme("anthracite", {
-  primary: "#7E96AD",
-  primaryalt: "#26323D",
+  primary: "#879AB5",
+  primaryalt: "#3B434F",
   uiborder: "#272c33",
   uibackground: "#17191d",
   uibackgroundalt: "#1b1d22",
   default: "#E9E9E9"
 });
 
-makeTheme("black", {
-  primary: "#8C8C8C",
-  primaryalt: "#3D3D3D",
-  uiborder: "#191919",
-  uibackground: "#0C0C0C",
-  uibackgroundalt: "#0F0F0F",
+makeTheme("arc", {
+  primary: "#7F9AC6",
+  primaryalt: "#3C495E",
+  uiborder: "#374154",
+  uibackground: "#232C3A",
+  uibackgroundalt: "#283242",
   default: "#E9E9E9"
 });
 
 makeTheme("purple", {
-  primary: "#8544ff",
-  primaryalt: "#322250",
+  primary: "#8546C9",
+  primaryalt: "#36224C",
   uiborder: "#2A1D38",
   uibackground: "#130E1A",
   uibackgroundalt: "#16101E",
@@ -73,8 +73,8 @@ makeTheme("purple", {
 });
 
 makeTheme("blue", {
-  primary: "#008cff",
-  primaryalt: "#00447c",
+  primary: "#3370E0",
+  primaryalt: "#162C54",
   uiborder: "#141E30",
   uibackground: "#0B0F19",
   uibackgroundalt: "#0D121E",
@@ -94,8 +94,8 @@ makeTheme(
   "solarized",
   Object.assign(
     {
-      primary: "#078BB7",
-      primaryalt: "#034359",
+      primary: "#1C7FA0",
+      primaryalt: "#0E4456",
       uiborder: "#133E4C",
       uibackground: "#002b36",
       uibackgroundalt: "#0F313D",

@@ -21,7 +21,10 @@
         "theme",
         "bear",
         "dark",
-        "elm"
+        "elm",
+        "solarized",
+        "arc",
+        "light"
     ],
     "icon": "icon.png",
     "categories": [
@@ -35,14 +38,14 @@
                 "path": "./themes/bearded-theme-anthracite.json"
             },
             {
+                "label": "BeardedTheme Arc",
+                "uiTheme": "hc-black",
+                "path": "./themes/bearded-theme-arc.json"
+            },
+            {
                 "label": "BeardedTheme Purple",
                 "uiTheme": "hc-black",
                 "path": "./themes/bearded-theme-purple.json"
-            },
-            {
-                "label": "BeardedTheme Black",
-                "uiTheme": "hc-black",
-                "path": "./themes/bearded-theme-black.json"
             },
             {
                 "label": "BeardedTheme Blue",

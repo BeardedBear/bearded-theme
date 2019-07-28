@@ -102,7 +102,7 @@ module.exports.body = function(theme) {
       scope: ["comment", "punctuation.definition.comment"],
       settings: {
         fontStyle: "italic",
-        foreground: theme.default + "3d"
+        foreground: theme.default + "50"
       }
     },
     {
@@ -155,7 +155,9 @@ module.exports.body = function(theme) {
         "meta.tag.inline.any.html",
         "keyword.operator.assignment.tsx",
         "punctuation.definition.parameters.begin.lua",
-        "punctuation.definition.parameters.end.lua"
+        "punctuation.definition.parameters.end.lua",
+        "punctuation.definition.parameters.begin.bracket.round.css",
+        "punctuation.definition.parameters.end.bracket.round.css"
       ],
       settings: {
         foreground: theme.default + "71"

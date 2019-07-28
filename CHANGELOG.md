@@ -1,5 +1,25 @@
 # Changelog for Bearded Theme
 
+## 1.4.0 - 2019-07-28
+
+### New features
+
+- Remove Black variant (Redundant with Anthracite)
+- Add new variant: Arc
+
+### Fixes
+
+- Fix selection background for input
+- Fix wrong at character for css media
+
+### Enhancements
+
+- Improve xml support
+- Improve font color of sidebar titles
+- Slight desaturation of the syntax color
+- Unifying theme colors
+- Update screenshots
+
 ## 1.3.2 - 2019-07-27
 
 ### Enhancements

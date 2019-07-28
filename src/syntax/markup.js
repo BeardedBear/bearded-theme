@@ -41,7 +41,9 @@ module.exports.body = function(theme) {
         "entity.name.tag.inline.any.html",
         "support.class.component.tsx",
         "punctuation.definition.tag.begin.tsx",
-        "punctuation.definition.tag.end.tsx"
+        "punctuation.definition.tag.end.tsx",
+        "entity.name.tag.localname.xml",
+        "entity.name.tag.xml"
       ],
       settings: {
         foreground: theme.blue
