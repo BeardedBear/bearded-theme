@@ -8,7 +8,8 @@ module.exports.body = function(theme) {
         "source.ruby",
         "source.shell",
         "source.sql",
-        "source.go"
+        "source.go",
+        "variable.object.property.ts"
       ],
       settings: {
         foreground: theme.default + "cc"
@@ -44,7 +45,8 @@ module.exports.body = function(theme) {
         "entity.name.function.python",
         "entity.name.function.tsx",
         "entity.name.function.ts",
-        "entity.name.function.lua"
+        "entity.name.function.lua",
+        "variable.language.super.ts"
       ],
       settings: {
         foreground: theme.blue
@@ -52,7 +54,11 @@ module.exports.body = function(theme) {
     },
     {
       name: "#functions type",
-      scope: ["storage.type.function", "meta.function.lua keyword"],
+      scope: [
+        "storage.type.function",
+        "meta.function.lua keyword",
+        "storage.type.function.ts"
+      ],
       settings: {
         foreground: theme.purple,
         fontStyle: "italic"
@@ -77,7 +83,8 @@ module.exports.body = function(theme) {
         "storage.type.boolean.go",
         "storage.type.numeric.go",
         "entity.name.type.go",
-        "support.type.exception.python"
+        "support.type.exception.python",
+        "storage.type.interface.ts"
       ],
       settings: {
         foreground: theme.purple

@@ -245,7 +245,7 @@ module.exports.body = function(theme) {
     "terminal.ansiBlue": theme.blue,
     "terminal.ansiMagenta": theme.pink,
     "terminal.ansiCyan": theme.turquoize,
-    "terminal.ansiWhite": theme.default,
+    "terminal.ansiWhite": theme.default + "cc",
     "terminal.ansiBrightBlack": theme.blue,
     "terminal.ansiBrightRed": theme.red,
     "terminal.ansiBrightGreen": theme.green,
@@ -255,7 +255,7 @@ module.exports.body = function(theme) {
     "terminal.ansiBrightCyan": theme.turquoize,
     "terminal.ansiBrightWhite": theme.primaryalt,
     "terminal.background": theme.uibackground,
-    "terminal.foreground": theme.default,
+    "terminal.foreground": theme.default + "cc",
     "terminalCursor.background": theme.yellow,
     "terminalCursor.foreground": theme.yellow
   };

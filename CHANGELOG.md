@@ -1,5 +1,17 @@
 # Changelog for Bearded Theme
 
+## 1.4.1 - 2019-07-31
+
+### Fixes
+
+- Fix white text for terminal
+- Fix errors style
+
+### Enhancements
+
+- Improve ts support
+- Remove high contrast option
+
 ## 1.4.0 - 2019-07-28
 
 ### New features

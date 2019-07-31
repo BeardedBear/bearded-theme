@@ -3,7 +3,7 @@
     "displayName": "Bearded Theme",
     "description": "The theme with a long beard.",
     "publisher": "BeardedBear",
-    "version": "1.4.0",
+    "version": "1.4.1",
     "engines": {
         "vscode": "^1.35.0"
     },
@@ -34,22 +34,22 @@
         "themes": [
             {
                 "label": "BeardedTheme Anthracite",
-                "uiTheme": "hc-black",
+                "uiTheme": "vs-dark",
                 "path": "./themes/bearded-theme-anthracite.json"
             },
             {
                 "label": "BeardedTheme Arc",
-                "uiTheme": "hc-black",
+                "uiTheme": "vs-dark",
                 "path": "./themes/bearded-theme-arc.json"
             },
             {
                 "label": "BeardedTheme Purple",
-                "uiTheme": "hc-black",
+                "uiTheme": "vs-dark",
                 "path": "./themes/bearded-theme-purple.json"
             },
             {
                 "label": "BeardedTheme Blue",
-                "uiTheme": "hc-black",
+                "uiTheme": "vs-dark",
                 "path": "./themes/bearded-theme-blue.json"
             },
             {
@@ -64,7 +64,7 @@
             },
             {
                 "label": "BeardedTheme Solarized",
-                "uiTheme": "hc-black",
+                "uiTheme": "vs-dark",
                 "path": "./themes/bearded-theme-solarized.json"
             }
         ]
