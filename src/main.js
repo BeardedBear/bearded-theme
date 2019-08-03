@@ -46,7 +46,7 @@ function makeTheme(name, themeColors) {
 }
 
 makeTheme("anthracite", {
-  primary: "#879AB5",
+  primary: "#9dabbf",
   primaryalt: "#3B434F",
   uiborder: "#272c33",
   uibackground: "#17191d",
@@ -55,7 +55,7 @@ makeTheme("anthracite", {
 });
 
 makeTheme("arc", {
-  primary: "#7F9AC6",
+  primary: "#95b0de",
   primaryalt: "#3C495E",
   uiborder: "#374154",
   uibackground: "#232C3A",
@@ -82,7 +82,7 @@ makeTheme("blue", {
 });
 
 makeTheme("light", {
-  primary: "#758ba1",
+  primary: "#798999",
   primaryalt: "#c3d3e0",
   uiborder: "#cccccc",
   uibackground: "#ffffff",
@@ -94,7 +94,7 @@ makeTheme(
   "solarized",
   Object.assign(
     {
-      primary: "#1C7FA0",
+      primary: "#1996bf",
       primaryalt: "#0E4456",
       uiborder: "#133E4C",
       uibackground: "#002b36",
@@ -109,7 +109,7 @@ makeTheme(
   "solarized-light",
   Object.assign(
     {
-      primary: "#A8A190",
+      primary: "#857f71",
       primaryalt: "#D6CDB8",
       uiborder: "#E0D9C9",
       uibackground: "#fdf6e3",

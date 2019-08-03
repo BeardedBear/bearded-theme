@@ -1,5 +1,17 @@
 # Changelog for Bearded Theme
 
+## 1.4.2 - 2019-08-03
+
+### Enhancements
+
+- Improve contrast for primary colors
+- Improve ts and js support
+
+### Fixes
+
+- Fix foreground color on terminal
+- Fix menu separator color
+
 ## 1.4.1 - 2019-07-31
 
 ### Fixes

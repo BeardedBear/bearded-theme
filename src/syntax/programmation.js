@@ -46,7 +46,8 @@ module.exports.body = function(theme) {
         "entity.name.function.tsx",
         "entity.name.function.ts",
         "entity.name.function.lua",
-        "variable.language.super.ts"
+        "variable.language.super.ts",
+        "storage.type.function.python"
       ],
       settings: {
         foreground: theme.blue
@@ -57,10 +58,11 @@ module.exports.body = function(theme) {
       scope: [
         "storage.type.function",
         "meta.function.lua keyword",
-        "storage.type.function.ts"
+        "storage.type.function.ts",
+        "storage.type.function.js"
       ],
       settings: {
-        foreground: theme.purple,
+        foreground: theme.blue,
         fontStyle: "italic"
       }
     },
@@ -84,7 +86,7 @@ module.exports.body = function(theme) {
         "storage.type.numeric.go",
         "entity.name.type.go",
         "support.type.exception.python",
-        "storage.type.interface.ts"
+        "entity.name.type.interface.ts"
       ],
       settings: {
         foreground: theme.purple
@@ -134,7 +136,8 @@ module.exports.body = function(theme) {
         "storage.modifier.ts",
         "storage.type.class.tsx",
         "storage.type.class",
-        "storage.type.class.python"
+        "storage.type.class.python",
+        "keyword.control.export.ts"
       ],
       settings: {
         foreground: theme.turquoize,
