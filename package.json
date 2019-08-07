@@ -3,9 +3,9 @@
     "displayName": "Bearded Theme",
     "description": "The theme with a long beard.",
     "publisher": "BeardedBear",
-    "version": "1.4.2",
+    "version": "1.4.3",
     "engines": {
-        "vscode": "^1.35.0"
+        "vscode": "^1.36.0"
     },
     "repository": {
         "type": "git",
