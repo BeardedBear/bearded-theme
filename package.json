@@ -70,7 +70,7 @@
         ]
     },
     "dependencies": {
-        "node": "^12.6.0",
+        "node": "^12.8.0",
         "nodemon": "^1.19.1"
     },
     "scripts": {
