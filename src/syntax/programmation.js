@@ -12,7 +12,7 @@ module.exports.body = function(theme) {
                 "variable.object.property.ts"
             ],
             settings: {
-                foreground: theme.default + "cc"
+                foreground: theme.default
             }
         },
         {
@@ -20,7 +20,9 @@ module.exports.body = function(theme) {
             scope: [
                 "source.ts entity.name.type",
                 "entity.name.type.class.python",
-                "source.tsx entity.name.type"
+                "source.tsx entity.name.type",
+                "entity.name.type.class.java",
+                "entity.name.type.class.cs"
             ],
             settings: {
                 foreground: theme.greenalt
@@ -47,7 +49,7 @@ module.exports.body = function(theme) {
                 "entity.name.function.ts",
                 "entity.name.function.lua",
                 "variable.language.super.ts",
-                "storage.type.function.python"
+                "entity.name.function.java"
             ],
             settings: {
                 foreground: theme.blue
@@ -55,12 +57,7 @@ module.exports.body = function(theme) {
         },
         {
             name: "#functions type",
-            scope: [
-                "storage.type.function",
-                "meta.function.lua keyword",
-                "storage.type.function.ts",
-                "storage.type.function.js"
-            ],
+            scope: ["storage.type.function", "meta.function.lua keyword"],
             settings: {
                 foreground: theme.blue,
                 fontStyle: "italic"
@@ -108,10 +105,16 @@ module.exports.body = function(theme) {
         },
         {
             name: "Comment",
-            scope: ["comment", "punctuation.definition.comment"],
+            scope: [
+                "comment",
+                "punctuation.definition.comment",
+                "string.quoted.docstring.multi.python",
+                "punctuation.definition.string.begin.python",
+                "punctuation.definition.string.end.python"
+            ],
             settings: {
                 fontStyle: "italic",
-                foreground: theme.default + "50"
+                foreground: theme.default + "70"
             }
         },
         {
@@ -126,7 +129,7 @@ module.exports.body = function(theme) {
             name: "Meta Brace",
             scope: ["meta.brace", "source.js meta"],
             settings: {
-                foreground: theme.default + "cc"
+                foreground: theme.default
             }
         },
         {
@@ -137,7 +140,12 @@ module.exports.body = function(theme) {
                 "storage.type.class.tsx",
                 "storage.type.class",
                 "storage.type.class.python",
-                "keyword.control.export.ts"
+                "keyword.control.export.ts",
+                "storage.type.function.ts",
+                "storage.type.function.js",
+                "storage.type.function.python",
+                "keyword.function.go",
+                "storage.type.function.php"
             ],
             settings: {
                 foreground: theme.turquoize,
@@ -167,10 +175,13 @@ module.exports.body = function(theme) {
                 "punctuation.definition.parameters.begin.lua",
                 "punctuation.definition.parameters.end.lua",
                 "punctuation.definition.parameters.begin.bracket.round.css",
-                "punctuation.definition.parameters.end.bracket.round.css"
+                "punctuation.definition.parameters.end.bracket.round.css",
+                "punctuation.definition.variable.php",
+                "punctuation.definition.parameters.begin.bracket.round.java",
+                "punctuation.definition.parameters.end.bracket.round.java"
             ],
             settings: {
-                foreground: theme.default + "71"
+                foreground: theme.default + "aa"
             }
         },
 
@@ -182,7 +193,8 @@ module.exports.body = function(theme) {
                 "storage.type.function.arrow",
                 "punctuation.definition.parameters",
                 "storage.type.function",
-                "keyword"
+                "keyword",
+                "support.function.construct.output.php"
             ],
             settings: {
                 foreground: theme.yellow
@@ -225,7 +237,10 @@ module.exports.body = function(theme) {
                 "variable.language.this.ts",
                 "variable.parameter.function.language.special.self.python",
                 "variable.language.special.self.python",
-                "support.module.elm"
+                "support.module.elm",
+                "variable.other.object.java",
+                "variable.other.object.cs",
+                "entity.other.inherited-class.python"
             ],
             settings: {
                 foreground: theme.orange,
@@ -236,14 +251,14 @@ module.exports.body = function(theme) {
             name: "Support",
             scope: "support",
             settings: {
-                foreground: theme.default + "cc"
+                foreground: theme.default
             }
         },
         {
             name: "Support Variable Property DOM",
             scope: "support.variable.property.dom",
             settings: {
-                foreground: theme.default + "cc"
+                foreground: theme.default
             }
         },
         {
@@ -251,7 +266,6 @@ module.exports.body = function(theme) {
             scope: [
                 "variable",
                 "punctuation.definition.variable.less",
-                "punctuation.definition.variable.php",
                 "variable.language",
                 "entity.name.type.class.js",
                 "entity.name.variable.property.cs",
@@ -259,7 +273,9 @@ module.exports.body = function(theme) {
                 "source.css variable",
                 "source.stylus variable",
                 "entity.name.type.ts",
-                "support.variable.magic.python"
+                "support.variable.magic.python",
+                "meta.method.body.java",
+                "entity.name.variable.local.cs"
             ],
             settings: {
                 foreground: theme.salmon
@@ -267,7 +283,11 @@ module.exports.body = function(theme) {
         },
         {
             name: "Constant",
-            scope: "constant",
+            scope: [
+                "constant",
+                "punctuation.section.embedded.begin.php",
+                "punctuation.section.embedded.end.php"
+            ],
             settings: {
                 foreground: theme.red
             }
@@ -277,8 +297,9 @@ module.exports.body = function(theme) {
         {
             name: "[CS] - Other objects",
             scope: [
-                "variable.other.object.cs",
-                "variable.other.object.property.cs"
+                "variable.other.object.property.cs",
+                "variable.other.global.safer.php",
+                "variable.other.global.php"
             ],
             settings: {
                 foreground: theme.orange
@@ -292,13 +313,6 @@ module.exports.body = function(theme) {
             settings: {
                 foreground: theme.turquoize,
                 fontStyle: "italic"
-            }
-        },
-        {
-            name: "[JAVA] - Other object",
-            scope: ["variable.other.object.java"],
-            settings: {
-                foreground: theme.orange
             }
         }
     ];
@@ -327,7 +341,7 @@ module.exports.body = function(theme) {
             scope:
                 "entity.other.inherited-class.ts, entity.other.inherited-class.tsx",
             settings: {
-                foreground: theme.default + "cc"
+                foreground: theme.default
             }
         }
     ];
@@ -355,7 +369,7 @@ module.exports.body = function(theme) {
             name: "[ELM] - Meta",
             scope: ["source.elm meta"],
             settings: {
-                foreground: theme.default + "cc"
+                foreground: theme.default
             }
         }
     ];

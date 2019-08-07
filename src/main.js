@@ -51,7 +51,7 @@ makeTheme("anthracite", {
     uiborder: "#272c33",
     uibackground: "#17191d",
     uibackgroundalt: "#1b1d22",
-    default: "#E9E9E9"
+    default: "#bbbbbb"
 });
 
 makeTheme("arc", {
@@ -60,7 +60,7 @@ makeTheme("arc", {
     uiborder: "#374154",
     uibackground: "#232C3A",
     uibackgroundalt: "#283242",
-    default: "#E9E9E9"
+    default: "#bbbbbb"
 });
 
 makeTheme("purple", {
@@ -69,7 +69,7 @@ makeTheme("purple", {
     uiborder: "#2A1D38",
     uibackground: "#130E1A",
     uibackgroundalt: "#16101E",
-    default: "#E9E9E9"
+    default: "#bbbbbb"
 });
 
 makeTheme("blue", {
@@ -78,7 +78,7 @@ makeTheme("blue", {
     uiborder: "#141E30",
     uibackground: "#0B0F19",
     uibackgroundalt: "#0D121E",
-    default: "#E9E9E9"
+    default: "#bbbbbb"
 });
 
 makeTheme("light", {

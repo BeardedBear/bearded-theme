@@ -64,7 +64,7 @@ module.exports.body = function(theme) {
                 "constant.numeric.css keyword"
             ],
             settings: {
-                foreground: theme.default + "cc"
+                foreground: theme.default
             }
         }
     ];

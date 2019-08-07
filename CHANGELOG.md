@@ -1,14 +1,15 @@
 # Changelog for Bearded Theme
 
-## 1.4.2 - 2019-08-????????????????
+## 1.4.3 - 2019-08-????????????????
 
-<!-- todo -->
+### Enhancements
 
-- fix blanc terminal
-- function color
-  @gen.coroutine
-  entity.name.function.decorator.python
-  punctuation.separator.period.python
+- Unifying foreground color with terminal
+- Improve php support
+- Improve java support
+- Improve python support
+- Improve cs support
+- Change color for function keyword
 
 ### Fixes
 

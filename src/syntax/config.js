@@ -4,7 +4,7 @@ module.exports.body = function(theme) {
             name: "[INI] - Entity",
             scope: "source.ini entity",
             settings: {
-                foreground: theme.default + "cc"
+                foreground: theme.default
             }
         },
         {

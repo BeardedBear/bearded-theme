@@ -34,7 +34,7 @@ module.exports.body = function(theme) {
         contrastBorder: theme.primary + "50",
         errorForeground: theme.red,
         focusBorder: theme.primary + "aa",
-        foreground: theme.default + "cc",
+        foreground: theme.default,
         "selection.background": theme.default + "80",
         "widget.shadow": theme.transparent
     };
@@ -45,7 +45,7 @@ module.exports.body = function(theme) {
         // "debugToolBar.border": "#ff0000",
     };
     let description = {
-        descriptionForeground: theme.default + "cc"
+        descriptionForeground: theme.default
     };
     let diff = {
         "diffEditor.border": theme.uiborder,
@@ -66,7 +66,7 @@ module.exports.body = function(theme) {
         "editor.findMatchBorder": theme.primary,
         "editor.findMatchHighlightBackground": theme.yellow + "50",
         "editor.findMatchHighlightBorder": theme.yellow,
-        "editor.foreground": theme.default + "cc",
+        "editor.foreground": theme.default,
         "editor.hoverHighlightBackground": theme.primary + "50",
         "editor.lineHighlightBackground": theme.primary + "0c",
         "editor.lineHighlightBorder": theme.primary + "1a",
@@ -83,7 +83,7 @@ module.exports.body = function(theme) {
         // "editor.wordHighlightStrongBorder": "#ff0000",
         "editorBracketMatch.background": theme.primary + "5d",
         "editorBracketMatch.border": theme.primary + "96",
-        "editorCodeLens.foreground": theme.default + "cc",
+        "editorCodeLens.foreground": theme.default,
         "editorCursor.foreground": theme.yellow,
         // "editorCursor.background": "#ff0000",
         "editorGroup.border": theme.uiborder,
@@ -94,7 +94,7 @@ module.exports.body = function(theme) {
         "editorHoverWidget.border": theme.uiborder,
         // "editorHoverWidget.statusBarBackground": "#ff0000",
         "editorIndentGuide.background": theme.default + "0e",
-        "editorLink.activeForeground": theme.default + "cc",
+        "editorLink.activeForeground": theme.default,
         "editorWarning.border": theme.transparent
         // "editor.findRangeHighlightBackground": "#ff0000",
         // "editor.findRangeHighlightBorder": "#ff0000",
@@ -165,7 +165,7 @@ module.exports.body = function(theme) {
         "input.background": theme.transparent,
         "input.foreground": theme.default,
         "input.border": theme.grey + "aa",
-        "input.placeholderForeground": theme.default + "cc",
+        "input.placeholderForeground": theme.default,
         "inputOption.activeBorder": theme.primary,
         "inputValidation.errorBackground": theme.primaryalt,
         "inputValidation.errorBorder": theme.yellow,
@@ -185,11 +185,11 @@ module.exports.body = function(theme) {
         "list.focusBackground": theme.primary + "38",
         "list.errorForeground": theme.red,
         "list.warningForeground": theme.orange,
-        "list.focusForeground": theme.default + "cc",
+        "list.focusForeground": theme.default,
         "list.highlightForeground": theme.yellow,
-        "list.activeSelectionForeground": theme.default + "cc",
+        "list.activeSelectionForeground": theme.default,
         "list.hoverBackground": theme.grey + "20",
-        "list.hoverForeground": theme.default + "cc",
+        "list.hoverForeground": theme.default,
         "list.inactiveSelectionBackground": theme.primary + "38",
         // "list.inactiveFocusBackground": "#ff0000",
         // "list.inactiveSelectionForeground": "#ff0000",
@@ -231,10 +231,10 @@ module.exports.body = function(theme) {
         "editorOverviewRuler.incomingContentForeground": theme.green
     };
     let notification = {
-        "notificationCenterHeader.foreground": theme.default + "cc",
+        "notificationCenterHeader.foreground": theme.default,
         "notificationCenterHeader.background": theme.primaryalt,
         // "notificationCenter.border": "#ff0000",
-        "notifications.foreground": theme.default + "cc",
+        "notifications.foreground": theme.default,
         "notifications.background": theme.primaryalt,
         "notifications.border": theme.primary + "50",
         "notificationLink.foreground": theme.yellow
@@ -255,19 +255,19 @@ module.exports.body = function(theme) {
         "peekViewEditor.matchHighlightBackground": theme.primaryalt + "40",
         // "peekViewEditor.matchHighlightBorder": "#ff0000",
         "peekViewResult.background": theme.primaryalt + "40",
-        "peekViewResult.fileForeground": theme.default + "cc",
-        "peekViewResult.lineForeground": theme.default + "cc",
+        "peekViewResult.fileForeground": theme.default,
+        "peekViewResult.lineForeground": theme.default,
         "peekViewResult.matchHighlightBackground": theme.primaryalt,
         "peekViewResult.selectionBackground": theme.primaryalt,
-        "peekViewResult.selectionForeground": theme.default + "cc",
+        "peekViewResult.selectionForeground": theme.default,
         "peekViewTitle.background": theme.uiborder,
-        "peekViewTitleDescription.foreground": theme.default + "cc",
+        "peekViewTitleDescription.foreground": theme.default,
         "peekViewTitleLabel.foreground": theme.uiborder,
         "peekViewEditorGutter.background": theme.primaryalt + "40"
     };
     let picker = {
         "pickerGroup.border": theme.uiborder,
-        "pickerGroup.foreground": theme.default + "cc"
+        "pickerGroup.foreground": theme.default
     };
     let progressbar = {
         "progressBar.background": theme.yellow
@@ -298,7 +298,7 @@ module.exports.body = function(theme) {
     let sidebar = {
         "sideBar.background": theme.uibackgroundalt,
         "sideBar.border": theme.transparent,
-        "sideBar.foreground": theme.default + "cc",
+        "sideBar.foreground": theme.default,
         // "sideBar.dropBackground": "#ff0000",
         "sideBarSectionHeader.background": theme.grey + "20",
         "sideBarSectionHeader.foreground": theme.default + "80",
@@ -312,10 +312,10 @@ module.exports.body = function(theme) {
         "statusBar.debuggingBackground": theme.primary + "44",
         "statusBar.debuggingBorder": theme.primary,
         "statusBar.debuggingForeground": theme.default,
-        "statusBar.foreground": theme.default + "cc",
+        "statusBar.foreground": theme.default,
         "statusBar.noFolderBackground": theme.uiborder,
         "statusBar.noFolderBorder": theme.primary,
-        "statusBar.noFolderForeground": theme.default + "cc",
+        "statusBar.noFolderForeground": theme.default,
 
         "statusBarItem.activeBackground": theme.primaryalt,
         "statusBarItem.hoverBackground": theme.default + "15",
@@ -328,7 +328,7 @@ module.exports.body = function(theme) {
     let suggest = {
         "editorSuggestWidget.background": theme.uibackground,
         "editorSuggestWidget.border": theme.uiborder,
-        "editorSuggestWidget.foreground": theme.default + "cc",
+        "editorSuggestWidget.foreground": theme.default,
         "editorSuggestWidget.highlightForeground": theme.yellow,
         "editorSuggestWidget.selectedBackground": theme.primary + "4d"
     };
@@ -349,8 +349,8 @@ module.exports.body = function(theme) {
         "tab.inactiveBackground": theme.uibackground,
         "tab.inactiveForeground": theme.default + "71",
         // "tab.inactiveModifiedBorder": "#ff0000",
-        "tab.unfocusedActiveForeground": theme.default + "cc",
-        "tab.unfocusedInactiveForeground": theme.default + "cc"
+        "tab.unfocusedActiveForeground": theme.default,
+        "tab.unfocusedInactiveForeground": theme.default
         // "tab.unfocusedActiveBackground": "#ff0000",
         // "tab.unfocusedActiveBorder": "#ff0000",
         // "tab.unfocusedActiveBorderTop": "#ff0000",

@@ -4,7 +4,7 @@ module.exports.body = function(theme) {
             name: "[HTML] - Text",
             scope: ["text.html.derivative"],
             settings: {
-                foreground: theme.default + "cc"
+                foreground: theme.default
             }
         },
         {
@@ -116,7 +116,7 @@ module.exports.body = function(theme) {
             name: "[MARKDOWN] - Paragraph",
             scope: "meta.paragraph.markdown",
             settings: {
-                foreground: theme.default + "cc"
+                foreground: theme.default
             }
         },
         {
