@@ -201,7 +201,8 @@ module.exports.body = function(theme) {
                 "punctuation.definition.string.begin",
                 "punctuation.definition.string.end",
                 "source.css string",
-                "source.css punctuation.definition.string"
+                "source.css punctuation.definition.string",
+                "meta.toc-list.id.html"
             ],
             settings: {
                 foreground: theme.green

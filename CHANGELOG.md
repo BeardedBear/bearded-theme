@@ -1,5 +1,19 @@
 # Changelog for Bearded Theme
 
+## 1.4.2 - 2019-08-????????????????
+
+<!-- todo -->
+
+- fix blanc terminal
+- function color
+  @gen.coroutine
+  entity.name.function.decorator.python
+  punctuation.separator.period.python
+
+### Fixes
+
+- Fix wrong id string color for VueJS
+
 ## 1.4.2 - 2019-08-03
 
 ### Enhancements
