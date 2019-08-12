@@ -1,6 +1,12 @@
 # Changelog for Bearded Theme
 
-## 1.4.3 - 2019-08-8
+## 1.5.0 - 2019-08-12
+
+### New features
+
+- Add vivid variant !
+
+## 1.4.3 - 2019-08-08
 
 ### Enhancements
 
