@@ -5,6 +5,11 @@
 ### New features
 
 - Add pug support
+- Add liquid support
+
+### Enhancements
+
+- Unifying class and id color with markup languages
 
 ## 1.5.0 - 2019-08-12
 

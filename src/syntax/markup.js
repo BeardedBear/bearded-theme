@@ -1,6 +1,13 @@
 module.exports.body = function(theme) {
     let html = [
         {
+            name: "[HTML] - Variable",
+            scope: ["support.variable.liquid", "support.class.liquid"],
+            settings: {
+                foreground: theme.salmon
+            }
+        },
+        {
             name: "[HTML] - Text",
             scope: ["text.html.derivative"],
             settings: {
@@ -22,7 +29,8 @@ module.exports.body = function(theme) {
                 "entity.other.attribute-name.xml",
                 "entity.other.attribute-name.js",
                 "entity.other.attribute-name.id.html",
-                "entity.other.attribute-name.tsx"
+                "entity.other.attribute-name.tsx",
+                "entity.name.tag.liquid"
             ],
             settings: {
                 foreground: theme.yellow,

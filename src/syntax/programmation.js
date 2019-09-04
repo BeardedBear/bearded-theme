@@ -10,7 +10,9 @@ module.exports.body = function(theme) {
                 "source.sql",
                 "source.go",
                 "variable.object.property.ts",
-                "text.pug"
+                "text.pug",
+                "constant.character.entity.named.nbsp.html",
+                "constant.character.entity.named.bull.html"
             ],
             settings: {
                 foreground: theme.default
@@ -186,7 +188,8 @@ module.exports.body = function(theme) {
                 "punctuation.definition.parameters.begin.js",
                 "punctuation.definition.parameters.end.js",
                 "string.interpolated.pug",
-                "attribute_value"
+                "attribute_value",
+                "keyword.other.whitespace.liquid"
             ],
             settings: {
                 foreground: theme.default + "aa"
