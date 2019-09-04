@@ -1,6 +1,16 @@
 module.exports.body = function(theme) {
     let css = [
         {
+            name: "azdazd",
+            scope: [
+                "entity.name.tag.reference.scss",
+                "punctuation.definition.keyword.scss"
+            ],
+            settings: {
+                foreground: theme.orange
+            }
+        },
+        {
             name: "[CSS] - pseudo",
             scope: [
                 "entity.other.attribute-name.pseudo-class.css",
@@ -14,32 +24,21 @@ module.exports.body = function(theme) {
             name: "[CSS] - Class",
             scope: [
                 "entity.other.attribute-name.class.css",
-                "entity.other.attribute-name.parent-selector-suffix.css punctuation"
+                "entity.other.attribute-name.parent-selector-suffix.css punctuation",
+                "entity.other.attribute-name.class.pug",
+                "meta.property-list.scss"
             ],
             settings: {
-                foreground: theme.green
+                foreground: theme.turquoize
             }
         },
-        {
-            name: "[CSS] - &",
-            scope: [
-                "entity.name.tag.reference.scss",
-                "entity.other.attribute-name.parent-selector.css punctuation"
-            ],
-            settings: {
-                foreground: theme.orange
-            }
-        },
+
         {
             name: "[CSS] - ID Selector",
-            scope: "entity.other.attribute-name.id.css",
-            settings: {
-                foreground: theme.yellow
-            }
-        },
-        {
-            name: "[CSS] - Element Selector",
-            scope: ["entity.name.tag.css"],
+            scope: [
+                "entity.other.attribute-name.id.css",
+                "entity.other.attribute-name.id.pug"
+            ],
             settings: {
                 foreground: theme.purple
             }

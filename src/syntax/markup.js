@@ -8,6 +8,13 @@ module.exports.body = function(theme) {
             }
         },
         {
+            name: "[HTML] - Import",
+            scope: ["variable.control.import.include.pug"],
+            settings: {
+                foreground: theme.orange
+            }
+        },
+        {
             name: "[HTML] - Attribute",
             scope: [
                 "entity.other.attribute-name.html",
@@ -43,7 +50,8 @@ module.exports.body = function(theme) {
                 "punctuation.definition.tag.begin.tsx",
                 "punctuation.definition.tag.end.tsx",
                 "entity.name.tag.localname.xml",
-                "entity.name.tag.xml"
+                "entity.name.tag.xml",
+                "entity.name.tag.pug"
             ],
             settings: {
                 foreground: theme.blue
@@ -58,16 +66,13 @@ module.exports.body = function(theme) {
         },
         {
             name: "[HTML] - Entity Other",
-            scope: "text.html.basic entity.other",
+            scope: [
+                "text.html.basic entity.other",
+                "entity.other.attribute-name.tag.pug",
+                "meta.tag.metadata.script.html entity.name.tag.html"
+            ],
             settings: {
                 fontStyle: "italic",
-                foreground: theme.yellow
-            }
-        },
-        {
-            name: "[HTML] - Script Tag",
-            scope: "meta.tag.metadata.script.html entity.name.tag.html",
-            settings: {
                 foreground: theme.yellow
             }
         }

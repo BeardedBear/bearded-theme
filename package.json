@@ -1,86 +1,86 @@
 {
-    "name": "beardedtheme",
-    "displayName": "Bearded Theme",
-    "description": "The theme with a long beard.",
-    "publisher": "BeardedBear",
-    "version": "1.5.0",
-    "engines": {
-        "vscode": "^1.36.0"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/BeardedBear/bearded-theme"
-    },
-    "bugs": {
-        "url": "https://github.com/BeardedBear/bearded-theme/issues",
-        "email": "germain.poirrier@gmail.com"
-    },
-    "homepage": "https://github.com/BeardedBear/bearded-theme",
-    "keywords": [
-        "bearded",
-        "theme",
-        "bear",
-        "dark",
-        "elm",
-        "solarized",
-        "arc",
-        "light"
-    ],
-    "icon": "icon.png",
-    "categories": [
-        "Themes"
-    ],
-    "contributes": {
-        "themes": [
-            {
-                "label": "BeardedTheme Vivid",
-                "uiTheme": "vs-dark",
-                "path": "./themes/bearded-theme-vivid.json"
-            },
-            {
-                "label": "BeardedTheme Anthracite",
-                "uiTheme": "vs-dark",
-                "path": "./themes/bearded-theme-anthracite.json"
-            },
-            {
-                "label": "BeardedTheme Arc",
-                "uiTheme": "vs-dark",
-                "path": "./themes/bearded-theme-arc.json"
-            },
-            {
-                "label": "BeardedTheme Purple",
-                "uiTheme": "vs-dark",
-                "path": "./themes/bearded-theme-purple.json"
-            },
-            {
-                "label": "BeardedTheme Blue",
-                "uiTheme": "vs-dark",
-                "path": "./themes/bearded-theme-blue.json"
-            },
-            {
-                "label": "BeardedTheme Light",
-                "uiTheme": "vs",
-                "path": "./themes/bearded-theme-light.json"
-            },
-            {
-                "label": "BeardedTheme Solarized Light",
-                "uiTheme": "vs",
-                "path": "./themes/bearded-theme-solarized-light.json"
-            },
-            {
-                "label": "BeardedTheme Solarized",
-                "uiTheme": "vs-dark",
-                "path": "./themes/bearded-theme-solarized.json"
-            }
-        ]
-    },
-    "dependencies": {
-        "node": "^12.8.0",
-        "nodemon": "^1.19.1",
-        "eslint": "^6.1.0"
-    },
-    "scripts": {
-        "build": "node ./src/main.js",
-        "watch": "nodemon -L ./src/main.js"
-    }
+  "name": "beardedtheme",
+  "displayName": "Bearded Theme",
+  "description": "The theme with a long beard.",
+  "publisher": "BeardedBear",
+  "version": "1.6.0",
+  "engines": {
+    "vscode": "^1.36.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BeardedBear/bearded-theme"
+  },
+  "bugs": {
+    "url": "https://github.com/BeardedBear/bearded-theme/issues",
+    "email": "germain.poirrier@gmail.com"
+  },
+  "homepage": "https://github.com/BeardedBear/bearded-theme",
+  "keywords": [
+    "bearded",
+    "theme",
+    "bear",
+    "dark",
+    "elm",
+    "solarized",
+    "arc",
+    "light"
+  ],
+  "icon": "icon.png",
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "BeardedTheme Vivid",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-vivid.json"
+      },
+      {
+        "label": "BeardedTheme Anthracite",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-anthracite.json"
+      },
+      {
+        "label": "BeardedTheme Arc",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-arc.json"
+      },
+      {
+        "label": "BeardedTheme Purple",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-purple.json"
+      },
+      {
+        "label": "BeardedTheme Blue",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-blue.json"
+      },
+      {
+        "label": "BeardedTheme Light",
+        "uiTheme": "vs",
+        "path": "./themes/bearded-theme-light.json"
+      },
+      {
+        "label": "BeardedTheme Solarized Light",
+        "uiTheme": "vs",
+        "path": "./themes/bearded-theme-solarized-light.json"
+      },
+      {
+        "label": "BeardedTheme Solarized",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-solarized.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "node": "^12.8.0",
+    "nodemon": "^1.19.1",
+    "eslint": "^6.1.0"
+  },
+  "scripts": {
+    "build": "node ./src/main.js",
+    "watch": "nodemon -L ./src/main.js"
+  }
 }

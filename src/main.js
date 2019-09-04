@@ -16,6 +16,7 @@ const colors = {
     turquoize: "#30a69c",
     yellow: "#c49137"
 };
+
 const vividColors = {
     blue: "#7dcbff",
     green: "#6ade91",

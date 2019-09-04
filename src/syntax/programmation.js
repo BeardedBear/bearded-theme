@@ -9,7 +9,8 @@ module.exports.body = function(theme) {
                 "source.shell",
                 "source.sql",
                 "source.go",
-                "variable.object.property.ts"
+                "variable.object.property.ts",
+                "text.pug"
             ],
             settings: {
                 foreground: theme.default
@@ -49,7 +50,9 @@ module.exports.body = function(theme) {
                 "entity.name.function.ts",
                 "entity.name.function.lua",
                 "variable.language.super.ts",
-                "entity.name.function.java"
+                "entity.name.function.java",
+                "entity.name.function.pug",
+                "entity.name.function.js"
             ],
             settings: {
                 foreground: theme.blue
@@ -178,7 +181,12 @@ module.exports.body = function(theme) {
                 "punctuation.definition.parameters.end.bracket.round.css",
                 "punctuation.definition.variable.php",
                 "punctuation.definition.parameters.begin.bracket.round.java",
-                "punctuation.definition.parameters.end.bracket.round.java"
+                "punctuation.definition.parameters.end.bracket.round.java",
+                "constant.name.attribute.tag.pug",
+                "punctuation.definition.parameters.begin.js",
+                "punctuation.definition.parameters.end.js",
+                "string.interpolated.pug",
+                "attribute_value"
             ],
             settings: {
                 foreground: theme.default + "aa"

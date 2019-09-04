@@ -1,5 +1,11 @@
 # Changelog for Bearded Theme
 
+## 1.6.0 - 2019-09-04
+
+### New features
+
+- Add pug support
+
 ## 1.5.0 - 2019-08-12
 
 ### New features
