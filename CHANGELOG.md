@@ -1,5 +1,11 @@
 # Changelog for Bearded Theme
 
+## 1.6.1 - 2019-09-12
+
+### Fixes
+
+- Fix merge background color [[Issue]](https://github.com/BeardedBear/bearded-theme/issues/3)
+
 ## 1.6.0 - 2019-09-04
 
 ### New features

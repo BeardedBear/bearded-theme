@@ -51,13 +51,9 @@ function makeTheme(name, themeColors) {
         tokenColors: syntax.body(theme)
     };
 
-    fs.writeFile(
-        "themes/bearded-theme-" + name + ".json",
-        JSON.stringify(base),
-        err => {
-            if (err) console.log("error", err);
-        }
-    );
+    fs.writeFile("themes/bearded-theme-" + name + ".json", JSON.stringify(base), err => {
+        if (err) console.log("error", err);
+    });
 }
 
 makeTheme(
