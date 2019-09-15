@@ -2,60 +2,21 @@ module.exports.body = function(theme) {
     let common = [
         {
             name: "Current text",
-            scope: [
-                "source.python",
-                "source.perl",
-                "source.ruby",
-                "source.shell",
-                "source.sql",
-                "source.go",
-                "variable.object.property.ts",
-                "text.pug",
-                "constant.character.entity.named.nbsp.html",
-                "constant.character.entity.named.bull.html"
-            ],
+            scope: ["source.python", "source.perl", "source.ruby", "source.shell", "source.sql", "source.go", "variable.object.property.ts", "text.pug", "constant.character.entity.named.nbsp.html", "constant.character.entity.named.bull.html"],
             settings: {
                 foreground: theme.default
             }
         },
         {
             name: "Class",
-            scope: [
-                "source.ts entity.name.type",
-                "entity.name.type.class.python",
-                "source.tsx entity.name.type",
-                "entity.name.type.class.java",
-                "entity.name.type.class.cs"
-            ],
+            scope: ["source.ts entity.name.type", "entity.name.type.class.python", "source.tsx entity.name.type", "entity.name.type.class.java", "entity.name.type.class.cs"],
             settings: {
                 foreground: theme.greenalt
             }
         },
         {
             name: "#functions",
-            scope: [
-                "source.js entity",
-                "source.js support.function",
-                "source.php entity",
-                "source.php support.function",
-                "entity.name.function.cs",
-                "meta.function.type-declaration.elm entity",
-                "entity.name.function.top_level.elm",
-                "support.function",
-                "entity.name.function.ts",
-                "meta.function-call.js support",
-                "entity.name.function.elixir",
-                "entity.name.function.go",
-                "meta.function-call.python",
-                "entity.name.function.python",
-                "entity.name.function.tsx",
-                "entity.name.function.ts",
-                "entity.name.function.lua",
-                "variable.language.super.ts",
-                "entity.name.function.java",
-                "entity.name.function.pug",
-                "entity.name.function.js"
-            ],
+            scope: ["source.js entity", "source.js support.function", "source.php entity", "source.php support.function", "entity.name.function.cs", "meta.function.type-declaration.elm entity", "entity.name.function.top_level.elm", "support.function", "entity.name.function.ts", "meta.function-call.js support", "entity.name.function.elixir", "entity.name.function.go", "meta.function-call.python", "entity.name.function.python", "entity.name.function.tsx", "entity.name.function.ts", "entity.name.function.lua", "variable.language.super.ts", "entity.name.function.java", "entity.name.function.pug", "entity.name.function.js"],
             settings: {
                 foreground: theme.blue
             }
@@ -70,56 +31,16 @@ module.exports.body = function(theme) {
         },
         {
             name: "#Type",
-            scope: [
-                "source.js storage.type.function",
-                "source.php storage.type.function",
-                "source.java storage",
-                "keyword.type.cs",
-                "storage.type.cs",
-                "meta.function.type-declaration.elm storage",
-                "storage.type.elm",
-                "support.type.primitive.ts",
-                "source.ts meta.type.annotation.ts entity.name.type.ts",
-                "support.type.primitive.tsx",
-                "source.tsx meta.type.annotation.tsx entity.name.type.tsx",
-                "source.vue support.class.builtin.js",
-                "storage.type.string.go",
-                "storage.type.boolean.go",
-                "storage.type.numeric.go",
-                "entity.name.type.go",
-                "support.type.exception.python",
-                "entity.name.type.interface.ts"
-            ],
+            scope: ["source.js storage.type.function", "source.php storage.type.function", "source.java storage", "keyword.type.cs", "storage.type.cs", "meta.function.type-declaration.elm storage", "storage.type.elm", "support.type.primitive.ts", "source.ts meta.type.annotation.ts entity.name.type.ts", "support.type.primitive.tsx", "source.tsx meta.type.annotation.tsx entity.name.type.tsx", "source.vue support.class.builtin.js", "storage.type.string.go", "storage.type.boolean.go", "storage.type.numeric.go", "entity.name.type.go", "support.type.exception.python", "entity.name.type.interface.ts", "support.type.python"],
             settings: {
                 foreground: theme.purple
             }
         },
         {
             name: "#Import",
-            scope: [
-                "keyword.control.import.js",
-                "keyword.control.import.elm",
-                "keyword.other.elm",
-                "meta.module.name.elm support",
-                "meta.import.elm support",
-                "keyword.control.import.ts"
-            ],
+            scope: ["keyword.control.import.js", "keyword.control.import.elm", "keyword.other.elm", "meta.module.name.elm support", "meta.import.elm support", "keyword.control.import.ts"],
             settings: {
                 foreground: theme.yellow
-            }
-        },
-        {
-            name: "Comment",
-            scope: [
-                "comment",
-                "punctuation.definition.comment",
-                "string.quoted.docstring.multi.python",
-                "punctuation.definition.string.begin.python",
-                "punctuation.definition.string.end.python"
-            ],
-            settings: {
-                fontStyle: "italic",
-                foreground: theme.default + "70"
             }
         },
         {
@@ -139,24 +60,20 @@ module.exports.body = function(theme) {
         },
         {
             name: "#Modifier",
-            scope: [
-                "storage.modifier.cs",
-                "storage.modifier.ts",
-                "storage.type.class.tsx",
-                "storage.type.class",
-                "storage.type.class.python",
-                "keyword.control.export.ts",
-                "storage.type.function.ts",
-                "storage.type.function.js",
-                "storage.type.function.python",
-                "keyword.function.go",
-                "storage.type.function.php"
-            ],
+            scope: ["storage.modifier.cs", "storage.modifier.ts", "storage.type.class.tsx", "storage.type.class", "storage.type.class.python", "keyword.control.export.ts", "storage.type.function.ts", "storage.type.function.js", "storage.type.function.python", "keyword.function.go", "storage.type.function.php"],
             settings: {
                 foreground: theme.turquoize,
                 fontStyle: "italic"
             }
         },
+        {
+            name: "#Modifier",
+            scope: ["entity.name.function.decorator.python"],
+            settings: {
+                foreground: theme.pink
+            }
+        },
+
         {
             name: "#Punctuation",
             scope: [
@@ -198,61 +115,36 @@ module.exports.body = function(theme) {
 
         {
             name: "Storage",
-            scope: [
-                "storage",
-                "source.ts storage",
-                "storage.type.function.arrow",
-                "punctuation.definition.parameters",
-                "storage.type.function",
-                "keyword",
-                "support.function.construct.output.php"
-            ],
+            scope: ["storage", "source.ts storage", "storage.type.function.arrow", "punctuation.definition.parameters", "storage.type.function", "keyword", "support.function.construct.output.php"],
             settings: {
                 foreground: theme.yellow
             }
         },
         {
             name: "String",
-            scope: [
-                "string",
-                "punctuation.definition.string",
-                "source.js string.template",
-                "source.js punctuation.definition.string.template",
-                "punctuation.definition.string.begin.elm",
-                "punctuation.definition.string.end.elm",
-                "source.elm string",
-                "punctuation.definition.string.begin",
-                "punctuation.definition.string.end",
-                "source.css string",
-                "source.css punctuation.definition.string",
-                "meta.toc-list.id.html"
-            ],
+            scope: ["string", "punctuation.definition.string", "source.js string.template", "source.js punctuation.definition.string.template", "punctuation.definition.string.begin.elm", "punctuation.definition.string.end.elm", "source.elm string", "punctuation.definition.string.begin", "punctuation.definition.string.end", "source.css string", "source.css punctuation.definition.string", "meta.toc-list.id.html", "string.quoted.single.python", "string.quoted.single.python punctuation.definition.string.begin.python", "string.quoted.single.python punctuation.definition.string.end.python"],
             settings: {
                 foreground: theme.green
             }
         },
         {
+            name: "Comment",
+            scope: ["comment", "punctuation.definition.comment", "string.quoted.docstring.multi.python", "punctuation.definition.string.begin.python", "punctuation.definition.string.end.python"],
+            settings: {
+                fontStyle: "italic",
+                foreground: theme.default + "70"
+            }
+        },
+        {
             name: "String Template",
-            scope: [
-                "string.template",
-                "punctuation.definition.string.template"
-            ],
+            scope: ["string.template", "punctuation.definition.string.template"],
             settings: {
                 foreground: theme.greenalt
             }
         },
         {
             name: "This",
-            scope: [
-                "variable.language.this.js",
-                "variable.language.this.ts",
-                "variable.parameter.function.language.special.self.python",
-                "variable.language.special.self.python",
-                "support.module.elm",
-                "variable.other.object.java",
-                "variable.other.object.cs",
-                "entity.other.inherited-class.python"
-            ],
+            scope: ["variable.language.this.js", "variable.language.this.ts", "variable.parameter.function.language.special.self.python", "variable.language.special.self.python", "support.module.elm", "variable.other.object.java", "variable.other.object.cs", "entity.other.inherited-class.python"],
             settings: {
                 foreground: theme.orange,
                 fontStyle: "italic"
@@ -274,31 +166,14 @@ module.exports.body = function(theme) {
         },
         {
             name: "Variable",
-            scope: [
-                "variable",
-                "punctuation.definition.variable.less",
-                "variable.language",
-                "entity.name.type.class.js",
-                "entity.name.variable.property.cs",
-                "entity.name.variable.field.cs",
-                "source.css variable",
-                "source.stylus variable",
-                "entity.name.type.ts",
-                "support.variable.magic.python",
-                "meta.method.body.java",
-                "entity.name.variable.local.cs"
-            ],
+            scope: ["variable", "punctuation.definition.variable.less", "variable.language", "entity.name.type.class.js", "entity.name.variable.property.cs", "entity.name.variable.field.cs", "source.css variable", "source.stylus variable", "entity.name.type.ts", "support.variable.magic.python", "meta.method.body.java", "entity.name.variable.local.cs"],
             settings: {
                 foreground: theme.salmon
             }
         },
         {
             name: "Constant",
-            scope: [
-                "constant",
-                "punctuation.section.embedded.begin.php",
-                "punctuation.section.embedded.end.php"
-            ],
+            scope: ["constant", "punctuation.section.embedded.begin.php", "punctuation.section.embedded.end.php"],
             settings: {
                 foreground: theme.red
             }
@@ -307,11 +182,7 @@ module.exports.body = function(theme) {
     let cs = [
         {
             name: "[CS] - Other objects",
-            scope: [
-                "variable.other.object.property.cs",
-                "variable.other.global.safer.php",
-                "variable.other.global.php"
-            ],
+            scope: ["variable.other.object.property.cs", "variable.other.global.safer.php", "variable.other.global.php"],
             settings: {
                 foreground: theme.orange
             }
@@ -349,8 +220,7 @@ module.exports.body = function(theme) {
 
         {
             name: "[TYPESCRIPT] - Inherited Component",
-            scope:
-                "entity.other.inherited-class.ts, entity.other.inherited-class.tsx",
+            scope: "entity.other.inherited-class.ts, entity.other.inherited-class.tsx",
             settings: {
                 foreground: theme.default
             }
@@ -359,10 +229,7 @@ module.exports.body = function(theme) {
     let elm = [
         {
             name: "[ELM] - Accessor",
-            scope: [
-                "record.accessor.elm",
-                "entity.name.record.field.accessor.elm"
-            ],
+            scope: ["record.accessor.elm", "entity.name.record.field.accessor.elm"],
             settings: {
                 foreground: theme.turquoize
             }
@@ -384,7 +251,5 @@ module.exports.body = function(theme) {
             }
         }
     ];
-    return Object.assign(
-        [].concat(common, cs, java, elm, javascript, typescript)
-    );
+    return Object.assign([].concat(common, cs, java, elm, javascript, typescript));
 };

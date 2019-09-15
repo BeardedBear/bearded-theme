@@ -1,5 +1,15 @@
 # Changelog for Bearded Theme
 
+## 1.6.2 - 2019-09-15
+
+### Enhancements
+
+- Improve python support
+
+### Fixes
+
+- Fix python data types color [[Issue]](https://github.com/BeardedBear/bearded-theme/issues/4)
+
 ## 1.6.1 - 2019-09-12
 
 ### Fixes
