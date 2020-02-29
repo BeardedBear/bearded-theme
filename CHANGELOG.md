@@ -1,5 +1,11 @@
 # Changelog for Bearded Theme
 
+## 1.6.4 - 2020-02-29
+
+### Enhancements
+
+- Improve vue and ts support
+
 ## 1.6.2 - 2019-09-15
 
 ### Enhancements

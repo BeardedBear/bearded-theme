@@ -2,7 +2,7 @@ module.exports.body = function(theme) {
     let common = [
         {
             name: "Current text",
-            scope: ["source.python", "source.perl", "source.ruby", "source.shell", "source.sql", "source.go", "variable.object.property.ts", "text.pug", "constant.character.entity.named.nbsp.html", "constant.character.entity.named.bull.html", "variable.other.object", "variable.other.object.property"],
+            scope: ["source.python", "source.perl", "source.ruby", "source.shell", "source.sql", "source.go", "variable.object.property.ts", "text.pug", "constant.character.entity.named.nbsp.html", "constant.character.entity.named.bull.html", "variable.other.object"],
             settings: {
                 foreground: theme.default
             }
@@ -16,7 +16,7 @@ module.exports.body = function(theme) {
         },
         {
             name: "#functions",
-            scope: ["source.js entity", "source.js support.function", "source.php entity", "source.php support.function", "entity.name.function.cs", "meta.function.type-declaration.elm entity", "entity.name.function.top_level.elm", "support.function", "entity.name.function.ts", "meta.function-call.js support", "entity.name.function.elixir", "entity.name.function.go", "meta.function-call.python", "entity.name.function.python", "entity.name.function.tsx", "entity.name.function.ts", "entity.name.function.lua", "variable.language.super.ts", "entity.name.function.java", "entity.name.function.pug", "entity.name.function.js"],
+            scope: ["source.js entity", "source.js support.function", "source.php entity", "source.php support.function", "entity.name.function.cs", "meta.function.type-declaration.elm entity", "entity.name.function.top_level.elm", "support.function", "entity.name.function.ts", "meta.function-call.js support", "entity.name.function.elixir", "entity.name.function.go", "meta.function-call.python", "entity.name.function.python", "entity.name.function.tsx", "entity.name.function.ts", "entity.name.function.lua", "variable.language.super.ts", "entity.name.function.java", "entity.name.function.pug", "entity.name.function.js", "meta.object-literal.key"],
             settings: {
                 foreground: theme.blue
             }
@@ -31,7 +31,7 @@ module.exports.body = function(theme) {
         },
         {
             name: "#Type",
-            scope: ["source.js storage.type.function", "source.php storage.type.function", "source.java storage", "keyword.type.cs", "storage.type.cs", "meta.function.type-declaration.elm storage", "storage.type.elm", "support.type.primitive.ts", "source.ts meta.type.annotation.ts entity.name.type.ts", "support.type.primitive.tsx", "source.tsx meta.type.annotation.tsx entity.name.type.tsx", "source.vue support.class.builtin.js", "storage.type.string.go", "storage.type.boolean.go", "storage.type.numeric.go", "entity.name.type.go", "support.type.exception.python", "entity.name.type.interface.ts", "support.type.python", "entity.name.type.ts", "source.ts support.type.builtin"],
+            scope: ["source.js storage.type.function", "source.php storage.type.function", "source.java storage", "keyword.type.cs", "storage.type.cs", "meta.function.type-declaration.elm storage", "storage.type.elm", "support.type.primitive.ts", "source.ts meta.type.annotation.ts entity.name.type.ts", "support.type.primitive.tsx", "source.tsx meta.type.annotation.tsx entity.name.type.tsx", "support.class.builtin", "storage.type.string.go", "storage.type.boolean.go", "storage.type.numeric.go", "entity.name.type.go", "support.type.exception.python", "entity.name.type.interface.ts", "support.type.python", "entity.name.type.ts", "source.ts support.type.builtin"],
             settings: {
                 foreground: theme.purple
             }
@@ -122,7 +122,7 @@ module.exports.body = function(theme) {
         },
         {
             name: "String",
-            scope: ["string", "punctuation.definition.string", "source.js string.template", "source.js punctuation.definition.string.template", "punctuation.definition.string.begin.elm", "punctuation.definition.string.end.elm", "source.elm string", "punctuation.definition.string.begin", "punctuation.definition.string.end", "source.css string", "source.css punctuation.definition.string", "meta.toc-list.id.html", "string.quoted.single.python", "string.quoted.single.python punctuation.definition.string.begin.python", "string.quoted.single.python punctuation.definition.string.end.python"],
+            scope: ["string", "punctuation.definition.string", "string.template", "punctuation.definition.string.template", "punctuation.definition.string.begin.elm", "punctuation.definition.string.end.elm", "source.elm string", "punctuation.definition.string.begin", "punctuation.definition.string.end", "source.css string", "source.css punctuation.definition.string", "meta.toc-list.id.html", "string.quoted.single.python", "string.quoted.single.python punctuation.definition.string.begin.python", "string.quoted.single.python punctuation.definition.string.end.python"],
             settings: {
                 foreground: theme.green
             }
@@ -136,15 +136,8 @@ module.exports.body = function(theme) {
             }
         },
         {
-            name: "String Template",
-            scope: ["string.template", "punctuation.definition.string.template"],
-            settings: {
-                foreground: theme.greenalt
-            }
-        },
-        {
             name: "This",
-            scope: ["variable.language.this.js", "variable.language.this.ts", "variable.parameter.function.language.special.self.python", "variable.language.special.self.python", "support.module.elm", "variable.other.object.java", "variable.other.object.cs", "entity.other.inherited-class.python"],
+            scope: ["variable.language.this.js", "variable.language.this.ts", "variable.parameter.function.language.special.self.python", "variable.language.special.self.python", "support.module.elm", "variable.other.object.java", "variable.other.object.cs", "entity.other.inherited-class.python", "variable.other.object.property", "punctuation.accessor"],
             settings: {
                 foreground: theme.orange,
                 fontStyle: "italic"
