@@ -1,6 +1,6 @@
 # Changelog for Bearded Theme
 
-## 1.6.4 - 2020-02-29
+## 1.6.5 - 2020-02-29
 
 ### Enhancements
 

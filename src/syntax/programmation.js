@@ -16,7 +16,7 @@ module.exports.body = function(theme) {
         },
         {
             name: "#functions",
-            scope: ["source.js entity", "source.js support.function", "source.php entity", "source.php support.function", "entity.name.function.cs", "meta.function.type-declaration.elm entity", "entity.name.function.top_level.elm", "support.function", "entity.name.function.ts", "meta.function-call.js support", "entity.name.function.elixir", "entity.name.function.go", "meta.function-call.python", "entity.name.function.python", "entity.name.function.tsx", "entity.name.function.ts", "entity.name.function.lua", "variable.language.super.ts", "entity.name.function.java", "entity.name.function.pug", "entity.name.function.js", "meta.object-literal.key"],
+            scope: ["source.js entity", "source.js support.function", "source.php entity", "source.php support.function", "entity.name.function.cs", "meta.function.type-declaration.elm entity", "entity.name.function.top_level.elm", "support.function", "entity.name.function.ts", "meta.function-call.js support", "entity.name.function.elixir", "entity.name.function.go", "meta.function-call.python", "entity.name.function.python", "entity.name.function.tsx", "entity.name.function.ts", "entity.name.function.lua", "variable.language.super.ts", "entity.name.function.java", "entity.name.function.pug", "entity.name.function.js"],
             settings: {
                 foreground: theme.blue
             }
