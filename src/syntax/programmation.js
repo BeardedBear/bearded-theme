@@ -2,7 +2,7 @@ module.exports.body = function(theme) {
     let common = [
         {
             name: "Current text",
-            scope: ["source.python", "source.perl", "source.ruby", "source.shell", "source.sql", "source.go", "variable.object.property.ts", "text.pug", "constant.character.entity.named.nbsp.html", "constant.character.entity.named.bull.html"],
+            scope: ["source.python", "source.perl", "source.ruby", "source.shell", "source.sql", "source.go", "variable.object.property.ts", "text.pug", "constant.character.entity.named.nbsp.html", "constant.character.entity.named.bull.html", "variable.other.object", "variable.other.object.property"],
             settings: {
                 foreground: theme.default
             }
@@ -31,7 +31,7 @@ module.exports.body = function(theme) {
         },
         {
             name: "#Type",
-            scope: ["source.js storage.type.function", "source.php storage.type.function", "source.java storage", "keyword.type.cs", "storage.type.cs", "meta.function.type-declaration.elm storage", "storage.type.elm", "support.type.primitive.ts", "source.ts meta.type.annotation.ts entity.name.type.ts", "support.type.primitive.tsx", "source.tsx meta.type.annotation.tsx entity.name.type.tsx", "source.vue support.class.builtin.js", "storage.type.string.go", "storage.type.boolean.go", "storage.type.numeric.go", "entity.name.type.go", "support.type.exception.python", "entity.name.type.interface.ts", "support.type.python"],
+            scope: ["source.js storage.type.function", "source.php storage.type.function", "source.java storage", "keyword.type.cs", "storage.type.cs", "meta.function.type-declaration.elm storage", "storage.type.elm", "support.type.primitive.ts", "source.ts meta.type.annotation.ts entity.name.type.ts", "support.type.primitive.tsx", "source.tsx meta.type.annotation.tsx entity.name.type.tsx", "source.vue support.class.builtin.js", "storage.type.string.go", "storage.type.boolean.go", "storage.type.numeric.go", "entity.name.type.go", "support.type.exception.python", "entity.name.type.interface.ts", "support.type.python", "entity.name.type.ts", "source.ts support.type.builtin"],
             settings: {
                 foreground: theme.purple
             }
@@ -166,7 +166,7 @@ module.exports.body = function(theme) {
         },
         {
             name: "Variable",
-            scope: ["variable", "punctuation.definition.variable.less", "variable.language", "entity.name.type.class.js", "entity.name.variable.property.cs", "entity.name.variable.field.cs", "source.css variable", "source.stylus variable", "entity.name.type.ts", "support.variable.magic.python", "meta.method.body.java", "entity.name.variable.local.cs"],
+            scope: ["variable", "punctuation.definition.variable.less", "variable.language", "entity.name.type.class.js", "entity.name.variable.property.cs", "entity.name.variable.field.cs", "source.css variable", "source.stylus variable", "support.variable.magic.python", "meta.method.body.java", "entity.name.variable.local.cs"],
             settings: {
                 foreground: theme.salmon
             }
