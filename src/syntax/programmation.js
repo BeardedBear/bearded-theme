@@ -77,6 +77,7 @@ module.exports.body = function(theme) {
         {
             name: "#Punctuation",
             scope: [
+                "punctuation.accessor",
                 "punctuation",
                 "meta.brace",
                 "source.js punctuation.definition.parameters",
@@ -137,7 +138,7 @@ module.exports.body = function(theme) {
         },
         {
             name: "This",
-            scope: ["variable.language.this.js", "variable.language.this.ts", "variable.parameter.function.language.special.self.python", "variable.language.special.self.python", "support.module.elm", "variable.other.object.java", "variable.other.object.cs", "entity.other.inherited-class.python", "variable.other.object.property", "punctuation.accessor"],
+            scope: ["variable.language.this.js", "variable.language.this.ts", "variable.parameter.function.language.special.self.python", "variable.language.special.self.python", "support.module.elm", "variable.other.object.java", "variable.other.object.cs", "entity.other.inherited-class.python", "variable.other.object.property"],
             settings: {
                 foreground: theme.orange,
                 fontStyle: "italic"
