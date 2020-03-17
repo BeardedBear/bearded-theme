@@ -1,5 +1,11 @@
 # Changelog for Bearded Theme
 
+## 1.6.7 - 2020-03-17
+
+### Enhancements
+
+- Improve elm support
+
 ## 1.6.6 - 2020-02-29
 
 ### Enhancements

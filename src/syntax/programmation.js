@@ -16,7 +16,7 @@ module.exports.body = function(theme) {
         },
         {
             name: "#functions",
-            scope: ["source.js entity", "source.js support.function", "source.php entity", "source.php support.function", "entity.name.function.cs", "meta.function.type-declaration.elm entity", "entity.name.function.top_level.elm", "support.function", "entity.name.function.ts", "meta.function-call.js support", "entity.name.function.elixir", "entity.name.function.go", "meta.function-call.python", "entity.name.function.python", "entity.name.function.tsx", "entity.name.function.ts", "entity.name.function.lua", "variable.language.super.ts", "entity.name.function.java", "entity.name.function.pug", "entity.name.function.js"],
+            scope: ["source.js entity", "source.js support.function", "source.php entity", "source.php support.function", "entity.name.function.cs", "meta.function.type-declaration.elm entity", "entity.name.function.top_level.elm", "support.function", "entity.name.function.ts", "meta.function-call.js support", "entity.name.function.elixir", "entity.name.function.go", "meta.function-call.python", "entity.name.function.python", "entity.name.function.tsx", "entity.name.function.ts", "entity.name.function.lua", "variable.language.super.ts", "entity.name.function.java", "entity.name.function.pug", "entity.name.function.js", "entity.name.record.field.elm"],
             settings: {
                 foreground: theme.blue
             }
@@ -60,7 +60,7 @@ module.exports.body = function(theme) {
         },
         {
             name: "#Modifier",
-            scope: ["storage.modifier.cs", "storage.modifier.ts", "storage.type.class.tsx", "storage.type.class", "storage.type.class.python", "keyword.control.export.ts", "storage.type.function.ts", "storage.type.function.js", "storage.type.function.python", "keyword.function.go", "storage.type.function.php"],
+            scope: ["storage.modifier.cs", "storage.modifier.ts", "storage.type.class.tsx", "storage.type.class", "storage.type.class.python", "keyword.control.export.ts", "storage.type.function.ts", "storage.type.function.js", "storage.type.function.python", "keyword.function.go", "storage.type.function.php", "record.name.elm"],
             settings: {
                 foreground: theme.turquoize,
                 fontStyle: "italic"
