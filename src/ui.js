@@ -262,8 +262,12 @@ module.exports.body = function(theme) {
         "peekViewResult.selectionForeground": theme.default,
         "peekViewTitle.background": theme.uiborder,
         "peekViewTitleDescription.foreground": theme.default,
-        "peekViewTitleLabel.foreground": theme.uiborder,
-        "peekViewEditorGutter.background": theme.primaryalt + "40"
+        "peekViewTitleLabel.foreground": theme.default,
+        "peekViewEditorGutter.background": theme.primaryalt + "40",
+        "editorMarkerNavigation.background": theme.uibackgroundalt,
+        "editorMarkerNavigationError.background": theme.red + "90",
+        "editorMarkerNavigationWarning.background": theme.orange + "90",
+        "editorMarkerNavigationInfo.background": theme.blue + "90"
     };
     let picker = {
         "pickerGroup.border": theme.uiborder,
