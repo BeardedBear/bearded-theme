@@ -75,7 +75,7 @@
     ]
   },
   "devDependencies": {
-    "@types/vscode": "^1.36.0",
+    "@types/vscode": "^1.43.0",
     "eslint": "^6.1.0",
     "node": "^12.8.0",
     "nodemon": "^1.19.1",
