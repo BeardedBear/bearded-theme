@@ -1,5 +1,16 @@
 # Changelog for Bearded Theme
 
+## 1.7.0 - 2020-04-03
+
+### New features
+
+- 2 new themes : Earth and Void
+- Make Vivid variant VIVID AS HELL
+
+### Enhancements
+
+- Boost all color saturation (a little bit)
+
 ## 1.6.7 - 2020-03-17
 
 ### Enhancements
