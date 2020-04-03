@@ -223,7 +223,7 @@ makeTheme(
             grey: "#7F7070",
             orange: "#3D8DE2",
             pink: "#A8547A",
-            purple: "#3BA7BA",
+            purple: "#2BD3E2",
             red: "#C13838",
             salmon: "#D65170",
             transparent: "#00000000",
@@ -234,30 +234,3 @@ makeTheme(
 );
 
 
-makeTheme(
-    "fire",
-    Object.assign(
-        {
-            primary: "#D34437",
-            primaryalt: "#5B2B27",
-            uiborder: "#351714",
-            uibackground: "#1E0E0E",
-            uibackgroundalt: "#190909",
-            default: "#C6BEAB"
-        },
-        {
-            blue: "#BA9862",
-            green: "#BC4920",
-            greenalt: "#81AA4E",
-            grey: "#7F7070",
-            orange: "#E07314",
-            pink: "#A8547A",
-            purple: "#B5BA3B",
-            red: "#C13838",
-            salmon: "#D65151",
-            transparent: "#00000000",
-            turquoize: "#81AA4E",
-            yellow: "#C99A0C"
-        }
-    )
-);

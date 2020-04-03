@@ -3,7 +3,7 @@
   "displayName": "Bearded Theme",
   "description": "The theme with a long beard.",
   "publisher": "BeardedBear",
-  "version": "1.6.7",
+  "version": "1.7.0",
   "engines": {
     "vscode": "^1.36.0"
   },
@@ -33,32 +33,32 @@
   "contributes": {
     "themes": [
       {
-        "label": "BeardedTheme Classic Vivid",
+        "label": "BeardedTheme Vivid",
         "uiTheme": "vs-dark",
         "path": "./themes/bearded-theme-vivid.json"
       },
       {
-        "label": "BeardedTheme Classic Anthracite",
+        "label": "BeardedTheme Anthracite",
         "uiTheme": "vs-dark",
         "path": "./themes/bearded-theme-anthracite.json"
       },
       {
-        "label": "BeardedTheme Classic Arc",
+        "label": "BeardedTheme Arc",
         "uiTheme": "vs-dark",
         "path": "./themes/bearded-theme-arc.json"
       },
       {
-        "label": "BeardedTheme Classic Purple",
+        "label": "BeardedTheme Purple",
         "uiTheme": "vs-dark",
         "path": "./themes/bearded-theme-purple.json"
       },
       {
-        "label": "BeardedTheme Classic Blue",
+        "label": "BeardedTheme Blue",
         "uiTheme": "vs-dark",
         "path": "./themes/bearded-theme-blue.json"
       },
       {
-        "label": "BeardedTheme Classic Light",
+        "label": "BeardedTheme Light",
         "uiTheme": "vs",
         "path": "./themes/bearded-theme-light.json"
       },
@@ -73,19 +73,14 @@
         "path": "./themes/bearded-theme-solarized.json"
       },
       {
-        "label": "BeardedTheme Elements Chi",
+        "label": "BeardedTheme Earth",
         "uiTheme": "vs-dark",
         "path": "./themes/bearded-theme-earth.json"
       },
       {
-        "label": "BeardedTheme Elements Kū",
+        "label": "BeardedTheme Void",
         "uiTheme": "vs-dark",
         "path": "./themes/bearded-theme-void.json"
-      },
-      {
-        "label": "BeardedTheme Elements Ka",
-        "uiTheme": "vs-dark",
-        "path": "./themes/bearded-theme-fire.json"
       }
     ]
   },
