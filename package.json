@@ -73,9 +73,14 @@
         "path": "./themes/bearded-theme-solarized.json"
       },
       {
-        "label": "BeardedTheme Earth",
+        "label": "BeardedTheme Elements Earth",
         "uiTheme": "vs-dark",
         "path": "./themes/bearded-theme-earth.json"
+      },
+      {
+        "label": "BeardedTheme Elements Void",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-void.json"
       }
     ]
   },
