@@ -181,7 +181,7 @@ makeTheme(
     "earth",
     Object.assign(
         {
-            primary: "#705A58",
+            primary: "#8C574A",
             primaryalt: "#382D2C",
             uiborder: "#281D1C",
             uibackground: "#1E1615",
@@ -229,6 +229,35 @@ makeTheme(
             transparent: "#00000000",
             turquoize: "#89C4FF",
             yellow: "#CC6AC5"
+        }
+    )
+);
+
+
+makeTheme(
+    "fire",
+    Object.assign(
+        {
+            primary: "#D34437",
+            primaryalt: "#5B2B27",
+            uiborder: "#351714",
+            uibackground: "#1E0E0E",
+            uibackgroundalt: "#190909",
+            default: "#C6BEAB"
+        },
+        {
+            blue: "#BA9862",
+            green: "#BC4920",
+            greenalt: "#81AA4E",
+            grey: "#7F7070",
+            orange: "#E07314",
+            pink: "#A8547A",
+            purple: "#B5BA3B",
+            red: "#C13838",
+            salmon: "#D65151",
+            transparent: "#00000000",
+            turquoize: "#81AA4E",
+            yellow: "#C99A0C"
         }
     )
 );

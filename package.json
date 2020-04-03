@@ -33,32 +33,32 @@
   "contributes": {
     "themes": [
       {
-        "label": "BeardedTheme Vivid",
+        "label": "BeardedTheme Classic Vivid",
         "uiTheme": "vs-dark",
         "path": "./themes/bearded-theme-vivid.json"
       },
       {
-        "label": "BeardedTheme Anthracite",
+        "label": "BeardedTheme Classic Anthracite",
         "uiTheme": "vs-dark",
         "path": "./themes/bearded-theme-anthracite.json"
       },
       {
-        "label": "BeardedTheme Arc",
+        "label": "BeardedTheme Classic Arc",
         "uiTheme": "vs-dark",
         "path": "./themes/bearded-theme-arc.json"
       },
       {
-        "label": "BeardedTheme Purple",
+        "label": "BeardedTheme Classic Purple",
         "uiTheme": "vs-dark",
         "path": "./themes/bearded-theme-purple.json"
       },
       {
-        "label": "BeardedTheme Blue",
+        "label": "BeardedTheme Classic Blue",
         "uiTheme": "vs-dark",
         "path": "./themes/bearded-theme-blue.json"
       },
       {
-        "label": "BeardedTheme Light",
+        "label": "BeardedTheme Classic Light",
         "uiTheme": "vs",
         "path": "./themes/bearded-theme-light.json"
       },
@@ -73,14 +73,19 @@
         "path": "./themes/bearded-theme-solarized.json"
       },
       {
-        "label": "BeardedTheme Elements Earth",
+        "label": "BeardedTheme Elements Chi",
         "uiTheme": "vs-dark",
         "path": "./themes/bearded-theme-earth.json"
       },
       {
-        "label": "BeardedTheme Elements Void",
+        "label": "BeardedTheme Elements Kū",
         "uiTheme": "vs-dark",
         "path": "./themes/bearded-theme-void.json"
+      },
+      {
+        "label": "BeardedTheme Elements Ka",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-fire.json"
       }
     ]
   },
