@@ -176,3 +176,31 @@ makeTheme(
         solarizedColors
     )
 );
+
+makeTheme(
+    "earth",
+    Object.assign(
+        {
+            primary: "#705A58",
+            primaryalt: "#382D2C",
+            uiborder: "#281D1C",
+            uibackground: "#1E1615",
+            uibackgroundalt: "#16100F",
+            default: "#C6BEAB"
+        },
+        {
+            blue: "#BA9D6F",
+            green: "#639E29",
+            greenalt: "#7E9E2D",
+            grey: "#7F7070",
+            orange: "#D1711D",
+            pink: "#A8547A",
+            purple: "#BAB13B",
+            red: "#C13838",
+            salmon: "#D65151",
+            transparent: "#00000000",
+            turquoize: "#4EAAA4",
+            yellow: "#C48519"
+        }
+    )
+);
