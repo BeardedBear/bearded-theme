@@ -133,7 +133,7 @@ module.exports.body = function(theme) {
             scope: ["comment", "punctuation.definition.comment", "string.quoted.docstring.multi.python", "punctuation.definition.string.begin.python", "punctuation.definition.string.end.python"],
             settings: {
                 fontStyle: "italic",
-                foreground: theme.default + "70"
+                foreground: theme.primary + "80"
             }
         },
         {

@@ -3,7 +3,7 @@
   "displayName": "Bearded Theme",
   "description": "The theme with a long beard.",
   "publisher": "BeardedBear",
-  "version": "1.6.8",
+  "version": "2.0.0",
   "engines": {
     "vscode": "^1.36.0"
   },
@@ -75,7 +75,7 @@
     ]
   },
   "devDependencies": {
-    "@types/vscode": "^1.43.0",
+    "@types/vscode": "^1.36.0",
     "eslint": "^6.1.0",
     "node": "^12.8.0",
     "nodemon": "^1.19.1",

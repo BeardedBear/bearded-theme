@@ -3,33 +3,33 @@ const ui = require("./ui");
 const fs = require("fs");
 
 const colors = {
-    blue: "#4b9cd2",
-    green: "#4db36f",
-    greenalt: "#839f3c",
+    blue: "#3090D1",
+    green: "#39B261",
+    greenalt: "#7E9E2D",
     grey: "#808080",
-    orange: "#d2692d",
-    pink: "#c360d7",
-    purple: "#b17af0",
-    red: "#c24747",
-    salmon: "#e86687",
+    orange: "#D1711D",
+    pink: "#D64AD3",
+    purple: "#A15DEF",
+    red: "#C13838",
+    salmon: "#E8476F",
     transparent: "#00000000",
-    turquoize: "#30a69c",
-    yellow: "#c49137"
+    turquoize: "#24B5A8",
+    yellow: "#C48519"
 };
 
 const vividColors = {
-    blue: "#7dcbff",
-    green: "#6ade91",
+    blue: "#28A9FF",
+    green: "#42DD76",
     greenalt: "#b7d175",
     grey: "#808080",
-    orange: "#ffa16b",
-    pink: "#ed96ff",
-    purple: "#cda1ff",
-    red: "#fc5656",
-    salmon: "#ff94af",
+    orange: "#FF7135",
+    pink: "#E66DFF",
+    purple: "#A95EFF",
+    red: "#D62C2C",
+    salmon: "#FF478D",
     transparent: "#00000000",
-    turquoize: "#60e6da",
-    yellow: "#ffc969"
+    turquoize: "#14E5D4",
+    yellow: "#FFB638"
 };
 
 const solarizedColors = {
@@ -60,11 +60,11 @@ makeTheme(
     "anthracite",
     Object.assign(
         {
-            primary: "#9dabbf",
+            primary: "#798CA8",
             primaryalt: "#3B434F",
             uiborder: "#272c33",
-            uibackground: "#17191d",
-            uibackgroundalt: "#1b1d22",
+            uibackground: "#1b1d22",
+            uibackgroundalt: "#141519",
             default: "#bbbbbb"
         },
         colors
@@ -74,11 +74,11 @@ makeTheme(
     "vivid",
     Object.assign(
         {
-            primary: "#b7a7db",
-            primaryalt: "#3a365c",
-            uiborder: "#24253b",
-            uibackground: "#151524",
-            uibackgroundalt: "#191829",
+            primary: "#8551FF",
+            primaryalt: "#28225B",
+            uiborder: "#1E193A",
+            uibackground: "#191130",
+            uibackgroundalt: "#110A23",
             default: "#eeeeee"
         },
         colors,
@@ -92,9 +92,9 @@ makeTheme(
         {
             primary: "#95b0de",
             primaryalt: "#3C495E",
-            uiborder: "#374154",
-            uibackground: "#232C3A",
-            uibackgroundalt: "#283242",
+            uiborder: "#323A49",
+            uibackground: "#222A38",
+            uibackgroundalt: "#1B222D",
             default: "#bbbbbb"
         },
         colors
@@ -105,11 +105,11 @@ makeTheme(
     "purple",
     Object.assign(
         {
-            primary: "#8546C9",
+            primary: "#9947EF",
             primaryalt: "#36224C",
             uiborder: "#2A1D38",
-            uibackground: "#130E1A",
-            uibackgroundalt: "#16101E",
+            uibackground: "#181121",
+            uibackgroundalt: "#100C16",
             default: "#bbbbbb"
         },
         colors
@@ -120,11 +120,11 @@ makeTheme(
     "blue",
     Object.assign(
         {
-            primary: "#3370E0",
+            primary: "#3A7FFF",
             primaryalt: "#162C54",
             uiborder: "#141E30",
-            uibackground: "#0B0F19",
-            uibackgroundalt: "#0D121E",
+            uibackground: "#0D1321",
+            uibackgroundalt: "#0A0D16",
             default: "#bbbbbb"
         },
         colors
@@ -153,7 +153,7 @@ makeTheme(
             primaryalt: "#0E4456",
             uiborder: "#133E4C",
             uibackground: "#002b36",
-            uibackgroundalt: "#0F313D",
+            uibackgroundalt: "#00212B",
             default: "#cedbdb"
         },
         colors,

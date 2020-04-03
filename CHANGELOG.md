@@ -1,11 +1,5 @@
 # Changelog for Bearded Theme
 
-## 1.6.8 - 2020-03-20
-
-### Fixes
-
-- Fix peek background color [[Issue]](https://github.com/BeardedBear/bearded-theme/issues/6)
-
 ## 1.6.7 - 2020-03-17
 
 ### Enhancements
