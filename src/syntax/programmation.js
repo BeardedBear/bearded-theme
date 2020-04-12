@@ -16,7 +16,7 @@ module.exports.body = function(theme) {
         },
         {
             name: "#functions",
-            scope: ["source.js entity", "source.js support.function", "source.php entity", "source.php support.function", "entity.name.function.cs", "meta.function.type-declaration.elm entity", "entity.name.function.top_level.elm", "support.function", "entity.name.function.ts", "meta.function-call.js support", "entity.name.function.elixir", "entity.name.function.go", "meta.function-call.python", "entity.name.function.python", "entity.name.function.tsx", "entity.name.function.ts", "entity.name.function.lua", "variable.language.super.ts", "entity.name.function.java", "entity.name.function.pug", "entity.name.function.js", "entity.name.record.field.elm"],
+            scope: ["source.js entity", "source.js support.function", "source.php entity", "source.php support.function", "entity.name.function.cs", "meta.function.type-declaration.elm entity", "entity.name.function.top_level.elm", "support.function", "entity.name.function.ts", "meta.function-call.js support", "entity.name.function.elixir", "entity.name.function.go", "meta.function-call.python", "entity.name.function.python", "entity.name.function.tsx", "entity.name.function.ts", "entity.name.function.lua", "variable.language.super.ts", "entity.name.function.java", "entity.name.function.pug", "entity.name.function.js", "entity.name.record.field.elm", "entity.name.tag.structure.any.html", "punctuation.definition.tag.html", "meta.tag.sgml.doctype.html", "meta.function-call.twig"],
             settings: {
                 foreground: theme.blue
             }
@@ -31,7 +31,7 @@ module.exports.body = function(theme) {
         },
         {
             name: "#Type",
-            scope: ["source.js storage.type.function", "source.php storage.type.function", "source.java storage", "keyword.type.cs", "storage.type.cs", "meta.function.type-declaration.elm storage", "storage.type.elm", "support.type.primitive.ts", "source.ts meta.type.annotation.ts entity.name.type.ts", "support.type.primitive.tsx", "source.tsx meta.type.annotation.tsx entity.name.type.tsx", "support.class.builtin", "storage.type.string.go", "storage.type.boolean.go", "storage.type.numeric.go", "entity.name.type.go", "support.type.exception.python", "entity.name.type.interface.ts", "support.type.python", "entity.name.type.ts", "source.ts support.type.builtin"],
+            scope: ["source.js storage.type.function", "source.php storage.type.function", "source.java storage", "keyword.type.cs", "storage.type.cs", "meta.function.type-declaration.elm storage", "storage.type.elm", "support.type.primitive.ts", "source.ts meta.type.annotation.ts entity.name.type.ts", "support.type.primitive.tsx", "source.tsx meta.type.annotation.tsx entity.name.type.tsx", "support.class.builtin", "storage.type.string.go", "storage.type.boolean.go", "storage.type.numeric.go", "entity.name.type.go", "support.type.exception.python", "entity.name.type.interface.ts", "support.type.python", "entity.name.type.ts", "source.ts support.type.builtin", "storage.type.php", "support.class.php"],
             settings: {
                 foreground: theme.purple
             }
@@ -99,7 +99,6 @@ module.exports.body = function(theme) {
                 "punctuation.definition.parameters.end.lua",
                 "punctuation.definition.parameters.begin.bracket.round.css",
                 "punctuation.definition.parameters.end.bracket.round.css",
-                "punctuation.definition.variable.php",
                 "punctuation.definition.parameters.begin.bracket.round.java",
                 "punctuation.definition.parameters.end.bracket.round.java",
                 "constant.name.attribute.tag.pug",
@@ -107,7 +106,12 @@ module.exports.body = function(theme) {
                 "punctuation.definition.parameters.end.js",
                 "string.interpolated.pug",
                 "attribute_value",
-                "keyword.other.whitespace.liquid"
+                "keyword.other.whitespace.liquid",
+                "punctuation.definition.parameters.begin.twig",
+                "punctuation.definition.parameters.end.twig",
+                "meta.tag.template.block.twig",
+                "meta.tag.template.value.twig",
+                "meta.tag.xml"
             ],
             settings: {
                 foreground: theme.default + "aa"
@@ -138,7 +142,7 @@ module.exports.body = function(theme) {
         },
         {
             name: "This",
-            scope: ["variable.language.this.js", "variable.language.this.ts", "variable.parameter.function.language.special.self.python", "variable.language.special.self.python", "support.module.elm", "variable.other.object.java", "variable.other.object.cs", "entity.other.inherited-class.python", "variable.other.object.property"],
+            scope: ["variable.language.this.js", "variable.language.this.ts", "variable.parameter.function.language.special.self.python", "variable.language.special.self.python", "support.module.elm", "variable.other.object.java", "variable.other.object.cs", "entity.other.inherited-class.python", "variable.other.object.property", "support.other.namespace.php", "entity.other.attribute-name.namespace.xml"],
             settings: {
                 foreground: theme.orange,
                 fontStyle: "italic"
@@ -160,7 +164,7 @@ module.exports.body = function(theme) {
         },
         {
             name: "Variable",
-            scope: ["variable", "punctuation.definition.variable.less", "variable.language", "entity.name.type.class.js", "entity.name.variable.property.cs", "entity.name.variable.field.cs", "source.css variable", "source.stylus variable", "support.variable.magic.python", "meta.method.body.java", "entity.name.variable.local.cs"],
+            scope: ["variable", "punctuation.definition.variable.less", "variable.language", "entity.name.type.class.js", "entity.name.variable.property.cs", "entity.name.variable.field.cs", "source.css variable", "source.stylus variable", "support.variable.magic.python", "meta.method.body.java", "entity.name.variable.local.cs", "punctuation.definition.variable.php",],
             settings: {
                 foreground: theme.salmon
             }

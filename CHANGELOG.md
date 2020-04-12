@@ -1,5 +1,11 @@
 # Changelog for Bearded Theme
 
+## 1.7.1 - 2020-04-12
+
+### Enhancements
+
+- Better PHP and Twig support
+
 ## 1.7.0 - 2020-04-03
 
 ### New features
