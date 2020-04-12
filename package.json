@@ -3,9 +3,9 @@
   "displayName": "Bearded Theme",
   "description": "The theme with a long beard.",
   "publisher": "BeardedBear",
-  "version": "1.7.1",
+  "version": "1.7.2",
   "engines": {
-    "vscode": "^1.36.0"
+    "vscode": "^1.44.0"
   },
   "repository": {
     "type": "git",
@@ -85,10 +85,10 @@
     ]
   },
   "devDependencies": {
-    "@types/vscode": "^1.36.0",
+    "@types/vscode": "^1.44.0",
     "eslint": "^6.1.0",
-    "node": "^12.8.0",
-    "nodemon": "^1.19.1",
+    "node": "^12.16.2",
+    "nodemon": "^1.19.4",
     "vscode-test": "^1.3.0"
   },
   "scripts": {
