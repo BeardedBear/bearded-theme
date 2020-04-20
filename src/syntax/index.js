@@ -17,3 +17,13 @@ export default function(theme){
 };
 
 
+export function createScope(scope, foreground, fontStyle) {
+    return {
+        scope,
+        settings: {
+            foreground,
+            fontStyle
+        }
+    }
+}
+
