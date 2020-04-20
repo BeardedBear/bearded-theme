@@ -4,7 +4,7 @@ const imports = [
   "keyword.other.elm",
   "meta.module.name.elm support",
   "meta.import.elm support",
-  "keyword.control.import.ts"
-]
+  "keyword.control.import.ts",
+];
 
 export default imports;

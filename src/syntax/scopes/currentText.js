@@ -10,7 +10,7 @@ const currentText = [
   "constant.character.entity.named.nbsp.html",
   "constant.character.entity.named.bull.html",
   "variable.other.object",
-  "support"
+  "support",
 ];
 
 export default currentText;

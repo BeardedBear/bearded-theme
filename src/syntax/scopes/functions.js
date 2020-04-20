@@ -33,7 +33,7 @@ const functions = [
   "entity.name.function.ts",
   "entity.name.function.tsx",
   "entity.name.function.ts",
-  "variable.language.super.ts"
+  "variable.language.super.ts",
 ];
 
 export default functions;

@@ -21,7 +21,7 @@ const types = [
   "entity.name.type.ts",
   "source.ts support.type.builtin",
   "storage.type.php",
-  "support.class.php"
+  "support.class.php",
 ];
 
 export default types;

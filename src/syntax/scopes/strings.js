@@ -13,7 +13,7 @@ const strings = [
   "meta.toc-list.id.html",
   "string.quoted.single.python",
   "string.quoted.single.python punctuation.definition.string.begin.python",
-  "string.quoted.single.python punctuation.definition.string.end.python"
-]
+  "string.quoted.single.python punctuation.definition.string.end.python",
+];
 
 export default strings;

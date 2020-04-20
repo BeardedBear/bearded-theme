@@ -65,7 +65,7 @@ const punctuation = [
   "keyword.other.unit.vw.css",
   "keyword.other.unit.vh.css",
   "keyword.other.unit.em.css",
-  "keyword.other.unit.rem.css"
-]
+  "keyword.other.unit.rem.css",
+];
 
 export default punctuation;

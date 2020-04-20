@@ -11,7 +11,7 @@ const storages = [
   "keyword.function.go",
   "storage.type.function.php",
   "record.name.elm",
-  "storage.modifier.java"
-]
+  "storage.modifier.java",
+];
 
 export default storages;

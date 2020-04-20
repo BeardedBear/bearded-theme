@@ -10,7 +10,7 @@ const variables = [
   "support.variable.magic.python",
   "meta.method.body.java",
   "entity.name.variable.local.cs",
-  "punctuation.definition.variable.php"
-]
+  "punctuation.definition.variable.php",
+];
 
 export default variables;
