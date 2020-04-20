@@ -4,7 +4,7 @@ const fs = require("fs");
 
 const colors = {
     blue: "#3090D1",
-    green: "#39B261",
+    green: "#3DBF79",
     greenalt: "#7E9E2D",
     grey: "#808080",
     orange: "#D1711D",
@@ -125,7 +125,7 @@ makeTheme(
             uiborder: "#141E30",
             uibackground: "#0D1321",
             uibackgroundalt: "#0A0D16",
-            default: "#bbbbbb"
+            default: "#BBBBBB"
         },
         colors
     )

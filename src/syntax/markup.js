@@ -59,7 +59,10 @@ module.exports.body = function(theme) {
                 "punctuation.definition.tag.end.tsx",
                 "entity.name.tag.localname.xml",
                 "entity.name.tag.xml",
-                "entity.name.tag.pug"
+                "entity.name.tag.pug",
+                "entity.name.tag.structure.any.html",
+                "punctuation.definition.tag.html",
+                "meta.tag.sgml.doctype.html"
             ],
             settings: {
                 foreground: theme.blue

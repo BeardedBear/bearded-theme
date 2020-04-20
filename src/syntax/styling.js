@@ -52,7 +52,7 @@ module.exports.body = function(theme) {
                 "source.css.scss meta.property-list.scss entity.name.tag.css"
             ],
             settings: {
-                foreground: theme.blue
+                foreground: theme.default
             }
         },
         {
@@ -60,10 +60,11 @@ module.exports.body = function(theme) {
             scope: [
                 "source.css constant",
                 "source.css support.constant",
-                "constant.numeric.css keyword"
+                "constant.numeric.css keyword",
+                "entity.name.function.scss"
             ],
             settings: {
-                foreground: theme.default
+                foreground: theme.blue
             }
         }
     ];
