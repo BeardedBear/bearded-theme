@@ -229,7 +229,7 @@ const storageScope = [
     "storage.modifier.java"
 ]
 
-module.exports.body = function (theme) {
+export default function (theme) {
     const common = [
         createScope(currentTextScope, theme.default),
         createScope(classScope, theme.greenalt),

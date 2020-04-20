@@ -1,4 +1,4 @@
-module.exports.body = function(theme) {
+export default function(theme) {
     let activityBar = {
         "activityBar.background": theme.uibackgroundalt,
         "activityBar.border": theme.uiborder,

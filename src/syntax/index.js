@@ -1,17 +1,19 @@
-const markup = require("./markup");
-const styling = require("./styling");
-const data = require("./data");
-const config = require("./config");
-const programmation = require("./programmation");
+import markup from "./markup.js";
+import styling from "./styling.js";
+import data from "./data.js";
+import config from "./config.js";
+import programmation from "./programmation.js";
 
-module.exports.body = function(theme) {
+export default function(theme){
     return Object.assign(
         [].concat(
-            config.body(theme),
-            data.body(theme),
-            markup.body(theme),
-            programmation.body(theme),
-            styling.body(theme)
+            config(theme),
+            data(theme),
+            markup(theme),
+            programmation(theme),
+            styling(theme)
         )
     );
 };
+
+

@@ -1,4 +1,4 @@
-module.exports.body = function(theme) {
+export default function(theme) {
     let css = [
         {
             name: "azdazd",

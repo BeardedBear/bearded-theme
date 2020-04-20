@@ -1,6 +1,8 @@
-const syntax = require("./syntax");
-const ui = require("./ui");
-const fs = require("fs");
+// const syntax = require("./syntax");
+// const ui = require("./ui");
+import syntax from "./syntax/index.js";
+import ui from "./ui.js";
+import fs from "fs";
 
 const colors = {
     blue: "#3090D1",
@@ -47,8 +49,8 @@ function makeTheme(name, themeColors) {
     let base = {
         $schema: "vscode://schemas/color-theme",
         name: "BeardedTheme " + name.charAt(0).toUpperCase() + name.slice(1),
-        colors: ui.body(theme),
-        tokenColors: syntax.body(theme)
+        colors: ui(theme),
+        tokenColors: syntax(theme)
     };
 
     fs.writeFile("themes/bearded-theme-" + name + ".json", JSON.stringify(base), err => {
@@ -232,5 +234,4 @@ makeTheme(
         }
     )
 );
-
 
