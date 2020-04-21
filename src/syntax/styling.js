@@ -2,7 +2,7 @@ export default function (theme) {
   let css = [
     {
       name: "azdazd",
-      scope: ["entity.name.tag.reference.scss", "punctuation.definition.keyword.scss"],
+      scope: ["entity.name.tag.reference.scss"],
       settings: {
         foreground: theme.orange,
       },
@@ -17,10 +17,10 @@ export default function (theme) {
     {
       name: "[CSS] - Class",
       scope: [
-        "entity.other.attribute-name.class.css",
         "entity.other.attribute-name.parent-selector-suffix.css punctuation",
-        "entity.other.attribute-name.class.pug",
+        "entity.other.attribute-name.class",
         "meta.property-list.scss",
+        "entity.other.attribute-name.class",
       ],
       settings: {
         foreground: theme.turquoize,
@@ -29,7 +29,7 @@ export default function (theme) {
 
     {
       name: "[CSS] - ID Selector",
-      scope: ["entity.other.attribute-name.id.css", "entity.other.attribute-name.id.pug"],
+      scope: ["entity.other.attribute-name.id"],
       settings: {
         foreground: theme.purple,
       },
@@ -41,6 +41,7 @@ export default function (theme) {
         "source.css entity.name.tag",
         "source.css meta.property-list.css entity.name.tag.css",
         "source.css.scss meta.property-list.scss entity.name.tag.css",
+        "support.type.property-name",
       ],
       settings: {
         foreground: theme.default,

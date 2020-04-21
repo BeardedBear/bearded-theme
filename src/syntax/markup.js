@@ -69,13 +69,6 @@ export default function (theme) {
       },
     },
     {
-      name: "[HTML] - ID value",
-      scope: "meta.toc-list.id.html",
-      settings: {
-        foreground: theme.greenalt,
-      },
-    },
-    {
       name: "[HTML] - Entity Other",
       scope: [
         "text.html.basic entity.other",

@@ -1,3 +1,3 @@
-const constants = ["constant", "punctuation.section.embedded.begin.php", "punctuation.section.embedded.end.php"];
+const constants = ["constant", "constant.numeric"];
 
 export default constants;
