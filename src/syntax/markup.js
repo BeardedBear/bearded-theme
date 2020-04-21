@@ -1,87 +1,14 @@
-export default function (theme) {
-  let html = [
-    {
-      name: "[HTML] - Variable",
-      scope: ["support.variable.liquid", "support.class.liquid"],
-      settings: {
-        foreground: theme.salmon,
-      },
-    },
-    {
-      name: "[HTML] - Text",
-      scope: ["text.html.derivative"],
-      settings: {
-        foreground: theme.default,
-      },
-    },
-    {
-      name: "[HTML] - Import",
-      scope: ["variable.control.import.include.pug"],
-      settings: {
-        foreground: theme.orange,
-      },
-    },
-    {
-      name: "[HTML] - Attribute",
-      scope: [
-        "entity.other.attribute-name.html",
-        "entity.other.attribute-name.localname.xml",
-        "entity.other.attribute-name.xml",
-        "entity.other.attribute-name.js",
-        "entity.other.attribute-name.id.html",
-        "entity.other.attribute-name.tsx",
-        "entity.name.tag.liquid",
-      ],
-      settings: {
-        foreground: theme.yellow,
-        fontStyle: "italic",
-      },
-    },
-    {
-      name: "[HTML] - Entity Name",
-      scope: [
-        "text.html.basic entity.name",
-        "punctuation.definition.tag.begin.html",
-        "punctuation.definition.tag.end.html",
-        "punctuation.definition.tag.xml",
-        "punctuation.definition.tag.begin.js",
-        "punctuation.definition.tag.end.js",
-        "support.class.component.js",
-        "entity.name.tag.html",
-        "entity.name.tag.template.html",
-        "entity.name.tag.script.html",
-        "entity.name.tag.style.html",
-        "entity.name.tag.block.any.html",
-        "entity.name.tag.other.html",
-        "entity.name.tag.inline.any.html",
-        "support.class.component.tsx",
-        "punctuation.definition.tag.begin.tsx",
-        "punctuation.definition.tag.end.tsx",
-        "entity.name.tag.localname.xml",
-        "entity.name.tag.xml",
-        "entity.name.tag.pug",
-        "entity.name.tag.structure.any.html",
-        "punctuation.definition.tag.html",
-        "meta.tag.sgml.doctype.html",
-      ],
-      settings: {
-        foreground: theme.blue,
-      },
-    },
-    {
-      name: "[HTML] - Entity Other",
-      scope: [
-        "text.html.basic entity.other",
-        "entity.other.attribute-name.tag.pug",
-        "meta.tag.metadata.script.html entity.name.tag.html",
-      ],
-      settings: {
-        fontStyle: "italic",
-        foreground: theme.yellow,
-      },
-    },
-  ];
+export const variables = ["support.variable.liquid", "support.class.liquid"];
+export const tags = ["text.html.basic entity.name", "source.js-ignored-vscode", "entity.name.tag"];
+export const tagsPunctuation = [
+  "meta.tag.sgml.doctype.html",
+  "punctuation.definition.tag",
+  "meta.tag.block.any",
+  "meta.tag.inline.any",
+];
+export const attributes = ["entity.other.attribute-name", "entity.name.tag.liquid"];
 
+export default function (theme) {
   let markdown = [
     {
       name: "[MARKDOWN] - Heading Punctuation",
@@ -210,5 +137,5 @@ export default function (theme) {
     },
   ];
 
-  return Object.assign([].concat(html, markdown));
+  return Object.assign([].concat(markdown));
 }

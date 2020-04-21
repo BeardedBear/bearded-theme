@@ -28,13 +28,6 @@ export default function (theme) {
     },
 
     {
-      name: "[CSS] - ID Selector",
-      scope: ["entity.other.attribute-name.id"],
-      settings: {
-        foreground: theme.purple,
-      },
-    },
-    {
       name: "[CSS] - Support",
       scope: [
         "source.css support",
@@ -45,18 +38,6 @@ export default function (theme) {
       ],
       settings: {
         foreground: theme.default,
-      },
-    },
-    {
-      name: "[CSS] - Constant",
-      scope: [
-        "source.css constant",
-        "source.css support.constant",
-        "constant.numeric.css keyword",
-        "entity.name.function.scss",
-      ],
-      settings: {
-        foreground: theme.blue,
       },
     },
   ];
