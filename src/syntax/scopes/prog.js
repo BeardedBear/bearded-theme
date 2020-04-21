@@ -23,13 +23,7 @@ export const keyword = [
 
 export const constants = ["constant"];
 
-export const currentText = [
-  "source",
-  "support",
-  "variable.object.property",
-  "constant.character.entity.named",
-  "meta.object-literal.key",
-];
+export const currentText = ["source", "support", "constant.character.entity.named"];
 
 export const decorators = ["entity.name.function.decorator", "meta.decorator"];
 
@@ -56,6 +50,8 @@ export const importScope = [
   "variable.control.import.include",
 ];
 
+export const objectProperty = ["support.type.property-name", "variable.object.property", "meta.object-literal.key"];
+
 export const punctuation = [
   "punctuation",
   "attribute_value",
@@ -80,8 +76,6 @@ export const punctuation = [
   "keyword.other.whitespace.liquid",
   "meta.tag.template.block.twig",
   "meta.tag.template.value.twig",
-  // CSS
-  "keyword.other.unit",
 ];
 
 export const self = [

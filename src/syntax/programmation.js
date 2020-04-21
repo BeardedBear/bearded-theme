@@ -2,6 +2,7 @@ import { createScope } from "./index.js";
 
 import * as prog from "./scopes/prog.js";
 import * as markup from "./scopes/markup.js";
+import * as styling from "./scopes/styling.js";
 import { typeConstructor, type } from "./scopes/elm.js";
 
 export default function (theme) {
@@ -16,6 +17,7 @@ export default function (theme) {
     createScope(prog.functions, theme.blue),
     createScope(prog.importScope, theme.yellow),
     createScope(prog.keyword, theme.yellow),
+    createScope(prog.objectProperty, theme.default),
     createScope(prog.punctuation, theme.default + "aa"),
     createScope(prog.self, theme.orange, "italic"),
     createScope(prog.storages, theme.turquoize, "italic"),
@@ -45,5 +47,15 @@ export default function (theme) {
     createScope(markup.mdItalic, theme.blue, "italic"),
     createScope(markup.mdQuote, theme.blue, "italic"),
     createScope(markup.mdQuotePunctuation, theme.blue, "italic"),
+
+    // STYLING
+    createScope(styling.pseudoClasses, theme.pink),
+    createScope(styling.pseudoElements, theme.pink),
+    createScope(styling.classes, theme.turquoize),
+    createScope(styling.and, theme.orange),
+    createScope(styling.punctuation, theme.default),
+    createScope(styling.units, theme.orange),
+    createScope(styling.value, theme.orange),
+    createScope(styling.nums, theme.orange),
   ]);
 }
