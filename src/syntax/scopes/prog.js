@@ -107,6 +107,7 @@ export const strings = [
   "punctuation.definition.string.template",
   "punctuation.definition.string.begin",
   "punctuation.definition.string.end",
+  "string.other.link",
 ];
 
 export const types = ["keyword.type", "entity.name.type", "support.type", "support.class"];

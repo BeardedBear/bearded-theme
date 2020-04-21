@@ -1,7 +1,7 @@
 import { createScope } from "./index.js";
 
 import * as prog from "./scopes/prog.js";
-import * as markup from "./markup.js";
+import * as markup from "./scopes/markup.js";
 import { typeConstructor, type } from "./scopes/elm.js";
 
 export default function (theme) {
@@ -28,9 +28,22 @@ export default function (theme) {
     createScope(type, theme.purple, "normal"),
 
     // MARKUP
+    // HTML
     createScope(markup.variables, theme.salmon),
     createScope(markup.tags, theme.blue),
     createScope(markup.tagsPunctuation, theme.blue),
     createScope(markup.attributes, theme.yellow, "italic"),
+    // MARKDOWN
+    createScope(markup.mdCode, theme.purple),
+    createScope(markup.mdCodeLanguage, theme.purple),
+    createScope(markup.mdList, theme.blue),
+    createScope(markup.mdListPunctuation, theme.blue),
+    createScope(markup.mdHeading, theme.yellow),
+    createScope(markup.mdHeadingPunctuation, theme.yellow),
+    createScope(markup.mdLink, theme.blue),
+    createScope(markup.mdBold, theme.blue, "bold"),
+    createScope(markup.mdItalic, theme.blue, "italic"),
+    createScope(markup.mdQuote, theme.blue, "italic"),
+    createScope(markup.mdQuotePunctuation, theme.blue, "italic"),
   ]);
 }
