@@ -1,4 +1,4 @@
-import syntax from "./syntax/index.js";
+import syntax from "./syntax.js";
 import ui from "./ui.js";
 import fs from "fs";
 
@@ -108,7 +108,7 @@ makeTheme(
       primary: "#9947EF",
       primaryalt: "#36224C",
       uiborder: "#2A1D38",
-      uibackground: "#181121",
+      uibackground: "#16101E",
       uibackgroundalt: "#100C16",
       default: "#bbbbbb",
     },
@@ -181,9 +181,11 @@ makeTheme(
   "earth",
   Object.assign(
     {
+      // primary: "#cf3a76",
+      // primaryalt: "#56152F",
       primary: "#8C574A",
       primaryalt: "#382D2C",
-      uiborder: "#281D1C",
+      uiborder: "#332524",
       uibackground: "#1E1615",
       uibackgroundalt: "#16100F",
       default: "#C6BEAB",

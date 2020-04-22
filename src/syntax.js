@@ -3,6 +3,16 @@ import * as markup from "./scopes/markup.js";
 import * as styling from "./scopes/styling.js";
 import { typeConstructor, type } from "./scopes/elm.js";
 
+function createScope(scope, foreground, fontStyle) {
+  return {
+    scope,
+    settings: {
+      foreground,
+      fontStyle,
+    },
+  };
+}
+
 export default function (theme) {
   return Object.assign([
     createScope(prog.accessors, theme.orange, "italic"),
@@ -56,14 +66,4 @@ export default function (theme) {
     createScope(styling.value, theme.orange),
     createScope(styling.nums, theme.orange),
   ]);
-}
-
-function createScope(scope, foreground, fontStyle) {
-  return {
-    scope,
-    settings: {
-      foreground,
-      fontStyle,
-    },
-  };
 }

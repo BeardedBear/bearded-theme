@@ -6,6 +6,8 @@ export const tagsPunctuation = [
   "punctuation.definition.tag",
   "meta.tag.block.any",
   "meta.tag.inline.any",
+  "source.css-ignored-vscode",
+  "meta.tag.metadata.style.end.html",
 ];
 export const attributes = ["entity.other.attribute-name", "entity.name.tag.liquid"];
 
