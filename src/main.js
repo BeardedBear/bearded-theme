@@ -7,7 +7,7 @@ const colors = {
   green: "#3DBF79",
   greenalt: "#7E9E2D",
   grey: "#808080",
-  orange: "#D1711D",
+  orange: "#D26D32",
   pink: "#CC71BC",
   purple: "#A15DEF",
   red: "#C13838",

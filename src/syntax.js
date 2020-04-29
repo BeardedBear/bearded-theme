@@ -15,10 +15,10 @@ function createScope(scope, foreground, fontStyle) {
 
 export default function (theme) {
   return Object.assign([
-    createScope(prog.accessors, theme.orange, "italic"),
+    createScope(prog.accessors, theme.default, "italic"),
     createScope(prog.classes, theme.greenalt),
     createScope(prog.comments, theme.primary + "80", "italic"),
-    createScope(prog.constants, theme.default),
+    createScope(prog.constants, theme.orange),
     createScope(prog.currentText, theme.default),
     createScope(prog.decorators, theme.pink),
     createScope(prog.exportScope, theme.yellow),
@@ -26,6 +26,7 @@ export default function (theme) {
     createScope(prog.importScope, theme.yellow),
     createScope(prog.keyword, theme.yellow),
     createScope(prog.objectProperty, theme.default),
+    createScope(prog.dataProperty, theme.yellow),
     createScope(prog.punctuation, theme.default + "aa"),
     createScope(prog.self, theme.orange, "italic"),
     createScope(prog.storages, theme.turquoize, "italic"),
@@ -59,12 +60,13 @@ export default function (theme) {
     // STYLING
     createScope(styling.pseudoClasses, theme.pink),
     createScope(styling.pseudoElements, theme.pink),
-    createScope(styling.classes, theme.turquoize),
+    createScope(styling.classes, theme.orange),
+    createScope(styling.property, theme.default),
     createScope(styling.ids, theme.yellow),
     createScope(styling.and, theme.orange),
     // createScope(styling.punctuation, theme.default),
-    createScope(styling.units, theme.orange),
-    createScope(styling.value, theme.orange),
-    createScope(styling.nums, theme.orange),
+    createScope(styling.units, theme.default + "aa"),
+    createScope(styling.value, theme.turquoize),
+    createScope(styling.nums, theme.turquoize),
   ]);
 }

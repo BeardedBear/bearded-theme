@@ -7,6 +7,7 @@ export const classes = [
 ];
 export const ids = ["entity.other.attribute-name.id", "entity.other.attribute-name.id punctuation.definition.entity"];
 export const and = ["entity.name.tag.reference"];
+export const property = ["support.type.property-name.css"];
 // export const punctuation = ["punctuation.definition.entity"];
-export const value = ["support.constant.property-value"];
+export const value = ["support.constant.property-value", "support.constant.font-name", "meta.property-value.css"];
 export const nums = ["constant.numeric"];

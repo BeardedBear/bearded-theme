@@ -27,6 +27,7 @@ export const keyword = [
   // ELM
   "keyword.type-alias",
   "keyword.type",
+  "support.class.console",
 ];
 
 export const constants = ["constant"];
@@ -71,7 +72,14 @@ export const importScope = [
   "variable.control.import.include",
 ];
 
-export const objectProperty = ["support.type.property-name", "variable.object.property", "meta.object-literal.key"];
+export const dataProperty = [
+  "variable.object.property",
+  "keyword.other.definition.ini",
+  "support.type.property-name",
+  "entity.name.tag.yaml",
+];
+
+export const objectProperty = ["meta.object-literal.key"];
 
 export const punctuation = [
   "punctuation",
@@ -148,4 +156,5 @@ export const variables = [
   "meta.method.body",
   "entity.name.variable",
   "punctuation.definition.variable",
+  "support.variable.property",
 ];

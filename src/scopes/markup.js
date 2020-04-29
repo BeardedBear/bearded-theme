@@ -20,6 +20,7 @@ export const tagsPunctuation = [
 export const attributes = [
   "entity.other.attribute-name",
   "entity.name.tag.liquid",
+  "invalid.deprecated.entity.other.attribute-name",
   // BLADE
   "meta.embedded.block.blade storage.type.php",
 ];
