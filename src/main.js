@@ -8,13 +8,13 @@ const colors = {
   greenalt: "#7E9E2D",
   grey: "#808080",
   orange: "#D1711D",
-  pink: "#B73BB6",
+  pink: "#CC71BC",
   purple: "#A15DEF",
   red: "#C13838",
   salmon: "#E8476F",
   transparent: "#00000000",
   turquoize: "#24B5A8",
-  yellow: "#C48519",
+  yellow: "#D39E17",
 };
 
 const vividColors = {

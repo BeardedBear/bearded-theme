@@ -19,24 +19,43 @@ export const keyword = [
   "storage.modifier",
   "keyword.operator.new",
   "keyword.operator.expression.in",
+  // BLADE
+  "keyword.begin.blade",
+  "keyword.end.blade",
+  "keyword.blade",
 ];
 
-export const constants = ["constant"];
+export const constants = [
+  // "constant"
+];
 
 export const currentText = ["source", "support", "constant.character.entity.named"];
 
-export const decorators = ["entity.name.function.decorator", "meta.decorator"];
+export const decorators = [
+  "entity.name.function.decorator",
+  "meta.decorator entity.name.function",
+  "meta.decorator punctuation.decorator",
+];
 
-export const exportScope = ["keyword.control.export"];
+export const exportScope = ["keyword.control.export", "support.type.object.module"];
 
 export const functions = [
-  "entity",
+  // "entity",
   "support.function",
   "entity.name.function",
   "meta.function-call",
+  "meta.function",
+  "meta.method.declaration",
   "meta.function-call support",
   // Typescript
   "variable.language.super.ts",
+  // VUE
+  "source.directive",
+  // PYTHON
+  "meta.function-call.generic",
+  // PHP
+  "meta.method-call.static.php",
+  "meta.method-call.php",
 ];
 
 export const importScope = [
@@ -61,14 +80,19 @@ export const punctuation = [
   "keyword.operator",
   "keyword.other.colon",
   "keyword.operator.arrow",
+  "punctuation.terminator",
+  "punctuation.separator",
+  "punctuation.definition.generic.begin",
+  "punctuation.definition.generic.end",
   // ELM
   "meta.function.type-declaration",
   // XML
   "meta.tag.xml",
   "meta.tag.preprocessor.xml",
   // JAVASCRIPT
-  "keyword.operator",
   "storage.type.function.arrow",
+  "punctuation.definition.block",
+  "punctuation.accessor",
   // PUG
   "constant.name.attribute.tag.pug",
   "string.interpolated.pug",
