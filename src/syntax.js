@@ -18,7 +18,7 @@ export default function (theme) {
     createScope(prog.accessors, theme.orange, "italic"),
     createScope(prog.classes, theme.greenalt),
     createScope(prog.comments, theme.primary + "80", "italic"),
-    createScope(prog.constants, theme.red),
+    createScope(prog.constants, theme.default),
     createScope(prog.currentText, theme.default),
     createScope(prog.decorators, theme.pink),
     createScope(prog.exportScope, theme.yellow),

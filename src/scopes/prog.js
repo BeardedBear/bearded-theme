@@ -14,15 +14,19 @@ export const comments = ["comment", "punctuation.definition.comment", "string.qu
 
 export const keyword = [
   "keyword.control",
-  "keyword.other",
+  // "keyword.other",
   "keyword.control.conditional",
   "storage.modifier",
   "keyword.operator.new",
   "keyword.operator.expression.in",
+  // "keyword.operator",
   // BLADE
   "keyword.begin.blade",
   "keyword.end.blade",
   "keyword.blade",
+  // ELM
+  "keyword.type-alias",
+  "keyword.type",
 ];
 
 export const constants = ["constant"];
@@ -76,8 +80,8 @@ export const punctuation = [
   "punctuation.definition.parameters",
   "punctuation.definition.template-expression",
   "keyword.operator",
-  "keyword.other.colon",
-  "keyword.operator.arrow",
+  "keyword.other",
+  // "keyword.operator.arrow",
   "punctuation.terminator",
   "punctuation.separator",
   "punctuation.definition.generic.begin",
@@ -98,6 +102,13 @@ export const punctuation = [
   "keyword.other.whitespace.liquid",
   "meta.tag.template.block.twig",
   "meta.tag.template.value.twig",
+  "begin.bracket",
+  "end.bracket",
+  // BLADE
+  "support.function.construct.begin.blade",
+  "support.function.construct.end.blade source.php",
+  "support.function.construct.end.blade",
+  "meta.function.echo.blade source.php",
 ];
 
 export const self = [
@@ -126,7 +137,7 @@ export const strings = [
   "string.other.link",
 ];
 
-export const types = ["keyword.type", "entity.name.type", "support.type", "support.class"];
+export const types = ["entity.name.type", "support.type", "support.class"];
 
 export const variables = [
   "variable",
