@@ -25,9 +25,7 @@ export const keyword = [
   "keyword.blade",
 ];
 
-export const constants = [
-  // "constant"
-];
+export const constants = ["constant"];
 
 export const currentText = ["source", "support", "constant.character.entity.named"];
 

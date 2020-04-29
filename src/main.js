@@ -181,10 +181,10 @@ makeTheme(
   "earth",
   Object.assign(
     {
-      // primary: "#cf3a76",
-      // primaryalt: "#56152F",
-      primary: "#8C574A",
-      primaryalt: "#382D2C",
+      primary: "#cf3a76",
+      primaryalt: "#56152F",
+      // primary: "#8C574A",
+      // primaryalt: "#382D2C",
       uiborder: "#332524",
       uibackground: "#1E1615",
       uibackgroundalt: "#16100F",
