@@ -6,7 +6,7 @@
 
 ## 📷 Screenshots
 
-5 themes (Click for larger view)
+10 themes (Click for larger view)
 
 <a href="https://raw.githubusercontent.com/BeardedBear/bearded-theme/master/assets/themes.png" target="_BLANK">
 <img alt="Example" src="https://raw.githubusercontent.com/BeardedBear/bearded-theme/master/assets/themes.png">
