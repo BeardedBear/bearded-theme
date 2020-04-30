@@ -60,8 +60,8 @@ export default function (theme) {
     // STYLING
     createScope(styling.pseudoClasses, theme.pink),
     createScope(styling.pseudoElements, theme.pink),
-    createScope(styling.classes, theme.turquoize),
-    createScope(styling.suffix, theme.turquoize),
+    createScope(styling.classes, theme.turquoize, "italic"),
+    createScope(styling.suffix, theme.turquoize, "italic"),
     createScope(styling.property, theme.default),
     createScope(styling.ids, theme.purple),
     createScope(styling.and, theme.orange),

@@ -1,5 +1,11 @@
 # Changelog for Bearded Theme
 
+## 2.0.1 - 2020-04-20
+
+### Fixes
+
+- Fix suffix css scope
+
 ## 2.0.0 - 2020-04-20
 
 ### New features
