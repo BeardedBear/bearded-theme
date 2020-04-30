@@ -1,5 +1,16 @@
 # Changelog for Bearded Theme
 
+## 2.0.0 - 2020-04-20
+
+### New features
+
+- Better Blade support
+
+### Enhancements
+
+- Complete theme building refactoring
+- Following the complete refactoring, many colours have been changed/switched for more consistency
+
 ## 1.7.2 - 2020-04-12
 
 ### Enhancements

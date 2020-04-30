@@ -72,14 +72,9 @@ export const importScope = [
   "variable.control.import.include",
 ];
 
-export const dataProperty = [
-  "variable.object.property",
-  "keyword.other.definition.ini",
-  "support.type.property-name",
-  "entity.name.tag.yaml",
-];
+export const dataProperty = ["keyword.other.definition.ini", "support.type.property-name", "entity.name.tag.yaml"];
 
-export const objectProperty = ["meta.object-literal.key"];
+export const objectProperty = ["meta.object-literal.key", "variable.object.property"];
 
 export const punctuation = [
   "punctuation",
@@ -157,4 +152,5 @@ export const variables = [
   "entity.name.variable",
   "punctuation.definition.variable",
   "support.variable.property",
+  "meta.class variable.object.property",
 ];

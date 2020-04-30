@@ -60,13 +60,14 @@ export default function (theme) {
     // STYLING
     createScope(styling.pseudoClasses, theme.pink),
     createScope(styling.pseudoElements, theme.pink),
-    createScope(styling.classes, theme.orange),
+    createScope(styling.classes, theme.turquoize),
+    createScope(styling.suffix, theme.turquoize),
     createScope(styling.property, theme.default),
-    createScope(styling.ids, theme.yellow),
+    createScope(styling.ids, theme.purple),
     createScope(styling.and, theme.orange),
     // createScope(styling.punctuation, theme.default),
     createScope(styling.units, theme.default + "aa"),
-    createScope(styling.value, theme.turquoize),
-    createScope(styling.nums, theme.turquoize),
+    createScope(styling.value, theme.orange),
+    createScope(styling.nums, theme.orange),
   ]);
 }

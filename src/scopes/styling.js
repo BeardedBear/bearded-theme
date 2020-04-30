@@ -5,7 +5,11 @@ export const classes = [
   "entity.other.attribute-name.class",
   "entity.other.attribute-name.class punctuation.definition.entity",
 ];
-export const ids = ["entity.other.attribute-name.id", "entity.other.attribute-name.id punctuation.definition.entity"];
+export const suffix = ["entity.other.attribute-name.parent-selector-suffix punctuation.definition.entity"];
+export const ids = [
+  "source.css.scss entity.other.attribute-name.id ",
+  "entity.other.attribute-name.id punctuation.definition.entity",
+];
 export const and = ["entity.name.tag.reference"];
 export const property = ["support.type.property-name.css"];
 // export const punctuation = ["punctuation.definition.entity"];
