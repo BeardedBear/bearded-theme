@@ -91,10 +91,10 @@ makeTheme(
   Object.assign(
     {
       primary: "#95b0de",
-      primaryalt: "#3C495E",
-      uiborder: "#323A49",
+      primaryalt: "#364154",
+      uiborder: "#303B4F",
       uibackground: "#222A38",
-      uibackgroundalt: "#1B222D",
+      uibackgroundalt: "#1D232F",
       default: "#bbbbbb",
     },
     colors
@@ -231,6 +231,34 @@ makeTheme(
       transparent: "#00000000",
       turquoize: "#89C4FF",
       yellow: "#CC6AC5",
+    }
+  )
+);
+
+makeTheme(
+  "arc-eolstorm",
+  Object.assign(
+    {
+      primary: "#95b0de",
+      primaryalt: "#364154",
+      uiborder: "#303B4F",
+      uibackground: "#222A38",
+      uibackgroundalt: "#1D232F",
+      default: "#ffffff",
+    },
+    {
+      blue: "#57BCFF",
+      green: "#3CEC85",
+      greenalt: "#A4EF58",
+      grey: "#808080",
+      orange: "#FF955C",
+      pink: "#F38CEC",
+      purple: "#B78AFF",
+      red: "#E35535",
+      salmon: "#FF6B84",
+      transparent: "#00000000",
+      turquoize: "#22ECDB",
+      yellow: "#EACD61",
     }
   )
 );

@@ -1,6 +1,6 @@
 # Changelog for Bearded Theme
 
-## 2.0.2 - 2020-05-02
+## 2.1.0 - 2020-05-02
 
 ### Fixes
 
@@ -9,6 +9,10 @@
 - Fix jdoc keyword color
 - Fix decorator punctuation color
 - Fix CSS vendor property color
+
+### New features
+
+- New variant: Arc Eolstorm (from Arc, but with colors breaking eyes)
 
 ## 2.0.1 - 2020-04-20
 

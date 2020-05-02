@@ -153,6 +153,8 @@ export const strings = [
   "punctuation.definition.string.begin",
   "punctuation.definition.string.end",
   "string.other.link",
+  // CSS
+  "variable.parameter.url",
 ];
 
 export const types = [
