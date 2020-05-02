@@ -1,5 +1,15 @@
 # Changelog for Bearded Theme
 
+## 2.0.2 - 2020-05-02
+
+### Fixes
+
+- Fix colors for c# [[Issue #12]](https://github.com/BeardedBear/bearded-theme/issues/12) [[Issue #13]](https://github.com/BeardedBear/bearded-theme/issues/13)
+- Fix code block color for markdown
+- Fix jdoc keyword color
+- Fix decorator punctuation color
+- Fix CSS vendor property color
+
 ## 2.0.1 - 2020-04-20
 
 ### Fixes
