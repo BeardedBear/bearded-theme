@@ -18,7 +18,7 @@ export const keyword = [
   "keyword.control.conditional",
   "storage.modifier",
   "keyword.operator.new",
-  "keyword.operator.expression.in",
+  "keyword.operator.expression",
   // "keyword.operator",
   // BLADE
   "keyword.begin.blade",
@@ -28,6 +28,8 @@ export const keyword = [
   "keyword.type-alias",
   "keyword.type",
   "support.class.console",
+  "keyword.other.await",
+  "storage.type.class.jsdoc",
 ];
 
 export const constants = ["constant"];
@@ -38,6 +40,8 @@ export const decorators = [
   "entity.name.function.decorator",
   "meta.decorator entity.name.function",
   "meta.decorator punctuation.decorator",
+  "punctuation.definition.decorator",
+  "meta.decorator variable.other.readwrite",
 ];
 
 export const exportScope = ["keyword.control.export", "support.type.object.module"];
@@ -91,6 +95,9 @@ export const punctuation = [
   "punctuation.definition.generic.end",
   // ELM
   "meta.function.type-declaration",
+  "keyword.other.colon.elm",
+  "meta.record.field.elm keyword.other.elm",
+  "keyword.other.period.elm",
   // XML
   "meta.tag.xml",
   "meta.tag.preprocessor.xml",
@@ -107,11 +114,17 @@ export const punctuation = [
   "meta.tag.template.value.twig",
   "begin.bracket",
   "end.bracket",
+  "text.html.twig meta.tag.inline.any",
+  "text.html.twig meta.tag.block.any",
   // BLADE
   "support.function.construct.begin.blade",
   "support.function.construct.end.blade source.php",
   "support.function.construct.end.blade",
   "meta.function.echo.blade source.php",
+  "punctuation.definition.list.begin.python",
+  "punctuation.definition.list.end.python",
+  // VUE
+  "text.html.vue-html meta.tag.block.any",
 ];
 
 export const self = [
@@ -122,11 +135,13 @@ export const self = [
 
 export const storages = [
   "storage",
-  "storage.type",
+  // "storage.type",
+  "meta.var.expr storage.type",
   "storage.type.function",
   "keyword.function",
   "storage.type.class",
   "storage.type.property",
+  "keyword.other",
 ];
 
 export const strings = [
@@ -140,7 +155,14 @@ export const strings = [
   "string.other.link",
 ];
 
-export const types = ["entity.name.type", "support.type", "support.class"];
+export const types = [
+  "entity.name.type",
+  "support.type",
+  "support.class",
+  "storage.type",
+  "entity.other.inherited-class",
+  "keyword.type",
+];
 
 export const variables = [
   "variable",

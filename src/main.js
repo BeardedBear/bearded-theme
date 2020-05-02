@@ -3,7 +3,7 @@ import ui from "./ui.js";
 import fs from "fs";
 
 const colors = {
-  blue: "#51A7E1",
+  blue: "#3398DB",
   green: "#3DBF79",
   greenalt: "#7E9E2D",
   grey: "#808080",

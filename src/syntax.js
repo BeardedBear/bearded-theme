@@ -15,10 +15,10 @@ function createScope(scope, foreground, fontStyle) {
 
 export default function (theme) {
   return Object.assign([
-    createScope(prog.accessors, theme.default, "italic"),
+    createScope(prog.accessors, theme.orange, "italic"),
     createScope(prog.classes, theme.greenalt),
     createScope(prog.comments, theme.primary + "80", "italic"),
-    createScope(prog.constants, theme.orange),
+    createScope(prog.constants, theme.red),
     createScope(prog.currentText, theme.default),
     createScope(prog.decorators, theme.pink),
     createScope(prog.exportScope, theme.yellow),
@@ -66,7 +66,7 @@ export default function (theme) {
     createScope(styling.ids, theme.purple),
     createScope(styling.and, theme.orange),
     // createScope(styling.punctuation, theme.default),
-    createScope(styling.units, theme.default + "aa"),
+    createScope(styling.units, theme.orange, "italic"),
     createScope(styling.value, theme.orange),
     createScope(styling.nums, theme.orange),
   ]);

@@ -31,6 +31,7 @@ export const mdCode = [
   "punctuation.definition.raw.markdown",
   "markup.fenced_code.block.markdown",
   "markup.fenced_code.block.markdown punctuation",
+  "markup.raw.block.markdown",
 ];
 export const mdCodeLanguage = ["fenced_code.block.language"];
 export const mdList = ["markup.list.unnumbered.markdown meta.paragraph.markdown"];
