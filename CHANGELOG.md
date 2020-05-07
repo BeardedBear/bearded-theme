@@ -1,6 +1,6 @@
 # Changelog for Bearded Theme
 
-## 2.1.1 - 2020-05-07
+## 2.1.2 - 2020-05-07
 
 ### Fixes
 
