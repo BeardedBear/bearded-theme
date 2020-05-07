@@ -1,5 +1,11 @@
 # Changelog for Bearded Theme
 
+## 2.1.1 - 2020-05-07
+
+### Fixes
+
+- Fix wrong color for js method
+
 ## 2.1.0 - 2020-05-02
 
 ### Fixes

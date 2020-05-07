@@ -247,7 +247,7 @@ makeTheme(
       default: "#ffffff",
     },
     {
-      blue: "#57BCFF",
+      blue: "#69C3FF",
       green: "#3CEC85",
       greenalt: "#A4EF58",
       grey: "#808080",
@@ -255,7 +255,7 @@ makeTheme(
       pink: "#F38CEC",
       purple: "#B78AFF",
       red: "#E35535",
-      salmon: "#FF6B84",
+      salmon: "#FF738A",
       transparent: "#00000000",
       turquoize: "#22ECDB",
       yellow: "#EACD61",
