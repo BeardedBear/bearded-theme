@@ -63,7 +63,7 @@ export const functions = [
   // PHP
   "meta.method-call.static.php",
   "meta.method-call.php",
-  "meta.method.declaration storage.type",
+  "meta.class storage.type",
 ];
 
 export const importScope = [
