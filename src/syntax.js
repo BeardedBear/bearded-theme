@@ -27,6 +27,7 @@ export default function (theme) {
     createScope(prog.keyword, theme.yellow),
     createScope(prog.objectProperty, theme.default),
     createScope(prog.dataProperty, theme.yellow),
+    createScope(prog.operators, theme.yellow),
     createScope(prog.punctuation, theme.default + "aa"),
     createScope(prog.self, theme.orange, "italic"),
     createScope(prog.storages, theme.turquoize, "italic"),

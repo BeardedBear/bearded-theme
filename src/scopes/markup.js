@@ -4,6 +4,7 @@ export const tags = [
   "text.html.basic entity.name",
   "source.js-ignored-vscode",
   "entity.name.tag",
+  "entity.name.tag support.class.component",
   // BLADE
   "meta.embedded.block.blade constant.other.php",
   "meta.embedded.block.blade keyword.operator.comparison.php",

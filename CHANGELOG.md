@@ -1,5 +1,22 @@
 # Changelog for Bearded Theme
 
+## 2.2.0 - 2020-05-21
+
+### New features
+
+- Add new variant : Black & Gold (Because the developers also have the right to like to be elegant, this variant redefines most of the colors compared to the color of gemstones. You will be able to shine when you take out your laptop during the luxurious social events.)
+
+### Fixes
+
+- Fix html tag color in react [[Issue #14]](https://github.com/BeardedBear/bearded-theme/issues/14)
+- Remove the lower border of the tabs, following the previous update of the VSCode
+- Fix add/remove background colors for file diffs
+
+### Enhancements
+
+- Unifying color for grey items
+- Better support for LUA [[Issue #15]](https://github.com/BeardedBear/bearded-theme/issues/15)
+
 ## 2.1.2 - 2020-05-07
 
 ### Fixes

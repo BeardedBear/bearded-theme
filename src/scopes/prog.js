@@ -81,6 +81,13 @@ export const dataProperty = ["keyword.other.definition.ini", "support.type.prope
 
 export const objectProperty = ["meta.object-literal.key", "variable.object.property"];
 
+export const operators = [
+  "keyword.operator.comparison",
+  "storage.type.function.arrow",
+  // LUA
+  "keyword.operator.lua",
+];
+
 export const punctuation = [
   "punctuation",
   "attribute_value",
@@ -103,7 +110,6 @@ export const punctuation = [
   "meta.tag.xml",
   "meta.tag.preprocessor.xml",
   // JAVASCRIPT
-  "storage.type.function.arrow",
   "punctuation.definition.block",
   "punctuation.accessor",
   // PUG
@@ -126,6 +132,8 @@ export const punctuation = [
   "punctuation.definition.list.end.python",
   // VUE
   "text.html.vue-html meta.tag.block.any",
+  // LUA
+  "source.lua",
 ];
 
 export const self = [
@@ -143,6 +151,10 @@ export const storages = [
   "storage.type.class",
   "storage.type.property",
   "keyword.other",
+  // LUA
+  "keyword.local.lua",
+  "entity.name.class",
+  "meta.function.lua keyword.control.lua",
 ];
 
 export const strings = [

@@ -4,14 +4,14 @@ import fs from "fs";
 
 const colors = {
   blue: "#3398DB",
-  green: "#3DBF79",
+  green: "#37ae6f",
   greenalt: "#7E9E2D",
   grey: "#808080",
   orange: "#D26D32",
   pink: "#CC71BC",
   purple: "#A15DEF",
   red: "#C13838",
-  salmon: "#EC698A",
+  salmon: "#de456b",
   transparent: "#00000000",
   turquoize: "#24B5A8",
   yellow: "#D39E17",
@@ -118,13 +118,13 @@ makeTheme(
   "purple",
   Object.assign(
     {
-      primary: "#9947EF",
+      primary: "#a948ef",
       primaryalt: "#36224C",
       uiborder: "#2A1D38",
       uibackground: "#16101E",
       uibackgroundalt: "#100C16",
       default: "#bbbbbb",
-      defaultalt: "#585785",
+      defaultalt: "#655785",
     },
     colors,
     levelColors
@@ -168,11 +168,11 @@ makeTheme(
   "solarized",
   Object.assign(
     {
-      primary: "#1996bf",
-      primaryalt: "#0E4456",
+      primary: "#199FBE",
+      primaryalt: "#0E4758",
       uiborder: "#133E4C",
       uibackground: "#002b36",
-      uibackgroundalt: "#00212B",
+      uibackgroundalt: "#002329",
       default: "#cedbdb",
       defaultalt: "#547783",
     },
@@ -303,6 +303,41 @@ makeTheme(
       success: "#3CEC85",
       warning: "#FF955C",
       info: "#69C3FF",
+    }
+  )
+);
+
+makeTheme(
+  "black",
+  Object.assign(
+    {
+      primary: "#c7910c",
+      primaryalt: "#364154",
+      uiborder: "#181B21",
+      uibackground: "#111418",
+      uibackgroundalt: "#0B0E0F",
+      default: "#AEB2B2",
+      defaultalt: "#4A525E",
+    },
+    {
+      blue: "#11B7D4",
+      green: "#00a884",
+      greenalt: "#AEB2B2",
+      grey: "#555555",
+      orange: "#AEB2B2",
+      pink: "#BC62AD",
+      purple: "#9563c6",
+      red: "#E35535",
+      salmon: "#c62f52",
+      transparent: "#00000000",
+      turquoize: "#AEB2B2",
+      yellow: "#c7910c",
+    },
+    {
+      danger: "#E35535",
+      success: "#00a884",
+      warning: "#FF955C",
+      info: "#11B7D4",
     }
   )
 );
