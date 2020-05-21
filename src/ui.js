@@ -3,7 +3,7 @@ export default function (theme) {
     "activityBar.background": theme.uibackgroundalt,
     "activityBar.border": theme.uiborder,
     "activityBar.foreground": theme.primary,
-    "activityBar.inactiveForeground": theme.default + "50",
+    "activityBar.inactiveForeground": theme.defaultalt,
     // "activityBar.dropBackground": "#ff0000",
     "activityBarBadge.background": theme.primary,
     "activityBarBadge.foreground": "#ffffff",
@@ -31,12 +31,12 @@ export default function (theme) {
   };
   let common = {
     contrastActiveBorder: theme.transparent,
-    contrastBorder: theme.primary + "50",
-    errorForeground: theme.red,
+    // contrastBorder: theme.primary + "50",
+    errorForeground: theme.danger,
     focusBorder: theme.primary + "aa",
     foreground: theme.default,
     "selection.background": theme.default + "80",
-    "widget.shadow": theme.transparent,
+    "widget.shadow": theme.uibackgroundalt,
   };
   let debug = {
     "debugExceptionWidget.background": theme.primaryalt,
@@ -49,10 +49,11 @@ export default function (theme) {
   };
   let diff = {
     "diffEditor.border": theme.uiborder,
-    "diffEditor.insertedTextBackground": theme.green + "30",
+    "diffEditor.insertedTextBackground": theme.success + "30",
     "diffEditor.insertedTextBorder": theme.transparent,
-    "diffEditor.removedTextBackground": theme.red + "40",
+    "diffEditor.removedTextBackground": theme.danger + "30",
     "diffEditor.removedTextBorder": theme.transparent,
+    "diffEditor.diagonalFill": theme.primaryalt,
   };
   let dropdown = {
     "dropdown.background": theme.uibackground,
@@ -121,7 +122,7 @@ export default function (theme) {
   };
   let editorMarker = {
     "editorMarkerNavigation.background": theme.default,
-    "editorMarkerNavigationError.background": theme.red,
+    "editorMarkerNavigationError.background": theme.danger,
     "editorMarkerNavigationWarning.background": theme.yellow,
   };
   let editorOverviewRuler = {
@@ -155,9 +156,9 @@ export default function (theme) {
   };
   let gutter = {
     "editorGutter.background": theme.uibackground,
-    "editorGutter.addedBackground": theme.green + "cc",
-    "editorGutter.deletedBackground": theme.red + "cc",
-    "editorGutter.modifiedBackground": theme.blue + "cc",
+    "editorGutter.addedBackground": theme.success + "cc",
+    "editorGutter.deletedBackground": theme.danger + "cc",
+    "editorGutter.modifiedBackground": theme.info + "cc",
     "editorLineNumber.foreground": theme.default + "40",
     "editorLineNumber.activeForeground": theme.default + "bb",
   };
@@ -183,8 +184,8 @@ export default function (theme) {
     "list.activeSelectionBackground": theme.primary + "38",
     "list.dropBackground": theme.primary + "15",
     "list.focusBackground": theme.primary + "38",
-    "list.errorForeground": theme.red,
-    "list.warningForeground": theme.orange,
+    "list.errorForeground": theme.danger,
+    "list.warningForeground": theme.warning,
     "list.focusForeground": theme.default,
     "list.highlightForeground": theme.yellow,
     "list.activeSelectionForeground": theme.default,
@@ -194,9 +195,9 @@ export default function (theme) {
     // "list.inactiveFocusBackground": "#ff0000",
     // "list.inactiveSelectionForeground": "#ff0000",
     // "list.invalidItemForeground": "#ff0000",
-    "gitDecoration.modifiedResourceForeground": theme.blue,
-    "gitDecoration.deletedResourceForeground": theme.red,
-    "gitDecoration.untrackedResourceForeground": theme.green,
+    "gitDecoration.modifiedResourceForeground": theme.info,
+    "gitDecoration.deletedResourceForeground": theme.danger,
+    "gitDecoration.untrackedResourceForeground": theme.success,
     "gitDecoration.ignoredResourceForeground": theme.grey + "cc",
     "gitDecoration.conflictingResourceForeground": theme.primary,
     // "gitDecoration.addedResourceForeground": "#ff0000",
@@ -206,11 +207,11 @@ export default function (theme) {
     // "listFilterWidget.outline": "#ff0000",
   };
   let menu = {
-    "menu.background": theme.uibackground,
-    "menu.border": theme.uiborder,
+    "menu.background": theme.primaryalt,
+    "menu.border": theme.primaryalt,
     // "menu.foreground": "#ff0000",
-    "menu.separatorBackground": theme.default + "30",
-    // "menu.selectionBackground": "#ff0000",
+    "menu.separatorBackground": theme.uiborder,
+    "menu.selectionBackground": theme.primary + "20",
     // "menu.selectionBorder": "#ff0000",
     // "menu.selectionForeground": "#ff0000",
     // "menubar.selectionBackground": "#ff0000",
@@ -221,14 +222,14 @@ export default function (theme) {
     "merge.border": theme.uiborder,
     "merge.commonContentBackground": theme.yellow + "30",
     "merge.commonHeaderBackground": theme.yellow + "80",
-    "merge.currentContentBackground": theme.green + "30",
-    "merge.currentHeaderBackground": theme.green + "80",
-    "merge.incomingContentBackground": theme.blue + "30",
-    "merge.incomingHeaderBackground": theme.blue + "80",
+    "merge.currentContentBackground": theme.success + "30",
+    "merge.currentHeaderBackground": theme.success + "80",
+    "merge.incomingContentBackground": theme.info + "30",
+    "merge.incomingHeaderBackground": theme.info + "80",
     "editorOverviewRuler.border": theme.uiborder,
     "editorOverviewRuler.commonContentForeground": theme.yellow,
-    "editorOverviewRuler.currentContentForeground": theme.red,
-    "editorOverviewRuler.incomingContentForeground": theme.green,
+    "editorOverviewRuler.currentContentForeground": theme.danger,
+    "editorOverviewRuler.incomingContentForeground": theme.success,
   };
   let notification = {
     "notificationCenterHeader.foreground": theme.default,
@@ -246,7 +247,7 @@ export default function (theme) {
     // "panel.dropBackground": "#ff0000",
     "panelTitle.activeBorder": theme.primary,
     "panelTitle.activeForeground": theme.primary,
-    "panelTitle.inactiveForeground": theme.default + "54",
+    "panelTitle.inactiveForeground": theme.defaultalt,
     // "panelInput.border": "#ff0000",
   };
   let pickView = {
@@ -265,9 +266,9 @@ export default function (theme) {
     "peekViewTitleLabel.foreground": theme.default,
     "peekViewEditorGutter.background": theme.primaryalt + "40",
     "editorMarkerNavigation.background": theme.uibackgroundalt,
-    "editorMarkerNavigationError.background": theme.red + "90",
-    "editorMarkerNavigationWarning.background": theme.orange + "90",
-    "editorMarkerNavigationInfo.background": theme.blue + "90",
+    "editorMarkerNavigationError.background": theme.danger + "90",
+    "editorMarkerNavigationWarning.background": theme.warning + "90",
+    "editorMarkerNavigationInfo.background": theme.info + "90",
   };
   let picker = {
     "pickerGroup.border": theme.uiborder,
@@ -277,7 +278,7 @@ export default function (theme) {
     "progressBar.background": theme.yellow,
   };
   let scrollbar = {
-    "scrollbar.shadow": theme.transparent,
+    "scrollbar.shadow": theme.uibackgroundalt,
     "scrollbarSlider.activeBackground": theme.default + "3f",
     "scrollbarSlider.background": theme.default + "20",
     "scrollbarSlider.hoverBackground": theme.default + "35",
@@ -301,13 +302,13 @@ export default function (theme) {
   };
   let sidebar = {
     "sideBar.background": theme.uibackgroundalt,
-    "sideBar.border": theme.transparent,
+    "sideBar.border": theme.uiborder,
     "sideBar.foreground": theme.default,
     // "sideBar.dropBackground": "#ff0000",
-    "sideBarSectionHeader.background": theme.uiborder + "50",
-    "sideBarSectionHeader.foreground": theme.default + "80",
-    "sideBarTitle.foreground": theme.default + "90",
-    "sideBarSectionHeader.border": theme.uiborder,
+    "sideBarSectionHeader.background": theme.transparent,
+    "sideBarSectionHeader.foreground": theme.defaultalt,
+    "sideBarSectionHeader.border": theme.transparent,
+    "sideBarTitle.foreground": theme.defaultalt,
     "tree.indentGuidesStroke": theme.default + "30",
   };
   let statusBar = {
@@ -340,6 +341,7 @@ export default function (theme) {
     "editorGroupHeader.noTabsBackground": theme.uibackground,
     "editorGroupHeader.tabsBackground": theme.uibackgroundalt,
     "editorGroupHeader.tabsBorder": theme.transparent,
+    "editorGroupHeader.border": theme.transparent,
     "tab.activeBackground": theme.uibackground,
     "tab.activeForeground": theme.default,
     "tab.activeBorderTop": theme.primary,
@@ -347,11 +349,11 @@ export default function (theme) {
     "tab.border": theme.transparent,
     // "tab.activeBorder": theme.primary,
     "tab.hoverBorder": theme.transparent,
-    // "tab.hoverBackground": "#ff0000",
+    "tab.hoverBackground": theme.uibackground + "cc",
     "tab.unfocusedHoverBackground": theme.primary + "10",
     "tab.unfocusedHoverBorder": theme.primary,
     "tab.inactiveBackground": theme.uibackgroundalt,
-    "tab.inactiveForeground": theme.default + "70",
+    "tab.inactiveForeground": theme.defaultalt,
     // "tab.inactiveModifiedBorder": "#ff0000",
     "tab.unfocusedActiveForeground": theme.default,
     "tab.unfocusedInactiveForeground": theme.default,
@@ -363,18 +365,18 @@ export default function (theme) {
   };
   let terminal = {
     "terminal.ansiBlack": theme.uibackground,
-    "terminal.ansiRed": theme.red,
-    "terminal.ansiGreen": theme.green,
+    "terminal.ansiRed": theme.danger,
+    "terminal.ansiGreen": theme.success,
     "terminal.ansiYellow": theme.yellow,
-    "terminal.ansiBlue": theme.blue,
+    "terminal.ansiBlue": theme.info,
     "terminal.ansiMagenta": theme.pink,
     "terminal.ansiCyan": theme.turquoize,
     "terminal.ansiWhite": theme.default,
-    "terminal.ansiBrightBlack": theme.blue,
-    "terminal.ansiBrightRed": theme.red,
-    "terminal.ansiBrightGreen": theme.green,
+    "terminal.ansiBrightBlack": theme.info,
+    "terminal.ansiBrightRed": theme.danger,
+    "terminal.ansiBrightGreen": theme.success,
     "terminal.ansiBrightYellow": theme.yellow,
-    "terminal.ansiBrightBlue": theme.blue,
+    "terminal.ansiBrightBlue": theme.info,
     "terminal.ansiBrightMagenta": theme.pink,
     "terminal.ansiBrightCyan": theme.turquoize,
     "terminal.ansiBrightWhite": theme.primaryalt,
@@ -386,11 +388,11 @@ export default function (theme) {
     // "terminal.border": "#ff0000",
   };
   let text = {
-    "textBlockQuote.background": theme.blue + "34",
-    "textBlockQuote.border": theme.blue + "b9",
-    "textCodeBlock.background": theme.blue + "34",
-    "textLink.activeForeground": theme.blue,
-    "textLink.foreground": theme.blue,
+    "textBlockQuote.background": theme.info + "34",
+    "textBlockQuote.border": theme.info + "b9",
+    "textCodeBlock.background": theme.info + "34",
+    "textLink.activeForeground": theme.info,
+    "textLink.foreground": theme.info,
     "textPreformat.foreground": theme.yellow,
     "textSeparator.foreground": theme.primary,
     "walkThrough.embeddedEditorBackground": theme.uibackground,

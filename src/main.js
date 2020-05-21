@@ -17,6 +17,13 @@ const colors = {
   yellow: "#D39E17",
 };
 
+const levelColors = {
+  danger: colors.red,
+  success: colors.green,
+  warning: colors.orange,
+  info: colors.blue,
+};
+
 const vividColors = {
   blue: "#28A9FF",
   green: "#42DD76",
@@ -66,8 +73,10 @@ makeTheme(
       uibackground: "#1b1d22",
       uibackgroundalt: "#141519",
       default: "#bbbbbb",
+      defaultalt: "#4c5767",
     },
-    colors
+    colors,
+    levelColors
   )
 );
 makeTheme(
@@ -76,13 +85,15 @@ makeTheme(
     {
       primary: "#8551FF",
       primaryalt: "#28225B",
-      uiborder: "#1E193A",
+      uiborder: "#241E43",
       uibackground: "#191130",
       uibackgroundalt: "#110A23",
       default: "#eeeeee",
+      defaultalt: "#585785",
     },
     colors,
-    vividColors
+    vividColors,
+    levelColors
   )
 );
 
@@ -96,8 +107,10 @@ makeTheme(
       uibackground: "#222A38",
       uibackgroundalt: "#1D232F",
       default: "#bbbbbb",
+      defaultalt: "#576375",
     },
-    colors
+    colors,
+    levelColors
   )
 );
 
@@ -111,8 +124,10 @@ makeTheme(
       uibackground: "#16101E",
       uibackgroundalt: "#100C16",
       default: "#bbbbbb",
+      defaultalt: "#585785",
     },
-    colors
+    colors,
+    levelColors
   )
 );
 
@@ -122,12 +137,14 @@ makeTheme(
     {
       primary: "#3A7FFF",
       primaryalt: "#162C54",
-      uiborder: "#141E30",
+      uiborder: "#18243A",
       uibackground: "#0D1321",
       uibackgroundalt: "#0A0D16",
       default: "#BBBBBB",
+      defaultalt: "#5d7189",
     },
-    colors
+    colors,
+    levelColors
   )
 );
 
@@ -135,14 +152,16 @@ makeTheme(
   "light",
   Object.assign(
     {
-      primary: "#798999",
-      primaryalt: "#c3d3e0",
-      uiborder: "#cccccc",
+      primary: "#4c5767",
+      primaryalt: "#ffffff",
+      uiborder: "#d1dadc",
       uibackground: "#ffffff",
-      uibackgroundalt: "#f4f4f4",
-      default: "#444444",
+      uibackgroundalt: "#f3f6f6",
+      default: "#455059",
+      defaultalt: "#a8b3bd",
     },
-    colors
+    colors,
+    levelColors
   )
 );
 makeTheme(
@@ -155,9 +174,16 @@ makeTheme(
       uibackground: "#002b36",
       uibackgroundalt: "#00212B",
       default: "#cedbdb",
+      defaultalt: "#547783",
     },
     colors,
-    solarizedColors
+    solarizedColors,
+    {
+      danger: solarizedColors.red,
+      success: solarizedColors.green,
+      warning: solarizedColors.orange,
+      info: solarizedColors.blue,
+    }
   )
 );
 
@@ -165,15 +191,22 @@ makeTheme(
   "solarized-light",
   Object.assign(
     {
-      primary: "#857f71",
-      primaryalt: "#D6CDB8",
-      uiborder: "#E0D9C9",
+      primary: "#073642",
+      primaryalt: "#fef9ec",
+      uiborder: "#d8cfbb",
       uibackground: "#fdf6e3",
       uibackgroundalt: "#eee8d5",
       default: "#073642",
+      defaultalt: "#a49f94",
     },
     colors,
-    solarizedColors
+    solarizedColors,
+    {
+      danger: solarizedColors.red,
+      success: solarizedColors.green,
+      warning: solarizedColors.orange,
+      info: solarizedColors.blue,
+    }
   )
 );
 
@@ -189,6 +222,7 @@ makeTheme(
       uibackground: "#1E1615",
       uibackgroundalt: "#16100F",
       default: "#C6BEAB",
+      defaultalt: "#6a5553",
     },
     {
       blue: "#BA9D6F",
@@ -203,7 +237,8 @@ makeTheme(
       transparent: "#00000000",
       turquoize: "#4EAAA4",
       yellow: "#C48519",
-    }
+    },
+    levelColors
   )
 );
 
@@ -217,6 +252,7 @@ makeTheme(
       uibackground: "#150F23",
       uibackgroundalt: "#0E0814",
       default: "#D7E2EF",
+      defaultalt: "#585785",
     },
     {
       blue: "#7A63ED",
@@ -230,8 +266,9 @@ makeTheme(
       salmon: "#D65170",
       transparent: "#00000000",
       turquoize: "#89C4FF",
-      yellow: "#CC6AC5",
-    }
+      yellow: "#585785",
+    },
+    levelColors
   )
 );
 
@@ -245,6 +282,7 @@ makeTheme(
       uibackground: "#222A38",
       uibackgroundalt: "#1D232F",
       default: "#ffffff",
+      defaultalt: "#576375",
     },
     {
       blue: "#69C3FF",
@@ -259,6 +297,12 @@ makeTheme(
       transparent: "#00000000",
       turquoize: "#22ECDB",
       yellow: "#EACD61",
+    },
+    {
+      danger: "#E35535",
+      success: "#3CEC85",
+      warning: "#FF955C",
+      info: "#69C3FF",
     }
   )
 );
