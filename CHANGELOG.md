@@ -1,5 +1,13 @@
 # Changelog for Bearded Theme
 
+## 2.2.1 - 2020-05-22
+
+### Fixes
+
+- Fix interface, enum, types color for TypeScript
+- Fix wrong color on TS/React variable definition
+- Fix menu color in Black and Gold variation
+
 ## 2.2.0 - 2020-05-21
 
 ### New features

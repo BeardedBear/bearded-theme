@@ -155,6 +155,10 @@ export const storages = [
   "keyword.local.lua",
   "entity.name.class",
   "meta.function.lua keyword.control.lua",
+  // TS
+  "storage.type.enum",
+  "storage.type.interface",
+  "storage.type.type",
 ];
 
 export const strings = [
@@ -190,4 +194,6 @@ export const variables = [
   "punctuation.definition.variable",
   "support.variable.property",
   "meta.class variable.object.property",
+  // TS
+  "variable.other.constant entity.name.function",
 ];
