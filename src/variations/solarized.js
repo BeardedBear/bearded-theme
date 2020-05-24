@@ -15,10 +15,10 @@ const solarizedDark = makeTheme(
   Object.assign(
     {
       primary: "#199FBE",
-      primaryalt: "#0E4758",
-      uiborder: "#133E4C",
+      primaryalt: "#003947",
+      uiborder: "#061418",
       uibackground: "#002b36",
-      uibackgroundalt: "#002329",
+      uibackgroundalt: "#002229",
       default: "#cedbdb",
       defaultalt: "#547783",
     },

@@ -1,38 +1,55 @@
 import { makeTheme } from "../mixins.js";
 
+const blackUI = {
+  primaryalt: "#191d24",
+  uiborder: "#000000",
+  uibackground: "#111418",
+  uibackgroundalt: "#0b0d0f",
+  default: "#AEB2B2",
+  defaultalt: "#4A525E",
+};
+
+const blackSyntax = {
+  blue: "#11B7D4",
+  green: "#00a884",
+  greenalt: "#AEB2B2",
+  grey: "#555555",
+  orange: "#AEB2B2",
+  pink: "#BC62AD",
+  purple: "#a85ff1",
+  red: "#E35535",
+  salmon: "#c62f52",
+  transparent: "#00000000",
+  turquoize: "#AEB2B2",
+  yellow: "#c7910c",
+};
+
+const blackLevels = {
+  danger: "#E35535",
+  success: "#00a884",
+  warning: "#FF955C",
+  info: "#11B7D4",
+};
+
 const blackAndGold = makeTheme(
-  "black",
-  Object.assign(
-    {
-      primary: "#c7910c",
-      primaryalt: "#191d24",
-      uiborder: "#181B21",
-      uibackground: "#111418",
-      uibackgroundalt: "#0B0E0F",
-      default: "#AEB2B2",
-      defaultalt: "#4A525E",
-    },
-    {
-      blue: "#11B7D4",
-      green: "#00a884",
-      greenalt: "#AEB2B2",
-      grey: "#555555",
-      orange: "#AEB2B2",
-      pink: "#BC62AD",
-      purple: "#9563c6",
-      red: "#E35535",
-      salmon: "#c62f52",
-      transparent: "#00000000",
-      turquoize: "#AEB2B2",
-      yellow: "#c7910c",
-    },
-    {
-      danger: "#E35535",
-      success: "#00a884",
-      warning: "#FF955C",
-      info: "#11B7D4",
-    }
-  )
+  "blackandgold",
+  Object.assign(blackUI, blackSyntax, blackLevels, { primary: "#c7910c" })
+);
+const blackAndRuby = makeTheme(
+  "blackandruby",
+  Object.assign(blackUI, blackSyntax, blackLevels, { primary: "#c62f52" })
+);
+const blackAndEmerald = makeTheme(
+  "blackandemerald",
+  Object.assign(blackUI, blackSyntax, blackLevels, { primary: "#00a884" })
+);
+const blackAndDiamond = makeTheme(
+  "blackanddiamond",
+  Object.assign(blackUI, blackSyntax, blackLevels, { primary: "#11B7D4" })
+);
+const blackAndAmethyst = makeTheme(
+  "blackandamethyst",
+  Object.assign(blackUI, blackSyntax, blackLevels, { primary: "#a85ff1" })
 );
 
-export default { blackAndGold };
+export default { blackAndGold, blackAndRuby, blackAndEmerald, blackAndDiamond, blackAndAmethyst };

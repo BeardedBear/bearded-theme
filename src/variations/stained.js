@@ -5,11 +5,11 @@ const purple = makeTheme(
   Object.assign(
     {
       primary: "#a948ef",
-      primaryalt: "#36224C",
-      uiborder: "#2A1D38",
-      uibackground: "#16101E",
-      uibackgroundalt: "#100C16",
-      default: "#bbbbbb",
+      primaryalt: "#301e43",
+      uiborder: "#140e1b",
+      uibackground: "#20172b",
+      uibackgroundalt: "#1a1424",
+      default: "#cbc4cf",
       defaultalt: "#655785",
     },
     colors,
@@ -22,11 +22,11 @@ const blue = makeTheme(
   Object.assign(
     {
       primary: "#3A7FFF",
-      primaryalt: "#162C54",
-      uiborder: "#18243A",
-      uibackground: "#0D1321",
-      uibackgroundalt: "#0A0D16",
-      default: "#BBBBBB",
+      primaryalt: "#122444",
+      uiborder: "#06080e",
+      uibackground: "#11192c",
+      uibackgroundalt: "#0e1320",
+      default: "#bfcbd4",
       defaultalt: "#5d7189",
     },
     colors,
@@ -39,10 +39,10 @@ const vivid = makeTheme(
   Object.assign(
     {
       primary: "#8551FF",
-      primaryalt: "#28225B",
-      uiborder: "#241E43",
+      primaryalt: "#2c225d",
+      uiborder: "#0d0b18",
       uibackground: "#191130",
-      uibackgroundalt: "#110A23",
+      uibackgroundalt: "#130b28",
       default: "#eeeeee",
       defaultalt: "#585785",
     },

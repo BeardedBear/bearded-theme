@@ -5,8 +5,8 @@ const anthracite = makeTheme(
   Object.assign(
     {
       primary: "#798CA8",
-      primaryalt: "#3B434F",
-      uiborder: "#272c33",
+      primaryalt: "#282c33",
+      uiborder: "#0b0c0e",
       uibackground: "#1b1d22",
       uibackgroundalt: "#141519",
       default: "#bbbbbb",
@@ -21,13 +21,13 @@ const light = makeTheme(
   "light",
   Object.assign(
     {
-      primary: "#4c5767",
+      primary: "#6090d7",
       primaryalt: "#ffffff",
       uiborder: "#d1dadc",
       uibackground: "#ffffff",
       uibackgroundalt: "#f3f6f6",
       default: "#455059",
-      defaultalt: "#a8b3bd",
+      defaultalt: "#8b99a7",
     },
     colors,
     levelColors

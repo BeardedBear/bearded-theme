@@ -1,5 +1,17 @@
 # Changelog for Bearded Theme
 
+## 3.0.0 - 2020-05-24
+
+### New features
+
+- 4 new black variations! (yes i'm totally CRAZY!)
+- New theme icon
+- New readme with illustration (yes, it's excessive)
+- Borders become darker
+- Top and bottom become darker
+- Find words more readable
+- Search and destroy grey elements to better fit with variations (scrollbars, line numbers, titlebar's foreground...)
+
 ## 2.2.1 - 2020-05-22
 
 ### Fixes

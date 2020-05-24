@@ -36,7 +36,7 @@ export default function (theme) {
     focusBorder: theme.primary + "aa",
     foreground: theme.default,
     "selection.background": theme.default + "80",
-    "widget.shadow": theme.uibackgroundalt,
+    "widget.shadow": theme.uiborder,
   };
   let debug = {
     "debugExceptionWidget.background": theme.primaryalt,
@@ -63,9 +63,9 @@ export default function (theme) {
   };
   let editor = {
     "editor.background": theme.uibackground,
-    "editor.findMatchBackground": theme.primary + "50",
+    "editor.findMatchBackground": theme.primary + "aa",
     "editor.findMatchBorder": theme.primary,
-    "editor.findMatchHighlightBackground": theme.primary + "10",
+    "editor.findMatchHighlightBackground": theme.primary + "50",
     "editor.findMatchHighlightBorder": theme.primary,
     "editor.foreground": theme.default,
     "editor.hoverHighlightBackground": theme.primary + "50",
@@ -73,13 +73,15 @@ export default function (theme) {
     "editor.lineHighlightBorder": theme.primary + "1a",
     "editor.rangeHighlightBackground": theme.primary + "21",
     // "editor.rangeHighlightBorder": "#ff0000",
+
     "editor.selectionBackground": theme.primary + "40",
     "editor.selectionForeground": theme.primary,
     "editor.inactiveSelectionBackground": theme.primary + "50",
-    "editor.selectionHighlightBorder": theme.default + "60",
+    "editor.selectionHighlightBorder": theme.defaultalt,
     "editor.selectionHighlightBackground": theme.transparent,
-    "editor.wordHighlightStrongBackground": theme.default + "21",
-    "editor.wordHighlightBackground": theme.default + "21",
+
+    "editor.wordHighlightStrongBackground": theme.defaultalt,
+    "editor.wordHighlightBackground": theme.primary + "21",
     // "editor.wordHighlightBorder": "#ff0000",
     // "editor.wordHighlightStrongBorder": "#ff0000",
     "editorBracketMatch.background": theme.primary + "5d",
@@ -91,10 +93,11 @@ export default function (theme) {
     "editorGroup.dropBackground": theme.primary + "15",
     // "editorGroup.emptyBackground": "#ff0000",
     // "editorGroup.focusedEmptyBorder": "#ff0000",
-    "editorHoverWidget.background": theme.uiborder,
+    "editorHoverWidget.background": theme.primaryalt,
     "editorHoverWidget.border": theme.uibackgroundalt,
     // "editorHoverWidget.statusBarBackground": "#ff0000",
-    "editorIndentGuide.background": theme.default + "0e",
+    "editorIndentGuide.background": theme.defaultalt + "30",
+    "editorIndentGuide.activeBackground": theme.defaultalt + "bb",
     "editorLink.activeForeground": theme.default,
     "editorWarning.border": theme.transparent,
     // "editor.findRangeHighlightBackground": "#ff0000",
@@ -141,7 +144,7 @@ export default function (theme) {
   };
   let find = {
     "editorWarning.foreground": theme.yellow,
-    "editorWhitespace.foreground": theme.primaryalt,
+    "editorWhitespace.foreground": theme.defaultalt,
     "editorWidget.background": theme.primaryalt,
     "editorWidget.resizeBorder": theme.primary + "50",
   };
@@ -159,7 +162,7 @@ export default function (theme) {
     "editorGutter.addedBackground": theme.success + "cc",
     "editorGutter.deletedBackground": theme.danger + "cc",
     "editorGutter.modifiedBackground": theme.info + "cc",
-    "editorLineNumber.foreground": theme.default + "40",
+    "editorLineNumber.foreground": theme.defaultalt,
     "editorLineNumber.activeForeground": theme.default + "bb",
   };
   let input = {
@@ -182,23 +185,25 @@ export default function (theme) {
   };
   let list = {
     "list.activeSelectionBackground": theme.primary + "45",
+    // "list.inactiveSelectionForeground": theme.red,
     "list.dropBackground": theme.primary + "15",
     "list.focusBackground": theme.primary + "aa",
+    "list.focusForeground": theme.default,
     "list.errorForeground": theme.danger,
     "list.warningForeground": theme.warning,
-    "list.focusForeground": theme.default,
     "list.highlightForeground": theme.yellow,
     "list.activeSelectionForeground": theme.default,
     "list.hoverBackground": theme.primary + "20",
     "list.hoverForeground": theme.default,
     "list.inactiveSelectionBackground": theme.primary + "45",
+    // "list.deemphasizedForeground": theme.red,
     // "list.inactiveFocusBackground": "#ff0000",
     // "list.inactiveSelectionForeground": "#ff0000",
     // "list.invalidItemForeground": "#ff0000",
     "gitDecoration.modifiedResourceForeground": theme.info,
     "gitDecoration.deletedResourceForeground": theme.danger,
     "gitDecoration.untrackedResourceForeground": theme.success,
-    "gitDecoration.ignoredResourceForeground": theme.grey + "cc",
+    "gitDecoration.ignoredResourceForeground": theme.defaultalt,
     "gitDecoration.conflictingResourceForeground": theme.primary,
     // "gitDecoration.addedResourceForeground": "#ff0000",
     // "gitDecoration.submoduleResourceForeground": "#ff0000",
@@ -209,14 +214,14 @@ export default function (theme) {
   let menu = {
     "menu.background": theme.primaryalt,
     "menu.border": theme.primaryalt,
-    // "menu.foreground": "#ff0000",
+    "menu.foreground": theme.default,
     "menu.separatorBackground": theme.uiborder,
     "menu.selectionBackground": theme.primary + "20",
     // "menu.selectionBorder": "#ff0000",
     // "menu.selectionForeground": "#ff0000",
-    // "menubar.selectionBackground": "#ff0000",
+    "menubar.selectionBackground": theme.primaryalt,
     // "menubar.selectionBorder": "#ff0000",
-    // "menubar.selectionForeground": "#ff0000",
+    "menubar.selectionForeground": theme.default,
   };
   let merge = {
     "merge.border": theme.uiborder,
@@ -278,10 +283,10 @@ export default function (theme) {
     "progressBar.background": theme.yellow,
   };
   let scrollbar = {
-    "scrollbar.shadow": theme.uibackgroundalt,
-    "scrollbarSlider.activeBackground": theme.default + "3f",
-    "scrollbarSlider.background": theme.default + "20",
-    "scrollbarSlider.hoverBackground": theme.default + "35",
+    "scrollbar.shadow": theme.uiborder,
+    "scrollbarSlider.activeBackground": theme.defaultalt + "90",
+    "scrollbarSlider.background": theme.defaultalt + "50",
+    "scrollbarSlider.hoverBackground": theme.defaultalt + "90",
   };
   let settings = {
     // "settings.checkboxBackground": "#ff0000",
@@ -399,9 +404,9 @@ export default function (theme) {
   };
   let titleBar = {
     "titleBar.activeBackground": theme.uiborder,
-    "titleBar.activeForeground": theme.default,
-    "titleBar.inactiveBackground": theme.primaryalt,
-    "titleBar.inactiveForeground": theme.default + "33",
+    "titleBar.activeForeground": theme.defaultalt,
+    "titleBar.inactiveBackground": theme.uiborder,
+    "titleBar.inactiveForeground": theme.defaultalt,
     "titleBar.border": theme.uiborder,
   };
   let welcomePage = {

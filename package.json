@@ -3,7 +3,7 @@
   "displayName": "Bearded Theme",
   "description": "The theme with a long beard.",
   "publisher": "BeardedBear",
-  "version": "2.2.1",
+  "version": "3.0.0",
   "type": "module",
   "engines": {
     "vscode": "^1.44.0"
@@ -46,7 +46,27 @@
       {
         "label": "BeardedTheme Black & Gold",
         "uiTheme": "vs-dark",
-        "path": "./themes/bearded-theme-black.json"
+        "path": "./themes/bearded-theme-blackandgold.json"
+      },
+      {
+        "label": "BeardedTheme Black & Ruby",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-blackandruby.json"
+      },
+      {
+        "label": "BeardedTheme Black & Emerald",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-blackandemerald.json"
+      },
+      {
+        "label": "BeardedTheme Black & Diamond",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-blackanddiamond.json"
+      },
+      {
+        "label": "BeardedTheme Black & Amethyst",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-blackandamethyst.json"
       },
       {
         "label": "BeardedTheme Arc",

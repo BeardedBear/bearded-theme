@@ -6,9 +6,9 @@ const earth = makeTheme(
     {
       primary: "#cf3a76",
       primaryalt: "#56152F",
-      uiborder: "#332524",
+      uiborder: "#120d0d",
       uibackground: "#1E1615",
-      uibackgroundalt: "#16100F",
+      uibackgroundalt: "#181211",
       default: "#C6BEAB",
       defaultalt: "#6a5553",
     },
@@ -36,9 +36,9 @@ const voided = makeTheme(
     {
       primary: "#7A63ED",
       primaryalt: "#2A2156",
-      uiborder: "#1A1430",
+      uiborder: "#0a0812",
       uibackground: "#150F23",
-      uibackgroundalt: "#0E0814",
+      uibackgroundalt: "#120a1a",
       default: "#D7E2EF",
       defaultalt: "#585785",
     },
