@@ -13,6 +13,14 @@ Something's missing ? [create Issues](https://github.com/BeardedBear/BeardedThem
 - Open the Command Palette with Ctrl+Shift+P or ⇧⌘P
 - Select Preferences: Color Theme and choose `Bearded Theme`.
 
+## Bonus
+
+Color configuration for [Bracket Pair Colorizer 2](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2)
+
+```
+"bracket-pair-colorizer-2.colors": ["#D39E17", "#A15DEF", "#3398DB"]
+```
+
 ## 📄 License
 
 This theme is released under the MIT License.

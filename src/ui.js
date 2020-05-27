@@ -144,7 +144,7 @@ export default function (theme) {
   };
   let find = {
     "editorWarning.foreground": theme.yellow,
-    "editorWhitespace.foreground": theme.defaultalt,
+    "editorWhitespace.foreground": theme.defaultalt + "40",
     "editorWidget.background": theme.primaryalt,
     "editorWidget.resizeBorder": theme.primary + "50",
   };

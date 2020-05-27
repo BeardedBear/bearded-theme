@@ -1,5 +1,15 @@
 # Changelog for Bearded Theme
 
+## 3.0.1 - 2020-05-27
+
+### Fixes
+
+- Fix whitespace color [[Issue #17]](https://github.com/BeardedBear/bearded-theme/issues/17)
+
+### Enhancements
+
+- Add color settings for Bracket Pair Colorizer 2 in readme
+
 ## 3.0.0 - 2020-05-24
 
 ### New features
