@@ -38,13 +38,13 @@ const vivid = makeTheme(
   "vivid",
   Object.assign(
     {
-      primary: "#8551FF",
+      primary: "#9f75ff",
       primaryalt: "#2c225d",
       uiborder: "#0d0b18",
       uibackground: "#191130",
       uibackgroundalt: "#130b28",
       default: "#eeeeee",
-      defaultalt: "#585785",
+      defaultalt: "#6160a4",
     },
     colors,
     vividColors,

@@ -1,5 +1,11 @@
 # Changelog for Bearded Theme
 
+## 3.0.2 - 2020-06-02
+
+### Fixes
+
+- Fix css colors [[Issue #18]](https://github.com/BeardedBear/bearded-theme/issues/18)
+
 ## 3.0.1 - 2020-05-27
 
 ### Fixes

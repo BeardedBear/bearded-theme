@@ -168,7 +168,7 @@ export default function (theme) {
   let input = {
     "input.background": theme.transparent,
     "input.foreground": theme.default,
-    "input.border": theme.grey + "aa",
+    "input.border": theme.defaultalt + "aa",
     "input.placeholderForeground": theme.default,
     "inputOption.activeBorder": theme.primary,
     "inputValidation.errorBackground": theme.primaryalt,

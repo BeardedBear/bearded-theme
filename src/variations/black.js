@@ -6,21 +6,21 @@ const blackUI = {
   uibackground: "#111418",
   uibackgroundalt: "#0b0d0f",
   default: "#AEB2B2",
-  defaultalt: "#4A525E",
+  defaultalt: "#525e6f",
 };
 
 const blackSyntax = {
   blue: "#11B7D4",
   green: "#00a884",
-  greenalt: "#AEB2B2",
+  greenalt: "#3585bb",
   grey: "#555555",
-  orange: "#AEB2B2",
+  orange: "#d4770c",
   pink: "#BC62AD",
   purple: "#a85ff1",
   red: "#E35535",
   salmon: "#c62f52",
   transparent: "#00000000",
-  turquoize: "#AEB2B2",
+  turquoize: "#38c7bd",
   yellow: "#c7910c",
 };
 
