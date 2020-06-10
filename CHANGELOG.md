@@ -1,10 +1,16 @@
 # Changelog for Bearded Theme
 
+## 3.0.3 - 2020-06-10
+
+### Fixes
+
+- Fix JSX current text in tags [[Issue #19]](https://github.com/BeardedBear/bearded-theme/issues/19)
+
 ## 3.0.2 - 2020-06-02
 
 ### Fixes
 
-- Fix css colors [[Issue #18]](https://github.com/BeardedBear/bearded-theme/issues/18)
+- Fix CSS colors [[Issue #18]](https://github.com/BeardedBear/bearded-theme/issues/18)
 
 ## 3.0.1 - 2020-05-27
 

@@ -34,7 +34,7 @@ export const keyword = [
 
 export const constants = ["constant"];
 
-export const currentText = ["source", "support", "constant.character.entity.named"];
+export const currentText = ["source", "support", "constant.character.entity.named", "meta.jsx.children"];
 
 export const decorators = [
   "entity.name.function.decorator",
