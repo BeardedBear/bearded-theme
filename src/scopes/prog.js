@@ -41,7 +41,7 @@ export const decorators = [
   "meta.decorator entity.name.function",
   "meta.decorator punctuation.decorator",
   "punctuation.definition.decorator",
-  "meta.decorator variable.other.readwrite",
+  // "meta.decorator variable.other.readwrite",
 ];
 
 export const exportScope = ["keyword.control.export", "support.type.object.module"];
@@ -54,6 +54,8 @@ export const functions = [
   "meta.function",
   "meta.method.declaration",
   "meta.function-call support",
+  "meta.decorator meta.definition.method entity.name.function",
+  "meta.decorator meta.method.declaration entity.name.function",
   // Typescript
   "variable.language.super.ts",
   // VUE

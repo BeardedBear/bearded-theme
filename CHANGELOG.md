@@ -1,5 +1,11 @@
 # Changelog for Bearded Theme
 
+## 3.0.4 - 2020-06-10
+
+### Fixes
+
+- Fix TS syntax in decorators
+
 ## 3.0.3 - 2020-06-10
 
 ### Fixes
