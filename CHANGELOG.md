@@ -1,5 +1,11 @@
 # Changelog for Bearded Theme
 
+## 3.0.5 - 2020-06-11
+
+### Enhancements
+
+- Add visual compatibility with the new movable panels update.
+
 ## 3.0.4 - 2020-06-10
 
 ### Fixes

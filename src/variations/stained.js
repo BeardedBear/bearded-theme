@@ -40,7 +40,7 @@ const vivid = makeTheme(
     {
       primary: "#9f75ff",
       primaryalt: "#2c225d",
-      uiborder: "#0d0b18",
+      uiborder: "#08060e",
       uibackground: "#191130",
       uibackgroundalt: "#130b28",
       default: "#eeeeee",

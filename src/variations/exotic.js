@@ -36,7 +36,7 @@ const voided = makeTheme(
     {
       primary: "#7A63ED",
       primaryalt: "#2A2156",
-      uiborder: "#0a0812",
+      uiborder: "#000000",
       uibackground: "#150F23",
       uibackgroundalt: "#120a1a",
       default: "#D7E2EF",
