@@ -6,7 +6,7 @@ export default function (theme) {
     "activityBar.inactiveForeground": theme.defaultalt,
     // "activityBar.dropBackground": "#ff0000",
     "activityBarBadge.background": theme.primary,
-    "activityBarBadge.foreground": "#ffffff",
+    "activityBarBadge.foreground": theme.uibackgroundalt,
   };
   let badge = {
     "badge.background": theme.primary,
@@ -37,6 +37,7 @@ export default function (theme) {
     foreground: theme.default,
     "selection.background": theme.default + "80",
     "widget.shadow": theme.uiborder,
+    "icon.foreground": theme.default,
   };
   let debug = {
     "debugExceptionWidget.background": theme.primaryalt,
@@ -194,7 +195,7 @@ export default function (theme) {
     "list.warningForeground": theme.warning,
     "list.highlightForeground": theme.yellow,
     "list.activeSelectionForeground": theme.default,
-    "list.hoverBackground": theme.primary + "20",
+    "list.hoverBackground": theme.defaultalt + "20",
     "list.hoverForeground": theme.default,
     "list.inactiveSelectionBackground": theme.primary + "45",
     // "list.deemphasizedForeground": theme.red,
@@ -255,10 +256,11 @@ export default function (theme) {
     "panelSection.background": theme.uiborder,
     "panelSection.border": theme.uiborder,
     "panelTitle.activeBorder": theme.primary,
+    "panelTitle.activeForeground": theme.primary,
     "panelTitle.inactiveForeground": theme.defaultalt,
     // "panelInput.border": "#ff0000",
     "panelSectionHeader.background": theme.defaultalt + "20",
-    "panelSectionHeader.foreground": theme.defaultalt,
+    "panelSectionHeader.foreground": theme.default,
     "panelSectionHeader.border": theme.uiborder,
   };
   let pickView = {
@@ -317,13 +319,13 @@ export default function (theme) {
     "sideBar.foreground": theme.default,
     // "sideBar.dropBackground": "#ff0000",
     "sideBarSectionHeader.background": theme.uibackgroundalt,
-    "sideBarSectionHeader.foreground": theme.defaultalt,
+    "sideBarSectionHeader.foreground": theme.default,
     "sideBarSectionHeader.border": theme.uiborder,
     "sideBarTitle.foreground": theme.defaultalt,
     "tree.indentGuidesStroke": theme.default + "30",
   };
   let statusBar = {
-    "statusBar.background": theme.uiborder,
+    "statusBar.background": theme.uibackgroundalt,
     "statusBar.border": theme.uiborder,
     "statusBar.debuggingBackground": theme.primary + "44",
     // "statusBar.debuggingBorder": theme.primary,
@@ -355,7 +357,7 @@ export default function (theme) {
     "editorGroupHeader.border": theme.transparent,
     // "editorGroup.dropBackground": theme.uibackgroundalt,
     "tab.activeBackground": theme.uibackground,
-    "tab.activeForeground": theme.default,
+    "tab.activeForeground": theme.primary,
     "tab.activeBorderTop": theme.primary,
     // "tab.activeModifiedBorder": "#ff0000",
     "tab.border": theme.transparent,
@@ -410,7 +412,7 @@ export default function (theme) {
     "walkThrough.embeddedEditorBackground": theme.uibackground,
   };
   let titleBar = {
-    "titleBar.activeBackground": theme.uiborder,
+    "titleBar.activeBackground": theme.uibackgroundalt,
     "titleBar.activeForeground": theme.defaultalt,
     "titleBar.inactiveBackground": theme.uiborder,
     "titleBar.inactiveForeground": theme.defaultalt,

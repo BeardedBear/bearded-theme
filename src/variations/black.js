@@ -4,7 +4,7 @@ const blackUI = {
   primaryalt: "#191d24",
   uiborder: "#000000",
   uibackground: "#111418",
-  uibackgroundalt: "#0b0d0f",
+  uibackgroundalt: "#0D0F12",
   default: "#AEB2B2",
   defaultalt: "#525e6f",
 };

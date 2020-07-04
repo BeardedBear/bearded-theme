@@ -1,5 +1,15 @@
 # Changelog for Bearded Theme
 
+## 3.1.0 - 2020-07-04
+
+### Enhancements
+
+- Change of some colours for a better visual consistency
+
+### Fixes
+
+- Fix of some icons that were not sufficiently readable
+
 ## 3.0.5 - 2020-06-11
 
 ### Enhancements

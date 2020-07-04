@@ -4,7 +4,7 @@ const arc = makeTheme(
   "arc",
   Object.assign(
     {
-      primary: "#8aadea",
+      primary: "#9DACC3",
       primaryalt: "#364154",
       uiborder: "#131720",
       uibackground: "#222A38",
@@ -21,7 +21,7 @@ const arcEolstorm = makeTheme(
   "arc-eolstorm",
   Object.assign(
     {
-      primary: "#8aadea",
+      primary: "#9DACC3",
       primaryalt: "#364154",
       uiborder: "#131720",
       uibackground: "#222A38",

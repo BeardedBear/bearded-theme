@@ -10,7 +10,12 @@ export const accessors = [
 
 export const classes = ["entity.name.type"];
 
-export const comments = ["comment", "punctuation.definition.comment", "string.quoted.docstring.multi"];
+export const comments = [
+  "comment",
+  "punctuation.definition.comment",
+  "string.quoted.docstring.multi",
+  "comment.block.documentation source",
+];
 
 export const keyword = [
   "keyword.control",
@@ -30,6 +35,7 @@ export const keyword = [
   "support.class.console",
   "keyword.other.await",
   "storage.type.class.jsdoc",
+  "punctuation.definition.block.tag.jsdoc",
 ];
 
 export const constants = ["constant"];

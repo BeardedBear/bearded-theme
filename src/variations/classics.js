@@ -4,7 +4,7 @@ const anthracite = makeTheme(
   "anthracite",
   Object.assign(
     {
-      primary: "#798CA8",
+      primary: "#9AA1AC",
       primaryalt: "#282c33",
       uiborder: "#0b0c0e",
       uibackground: "#1b1d22",
