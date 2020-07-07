@@ -1,5 +1,15 @@
 # Changelog for Bearded Theme
 
+## 3.2.0 - 2020-07-07
+
+### New features
+
+- New variation : Oceanic
+
+### Enhancements
+
+- New default theme : Anthracite
+
 ## 3.1.0 - 2020-07-04
 
 ### Enhancements
@@ -68,7 +78,7 @@
 
 ### New features
 
-- Add new variant : Black & Gold (Because the developers also have the right to like to be elegant, this variant redefines most of the colors compared to the color of gemstones. You will be able to shine when you take out your laptop during the luxurious social events.)
+- Add new variation : Black & Gold (Because the developers also have the right to like to be elegant, this variation redefines most of the colors compared to the color of gemstones. You will be able to shine when you take out your laptop during the luxurious social events.)
 
 ### Fixes
 
@@ -99,7 +109,7 @@
 
 ### New features
 
-- New variant: Arc Eolstorm (from Arc, but with colors breaking eyes)
+- New variation: Arc Eolstorm (from Arc, but with colors breaking eyes)
 
 ## 2.0.1 - 2020-04-20
 
@@ -129,7 +139,7 @@
 ### New features
 
 - 2 new themes : Earth and Void
-- Make Vivid variant VIVID AS HELL
+- Make Vivid variation VIVID AS HELL
 
 ### Enhancements
 
@@ -178,7 +188,7 @@
 
 ### New features
 
-- Add vivid variant !
+- Add vivid variation !
 
 ## 1.4.3 - 2019-08-08
 
@@ -223,8 +233,8 @@
 
 ### New features
 
-- Remove Black variant (Redundant with Anthracite)
-- Add new variant: Arc
+- Remove Black variation (Redundant with Anthracite)
+- Add new variation: Arc
 
 ### Fixes
 
@@ -269,8 +279,8 @@
 ### New features
 
 - Publish this changelog (never too late) 🎉
-- Add solarized dark variant
-- Add solarized light variant
+- Add solarized dark variation
+- Add solarized light variation
 - Add yml support
 - Add xml support
 - Add jsx support
@@ -292,7 +302,7 @@
 
 ### Fixes
 
-- Fix light variant lisibility [[Issue]](https://github.com/BeardedBear/bearded-theme/issues/1)
+- Fix light variation lisibility [[Issue]](https://github.com/BeardedBear/bearded-theme/issues/1)
 
 ## 1.2.6 - 2019-07-16
 
@@ -317,14 +327,14 @@
 
 ### New features
 
-- Add an anthracite variant
-- Add an black variant
+- Add an anthracite variation
+- Add an black variation
 
 ## 1.1.0 - 2019-07-13
 
 ### New features
 
-- Add a blue variant
+- Add a blue variation
 
 ## 1.0.0 - 2019-07-05
 
@@ -344,7 +354,7 @@
 
 ### New features
 
-- Add light variant
+- Add light variation
 
 ## 0.0.15 - 2019-06-25
 
@@ -370,7 +380,7 @@
 
 ### Enhancements
 
-- Add darker primary color variant
+- Add darker primary color variation
 
 ## 0.0.10 - 2019-06-24
 

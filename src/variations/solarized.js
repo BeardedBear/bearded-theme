@@ -56,4 +56,36 @@ const solarizedLight = makeTheme(
   )
 );
 
-export default { solarizedDark, solarizedLight };
+const oceanic = makeTheme(
+  "oceanic",
+  Object.assign(
+    {
+      primary: "#97c892",
+      primaryalt: "#254A52",
+      uiborder: "#111C22",
+      uibackground: "#1a2b34",
+      uibackgroundalt: "#16242C",
+      default: "#D3DFDB",
+      defaultalt: "#51727C",
+    },
+    colors,
+    {
+      yellow: "#fbc95a",
+      red: "#B4552D",
+      purple: "#c692c6",
+      blue: "#6498ce",
+      green: "#97c892",
+      turquoize: "#5bb3b4",
+      salmon: "#ee5d64",
+      orange: "#DC8255",
+    },
+    {
+      danger: "#ee5d64",
+      success: "#97c892",
+      warning: "#DC8255",
+      info: "#6498ce",
+    }
+  )
+);
+
+export default { solarizedDark, solarizedLight, oceanic };

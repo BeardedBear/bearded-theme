@@ -3,7 +3,7 @@
   "displayName": "Bearded Theme",
   "description": "The theme with a long beard.",
   "publisher": "BeardedBear",
-  "version": "3.1.0",
+  "version": "3.2.0",
   "type": "module",
   "engines": {
     "vscode": "^1.44.0"
@@ -25,7 +25,8 @@
     "elm",
     "solarized",
     "arc",
-    "light"
+    "light",
+    "oceanic"
   ],
   "icon": "icon.png",
   "categories": [
@@ -34,39 +35,9 @@
   "contributes": {
     "themes": [
       {
-        "label": "BeardedTheme Vivid",
-        "uiTheme": "vs-dark",
-        "path": "./themes/bearded-theme-vivid.json"
-      },
-      {
         "label": "BeardedTheme Anthracite",
         "uiTheme": "vs-dark",
         "path": "./themes/bearded-theme-anthracite.json"
-      },
-      {
-        "label": "BeardedTheme Black & Gold",
-        "uiTheme": "vs-dark",
-        "path": "./themes/bearded-theme-blackandgold.json"
-      },
-      {
-        "label": "BeardedTheme Black & Ruby",
-        "uiTheme": "vs-dark",
-        "path": "./themes/bearded-theme-blackandruby.json"
-      },
-      {
-        "label": "BeardedTheme Black & Emerald",
-        "uiTheme": "vs-dark",
-        "path": "./themes/bearded-theme-blackandemerald.json"
-      },
-      {
-        "label": "BeardedTheme Black & Diamond",
-        "uiTheme": "vs-dark",
-        "path": "./themes/bearded-theme-blackanddiamond.json"
-      },
-      {
-        "label": "BeardedTheme Black & Amethyst",
-        "uiTheme": "vs-dark",
-        "path": "./themes/bearded-theme-blackandamethyst.json"
       },
       {
         "label": "BeardedTheme Arc",
@@ -79,9 +50,29 @@
         "path": "./themes/bearded-theme-arc-eolstorm.json"
       },
       {
-        "label": "BeardedTheme Purple",
+        "label": "BeardedTheme Black & Amethyst",
         "uiTheme": "vs-dark",
-        "path": "./themes/bearded-theme-purple.json"
+        "path": "./themes/bearded-theme-blackandamethyst.json"
+      },
+      {
+        "label": "BeardedTheme Black & Diamond",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-blackanddiamond.json"
+      },
+      {
+        "label": "BeardedTheme Black & Emerald",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-blackandemerald.json"
+      },
+      {
+        "label": "BeardedTheme Black & Gold",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-blackandgold.json"
+      },
+      {
+        "label": "BeardedTheme Black & Ruby",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-blackandruby.json"
       },
       {
         "label": "BeardedTheme Blue",
@@ -89,9 +80,24 @@
         "path": "./themes/bearded-theme-blue.json"
       },
       {
+        "label": "BeardedTheme Earth",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-earth.json"
+      },
+      {
         "label": "BeardedTheme Light",
         "uiTheme": "vs",
         "path": "./themes/bearded-theme-light.json"
+      },
+      {
+        "label": "BeardedTheme Oceanic",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-oceanic.json"
+      },
+      {
+        "label": "BeardedTheme Purple",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-purple.json"
       },
       {
         "label": "BeardedTheme Solarized Light",
@@ -104,9 +110,9 @@
         "path": "./themes/bearded-theme-solarized.json"
       },
       {
-        "label": "BeardedTheme Earth",
+        "label": "BeardedTheme Vivid",
         "uiTheme": "vs-dark",
-        "path": "./themes/bearded-theme-earth.json"
+        "path": "./themes/bearded-theme-vivid.json"
       },
       {
         "label": "BeardedTheme Void",
@@ -129,5 +135,8 @@
     "build": "node ./src/main.js",
     "watch": "nodemon -L ./src/main.js",
     "test": "node ./out/test/runTest.js"
+  },
+  "dependencies": {
+    "vsce": "^1.77.0"
   }
 }
