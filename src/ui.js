@@ -10,7 +10,7 @@ export default function (theme) {
   };
   let badge = {
     "badge.background": theme.primary,
-    "badge.foreground": "#ffffff",
+    "badge.foreground": theme.uibackgroundalt,
     // "extensionBadge.remoteBackground": "#ff0000",
     // "extensionBadge.remoteForeground": "#ff0000",
   };
@@ -23,10 +23,10 @@ export default function (theme) {
   };
   let button = {
     "button.background": theme.primary,
-    "button.foreground": "#ffffff",
+    "button.foreground": theme.uibackgroundalt,
     // "button.hoverBackground": "#ff0000",
     "extensionButton.prominentBackground": theme.primary + "9d",
-    "extensionButton.prominentForeground": "#ffffff",
+    "extensionButton.prominentForeground": theme.uibackgroundalt,
     "extensionButton.prominentHoverBackground": theme.primary,
   };
   let common = {

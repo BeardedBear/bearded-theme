@@ -1,5 +1,11 @@
 # Changelog for Bearded Theme
 
+## 3.2.1 - 2020-07-07
+
+### Fixes
+
+- Oops i forgot buttons foreground !
+
 ## 3.2.0 - 2020-07-07
 
 ### New features
