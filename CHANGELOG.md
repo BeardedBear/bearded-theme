@@ -1,5 +1,14 @@
 # Changelog for Bearded Theme
 
+## 3.2.2 - 2020-07-18
+
+### Enhancements
+
+- Ajust foreground color for comment gutter bar
+- Ajust input placeholder color
+- Unifying select border with input colors
+- Add variation colors for settings
+
 ## 3.2.1 - 2020-07-07
 
 ### Fixes
