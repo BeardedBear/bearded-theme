@@ -1,5 +1,13 @@
 # Changelog for Bearded Theme
 
+## 3.2.3 - 2020-07-22
+
+### Fixes
+
+- Fix escape character in raw string [[Issue #21]](https://github.com/BeardedBear/bearded-theme/issues/21)
+- Fix CSS cursor property color
+- Fix TS decorator color
+
 ## 3.2.2 - 2020-07-18
 
 ### Enhancements

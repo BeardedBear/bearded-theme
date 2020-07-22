@@ -7,18 +7,19 @@ export const classes = [
 ];
 export const suffix = [
   "entity.other.attribute-name.parent-selector-suffix punctuation.definition.entity",
-  "meta.property-list entity.name.tag.css",
+  // "meta.property-list entity.name.tag.css",
 ];
 export const ids = [
   "source.css.scss entity.other.attribute-name.id ",
   "source.css entity.other.attribute-name.id ",
   "entity.other.attribute-name.id punctuation.definition.entity",
 ];
-export const and = ["entity.name.tag.reference"];
+export const and = ["entity.name.tag.reference", "meta.property-list"];
 export const property = [
   "support.type.property-name.css",
   "support.type.vendored.property-name",
-  "meta.property-list.scss meta.property-list.scss entity.name.tag.css",
+  "meta.property-list entity.name.tag.css",
+  // "meta.property-list.scss meta.property-list.scss entity.name.tag.css",
 ];
 // export const punctuation = ["punctuation.definition.entity"];
 export const value = ["support.constant.property-value", "support.constant.font-name", "meta.property-value.css"];

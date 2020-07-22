@@ -47,7 +47,7 @@ export const decorators = [
   "meta.decorator entity.name.function",
   "meta.decorator punctuation.decorator",
   "punctuation.definition.decorator",
-  // "meta.decorator variable.other.readwrite",
+  "meta.decorator variable.other.readwrite.ts",
 ];
 
 export const exportScope = ["keyword.control.export", "support.type.object.module"];
@@ -178,6 +178,7 @@ export const strings = [
   "punctuation.definition.string.begin",
   "punctuation.definition.string.end",
   "string.other.link",
+  "constant.character.escape.regexp",
   // CSS
   "variable.parameter.url",
 ];
