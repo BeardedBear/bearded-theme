@@ -1,5 +1,11 @@
 # Changelog for Bearded Theme
 
+## 3.2.4 - 2020-08-02
+
+### Enhancements
+
+- Improve lisibility for light variations
+
 ## 3.2.3 - 2020-07-22
 
 ### Fixes

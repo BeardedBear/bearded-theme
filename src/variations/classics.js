@@ -21,7 +21,7 @@ const light = makeTheme(
   "light",
   Object.assign(
     {
-      primary: "#6090d7",
+      primary: colors.blue,
       primaryalt: "#ffffff",
       uiborder: "#d1dadc",
       uibackground: "#ffffff",

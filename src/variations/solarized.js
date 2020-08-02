@@ -8,6 +8,7 @@ const solarizedColors = {
   green: "#859900",
   turquoize: "#2aa198",
   salmon: "#d33682",
+  orange: "#ca7016",
 };
 
 const solarizedDark = makeTheme(
@@ -37,13 +38,13 @@ const solarizedLight = makeTheme(
   "solarized-light",
   Object.assign(
     {
-      primary: "#073642",
+      primary: "#2aa198",
       primaryalt: "#fef9ec",
       uiborder: "#d8cfbb",
       uibackground: "#fdf6e3",
       uibackgroundalt: "#eee8d5",
       default: "#073642",
-      defaultalt: "#a49f94",
+      defaultalt: "#657b83",
     },
     colors,
     solarizedColors,
