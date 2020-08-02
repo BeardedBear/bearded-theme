@@ -1,5 +1,11 @@
 # Changelog for Bearded Theme
 
+## 3.2.5 - 2020-08-02
+
+### Fixes
+
+- Revert highlight border opacity
+
 ## 3.2.4 - 2020-08-02
 
 ### Enhancements

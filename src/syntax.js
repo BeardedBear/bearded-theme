@@ -43,7 +43,7 @@ export default function (theme) {
     // HTML
     createScope(markup.variables, theme.salmon),
     createScope(markup.tags, theme.blue),
-    createScope(markup.tagsPunctuation, theme.blue + "80"),
+    createScope(markup.tagsPunctuation, theme.blue + "aa"),
     createScope(markup.attributes, theme.yellow, "italic"),
     // MARKDOWN
     createScope(markup.mdCode, theme.purple),

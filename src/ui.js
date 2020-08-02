@@ -66,7 +66,7 @@ export default function (theme) {
     "editor.selectionBackground": theme.primary + "40",
     "editor.selectionForeground": theme.primary,
     "editor.inactiveSelectionBackground": theme.primary + "50",
-    "editor.selectionHighlightBorder": theme.defaultalt + "aa",
+    "editor.selectionHighlightBorder": theme.defaultalt,
     "editor.selectionHighlightBackground": theme.transparent,
 
     "editor.wordHighlightStrongBackground": theme.primary + "50",
