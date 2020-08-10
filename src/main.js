@@ -1,4 +1,3 @@
-import * as mixins from "./mixins.js";
 import "./variations/arc.js";
 import "./variations/black.js";
 import "./variations/classics.js";

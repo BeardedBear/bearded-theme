@@ -123,21 +123,21 @@
   },
   "devDependencies": {
     "@types/vscode": "^1.47.0",
-    "eslint": "^6.8.0",
-    "eslint-config-prettier": "^6.11.0",
-    "eslint-plugin-prettier": "^3.1.4",
     "node": "^13.14.0",
     "nodemon": "^2.0.4",
-    "prettier": "^2.0.5",
     "vscode-test": "^1.4.0"
   },
   "scripts": {
     "build": "node ./src/main.js",
     "watch": "nodemon -L ./src/main.js",
+    "lint": "rome check --watch --apply",
+    "start": "run-p watch lint",
     "test": "node ./out/test/runTest.js"
   },
   "dependencies": {
     "lodash": "^4.17.19",
+    "npm-run-all": "^4.1.5",
+    "rome": "^10.0.3-beta",
     "vsce": "^1.77.0"
   }
 }

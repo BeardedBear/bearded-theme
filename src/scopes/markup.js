@@ -1,41 +1,43 @@
 // HTML
 export const variables = ["support.variable.liquid", "support.class.liquid"];
 export const tags = [
-  "text.html.basic entity.name",
-  "source.js-ignored-vscode",
-  "entity.name.tag",
-  "entity.name.tag support.class.component",
-  // BLADE
-  "meta.embedded.block.blade constant.other.php",
-  "meta.embedded.block.blade keyword.operator.comparison.php",
-  "meta.embedded.block.blade keyword.operator.arithmetic.php",
+	"text.html.basic entity.name",
+	"source.js-ignored-vscode",
+	"entity.name.tag",
+	"entity.name.tag support.class.component",
+	// BLADE
+	"meta.embedded.block.blade constant.other.php",
+	"meta.embedded.block.blade keyword.operator.comparison.php",
+	"meta.embedded.block.blade keyword.operator.arithmetic.php",
 ];
 export const tagsPunctuation = [
-  "meta.tag.sgml.doctype.html",
-  "punctuation.definition.tag",
-  "meta.tag.block.any",
-  "meta.tag.inline.any",
-  "source.css-ignored-vscode",
-  "meta.tag.metadata.style.end.html",
+	"meta.tag.sgml.doctype.html",
+	"punctuation.definition.tag",
+	"meta.tag.block.any",
+	"meta.tag.inline.any",
+	"source.css-ignored-vscode",
+	"meta.tag.metadata.style.end.html",
 ];
 export const attributes = [
-  "entity.other.attribute-name",
-  "entity.name.tag.liquid",
-  "invalid.deprecated.entity.other.attribute-name",
-  // BLADE
-  "meta.embedded.block.blade storage.type.php",
+	"entity.other.attribute-name",
+	"entity.name.tag.liquid",
+	"invalid.deprecated.entity.other.attribute-name",
+	// BLADE
+	"meta.embedded.block.blade storage.type.php",
 ];
 
 // MARKDOWN
 export const mdCode = [
-  "markup.inline.raw.string.markdown",
-  "punctuation.definition.raw.markdown",
-  "markup.fenced_code.block.markdown",
-  "markup.fenced_code.block.markdown punctuation",
-  "markup.raw.block.markdown",
+	"markup.inline.raw.string.markdown",
+	"punctuation.definition.raw.markdown",
+	"markup.fenced_code.block.markdown",
+	"markup.fenced_code.block.markdown punctuation",
+	"markup.raw.block.markdown",
 ];
 export const mdCodeLanguage = ["fenced_code.block.language"];
-export const mdList = ["markup.list.unnumbered.markdown meta.paragraph.markdown"];
+export const mdList = [
+	"markup.list.unnumbered.markdown meta.paragraph.markdown",
+];
 export const mdListPunctuation = ["punctuation.definition.list.begin"];
 export const mdHeading = ["entity.name.section", "markup.heading.setext"];
 export const mdHeadingPunctuation = ["punctuation.definition.heading"];

@@ -6,7 +6,7 @@
 
 ## File watching
 
-`npm run watch`
+`npm run start`
 
 ## Build
 

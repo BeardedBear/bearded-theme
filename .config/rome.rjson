@@ -1,0 +1,10 @@
+// For configuration documentation see http://romefrontend.dev/#project-configuration
+name: "bearded-theme"
+lint: {
+	globals: []
+	ignore: [
+		"launch.json"
+		"package-lock.json"
+]
+}
+root: true
