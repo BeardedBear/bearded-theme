@@ -1,5 +1,11 @@
 # Changelog for Bearded Theme
 
+## 3.2.6 - 2020-08-27
+
+### Enhancements
+
+- Update README for adding a link to my icons pack : [Bearded Icons](https://marketplace.visualstudio.com/items?itemName=BeardedBear.beardedicons)
+
 ## 3.2.5 - 2020-08-02
 
 ### Fixes

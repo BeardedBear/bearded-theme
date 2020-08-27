@@ -1,3 +1,5 @@
+> I created an icon pack to complete this vscode theme: [Bearded Theme](https://marketplace.visualstudio.com/items?itemName=BeardedBear.beardedicons)
+
 <a href="https://raw.githubusercontent.com/BeardedBear/bearded-theme/master/assets/themes.png" target="_BLANK">
 <img alt="Example" src="https://raw.githubusercontent.com/BeardedBear/bearded-theme/master/assets/themes.png">
 </a>
