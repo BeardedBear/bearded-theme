@@ -4,16 +4,26 @@ const purple = makeTheme(
 	"purple",
 	Object.assign(
 		{
-			primary: "#a948ef",
+			primary: "#BA505A",
 			primaryalt: "#301e43",
 			uiborder: "#140e1b",
-			uibackground: "#20172b",
+			uibackground: "#1a1424",
 			uibackgroundalt: "#1a1424",
 			default: "#cbc4cf",
-			defaultalt: "#655785",
+			defaultalt: "#4A3966",
 		},
 		colors,
 		levelColors,
+		{
+			yellow: "#BA505A",
+			default: "#A2A4D1",
+			salmon: "#cbc4cf",
+			orange: "#775BA3",
+			blue: "#00B3BD",
+			green: "#76AC76",
+			turquoize: "#BA505A",
+			purple: "#BD904C",
+		},
 	),
 );
 

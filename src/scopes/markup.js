@@ -5,6 +5,7 @@ export const tags = [
 	"source.js-ignored-vscode",
 	"entity.name.tag",
 	"entity.name.tag support.class.component",
+	"support.class.component.html",
 	// BLADE
 	"meta.embedded.block.blade constant.other.php",
 	"meta.embedded.block.blade keyword.operator.comparison.php",
@@ -14,6 +15,7 @@ export const tagsPunctuation = [
 	"meta.tag.sgml.doctype.html",
 	"punctuation.definition.tag",
 	"meta.tag.block.any",
+	"meta.tag.block.any.html",
 	"meta.tag.inline.any",
 	"source.css-ignored-vscode",
 	"meta.tag.metadata.style.end.html",

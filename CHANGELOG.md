@@ -1,5 +1,11 @@
 # Changelog for Bearded Theme
 
+## 3.2.8 - 2020-09-21
+
+### Fixes
+
+- Fix markup color for VueJS3
+
 ## 3.2.7 - 2020-08-27
 
 ### Enhancements
