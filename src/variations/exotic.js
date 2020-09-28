@@ -10,6 +10,7 @@ const earth = makeTheme(
 			uibackground: "#1E1615",
 			uibackgroundalt: "#181211",
 			default: "#C6BEAB",
+			defaultMain: "#C6BEAB",
 			defaultalt: "#6a5553",
 		},
 		{
@@ -40,6 +41,7 @@ const voided = makeTheme(
 			uibackground: "#150F23",
 			uibackgroundalt: "#120a1a",
 			default: "#D7E2EF",
+			defaultMain: "#D7E2EF",
 			defaultalt: "#585785",
 		},
 		{

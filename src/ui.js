@@ -92,7 +92,7 @@ export default function ui(theme) {
 	};
 	let find = {
 		"editorWarning.foreground": theme.yellow,
-		"editorWhitespace.foreground": `${theme.defaultalt}40`,
+		"editorWhitespace.foreground": `${theme.primary}40`,
 		"editorWidget.background": theme.primaryalt,
 		"editorWidget.resizeBorder": `${theme.primary}50`,
 	};
@@ -106,9 +106,9 @@ export default function ui(theme) {
 	};
 	let input = {
 		"input.background": theme.transparent,
-		"input.foreground": theme.default,
-		"input.border": `${theme.defaultalt}aa`,
-		"input.placeholderForeground": theme.defaultalt,
+		"input.foreground": theme.defaultMain,
+		"input.border": `${theme.primary}50`,
+		"input.placeholderForeground": `${theme.primary}90`,
 		"inputOption.activeBorder": theme.primary,
 		"inputValidation.errorBackground": theme.primaryalt,
 		"inputValidation.errorBorder": theme.yellow,
@@ -121,12 +121,12 @@ export default function ui(theme) {
 		"list.activeSelectionBackground": `${theme.primary}45`,
 		"list.dropBackground": `${theme.primary}15`,
 		"list.focusBackground": `${theme.primary}aa`,
-		"list.focusForeground": theme.default,
+		"list.focusForeground": theme.defaultMain,
 		"list.errorForeground": theme.danger,
 		"list.warningForeground": theme.warning,
 		"list.highlightForeground": theme.yellow,
 		"list.activeSelectionForeground": theme.default,
-		"list.hoverBackground": `${theme.defaultalt}20`,
+		"list.hoverBackground": `${theme.uiborder}60`,
 		"list.hoverForeground": theme.default,
 		"list.inactiveSelectionBackground": `${theme.primary}45`,
 		"gitDecoration.modifiedResourceForeground": theme.info,
@@ -137,12 +137,13 @@ export default function ui(theme) {
 	};
 	let menu = {
 		"menu.background": theme.primaryalt,
-		"menu.border": theme.primaryalt,
-		"menu.foreground": theme.default,
+		// "menu.border": theme.primaryalt,
+		"menu.foreground": theme.defaultMain,
 		"menu.separatorBackground": theme.uiborder,
 		"menu.selectionBackground": `${theme.primary}20`,
+		"menu.selectionForeground": theme.defaultMain,
 		"menubar.selectionBackground": theme.primaryalt,
-		"menubar.selectionForeground": theme.default,
+		"menubar.selectionForeground": theme.defaultMain,
 	};
 	let merge = {
 		"merge.border": theme.uiborder,
@@ -158,9 +159,9 @@ export default function ui(theme) {
 		"editorOverviewRuler.incomingContentForeground": theme.success,
 	};
 	let notification = {
-		"notificationCenterHeader.foreground": theme.default,
+		"notificationCenterHeader.foreground": theme.defaultMain,
 		"notificationCenterHeader.background": theme.primaryalt,
-		"notifications.foreground": theme.default,
+		"notifications.foreground": theme.defaultMain,
 		"notifications.background": theme.primaryalt,
 		"notifications.border": `${theme.primary}50`,
 		"notificationLink.foreground": theme.yellow,
@@ -222,7 +223,7 @@ export default function ui(theme) {
 		"sideBarSectionHeader.foreground": theme.default,
 		"sideBarSectionHeader.border": theme.uiborder,
 		"sideBarTitle.foreground": theme.defaultalt,
-		"tree.indentGuidesStroke": `${theme.default}30`,
+		"tree.indentGuidesStroke": `${theme.defaultalt}70`,
 	};
 	let statusBar = {
 		"statusBar.background": theme.uibackgroundalt,
@@ -242,7 +243,7 @@ export default function ui(theme) {
 	let suggest = {
 		"editorSuggestWidget.background": theme.uibackground,
 		"editorSuggestWidget.border": theme.uiborder,
-		"editorSuggestWidget.foreground": theme.default,
+		"editorSuggestWidget.foreground": theme.defaultMain,
 		"editorSuggestWidget.highlightForeground": theme.yellow,
 		"editorSuggestWidget.selectedBackground": `${theme.primary}4d`,
 	};

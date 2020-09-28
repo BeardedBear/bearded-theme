@@ -6,6 +6,7 @@ const blackUI = {
 	uibackground: "#111418",
 	uibackgroundalt: "#0D0F12",
 	default: "#AEB2B2",
+	defaultMain: "#AEB2B2",
 	defaultalt: "#525e6f",
 };
 

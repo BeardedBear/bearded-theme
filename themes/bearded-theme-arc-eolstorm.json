@@ -70,7 +70,7 @@
 		"editorMarkerNavigationError.background": "#E3553590",
 		"editorMarkerNavigationWarning.background": "#FF955C90",
 		"editorWarning.foreground": "#EACD61",
-		"editorWhitespace.foreground": "#57637540",
+		"editorWhitespace.foreground": "#9DACC340",
 		"editorWidget.background": "#364154",
 		"editorWidget.resizeBorder": "#9DACC350",
 		"editorGutter.background": "#222A38",
@@ -81,8 +81,8 @@
 		"editorLineNumber.activeForeground": "#ffffffbb",
 		"input.background": "#00000000",
 		"input.foreground": "#ffffff",
-		"input.border": "#576375aa",
-		"input.placeholderForeground": "#576375",
+		"input.border": "#9DACC350",
+		"input.placeholderForeground": "#9DACC390",
 		"inputOption.activeBorder": "#9DACC3",
 		"inputValidation.errorBackground": "#364154",
 		"inputValidation.errorBorder": "#EACD61",
@@ -98,7 +98,7 @@
 		"list.warningForeground": "#FF955C",
 		"list.highlightForeground": "#EACD61",
 		"list.activeSelectionForeground": "#ffffff",
-		"list.hoverBackground": "#57637520",
+		"list.hoverBackground": "#13172060",
 		"list.hoverForeground": "#ffffff",
 		"list.inactiveSelectionBackground": "#9DACC345",
 		"gitDecoration.modifiedResourceForeground": "#69C3FF",
@@ -107,10 +107,10 @@
 		"gitDecoration.ignoredResourceForeground": "#576375",
 		"gitDecoration.conflictingResourceForeground": "#9DACC3",
 		"menu.background": "#364154",
-		"menu.border": "#364154",
 		"menu.foreground": "#ffffff",
 		"menu.separatorBackground": "#131720",
 		"menu.selectionBackground": "#9DACC320",
+		"menu.selectionForeground": "#ffffff",
 		"menubar.selectionBackground": "#364154",
 		"menubar.selectionForeground": "#ffffff",
 		"merge.border": "#131720",
@@ -171,7 +171,7 @@
 		"sideBarSectionHeader.foreground": "#ffffff",
 		"sideBarSectionHeader.border": "#131720",
 		"sideBarTitle.foreground": "#576375",
-		"tree.indentGuidesStroke": "#ffffff30",
+		"tree.indentGuidesStroke": "#57637570",
 		"statusBar.background": "#1D232F",
 		"statusBar.border": "#131720",
 		"statusBar.debuggingBackground": "#9DACC344",
@@ -439,7 +439,7 @@
 				"source.lua"
 			],
 			"settings": {
-				"foreground": "#ffffffaa"
+				"foreground": "#576375"
 			}
 		},
 		{

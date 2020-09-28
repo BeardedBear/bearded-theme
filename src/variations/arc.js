@@ -10,6 +10,7 @@ const arc = makeTheme(
 			uibackground: "#222A38",
 			uibackgroundalt: "#1D232F",
 			default: "#b8c6d1",
+			defaultMain: "#b8c6d1",
 			defaultalt: "#576375",
 		},
 		colors,
@@ -27,6 +28,7 @@ const arcEolstorm = makeTheme(
 			uibackground: "#222A38",
 			uibackgroundalt: "#1D232F",
 			default: "#ffffff",
+			defaultMain: "#ffffff",
 			defaultalt: "#576375",
 		},
 		{

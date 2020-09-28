@@ -1,5 +1,15 @@
 # Changelog for Bearded Theme
 
+## 3.3.0 - 2020-09-28
+
+### New features
+
+- New variations: Surprising Eggplant and Surprising Blueberry! Colors that don't seem to go together, but they do. (Other surprising variations will come)
+
+### Fixes
+
+- Oups, i push a broken purple variation! Sorry!
+
 ## 3.2.8 - 2020-09-21
 
 ### Fixes
