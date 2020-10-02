@@ -3,7 +3,7 @@
   "displayName": "Bearded Theme",
   "description": "The theme with a long beard.",
   "publisher": "BeardedBear",
-  "version": "3.3.0",
+  "version": "3.3.1",
   "type": "module",
   "engines": {
     "vscode": "^1.47.0"

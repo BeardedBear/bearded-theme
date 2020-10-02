@@ -1,5 +1,11 @@
 # Changelog for Bearded Theme
 
+## 3.3.0 - 2020-10-02
+
+### Fixes
+
+- Fix missing colors for surprising variations.
+
 ## 3.3.0 - 2020-09-28
 
 ### New features

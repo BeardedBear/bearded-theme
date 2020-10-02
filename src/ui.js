@@ -26,7 +26,7 @@ export default function ui(theme) {
 		errorForeground: theme.danger,
 		focusBorder: `${theme.primary}aa`,
 		foreground: theme.default,
-		"selection.background": `${theme.default}80`,
+		"selection.background": `${theme.primary}60`,
 		"widget.shadow": theme.uiborder,
 		"icon.foreground": theme.default,
 	};
@@ -92,7 +92,7 @@ export default function ui(theme) {
 	};
 	let find = {
 		"editorWarning.foreground": theme.yellow,
-		"editorWhitespace.foreground": `${theme.primary}40`,
+		"editorWhitespace.foreground": `${theme.defaultalt}60`,
 		"editorWidget.background": theme.primaryalt,
 		"editorWidget.resizeBorder": `${theme.primary}50`,
 	};
@@ -102,7 +102,7 @@ export default function ui(theme) {
 		"editorGutter.deletedBackground": `${theme.danger}cc`,
 		"editorGutter.modifiedBackground": `${theme.info}cc`,
 		"editorLineNumber.foreground": theme.defaultalt,
-		"editorLineNumber.activeForeground": `${theme.default}bb`,
+		"editorLineNumber.activeForeground": `${theme.defaultalt}bb`,
 	};
 	let input = {
 		"input.background": theme.transparent,
@@ -137,7 +137,6 @@ export default function ui(theme) {
 	};
 	let menu = {
 		"menu.background": theme.primaryalt,
-		// "menu.border": theme.primaryalt,
 		"menu.foreground": theme.defaultMain,
 		"menu.separatorBackground": theme.uiborder,
 		"menu.selectionBackground": `${theme.primary}20`,
@@ -236,7 +235,7 @@ export default function ui(theme) {
 		"statusBar.noFolderForeground": theme.default,
 
 		"statusBarItem.activeBackground": theme.primaryalt,
-		"statusBarItem.hoverBackground": `${theme.default}15`,
+		"statusBarItem.hoverBackground": `${theme.defaultalt}30`,
 		"statusBarItem.prominentBackground": theme.uiborder,
 		"statusBarItem.prominentHoverBackground": theme.primaryalt,
 	};
