@@ -1,12 +1,12 @@
 import {colors, levelColors, makeTheme} from "../mixins.js";
 
-const primaryPurple = "#D2624E";
+const primaryPurple = "#d24e4e";
 const purple = makeTheme(
 	"surprising-eggplant",
 	Object.assign(
 		{
 			primary: primaryPurple,
-			primaryalt: "#4E251D",
+			primaryalt: "#4e1d27",
 			uiborder: "#0F0B14",
 			uibackground: "#1a1424",
 			uibackgroundalt: "#16111F",
@@ -33,13 +33,13 @@ const purple = makeTheme(
 	),
 );
 
-const primaryBlue = "#D2624E";
+const primaryBlue = "#c93e71";
 const blue = makeTheme(
 	"surprising-blueberry",
 	Object.assign(
 		{
 			primary: primaryBlue,
-			primaryalt: "#4E251D",
+			primaryalt: "#4e1d37",
 			uiborder: "#0F0B14",
 			uibackground: "#121B2B",
 			uibackgroundalt: "#0F1624",
@@ -52,11 +52,11 @@ const blue = makeTheme(
 		{
 			yellow: primaryBlue,
 			salmon: "#CBCED6",
-			orange: "#00FF00",
+			orange: "#3e668c",
 			blue: "#00B3BD",
 			turquoize: primaryBlue,
 			purple: "#CC9B52",
-			red: "00FF00",
+			red: "#C13838",
 			warning: "#c96c20",
 			info: "#00B3BD",
 			danger: "#E35535",

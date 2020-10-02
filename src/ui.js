@@ -3,7 +3,7 @@ export default function ui(theme) {
 		"activityBar.background": theme.uibackgroundalt,
 		"activityBar.border": theme.uiborder,
 		"activityBar.foreground": theme.primary,
-		"activityBar.inactiveForeground": theme.defaultalt,
+		"activityBar.inactiveForeground": `${theme.defaultalt}AA`,
 		"activityBarBadge.background": theme.primary,
 		"activityBarBadge.foreground": theme.uibackgroundalt,
 	};
@@ -101,8 +101,8 @@ export default function ui(theme) {
 		"editorGutter.addedBackground": `${theme.success}cc`,
 		"editorGutter.deletedBackground": `${theme.danger}cc`,
 		"editorGutter.modifiedBackground": `${theme.info}cc`,
-		"editorLineNumber.foreground": theme.defaultalt,
-		"editorLineNumber.activeForeground": `${theme.defaultalt}bb`,
+		"editorLineNumber.foreground": `${theme.defaultalt}90`,
+		"editorLineNumber.activeForeground": theme.defaultalt,
 	};
 	let input = {
 		"input.background": theme.transparent,
