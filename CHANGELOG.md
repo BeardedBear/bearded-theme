@@ -1,6 +1,12 @@
 # Changelog for Bearded Theme
 
-## 3.3.0 - 2020-10-02
+## 3.3.2 - 2020-10-05
+
+### Enhancements
+
+- Improve readibility for highlights and for inputs
+
+## 3.3.1 - 2020-10-02
 
 ### Fixes
 
