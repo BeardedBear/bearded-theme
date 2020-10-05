@@ -54,7 +54,7 @@ export default function ui(theme) {
 	let editor = {
 		"editor.background": theme.uibackground,
 		"editor.findMatchBackground": `${theme.primary}20`,
-		"editor.findMatchBorder": `${theme.primary}50`,
+		"editor.findMatchBorder": `${theme.primary}60`,
 		"editor.findMatchHighlightBackground": `${theme.primary}20`,
 		"editor.findMatchHighlightBorder": `${theme.primary}40`,
 		"editor.foreground": theme.default,
@@ -63,10 +63,10 @@ export default function ui(theme) {
 		"editor.lineHighlightBorder": `${theme.primary}1a`,
 		"editor.rangeHighlightBackground": `${theme.primary}20`,
 
-		"editor.selectionBackground": `${theme.primary}20`,
+		"editor.selectionBackground": `${theme.primary}40`,
 		"editor.selectionForeground": theme.primary,
 		"editor.inactiveSelectionBackground": `${theme.primary}20`,
-		"editor.selectionHighlightBorder": `${theme.primary}40`,
+		"editor.selectionHighlightBorder": `${theme.primary}60`,
 		"editor.selectionHighlightBackground": theme.transparent,
 
 		"editor.wordHighlightStrongBackground": `${theme.primary}40`,
@@ -206,9 +206,9 @@ export default function ui(theme) {
 	};
 	let scrollbar = {
 		"scrollbar.shadow": theme.uiborder,
-		"scrollbarSlider.activeBackground": `${theme.defaultalt}90`,
-		"scrollbarSlider.background": `${theme.defaultalt}50`,
-		"scrollbarSlider.hoverBackground": `${theme.defaultalt}90`,
+		"scrollbarSlider.activeBackground": "#00000050",
+		"scrollbarSlider.background": "#00000030",
+		"scrollbarSlider.hoverBackground": "#00000050",
 	};
 	let settings = {
 		"settings.modifiedItemIndicator": theme.primary,
@@ -282,7 +282,7 @@ export default function ui(theme) {
 		"terminal.ansiBrightCyan": theme.turquoize,
 		"terminal.ansiBrightWhite": theme.primaryalt,
 		"terminal.background": theme.uibackground,
-		"terminal.foreground": theme.default,
+		"terminal.foreground": theme.defaultmain,
 		"terminalCursor.background": theme.yellow,
 		"terminalCursor.foreground": theme.yellow,
 	};

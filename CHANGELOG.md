@@ -1,6 +1,10 @@
 # Changelog for Bearded Theme
 
-## 3.3.3 - 2020-10-05
+## 3.4.0 - 2020-10-05
+
+### New features
+
+- New surprising variation : Watermelon
 
 ### Enhancements
 

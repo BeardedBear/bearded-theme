@@ -3,7 +3,7 @@
   "displayName": "Bearded Theme",
   "description": "The theme with a long beard.",
   "publisher": "BeardedBear",
-  "version": "3.3.3",
+  "version": "3.4.0",
   "type": "module",
   "engines": {
     "vscode": "^1.47.0"
@@ -128,6 +128,11 @@
         "label": "BeardedTheme Surprising Blueberry",
         "uiTheme": "vs-dark",
         "path": "./themes/bearded-theme-surprising-blueberry.json"
+      },
+      {
+        "label": "BeardedTheme Surprising Watermelon",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-surprising-watermelon.json"
       }
     ]
   },

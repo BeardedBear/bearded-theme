@@ -63,5 +63,36 @@ const blue = makeTheme(
 		},
 	),
 );
+const primaryWatermelon = "#da6c62";
+const watermelon = makeTheme(
+	"surprising-watermelon",
+	Object.assign(
+		{
+			primary: primaryWatermelon,
+			primaryalt: "#6a2b2a",
+			uiborder: "#0C1617",
+			uibackground: "#162729",
+			uibackgroundalt: "#132224",
+			default: "#FFFFFF" + "90",
+			defaultMain: "#FFFFFF" + "80",
+			defaultalt: "#2f636a",
+		},
+		colors,
+		levelColors,
+		{
+			yellow: primaryWatermelon,
+			salmon: "#CBCED6",
+			orange: "#3F8891",
+			blue: "#1ea8be",
+			turquoize: primaryWatermelon,
+			purple: "#ce64a0",
+			green: "#5ca362",
+			red: "#C25838",
+			warning: "#c96c20",
+			info: "#00B3BD",
+			danger: "#E35535",
+		},
+	),
+);
 
-export default {purple, blue};
+export default {purple, blue, watermelon};
