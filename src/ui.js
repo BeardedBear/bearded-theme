@@ -206,9 +206,9 @@ export default function ui(theme) {
 	};
 	let scrollbar = {
 		"scrollbar.shadow": theme.uiborder,
-		"scrollbarSlider.activeBackground": "#00000050",
-		"scrollbarSlider.background": "#00000030",
-		"scrollbarSlider.hoverBackground": "#00000050",
+		"scrollbarSlider.activeBackground": `${theme.primary}aa`,
+		"scrollbarSlider.background": `${theme.primary}40`,
+		"scrollbarSlider.hoverBackground": `${theme.primary}50`,
 	};
 	let settings = {
 		"settings.modifiedItemIndicator": theme.primary,

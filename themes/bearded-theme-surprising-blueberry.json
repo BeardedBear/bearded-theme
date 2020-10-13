@@ -159,9 +159,9 @@
 		"pickerGroup.foreground": "#FFFFFF90",
 		"progressBar.background": "#c93e71",
 		"scrollbar.shadow": "#0F0B14",
-		"scrollbarSlider.activeBackground": "#00000050",
-		"scrollbarSlider.background": "#00000030",
-		"scrollbarSlider.hoverBackground": "#00000050",
+		"scrollbarSlider.activeBackground": "#c93e71aa",
+		"scrollbarSlider.background": "#c93e7140",
+		"scrollbarSlider.hoverBackground": "#c93e7150",
 		"settings.modifiedItemIndicator": "#c93e71",
 		"settings.headerForeground": "#c93e71",
 		"sideBar.background": "#0F1624",
@@ -250,7 +250,7 @@
 				"entity.name.record.field.accessor"
 			],
 			"settings": {
-				"foreground": "#3e668c",
+				"foreground": "#5288BA",
 				"fontStyle": "italic"
 			}
 		},
@@ -448,7 +448,7 @@
 				"variable.parameter.function.language.special.self"
 			],
 			"settings": {
-				"foreground": "#3e668c",
+				"foreground": "#5288BA",
 				"fontStyle": "italic"
 			}
 		},
@@ -518,7 +518,7 @@
 				"variable.other.constant entity.name.function"
 			],
 			"settings": {
-				"foreground": "#CBCED6"
+				"foreground": "#B85C40"
 			}
 		},
 		{
@@ -526,7 +526,7 @@
 				"source.elm constant.type-constructor"
 			],
 			"settings": {
-				"foreground": "#CBCED6"
+				"foreground": "#B85C40"
 			}
 		},
 		{
@@ -544,7 +544,7 @@
 				"support.class.liquid"
 			],
 			"settings": {
-				"foreground": "#CBCED6"
+				"foreground": "#B85C40"
 			}
 		},
 		{
@@ -749,7 +749,7 @@
 				"meta.property-list"
 			],
 			"settings": {
-				"foreground": "#3e668c"
+				"foreground": "#5288BA"
 			}
 		},
 		{
@@ -757,7 +757,7 @@
 				"keyword.other.unit"
 			],
 			"settings": {
-				"foreground": "#3e668c",
+				"foreground": "#5288BA",
 				"fontStyle": "italic"
 			}
 		},
@@ -768,7 +768,7 @@
 				"meta.property-value.css"
 			],
 			"settings": {
-				"foreground": "#3e668c"
+				"foreground": "#5288BA"
 			}
 		},
 		{
@@ -776,7 +776,7 @@
 				"constant.numeric"
 			],
 			"settings": {
-				"foreground": "#3e668c"
+				"foreground": "#5288BA"
 			}
 		}
 	]

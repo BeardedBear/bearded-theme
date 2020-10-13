@@ -1,5 +1,13 @@
 # Changelog for Bearded Theme
 
+## 3.4.1 - 2020-10-13
+
+### Fixes
+
+- Fix visibility of scrollbar
+- Fix Union types olor for Elm
+- Fix luminosity of accessors
+
 ## 3.4.0 - 2020-10-05
 
 ### New features
