@@ -159,7 +159,7 @@
 		"pickerGroup.foreground": "#eeeeee",
 		"progressBar.background": "#FFB638",
 		"scrollbar.shadow": "#08060e",
-		"scrollbarSlider.activeBackground": "#A680FFaa",
+		"scrollbarSlider.activeBackground": "#A680FF60",
 		"scrollbarSlider.background": "#A680FF40",
 		"scrollbarSlider.hoverBackground": "#A680FF50",
 		"settings.modifiedItemIndicator": "#A680FF",

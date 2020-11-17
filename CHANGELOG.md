@@ -1,5 +1,11 @@
 # Changelog for Bearded Theme
 
+## 3.5.0 - 2020-11-18
+
+### New features
+
+- New variations : Monokai Metallian and Monokai Terra
+
 ## 3.4.1 - 2020-10-13
 
 ### Fixes

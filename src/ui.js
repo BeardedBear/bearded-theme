@@ -206,7 +206,7 @@ export default function ui(theme) {
 	};
 	let scrollbar = {
 		"scrollbar.shadow": theme.uiborder,
-		"scrollbarSlider.activeBackground": `${theme.primary}aa`,
+		"scrollbarSlider.activeBackground": `${theme.primary}60`,
 		"scrollbarSlider.background": `${theme.primary}40`,
 		"scrollbarSlider.hoverBackground": `${theme.primary}50`,
 	};
