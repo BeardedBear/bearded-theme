@@ -1,5 +1,11 @@
 # Changelog for Bearded Theme
 
+## 3.5.1 - 2020-11-18
+
+### Fixes
+
+- Fix for Proky 💕
+
 ## 3.5.0 - 2020-11-18
 
 ### New features

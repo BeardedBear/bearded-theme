@@ -279,7 +279,8 @@
 				"source",
 				"support",
 				"constant.character.entity.named",
-				"meta.jsx.children"
+				"meta.jsx.children",
+				"source.lua"
 			],
 			"settings": {
 				"foreground": "#cedbdb"
@@ -426,8 +427,7 @@
 				"meta.function.echo.blade source.php",
 				"punctuation.definition.list.begin.python",
 				"punctuation.definition.list.end.python",
-				"text.html.vue-html meta.tag.block.any",
-				"source.lua"
+				"text.html.vue-html meta.tag.block.any"
 			],
 			"settings": {
 				"foreground": "#547783"

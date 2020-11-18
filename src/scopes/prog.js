@@ -45,6 +45,8 @@ export const currentText = [
 	"support",
 	"constant.character.entity.named",
 	"meta.jsx.children",
+	// LUA
+	"source.lua",
 ];
 
 export const decorators = [
@@ -155,8 +157,6 @@ export const punctuation = [
 	"punctuation.definition.list.end.python",
 	// VUE
 	"text.html.vue-html meta.tag.block.any",
-	// LUA
-	"source.lua",
 ];
 
 export const self = [
