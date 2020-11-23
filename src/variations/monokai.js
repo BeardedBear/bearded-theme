@@ -16,7 +16,7 @@ const monokaiColors = {
 	danger: "#E35535",
 };
 
-const primaryMonokai = "#9a90a3";
+const primaryMonokai = "#a59cad";
 const monokai = makeTheme(
 	"monokai-terra",
 	Object.assign(
@@ -28,14 +28,14 @@ const monokai = makeTheme(
 			uibackgroundalt: "#1e1c21",
 			default: "#FFFFFF" + "cc",
 			defaultMain: "#FFFFFF" + "80",
-			defaultalt: "#5c535c",
+			defaultalt: "#8a7f8a",
 		},
 		colors,
 		levelColors,
 		monokaiColors,
 	),
 );
-const primaryMonokaiMetallian = "#8991ab";
+const primaryMonokaiMetallian = "#989eb3";
 const monokaiMetallian = makeTheme(
 	"monokai-metallian",
 	Object.assign(
@@ -47,7 +47,7 @@ const monokaiMetallian = makeTheme(
 			uibackgroundalt: "#191b24",
 			default: "#FFFFFF" + "cc",
 			defaultMain: "#FFFFFF" + "80",
-			defaultalt: "#505766",
+			defaultalt: "#868d9c",
 		},
 		colors,
 		levelColors,

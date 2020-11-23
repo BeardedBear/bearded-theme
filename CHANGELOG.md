@@ -1,5 +1,11 @@
 # Changelog for Bearded Theme
 
+## 3.5.2 - 2020-11-23
+
+### Fixes
+
+- Fix punctuation readability for monokai variations
+
 ## 3.5.1 - 2020-11-18
 
 ### Fixes
