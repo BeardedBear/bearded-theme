@@ -280,7 +280,7 @@ export default function ui(theme) {
 		"terminal.ansiBrightBlue": theme.info,
 		"terminal.ansiBrightMagenta": theme.pink,
 		"terminal.ansiBrightCyan": theme.turquoize,
-		"terminal.ansiBrightWhite": theme.primaryalt,
+		"terminal.ansiBrightWhite": theme.info,
 		"terminal.background": theme.uibackground,
 		"terminal.foreground": theme.defaultmain,
 		"terminalCursor.background": theme.yellow,
