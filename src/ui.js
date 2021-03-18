@@ -94,6 +94,7 @@ export default function ui(theme) {
 		"editorLink.activeForeground": theme.default,
 		"editorWarning.border": theme.transparent,
 		"editorGutter.commentRangeForeground": theme.primaryalt,
+		"sash.hoverBorder": theme.primaryalt,
 	};
 	let editorMarker = {
 		"editorMarkerNavigation.background": theme.default,
