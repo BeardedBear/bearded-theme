@@ -1,5 +1,17 @@
 # Changelog for Bearded Theme
 
+## 3.6.0 - 2021-03-19
+
+### Fixes
+
+- Fix unreadable colors in terminal
+- Fix comments color
+
+### New features
+
+- Add support for sash.hoverBorder
+- Add support for charts colors
+
 ## 3.5.2 - 2020-11-23
 
 ### Fixes

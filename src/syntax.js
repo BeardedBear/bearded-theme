@@ -17,7 +17,7 @@ export default function syntax(theme) {
 	return Object.assign([
 		createScope(prog.accessors, theme.orange, "italic"),
 		createScope(prog.classes, theme.greenalt),
-		createScope(prog.comments, `${theme.primary}60`, "italic"),
+		createScope(prog.comments, `${theme.defaultalt}aa`, "italic"),
 		createScope(prog.constants, theme.red),
 		createScope(prog.currentText, theme.default),
 		createScope(prog.decorators, theme.pink),
