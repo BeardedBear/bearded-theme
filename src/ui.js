@@ -21,6 +21,16 @@ export default function ui(theme) {
 		"extensionButton.prominentForeground": theme.uibackgroundalt,
 		"extensionButton.prominentHoverBackground": theme.primary,
 	};
+	let charts = {
+		"charts.foreground": theme.default,
+		"charts.lines": theme.default,
+		"charts.red": theme.red,
+		"charts.blue": theme.blue,
+		"charts.yellow": theme.yellow,
+		"charts.orange": theme.orange,
+		"charts.green": theme.green,
+		"charts.purple": theme.pink,
+	};
 	let common = {
 		contrastActiveBorder: theme.transparent,
 		errorForeground: theme.danger,
@@ -134,6 +144,7 @@ export default function ui(theme) {
 		"gitDecoration.untrackedResourceForeground": theme.success,
 		"gitDecoration.ignoredResourceForeground": theme.defaultalt,
 		"gitDecoration.conflictingResourceForeground": theme.primary,
+		"gitDecoration.stageAddedResourceForeground": theme.red,
 	};
 	let menu = {
 		"menu.background": theme.primaryalt,
@@ -263,6 +274,7 @@ export default function ui(theme) {
 		"tab.inactiveForeground": theme.defaultalt,
 		"tab.unfocusedActiveForeground": theme.default,
 		"tab.unfocusedInactiveForeground": theme.default,
+		"tab.lastPinnedBorder": theme.uiborder,
 	};
 	let terminal = {
 		"terminal.ansiBlack": theme.uibackground,
@@ -308,6 +320,7 @@ export default function ui(theme) {
 		badge,
 		breadcrumb,
 		button,
+		charts,
 		common,
 		debug,
 		description,

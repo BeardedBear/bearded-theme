@@ -7,7 +7,6 @@ export const classes = [
 ];
 export const suffix = [
 	"entity.other.attribute-name.parent-selector-suffix punctuation.definition.entity",
-	// "meta.property-list entity.name.tag.css",
 ];
 export const ids = [
 	"source.css.scss entity.other.attribute-name.id ",
