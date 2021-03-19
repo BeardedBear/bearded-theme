@@ -16,12 +16,11 @@ const monokaiColors = {
 	danger: "#E35535",
 };
 
-const primaryMonokai = "#a59cad";
 const monokai = makeTheme(
 	"monokai-terra",
 	Object.assign(
 		{
-			primary: primaryMonokai,
+			primary: "#a59cad",
 			primaryalt: "#3e3942",
 			uiborder: "#131114",
 			uibackground: "#262329",
@@ -35,12 +34,11 @@ const monokai = makeTheme(
 		monokaiColors,
 	),
 );
-const primaryMonokaiMetallian = "#989eb3";
 const monokaiMetallian = makeTheme(
 	"monokai-metallian",
 	Object.assign(
 		{
-			primary: primaryMonokaiMetallian,
+			primary: "#989eb3",
 			primaryalt: "#363a4a",
 			uiborder: "#0e0e12",
 			uibackground: "#1f222e",
@@ -54,5 +52,37 @@ const monokaiMetallian = makeTheme(
 		monokaiColors,
 	),
 );
+const monokaiLight = makeTheme(
+	"monokai-light",
+	Object.assign(
+		{
+			primary: "#03ab97",
+			primaryalt: "#f2f2f3",
+			uiborder: "#d6d7db",
+			uibackground: "#f0f1f4",
+			uibackgroundalt: "#e8eaed",
+			default: "#606270",
+			defaultMain: "#606270" + "cc",
+			defaultalt: "#868d9c",
+		},
+		colors,
+		levelColors,
+		{
+			yellow: "#e0a800",
+			salmon: "#ff6188",
+			orange: "#ed7940",
+			blue: "#00b0d4",
+			pink: "#e991e3",
+			green: "#65b315",
+			turquoize: "#00baa4",
+			purple: "#9682fa",
+			red: "#fc6a67",
+			warning: "#ed7940",
+			info: "#00b0d4",
+			success: "#65b315",
+			danger: "#fc6a67",
+		},
+	),
+);
 
-export default {monokai, monokaiMetallian};
+export default {monokai, monokaiMetallian, monokaiLight};

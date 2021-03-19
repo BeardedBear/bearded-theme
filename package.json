@@ -153,6 +153,11 @@
         "label": "BeardedTheme Monokai Metallian",
         "uiTheme": "vs-dark",
         "path": "./themes/bearded-theme-monokai-metallian.json"
+      },
+      {
+        "label": "BeardedTheme Monokai Light",
+        "uiTheme": "vs",
+        "path": "./themes/bearded-theme-monokai-light.json"
       }
     ]
   },

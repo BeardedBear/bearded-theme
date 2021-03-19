@@ -15,6 +15,7 @@
 - Add support for statusBarItem.errorForeground
 - Add new variation : Arc Eggplant
 - Add new variation : Arc Blueberry
+- Add new variation : Monokai Light
 
 ## 3.5.2 - 2020-11-23
 
