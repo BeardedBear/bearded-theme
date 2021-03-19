@@ -95,6 +95,9 @@ export default function ui(theme) {
 		"editorWarning.border": theme.transparent,
 		"editorGutter.commentRangeForeground": theme.primaryalt,
 		"sash.hoverBorder": `${theme.primary}50`,
+		// "editorError.background": `${theme.danger}20`,
+		// "editorWarning.background": `${theme.warning}20`,
+		// "editorInfo.background": `${theme.info}20`,
 	};
 	let editorMarker = {
 		"editorMarkerNavigation.background": theme.default,
@@ -245,11 +248,12 @@ export default function ui(theme) {
 		"statusBar.noFolderBackground": theme.uiborder,
 		"statusBar.noFolderBorder": theme.primary,
 		"statusBar.noFolderForeground": theme.default,
-
 		"statusBarItem.activeBackground": theme.primaryalt,
 		"statusBarItem.hoverBackground": `${theme.defaultalt}30`,
 		"statusBarItem.prominentBackground": theme.uiborder,
 		"statusBarItem.prominentHoverBackground": theme.primaryalt,
+		"statusBarItem.errorBackground": theme.red,
+		// "statusBarItem.errorForeground": theme.red,
 	};
 	let suggest = {
 		"editorSuggestWidget.background": theme.uibackground,

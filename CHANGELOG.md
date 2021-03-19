@@ -6,11 +6,13 @@
 
 - Fix unreadable colors in terminal
 - Fix comments color
+- Fix tag color in CSS/SCSS
 
 ### New features
 
 - Add support for sash.hoverBorder
 - Add support for charts colors
+- Add support for statusBarItem.errorForeground
 
 ## 3.5.2 - 2020-11-23
 
