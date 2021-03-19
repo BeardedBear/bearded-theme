@@ -73,7 +73,7 @@ export default function ui(theme) {
 		"editor.lineHighlightBorder": `${theme.primary}1a`,
 		"editor.rangeHighlightBackground": `${theme.primary}20`,
 
-		"editor.selectionBackground": `${theme.primary}40`,
+		"editor.selectionBackground": `${theme.primary}25`,
 		"editor.selectionForeground": theme.primary,
 		"editor.inactiveSelectionBackground": `${theme.primary}20`,
 		"editor.selectionHighlightBorder": `${theme.primary}60`,

@@ -40,6 +40,8 @@ export default function syntax(theme) {
 		createScope(type, theme.purple, "normal"),
 
 		// MARKUP
+		createScope(markup.component, theme.blue),
+
 		// HTML
 		createScope(markup.variables, theme.salmon),
 		createScope(markup.tags, theme.blue),
@@ -66,9 +68,9 @@ export default function syntax(theme) {
 		createScope(styling.property, theme.default),
 		createScope(styling.ids, theme.purple),
 		createScope(styling.and, theme.orange),
-		// createScope(styling.punctuation, theme.default),
 		createScope(styling.units, theme.orange, "italic"),
 		createScope(styling.value, theme.orange),
 		createScope(styling.nums, theme.orange),
+		createScope(styling.tag, theme.blue),
 	]);
 }

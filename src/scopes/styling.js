@@ -18,7 +18,7 @@ export const property = [
 	"support.type.property-name.css",
 	"support.type.vendored.property-name",
 	"meta.property-list entity.name.tag.css",
-	// "meta.property-list.scss meta.property-list.scss entity.name.tag.css",
+	"meta.property-list.scss meta.property-list.scss entity.name.tag.css",
 ];
 // export const punctuation = ["punctuation.definition.entity"];
 export const value = [
@@ -27,3 +27,7 @@ export const value = [
 	"meta.property-value.css",
 ];
 export const nums = ["constant.numeric"];
+export const tag = [
+	"entity.name.tag.css",
+	"meta.property-list.scss entity.name.tag.css",
+];

@@ -36,6 +36,7 @@ export const keyword = [
 	"keyword.other.await",
 	"storage.type.class.jsdoc",
 	"punctuation.definition.block.tag.jsdoc",
+	"keyword.operator.assignment.cs",
 ];
 
 export const constants = ["constant"];
@@ -157,6 +158,7 @@ export const punctuation = [
 	"punctuation.definition.list.end.python",
 	// VUE
 	"text.html.vue-html meta.tag.block.any",
+	"entity.name.variable.tuple-element.cs",
 ];
 
 export const self = [
@@ -220,4 +222,5 @@ export const variables = [
 	"meta.class variable.object.property",
 	// TS
 	"variable.other.constant entity.name.function",
+	"entity.name.variable.tuple-element.cs punctuation.separator.colon.cs",
 ];

@@ -4,8 +4,6 @@ export const tags = [
 	"text.html.basic entity.name",
 	"source.js-ignored-vscode",
 	"entity.name.tag",
-	"entity.name.tag support.class.component",
-	"support.class.component.html",
 	// BLADE
 	"meta.embedded.block.blade constant.other.php",
 	"meta.embedded.block.blade keyword.operator.comparison.php",
@@ -49,3 +47,10 @@ export const mdBold = ["markup.bold", "punctuation.definition.bold"];
 
 export const mdQuote = ["markup.quote"];
 export const mdQuotePunctuation = ["punctuation.definition.quote.begin"];
+export const component = [
+	"entity.name.tag.other.html",
+	"meta.tag.other.html punctuation.definition.tag.end.html",
+	"meta.tag.other.html punctuation.definition.tag.begin.html",
+	"entity.name.tag support.class.component",
+	"support.class.component.html",
+];

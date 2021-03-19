@@ -9,12 +9,12 @@ export const colors = {
 	grey: "#808080",
 	orange: "#D26D32",
 	pink: "#CC71BC",
-	purple: "#A15DEF",
+	purple: "#935cd1",
 	red: "#C13838",
 	salmon: "#de456b",
 	transparent: "#00000000",
 	turquoize: "#24B5A8",
-	yellow: "#D39E17",
+	yellow: "#c9a022",
 };
 
 export const levelColors = {
