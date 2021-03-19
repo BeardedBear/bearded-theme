@@ -1,4 +1,8 @@
-> I created an icon pack to complete this vscode theme: [Bearded Icons](https://marketplace.visualstudio.com/items?itemName=BeardedBear.beardedicons)
+# Bearded Theme
+
+Font used in screenshots : [IBM Plex Mono](https://www.ibm.com/plex/)
+
+Icon pack used in screenshots : [Bearded Icons](https://marketplace.visualstudio.com/items?itemName=BeardedBear.beardedicons)
 
 <a href="https://raw.githubusercontent.com/BeardedBear/bearded-theme/master/assets/themes.png" target="_BLANK">
 <img alt="Example" src="https://raw.githubusercontent.com/BeardedBear/bearded-theme/master/assets/themes.png">
