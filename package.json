@@ -50,6 +50,11 @@
         "path": "./themes/bearded-theme-arc-eolstorm.json"
       },
       {
+        "label": "BeardedTheme Arc Blueberry",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-arc-blueberry.json"
+      },
+      {
         "label": "BeardedTheme Arc Eggplant",
         "uiTheme": "vs-dark",
         "path": "./themes/bearded-theme-arc-eggplant.json"

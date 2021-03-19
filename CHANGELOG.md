@@ -4,7 +4,7 @@
 
 ### Fixes
 
-- Fix unreadable colors in terminal
+- Fix unreadable colors in integrated terminal
 - Fix comments color
 - Fix tag color in CSS/SCSS
 
@@ -14,6 +14,7 @@
 - Add support for charts colors
 - Add support for statusBarItem.errorForeground
 - Add new variation : Arc Eggplant
+- Add new variation : Arc Blueberry
 
 ## 3.5.2 - 2020-11-23
 

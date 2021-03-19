@@ -1,5 +1,27 @@
 import {colors, levelColors, makeTheme} from "../mixins.js";
 
+const arcColors = {
+	blue: "#69C3FF",
+	green: "#3CEC85",
+	greenalt: "#A4EF58",
+	grey: "#808080",
+	orange: "#FF955C",
+	pink: "#F38CEC",
+	purple: "#B78AFF",
+	red: "#E35535",
+	salmon: "#FF738A",
+	transparent: "#00000000",
+	turquoize: "#22ECDB",
+	yellow: "#EACD61",
+};
+
+const arcLevels = {
+	danger: "#E35535",
+	success: "#3CEC85",
+	warning: "#FF955C",
+	info: "#69C3FF",
+};
+
 const arc = makeTheme(
 	"arc",
 	Object.assign(
@@ -31,26 +53,8 @@ const arcEolstorm = makeTheme(
 			defaultMain: "#ffffff",
 			defaultalt: "#576375",
 		},
-		{
-			blue: "#69C3FF",
-			green: "#3CEC85",
-			greenalt: "#A4EF58",
-			grey: "#808080",
-			orange: "#FF955C",
-			pink: "#F38CEC",
-			purple: "#B78AFF",
-			red: "#E35535",
-			salmon: "#FF738A",
-			transparent: "#00000000",
-			turquoize: "#22ECDB",
-			yellow: "#EACD61",
-		},
-		{
-			danger: "#E35535",
-			success: "#3CEC85",
-			warning: "#FF955C",
-			info: "#69C3FF",
-		},
+		arcColors,
+		arcLevels,
 	),
 );
 const arcEggplant = makeTheme(
@@ -66,27 +70,26 @@ const arcEggplant = makeTheme(
 			defaultMain: "#ffffff",
 			defaultalt: "#585775",
 		},
+		arcColors,
+		arcLevels,
+	),
+);
+const arcBlueBerry = makeTheme(
+	"arc-blueberry",
+	Object.assign(
 		{
-			blue: "#69C3FF",
-			green: "#3CEC85",
-			greenalt: "#A4EF58",
-			grey: "#808080",
-			orange: "#FF955C",
-			pink: "#F38CEC",
-			purple: "#B78AFF",
-			red: "#E35535",
-			salmon: "#FF738A",
-			transparent: "#00000000",
-			turquoize: "#22ECDB",
-			yellow: "#EACD61",
+			primary: "#8498ba",
+			primaryalt: "#222d47",
+			uiborder: "#0d111f",
+			uibackground: "#161a2b",
+			uibackgroundalt: "#111524",
+			default: "#ffffff",
+			defaultMain: "#ffffff",
+			defaultalt: "#576275",
 		},
-		{
-			danger: "#E35535",
-			success: "#3CEC85",
-			warning: "#FF955C",
-			info: "#69C3FF",
-		},
+		arcColors,
+		arcLevels,
 	),
 );
 
-export default {arc, arcEggplant, arcEolstorm};
+export default {arc, arcBlueBerry, arcEggplant, arcEolstorm};
