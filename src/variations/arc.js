@@ -61,7 +61,7 @@ const arcEggplant = makeTheme(
 	"arc-eggplant",
 	Object.assign(
 		{
-			primary: "#8486ba",
+			primary: "#a3a5d6",
 			primaryalt: "#231e36",
 			uiborder: "#0b0812",
 			uibackground: "#181424",
@@ -78,7 +78,7 @@ const arcBlueBerry = makeTheme(
 	"arc-blueberry",
 	Object.assign(
 		{
-			primary: "#8498ba",
+			primary: "#a4b9db",
 			primaryalt: "#222d47",
 			uiborder: "#0d111f",
 			uibackground: "#161a2b",
