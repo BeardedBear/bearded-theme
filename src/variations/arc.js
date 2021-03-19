@@ -53,5 +53,40 @@ const arcEolstorm = makeTheme(
 		},
 	),
 );
+const arcEggplant = makeTheme(
+	"arc-eggplant",
+	Object.assign(
+		{
+			primary: "#8486ba",
+			primaryalt: "#231e36",
+			uiborder: "#0b0812",
+			uibackground: "#181424",
+			uibackgroundalt: "#14101f",
+			default: "#ffffff",
+			defaultMain: "#ffffff",
+			defaultalt: "#585775",
+		},
+		{
+			blue: "#69C3FF",
+			green: "#3CEC85",
+			greenalt: "#A4EF58",
+			grey: "#808080",
+			orange: "#FF955C",
+			pink: "#F38CEC",
+			purple: "#B78AFF",
+			red: "#E35535",
+			salmon: "#FF738A",
+			transparent: "#00000000",
+			turquoize: "#22ECDB",
+			yellow: "#EACD61",
+		},
+		{
+			danger: "#E35535",
+			success: "#3CEC85",
+			warning: "#FF955C",
+			info: "#69C3FF",
+		},
+	),
+);
 
-export default {arc, arcEolstorm};
+export default {arc, arcEggplant, arcEolstorm};

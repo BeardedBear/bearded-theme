@@ -13,6 +13,7 @@
 - Add support for sash.hoverBorder
 - Add support for charts colors
 - Add support for statusBarItem.errorForeground
+- Add new variation : Arc Eggplant
 
 ## 3.5.2 - 2020-11-23
 
