@@ -1,13 +1,17 @@
 # Setup
 
-`npm install`
+`yarn install`
 
 # Development
 
 ## File watching
 
-`npm run start`
+`yarn start`
 
 ## Build
 
-`npm run build`
+`yarn build`
+
+## Build extension
+
+`yarn build:ext`
