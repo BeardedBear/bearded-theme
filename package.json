@@ -6,7 +6,25 @@
   "version": "3.7.0",
   "type": "module",
   "engines": {
-    "vscode": "^1.47.0"
+    "vscode": "^1.57.0"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.57.0",
+    "lodash": "^4.17.21",
+    "node": "^16.3.0",
+    "nodemon": "^2.0.7",
+    "npm-run-all": "^4.1.5",
+    "rome": "^10.0.7-nightly.2021.5.9",
+    "vsce": "^1.93.0",
+    "vscode-test": "^1.4.0"
+  },
+  "scripts": {
+    "build": "node ./src/main.js",
+    "build:ext": "yarn vsce package",
+    "watch": "nodemon -L ./src/main.js",
+    "lint": "rome check --watch --apply",
+    "start": "run-p watch lint",
+    "test": "node ./out/test/runTest.js"
   },
   "repository": {
     "type": "git",
@@ -165,24 +183,5 @@
         "path": "./themes/bearded-theme-altica.json"
       }
     ]
-  },
-  "devDependencies": {
-    "@types/vscode": "^1.47.0",
-    "node": "^13.14.0",
-    "nodemon": "^2.0.4",
-    "vscode-test": "^1.4.0"
-  },
-  "scripts": {
-    "build": "node ./src/main.js",
-    "watch": "nodemon -L ./src/main.js",
-    "lint": "rome check --watch --apply",
-    "start": "run-p watch lint",
-    "test": "node ./out/test/runTest.js"
-  },
-  "dependencies": {
-    "lodash": "^4.17.21",
-    "npm-run-all": "^4.1.5",
-    "rome": "^10.0.4-beta",
-    "vsce": "^1.77.0"
   }
 }
