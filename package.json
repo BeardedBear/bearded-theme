@@ -158,6 +158,11 @@
         "label": "BeardedTheme Monokai Light",
         "uiTheme": "vs",
         "path": "./themes/bearded-theme-monokai-light.json"
+      },
+      {
+        "label": "BeardedTheme Altica",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-altica.json"
       }
     ]
   },

@@ -27,7 +27,7 @@ const arc = makeTheme(
   Object.assign(
     {
       primary: "#8196b5",
-      primaryalt: "#364154",
+      primaryalt: "#273145",
       uiborder: "#111721",
       uibackground: "#1c2433",
       uibackgroundalt: "#161d29",

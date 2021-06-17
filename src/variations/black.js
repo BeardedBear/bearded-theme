@@ -1,7 +1,7 @@
 import { makeTheme } from "../mixins.js";
 
 const blackUI = {
-  primaryalt: "#191d24",
+  primaryalt: "#191c21",
   uiborder: "#000000",
   uibackground: "#111418",
   uibackgroundalt: "#0D0F12",

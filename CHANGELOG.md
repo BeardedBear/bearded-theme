@@ -1,5 +1,16 @@
 # Changelog for Bearded Theme
 
+## 3.7.0 - 2021-06-17
+
+### Enhancements
+
+- Improve tree view lisibility with foreground color change
+
+### New features
+
+- Add support for new secondary buttons
+- Add new variation : Altica
+
 ## 3.6.0 - 2021-03-19
 
 ### Fixes

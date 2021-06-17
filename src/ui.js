@@ -17,6 +17,8 @@ export default function ui(theme) {
   let button = {
     "button.background": theme.primary,
     "button.foreground": theme.uibackgroundalt,
+    "button.secondaryBackground": `${theme.primary}30`,
+    "button.secondaryForeground": theme.default,
     "extensionButton.prominentBackground": `${theme.primary}9d`,
     "extensionButton.prominentForeground": theme.uibackgroundalt,
     "extensionButton.prominentHoverBackground": theme.primary
