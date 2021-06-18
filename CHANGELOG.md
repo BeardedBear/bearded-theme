@@ -1,5 +1,12 @@
 # Changelog for Bearded Theme
 
+## 3.7.1 - 2021-06-18
+
+### Fixes
+
+- Fix comment color
+- Fix colors
+
 ## 3.7.0 - 2021-06-17
 
 ### Enhancements
