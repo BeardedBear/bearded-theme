@@ -52,10 +52,8 @@ export default function ui(theme) {
 	};
 	let diff = {
 		"diffEditor.border": theme.uiborder,
-		"diffEditor.insertedTextBackground": `${theme.success}30`,
-		"diffEditor.insertedTextBorder": theme.transparent,
-		"diffEditor.removedTextBackground": `${theme.danger}30`,
-		"diffEditor.removedTextBorder": theme.transparent,
+		"diffEditor.insertedTextBackground": `${theme.success}20`,
+		"diffEditor.removedTextBackground": `${theme.danger}20`,
 		"diffEditor.diagonalFill": theme.primaryalt,
 	};
 	let dropdown = {
