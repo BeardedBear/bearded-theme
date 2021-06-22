@@ -28,7 +28,7 @@ const blackSyntax = {
 const blackLevels = {
 	danger: "#E35535",
 	success: "#00a884",
-	warning: "#FF955C",
+	warning: "#eba050",
 	info: "#11B7D4",
 };
 

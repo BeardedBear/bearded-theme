@@ -1,5 +1,12 @@
 # Changelog for Bearded Theme
 
+## 3.7.2 - 2021-06-21
+
+### Fixes
+
+- Fix unwanted lines in diff view
+- Fix readability of warnings and errors colors
+
 ## 3.7.1 - 2021-06-18
 
 ### Fixes

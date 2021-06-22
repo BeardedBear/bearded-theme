@@ -20,7 +20,7 @@ export const colors = {
 export const levelColors = {
 	danger: colors.red,
 	success: colors.green,
-	warning: colors.orange,
+	warning: "#c79248",
 	info: colors.blue,
 };
 

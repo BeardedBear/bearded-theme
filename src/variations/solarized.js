@@ -28,7 +28,7 @@ const solarizedDark = makeTheme(
 		{
 			danger: solarizedColors.red,
 			success: solarizedColors.green,
-			warning: solarizedColors.orange,
+			warning: "#d69b54",
 			info: solarizedColors.blue,
 		},
 	),
@@ -52,7 +52,7 @@ const solarizedLight = makeTheme(
 		{
 			danger: solarizedColors.red,
 			success: solarizedColors.green,
-			warning: solarizedColors.orange,
+			warning: "#d69b54",
 			info: solarizedColors.blue,
 		},
 	),
@@ -85,7 +85,7 @@ const oceanic = makeTheme(
 		{
 			danger: "#ee5d64",
 			success: "#97c892",
-			warning: "#DC8255",
+			warning: "#d69b54",
 			info: "#6498ce",
 		},
 	),
