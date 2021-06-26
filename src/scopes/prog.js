@@ -199,6 +199,7 @@ export const strings = [
 	// CSS
 	"variable.parameter.url",
 ];
+export const stringsAlt = ["string.quoted.docstring.multi.python"];
 
 export const types = [
 	"entity.name.type",

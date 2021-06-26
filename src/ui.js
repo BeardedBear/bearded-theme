@@ -98,6 +98,7 @@ export default function ui(theme) {
 		// "editorError.background": `${theme.danger}20`,
 		// "editorWarning.background": `${theme.warning}20`,
 		// "editorInfo.background": `${theme.info}20`,
+		"editorRuler.foreground": `${theme.default}15`,
 	};
 	let editorMarker = {
 		"editorMarkerNavigation.background": theme.default,

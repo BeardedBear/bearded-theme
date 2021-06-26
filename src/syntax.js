@@ -32,6 +32,7 @@ export default function syntax(theme) {
 		createScope(prog.self, theme.orange, "italic"),
 		createScope(prog.storages, theme.turquoize, "italic"),
 		createScope(prog.strings, theme.green),
+		createScope(prog.stringsAlt, `${theme.green}60`),
 		createScope(prog.types, theme.purple),
 		createScope(prog.variables, theme.salmon),
 

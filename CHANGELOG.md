@@ -1,10 +1,17 @@
 # Changelog for Bearded Theme
 
+## 3.7.3 - 2021-06-26
+
+### Fixes
+
+- Fix tripe quote comment in Python [[Issue #47]](https://github.com/BeardedBear/bearded-theme/issues/47)
+- Fix ruler foreground color
+
 ## 3.7.2 - 2021-06-21
 
 ### Fixes
 
-- Fix unwanted lines in diff view
+- Fix unwanted lines in diff view [[Issue #42]](https://github.com/BeardedBear/bearded-theme/issues/42)
 - Fix readability of warnings and errors colors
 
 ## 3.7.1 - 2021-06-18
