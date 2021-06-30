@@ -11,6 +11,7 @@ import {
   blackAndRuby
 } from "./variations/black";
 import { oceanic, solarizedDark, solarizedLight } from "./variations/solarized";
+import { stainedBlue, stainedPurple } from "./variations/stained";
 
 function makeTheme(name: string, theme: Theme): void {
   const themeTemplate = {
@@ -29,17 +30,24 @@ function makeTheme(name: string, theme: Theme): void {
   );
 }
 
+// Arc
 makeTheme("arc", arc);
 makeTheme("arc-eolstorm", arcEolstorm);
 makeTheme("arc-blueberry", arcBlueBerry);
 makeTheme("arc-eggplant", arcEggplant);
 
+// Solarized
 makeTheme("oceanic", oceanic);
 makeTheme("solarized-dark", solarizedDark);
 makeTheme("solarized-light", solarizedLight);
 
+// Black
 makeTheme("black-amethyst", blackAndAmethyst);
 makeTheme("black-diamond", blackAndDiamond);
 makeTheme("black-emerald", blackAndEmerald);
 makeTheme("black-gold", blackAndGold);
 makeTheme("black-ruby", blackAndRuby);
+
+// Stained
+makeTheme("stained-purple", stainedPurple);
+makeTheme("stained-blue", stainedBlue);

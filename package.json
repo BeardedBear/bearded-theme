@@ -101,6 +101,16 @@
         "label": "Bearded Theme Black & Ruby",
         "uiTheme": "vs-dark",
         "path": "./themes/bearded-theme-black-ruby.json"
+      },
+      {
+        "label": "Bearded Theme Stained Purple",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-stained-purple.json"
+      },
+      {
+        "label": "Bearded Theme Stained Blue",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-stained-blue.json"
       }
     ]
   },
