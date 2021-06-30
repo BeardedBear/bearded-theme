@@ -111,6 +111,11 @@
         "label": "Bearded Theme Stained Blue",
         "uiTheme": "vs-dark",
         "path": "./themes/bearded-theme-stained-blue.json"
+      },
+      {
+        "label": "Bearded Theme Vivid Purple",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-vivid-purple.json"
       }
     ]
   },

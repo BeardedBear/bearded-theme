@@ -49,29 +49,3 @@ export const stainedBlue: Theme = {
   colors: colors,
   levels: levelColors
 };
-
-export const vivid: Theme = {
-  ui: {
-    primary: "#A680FF",
-    primaryalt: "#2c225d",
-    uiborder: "#08060e",
-    uibackground: "#171131",
-    uibackgroundalt: "#130b28",
-    default: "#eeeeee",
-    defaultMain: "#eeeeee",
-    defaultalt: "#6160a4"
-  },
-  colors: {
-    blue: "#28A9FF",
-    green: "#42DD76",
-    greenAlt: "#b7d175",
-    orange: "#FF7135",
-    pink: "#E66DFF",
-    purple: "#A95EFF",
-    red: "#D62C2C",
-    salmon: "#FF478D",
-    turquoize: "#14E5D4",
-    yellow: "#FFB638"
-  },
-  levels: levelColors
-};

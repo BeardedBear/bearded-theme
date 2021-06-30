@@ -12,6 +12,7 @@ import {
 } from "./variations/black";
 import { oceanic, solarizedDark, solarizedLight } from "./variations/solarized";
 import { stainedBlue, stainedPurple } from "./variations/stained";
+import { vividPurple } from "./variations/vivid";
 
 function makeTheme(name: string, theme: Theme): void {
   const themeTemplate = {
@@ -51,3 +52,6 @@ makeTheme("black-ruby", blackAndRuby);
 // Stained
 makeTheme("stained-purple", stainedPurple);
 makeTheme("stained-blue", stainedBlue);
+
+// Vivid
+makeTheme("vivid-purple", vividPurple);
