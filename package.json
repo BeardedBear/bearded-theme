@@ -76,6 +76,31 @@
         "label": "Bearded Theme Arc Blueberry",
         "uiTheme": "vs-dark",
         "path": "./themes/bearded-theme-arc-blueberry.json"
+      },
+      {
+        "label": "Bearded Theme Black & Amethyst",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-black-amethyst.json"
+      },
+      {
+        "label": "Bearded Theme Black & Diamond",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-black-diamond.json"
+      },
+      {
+        "label": "Bearded Theme Black & Emerald",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-black-emerald.json"
+      },
+      {
+        "label": "Bearded Theme Black & Gold",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-black-gold.json"
+      },
+      {
+        "label": "Bearded Theme Black & Ruby",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-black-ruby.json"
       }
     ]
   },
