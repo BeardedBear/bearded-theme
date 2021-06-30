@@ -116,6 +116,21 @@
         "label": "Bearded Theme Vivid Purple",
         "uiTheme": "vs-dark",
         "path": "./themes/bearded-theme-vivid-purple.json"
+      },
+      {
+        "label": "Bearded Theme Monokai Terra",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-monokai-terra.json"
+      },
+      {
+        "label": "Bearded Theme Monokai Metallian",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-monokai-metallian.json"
+      },
+      {
+        "label": "Bearded Theme Monokai Light",
+        "uiTheme": "vs",
+        "path": "./themes/bearded-theme-monokai-light.json"
       }
     ]
   },

@@ -10,6 +10,11 @@ import {
   blackAndGold,
   blackAndRuby
 } from "./variations/black";
+import {
+  monokaiLight,
+  monokaiMetallian,
+  monokaiTerra
+} from "./variations/monokai";
 import { oceanic, solarizedDark, solarizedLight } from "./variations/solarized";
 import { stainedBlue, stainedPurple } from "./variations/stained";
 import { vividPurple } from "./variations/vivid";
@@ -55,3 +60,8 @@ makeTheme("stained-blue", stainedBlue);
 
 // Vivid
 makeTheme("vivid-purple", vividPurple);
+
+// Monokai
+makeTheme("monokai-terra", monokaiTerra);
+makeTheme("monokai-metallian", monokaiMetallian);
+makeTheme("monokai-light", monokaiLight);
