@@ -56,6 +56,26 @@
         "label": "Bearded Theme Oceanic",
         "uiTheme": "vs-dark",
         "path": "./themes/bearded-theme-oceanic.json"
+      },
+      {
+        "label": "Bearded Theme Arc",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-arc.json"
+      },
+      {
+        "label": "Bearded Theme Arc Eggplant",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-arc-eggplant.json"
+      },
+      {
+        "label": "Bearded Theme Arc EolStorm",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-arc-eolstorm.json"
+      },
+      {
+        "label": "Bearded Theme Arc Blueberry",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-arc-blueberry.json"
       }
     ]
   },

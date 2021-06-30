@@ -2,7 +2,7 @@ import { writeFile } from "fs";
 import syntax from "./scopes/scopes";
 import { Theme } from "./typing";
 import ui from "./ui";
-import { test } from "./variations/arc";
+import { arc, arcBlueBerry, arcEggplant, arcEolstorm } from "./variations/arc";
 import { oceanic, solarizedDark, solarizedLight } from "./variations/solarized";
 
 function makeTheme(name: string, theme: Theme): void {
@@ -22,6 +22,10 @@ function makeTheme(name: string, theme: Theme): void {
   );
 }
 
+makeTheme("arc", arc);
+makeTheme("arc-eolstorm", arcEolstorm);
+makeTheme("arc-blueberry", arcBlueBerry);
+makeTheme("arc-eggplant", arcEggplant);
 makeTheme("oceanic", oceanic);
 makeTheme("solarized-dark", solarizedDark);
 makeTheme("solarized-light", solarizedLight);

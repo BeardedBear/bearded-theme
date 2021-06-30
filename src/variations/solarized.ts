@@ -13,7 +13,7 @@ const solarizedColors: ThemeColors = {
   yellow: "#b58900"
 };
 
-const solarizedLevels = {
+const solarizedLevels: ThemeLevels = {
   danger: solarizedColors.red,
   success: solarizedColors.green,
   warning: solarizedColors.yellow,
