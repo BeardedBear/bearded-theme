@@ -10,6 +10,7 @@ import {
   blackAndGold,
   blackAndRuby
 } from "./variations/black";
+import { altica, earth, voided } from "./variations/exotic";
 import {
   monokaiLight,
   monokaiMetallian,
@@ -65,3 +66,8 @@ makeTheme("vivid-purple", vividPurple);
 makeTheme("monokai-terra", monokaiTerra);
 makeTheme("monokai-metallian", monokaiMetallian);
 makeTheme("monokai-light", monokaiLight);
+
+// Exotic
+makeTheme("exotic-earth", earth);
+makeTheme("exotic-void", voided);
+makeTheme("exotic-altica", altica);

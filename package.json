@@ -131,6 +131,21 @@
         "label": "Bearded Theme Monokai Light",
         "uiTheme": "vs",
         "path": "./themes/bearded-theme-monokai-light.json"
+      },
+      {
+        "label": "Bearded Theme Exotic Earth",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-exotic-earth.json"
+      },
+      {
+        "label": "Bearded Theme Exotic Void",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-exotic-void.json"
+      },
+      {
+        "label": "Bearded Theme Altica",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-exotic-altica.json"
       }
     ]
   },
