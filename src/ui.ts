@@ -285,6 +285,6 @@ export default function ui(theme: Theme) {
     "titleBar.activeForeground": theme.ui.defaultalt,
     "titleBar.inactiveBackground": theme.ui.uiborder,
     "titleBar.inactiveForeground": theme.ui.defaultalt,
-    "titleBar.border": theme.ui.uiborder
+    "titleBar.border": theme.ui.uiborder,
   };
 }

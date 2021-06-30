@@ -10,14 +10,14 @@ const colors: ThemeColors = {
   red: "#C13838",
   salmon: "#de456b",
   turquoize: "#24B5A8",
-  yellow: "#c9a022"
+  yellow: "#c9a022",
 };
 
 const levelColors = {
   danger: colors.red,
   success: colors.green,
   warning: colors.yellow,
-  info: colors.blue
+  info: colors.blue,
 };
 
 export const stainedPurple: Theme = {
@@ -29,10 +29,10 @@ export const stainedPurple: Theme = {
     uibackgroundalt: "#1a1424",
     default: "#cbc4cf",
     defaultMain: "#cbc4cf",
-    defaultalt: "#655785"
+    defaultalt: "#655785",
   },
   colors: colors,
-  levels: levelColors
+  levels: levelColors,
 };
 
 export const stainedBlue: Theme = {
@@ -44,8 +44,8 @@ export const stainedBlue: Theme = {
     uibackgroundalt: "#0e1320",
     default: "#bfcbd4",
     defaultMain: "#bfcbd4",
-    defaultalt: "#5d7189"
+    defaultalt: "#5d7189",
   },
   colors: colors,
-  levels: levelColors
+  levels: levelColors,
 };

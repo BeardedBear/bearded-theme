@@ -9,7 +9,7 @@ const blackUI = (primary: string): ThemeUi => {
     uibackgroundalt: "#0D0F12",
     default: "#AEB2B2",
     defaultMain: "#AEB2B2",
-    defaultalt: "#43474d"
+    defaultalt: "#43474d",
   };
 };
 
@@ -23,42 +23,42 @@ const blackColors: ThemeColors = {
   red: "#E35535",
   salmon: "#c62f52",
   turquoize: "#38c7bd",
-  yellow: "#c7910c"
+  yellow: "#c7910c",
 };
 
 const blackLevels: ThemeLevels = {
   danger: "#E35535",
   success: "#00a884",
   warning: "#eba050",
-  info: "#11B7D4"
+  info: "#11B7D4",
 };
 
 export const blackAndGold: Theme = {
   ui: blackUI("#c7910c"),
   colors: blackColors,
-  levels: blackLevels
+  levels: blackLevels,
 };
 
 export const blackAndRuby: Theme = {
   ui: blackUI("#c62f52"),
   colors: blackColors,
-  levels: blackLevels
+  levels: blackLevels,
 };
 
 export const blackAndEmerald: Theme = {
   ui: blackUI("#00a884"),
   colors: blackColors,
-  levels: blackLevels
+  levels: blackLevels,
 };
 
 export const blackAndDiamond: Theme = {
   ui: blackUI("#11B7D4"),
   colors: blackColors,
-  levels: blackLevels
+  levels: blackLevels,
 };
 
 export const blackAndAmethyst: Theme = {
   ui: blackUI("#a85ff1"),
   colors: blackColors,
-  levels: blackLevels
+  levels: blackLevels,
 };

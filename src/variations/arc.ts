@@ -10,14 +10,14 @@ const arcColors: ThemeColors = {
   red: "#E35535",
   salmon: "#FF738A",
   turquoize: "#22ECDB",
-  yellow: "#EACD61"
+  yellow: "#EACD61",
 };
 
 const arcLevels: ThemeLevels = {
   danger: "#E35535",
   success: "#3CEC85",
   warning: "#cf9e57",
-  info: "#69C3FF"
+  info: "#69C3FF",
 };
 
 export const arc: Theme = {
@@ -29,10 +29,10 @@ export const arc: Theme = {
     uibackgroundalt: "#161d29",
     default: "#c3cfd9",
     defaultMain: "#c3cfd9",
-    defaultalt: "#576375"
+    defaultalt: "#576375",
   },
   colors: arcColors,
-  levels: arcLevels
+  levels: arcLevels,
 };
 
 export const arcEolstorm: Theme = {
@@ -44,10 +44,10 @@ export const arcEolstorm: Theme = {
     uibackgroundalt: "#1D232F",
     default: "#ffffff",
     defaultMain: "#ffffff",
-    defaultalt: "#576375"
+    defaultalt: "#576375",
   },
   colors: arcColors,
-  levels: arcLevels
+  levels: arcLevels,
 };
 
 export const arcBlueBerry: Theme = {
@@ -59,10 +59,10 @@ export const arcBlueBerry: Theme = {
     uibackgroundalt: "#0e121f",
     default: "#ffffff",
     defaultMain: "#ffffff",
-    defaultalt: "#576275"
+    defaultalt: "#576275",
   },
   colors: arcColors,
-  levels: arcLevels
+  levels: arcLevels,
 };
 
 export const arcEggplant: Theme = {
@@ -74,8 +74,8 @@ export const arcEggplant: Theme = {
     uibackgroundalt: "#14101f",
     default: "#ffffff",
     defaultMain: "#ffffff",
-    defaultalt: "#585775"
+    defaultalt: "#585775",
   },
   colors: arcColors,
-  levels: arcLevels
+  levels: arcLevels,
 };

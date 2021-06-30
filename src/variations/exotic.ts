@@ -4,7 +4,7 @@ const exoticLevels: ThemeLevels = {
   danger: "#C13838",
   success: "#14b871",
   warning: "#cc8c39",
-  info: "#04c4d9"
+  info: "#04c4d9",
 };
 
 export const earth: Theme = {
@@ -16,7 +16,7 @@ export const earth: Theme = {
     uibackgroundalt: "#181211",
     default: "#C6BEAB",
     defaultMain: "#C6BEAB",
-    defaultalt: "#6a5553"
+    defaultalt: "#6a5553",
   },
   colors: {
     blue: "#BA9D6F",
@@ -28,9 +28,9 @@ export const earth: Theme = {
     red: "#C13838",
     salmon: "#D65151",
     turquoize: "#4EAAA4",
-    yellow: "#C48519"
+    yellow: "#C48519",
   },
-  levels: exoticLevels
+  levels: exoticLevels,
 };
 
 export const voided: Theme = {
@@ -42,7 +42,7 @@ export const voided: Theme = {
     uibackgroundalt: "#120a1a",
     default: "#D7E2EF",
     defaultMain: "#D7E2EF",
-    defaultalt: "#585785"
+    defaultalt: "#585785",
   },
   colors: {
     blue: "#7A63ED",
@@ -54,9 +54,9 @@ export const voided: Theme = {
     red: "#C13838",
     salmon: "#D65170",
     turquoize: "#89C4FF",
-    yellow: "#585785"
+    yellow: "#585785",
   },
-  levels: exoticLevels
+  levels: exoticLevels,
 };
 
 export const altica: Theme = {
@@ -68,7 +68,7 @@ export const altica: Theme = {
     uibackgroundalt: "#0e171c",
     default: "#c2ced1",
     defaultMain: "#c2ced1",
-    defaultalt: "#45565c"
+    defaultalt: "#45565c",
   },
   colors: {
     blue: "#10bdc9",
@@ -80,7 +80,7 @@ export const altica: Theme = {
     red: "#C13838",
     salmon: "#d6724d",
     turquoize: "#0187a6",
-    yellow: "#d6ac63"
+    yellow: "#d6ac63",
   },
-  levels: exoticLevels
+  levels: exoticLevels,
 };

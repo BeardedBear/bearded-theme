@@ -5,7 +5,7 @@ export const accessors = [
   "support.other.namespace.php",
   "entity.other.attribute-name.namespace.xml",
   "record.accessor",
-  "entity.name.record.field.accessor"
+  "entity.name.record.field.accessor",
 ];
 
 export const classes = ["entity.name.type"];
@@ -14,7 +14,7 @@ export const comments = [
   "comment",
   "punctuation.definition.comment",
   "string.quoted.docstring.multi",
-  "comment.block.documentation source"
+  "comment.block.documentation source",
 ];
 
 export const keyword = [
@@ -34,7 +34,7 @@ export const keyword = [
   "keyword.other.await",
   "storage.type.class.jsdoc",
   "punctuation.definition.block.tag.jsdoc",
-  "keyword.operator.assignment.cs"
+  "keyword.operator.assignment.cs",
 ];
 
 export const constants = ["constant"];
@@ -45,7 +45,7 @@ export const currentText = [
   "constant.character.entity.named",
   "meta.jsx.children",
   // LUA
-  "source.lua"
+  "source.lua",
 ];
 
 export const decorators = [
@@ -53,13 +53,10 @@ export const decorators = [
   "meta.decorator entity.name.function",
   "meta.decorator punctuation.decorator",
   "punctuation.definition.decorator",
-  "meta.decorator variable.other.readwrite.ts"
+  "meta.decorator variable.other.readwrite.ts",
 ];
 
-export const exportScope = [
-  "keyword.control.export",
-  "support.type.object.module"
-];
+export const exportScope = ["keyword.control.export", "support.type.object.module"];
 
 export const functions = [
   // "entity",
@@ -80,7 +77,7 @@ export const functions = [
   // PHP
   "meta.method-call.static.php",
   "meta.method-call.php",
-  "meta.class storage.type"
+  "meta.class storage.type",
 ];
 
 export const importScope = [
@@ -91,25 +88,18 @@ export const importScope = [
   "keyword.control.at-rule",
   "punctuation.definition.keyword",
   // PUG
-  "variable.control.import.include"
+  "variable.control.import.include",
 ];
 
-export const dataProperty = [
-  "keyword.other.definition.ini",
-  "support.type.property-name",
-  "entity.name.tag.yaml"
-];
+export const dataProperty = ["keyword.other.definition.ini", "support.type.property-name", "entity.name.tag.yaml"];
 
-export const objectProperty = [
-  "meta.object-literal.key",
-  "variable.object.property"
-];
+export const objectProperty = ["meta.object-literal.key", "variable.object.property"];
 
 export const operators = [
   "keyword.operator.comparison",
   "storage.type.function.arrow",
   // LUA
-  "keyword.operator.lua"
+  "keyword.operator.lua",
 ];
 
 export const punctuation = [
@@ -156,13 +146,13 @@ export const punctuation = [
   "punctuation.definition.list.end.python",
   // VUE
   "text.html.vue-html meta.tag.block.any",
-  "entity.name.variable.tuple-element.cs"
+  "entity.name.variable.tuple-element.cs",
 ];
 
 export const self = [
   "variable.language.this",
   "variable.language.special.self",
-  "variable.parameter.function.language.special.self"
+  "variable.parameter.function.language.special.self",
 ];
 
 export const storages = [
@@ -181,7 +171,7 @@ export const storages = [
   // TS
   "storage.type.enum",
   "storage.type.interface",
-  "storage.type.type"
+  "storage.type.type",
 ];
 
 export const strings = [
@@ -195,7 +185,7 @@ export const strings = [
   "string.other.link",
   "constant.character.escape.regexp",
   // CSS
-  "variable.parameter.url"
+  "variable.parameter.url",
 ];
 
 export const types = [
@@ -204,7 +194,7 @@ export const types = [
   "support.class",
   "storage.type",
   "entity.other.inherited-class",
-  "keyword.type"
+  "keyword.type",
 ];
 
 export const variables = [
@@ -220,7 +210,7 @@ export const variables = [
   "meta.class variable.object.property",
   // TS
   "variable.other.constant entity.name.function",
-  "entity.name.variable.tuple-element.cs punctuation.separator.colon.cs"
+  "entity.name.variable.tuple-element.cs punctuation.separator.colon.cs",
 ];
 
 export const typeConstructor = ["source.elm constant.type-constructor"];

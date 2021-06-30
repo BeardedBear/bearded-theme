@@ -10,14 +10,14 @@ const vividColors: ThemeColors = {
   red: "#D62C2C",
   salmon: "#FF478D",
   turquoize: "#14E5D4",
-  yellow: "#FFB638"
+  yellow: "#FFB638",
 };
 
 const vividLevels: ThemeLevels = {
   danger: vividColors.red,
   info: vividColors.blue,
   success: vividColors.green,
-  warning: vividColors.yellow
+  warning: vividColors.yellow,
 };
 
 export const vividPurple: Theme = {
@@ -29,8 +29,8 @@ export const vividPurple: Theme = {
     uibackgroundalt: "#130b28",
     default: "#eeeeee",
     defaultMain: "#eeeeee",
-    defaultalt: "#6160a4"
+    defaultalt: "#6160a4",
   },
   colors: vividColors,
-  levels: vividLevels
+  levels: vividLevels,
 };

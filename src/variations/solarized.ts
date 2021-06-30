@@ -10,14 +10,14 @@ const solarizedColors: ThemeColors = {
   red: "#cb4b16",
   salmon: "#d33682",
   turquoize: "#2aa198",
-  yellow: "#b58900"
+  yellow: "#b58900",
 };
 
 const solarizedLevels: ThemeLevels = {
   danger: solarizedColors.red,
   success: solarizedColors.green,
   warning: solarizedColors.yellow,
-  info: solarizedColors.blue
+  info: solarizedColors.blue,
 };
 
 export const solarizedDark: Theme = {
@@ -29,10 +29,10 @@ export const solarizedDark: Theme = {
     uibackgroundalt: "#002229",
     default: "#cedbdb",
     defaultMain: "#cedbdb",
-    defaultalt: "#547783"
+    defaultalt: "#547783",
   },
   colors: solarizedColors,
-  levels: solarizedLevels
+  levels: solarizedLevels,
 };
 
 export const solarizedLight: Theme = {
@@ -44,10 +44,10 @@ export const solarizedLight: Theme = {
     uibackgroundalt: "#eee8d5",
     default: "#073642",
     defaultMain: "#073642",
-    defaultalt: "#657b83"
+    defaultalt: "#657b83",
   },
   colors: solarizedColors,
-  levels: solarizedLevels
+  levels: solarizedLevels,
 };
 
 // Oceanic
@@ -62,7 +62,7 @@ const oceanicColors: ThemeColors = {
   red: "#B4552D",
   salmon: "#ee5d64",
   turquoize: "#5bb3b4",
-  yellow: "#fbc95a"
+  yellow: "#fbc95a",
 };
 
 export const oceanic: Theme = {
@@ -74,13 +74,13 @@ export const oceanic: Theme = {
     uibackgroundalt: "#16242C",
     default: "#D3DFDB",
     defaultMain: "#D3DFDB",
-    defaultalt: "#51727C"
+    defaultalt: "#51727C",
   },
   colors: oceanicColors,
   levels: {
     danger: oceanicColors.salmon,
     success: oceanicColors.green,
     warning: oceanicColors.orange,
-    info: oceanicColors.blue
-  }
+    info: oceanicColors.blue,
+  },
 };

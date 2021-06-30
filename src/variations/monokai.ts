@@ -10,14 +10,14 @@ const monokaiColors: ThemeColors = {
   red: "#fc6a67",
   salmon: "#ff6188",
   turquoize: "#78e8c6",
-  yellow: "#ffd866"
+  yellow: "#ffd866",
 };
 
 const monokaiLevels: ThemeLevels = {
   danger: monokaiColors.red,
   info: monokaiColors.blue,
   success: monokaiColors.green,
-  warning: monokaiColors.yellow
+  warning: monokaiColors.yellow,
 };
 
 export const monokaiTerra: Theme = {
@@ -29,10 +29,10 @@ export const monokaiTerra: Theme = {
     uibackgroundalt: "#1e1c21",
     default: "#dbd8d5",
     defaultMain: "#dbd8d5",
-    defaultalt: "#6e686a"
+    defaultalt: "#6e686a",
   },
   colors: monokaiColors,
-  levels: monokaiLevels
+  levels: monokaiLevels,
 };
 
 export const monokaiMetallian: Theme = {
@@ -44,10 +44,10 @@ export const monokaiMetallian: Theme = {
     uibackgroundalt: "#191b24",
     default: "#dadee6",
     defaultMain: "#dadee6",
-    defaultalt: "#515a6b"
+    defaultalt: "#515a6b",
   },
   colors: monokaiColors,
-  levels: monokaiLevels
+  levels: monokaiLevels,
 };
 
 const monokaiColorsLight: ThemeColors = {
@@ -60,7 +60,7 @@ const monokaiColorsLight: ThemeColors = {
   greenAlt: "#65b315",
   turquoize: "#00baa4",
   purple: "#9682fa",
-  red: "#fc6a67"
+  red: "#fc6a67",
 };
 
 export const monokaiLight: Theme = {
@@ -72,13 +72,13 @@ export const monokaiLight: Theme = {
     uibackgroundalt: "#e8eaed",
     default: "#606270",
     defaultMain: "#606270" + "cc",
-    defaultalt: "#868d9c"
+    defaultalt: "#868d9c",
   },
   colors: monokaiColorsLight,
   levels: {
     warning: monokaiColorsLight.yellow,
     info: monokaiColorsLight.blue,
     success: monokaiColorsLight.green,
-    danger: monokaiColorsLight.red
-  }
+    danger: monokaiColorsLight.red,
+  },
 };

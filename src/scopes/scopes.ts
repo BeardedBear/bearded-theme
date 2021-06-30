@@ -3,17 +3,13 @@ import * as markup from "./markup";
 import * as prog from "./prog";
 import * as styling from "./styling";
 
-function createScope(
-  scope: string[],
-  foreground: string,
-  fontStyle?: FontStyle
-): Scope {
+function createScope(scope: string[], foreground: string, fontStyle?: FontStyle): Scope {
   return {
     scope,
     settings: {
       foreground,
-      fontStyle
-    }
+      fontStyle,
+    },
   };
 }
 
@@ -75,6 +71,6 @@ export default function syntax(theme: Theme) {
     createScope(styling.units, theme.colors.orange, "italic"),
     createScope(styling.value, theme.colors.orange),
     createScope(styling.nums, theme.colors.orange),
-    createScope(styling.tag, theme.colors.blue)
+    createScope(styling.tag, theme.colors.blue),
   ]);
 }

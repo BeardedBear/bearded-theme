@@ -7,7 +7,7 @@ export const tags = [
   // BLADE
   "meta.embedded.block.blade constant.other.php",
   "meta.embedded.block.blade keyword.operator.comparison.php",
-  "meta.embedded.block.blade keyword.operator.arithmetic.php"
+  "meta.embedded.block.blade keyword.operator.arithmetic.php",
 ];
 export const tagsPunctuation = [
   "meta.tag.sgml.doctype.html",
@@ -16,14 +16,14 @@ export const tagsPunctuation = [
   "meta.tag.block.any.html",
   "meta.tag.inline.any",
   "source.css-ignored-vscode",
-  "meta.tag.metadata.style.end.html"
+  "meta.tag.metadata.style.end.html",
 ];
 export const attributes = [
   "entity.other.attribute-name",
   "entity.name.tag.liquid",
   "invalid.deprecated.entity.other.attribute-name",
   // BLADE
-  "meta.embedded.block.blade storage.type.php"
+  "meta.embedded.block.blade storage.type.php",
 ];
 
 // MARKDOWN
@@ -32,12 +32,10 @@ export const mdCode = [
   "punctuation.definition.raw.markdown",
   "markup.fenced_code.block.markdown",
   "markup.fenced_code.block.markdown punctuation",
-  "markup.raw.block.markdown"
+  "markup.raw.block.markdown",
 ];
 export const mdCodeLanguage = ["fenced_code.block.language"];
-export const mdList = [
-  "markup.list.unnumbered.markdown meta.paragraph.markdown"
-];
+export const mdList = ["markup.list.unnumbered.markdown meta.paragraph.markdown"];
 export const mdListPunctuation = ["punctuation.definition.list.begin"];
 export const mdHeading = ["entity.name.section", "markup.heading.setext"];
 export const mdHeadingPunctuation = ["punctuation.definition.heading"];
@@ -52,5 +50,5 @@ export const component = [
   "meta.tag.other.html punctuation.definition.tag.end.html",
   "meta.tag.other.html punctuation.definition.tag.begin.html",
   "entity.name.tag support.class.component",
-  "support.class.component.html"
+  "support.class.component.html",
 ];

@@ -3,19 +3,9 @@ import syntax from "./scopes/scopes";
 import { Theme } from "./typing";
 import ui from "./ui";
 import { arc, arcBlueBerry, arcEggplant, arcEolstorm } from "./variations/arc";
-import {
-  blackAndAmethyst,
-  blackAndDiamond,
-  blackAndEmerald,
-  blackAndGold,
-  blackAndRuby
-} from "./variations/black";
+import { blackAndAmethyst, blackAndDiamond, blackAndEmerald, blackAndGold, blackAndRuby } from "./variations/black";
 import { altica, earth, voided } from "./variations/exotic";
-import {
-  monokaiLight,
-  monokaiMetallian,
-  monokaiTerra
-} from "./variations/monokai";
+import { monokaiLight, monokaiMetallian, monokaiTerra } from "./variations/monokai";
 import { oceanic, solarizedDark, solarizedLight } from "./variations/solarized";
 import { stainedBlue, stainedPurple } from "./variations/stained";
 import { vividPurple } from "./variations/vivid";
@@ -25,16 +15,12 @@ function makeTheme(name: string, theme: Theme): void {
     $schema: "vscode://schemas/color-theme",
     name: `BT${name.charAt(0).toUpperCase()}${name.slice(1)}`,
     colors: ui(theme),
-    tokenColors: syntax(theme)
+    tokenColors: syntax(theme),
   };
 
-  writeFile(
-    `themes/bearded-theme-${name}.json`,
-    JSON.stringify(themeTemplate),
-    (err) => {
-      if (err) console.log("error", err);
-    }
-  );
+  writeFile(`themes/bearded-theme-${name}.json`, JSON.stringify(themeTemplate), (err) => {
+    if (err) console.log("error", err);
+  });
 }
 
 // Arc
