@@ -45,7 +45,12 @@
       {
         "label": "Bearded Theme Solarized",
         "uiTheme": "vs-dark",
-        "path": "./themes/bearded-theme-solarized.json"
+        "path": "./themes/bearded-theme-solarized-dark.json"
+      },
+      {
+        "label": "Bearded Theme Solarized Light",
+        "uiTheme": "vs",
+        "path": "./themes/bearded-theme-solarized-light.json"
       },
       {
         "label": "Bearded Theme Oceanic",

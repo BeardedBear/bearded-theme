@@ -3,7 +3,7 @@ import syntax from "./scopes/scopes";
 import { Theme } from "./typing";
 import ui from "./ui";
 import { test } from "./variations/arc";
-import { oceanic, solarized } from "./variations/solarized";
+import { oceanic, solarizedDark, solarizedLight } from "./variations/solarized";
 
 function makeTheme(name: string, theme: Theme): void {
   const themeTemplate = {
@@ -23,4 +23,5 @@ function makeTheme(name: string, theme: Theme): void {
 }
 
 makeTheme("oceanic", oceanic);
-makeTheme("solarized", solarized);
+makeTheme("solarized-dark", solarizedDark);
+makeTheme("solarized-light", solarizedLight);

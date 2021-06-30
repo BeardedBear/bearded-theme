@@ -11,52 +11,52 @@ const solarizedColors = {
   orange: "#ca7016"
 };
 
-const solarizedDark = makeTheme(
-  "solarized",
-  Object.assign(
-    {
-      primary: "#199FBE",
-      primaryalt: "#003947",
-      uiborder: "#061418",
-      uibackground: "#002b36",
-      uibackgroundalt: "#002229",
-      default: "#cedbdb",
-      defaultalt: "#547783"
-    },
-    colors,
-    solarizedColors,
-    {
-      danger: solarizedColors.red,
-      success: solarizedColors.green,
-      warning: "#d69b54",
-      info: solarizedColors.blue
-    }
-  )
-);
+// const solarizedDark = makeTheme(
+//   "solarized",
+//   Object.assign(
+//     {
+//       primary: "#199FBE",
+//       primaryalt: "#003947",
+//       uiborder: "#061418",
+//       uibackground: "#002b36",
+//       uibackgroundalt: "#002229",
+//       default: "#cedbdb",
+//       defaultalt: "#547783"
+//     },
+//     colors,
+//     solarizedColors,
+//     {
+//       danger: solarizedColors.red,
+//       success: solarizedColors.green,
+//       warning: "#d69b54",
+//       info: solarizedColors.blue
+//     }
+//   )
+// );
 
-const solarizedLight = makeTheme(
-  "solarized-light",
-  Object.assign(
-    {
-      primary: "#2aa198",
-      primaryalt: "#fef9ec",
-      uiborder: "#d8cfbb",
-      uibackground: "#fdf6e3",
-      uibackgroundalt: "#eee8d5",
-      default: "#073642",
-      defaultMain: "#073642",
-      defaultalt: "#657b83"
-    },
-    colors,
-    solarizedColors,
-    {
-      danger: solarizedColors.red,
-      success: solarizedColors.green,
-      warning: "#d69b54",
-      info: solarizedColors.blue
-    }
-  )
-);
+// const solarizedLight = makeTheme(
+//   "solarized-light",
+//   Object.assign(
+//     {
+//       primary: "#2aa198",
+//       primaryalt: "#fef9ec",
+//       uiborder: "#d8cfbb",
+//       uibackground: "#fdf6e3",
+//       uibackgroundalt: "#eee8d5",
+//       default: "#073642",
+//       defaultMain: "#073642",
+//       defaultalt: "#657b83"
+//     },
+//     colors,
+//     solarizedColors,
+//     {
+//       danger: solarizedColors.red,
+//       success: solarizedColors.green,
+//       warning: "#d69b54",
+//       info: solarizedColors.blue
+//     }
+//   )
+// );
 
 // const oceanic = makeTheme(
 // 	"oceanic",

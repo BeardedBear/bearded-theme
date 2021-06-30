@@ -13,7 +13,14 @@ const solarizedColors: ThemeColors = {
   yellow: "#b58900"
 };
 
-export const solarized: Theme = {
+const solarizedLevels = {
+  danger: solarizedColors.red,
+  success: solarizedColors.green,
+  warning: solarizedColors.yellow,
+  info: solarizedColors.blue
+};
+
+export const solarizedDark: Theme = {
   ui: {
     primary: "#199FBE",
     primaryalt: "#003947",
@@ -25,12 +32,37 @@ export const solarized: Theme = {
     defaultalt: "#547783"
   },
   colors: solarizedColors,
-  levels: {
-    danger: solarizedColors.red,
-    success: solarizedColors.green,
-    warning: "#d69b54",
-    info: solarizedColors.blue
-  }
+  levels: solarizedLevels
+};
+
+export const solarizedLight: Theme = {
+  ui: {
+    primary: "#2aa198",
+    primaryalt: "#fef9ec",
+    uiborder: "#d8cfbb",
+    uibackground: "#fdf6e3",
+    uibackgroundalt: "#eee8d5",
+    default: "#073642",
+    defaultMain: "#073642",
+    defaultalt: "#657b83"
+  },
+  colors: solarizedColors,
+  levels: solarizedLevels
+};
+
+// Oceanic
+
+const oceanicColors: ThemeColors = {
+  blue: "#6498ce",
+  green: "#97c892",
+  greenAlt: "#A4EF58",
+  orange: "#DC8255",
+  pink: "#F38CEC",
+  purple: "#c692c6",
+  red: "#B4552D",
+  salmon: "#ee5d64",
+  turquoize: "#5bb3b4",
+  yellow: "#fbc95a"
 };
 
 export const oceanic: Theme = {
@@ -44,22 +76,11 @@ export const oceanic: Theme = {
     defaultMain: "#D3DFDB",
     defaultalt: "#51727C"
   },
-  colors: {
-    blue: "#6498ce",
-    green: "#97c892",
-    greenAlt: "#A4EF58",
-    orange: "#DC8255",
-    pink: "#F38CEC",
-    purple: "#c692c6",
-    red: "#B4552D",
-    salmon: "#ee5d64",
-    turquoize: "#5bb3b4",
-    yellow: "#fbc95a"
-  },
+  colors: oceanicColors,
   levels: {
-    danger: "#ee5d64",
-    success: "#97c892",
-    warning: "#d69b54",
-    info: "#6498ce"
+    danger: oceanicColors.salmon,
+    success: oceanicColors.green,
+    warning: oceanicColors.orange,
+    info: oceanicColors.blue
   }
 };
