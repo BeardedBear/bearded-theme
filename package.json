@@ -43,9 +43,14 @@
   "contributes": {
     "themes": [
       {
-        "label": "Bearded Theme",
+        "label": "Bearded Theme Solarized",
         "uiTheme": "vs-dark",
-        "path": "./themes/bearded-theme-azdazdza.json"
+        "path": "./themes/bearded-theme-solarized.json"
+      },
+      {
+        "label": "Bearded Theme Oceanic",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-oceanic.json"
       }
     ]
   },
