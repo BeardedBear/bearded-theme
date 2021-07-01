@@ -1,4 +1,4 @@
-import { Theme, ThemeColors, ThemeLevels, ThemeUi } from "../typing";
+import { Theme, ThemeColors, ThemeLevels } from "../typing";
 
 const solarizedColors: ThemeColors = {
   blue: "#268bd2",

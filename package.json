@@ -152,10 +152,13 @@
   },
   "dependencies": {
     "@types/node": "^15.12.5",
+    "@typescript-eslint/eslint-plugin": "^4.28.1",
+    "@typescript-eslint/parser": "^4.28.1",
+    "eslint": "^7.29.0",
     "nodemon": "^2.0.8",
     "prettier": "^2.3.2",
     "ts-node": "^10.0.0",
-    "typescript": "^4.3.4",
+    "typescript": "^4.3.5",
     "vsce": "^1.95.0"
   }
 }

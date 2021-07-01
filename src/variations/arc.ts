@@ -1,4 +1,4 @@
-import { Theme, ThemeColors, ThemeLevels, ThemeUi } from "../typing";
+import { Theme, ThemeColors, ThemeLevels } from "../typing";
 
 const arcColors: ThemeColors = {
   blue: "#69C3FF",

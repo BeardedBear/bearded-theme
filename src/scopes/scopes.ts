@@ -13,7 +13,7 @@ function createScope(scope: string[], foreground: string, fontStyle?: FontStyle)
   };
 }
 
-export default function syntax(theme: Theme) {
+export default function syntax(theme: Theme): Scope[] {
   return Object.assign([
     createScope(prog.accessors, theme.colors.orange, "italic"),
     createScope(prog.classes, theme.colors.greenAlt),
