@@ -4,6 +4,7 @@ import { Theme } from "./typing";
 import ui from "./ui";
 import { arc, arcBlueBerry, arcEggplant, arcEolstorm } from "./variations/arc";
 import { blackAndAmethyst, blackAndDiamond, blackAndEmerald, blackAndGold, blackAndRuby } from "./variations/black";
+import { anthracite, anthraciteCandy, light } from "./variations/classics";
 import { altica, earth, voided } from "./variations/exotic";
 import { monokaiLight, monokaiMetallian, monokaiTerra } from "./variations/monokai";
 import { oceanic, solarizedDark, solarizedLight } from "./variations/solarized";
@@ -57,3 +58,8 @@ makeTheme("monokai-light", monokaiLight);
 makeTheme("exotic-earth", earth);
 makeTheme("exotic-void", voided);
 makeTheme("exotic-altica", altica);
+
+// Classics
+makeTheme("classics-anthracite", anthracite);
+makeTheme("classics-light", light);
+makeTheme("classics-anthracite-candy", anthraciteCandy);

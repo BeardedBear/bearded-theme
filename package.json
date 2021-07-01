@@ -147,6 +147,21 @@
         "label": "Bearded Theme Altica",
         "uiTheme": "vs-dark",
         "path": "./themes/bearded-theme-exotic-altica.json"
+      },
+      {
+        "label": "Bearded Theme Anthracite",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-classics-anthracite.json"
+      },
+      {
+        "label": "Bearded Theme Light",
+        "uiTheme": "vs",
+        "path": "./themes/bearded-theme-classics-light.json"
+      },
+      {
+        "label": "Bearded Theme Anthracite Candy",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-classics-anthracite-candy.json"
       }
     ]
   },
