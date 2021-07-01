@@ -34,3 +34,18 @@ export const vividPurple: Theme = {
   colors: vividColors,
   levels: vividLevels,
 };
+
+export const vividBlack: Theme = {
+  ui: {
+    primary: "#AAAAAA",
+    primaryalt: "#1f1f24",
+    uiborder: "#000000",
+    uibackground: "#141417",
+    uibackgroundalt: "#101012",
+    default: "#eeeeee",
+    defaultMain: "#eeeeee",
+    defaultalt: "#555555",
+  },
+  colors: vividColors,
+  levels: vividLevels,
+};

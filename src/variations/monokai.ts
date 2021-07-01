@@ -50,6 +50,21 @@ export const monokaiMetallian: Theme = {
   levels: monokaiLevels,
 };
 
+export const monokaiStone: Theme = {
+  ui: {
+    primary: "#9AA2A6",
+    primaryalt: "#383c42",
+    uiborder: "#1C1E21",
+    uibackground: "#2A2D33",
+    uibackgroundalt: "#26282C",
+    default: "#FFFFFF",
+    defaultMain: "#FFFFFF",
+    defaultalt: "#73737F",
+  },
+  colors: monokaiColors,
+  levels: monokaiLevels,
+};
+
 const monokaiColorsLight: ThemeColors = {
   yellow: "#e0a800",
   salmon: "#ff6188",

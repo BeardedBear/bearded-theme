@@ -3,7 +3,7 @@
   "displayName": "Bearded Theme",
   "description": "The theme with a long beard.",
   "publisher": "BeardedBear",
-  "version": "3.7.3",
+  "version": "4.0.0",
   "engines": {
     "vscode": "^1.57.0"
   },
@@ -43,6 +43,21 @@
   ],
   "contributes": {
     "themes": [
+      {
+        "label": "Bearded Theme Monokai Metallian",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-monokai-metallian.json"
+      },
+      {
+        "label": "Bearded Theme Monokai Terra",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-monokai-terra.json"
+      },
+      {
+        "label": "Bearded Theme Monokai Stone",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-monokai-stone.json"
+      },
       {
         "label": "Bearded Theme Solarized",
         "uiTheme": "vs-dark",
@@ -119,14 +134,9 @@
         "path": "./themes/bearded-theme-vivid-purple.json"
       },
       {
-        "label": "Bearded Theme Monokai Terra",
+        "label": "Bearded Theme Vivid Black",
         "uiTheme": "vs-dark",
-        "path": "./themes/bearded-theme-monokai-terra.json"
-      },
-      {
-        "label": "Bearded Theme Monokai Metallian",
-        "uiTheme": "vs-dark",
-        "path": "./themes/bearded-theme-monokai-metallian.json"
+        "path": "./themes/bearded-theme-vivid-black.json"
       },
       {
         "label": "Bearded Theme Monokai Light",
@@ -134,12 +144,12 @@
         "path": "./themes/bearded-theme-monokai-light.json"
       },
       {
-        "label": "Bearded Theme Exotic Earth",
+        "label": "Bearded Theme Earth",
         "uiTheme": "vs-dark",
         "path": "./themes/bearded-theme-exotic-earth.json"
       },
       {
-        "label": "Bearded Theme Exotic Void",
+        "label": "Bearded Theme Void",
         "uiTheme": "vs-dark",
         "path": "./themes/bearded-theme-exotic-void.json"
       },
@@ -157,11 +167,6 @@
         "label": "Bearded Theme Light",
         "uiTheme": "vs",
         "path": "./themes/bearded-theme-classics-light.json"
-      },
-      {
-        "label": "Bearded Theme Anthracite Candy",
-        "uiTheme": "vs-dark",
-        "path": "./themes/bearded-theme-classics-anthracite-candy.json"
       },
       {
         "label": "Bearded Theme Surprising Eggplant",

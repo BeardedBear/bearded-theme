@@ -7,7 +7,7 @@ const solarizedColors: ThemeColors = {
   orange: "#ca7016",
   pink: "#F38CEC",
   purple: "#6c71c4",
-  red: "#cb4b16",
+  red: "#d42613",
   salmon: "#d33682",
   turquoize: "#2aa198",
   yellow: "#b58900",
@@ -24,7 +24,7 @@ export const solarizedDark: Theme = {
   ui: {
     primary: "#199FBE",
     primaryalt: "#003947",
-    uiborder: "#061418",
+    uiborder: "#001b21",
     uibackground: "#002b36",
     uibackgroundalt: "#002229",
     default: "#cedbdb",

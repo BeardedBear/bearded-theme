@@ -49,34 +49,3 @@ export const light: Theme = {
   colors: classicsColors,
   levels: levelColors,
 };
-
-export const anthraciteCandy: Theme = {
-  ui: {
-    primary: "#9AA2A6",
-    primaryalt: "#27292E",
-    uiborder: "#1C1E21",
-    uibackground: "#2A2D33",
-    uibackgroundalt: "#26282C",
-    default: "#FFFFFF",
-    defaultMain: "#FFFFFF",
-    defaultalt: "#73737F",
-  },
-  colors: {
-    blue: "#62c4f5",
-    green: "#72e8ab",
-    greenAlt: "#7E9E2D",
-    orange: "#fa9d66",
-    pink: "#e88bd8",
-    purple: "#ca9cff",
-    red: "#ff5757",
-    salmon: "#ff6982",
-    turquoize: "#42edde",
-    yellow: "#fad76e",
-  },
-  levels: {
-    danger: "#ff5757",
-    success: "#63c793",
-    warning: "#e69a6e",
-    info: "#62c4f5",
-  },
-};

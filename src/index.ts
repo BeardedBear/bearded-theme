@@ -4,13 +4,13 @@ import { Theme } from "./typing";
 import ui from "./ui";
 import { arc, arcBlueBerry, arcEggplant, arcEolstorm } from "./variations/arc";
 import { blackAndAmethyst, blackAndDiamond, blackAndEmerald, blackAndGold, blackAndRuby } from "./variations/black";
-import { anthracite, anthraciteCandy, light } from "./variations/classics";
+import { anthracite, light } from "./variations/classics";
 import { altica, earth, voided } from "./variations/exotic";
-import { monokaiLight, monokaiMetallian, monokaiTerra } from "./variations/monokai";
+import { monokaiLight, monokaiMetallian, monokaiStone, monokaiTerra } from "./variations/monokai";
 import { oceanic, solarizedDark, solarizedLight } from "./variations/solarized";
 import { stainedBlue, stainedPurple } from "./variations/stained";
 import { surprisingBlueberry, surprisingEggplant, surprisingWatermelon } from "./variations/surprising";
-import { vividPurple } from "./variations/vivid";
+import { vividBlack, vividPurple } from "./variations/vivid";
 
 function makeTheme(name: string, theme: Theme): void {
   const themeTemplate = {
@@ -49,10 +49,12 @@ makeTheme("stained-blue", stainedBlue);
 
 // Vivid
 makeTheme("vivid-purple", vividPurple);
+makeTheme("vivid-black", vividBlack);
 
 // Monokai
 makeTheme("monokai-terra", monokaiTerra);
 makeTheme("monokai-metallian", monokaiMetallian);
+makeTheme("monokai-stone", monokaiStone);
 makeTheme("monokai-light", monokaiLight);
 
 // Exotic
@@ -63,7 +65,6 @@ makeTheme("exotic-altica", altica);
 // Classics
 makeTheme("classics-anthracite", anthracite);
 makeTheme("classics-light", light);
-makeTheme("classics-anthracite-candy", anthraciteCandy);
 
 // Surprising
 makeTheme("surprising-eggplant", surprisingEggplant);

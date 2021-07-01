@@ -1,5 +1,17 @@
 # Changelog for Bearded Theme
 
+## 4.0.0 - 2021-07-01
+
+### Enhancements
+
+- 🎉 Rework of the building system, from JS to TS
+- 🎉 Optimization of final vsix package size
+
+### New features
+
+- New variation : Monokai Stone
+- New variation : Vivid Black
+
 ## 3.7.3 - 2021-06-26
 
 ### Fixes
