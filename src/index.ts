@@ -15,7 +15,7 @@ import { vividPurple } from "./variations/vivid";
 function makeTheme(name: string, theme: Theme): void {
   const themeTemplate = {
     $schema: "vscode://schemas/color-theme",
-    name: `BT${name.charAt(0).toUpperCase()}${name.slice(1)}`,
+    name: `BeardedTheme ${name.charAt(0).toUpperCase()}${name.slice(1)}`,
     colors: ui(theme),
     tokenColors: syntax(theme),
   };
