@@ -9,6 +9,7 @@ import { altica, earth, voided } from "./variations/exotic";
 import { monokaiLight, monokaiMetallian, monokaiTerra } from "./variations/monokai";
 import { oceanic, solarizedDark, solarizedLight } from "./variations/solarized";
 import { stainedBlue, stainedPurple } from "./variations/stained";
+import { surprisingBlueberry, surprisingEggplant, surprisingWatermelon } from "./variations/surprising";
 import { vividPurple } from "./variations/vivid";
 
 function makeTheme(name: string, theme: Theme): void {
@@ -63,3 +64,8 @@ makeTheme("exotic-altica", altica);
 makeTheme("classics-anthracite", anthracite);
 makeTheme("classics-light", light);
 makeTheme("classics-anthracite-candy", anthraciteCandy);
+
+// Surprising
+makeTheme("surprising-eggplant", surprisingEggplant);
+makeTheme("surprising-blueberry", surprisingBlueberry);
+makeTheme("surprising-watermelon", surprisingWatermelon);

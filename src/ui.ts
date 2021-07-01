@@ -1,6 +1,6 @@
 import { Theme } from "./typing";
 
-export default function ui(theme: Theme) {
+export default function ui(theme: Theme): unknown {
   return {
     // activityBar
     "activityBar.background": theme.ui.uibackgroundalt,
