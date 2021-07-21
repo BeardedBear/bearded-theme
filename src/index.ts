@@ -10,7 +10,7 @@ import { monokaiLight, monokaiMetallian, monokaiStone, monokaiTerra } from "./va
 import { oceanic, solarizedDark, solarizedLight } from "./variations/solarized";
 import { stainedBlue, stainedPurple } from "./variations/stained";
 import { surprisingBlueberry, surprisingEggplant, surprisingWatermelon } from "./variations/surprising";
-import { vividBlack, vividPurple } from "./variations/vivid";
+import { vividBlack, vividLight, vividPurple } from "./variations/vivid";
 
 function makeTheme(name: string, theme: Theme): void {
   const themeTemplate = {
@@ -50,6 +50,7 @@ makeTheme("stained-blue", stainedBlue);
 // Vivid
 makeTheme("vivid-purple", vividPurple);
 makeTheme("vivid-black", vividBlack);
+makeTheme("vivid-light", vividLight);
 
 // Monokai
 makeTheme("monokai-terra", monokaiTerra);

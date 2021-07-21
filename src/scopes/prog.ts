@@ -6,6 +6,7 @@ export const accessors = [
   "entity.other.attribute-name.namespace.xml",
   "record.accessor",
   "entity.name.record.field.accessor",
+  "storage.modifier.import.java",
 ];
 
 export const classes = ["entity.name.type"];
@@ -89,6 +90,7 @@ export const importScope = [
   "punctuation.definition.keyword",
   // PUG
   "variable.control.import.include",
+  "keyword.other.import.java",
 ];
 
 export const dataProperty = ["keyword.other.definition.ini", "support.type.property-name", "entity.name.tag.yaml"];
@@ -172,6 +174,7 @@ export const storages = [
   "storage.type.enum",
   "storage.type.interface",
   "storage.type.type",
+  "entity.name.type.class.java",
 ];
 
 export const strings = [
@@ -195,6 +198,9 @@ export const types = [
   "storage.type",
   "entity.other.inherited-class",
   "keyword.type",
+  "storage.type.java",
+  "storage.type.primitive.java",
+  "storage.type.generic.java",
 ];
 
 export const variables = [

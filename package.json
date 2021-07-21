@@ -139,6 +139,11 @@
         "path": "./themes/bearded-theme-vivid-black.json"
       },
       {
+        "label": "Bearded Theme Vivid Light",
+        "uiTheme": "vs",
+        "path": "./themes/bearded-theme-vivid-light.json"
+      },
+      {
         "label": "Bearded Theme Monokai Light",
         "uiTheme": "vs",
         "path": "./themes/bearded-theme-monokai-light.json"
@@ -191,6 +196,7 @@
     "@typescript-eslint/parser": "^4.28.1",
     "eslint": "^7.29.0",
     "nodemon": "^2.0.8",
+    "ovsx": "^0.2.0",
     "prettier": "^2.3.2",
     "ts-node": "^10.0.0",
     "typescript": "^4.3.5",

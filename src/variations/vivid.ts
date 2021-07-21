@@ -49,3 +49,18 @@ export const vividBlack: Theme = {
   colors: vividColors,
   levels: vividLevels,
 };
+
+export const vividLight: Theme = {
+  ui: {
+    primary: "#555555",
+    primaryalt: "#ffffff",
+    uiborder: "#cccccc",
+    uibackground: "#FFFFFF",
+    uibackgroundalt: "#Fafafa",
+    default: "#000000",
+    defaultMain: "#000000",
+    defaultalt: "#aaaaaa",
+  },
+  colors: vividColors,
+  levels: vividLevels,
+};
