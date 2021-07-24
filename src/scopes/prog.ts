@@ -35,7 +35,10 @@ export const keyword = [
   "keyword.other.await",
   "storage.type.class.jsdoc",
   "punctuation.definition.block.tag.jsdoc",
-  "keyword.operator.assignment.cs",
+  "keyword.other.new",
+  "keyword.other.phpdoc",
+  "keyword.other.use.php",
+  "keyword.operator.logical.python",
 ];
 
 export const constants = ["constant"];
@@ -102,6 +105,12 @@ export const operators = [
   "storage.type.function.arrow",
   // LUA
   "keyword.operator.lua",
+  "keyword.operator.assignment",
+  "keyword.operator.relational",
+  "keyword.operator.increment",
+  "keyword.operator.decrement",
+  "keyword.operator.logical",
+  "keyword.operator.arithmetic",
 ];
 
 export const punctuation = [
@@ -155,6 +164,8 @@ export const self = [
   "variable.language.this",
   "variable.language.special.self",
   "variable.parameter.function.language.special.self",
+  "variable.language.this.php punctuation.definition.variable.php",
+  "meta.class.body.php storage.type.php",
 ];
 
 export const storages = [
@@ -175,6 +186,9 @@ export const storages = [
   "storage.type.interface",
   "storage.type.type",
   "entity.name.type.class.java",
+  "support.class.php",
+  "entity.name.type.class.php",
+  "entity.other.inherited-class.php",
 ];
 
 export const strings = [
@@ -191,6 +205,13 @@ export const strings = [
   "variable.parameter.url",
 ];
 
+export const stringsAlt = [
+  "string.quoted.docstring.multi.python",
+  "string.quoted.double.block.python punctuation.definition.string.end.python",
+  "string.quoted.double.block.python punctuation.definition.string.begin.python",
+  "string.quoted.double.block.python",
+];
+
 export const types = [
   "entity.name.type",
   "support.type",
@@ -201,6 +222,7 @@ export const types = [
   "storage.type.java",
   "storage.type.primitive.java",
   "storage.type.generic.java",
+  "keyword.other.type",
 ];
 
 export const variables = [

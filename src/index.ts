@@ -1,5 +1,6 @@
 import { writeFile } from "fs";
 import syntax from "./scopes/scopes";
+import semanticTokens from "./scopes/semanticTokens";
 import { Theme } from "./typing";
 import ui from "./ui";
 import { arc, arcBlueBerry, arcEggplant, arcEolstorm } from "./variations/arc";
@@ -18,6 +19,8 @@ function makeTheme(name: string, theme: Theme): void {
     name: `BeardedTheme ${name.charAt(0).toUpperCase()}${name.slice(1)}`,
     colors: ui(theme),
     tokenColors: syntax(theme),
+    semanticHighlighting: true,
+    semanticTokenColors: semanticTokens(theme),
   };
 
   writeFile(`themes/bearded-theme-${name}.json`, JSON.stringify(themeTemplate), (err) => {
