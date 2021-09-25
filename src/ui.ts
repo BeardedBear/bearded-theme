@@ -55,6 +55,7 @@ export default function ui(theme: Theme): unknown {
     "dropdown.border": `${theme.ui.defaultalt}aa`,
     "dropdown.foreground": theme.ui.default,
     // editor
+    "editorCursor.background": theme.ui.primary,
     "editor.background": theme.ui.uibackground,
     "editor.findMatchBackground": `${theme.ui.primary}20`,
     "editor.findMatchBorder": `${theme.ui.primary}60`,

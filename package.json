@@ -59,6 +59,11 @@
         "path": "./themes/bearded-theme-monokai-stone.json"
       },
       {
+        "label": "Bearded Theme Monokai Black",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-monokai-black.json"
+      },
+      {
         "label": "Bearded Theme Solarized",
         "uiTheme": "vs-dark",
         "path": "./themes/bearded-theme-solarized-dark.json"
@@ -142,11 +147,6 @@
         "label": "Bearded Theme Vivid Light",
         "uiTheme": "vs",
         "path": "./themes/bearded-theme-vivid-light.json"
-      },
-      {
-        "label": "Bearded Theme Monokai Light",
-        "uiTheme": "vs",
-        "path": "./themes/bearded-theme-monokai-light.json"
       },
       {
         "label": "Bearded Theme Earth",

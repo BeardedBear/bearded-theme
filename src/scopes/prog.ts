@@ -7,6 +7,10 @@ export const accessors = [
   "record.accessor",
   "entity.name.record.field.accessor",
   "storage.modifier.import.java",
+  "storage.modifier.import.groovy",
+  "meta.import.swift entity.name.type.swift",
+  // fn parameters
+  "entity.name.variable.parameter.cs",
 ];
 
 export const classes = ["entity.name.type"];
@@ -39,6 +43,9 @@ export const keyword = [
   "keyword.other.phpdoc",
   "keyword.other.use.php",
   "keyword.operator.logical.python",
+  "keyword.other.import.static.groovy",
+  "keyword.other.import.groovy",
+  "punctuation.definition.attribute.swift",
 ];
 
 export const constants = ["constant"];
@@ -82,6 +89,7 @@ export const functions = [
   "meta.method-call.static.php",
   "meta.method-call.php",
   "meta.class storage.type",
+  "meta.method.groovy",
 ];
 
 export const importScope = [
@@ -111,6 +119,7 @@ export const operators = [
   "keyword.operator.decrement",
   "keyword.operator.logical",
   "keyword.operator.arithmetic",
+  "keyword.operator.math",
 ];
 
 export const punctuation = [
@@ -158,6 +167,17 @@ export const punctuation = [
   // VUE
   "text.html.vue-html meta.tag.block.any",
   "entity.name.variable.tuple-element.cs",
+  "keyword.operator.assignment.tsx",
+  "meta.definition.method.signature.java",
+  "meta.class.body.groovy",
+  "meta.definition.method.groovy meta.method.body.java meta.declaration.assertion.groovy",
+  "punctuation.definition.list.begin.erlang",
+  "meta.expression.parenthesized",
+  "meta.definition.function.swift meta.parameter-clause.swift",
+  "source.swift meta.function-call.swift",
+  "punctuation.section.embedded.end.swift source.swift",
+  "punctuation.definition.tag.begin.html.vue",
+  "punctuation.definition.tag.end.html.vue",
 ];
 
 export const self = [
@@ -166,6 +186,8 @@ export const self = [
   "variable.parameter.function.language.special.self",
   "variable.language.this.php punctuation.definition.variable.php",
   "meta.class.body.php storage.type.php",
+  "variable.parameter.function.swift entity.name.function.swift",
+  "variable.other.jsdoc",
 ];
 
 export const storages = [
@@ -189,6 +211,9 @@ export const storages = [
   "support.class.php",
   "entity.name.type.class.php",
   "entity.other.inherited-class.php",
+  "entity.name.type.class.groovy",
+  "storage.type.rust  ",
+  "entity.name.type.class.swift",
 ];
 
 export const strings = [
@@ -198,11 +223,15 @@ export const strings = [
   "punctuation.definition.string",
   "punctuation.definition.string.template",
   "punctuation.definition.string.begin",
+  "punctuation.definition.string.end.html source.js-ignored-vscode",
   "punctuation.definition.string.end",
   "string.other.link",
   "constant.character.escape.regexp",
   // CSS
   "variable.parameter.url",
+  "constant.other.symbol.quoted.single.erlang",
+  "constant.other.symbol.quoted.single.erlang punctuation.definition.symbol.begin.erlang",
+  "constant.other.symbol.quoted.single.erlang punctuation.definition.symbol.end.erlang",
 ];
 
 export const stringsAlt = [
@@ -223,6 +252,14 @@ export const types = [
   "storage.type.primitive.java",
   "storage.type.generic.java",
   "keyword.other.type",
+  "punctuation.section.embedded.begin.php",
+  "punctuation.section.embedded.end.php source.php",
+  "punctuation.section.embedded.end.php",
+  "storage.type.object.array.java",
+  "storage.type.primitive.groovy",
+  "storage.type.groovy",
+  "meta.definition.type.body.swift meta.function-call.swift",
+  "meta.definition.type.class.swift meta.inheritance-clause.swift",
 ];
 
 export const variables = [
@@ -239,6 +276,7 @@ export const variables = [
   // TS
   "variable.other.constant entity.name.function",
   "entity.name.variable.tuple-element.cs punctuation.separator.colon.cs",
+  "meta.definition.variable.name.groovy",
 ];
 
 export const typeConstructor = ["source.elm constant.type-constructor"];

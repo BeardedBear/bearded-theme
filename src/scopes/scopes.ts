@@ -27,7 +27,7 @@ export default function syntax(theme: Theme): Scope[] {
     createScope(prog.keyword, theme.colors.yellow),
     createScope(prog.objectProperty, theme.ui.default),
     createScope(prog.dataProperty, theme.colors.yellow),
-    createScope(prog.operators, theme.ui.default),
+    createScope(prog.operators, theme.colors.yellow),
     createScope(prog.punctuation, `${theme.ui.default}60`),
     createScope(prog.self, theme.colors.orange, "italic"),
     createScope(prog.storages, theme.colors.turquoize, "italic"),

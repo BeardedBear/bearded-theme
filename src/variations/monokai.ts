@@ -65,35 +65,17 @@ export const monokaiStone: Theme = {
   levels: monokaiLevels,
 };
 
-const monokaiColorsLight: ThemeColors = {
-  yellow: "#e0a800",
-  salmon: "#ff6188",
-  orange: "#ed7940",
-  blue: "#00b0d4",
-  pink: "#e991e3",
-  green: "#65b315",
-  greenAlt: "#65b315",
-  turquoize: "#00baa4",
-  purple: "#9682fa",
-  red: "#fc6a67",
-};
-
-export const monokaiLight: Theme = {
+export const monokaiBlack: Theme = {
   ui: {
-    primary: "#03ab97",
-    primaryalt: "#f2f2f3",
-    uiborder: "#d6d7db",
-    uibackground: "#f0f1f4",
-    uibackgroundalt: "#e8eaed",
-    default: "#606270",
-    defaultMain: "#606270" + "cc",
-    defaultalt: "#868d9c",
+    primary: "#8f8f8f",
+    primaryalt: "#1a1a1a",
+    uiborder: "#000000",
+    uibackground: "#141414",
+    uibackgroundalt: "#0d0d0d",
+    default: "#FFFFFF",
+    defaultMain: "#FFFFFF",
+    defaultalt: "#707070",
   },
-  colors: monokaiColorsLight,
-  levels: {
-    warning: monokaiColorsLight.yellow,
-    info: monokaiColorsLight.blue,
-    success: monokaiColorsLight.green,
-    danger: monokaiColorsLight.red,
-  },
+  colors: monokaiColors,
+  levels: monokaiLevels,
 };

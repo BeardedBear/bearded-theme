@@ -7,7 +7,7 @@ import { arc, arcBlueBerry, arcEggplant, arcEolstorm } from "./variations/arc";
 import { blackAndAmethyst, blackAndDiamond, blackAndEmerald, blackAndGold, blackAndRuby } from "./variations/black";
 import { anthracite, light } from "./variations/classics";
 import { altica, earth, voided } from "./variations/exotic";
-import { monokaiLight, monokaiMetallian, monokaiStone, monokaiTerra } from "./variations/monokai";
+import { monokaiBlack, monokaiMetallian, monokaiStone, monokaiTerra } from "./variations/monokai";
 import { oceanic, solarizedDark, solarizedLight } from "./variations/solarized";
 import { stainedBlue, stainedPurple } from "./variations/stained";
 import { surprisingBlueberry, surprisingEggplant, surprisingWatermelon } from "./variations/surprising";
@@ -59,7 +59,7 @@ makeTheme("vivid-light", vividLight);
 makeTheme("monokai-terra", monokaiTerra);
 makeTheme("monokai-metallian", monokaiMetallian);
 makeTheme("monokai-stone", monokaiStone);
-makeTheme("monokai-light", monokaiLight);
+makeTheme("monokai-black", monokaiBlack);
 
 // Exotic
 makeTheme("exotic-earth", earth);
