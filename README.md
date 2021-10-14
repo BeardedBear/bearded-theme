@@ -20,7 +20,7 @@ Something's missing ? [create Issues](https://github.com/BeardedBear/BeardedThem
 - Select Preferences: Color Theme and choose `Bearded Theme`.
 
 ## Bonus
-VSCode now suports native bracket colorization without any extensions. Just add the following content to your `settings.json` file:
+VSCode now supports native bracket colorization without any extensions. Just add the following content to your `settings.json` file:
 
 ```json
 "editor.bracketPairColorization.enabled": true,
