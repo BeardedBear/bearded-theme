@@ -20,11 +20,17 @@ Something's missing ? [create Issues](https://github.com/BeardedBear/BeardedThem
 - Select Preferences: Color Theme and choose `Bearded Theme`.
 
 ## Bonus
+VSCode now supports native bracket colorization without any extensions. Just add the following content to your `settings.json` file:
 
-Color configuration for [Bracket Pair Colorizer 2](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2)
-
-```
-"bracket-pair-colorizer-2.colors": ["#D39E17", "#A15DEF", "#3398DB"]
+```json
+"editor.bracketPairColorization.enabled": true,
+"workbench.colorCustomizations": {
+  "[*]": {
+    "editorBracketHighlight.foreground1": "#D39E17",
+    "editorBracketHighlight.foreground2": "#A15DEF",
+    "editorBracketHighlight.foreground3": "#3398DB"
+  }
+ }
 ```
 
 ## 📄 License
