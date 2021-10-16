@@ -6,7 +6,7 @@ const surprisingColors = (primary: string): ThemeColors => {
     green: "#a9dc76",
     greenAlt: "#b7d175",
     orange: "#5288BA",
-    pink: "#e991e3",
+    pink: "#c47cbf",
     purple: "#CC9B52",
     red: "#C13838",
     salmon: "#B85C40",

@@ -18,6 +18,8 @@ export const tagsPunctuation = [
   "source.css-ignored-vscode",
   "meta.tag.metadata.style.end.html",
   "text.html.vue invalid.illegal.character-not-allowed-here.html",
+  "meta.tag.inline.i.start.html",
+  "meta.tag.structure.div.start.html",
 ];
 export const attributes = [
   "entity.other.attribute-name",

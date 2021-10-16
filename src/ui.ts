@@ -56,6 +56,9 @@ export default function ui(theme: Theme): unknown {
     "dropdown.foreground": theme.ui.default,
     // editor
     "editorCursor.background": theme.ui.primary,
+    "editorBracketHighlight.foreground1" : theme.colors.yellow,
+    "editorBracketHighlight.foreground2" : theme.colors.purple,
+    "editorBracketHighlight.foreground3" : theme.colors.blue,
     "editor.background": theme.ui.uibackground,
     "editor.findMatchBackground": `${theme.ui.primary}20`,
     "editor.findMatchBorder": `${theme.ui.primary}60`,

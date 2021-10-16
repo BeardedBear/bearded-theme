@@ -1,5 +1,18 @@
 # Changelog for Bearded Theme
 
+## 5.0.0 - 2021-10-21
+
+### New features
+
+- Add native support for Bracket Highlight colors
+- Enable Semantic Highlighting (more flexibility for selection scopes)
+
+### Fixes
+
+- Fix weird tag colors for Vue templates
+- Operators easier to read
+- A lot of small details
+
 ## 4.0.0 - 2021-07-01
 
 ### Enhancements

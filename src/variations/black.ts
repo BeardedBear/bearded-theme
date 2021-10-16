@@ -18,7 +18,7 @@ const blackColors: ThemeColors = {
   green: "#00a884",
   greenAlt: "#3585bb",
   orange: "#d4770c",
-  pink: "#BC62AD",
+  pink: "#d46ec0",
   purple: "#a85ff1",
   red: "#E35535",
   salmon: "#c62f52",

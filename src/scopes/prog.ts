@@ -9,8 +9,10 @@ export const accessors = [
   "storage.modifier.import.java",
   "storage.modifier.import.groovy",
   "meta.import.swift entity.name.type.swift",
-  // fn parameters
   "entity.name.variable.parameter.cs",
+  "meta.member.access.python",
+  "variable.other.property.ts",
+  "variable.other.property.js",
 ];
 
 export const classes = ["entity.name.type"];
@@ -90,6 +92,7 @@ export const functions = [
   "meta.method-call.php",
   "meta.class storage.type",
   "meta.method.groovy",
+  "meta.bracket.square.access",
 ];
 
 export const importScope = [
@@ -178,6 +181,8 @@ export const punctuation = [
   "punctuation.section.embedded.end.swift source.swift",
   "punctuation.definition.tag.begin.html.vue",
   "punctuation.definition.tag.end.html.vue",
+  "source.lua",
+  "meta.function.lua",
 ];
 
 export const self = [
@@ -271,12 +276,12 @@ export const variables = [
   "meta.method.body",
   "entity.name.variable",
   "punctuation.definition.variable",
-  "support.variable.property",
+  // "support.variable.property",
   "meta.class variable.object.property",
-  // TS
   "variable.other.constant entity.name.function",
   "entity.name.variable.tuple-element.cs punctuation.separator.colon.cs",
   "meta.definition.variable.name.groovy",
+  "meta.body.struct.cpp",
 ];
 
 export const typeConstructor = ["source.elm constant.type-constructor"];
