@@ -1,6 +1,6 @@
 # Changelog for Bearded Theme
 
-## 5.0.0 - 2021-10-21
+## 5.0.0 - 2021-12-10
 
 ### New features
 
