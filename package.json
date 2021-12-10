@@ -5,7 +5,7 @@
   "publisher": "BeardedBear",
   "version": "5.0.0",
   "engines": {
-    "vscode": "^1.57.0"
+    "vscode": "^1.63.0"
   },
   "scripts": {
     "build": "ts-node src/index.ts",
@@ -191,15 +191,15 @@
     ]
   },
   "dependencies": {
-    "@types/node": "^15.12.5",
-    "@typescript-eslint/eslint-plugin": "^4.28.1",
-    "@typescript-eslint/parser": "^4.28.1",
-    "eslint": "^7.29.0",
-    "nodemon": "^2.0.8",
-    "ovsx": "^0.2.0",
-    "prettier": "^2.3.2",
-    "ts-node": "^10.0.0",
-    "typescript": "^4.3.5",
-    "vsce": "^1.100.1"
+    "@types/node": "^16.11.12",
+    "@typescript-eslint/eslint-plugin": "^5.6.0",
+    "@typescript-eslint/parser": "^5.6.0",
+    "eslint": "^8.4.1",
+    "nodemon": "^2.0.15",
+    "ovsx": "^0.2.1",
+    "prettier": "^2.5.1",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.3",
+    "vsce": "^2.5.1"
   }
 }
