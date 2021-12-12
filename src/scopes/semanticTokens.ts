@@ -11,13 +11,13 @@ interface SemanticToken {
 export default function semanticTokens(theme: Theme): { [index: string]: SemanticToken } {
   return {
     "property.declaration": { foreground: theme.ui.default },
-    "property": { foreground: theme.colors.orange, italic : true },
-    "variable" : { foreground: theme.colors.salmon },
+    property: { foreground: theme.colors.orange },
+    variable: { foreground: theme.colors.salmon },
     "variable.defaultLibrary": { foreground: theme.colors.turquoize },
     "class.declaration": { foreground: theme.colors.purple },
-    "namespace": { foreground: theme.colors.blue },
-    "parameter": { foreground: theme.colors.pink },
+    namespace: { foreground: theme.colors.blue },
+    parameter: { foreground: theme.colors.pink },
     "class.decorator": { foreground: theme.colors.pink },
-    "enumMember": { foreground: theme.colors.purple },
+    enumMember: { foreground: theme.colors.purple },
   };
 }
