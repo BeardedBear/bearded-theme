@@ -1,8 +1,8 @@
-VERSION="5.0.0"
+VERSION="5.0.1"
 
 version:
 	@echo "Current version ${VERSION}"
-install:
+install: build build-ext
 	code --install-extension beardedtheme-${VERSION}.vsix --force
 build:
 	yarn build
