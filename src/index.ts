@@ -7,6 +7,7 @@ import { arc, arcBlueBerry, arcEggplant, arcEolstorm } from "./variations/arc";
 import { blackAndAmethyst, blackAndDiamond, blackAndEmerald, blackAndGold, blackAndRuby } from "./variations/black";
 import { anthracite, light } from "./variations/classics";
 import { altica, earth, voided } from "./variations/exotic";
+import { horizon } from "./variations/horizon";
 import { monokaiBlack, monokaiMetallian, monokaiStone, monokaiTerra } from "./variations/monokai";
 import { oceanic, solarizedDark, solarizedLight } from "./variations/solarized";
 import { stainedBlue, stainedPurple } from "./variations/stained";
@@ -27,6 +28,9 @@ function makeTheme(name: string, theme: Theme): void {
     if (err) console.log("error", err);
   });
 }
+
+// Arc
+makeTheme("horizon", horizon);
 
 // Arc
 makeTheme("arc", arc);
