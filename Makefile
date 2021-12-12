@@ -1,0 +1,12 @@
+VERSION="5.0.0"
+
+version:
+	@echo "Current version ${VERSION}"
+install:
+	code --install-extension beardedtheme-${VERSION}.vsix --force
+build:
+	yarn build
+build-ext:
+	yarn build:ext
+copy:
+	cp themes/*.json ~/.vscode/extensions/beardedbear.beardedtheme-${VERSION}/themes
