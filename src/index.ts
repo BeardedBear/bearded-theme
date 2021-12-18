@@ -7,12 +7,14 @@ import { arc, arcBlueBerry, arcEggplant, arcEolstorm } from "./variations/arc";
 import { blackAndAmethyst, blackAndDiamond, blackAndEmerald, blackAndGold, blackAndRuby } from "./variations/black";
 import { anthracite, light } from "./variations/classics";
 import { altica, earth, voided } from "./variations/exotic";
-import { horizon } from "./variations/horizon";
+import { slurp } from "./variations/slurp";
 import { monokaiBlack, monokaiMetallian, monokaiStone, monokaiTerra } from "./variations/monokai";
 import { oceanic, solarizedDark, solarizedLight } from "./variations/solarized";
 import { stainedBlue, stainedPurple } from "./variations/stained";
 import { surprisingBlueberry, surprisingEggplant, surprisingWatermelon } from "./variations/surprising";
+import { tester } from "./variations/tester";
 import { vividBlack, vividLight, vividPurple } from "./variations/vivid";
+import { rosePine } from "./variations/rosepine";
 
 function makeTheme(name: string, theme: Theme): void {
   const themeTemplate = {
@@ -29,8 +31,14 @@ function makeTheme(name: string, theme: Theme): void {
   });
 }
 
-// Arc
-makeTheme("horizon", horizon);
+// Slurp
+makeTheme("rose-pine", rosePine);
+
+// Slurp
+makeTheme("slurp", slurp);
+
+// Tester
+makeTheme("tester", tester);
 
 // Arc
 makeTheme("arc", arc);

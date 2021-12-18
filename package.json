@@ -44,6 +44,21 @@
   "contributes": {
     "themes": [
       {
+        "label": "Bearded Rosé Pine",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-rose-pine.json"
+      },
+      {
+        "label": "Bearded Theme Slurp",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-slurp.json"
+      },
+      {
+        "label": "Bearded Theme Tester",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-tester.json"
+      },
+      {
         "label": "Bearded Theme Monokai Metallian",
         "uiTheme": "vs-dark",
         "path": "./themes/bearded-theme-monokai-metallian.json"

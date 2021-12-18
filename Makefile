@@ -1,4 +1,4 @@
-VERSION="5.0.1"
+VERSION="5.0.0"
 
 version:
 	@echo "Current version ${VERSION}"

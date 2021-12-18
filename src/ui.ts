@@ -56,9 +56,9 @@ export default function ui(theme: Theme): unknown {
     "dropdown.foreground": theme.ui.default,
     // editor
     "editorCursor.background": theme.ui.primary,
-    "editorBracketHighlight.foreground1" : theme.colors.yellow,
-    "editorBracketHighlight.foreground2" : theme.colors.purple,
-    "editorBracketHighlight.foreground3" : theme.colors.blue,
+    "editorBracketHighlight.foreground1": theme.colors.yellow,
+    "editorBracketHighlight.foreground2": theme.colors.purple,
+    "editorBracketHighlight.foreground3": theme.colors.blue,
     "editor.background": theme.ui.uibackground,
     "editor.findMatchBackground": `${theme.ui.primary}20`,
     "editor.findMatchBorder": `${theme.ui.primary}60`,
@@ -217,8 +217,8 @@ export default function ui(theme: Theme): unknown {
     "sideBarTitle.foreground": theme.ui.defaultalt,
     "tree.indentGuidesStroke": `${theme.ui.defaultalt}70`,
     // statusBar
-    "statusBar.background": theme.ui.uibackgroundalt,
-    "statusBar.border": theme.ui.uiborder,
+    "statusBar.background": theme.ui.primaryalt,
+    "statusBar.border": theme.ui.primaryalt,
     "statusBar.debuggingBackground": `${theme.ui.primary}44`,
     "statusBar.debuggingForeground": theme.ui.default,
     "statusBar.foreground": theme.ui.default,
