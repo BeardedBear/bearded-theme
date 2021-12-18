@@ -1,0 +1,95 @@
+import { Theme, ThemeColors, ThemeLevels } from "../typing";
+
+const libColors = {
+  custom: {
+    pineLight: "#64A7C2",
+    pinkLight: "#FFA2C5",
+    roseLight: "#FFE9E8",
+  },
+  dark: {
+    base: "#191724",
+    surface: "#1f1d2e",
+    overlay: "#26233a",
+    inactive: "#555169",
+    subtle: "#6e6a86",
+    text: "#e0def4",
+    love: "#eb6f92",
+    gold: "#f6c177",
+    rose: "#ebbcba",
+    pine: "#31748f",
+    foam: "#9ccfd8",
+    iris: "#c4a7e7",
+    highlight: "#2a2837",
+    highlightInactive: "#211f2d",
+    highlightOverlay: "#3a384a",
+  },
+  moon: {
+    base: "#232136",
+    surface: "#2a273f",
+    overlay: "#393552",
+    inactive: "#59546d",
+    subtle: "#817c9c",
+    text: "#e0def4",
+    love: "#eb6f92",
+    gold: "#f6c177",
+    rose: "#ea9a97",
+    pine: "#3e8fb0",
+    foam: "#9ccfd8",
+    iris: "#c4a7e7",
+    highlight: "#312f44",
+    highlightInactive: "#2a283d",
+    highlightOverlay: "#3f3c53",
+  },
+  dawn: {
+    base: "#faf4ed",
+    surface: "#fffaf3",
+    overlay: "#f2e9de",
+    inactive: "#9893a5",
+    subtle: "#6e6a86",
+    text: "#575279",
+    love: "#b4637a",
+    gold: "#ea9d34",
+    rose: "#d7827e",
+    pine: "#286983",
+    foam: "#56949f",
+    iris: "#907aa9",
+    highlight: "#eee9e6",
+    highlightInactive: "#f2ede9",
+    highlightOverlay: "#e4dfde",
+  },
+};
+
+const rosePineColors: ThemeColors = {
+  blue: libColors.custom.pineLight,
+  green: libColors.dark.foam,
+  greenAlt: libColors.dark.foam,
+  orange: libColors.custom.pineLight,
+  pink: libColors.custom.pinkLight,
+  purple: libColors.dark.iris,
+  red: libColors.dark.love,
+  salmon: libColors.dark.rose,
+  turquoize: libColors.dark.foam,
+  yellow: libColors.dark.gold,
+};
+
+const rosePineLevels: ThemeLevels = {
+  danger: rosePineColors.red,
+  info: rosePineColors.blue,
+  success: rosePineColors.green,
+  warning: rosePineColors.yellow,
+};
+
+export const rosePine: Theme = {
+  ui: {
+    primary: libColors.dawn.base,
+    primaryalt: libColors.dark.inactive,
+    uiborder: libColors.dark.base,
+    uibackground: libColors.dark.base,
+    uibackgroundalt: libColors.dark.base,
+    default: libColors.dark.text,
+    defaultMain: libColors.dark.text,
+    defaultalt: libColors.dark.inactive,
+  },
+  colors: rosePineColors,
+  levels: rosePineLevels,
+};
