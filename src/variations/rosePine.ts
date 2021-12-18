@@ -60,10 +60,10 @@ const libColors = {
 };
 
 const rosePineColors: ThemeColors = {
-  blue: libColors.dark.foam,
+  blue: libColors.custom.pineLight,
   green: libColors.dark.foam,
   greenAlt: libColors.dark.foam,
-  orange: libColors.dawn.pine,
+  orange: libColors.custom.pineLight,
   pink: libColors.custom.pinkLight,
   purple: libColors.dark.iris,
   red: libColors.dark.love,
