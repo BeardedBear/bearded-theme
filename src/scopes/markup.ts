@@ -8,6 +8,8 @@ export const tags = [
   "meta.embedded.block.blade constant.other.php",
   "meta.embedded.block.blade keyword.operator.comparison.php",
   "meta.embedded.block.blade keyword.operator.arithmetic.php",
+  "meta.tag.start.svelte keyword.control.svelte",
+  "meta.tag.end.svelte keyword.control.svelte"
 ];
 export const tagsPunctuation = [
   "meta.tag.sgml.doctype.html",

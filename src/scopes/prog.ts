@@ -48,6 +48,8 @@ export const keyword = [
   "keyword.other.import.static.groovy",
   "keyword.other.import.groovy",
   "punctuation.definition.attribute.swift",
+  "source.svelte meta.scope.tag.main.svelte meta.tag.start.svelte variable.function.svelte",
+  "meta.directive.on.svelte entity.name.type.svelte"
 ];
 
 export const constants = ["constant"];
@@ -183,6 +185,8 @@ export const punctuation = [
   "punctuation.definition.tag.end.html.vue",
   "source.lua",
   "meta.function.lua",
+  "punctuation.definition.keyword.svelte",
+  "source.svelte meta.scope.tag.SpeakerPicture.svelte meta.tag.start.svelte entity.other.attribute-name.svelte",
 ];
 
 export const self = [
@@ -219,6 +223,8 @@ export const storages = [
   "entity.name.type.class.groovy",
   "storage.type.rust  ",
   "entity.name.type.class.swift",
+  "source.svelte meta.script.svelte source.ts entity.name.label.ts",
+  "meta.directive.on.svelte keyword.control.svelte"
 ];
 
 export const strings = [
@@ -237,6 +243,7 @@ export const strings = [
   "constant.other.symbol.quoted.single.erlang",
   "constant.other.symbol.quoted.single.erlang punctuation.definition.symbol.begin.erlang",
   "constant.other.symbol.quoted.single.erlang punctuation.definition.symbol.end.erlang",
+  "meta.import.ts punctuation.definition.variable.svelte"
 ];
 
 export const stringsAlt = [
