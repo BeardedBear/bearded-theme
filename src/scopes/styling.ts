@@ -18,6 +18,7 @@ export const property = [
   "meta.property-list entity.name.tag.css",
   "meta.property-list.scss meta.property-list.scss entity.name.tag.css",
   "meta.property-list meta.property-name",
+  "source.css.scss meta.property-list.scss entity.name.tag.css"
 ];
 // export const punctuation = ["punctuation.definition.entity"];
 export const value = ["support.constant.property-value", "support.constant.font-name", "meta.property-value.css"];
