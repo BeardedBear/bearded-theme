@@ -187,6 +187,8 @@ export const punctuation = [
   "meta.function.lua",
   "punctuation.definition.keyword.svelte",
   "source.svelte meta.scope.tag.SpeakerPicture.svelte meta.tag.start.svelte entity.other.attribute-name.svelte",
+  "expression.embbeded.vue punctuation.definition.tag.begin.html.vue",
+  "expression.embbeded.vue punctuation.definition.tag.end.html.vue",
 ];
 
 export const self = [

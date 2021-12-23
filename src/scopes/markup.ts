@@ -23,7 +23,6 @@ export const tagsPunctuation = [
   "meta.tag.inline.i.start.html",
   "meta.tag.structure.div.start.html",
   "punctuation.definition.tag.end.html.vue",
-  "punctuation.definition.tag.begin.html.vue",
   "invalid.illegal.character-not-allowed-here.html",
 ];
 export const attributes = [
