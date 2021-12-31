@@ -1,5 +1,11 @@
 # Changelog for Bearded Theme
 
+## 5.0.1 - 2021-12-23
+
+### Fixes
+
+- Fixes for svelte
+
 ## 5.0.0 - 2021-12-10
 
 ### New features
