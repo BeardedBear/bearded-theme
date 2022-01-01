@@ -1,4 +1,4 @@
-only `prog.storages` should be italic
+only `prog.storages` should be italic in src/scopes/scopes.ts:16
 src/scopes/semanticTokens.ts:14 should be `italic: false`
 
 src/scopes/scopes.ts:18 
