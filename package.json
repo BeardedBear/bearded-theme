@@ -191,147 +191,147 @@
       {
         "label": "Bearded Theme Monokai Metallian Non Italic",
         "uiTheme": "vs-dark",
-        "path": "./themes/bearded-theme-monokai-metallian.json"
+        "path": "./themes/bearded-theme-monokai-metallian-nonitalic.json"
       },
       {
         "label": "Bearded Theme Monokai Terra Non Italic",
         "uiTheme": "vs-dark",
-        "path": "./themes/bearded-theme-monokai-terra.json"
+        "path": "./themes/bearded-theme-monokai-terra-nonitalic.json"
       },
       {
         "label": "Bearded Theme Monokai Stone Non Italic",
         "uiTheme": "vs-dark",
-        "path": "./themes/bearded-theme-monokai-stone.json"
+        "path": "./themes/bearded-theme-monokai-stone-nonitalic.json"
       },
       {
         "label": "Bearded Theme Monokai Black Non Italic",
         "uiTheme": "vs-dark",
-        "path": "./themes/bearded-theme-monokai-black.json"
+        "path": "./themes/bearded-theme-monokai-black-nonitalic.json"
       },
       {
         "label": "Bearded Theme Solarized Non Italic",
         "uiTheme": "vs-dark",
-        "path": "./themes/bearded-theme-solarized-dark.json"
+        "path": "./themes/bearded-theme-solarized-dark-nonitalic.json"
       },
       {
         "label": "Bearded Theme Solarized Light Non Italic",
         "uiTheme": "vs",
-        "path": "./themes/bearded-theme-solarized-light.json"
+        "path": "./themes/bearded-theme-solarized-light-nonitalic.json"
       },
       {
         "label": "Bearded Theme Oceanic Non Italic",
         "uiTheme": "vs-dark",
-        "path": "./themes/bearded-theme-oceanic.json"
+        "path": "./themes/bearded-theme-oceanic-nonitalic.json"
       },
       {
         "label": "Bearded Theme Arc Non Italic",
         "uiTheme": "vs-dark",
-        "path": "./themes/bearded-theme-arc.json"
+        "path": "./themes/bearded-theme-arc-nonitalic.json"
       },
       {
         "label": "Bearded Theme Arc Eggplant Non Italic",
         "uiTheme": "vs-dark",
-        "path": "./themes/bearded-theme-arc-eggplant.json"
+        "path": "./themes/bearded-theme-arc-eggplant-nonitalic.json"
       },
       {
         "label": "Bearded Theme Arc EolStorm Non Italic",
         "uiTheme": "vs-dark",
-        "path": "./themes/bearded-theme-arc-eolstorm.json"
+        "path": "./themes/bearded-theme-arc-eolstorm-nonitalic.json"
       },
       {
         "label": "Bearded Theme Arc Blueberry Non Italic",
         "uiTheme": "vs-dark",
-        "path": "./themes/bearded-theme-arc-blueberry.json"
+        "path": "./themes/bearded-theme-arc-blueberry-nonitalic.json"
       },
       {
         "label": "Bearded Theme Black & Amethyst Non Italic",
         "uiTheme": "vs-dark",
-        "path": "./themes/bearded-theme-black-amethyst.json"
+        "path": "./themes/bearded-theme-black-amethyst-nonitalic.json"
       },
       {
         "label": "Bearded Theme Black & Diamond Non Italic",
         "uiTheme": "vs-dark",
-        "path": "./themes/bearded-theme-black-diamond.json"
+        "path": "./themes/bearded-theme-black-diamond-nonitalic.json"
       },
       {
         "label": "Bearded Theme Black & Emerald Non Italic",
         "uiTheme": "vs-dark",
-        "path": "./themes/bearded-theme-black-emerald.json"
+        "path": "./themes/bearded-theme-black-emerald-nonitalic.json"
       },
       {
         "label": "Bearded Theme Black & Gold Non Italic",
         "uiTheme": "vs-dark",
-        "path": "./themes/bearded-theme-black-gold.json"
+        "path": "./themes/bearded-theme-black-gold-nonitalic.json"
       },
       {
         "label": "Bearded Theme Black & Ruby Non Italic",
         "uiTheme": "vs-dark",
-        "path": "./themes/bearded-theme-black-ruby.json"
+        "path": "./themes/bearded-theme-black-ruby-nonitalic.json"
       },
       {
         "label": "Bearded Theme Stained Purple Non Italic",
         "uiTheme": "vs-dark",
-        "path": "./themes/bearded-theme-stained-purple.json"
+        "path": "./themes/bearded-theme-stained-purple-nonitalic.json"
       },
       {
         "label": "Bearded Theme Stained Blue Non Italic",
         "uiTheme": "vs-dark",
-        "path": "./themes/bearded-theme-stained-blue.json"
+        "path": "./themes/bearded-theme-stained-blue-nonitalic.json"
       },
       {
         "label": "Bearded Theme Vivid Purple Non Italic",
         "uiTheme": "vs-dark",
-        "path": "./themes/bearded-theme-vivid-purple.json"
+        "path": "./themes/bearded-theme-vivid-purple-nonitalic.json"
       },
       {
         "label": "Bearded Theme Vivid Black Non Italic",
         "uiTheme": "vs-dark",
-        "path": "./themes/bearded-theme-vivid-black.json"
+        "path": "./themes/bearded-theme-vivid-black-nonitalic.json"
       },
       {
         "label": "Bearded Theme Vivid Light Non Italic",
         "uiTheme": "vs",
-        "path": "./themes/bearded-theme-vivid-light.json"
+        "path": "./themes/bearded-theme-vivid-light-nonitalic.json"
       },
       {
         "label": "Bearded Theme Earth Non Italic",
         "uiTheme": "vs-dark",
-        "path": "./themes/bearded-theme-exotic-earth.json"
+        "path": "./themes/bearded-theme-exotic-earth-nonitalic.json"
       },
       {
         "label": "Bearded Theme Void Non Italic",
         "uiTheme": "vs-dark",
-        "path": "./themes/bearded-theme-exotic-void.json"
+        "path": "./themes/bearded-theme-exotic-void-nonitalic.json"
       },
       {
         "label": "Bearded Theme Altica Non Italic",
         "uiTheme": "vs-dark",
-        "path": "./themes/bearded-theme-exotic-altica.json"
+        "path": "./themes/bearded-theme-exotic-altica-nonitalic.json"
       },
       {
         "label": "Bearded Theme Anthracite Non Italic",
         "uiTheme": "vs-dark",
-        "path": "./themes/bearded-theme-classics-anthracite.json"
+        "path": "./themes/bearded-theme-classics-anthracite-nonitalic.json"
       },
       {
         "label": "Bearded Theme Light Non Italic",
         "uiTheme": "vs",
-        "path": "./themes/bearded-theme-classics-light.json"
+        "path": "./themes/bearded-theme-classics-light-nonitalic.json"
       },
       {
         "label": "Bearded Theme Surprising Eggplant Non Italic",
         "uiTheme": "vs-dark",
-        "path": "./themes/bearded-theme-surprising-eggplant.json"
+        "path": "./themes/bearded-theme-surprising-eggplant-nonitalic.json"
       },
       {
         "label": "Bearded Theme Surprising Blueberry Non Italic",
         "uiTheme": "vs-dark",
-        "path": "./themes/bearded-theme-surprising-blueberry.json"
+        "path": "./themes/bearded-theme-surprising-blueberry-nonitalic.json"
       },
       {
         "label": "Bearded Theme Surprising Watermelon Non Italic",
         "uiTheme": "vs-dark",
-        "path": "./themes/bearded-theme-surprising-watermelon.json"
+        "path": "./themes/bearded-theme-surprising-watermelon-nonitalic.json"
       }
     ]
   },
