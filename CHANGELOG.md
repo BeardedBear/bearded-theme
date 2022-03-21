@@ -1,5 +1,16 @@
 # Changelog for Bearded Theme
 
+## 6.0.0 - 2022-03-21
+
+### Fixes
+
+- Remove useless italics
+- Fix menus in light themes
+
+### New features
+
+- Add 2 new variations : Coffee, and Coffee Cream
+
 ## 5.0.1 - 2021-12-23
 
 ### Fixes
