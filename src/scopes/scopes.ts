@@ -19,7 +19,7 @@ export default function syntax(theme: Theme): Scope[] {
     createScope(prog.classes, theme.colors.greenAlt),
     createScope(prog.comments, theme.ui.defaultalt, "italic"),
     createScope(prog.constants, theme.colors.red),
-    createScope(prog.currentText, theme.ui.default),
+    createScope(prog.currentText, theme.ui.defaultMain),
     createScope(prog.decorators, theme.colors.pink),
     createScope(prog.exportScope, theme.colors.yellow),
     createScope(prog.functions, theme.colors.blue),

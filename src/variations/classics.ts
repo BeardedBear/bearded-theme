@@ -28,7 +28,7 @@ export const anthracite: Theme = {
     uibackground: "#181a1f",
     uibackgroundalt: "#141519",
     default: "#bbbbbb",
-    defaultMain: "#bbbbbb",
+    defaultMain: "#A4A4A4",
     defaultalt: "#464b52",
   },
   colors: classicsColors,
@@ -43,7 +43,7 @@ export const light: Theme = {
     uibackground: "#f4f4f4",
     uibackgroundalt: "#EBEBEB",
     default: "#455059",
-    defaultMain: "#455059",
+    defaultMain: "#363E45",
     defaultalt: "#8b99a7",
   },
   colors: {

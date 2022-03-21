@@ -8,7 +8,7 @@ const blackUI = (primary: string): ThemeUi => {
     uibackground: "#111418",
     uibackgroundalt: "#0D0F12",
     default: "#AEB2B2",
-    defaultMain: "#AEB2B2",
+    defaultMain: "#999F9F",
     defaultalt: "#43474d",
   };
 };

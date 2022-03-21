@@ -49,7 +49,7 @@ export const keyword = [
   "keyword.other.import.groovy",
   "punctuation.definition.attribute.swift",
   "source.svelte meta.scope.tag.main.svelte meta.tag.start.svelte variable.function.svelte",
-  "meta.directive.on.svelte entity.name.type.svelte"
+  "meta.directive.on.svelte entity.name.type.svelte",
 ];
 
 export const constants = ["constant"];
@@ -61,6 +61,7 @@ export const currentText = [
   "meta.jsx.children",
   // LUA
   "source.lua",
+  "text.html.derivative",
 ];
 
 export const decorators = [
@@ -226,7 +227,7 @@ export const storages = [
   "storage.type.rust  ",
   "entity.name.type.class.swift",
   "source.svelte meta.script.svelte source.ts entity.name.label.ts",
-  "meta.directive.on.svelte keyword.control.svelte"
+  "meta.directive.on.svelte keyword.control.svelte",
 ];
 
 export const strings = [
@@ -245,7 +246,8 @@ export const strings = [
   "constant.other.symbol.quoted.single.erlang",
   "constant.other.symbol.quoted.single.erlang punctuation.definition.symbol.begin.erlang",
   "constant.other.symbol.quoted.single.erlang punctuation.definition.symbol.end.erlang",
-  "meta.import.ts punctuation.definition.variable.svelte"
+  "meta.import.ts punctuation.definition.variable.svelte",
+  "punctuation.definition.string.end.html source.css-ignored-vscode",
 ];
 
 export const stringsAlt = [
@@ -285,7 +287,6 @@ export const variables = [
   "meta.method.body",
   "entity.name.variable",
   "punctuation.definition.variable",
-  // "support.variable.property",
   "meta.class variable.object.property",
   "variable.other.constant entity.name.function",
   "entity.name.variable.tuple-element.cs punctuation.separator.colon.cs",

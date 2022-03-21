@@ -15,7 +15,7 @@ export const earth: Theme = {
     uibackground: "#1E1615",
     uibackgroundalt: "#181211",
     default: "#C6BEAB",
-    defaultMain: "#C6BEAB",
+    defaultMain: "#B0A896",
     defaultalt: "#6a5553",
   },
   colors: {
@@ -41,7 +41,7 @@ export const coffee: Theme = {
     uibackground: "#292423",
     uibackgroundalt: "#25201F",
     default: "#CCBDB3",
-    defaultMain: "#CCBDB3",
+    defaultMain: "#AEA097",
     defaultalt: "#6a5553",
   },
   colors: {
@@ -71,7 +71,7 @@ export const coffeeCream: Theme = {
     uibackground: "#EAE4E1",
     uibackgroundalt: "#E4DCD8",
     default: "#2F2A29",
-    defaultMain: "#2F2A29",
+    defaultMain: "#403A38",
     defaultalt: "#AB9D98",
   },
   colors: {
@@ -102,7 +102,7 @@ export const voided: Theme = {
     uibackground: "#150F23",
     uibackgroundalt: "#120a1a",
     default: "#D7E2EF",
-    defaultMain: "#D7E2EF",
+    defaultMain: "#B8C1CE",
     defaultalt: "#585785",
   },
   colors: {
@@ -128,7 +128,7 @@ export const altica: Theme = {
     uibackground: "#0f1c21",
     uibackgroundalt: "#0e171c",
     default: "#c2ced1",
-    defaultMain: "#c2ced1",
+    defaultMain: "#9FADB1",
     defaultalt: "#45565c",
   },
   colors: {
