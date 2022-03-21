@@ -35,7 +35,7 @@ export const earth: Theme = {
 
 export const coffee: Theme = {
   ui: {
-    primary: "#CC664A",
+    primary: "#F09177",
     primaryalt: "#51403b",
     uiborder: "#1D1918",
     uibackground: "#292423",
@@ -46,17 +46,22 @@ export const coffee: Theme = {
   },
   colors: {
     blue: "#6EDDD6",
-    green: "#94D652",
+    green: "#9DCC57",
     greenAlt: "#7E9E2D",
     orange: "#ffa777",
     pink: "#E480AD",
-    purple: "#ac93ff",
+    purple: "#9991F1",
     red: "#f24343",
     salmon: "#f77a6a",
     turquoize: "#3ceaa8",
     yellow: "#f7d979",
   },
-  levels: exoticLevels,
+  levels: {
+    danger: "#f24343",
+    success: "#94D652",
+    warning: "#ffa777",
+    info: "#6EDDD6",
+  },
 };
 export const coffeeCream: Theme = {
   ui: {
