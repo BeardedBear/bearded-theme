@@ -154,6 +154,16 @@
         "path": "./themes/bearded-theme-exotic-earth.json"
       },
       {
+        "label": "Bearded Theme Coffee",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-coffee.json"
+      },
+      {
+        "label": "Bearded Theme Coffee Cream",
+        "uiTheme": "vs",
+        "path": "./themes/bearded-theme-coffee-cream.json"
+      },
+      {
         "label": "Bearded Theme Void",
         "uiTheme": "vs-dark",
         "path": "./themes/bearded-theme-exotic-void.json"

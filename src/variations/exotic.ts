@@ -33,6 +33,62 @@ export const earth: Theme = {
   levels: exoticLevels,
 };
 
+export const coffee: Theme = {
+  ui: {
+    primary: "#CC664A",
+    primaryalt: "#51403b",
+    uiborder: "#1D1918",
+    uibackground: "#292423",
+    uibackgroundalt: "#25201F",
+    default: "#CCBDB3",
+    defaultMain: "#CCBDB3",
+    defaultalt: "#6a5553",
+  },
+  colors: {
+    blue: "#6EDDD6",
+    green: "#94D652",
+    greenAlt: "#7E9E2D",
+    orange: "#ffa777",
+    pink: "#E480AD",
+    purple: "#ac93ff",
+    red: "#f24343",
+    salmon: "#f77a6a",
+    turquoize: "#3ceaa8",
+    yellow: "#f7d979",
+  },
+  levels: exoticLevels,
+};
+export const coffeeCream: Theme = {
+  ui: {
+    primary: "#D3694C",
+    primaryalt: "#F1EBEA",
+    uiborder: "#BDAEA8",
+    uibackground: "#EAE4E1",
+    uibackgroundalt: "#E4DCD8",
+    default: "#2F2A29",
+    defaultMain: "#2F2A29",
+    defaultalt: "#AB9D98",
+  },
+  colors: {
+    blue: "#009DB5",
+    green: "#51A200",
+    greenAlt: "#7E9E2D",
+    orange: "#D97D04",
+    pink: "#CE4985",
+    purple: "#714CE7",
+    red: "#FF3A3A",
+    salmon: "#D8573E",
+    turquoize: "#00A47B",
+    yellow: "#D0AA00",
+  },
+  levels: {
+    danger: "#FF3A3A",
+    success: "#51A200",
+    warning: "#DA6C05",
+    info: "#009DB5",
+  },
+};
+
 export const voided: Theme = {
   ui: {
     primary: "#7A63ED",
