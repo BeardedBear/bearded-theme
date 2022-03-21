@@ -4,7 +4,7 @@
 
 ### Fixes
 
-- Remove useless italics
+- Remove useless italics (except comments)
 - Fix menus in light themes
 
 ### New features

@@ -37,7 +37,7 @@ export default function ui(theme: Theme): unknown {
     focusBorder: `${theme.ui.primary}40`,
     foreground: theme.ui.default,
     "selection.background": `${theme.ui.primary}60`,
-    "widget.shadow": theme.ui.uiborder,
+    "widget.shadow": theme.ui.uibackgroundalt,
     "icon.foreground": theme.ui.default,
     // debug
     "debugExceptionWidget.background": theme.ui.primaryalt,
@@ -56,9 +56,9 @@ export default function ui(theme: Theme): unknown {
     "dropdown.foreground": theme.ui.default,
     // editor
     "editorCursor.background": theme.ui.primary,
-    "editorBracketHighlight.foreground1" : theme.colors.yellow,
-    "editorBracketHighlight.foreground2" : theme.colors.purple,
-    "editorBracketHighlight.foreground3" : theme.colors.blue,
+    "editorBracketHighlight.foreground1": theme.colors.yellow,
+    "editorBracketHighlight.foreground2": theme.colors.purple,
+    "editorBracketHighlight.foreground3": theme.colors.blue,
     "editor.background": theme.ui.uibackground,
     "editor.findMatchBackground": `${theme.ui.primary}20`,
     "editor.findMatchBorder": `${theme.ui.primary}60`,
@@ -271,9 +271,9 @@ export default function ui(theme: Theme): unknown {
     "terminal.ansiBrightBlue": theme.levels.info,
     "terminal.ansiBrightMagenta": theme.colors.pink,
     "terminal.ansiBrightCyan": theme.colors.turquoize,
-    "terminal.ansiBrightWhite": theme.levels.info,
+    "terminal.ansiBrightWhite": theme.ui.default,
     "terminal.background": theme.ui.uibackground,
-    "terminal.foreground": theme.ui.defaultMain,
+    "terminal.foreground": theme.ui.default,
     "terminalCursor.background": theme.colors.yellow,
     "terminalCursor.foreground": theme.colors.yellow,
     // text
