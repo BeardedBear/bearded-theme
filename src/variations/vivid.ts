@@ -52,7 +52,7 @@ export const vividBlack: Theme = {
 
 export const vividLight: Theme = {
   ui: {
-    primary: "#555555",
+    primary: "#7e7e7e",
     primaryalt: "#ffffff",
     uiborder: "#cccccc",
     uibackground: "#f4f4f4",
@@ -61,6 +61,17 @@ export const vividLight: Theme = {
     defaultMain: "#363636",
     defaultalt: "#aaaaaa",
   },
-  colors: vividColors,
+  colors: {
+    blue: "#28A9FF",
+    green: "#00d647",
+    greenAlt: "#b7d175",
+    orange: "#FF7135",
+    pink: "#E66DFF",
+    purple: "#A95EFF",
+    red: "#D62C2C",
+    salmon: "#FF478D",
+    turquoize: "#00d6c4",
+    yellow: "#ffaa18",
+  },
   levels: vividLevels,
 };

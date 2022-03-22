@@ -38,7 +38,7 @@ export const solarizedDark: Theme = {
 export const solarizedLight: Theme = {
   ui: {
     primary: "#2aa198",
-    primaryalt: "#fef9ec",
+    primaryalt: "#fff9ea",
     uiborder: "#d8cfbb",
     uibackground: "#fdf6e3",
     uibackgroundalt: "#eee8d5",

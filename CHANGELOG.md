@@ -1,5 +1,11 @@
 # Changelog for Bearded Theme
 
+## 6.0.1 - 2022-03-22
+
+### Fixes
+
+- Improve foreground colors on Bearded Theme Light
+
 ## 6.0.0 - 2022-03-21
 
 ### Fixes
