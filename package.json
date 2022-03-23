@@ -3,7 +3,7 @@
   "displayName": "Bearded Theme",
   "description": "The theme with a long beard.",
   "publisher": "BeardedBear",
-  "version": "6.0.1",
+  "version": "6.1.0",
   "engines": {
     "vscode": "^1.63.0"
   },
@@ -147,6 +147,11 @@
         "label": "Bearded Theme Vivid Light",
         "uiTheme": "vs",
         "path": "./themes/bearded-theme-vivid-light.json"
+      },
+      {
+        "label": "Bearded Theme Will",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-will.json"
       },
       {
         "label": "Bearded Theme Earth",

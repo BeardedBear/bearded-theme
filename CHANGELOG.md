@@ -1,5 +1,11 @@
 # Changelog for Bearded Theme
 
+## 6.1.0 - 2022-03-23
+
+### New features
+
+- New variation : [Will](https://github.com/WilliamTraoreee)
+
 ## 6.0.1 - 2022-03-22
 
 ### Fixes
