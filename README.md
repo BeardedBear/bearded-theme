@@ -1,6 +1,6 @@
 # Bearded Theme
 
-Font used in screenshots : [IBM Plex Mono](https://www.ibm.com/plex/)
+Font used in screenshots : [JetBrains Mono](https://www.jetbrains.com/lp/mono/)
 
 Icon pack used in screenshots : [Bearded Icons](https://marketplace.visualstudio.com/items?itemName=BeardedBear.beardedicons)
 
