@@ -37,8 +37,9 @@ export default function ui(theme: Theme): unknown {
     focusBorder: `${theme.ui.primary}40`,
     foreground: theme.ui.default,
     "selection.background": `${theme.ui.primary}60`,
-    "widget.shadow": theme.ui.uibackgroundalt,
-    "icon.foreground": theme.ui.default,
+    "widget.shadow": "#00000000",
+    "icon.foreground": theme.ui.defaultalt,
+    "icon.hoverBackground": "FF0000",
     // debug
     "debugExceptionWidget.background": theme.ui.primaryalt,
     "debugExceptionWidget.border": theme.ui.uiborder,
@@ -49,7 +50,7 @@ export default function ui(theme: Theme): unknown {
     "diffEditor.border": theme.ui.uiborder,
     "diffEditor.insertedTextBackground": `${theme.levels.success}20`,
     "diffEditor.removedTextBackground": `${theme.levels.danger}25`,
-    "diffEditor.diagonalFill": theme.ui.uiborder + "80",
+    "diffEditor.diagonalFill": `${theme.ui.uiborder}80`,
     // dropdown
     "dropdown.background": theme.ui.uibackground,
     "dropdown.border": `${theme.ui.defaultalt}aa`,
@@ -141,10 +142,11 @@ export default function ui(theme: Theme): unknown {
     "menu.background": theme.ui.primaryalt,
     "menu.foreground": theme.ui.defaultMain,
     "menu.separatorBackground": theme.ui.uiborder,
-    "menu.selectionBackground": `${theme.ui.primary}20`,
     "menu.selectionForeground": theme.ui.defaultMain,
     "menubar.selectionBackground": theme.ui.primaryalt,
     "menubar.selectionForeground": theme.ui.defaultMain,
+    "menu.border": theme.ui.uiborder,
+
     // merge
     "merge.border": theme.ui.uiborder,
     "merge.commonContentBackground": `${theme.colors.yellow}30`,
@@ -200,10 +202,10 @@ export default function ui(theme: Theme): unknown {
     // progressbar
     "progressBar.background": theme.colors.yellow,
     // scrollbar
-    "scrollbar.shadow": theme.ui.uiborder,
-    "scrollbarSlider.activeBackground": `${theme.ui.primary}60`,
-    "scrollbarSlider.background": `${theme.ui.primary}40`,
-    "scrollbarSlider.hoverBackground": `${theme.ui.primary}50`,
+    "scrollbar.shadow": `${theme.ui.uiborder}80`,
+    "scrollbarSlider.activeBackground": `${theme.ui.primary}40`,
+    "scrollbarSlider.background": `${theme.ui.primary}20`,
+    "scrollbarSlider.hoverBackground": `${theme.ui.primary}30`,
     // settings
     "settings.modifiedItemIndicator": theme.ui.primary,
     "settings.headerForeground": theme.ui.primary,
@@ -240,12 +242,12 @@ export default function ui(theme: Theme): unknown {
     // tabs
     "editorGroupHeader.noTabsBackground": theme.ui.uibackground,
     "editorGroupHeader.tabsBackground": theme.ui.uibackgroundalt,
-    "editorGroupHeader.tabsBorder": "#00000000",
+    "editorGroupHeader.tabsBorder": theme.ui.uiborder,
     "editorGroupHeader.border": "#00000000",
     "tab.activeBackground": theme.ui.uibackground,
     "tab.activeForeground": theme.ui.primary,
     "tab.activeBorderTop": theme.ui.primary,
-    "tab.border": "#00000000",
+    "tab.border": theme.ui.uiborder,
     "tab.hoverBorder": "#00000000",
     "tab.hoverBackground": `${theme.ui.uibackground}cc`,
     "tab.unfocusedHoverBackground": `${theme.ui.primary}10`,
