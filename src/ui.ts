@@ -35,7 +35,7 @@ export default function ui(theme: Theme): unknown {
     contrastActiveBorder: "#00000000",
     errorForeground: theme.levels.danger,
     focusBorder: `${theme.ui.primary}40`,
-    foreground: theme.ui.default,
+    foreground: theme.ui.defaultalt,
     "selection.background": `${theme.ui.primary}60`,
     "widget.shadow": "#00000000",
     "icon.foreground": theme.ui.defaultalt,
