@@ -1,5 +1,15 @@
 # Changelog for Bearded Theme
 
+## 6.2.0 - 2022-04-02
+
+### Enhancements
+
+- Improve readibility of tabs
+- Fix icon colors, to match with each variations
+- Reducing shadows
+- Removing useless infos in readme for coloring brackets (now directly integrated in theme)
+- Improve buttons readibility
+
 ## 6.1.0 - 2022-03-23
 
 ### New features
