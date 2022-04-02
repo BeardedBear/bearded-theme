@@ -11,8 +11,9 @@ export default function ui(theme: Theme): unknown {
     "activityBarBadge.foreground": theme.ui.uibackgroundalt,
     // badge
     "badge.background": theme.ui.primary,
-    "badge.foreground": theme.ui.uibackgroundalt,
+    "badge.foreground": theme.ui.uibackground,
     // breadcrumb
+    "breadcrumb.background": theme.ui.uibackground,
     "breadcrumbPicker.background": theme.ui.uibackground,
     // button
     "button.background": theme.ui.primary,
@@ -35,10 +36,10 @@ export default function ui(theme: Theme): unknown {
     contrastActiveBorder: "#00000000",
     errorForeground: theme.levels.danger,
     focusBorder: `${theme.ui.primary}40`,
-    foreground: theme.ui.defaultalt,
+    foreground: `${theme.ui.defaultMain}AA`,
+    "icon.foreground": `${theme.ui.defaultMain}AA`,
     "selection.background": `${theme.ui.primary}60`,
-    "widget.shadow": "#00000000",
-    "icon.foreground": theme.ui.defaultalt,
+    "widget.shadow": `${theme.ui.uiborder}30`,
     "icon.hoverBackground": "FF0000",
     // debug
     "debugExceptionWidget.background": theme.ui.primaryalt,
@@ -132,6 +133,7 @@ export default function ui(theme: Theme): unknown {
     "list.activeSelectionForeground": theme.ui.default,
     "list.hoverBackground": `${theme.ui.uiborder}60`,
     "list.hoverForeground": theme.ui.default,
+    "list.foreground": theme.ui.primary,
     "gitDecoration.modifiedResourceForeground": theme.levels.info,
     "gitDecoration.deletedResourceForeground": theme.levels.danger,
     "gitDecoration.untrackedResourceForeground": theme.levels.success,
@@ -145,7 +147,6 @@ export default function ui(theme: Theme): unknown {
     "menu.selectionForeground": theme.ui.defaultMain,
     "menubar.selectionBackground": theme.ui.primaryalt,
     "menubar.selectionForeground": theme.ui.defaultMain,
-    "menu.border": theme.ui.uiborder,
 
     // merge
     "merge.border": theme.ui.uiborder,
@@ -212,7 +213,7 @@ export default function ui(theme: Theme): unknown {
     // sidebar
     "sideBar.background": theme.ui.uibackgroundalt,
     "sideBar.border": theme.ui.uiborder,
-    "sideBar.foreground": `${theme.ui.default}bb`,
+    "sideBar.foreground": `${theme.ui.defaultMain}CC`,
     "sideBarSectionHeader.background": theme.ui.uibackgroundalt,
     "sideBarSectionHeader.foreground": theme.ui.default,
     "sideBarSectionHeader.border": theme.ui.uiborder,
@@ -257,6 +258,7 @@ export default function ui(theme: Theme): unknown {
     "tab.unfocusedActiveForeground": theme.ui.default,
     "tab.unfocusedInactiveForeground": theme.ui.default,
     "tab.lastPinnedBorder": theme.ui.uiborder,
+
     // terminal
     "terminal.ansiBlack": theme.ui.uibackground,
     "terminal.ansiRed": theme.levels.danger,
