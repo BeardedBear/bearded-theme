@@ -150,11 +150,11 @@ export const will: Theme = {
   ui: {
     primary: "#b498f5",
     primaryalt: "#231e36",
-    uiborder: "#0b0812",
+    uiborder: "#000000",
     uibackground: "#14111f",
     uibackgroundalt: "#0d0a14",
-    default: "#ffffff",
-    defaultMain: "#c6bed3",
+    default: "#bdb6d3",
+    defaultMain: "#bfb9da",
     defaultalt: "#585775",
   },
   colors: {

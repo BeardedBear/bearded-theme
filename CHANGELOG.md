@@ -1,5 +1,14 @@
 # Changelog for Bearded Theme
 
+## 6.2.1 - 2022-04-03
+
+### Fixes
+
+- Fix defaultMain color for Will variation
+- Fix hover color for secondary buttons
+- Fix icon colors for notifications
+- Fix status bar foreground color
+
 ## 6.2.0 - 2022-04-02
 
 ### Enhancements
