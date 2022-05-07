@@ -1,5 +1,11 @@
 # Changelog for Bearded Theme
 
+## 6.3.0 - 2022-05-07
+
+### New features
+
+- Add 5 new variations : Arc Reversed, Monokai Reversed, Solarized Reversed, Oceanic Reversed, Coffee Reversed
+
 ## 6.2.1 - 2022-04-03
 
 ### Fixes

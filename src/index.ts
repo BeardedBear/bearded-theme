@@ -3,12 +3,12 @@ import syntax from "./scopes/scopes";
 import semanticTokens from "./scopes/semanticTokens";
 import { Theme } from "./typing";
 import ui from "./ui";
-import { arc, arcBlueBerry, arcEggplant, arcEolstorm } from "./variations/arc";
+import { arc, arcBlueBerry, arcEggplant, arcEolstorm, arcReversed } from "./variations/arc";
 import { blackAndAmethyst, blackAndDiamond, blackAndEmerald, blackAndGold, blackAndRuby } from "./variations/black";
 import { anthracite, light } from "./variations/classics";
-import { altica, earth, voided, coffee, coffeeCream, will } from "./variations/exotic";
-import { monokaiBlack, monokaiMetallian, monokaiStone, monokaiTerra } from "./variations/monokai";
-import { oceanic, solarizedDark, solarizedLight } from "./variations/solarized";
+import { altica, earth, voided, coffee, coffeeCream, will, coffeeReversed } from "./variations/exotic";
+import { monokaiBlack, monokaiMetallian, monokaiStone, monokaiTerra, monokaiReversed } from "./variations/monokai";
+import { oceanic, oceanicReverded, solarizedDark, solarizedLight, solarizedReversed } from "./variations/solarized";
 import { stainedBlue, stainedPurple } from "./variations/stained";
 import { surprisingBlueberry, surprisingEggplant, surprisingWatermelon } from "./variations/surprising";
 import { vividBlack, vividLight, vividPurple } from "./variations/vivid";
@@ -36,8 +36,10 @@ makeTheme("arc-eggplant", arcEggplant);
 
 // Solarized
 makeTheme("oceanic", oceanic);
+makeTheme("oceanic-reversed", oceanicReverded);
 makeTheme("solarized-dark", solarizedDark);
 makeTheme("solarized-light", solarizedLight);
+makeTheme("solarized-reversed", solarizedReversed);
 
 // Black
 makeTheme("black-amethyst", blackAndAmethyst);
@@ -60,14 +62,17 @@ makeTheme("monokai-terra", monokaiTerra);
 makeTheme("monokai-metallian", monokaiMetallian);
 makeTheme("monokai-stone", monokaiStone);
 makeTheme("monokai-black", monokaiBlack);
+makeTheme("monokai-reversed", monokaiReversed);
 
 // Exotic
 makeTheme("exotic-earth", earth);
 makeTheme("coffee", coffee);
+makeTheme("coffee-reversed", coffeeReversed);
 makeTheme("coffee-cream", coffeeCream);
 makeTheme("exotic-void", voided);
 makeTheme("exotic-altica", altica);
 makeTheme("will", will);
+makeTheme("arc-reversed", arcReversed);
 
 // Classics
 makeTheme("classics-anthracite", anthracite);

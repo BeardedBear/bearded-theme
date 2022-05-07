@@ -35,6 +35,21 @@ export const solarizedDark: Theme = {
   levels: solarizedLevels,
 };
 
+export const solarizedReversed: Theme = {
+  ui: {
+    primary: "#199FBE",
+    primaryalt: "#022f3a",
+    uiborder: "#001418",
+    uibackground: "#001a20",
+    uibackgroundalt: "#002229",
+    default: "#cedbdb",
+    defaultMain: "#B8C6C6",
+    defaultalt: "#547783",
+  },
+  colors: solarizedColors,
+  levels: solarizedLevels,
+};
+
 export const solarizedLight: Theme = {
   ui: {
     primary: "#2aa198",
@@ -71,6 +86,25 @@ export const oceanic: Theme = {
     primaryalt: "#254A52",
     uiborder: "#111C22",
     uibackground: "#1a2b34",
+    uibackgroundalt: "#16242C",
+    default: "#D3DFDB",
+    defaultMain: "#A6BAB4",
+    defaultalt: "#51727C",
+  },
+  colors: oceanicColors,
+  levels: {
+    danger: oceanicColors.salmon,
+    success: oceanicColors.green,
+    warning: oceanicColors.orange,
+    info: oceanicColors.blue,
+  },
+};
+export const oceanicReverded: Theme = {
+  ui: {
+    primary: "#97c892",
+    primaryalt: "#192a34",
+    uiborder: "#0d151a",
+    uibackground: "#111c23",
     uibackgroundalt: "#16242C",
     default: "#D3DFDB",
     defaultMain: "#A6BAB4",

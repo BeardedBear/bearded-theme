@@ -3,7 +3,7 @@
   "displayName": "Bearded Theme",
   "description": "The theme with a long beard.",
   "publisher": "BeardedBear",
-  "version": "6.2.1",
+  "version": "6.3.0",
   "engines": {
     "vscode": "^1.63.0"
   },
@@ -64,9 +64,19 @@
         "path": "./themes/bearded-theme-monokai-black.json"
       },
       {
+        "label": "Bearded Theme Monokai Reversed",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-monokai-reversed.json"
+      },
+      {
         "label": "Bearded Theme Solarized",
         "uiTheme": "vs-dark",
         "path": "./themes/bearded-theme-solarized-dark.json"
+      },
+      {
+        "label": "Bearded Theme Solarized Reversed",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-solarized-reversed.json"
       },
       {
         "label": "Bearded Theme Solarized Light",
@@ -77,6 +87,11 @@
         "label": "Bearded Theme Oceanic",
         "uiTheme": "vs-dark",
         "path": "./themes/bearded-theme-oceanic.json"
+      },
+      {
+        "label": "Bearded Theme Oceanic Reversed",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-oceanic-reversed.json"
       },
       {
         "label": "Bearded Theme Arc",
@@ -97,6 +112,11 @@
         "label": "Bearded Theme Arc Blueberry",
         "uiTheme": "vs-dark",
         "path": "./themes/bearded-theme-arc-blueberry.json"
+      },
+      {
+        "label": "Bearded Theme Arc Reversed",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-arc-reversed.json"
       },
       {
         "label": "Bearded Theme Black & Amethyst",
@@ -162,6 +182,11 @@
         "label": "Bearded Theme Coffee",
         "uiTheme": "vs-dark",
         "path": "./themes/bearded-theme-coffee.json"
+      },
+      {
+        "label": "Bearded Theme Coffee Reversed",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-coffee-reversed.json"
       },
       {
         "label": "Bearded Theme Coffee Cream",

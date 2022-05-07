@@ -79,3 +79,18 @@ export const arcEggplant: Theme = {
   colors: arcColors,
   levels: arcLevels,
 };
+
+export const arcReversed: Theme = {
+  ui: {
+    primary: "#8196b5",
+    primaryalt: "#1f2432",
+    uiborder: "#0b0f16",
+    uibackground: "#111620",
+    uibackgroundalt: "#181e29",
+    default: "#c3cfd9",
+    defaultMain: "#ABB7C1",
+    defaultalt: "#576375",
+  },
+  colors: arcColors,
+  levels: arcLevels,
+};

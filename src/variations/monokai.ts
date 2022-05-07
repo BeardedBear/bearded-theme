@@ -79,3 +79,18 @@ export const monokaiBlack: Theme = {
   colors: monokaiColors,
   levels: monokaiLevels,
 };
+
+export const monokaiReversed: Theme = {
+  ui: {
+    primary: "#98a2b5",
+    primaryalt: "#222531",
+    uiborder: "#0c0d12",
+    uibackground: "#13141c",
+    uibackgroundalt: "#191b24",
+    default: "#d0d3da",
+    defaultMain: "#B9BCC4",
+    defaultalt: "#515a6b",
+  },
+  colors: monokaiColors,
+  levels: monokaiLevels,
+};

@@ -63,6 +63,38 @@ export const coffee: Theme = {
     info: "#6EDDD6",
   },
 };
+
+export const coffeeReversed: Theme = {
+  ui: {
+    primary: "#F09177",
+    primaryalt: "#51403b",
+    uiborder: "#110f0e",
+    uibackground: "#1b1817",
+    uibackgroundalt: "#25201F",
+    default: "#CCBDB3",
+    defaultMain: "#AEA097",
+    defaultalt: "#6a5553",
+  },
+  colors: {
+    blue: "#6EDDD6",
+    green: "#9DCC57",
+    greenAlt: "#7E9E2D",
+    orange: "#ffa777",
+    pink: "#E480AD",
+    purple: "#9991F1",
+    red: "#f24343",
+    salmon: "#f77a6a",
+    turquoize: "#3ceaa8",
+    yellow: "#f7d979",
+  },
+  levels: {
+    danger: "#f24343",
+    success: "#94D652",
+    warning: "#ffa777",
+    info: "#6EDDD6",
+  },
+};
+
 export const coffeeCream: Theme = {
   ui: {
     primary: "#D3694C",
