@@ -13,6 +13,7 @@ export const accessors = [
   "meta.member.access.python",
   "variable.other.property.ts",
   "variable.other.property.js",
+  "constant.language.symbol.elixir",
 ];
 
 export const classes = ["entity.name.type"];
@@ -50,6 +51,7 @@ export const keyword = [
   "punctuation.definition.attribute.swift",
   "source.svelte meta.scope.tag.main.svelte meta.tag.start.svelte variable.function.svelte",
   "meta.directive.on.svelte entity.name.type.svelte",
+  "keyword.other.special-method.elixir",
 ];
 
 export const constants = ["constant"];
@@ -96,6 +98,8 @@ export const functions = [
   "meta.class storage.type",
   "meta.method.groovy",
   "meta.bracket.square.access",
+  // Elixir
+  "entity.name.function-call.elixir",
 ];
 
 export const importScope = [
@@ -276,6 +280,7 @@ export const types = [
   "storage.type.groovy",
   "meta.definition.type.body.swift meta.function-call.swift",
   "meta.definition.type.class.swift meta.inheritance-clause.swift",
+  "variable.other.constant.elixir",
 ];
 
 export const variables = [
@@ -292,6 +297,7 @@ export const variables = [
   "entity.name.variable.tuple-element.cs punctuation.separator.colon.cs",
   "meta.definition.variable.name.groovy",
   "meta.body.struct.cpp",
+  "parameter.variable.function.elixir",
 ];
 
 export const typeConstructor = ["source.elm constant.type-constructor"];

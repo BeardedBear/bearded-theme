@@ -5,6 +5,7 @@
 ### Enhancements
 
 - Improve markdown support (Thanks [mattcodez](https://github.com/BeardedBear/bearded-theme/issues/79))
+- Improve elixir support (Thanks [rmonteil](https://github.com/BeardedBear/bearded-theme/issues/77))
 
 ## 6.3.0 - 2022-05-07
 
