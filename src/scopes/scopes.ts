@@ -56,10 +56,12 @@ export default function syntax(theme: Theme): Scope[] {
     createScope(markup.mdHeading, theme.colors.yellow),
     createScope(markup.mdHeadingPunctuation, theme.colors.yellow),
     createScope(markup.mdLink, theme.colors.blue),
-    createScope(markup.mdBold, theme.colors.blue, "bold"),
-    createScope(markup.mdItalic, theme.colors.blue),
-    createScope(markup.mdQuote, theme.colors.blue),
+    createScope(markup.mdBold, theme.colors.salmon, "bold"),
+    createScope(markup.mdStriked, theme.colors.red),
+    createScope(markup.mdItalic, theme.colors.orange, "italic"),
+    createScope(markup.mdQuote, theme.colors.pink),
     createScope(markup.mdQuotePunctuation, theme.colors.blue),
+    createScope(markup.frontMatter, theme.ui.defaultalt, "italic"),
 
     // STYLING
     createScope(styling.pseudoClasses, theme.colors.pink),

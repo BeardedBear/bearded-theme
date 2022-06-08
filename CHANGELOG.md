@@ -1,5 +1,11 @@
 # Changelog for Bearded Theme
 
+## 6.4.0 - 2022-06-08
+
+### Enhancements
+
+- Improve markdown support (Thanks [mattcodez](https://github.com/BeardedBear/bearded-theme/issues/79))
+
 ## 6.3.0 - 2022-05-07
 
 ### New features
