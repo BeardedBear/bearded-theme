@@ -3,7 +3,7 @@
   "displayName": "Bearded Theme",
   "description": "The theme with a long beard.",
   "publisher": "BeardedBear",
-  "version": "6.4.0",
+  "version": "6.5.0",
   "engines": {
     "vscode": "^1.63.0"
   },
@@ -35,8 +35,12 @@
     "solarized",
     "arc",
     "light",
-    "oceanic"
+    "oceanic",
+    "monokai"
   ],
+  "sponsor": {
+    "url": "https://github.com/sponsors/BeardedBear"
+  },
   "icon": "assets/icon.png",
   "categories": [
     "Themes"

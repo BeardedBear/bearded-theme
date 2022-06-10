@@ -1,5 +1,11 @@
 # Changelog for Bearded Theme
 
+## 6.5.0 - 2022-06-10
+
+### New features
+
+- Add sponsoring option
+
 ## 6.4.0 - 2022-06-08
 
 ### Enhancements
