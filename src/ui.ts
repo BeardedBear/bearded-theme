@@ -42,7 +42,14 @@ export default function ui(theme: Theme): unknown {
     "icon.foreground": `${theme.ui.defaultMain}AA`,
     "selection.background": `${theme.ui.primary}60`,
     "widget.shadow": `${theme.ui.uiborder}30`,
-    "icon.hoverBackground": "FF0000",
+    // Command center
+    "commandCenter.border": theme.ui.uiborder,
+    "commandCenter.background": theme.ui.uibackground,
+    "commandCenter.activeBackground": `${theme.ui.primaryalt}60`,
+    "commandCenter.activeForeground": `${theme.ui.defaultMain}90`,
+    "commandCenter.foreground": theme.ui.defaultalt,
+    // Checkbox
+    "checkbox.foreground": theme.ui.default,
     // debug
     "debugExceptionWidget.background": theme.ui.primaryalt,
     "debugExceptionWidget.border": theme.ui.uiborder,
@@ -131,13 +138,11 @@ export default function ui(theme: Theme): unknown {
     "list.activeSelectionForeground": theme.ui.default,
     "list.hoverBackground": `${theme.ui.uiborder}60`,
     "list.hoverForeground": theme.ui.default,
-    "list.foreground": theme.ui.primary,
     "gitDecoration.modifiedResourceForeground": theme.levels.info,
     "gitDecoration.deletedResourceForeground": theme.levels.danger,
     "gitDecoration.untrackedResourceForeground": theme.levels.success,
     "gitDecoration.ignoredResourceForeground": theme.ui.defaultalt,
     "gitDecoration.conflictingResourceForeground": theme.ui.primary,
-    "gitDecoration.stageAddedResourceForeground": theme.colors.red,
     // menu
     "menu.background": theme.ui.primaryalt,
     "menu.foreground": theme.ui.defaultMain,
@@ -172,7 +177,6 @@ export default function ui(theme: Theme): unknown {
     "panel.background": theme.ui.uibackground,
     "panel.border": theme.ui.uiborder,
     "panelInput.border": theme.ui.defaultalt,
-    "panelSection.background": theme.ui.uiborder,
     "panelSection.border": theme.ui.uiborder,
     "panelTitle.activeBorder": theme.ui.primary,
     "panelTitle.activeForeground": theme.ui.primary,

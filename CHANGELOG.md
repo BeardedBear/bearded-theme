@@ -1,5 +1,15 @@
 # Changelog for Bearded Theme
 
+## 6.6.0 - 2022-07-06
+
+### New features
+
+- Add support for command center panel
+
+### Enhancements
+
+- Improve contrast for Coffee Cream
+
 ## 6.5.0 - 2022-06-10
 
 ### New features
