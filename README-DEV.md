@@ -6,7 +6,7 @@
 
 ## File watching
 
-`yarn start`
+`yarn dev`
 
 ## Build
 
