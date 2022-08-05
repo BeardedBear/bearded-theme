@@ -1,7 +1,8 @@
 import { Theme } from "./typing";
 
-export default function ui(theme: Theme): unknown {
+export default function ui(theme: Theme, hc?: boolean): unknown {
   return {
+    contrastBorder: theme.ui.uiborder,
     // activityBar
     "activityBar.background": theme.ui.uibackgroundalt,
     "activityBar.border": theme.ui.uiborder,
@@ -17,7 +18,7 @@ export default function ui(theme: Theme): unknown {
     "breadcrumbPicker.background": theme.ui.uibackground,
     // button
     "button.background": `${theme.ui.primary}75`,
-    "button.foreground": theme.ui.default,
+    "button.foreground": hc ? theme.ui.uibackgroundalt : theme.ui.default,
     "button.hoverBackground": `${theme.ui.primary}90`,
     "button.secondaryBackground": `${theme.ui.primary}20`,
     "button.secondaryForeground": theme.ui.default,
@@ -61,10 +62,6 @@ export default function ui(theme: Theme): unknown {
     "diffEditor.insertedTextBackground": `${theme.levels.success}20`,
     "diffEditor.removedTextBackground": `${theme.levels.danger}25`,
     "diffEditor.diagonalFill": `${theme.ui.uiborder}80`,
-    // dropdown
-    "dropdown.background": theme.ui.uibackground,
-    "dropdown.border": `${theme.ui.defaultalt}aa`,
-    "dropdown.foreground": theme.ui.default,
     // editor
     "editorCursor.background": theme.ui.primary,
     "editorBracketHighlight.foreground1": theme.colors.yellow,
@@ -107,18 +104,23 @@ export default function ui(theme: Theme): unknown {
     "editorWhitespace.foreground": `${theme.ui.defaultalt}60`,
     "editorWidget.background": theme.ui.primaryalt,
     "editorWidget.resizeBorder": `${theme.ui.primary}50`,
+
     // gutter
     "editorGutter.background": theme.ui.uibackground,
     "editorGutter.addedBackground": `${theme.levels.success}cc`,
     "editorGutter.deletedBackground": `${theme.levels.danger}cc`,
     "editorGutter.modifiedBackground": `${theme.levels.info}cc`,
-    "editorLineNumber.foreground": `${theme.ui.defaultalt}90`,
+    "editorLineNumber.foreground": `${hc ? theme.ui.defaultalt : theme.ui.defaultalt + 90}`,
     "editorLineNumber.activeForeground": theme.ui.defaultalt,
+    // dropdown
+    "dropdown.background": theme.ui.uibackground,
+    "dropdown.foreground": theme.ui.default,
+    "dropdown.border": `${theme.ui.defaultalt}50`,
     // input
     "input.background": "#00000000",
-    "input.foreground": theme.ui.defaultMain,
-    "input.border": `${theme.ui.primary}30`,
-    "input.placeholderForeground": `${theme.ui.primary}60`,
+    "input.foreground": theme.ui.default,
+    "input.border": `${theme.ui.defaultalt}50`,
+    "input.placeholderForeground": `${theme.ui.default}60`,
     "inputOption.activeBorder": theme.ui.primary,
     "inputValidation.errorBackground": theme.ui.primaryalt,
     "inputValidation.errorBorder": theme.colors.yellow,
@@ -126,9 +128,10 @@ export default function ui(theme: Theme): unknown {
     "inputValidation.infoBorder": theme.ui.primary,
     "inputValidation.warningBackground": theme.ui.primaryalt,
     "inputValidation.warningBorder": theme.colors.yellow,
+
     // list
-    "list.activeSelectionBackground": `${theme.ui.primary}25`,
-    "list.inactiveSelectionBackground": `${theme.ui.primary}25`,
+    "list.activeSelectionBackground": `${theme.ui.default}40`,
+    "list.inactiveSelectionBackground": `${theme.ui.default}40`,
     "list.dropBackground": `${theme.ui.primary}15`,
     "list.focusBackground": `${theme.ui.primary}40`,
     "list.focusForeground": theme.ui.defaultMain,
@@ -136,7 +139,7 @@ export default function ui(theme: Theme): unknown {
     "list.warningForeground": theme.levels.warning,
     "list.highlightForeground": theme.colors.yellow,
     "list.activeSelectionForeground": theme.ui.default,
-    "list.hoverBackground": `${theme.ui.uiborder}60`,
+    "list.hoverBackground": hc ? `${theme.ui.primary}15` : `${theme.ui.uiborder}60`,
     "list.hoverForeground": theme.ui.default,
     "gitDecoration.modifiedResourceForeground": theme.levels.info,
     "gitDecoration.deletedResourceForeground": theme.levels.danger,
@@ -150,6 +153,7 @@ export default function ui(theme: Theme): unknown {
     "menu.selectionForeground": theme.ui.defaultMain,
     "menubar.selectionBackground": theme.ui.primaryalt,
     "menubar.selectionForeground": theme.ui.defaultMain,
+    "menu.border": theme.ui.uiborder,
 
     // merge
     "merge.border": theme.ui.uiborder,
@@ -285,6 +289,7 @@ export default function ui(theme: Theme): unknown {
     "terminal.foreground": theme.ui.default,
     "terminalCursor.background": theme.colors.yellow,
     "terminalCursor.foreground": theme.colors.yellow,
+    "terminal.selectionForeground": theme.ui.default,
     // text
     "textBlockQuote.background": `${theme.levels.info}34`,
     "textBlockQuote.border": `${theme.levels.info}b9`,

@@ -13,7 +13,7 @@ function createScope(scope: string[], foreground: string, fontStyle?: FontStyle)
   };
 }
 
-export default function syntax(theme: Theme): Scope[] {
+export default function syntax(theme: Theme, hc?: boolean): Scope[] {
   return Object.assign([
     createScope(prog.accessors, theme.colors.orange),
     createScope(prog.classes, theme.colors.greenAlt),
@@ -28,7 +28,7 @@ export default function syntax(theme: Theme): Scope[] {
     createScope(prog.objectProperty, theme.ui.default),
     createScope(prog.dataProperty, theme.colors.yellow),
     createScope(prog.operators, theme.colors.yellow),
-    createScope(prog.punctuation, `${theme.ui.default}60`),
+    createScope(prog.punctuation, `${hc ? theme.ui.default : `${theme.ui.default}60`}`),
     createScope(prog.self, theme.colors.orange),
     createScope(prog.storages, theme.colors.turquoize),
     createScope(prog.strings, theme.colors.green),

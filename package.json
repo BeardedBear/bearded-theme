@@ -231,6 +231,16 @@
         "label": "Bearded Theme Surprising Watermelon",
         "uiTheme": "vs-dark",
         "path": "./themes/bearded-theme-surprising-watermelon.json"
+      },
+      {
+        "label": "Bearded Theme HC Ebony",
+        "uiTheme": "hc-black",
+        "path": "./themes/bearded-theme-hc-ebony.json"
+      },
+      {
+        "label": "Bearded Theme HC Midnight Void",
+        "uiTheme": "hc-black",
+        "path": "./themes/bearded-theme-hc-midnightvoid.json"
       }
     ]
   },

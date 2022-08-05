@@ -1,16 +1,16 @@
 import { Theme, ThemeColors, ThemeLevels } from "../typing";
 
 const solarizedColors: ThemeColors = {
-  blue: "#268bd2",
-  green: "#859900",
+  blue: "#399fe8",
+  green: "#94a522",
   greenAlt: "#A4EF58",
-  orange: "#ca7016",
-  pink: "#cf61b1",
+  orange: "#d8822c",
+  pink: "#ce81c8",
   purple: "#767cde",
-  red: "#d42613",
-  salmon: "#d33682",
-  turquoize: "#2aa198",
-  yellow: "#b58900",
+  red: "#eb4937",
+  salmon: "#e54b95",
+  turquoize: "#38bbb0",
+  yellow: "#dfbe5a",
 };
 
 const solarizedLevels: ThemeLevels = {
@@ -68,16 +68,16 @@ export const solarizedLight: Theme = {
 // Oceanic
 
 const oceanicColors: ThemeColors = {
-  blue: "#6498ce",
+  blue: "#5fb2df",
   green: "#97c892",
   greenAlt: "#A4EF58",
   orange: "#DC8255",
   pink: "#d194cd",
   purple: "#978dd6",
   red: "#B4552D",
-  salmon: "#ee5d64",
-  turquoize: "#5bb3b4",
-  yellow: "#fbc95a",
+  salmon: "#ee5d75",
+  turquoize: "#59c6c8",
+  yellow: "#f6cc73",
 };
 
 export const oceanic: Theme = {

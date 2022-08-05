@@ -6,6 +6,7 @@ import ui from "./ui";
 import { arc, arcBlueBerry, arcEggplant, arcEolstorm, arcReversed } from "./variations/arc";
 import { blackAndAmethyst, blackAndDiamond, blackAndEmerald, blackAndGold, blackAndRuby } from "./variations/black";
 import { anthracite, light } from "./variations/classics";
+import { HCEbony, HCMidnightVoid } from "./variations/contrast";
 import { altica, earth, voided, coffee, coffeeCream, will, coffeeReversed } from "./variations/exotic";
 import { monokaiBlack, monokaiMetallian, monokaiStone, monokaiTerra, monokaiReversed } from "./variations/monokai";
 import { oceanic, oceanicReverded, solarizedDark, solarizedLight, solarizedReversed } from "./variations/solarized";
@@ -13,14 +14,14 @@ import { stainedBlue, stainedPurple } from "./variations/stained";
 import { surprisingBlueberry, surprisingEggplant, surprisingWatermelon } from "./variations/surprising";
 import { vividBlack, vividLight, vividPurple } from "./variations/vivid";
 
-function makeTheme(name: string, theme: Theme): void {
+function makeTheme(name: string, theme: Theme, hc?: boolean): void {
   const themeTemplate = {
     $schema: "vscode://schemas/color-theme",
     name: `BeardedTheme ${name.charAt(0).toUpperCase()}${name.slice(1)}`,
     semanticHighlighting: true,
     semanticTokenColors: semanticTokens(theme),
-    colors: ui(theme),
-    tokenColors: syntax(theme),
+    colors: ui(theme, hc),
+    tokenColors: syntax(theme, hc),
   };
 
   writeFile(`themes/bearded-theme-${name}.json`, JSON.stringify(themeTemplate), (err) => {
@@ -82,3 +83,7 @@ makeTheme("classics-light", light);
 makeTheme("surprising-eggplant", surprisingEggplant);
 makeTheme("surprising-blueberry", surprisingBlueberry);
 makeTheme("surprising-watermelon", surprisingWatermelon);
+
+// Contrast
+makeTheme("hc-ebony", HCEbony, true);
+makeTheme("hc-midnightvoid", HCMidnightVoid, true);
