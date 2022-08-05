@@ -1,16 +1,16 @@
 import { Theme, ThemeColors, ThemeLevels } from "../typing";
 
 const arcColors: ThemeColors = {
-  blue: "#84ceff",
-  green: "#78ffa2",
+  blue: "#7fd7f5",
+  green: "#AFEA7B",
   greenAlt: "#A4EF58",
   orange: "#ffaa7d",
-  pink: "#ffabe9",
-  purple: "#c39eff",
+  pink: "#e4a3df",
+  purple: "#bc98ff",
   red: "#fd604f",
-  salmon: "#ff6f93",
-  turquoize: "#6ae7d0",
-  yellow: "#ffe586",
+  salmon: "#EC7886",
+  turquoize: "#22D3B1",
+  yellow: "#F5DF76",
 };
 
 const arcLevels: ThemeLevels = {
@@ -37,14 +37,14 @@ export const HCEbony: Theme = {
 
 export const HCMidnightVoid: Theme = {
   ui: {
-    primary: "#d8fffc",
+    primary: "#d8f8ff",
     primaryalt: "#1c323e",
     uiborder: "#0b1116",
     uibackground: "#151f27",
     uibackgroundalt: "#10181f",
     default: "#e6fffd",
-    defaultMain: "#b6d9d5",
-    defaultalt: "#658787",
+    defaultMain: "#b6d0d9",
+    defaultalt: "#657d87",
   },
   colors: arcColors,
   levels: arcLevels,
