@@ -14,10 +14,10 @@ const arcColors: ThemeColors = {
 };
 
 const arcLevels: ThemeLevels = {
-  danger: "#fd604f",
-  success: "#61f49e",
-  warning: "#ffaa7d",
-  info: "#7eccff",
+  danger: arcColors.red,
+  success: arcColors.green,
+  warning: arcColors.orange,
+  info: arcColors.blue,
 };
 
 export const HCEbony: Theme = {

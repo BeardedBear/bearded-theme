@@ -55,6 +55,8 @@ export default function ui(theme: Theme, hc?: boolean): unknown {
     "debugExceptionWidget.background": theme.ui.primaryalt,
     "debugExceptionWidget.border": theme.ui.uiborder,
     "debugToolBar.background": theme.ui.primaryalt,
+    "toolbar.hoverBackground": hc ? theme.ui.defaultMain + 40 : theme.ui.defaultalt + 60,
+
     // description
     descriptionForeground: theme.ui.default,
     // diff
@@ -114,6 +116,7 @@ export default function ui(theme: Theme, hc?: boolean): unknown {
     "editorLineNumber.activeForeground": theme.ui.defaultalt,
     // dropdown
     "dropdown.background": theme.ui.uibackground,
+    "dropdown.listBackground": theme.ui.uibackground,
     "dropdown.foreground": theme.ui.default,
     "dropdown.border": `${theme.ui.defaultalt}50`,
     // input
@@ -130,7 +133,6 @@ export default function ui(theme: Theme, hc?: boolean): unknown {
     "inputValidation.warningBorder": theme.colors.yellow,
 
     // list
-    "list.activeSelectionBackground": `${theme.ui.default}40`,
     "list.inactiveSelectionBackground": `${theme.ui.default}40`,
     "list.dropBackground": `${theme.ui.primary}15`,
     "list.focusBackground": `${theme.ui.primary}40`,
@@ -139,6 +141,7 @@ export default function ui(theme: Theme, hc?: boolean): unknown {
     "list.warningForeground": theme.levels.warning,
     "list.highlightForeground": theme.colors.yellow,
     "list.activeSelectionForeground": theme.ui.default,
+    "list.activeSelectionBackground": `${theme.ui.default}40`,
     "list.hoverBackground": hc ? `${theme.ui.primary}15` : `${theme.ui.uiborder}60`,
     "list.hoverForeground": theme.ui.default,
     "gitDecoration.modifiedResourceForeground": theme.levels.info,
@@ -206,6 +209,8 @@ export default function ui(theme: Theme, hc?: boolean): unknown {
     "editorMarkerNavigationError.background": `${theme.levels.danger}90`,
     "editorMarkerNavigationWarning.background": `${theme.levels.warning}90`,
     "editorMarkerNavigationInfo.background": `${theme.levels.info}90`,
+    "editorError.border": "#00000000",
+    "editorError.foreground": theme.levels.danger,
     // picker
     "pickerGroup.border": theme.ui.uiborder,
     "pickerGroup.foreground": theme.ui.default,
