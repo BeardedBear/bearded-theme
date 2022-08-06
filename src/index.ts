@@ -6,7 +6,7 @@ import ui from "./ui";
 import { arc, arcBlueBerry, arcEggplant, arcEolstorm, arcReversed } from "./variations/arc";
 import { blackAndAmethyst, blackAndDiamond, blackAndEmerald, blackAndGold, blackAndRuby } from "./variations/black";
 import { anthracite, light } from "./variations/classics";
-import { HCEbony, HCMidnightVoid } from "./variations/contrast";
+import { HCEbony, HCLight, HCMidnightVoid } from "./variations/contrast";
 import { altica, earth, voided, coffee, coffeeCream, will, coffeeReversed } from "./variations/exotic";
 import { monokaiBlack, monokaiMetallian, monokaiStone, monokaiTerra, monokaiReversed } from "./variations/monokai";
 import { oceanic, oceanicReverded, solarizedDark, solarizedLight, solarizedReversed } from "./variations/solarized";
@@ -87,3 +87,4 @@ makeTheme("surprising-watermelon", surprisingWatermelon);
 // Contrast
 makeTheme("hc-ebony", HCEbony, true);
 makeTheme("hc-midnightvoid", HCMidnightVoid, true);
+makeTheme("hc-light", HCLight, true);

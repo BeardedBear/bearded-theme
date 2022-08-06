@@ -241,6 +241,11 @@
         "label": "Bearded Theme HC Midnight Void",
         "uiTheme": "hc-black",
         "path": "./themes/bearded-theme-hc-midnightvoid.json"
+      },
+      {
+        "label": "Bearded Theme HC Light",
+        "uiTheme": "hc-light",
+        "path": "./themes/bearded-theme-hc-light.json"
       }
     ]
   },

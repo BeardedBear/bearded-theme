@@ -49,3 +49,33 @@ export const HCMidnightVoid: Theme = {
   colors: arcColors,
   levels: arcLevels,
 };
+export const HCLight: Theme = {
+  ui: {
+    primary: "#2c333a",
+    primaryalt: "#FFFFFF",
+    uiborder: "#c2c8ce",
+    uibackground: "#f5f8fc",
+    uibackgroundalt: "#f0f4fa",
+    default: "#020202",
+    defaultMain: "#3c3c3c",
+    defaultalt: "#898989",
+  },
+  colors: {
+    blue: "#0090c0",
+    green: "#4ba000",
+    greenAlt: "#589f11",
+    orange: "#ff8c4e",
+    pink: "#f774ec",
+    purple: "#9760ff",
+    red: "#fd604f",
+    salmon: "#EC7886",
+    turquoize: "#009678",
+    yellow: "#c1a401",
+  },
+  levels: {
+    danger: arcColors.red,
+    success: arcColors.green,
+    warning: arcColors.orange,
+    info: arcColors.blue,
+  },
+};
