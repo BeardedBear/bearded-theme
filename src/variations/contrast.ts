@@ -22,7 +22,7 @@ const arcLevels: ThemeLevels = {
 
 export const HCEbony: Theme = {
   ui: {
-    primary: "#ece7fd",
+    primary: "#dbdeea",
     primaryalt: "#313140",
     uiborder: "#0c0c0f",
     uibackground: "#181820",
@@ -37,45 +37,45 @@ export const HCEbony: Theme = {
 
 export const HCMidnightVoid: Theme = {
   ui: {
-    primary: "#d8f8ff",
+    primary: "#dbefff",
     primaryalt: "#1c323e",
     uiborder: "#0b1116",
     uibackground: "#151f27",
     uibackgroundalt: "#10181f",
-    default: "#e6fffd",
+    default: "#dbefff",
     defaultMain: "#b6d0d9",
     defaultalt: "#657d87",
   },
   colors: arcColors,
   levels: arcLevels,
 };
-export const HCLight: Theme = {
+export const HCFlurry: Theme = {
   ui: {
-    primary: "#2c333a",
-    primaryalt: "#FFFFFF",
+    primary: "#444c54",
+    primaryalt: "#f9fbfe",
     uiborder: "#c2c8ce",
     uibackground: "#f5f8fc",
-    uibackgroundalt: "#f0f4fa",
-    default: "#020202",
-    defaultMain: "#3c3c3c",
+    uibackgroundalt: "#EAECEE",
+    default: "#272d34",
+    defaultMain: "#3f4750",
     defaultalt: "#898989",
   },
   colors: {
     blue: "#0090c0",
-    green: "#4ba000",
+    green: "#38bc48",
     greenAlt: "#589f11",
     orange: "#ff8c4e",
-    pink: "#f774ec",
-    purple: "#9760ff",
-    red: "#fd604f",
-    salmon: "#EC7886",
-    turquoize: "#009678",
-    yellow: "#c1a401",
+    pink: "#f08ad9",
+    purple: "#a635ff",
+    red: "#eb321e",
+    salmon: "#dc4c5d",
+    turquoize: "#00b696",
+    yellow: "#e39c03",
   },
   levels: {
-    danger: arcColors.red,
-    success: arcColors.green,
-    warning: arcColors.orange,
-    info: arcColors.blue,
+    danger: "#eb321e",
+    success: "#38bc48",
+    warning: "#ff8c4e",
+    info: "#0090c0",
   },
 };

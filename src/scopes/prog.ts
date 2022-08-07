@@ -186,8 +186,6 @@ export const punctuation = [
   "meta.definition.function.swift meta.parameter-clause.swift",
   "source.swift meta.function-call.swift",
   "punctuation.section.embedded.end.swift source.swift",
-  "punctuation.definition.tag.begin.html.vue",
-  "punctuation.definition.tag.end.html.vue",
   "source.lua",
   "meta.function.lua",
   "punctuation.definition.keyword.svelte",

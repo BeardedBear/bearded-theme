@@ -243,9 +243,9 @@
         "path": "./themes/bearded-theme-hc-midnightvoid.json"
       },
       {
-        "label": "Bearded Theme HC Light",
+        "label": "Bearded Theme HC Flurry",
         "uiTheme": "hc-light",
-        "path": "./themes/bearded-theme-hc-light.json"
+        "path": "./themes/bearded-theme-hc-flurry.json"
       }
     ]
   },
