@@ -5,7 +5,7 @@
   "publisher": "BeardedBear",
   "version": "7.0.0",
   "engines": {
-    "vscode": "^1.63.0"
+    "vscode": "^1.69.0"
   },
   "scripts": {
     "build": "vite-node src/index.ts",
@@ -260,14 +260,14 @@
     ]
   },
   "dependencies": {
-    "@types/node": "^18.0.5",
-    "@typescript-eslint/eslint-plugin": "^5.30.6",
-    "@typescript-eslint/parser": "^5.30.6",
-    "eslint": "^8.19.0",
+    "@types/node": "^18.6.4",
+    "@typescript-eslint/eslint-plugin": "^5.32.0",
+    "@typescript-eslint/parser": "^5.32.0",
+    "eslint": "^8.21.0",
     "ovsx": "^0.5.1",
     "prettier": "^2.7.1",
     "typescript": "^4.7.4",
-    "vite-node": "^0.18.1",
-    "vsce": "^2.9.3"
+    "vite-node": "^0.21.0",
+    "vsce": "^2.10.0"
   }
 }
