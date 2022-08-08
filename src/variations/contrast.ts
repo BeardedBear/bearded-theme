@@ -49,6 +49,68 @@ export const HCMidnightVoid: Theme = {
   colors: arcColors,
   levels: arcLevels,
 };
+
+export const HCWonderlandWood: Theme = {
+  ui: {
+    primary: "#fbe7c3",
+    primaryalt: "#52426a",
+    uiborder: "#0b1116",
+    uibackground: "#1F1D36",
+    uibackgroundalt: "#19172b",
+    default: "#dadaf1",
+    defaultMain: "#bdbed8",
+    defaultalt: "#6c6c8c",
+  },
+  colors: {
+    blue: "#92b4ff",
+    green: "#91d6a7",
+    greenAlt: "#A4EF58",
+    orange: "#e4a792",
+    pink: "#de98ae",
+    purple: "#9a94e9",
+    red: "#ff7e70",
+    salmon: "#ed98cb",
+    turquoize: "#7ddcbf",
+    yellow: "#fbe7c3",
+  },
+  levels: {
+    danger: "#ff7e70",
+    success: "#91d6a7",
+    warning: "#e4a792",
+    info: "#92b4ff",
+  },
+};
+export const HCBrewingStorm: Theme = {
+  ui: {
+    primary: "#9dffd9",
+    primaryalt: "#2a5a5c",
+    uiborder: "#061928",
+    uibackground: "#0c2a42",
+    uibackgroundalt: "#0a2439",
+    default: "#dae8f1",
+    defaultMain: "#b6cbd9",
+    defaultalt: "#657d87",
+  },
+  colors: {
+    blue: "#82c4ff",
+    green: "#9dffbd",
+    greenAlt: "#A4EF58",
+    orange: "#ffaf94",
+    pink: "#f1c6ee",
+    purple: "#b8b3ff",
+    red: "#ff7e70",
+    salmon: "#f994bf",
+    turquoize: "#22D3B1",
+    yellow: "#fff0a6",
+  },
+  levels: {
+    danger: "#ff7e70",
+    success: "#9dffbd",
+    warning: "#ffaf94",
+    info: "#82c4ff",
+  },
+};
+
 export const HCFlurry: Theme = {
   ui: {
     primary: "#444c54",
@@ -61,21 +123,21 @@ export const HCFlurry: Theme = {
     defaultalt: "#898989",
   },
   colors: {
-    blue: "#0090c0",
-    green: "#38bc48",
+    blue: "#0aa3d6",
+    green: "#41ad4e",
     greenAlt: "#589f11",
-    orange: "#ff8c4e",
+    orange: "#e3946a",
     pink: "#f08ad9",
-    purple: "#a635ff",
-    red: "#eb321e",
-    salmon: "#dc4c5d",
+    purple: "#b377e3",
+    red: "#ee5f50",
+    salmon: "#ed7b89",
     turquoize: "#00b696",
     yellow: "#e39c03",
   },
   levels: {
-    danger: "#eb321e",
-    success: "#38bc48",
-    warning: "#ff8c4e",
-    info: "#0090c0",
+    danger: "#ee5f50",
+    success: "#41ad4e",
+    warning: "#e3946a",
+    info: "#0aa3d6",
   },
 };

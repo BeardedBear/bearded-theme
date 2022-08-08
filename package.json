@@ -3,7 +3,7 @@
   "displayName": "Bearded Theme",
   "description": "The theme with a long beard.",
   "publisher": "BeardedBear",
-  "version": "6.6.0",
+  "version": "7.0.0",
   "engines": {
     "vscode": "^1.63.0"
   },
@@ -241,6 +241,16 @@
         "label": "Bearded Theme HC Midnight Void",
         "uiTheme": "hc-black",
         "path": "./themes/bearded-theme-hc-midnightvoid.json"
+      },
+      {
+        "label": "Bearded Theme HC Wonderland Wood",
+        "uiTheme": "hc-black",
+        "path": "./themes/bearded-theme-hc-wonderland-wood.json"
+      },
+      {
+        "label": "Bearded Theme HC Brewing Storm",
+        "uiTheme": "hc-black",
+        "path": "./themes/bearded-theme-hc-brewing-storm.json"
       },
       {
         "label": "Bearded Theme HC Flurry",

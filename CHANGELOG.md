@@ -1,5 +1,25 @@
 # Changelog for Bearded Theme
 
+## 7.0.0 - 2022-08-08
+
+### New features
+
+- Add new high contrast variation serie (better readibility):
+  - HC Ebony
+  - HC Flurry (light version)
+  - HC Brewing Storm
+  - HC Midnight Void
+  - HC Wonderland Wood
+
+### Fixes
+
+- Some of bug are fixed un Vue template tags
+
+### Enhancements
+
+- Input and select are now visually colored with same base
+- Hovers of icons are a better integration
+
 ## 6.6.0 - 2022-07-06
 
 ### New features
