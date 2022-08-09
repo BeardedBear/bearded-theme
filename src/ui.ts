@@ -38,6 +38,10 @@ export default function ui(theme: Theme, hc?: boolean): unknown {
     // common
     contrastActiveBorder: "#00000000",
     errorForeground: theme.levels.danger,
+    "errorLens.hintForeground": theme.levels.info + 99,
+    "errorLens.infoForeground": theme.levels.info + 99,
+    "errorLens.errorForeground": theme.levels.danger + 99,
+    "errorLens.warningForeground": theme.levels.warning + 99,
     focusBorder: `${theme.ui.primary}40`,
     foreground: `${theme.ui.defaultMain}AA`,
     "icon.foreground": `${theme.ui.defaultMain}AA`,
@@ -61,10 +65,21 @@ export default function ui(theme: Theme, hc?: boolean): unknown {
     descriptionForeground: theme.ui.default,
     // diff
     "diffEditor.border": theme.ui.uiborder,
-    "diffEditor.insertedTextBackground": `${theme.levels.success}20`,
-    "diffEditor.removedTextBackground": `${theme.levels.danger}25`,
+    "diffEditor.insertedTextBackground": hc ? "#00000000" : `${theme.levels.success}20`,
+    "diffEditor.removedTextBackground": hc ? "#00000000" : `${theme.levels.danger}25`,
     "diffEditor.diagonalFill": `${theme.ui.uiborder}80`,
+    "diffEditor.insertedTextBorder": hc && `${theme.levels.success}30`,
+    "diffEditor.removedTextBorder": hc && `${theme.levels.danger}40`,
+    "diffEditorGutter.insertedLineBackground": "#00000000",
+    "diffEditorGutter.removedLineBackground": "#00000000",
+    "diffEditor.insertedLineBackground": hc && `${theme.levels.success}20`,
+    "diffEditor.removedLineBackground": hc && `${theme.levels.danger}25`,
+    "diffEditorOverview.insertedForeground": hc && `${theme.levels.success}25`,
+    "diffEditorOverview.removedForeground": hc && `${theme.levels.danger}30`,
     // editor
+    "editorGhostText.border": "#00000000",
+    "editorGhostText.foreground": theme.colors.green + 70,
+    "editorGhostText.background": theme.colors.green + 10,
     "editorCursor.background": theme.ui.primary,
     "editorBracketHighlight.foreground1": theme.colors.yellow,
     "editorBracketHighlight.foreground2": theme.colors.purple,
@@ -97,10 +112,12 @@ export default function ui(theme: Theme, hc?: boolean): unknown {
     "editorIndentGuide.background": hc ? `${theme.ui.defaultalt}70` : `${theme.ui.defaultalt}30`,
     "editorIndentGuide.activeBackground": hc ? theme.ui.defaultalt : `${theme.ui.defaultalt}bb`,
     "editorLink.activeForeground": theme.ui.default,
-    "editorWarning.border": "#00000000",
+    "editorWarning.border": hc && "#00000000",
+    "editorInfo.border": hc && "#00000000",
     "editorGutter.commentRangeForeground": theme.ui.primaryalt,
     "sash.hoverBorder": `${theme.ui.primary}50`,
     "editorRuler.foreground": `${theme.ui.uiborder}40`,
+
     // find
     "editorWarning.foreground": theme.colors.yellow,
     "editorWhitespace.foreground": `${theme.ui.defaultalt}60`,
@@ -224,6 +241,10 @@ export default function ui(theme: Theme, hc?: boolean): unknown {
     // settings
     "settings.modifiedItemIndicator": theme.ui.primary,
     "settings.headerForeground": theme.ui.primary,
+
+    "keybindingLabel.foreground": hc && theme.ui.primary,
+    "keybindingLabel.border": hc && theme.ui.primary + 60,
+    "keybindingLabel.bottomBorder": hc && theme.ui.primary + 60,
     // sidebar
     "sideBar.background": theme.ui.uibackgroundalt,
     "sideBar.border": theme.ui.uiborder,
@@ -247,7 +268,6 @@ export default function ui(theme: Theme, hc?: boolean): unknown {
     "statusBarItem.prominentBackground": theme.ui.uiborder,
     "statusBarItem.prominentHoverBackground": theme.ui.primaryalt,
     "statusBarItem.errorBackground": theme.colors.red,
-    //  "statusBarItem.errorForeground": theme.colors.red,
     // suggest
     "editorSuggestWidget.background": theme.ui.uibackground,
     "editorSuggestWidget.border": theme.ui.uiborder,

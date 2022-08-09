@@ -1,5 +1,16 @@
 # Changelog for Bearded Theme
 
+## 7.1.0 - 2022-08-09
+
+### Fixes
+
+- Less intrusive ghost text suggestion for HC series
+
+### New features
+
+- Add support for Error Lens colors
+- Add keybinding inputs settings for HC series
+
 ## 7.0.0 - 2022-08-08
 
 ### New features
