@@ -144,10 +144,10 @@ export const HCFlurry: Theme = {
 
 export const Minuit: Theme = {
   ui: {
-    primary: "#e5bba4",
-    primaryalt: "#3d3857",
+    primary: "#e5c2a4",
+    primaryalt: "#2E253D",
     uiborder: "#0a0910",
-    uibackground: "#211c2d",
+    uibackground: "#1C1827",
     uibackgroundalt: "#171420",
     default: "#bcc1dd",
     defaultMain: "#9da2c0",

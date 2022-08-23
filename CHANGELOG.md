@@ -1,5 +1,17 @@
 # Changelog for Bearded Theme
 
+## 7.2.2 - 2022-08-23
+
+### Fixes
+
+- Fix main color for solarized variations, to be less confused with the color of the tabs containing changes
+
+## 7.2.1 - 2022-08-23
+
+### Fixes
+
+- Fix contrast for HC Minuit
+
 ## 7.2.0 - 2022-08-23
 
 ### Fixes

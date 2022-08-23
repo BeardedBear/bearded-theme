@@ -22,7 +22,7 @@ const solarizedLevels: ThemeLevels = {
 
 export const solarizedDark: Theme = {
   ui: {
-    primary: "#199FBE",
+    primary: "#47cfc4",
     primaryalt: "#003947",
     uiborder: "#001b21",
     uibackground: "#002b36",
@@ -37,7 +37,7 @@ export const solarizedDark: Theme = {
 
 export const solarizedReversed: Theme = {
   ui: {
-    primary: "#199FBE",
+    primary: "#47cfc4",
     primaryalt: "#022f3a",
     uiborder: "#001418",
     uibackground: "#001a20",
