@@ -141,3 +141,64 @@ export const HCFlurry: Theme = {
     info: "#0aa3d6",
   },
 };
+
+export const Minuit: Theme = {
+  ui: {
+    primary: "#e5bba4",
+    primaryalt: "#3d3857",
+    uiborder: "#0a0910",
+    uibackground: "#211c2d",
+    uibackgroundalt: "#171420",
+    default: "#bcc1dd",
+    defaultMain: "#9da2c0",
+    defaultalt: "#7d7d96",
+  },
+  colors: {
+    blue: "#4fc1e8",
+    green: "#69d2ab",
+    greenAlt: "#77b03e",
+    orange: "#eea67f",
+    pink: "#d995c9",
+    purple: "#ad92ff",
+    red: "#fb7a6c",
+    salmon: "#e38d97",
+    turquoize: "#17d7b4",
+    yellow: "#dbc2a3",
+  },
+  levels: {
+    danger: "#fb7a6c",
+    success: "#74be7d",
+    warning: "#eea67f",
+    info: "#4fc1e8",
+  },
+};
+export const ChocolateEspresso: Theme = {
+  ui: {
+    primary: "#f69c95",
+    primaryalt: "#563c3c",
+    uiborder: "#13100e",
+    uibackground: "#322626",
+    uibackgroundalt: "#2a2020",
+    default: "#ddc2bc",
+    defaultMain: "#c0a69d",
+    defaultalt: "#96807d",
+  },
+  colors: {
+    blue: "#17d7d7",
+    green: "#69d293",
+    greenAlt: "#77b03e",
+    orange: "#f69662",
+    pink: "#d995c9",
+    purple: "#ad92ff",
+    red: "#fb7a6c",
+    salmon: "#f08390",
+    turquoize: "#17d7c4",
+    yellow: "#edbc7f",
+  },
+  levels: {
+    danger: "#fb7a6c",
+    success: "#74be7d",
+    warning: "#eea67f",
+    info: "#4fc1e8",
+  },
+};

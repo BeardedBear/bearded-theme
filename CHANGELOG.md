@@ -1,5 +1,16 @@
 # Changelog for Bearded Theme
 
+## 7.2.0 - 2022-08-23
+
+### Fixes
+
+- Add support for closing labels color in Dart (Thanks [PatrickWulfe](https://github.com/BeardedBear/bearded-theme/issues/85))
+
+### New features
+
+- Add support for inlay hint
+- Add 2 new variation of the HC serie : `Chocolate Espresso` and `Minuit`
+
 ## 7.1.0 - 2022-08-09
 
 ### Fixes

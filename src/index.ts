@@ -6,7 +6,15 @@ import ui from "./ui";
 import { arc, arcBlueBerry, arcEggplant, arcEolstorm, arcReversed } from "./variations/arc";
 import { blackAndAmethyst, blackAndDiamond, blackAndEmerald, blackAndGold, blackAndRuby } from "./variations/black";
 import { anthracite, light } from "./variations/classics";
-import { HCBrewingStorm, HCEbony, HCFlurry, HCMidnightVoid, HCWonderlandWood } from "./variations/contrast";
+import {
+  ChocolateEspresso,
+  HCBrewingStorm,
+  HCEbony,
+  HCFlurry,
+  HCMidnightVoid,
+  HCWonderlandWood,
+  Minuit,
+} from "./variations/contrast";
 import { altica, earth, voided, coffee, coffeeCream, will, coffeeReversed } from "./variations/exotic";
 import { monokaiBlack, monokaiMetallian, monokaiStone, monokaiTerra, monokaiReversed } from "./variations/monokai";
 import { oceanic, oceanicReverded, solarizedDark, solarizedLight, solarizedReversed } from "./variations/solarized";
@@ -90,3 +98,5 @@ makeTheme("hc-midnightvoid", HCMidnightVoid, true);
 makeTheme("hc-flurry", HCFlurry, true);
 makeTheme("hc-wonderland-wood", HCWonderlandWood, true);
 makeTheme("hc-brewing-storm", HCBrewingStorm, true);
+makeTheme("hc-minuit", Minuit, true);
+makeTheme("hc-chocolateespresso", ChocolateEspresso, true);

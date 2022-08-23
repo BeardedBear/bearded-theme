@@ -3,7 +3,7 @@
   "displayName": "Bearded Theme",
   "description": "The theme with a long beard.",
   "publisher": "BeardedBear",
-  "version": "7.1.0",
+  "version": "7.2.0",
   "engines": {
     "vscode": "^1.69.0"
   },
@@ -12,6 +12,11 @@
     "build:ext": "vsce package --no-yarn",
     "dev": "vite-node src/index.ts -w",
     "fix": "prettier --write ./src/**/*.ts"
+  },
+  "__metadata": {
+    "id": "dffaf5a1-2219-434b-9d87-cb586fd59260",
+    "publisherDisplayName": "BeardedBear",
+    "publisherId": "a369cd52-d79a-6d36-99c8-5adc9bf1d25d"
   },
   "nodemonConfig": {
     "ext": "ts",
@@ -251,6 +256,16 @@
         "label": "Bearded Theme HC Brewing Storm",
         "uiTheme": "hc-black",
         "path": "./themes/bearded-theme-hc-brewing-storm.json"
+      },
+      {
+        "label": "Bearded Theme HC Minuit",
+        "uiTheme": "hc-black",
+        "path": "./themes/bearded-theme-hc-minuit.json"
+      },
+      {
+        "label": "Bearded Theme HC Chocolate Espresso",
+        "uiTheme": "hc-black",
+        "path": "./themes/bearded-theme-hc-chocolateespresso.json"
       },
       {
         "label": "Bearded Theme HC Flurry",
