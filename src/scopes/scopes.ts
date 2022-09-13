@@ -30,7 +30,7 @@ export default function syntax(theme: Theme, hc?: boolean): Scope[] {
     createScope(prog.operators, theme.colors.yellow),
     createScope(prog.punctuation, `${hc ? theme.ui.default : `${theme.ui.default}60`}`),
     createScope(prog.self, theme.colors.orange),
-    createScope(prog.storages, theme.colors.turquoize),
+    createScope(prog.storages, theme.colors.turquoize, "italic"),
     createScope(prog.strings, theme.colors.green),
     createScope(prog.stringsAlt, `${theme.colors.green}60`),
     createScope(prog.types, theme.colors.purple),
