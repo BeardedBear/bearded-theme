@@ -3,6 +3,7 @@ export interface ThemeUi {
   primaryalt: string;
   uiborder: string;
   uibackground: string;
+  uibackgroundmid: string;
   uibackgroundalt: string;
   default: string;
   defaultMain: string;

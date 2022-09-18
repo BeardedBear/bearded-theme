@@ -4,7 +4,12 @@
 
 ### Fixes
 
-- Fix codelens opacity
+- Fix codelens opacity (Thanks [jake-carpenter](https://github.com/BeardedBear/bearded-theme/issues/86))
+
+### Enhancements
+
+- Remove border bottom on active tab
+- Add third background color variation for terminal
 
 ## 7.3.0 - 2022-08-25
 

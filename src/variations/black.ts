@@ -6,6 +6,7 @@ const blackUI = (primary: string): ThemeUi => {
     primaryalt: "#191c21",
     uiborder: "#000000",
     uibackground: "#111418",
+    uibackgroundmid: "#0F1215",
     uibackgroundalt: "#0D0F12",
     default: "#AEB2B2",
     defaultMain: "#999F9F",
