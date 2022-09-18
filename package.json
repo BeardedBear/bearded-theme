@@ -3,7 +3,7 @@
   "displayName": "Bearded Theme",
   "description": "The theme with a long beard.",
   "publisher": "BeardedBear",
-  "version": "7.2.2",
+  "version": "7.4.0",
   "engines": {
     "vscode": "^1.69.0"
   },
@@ -275,14 +275,14 @@
     ]
   },
   "dependencies": {
-    "@types/node": "^18.6.4",
-    "@typescript-eslint/eslint-plugin": "^5.32.0",
-    "@typescript-eslint/parser": "^5.32.0",
-    "eslint": "^8.21.0",
+    "@types/node": "^18.7.13",
+    "@typescript-eslint/eslint-plugin": "^5.35.1",
+    "@typescript-eslint/parser": "^5.35.1",
+    "eslint": "^8.22.0",
     "ovsx": "^0.5.1",
     "prettier": "^2.7.1",
     "typescript": "^4.7.4",
-    "vite-node": "^0.21.0",
-    "vsce": "^2.10.0"
+    "vite-node": "^0.22.1",
+    "vsce": "^2.10.2"
   }
 }

@@ -110,7 +110,7 @@ export default function ui(theme: Theme, hc?: boolean): unknown {
     "editor.wordHighlightBackground": `${theme.ui.primary}20`,
     "editorBracketMatch.background": `${theme.ui.primary}20`,
     "editorBracketMatch.border": `${theme.ui.primary}40`,
-    "editorCodeLens.foreground": theme.ui.default,
+    "editorCodeLens.foreground": theme.ui.defaultMain + 80,
     "editorCursor.foreground": theme.colors.yellow,
     "editorGroup.border": theme.ui.uiborder,
     "editorGroup.dropBackground": `${theme.ui.primary}15`,

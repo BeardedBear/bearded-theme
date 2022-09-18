@@ -1,5 +1,17 @@
 # Changelog for Bearded Theme
 
+## 7.4.0 - 2022-09-18
+
+### Fixes
+
+- Fix codelens opacity
+
+## 7.3.0 - 2022-08-25
+
+### Enhancements
+
+- Improve Edge syntax support
+
 ## 7.2.2 - 2022-08-23
 
 ### Fixes

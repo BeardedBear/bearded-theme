@@ -52,6 +52,9 @@ export const keyword = [
   "source.svelte meta.scope.tag.main.svelte meta.tag.start.svelte variable.function.svelte",
   "meta.directive.on.svelte entity.name.type.svelte",
   "keyword.other.special-method.elixir",
+  "keyword.edge",
+  "entity.name.function.edge",
+  "support.constant.edge",
 ];
 
 export const constants = ["constant"];
@@ -100,6 +103,8 @@ export const functions = [
   "meta.bracket.square.access",
   // Elixir
   "entity.name.function-call.elixir",
+  "punctuation.output.liquid support.variable.liquid",
+  "meta.function.echo.edge source.js keyword.operator.error-control.js",
 ];
 
 export const importScope = [
@@ -250,6 +255,7 @@ export const strings = [
   "constant.other.symbol.quoted.single.erlang punctuation.definition.symbol.end.erlang",
   "meta.import.ts punctuation.definition.variable.svelte",
   "punctuation.definition.string.end.html source.css-ignored-vscode",
+  "text.html.edge punctuation.definition.variable.js",
 ];
 
 export const stringsAlt = [
@@ -296,6 +302,9 @@ export const variables = [
   "meta.definition.variable.name.groovy",
   "meta.body.struct.cpp",
   "parameter.variable.function.elixir",
+  "meta.directive.edge source.js",
+  "meta.function.echo.edge source.js",
+  "text.html.edge meta.function.echo.edge meta.function-call.js",
 ];
 
 export const typeConstructor = ["source.elm constant.type-constructor"];
