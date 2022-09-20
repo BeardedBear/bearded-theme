@@ -1,5 +1,11 @@
 # Changelog for Bearded Theme
 
+## 7.5.0 - 2022-09-20
+
+### Add a theme
+
+- Add the the `Planty Workbench` theme to bearded Theme (From [deavetheferret](https://github.com/deavetheferret))
+
 ## 7.4.0 - 2022-09-18
 
 ### Fixes
