@@ -271,6 +271,11 @@
         "label": "Bearded Theme HC Flurry",
         "uiTheme": "hc-light",
         "path": "./themes/bearded-theme-hc-flurry.json"
+      },
+      {
+        "label": "Bearded Theme Ficus Bonsaï",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-planty-workbench.json"
       }
     ]
   },
