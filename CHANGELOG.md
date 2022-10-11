@@ -1,5 +1,15 @@
 # Changelog for Bearded Theme
 
+## 7.5.0 - 2022-10-11
+
+### Fixes
+
+- Fix CSS/SCSS keyframes name color
+
+### New features
+
+- Add patch and diff support (Thanks [tyler36](https://github.com/BeardedBear/bearded-theme/issues/90))
+
 ## 7.4.0 - 2022-09-18
 
 ### Fixes

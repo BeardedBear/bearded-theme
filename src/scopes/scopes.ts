@@ -42,6 +42,10 @@ export default function syntax(theme: Theme, hc?: boolean): Scope[] {
 
     // MARKUP
     createScope(markup.component, theme.colors.blue),
+    createScope(markup.diffAdd, theme.colors.green),
+    createScope(markup.diffDel, theme.colors.red),
+    createScope(markup.diffHead, theme.colors.blue),
+    createScope(markup.diffRange, theme.colors.orange),
 
     // HTML
     createScope(markup.variables, theme.colors.salmon),

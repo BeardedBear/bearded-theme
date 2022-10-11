@@ -64,3 +64,25 @@ export const frontMatter = [
   "meta.embedded.block.frontmatter punctuation.definition.tag.end",
   "meta.embedded.block.frontmatter string.unquoted.plain.out",
 ];
+
+
+// DIFF/PATCH
+export const diffAdd = [
+  "source.diff meta.diff.header.to-file",
+  "source.diff markup.inserted.diff", 
+  "source.diff punctuation.definition.to-file.diff",
+  "source.diff punctuation.definition.inserted.diff"
+];
+export const diffDel = [
+  "source.diff punctuation.definition.from-file.diff",
+  "source.diff meta.diff.header.from-file",
+  "source.diff markup.deleted.diff",
+  "source.diff punctuation.definition.deleted.diff",
+];
+export const diffHead = [
+  "source.diff meta.diff.header.command"
+];
+export const diffRange = [
+  "source.diff punctuation.definition.range.diff",
+  "source.diff meta.diff.range.unified"
+];

@@ -305,6 +305,10 @@ export const variables = [
   "meta.directive.edge source.js",
   "meta.function.echo.edge source.js",
   "text.html.edge meta.function.echo.edge meta.function-call.js",
+  "source.css variable.parameter.keyframe-list.css",
+  "source.css meta.property-value.css",
+  "source.css.scss meta.at-rule.keyframes.scss entity.name.function.scss",
+  "source.css.scss meta.property-value.scss",
 ];
 
 export const typeConstructor = ["source.elm constant.type-constructor"];
