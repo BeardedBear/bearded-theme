@@ -26,5 +26,6 @@ export const value = [
   "meta.property-value.css",
   "meta.attribute.style.html",
 ];
+
 export const nums = ["constant.numeric"];
 export const tag = ["entity.name.tag.css", "meta.property-list.scss entity.name.tag.css"];
