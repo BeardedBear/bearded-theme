@@ -123,7 +123,7 @@ export default function ui(theme: Theme, hc?: boolean): unknown {
     "editorInfo.border": hc && "#00000000",
     "editorGutter.commentRangeForeground": theme.ui.primaryalt,
     "sash.hoverBorder": `${theme.ui.primary}50`,
-    "editorRuler.foreground": `${theme.ui.uiborder}40`,
+    "editorRuler.foreground": `${theme.ui.primaryalt}AA`,
 
     // find
     "editorWarning.foreground": theme.colors.yellow,
