@@ -55,6 +55,13 @@ export const keyword = [
   "keyword.edge",
   "entity.name.function.edge",
   "support.constant.edge",
+  "keyword.other.gdscript",
+  "keyword.other.onready.gdscript",
+  "source.graphql meta.fragment.graphql keyword.on.graphql",
+  "source.graphql meta.type.interface.graphql keyword.implements.graphql",
+  "source.graphql meta.type.interface.graphql meta.type.object.graphql meta.type.list.graphql keyword.operator.nulltype.graphql",
+  "source.graphql meta.variables.graphql keyword.operator.nulltype.graphql",
+  "source.graphql meta.type.interface.graphql meta.type.object.graphql keyword.operator.nulltype.graphql",
 ];
 
 export const constants = ["constant"];
@@ -67,6 +74,9 @@ export const currentText = [
   // LUA
   "source.lua",
   "text.html.derivative",
+  "source.graphql meta.selections variable.other.alias.graphql",
+  "source.graphql meta.type.interface.graphql meta.type.object.graphql variable.graphql",
+  "source.graphql variable.arguments.graphql",
 ];
 
 export const decorators = [
@@ -75,6 +85,7 @@ export const decorators = [
   "meta.decorator punctuation.decorator",
   "punctuation.definition.decorator",
   "meta.decorator variable.other.readwrite.ts",
+  "variable.parameter.gdscript",
 ];
 
 export const exportScope = ["keyword.control.export", "support.type.object.module"];
@@ -105,6 +116,7 @@ export const functions = [
   "entity.name.function-call.elixir",
   "punctuation.output.liquid support.variable.liquid",
   "meta.function.echo.edge source.js keyword.operator.error-control.js",
+  "entity.name.type.variant.gdscript",
 ];
 
 export const importScope = [
@@ -197,6 +209,7 @@ export const punctuation = [
   "source.svelte meta.scope.tag.SpeakerPicture.svelte meta.tag.start.svelte entity.other.attribute-name.svelte",
   "expression.embbeded.vue punctuation.definition.tag.begin.html.vue",
   "expression.embbeded.vue punctuation.definition.tag.end.html.vue",
+  "source.graphql	meta.type.interface.graphql meta.type.object.graphql meta.type.list.graphql meta.brace.square.graphql",
 ];
 
 export const self = [
@@ -231,10 +244,18 @@ export const storages = [
   "entity.name.type.class.php",
   "entity.other.inherited-class.php",
   "entity.name.type.class.groovy",
-  "storage.type.rust  ",
+  "storage.type.rust",
   "entity.name.type.class.swift",
   "source.svelte meta.script.svelte source.ts entity.name.label.ts",
   "meta.directive.on.svelte keyword.control.svelte",
+  "storage.type.const.gdscript",
+  "storage.type.var.gdscript",
+  "source.graphql declaration.meta.type keyword",
+  "source.graphql meta.type.interface.graphql keyword.type.graphql",
+  "source.graphql keyword.schema.graphql",
+  "source.graphql keyword.operation.graphql",
+  "source.graphql meta.enum.graphql keyword.enum.graphql",
+  "source.graphql meta.fragment.graphql keyword.fragment.graphql",
 ];
 
 export const strings = [
@@ -256,6 +277,7 @@ export const strings = [
   "meta.import.ts punctuation.definition.variable.svelte",
   "punctuation.definition.string.end.html source.css-ignored-vscode",
   "text.html.edge punctuation.definition.variable.js",
+  "string.unquoted.plain.out.yaml",
 ];
 
 export const stringsAlt = [
@@ -285,6 +307,10 @@ export const types = [
   "meta.definition.type.body.swift meta.function-call.swift",
   "meta.definition.type.class.swift meta.inheritance-clause.swift",
   "variable.other.constant.elixir",
+  "source.graphql declaration.meta.type support",
+  "source.graphql meta.selections",
+  "source.graphql meta.enum.graphql meta.type.object.graphql constant.character.enum.graphql",
+  "source.graphql meta.fragment.graphql entity.name.fragment.graphql",
 ];
 
 export const variables = [

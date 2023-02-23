@@ -15,8 +15,8 @@ import {
   HCWonderlandWood,
   Minuit,
 } from "./variations/contrast";
-import { altica, earth, voided, coffee, coffeeCream, will, coffeeReversed } from "./variations/exotic";
-import { monokaiBlack, monokaiMetallian, monokaiStone, monokaiTerra, monokaiReversed } from "./variations/monokai";
+import { altica, coffee, coffeeCream, coffeeReversed, earth, voided, will } from "./variations/exotic";
+import { monokaiBlack, monokaiMetallian, monokaiReversed, monokaiStone, monokaiTerra } from "./variations/monokai";
 import { oceanic, oceanicReverded, solarizedDark, solarizedLight, solarizedReversed } from "./variations/solarized";
 import { stainedBlue, stainedPurple } from "./variations/stained";
 import { surprisingBlueberry, surprisingEggplant, surprisingWatermelon } from "./variations/surprising";
@@ -26,10 +26,10 @@ function makeTheme(name: string, theme: Theme, hc?: boolean): void {
   const themeTemplate = {
     $schema: "vscode://schemas/color-theme",
     name: `BeardedTheme ${name.charAt(0).toUpperCase()}${name.slice(1)}`,
-    semanticHighlighting: true,
-    semanticTokenColors: semanticTokens(theme),
     colors: ui(theme, hc),
     tokenColors: syntax(theme, hc),
+    semanticHighlighting: true,
+    semanticTokenColors: semanticTokens(theme),
   };
 
   writeFile(`themes/bearded-theme-${name}.json`, JSON.stringify(themeTemplate), (err) => {

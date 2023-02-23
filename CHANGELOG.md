@@ -1,5 +1,17 @@
 # Changelog for Bearded Theme
 
+## 7.6.0 - 2023-02-23
+
+### Fixes
+
+- Fix editor rulers color (Thanks [moxwel](https://github.com/BeardedBear/bearded-theme/issues/94))
+- Fix status bar border color (Thanks [danulqua](https://github.com/BeardedBear/bearded-theme/issues/97))
+
+### New features
+
+- Add GraphQL support (Thanks [DenisLutsky](https://github.com/BeardedBear/bearded-theme/issues/91))
+- Add GDScript support (partially) (Thanks [mathewcst](https://github.com/BeardedBear/bearded-theme/issues/101))
+
 ## 7.5.0 - 2022-10-11
 
 ### Fixes
