@@ -51,6 +51,8 @@ export default function ui(theme: Theme, hc?: boolean): unknown {
     "icon.foreground": `${theme.ui.defaultMain}AA`,
     "selection.background": `${theme.ui.primary}60`,
     "widget.shadow": `${theme.ui.uiborder}30`,
+    "profileBadge.background": theme.ui.primary,
+    "profileBadge.foreground": theme.ui.uibackground,
     // Command center
     "commandCenter.border": theme.ui.uiborder,
     "commandCenter.background": theme.ui.uibackground,
