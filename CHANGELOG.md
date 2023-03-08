@@ -1,5 +1,11 @@
 # Changelog for Bearded Theme
 
+## 7.6.1 - 2023-03-08
+
+### Fixes
+
+- Fix PHP inconsistencies (Thanks [protoinfo](https://github.com/BeardedBear/bearded-theme/issues/102))
+
 ## 7.6.0 - 2023-02-23
 
 ### Fixes

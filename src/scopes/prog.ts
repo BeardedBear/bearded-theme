@@ -62,6 +62,17 @@ export const keyword = [
   "source.graphql meta.type.interface.graphql meta.type.object.graphql meta.type.list.graphql keyword.operator.nulltype.graphql",
   "source.graphql meta.variables.graphql keyword.operator.nulltype.graphql",
   "source.graphql meta.type.interface.graphql meta.type.object.graphql keyword.operator.nulltype.graphql",
+  "keyword.operator.class.php",
+  "keyword.operator.spread.php",
+  "keyword.operator.type.php",
+  "keyword.operator.increment-decrement.php",
+  "keyword.operator.increment-increment.php",
+  "punctuation.support.type.property-name.begin.json",
+  "punctuation.support.type.property-name.end.json",
+  "keyword.operator.string.php",
+  "keyword.operator.ternary.php",
+  "keyword.operator.variadic.php",
+  "keyword.operator.nullable-type.php",
 ];
 
 export const constants = ["constant"];
@@ -210,6 +221,7 @@ export const punctuation = [
   "expression.embbeded.vue punctuation.definition.tag.begin.html.vue",
   "expression.embbeded.vue punctuation.definition.tag.end.html.vue",
   "source.graphql	meta.type.interface.graphql meta.type.object.graphql meta.type.list.graphql meta.brace.square.graphql",
+  "punctuation.definition.variable.php",
 ];
 
 export const self = [
@@ -241,7 +253,6 @@ export const storages = [
   "storage.type.type",
   "entity.name.type.class.java",
   "support.class.php",
-  "entity.name.type.class.php",
   "entity.other.inherited-class.php",
   "entity.name.type.class.groovy",
   "storage.type.rust",
@@ -256,6 +267,7 @@ export const storages = [
   "source.graphql keyword.operation.graphql",
   "source.graphql meta.enum.graphql keyword.enum.graphql",
   "source.graphql meta.fragment.graphql keyword.fragment.graphql",
+  "storage.type.trait.php",
 ];
 
 export const strings = [
@@ -311,6 +323,9 @@ export const types = [
   "source.graphql meta.selections",
   "source.graphql meta.enum.graphql meta.type.object.graphql constant.character.enum.graphql",
   "source.graphql meta.fragment.graphql entity.name.fragment.graphql",
+  "entity.name.type.class.php",
+  "support.class.php",
+  "entity.other.inherited-class.php",
 ];
 
 export const variables = [
