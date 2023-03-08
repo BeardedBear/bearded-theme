@@ -38,7 +38,7 @@ export default function syntax(theme: Theme, hc?: boolean): Scope[] {
 
     // ELM
     createScope(prog.typeConstructor, theme.colors.salmon),
-    createScope(prog.type, theme.colors.purple, "normal"),
+    createScope(prog.type, theme.colors.purple),
 
     // MARKUP
     createScope(markup.component, theme.colors.blue),

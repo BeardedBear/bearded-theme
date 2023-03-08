@@ -1,10 +1,18 @@
 # Changelog for Bearded Theme
 
-## 7.6.1 - 2023-03-08
+## 7.6.1 - 2023-03-09
 
 ### Fixes
 
 - Fix PHP inconsistencies (Thanks [protoinfo](https://github.com/BeardedBear/bearded-theme/issues/102))
+- Fix extension's button color for HC variants
+- Fix input border in problems tab
+
+### Enhancements
+
+- Better button's readability
+- Better selection foreground color for HC variants
+- Better readability for menu items hover in HC variants
 
 ## 7.6.0 - 2023-02-23
 

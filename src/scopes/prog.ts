@@ -73,9 +73,10 @@ export const keyword = [
   "keyword.operator.ternary.php",
   "keyword.operator.variadic.php",
   "keyword.operator.nullable-type.php",
+  "keyword.other.use-as.php",
 ];
 
-export const constants = ["constant"];
+export const constants = ["constant", "support.constant.core.php"];
 
 export const currentText = [
   "source",
@@ -326,6 +327,7 @@ export const types = [
   "entity.name.type.class.php",
   "support.class.php",
   "entity.other.inherited-class.php",
+  "entity.other.alias.php",
 ];
 
 export const variables = [

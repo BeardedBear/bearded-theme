@@ -149,7 +149,7 @@ export default function ui(theme: Theme, hc?: boolean): unknown {
     // input
     "input.background": "#00000000",
     "input.foreground": theme.ui.default,
-    "input.border": `${theme.ui.defaultalt}50`,
+    "input.border": `${theme.ui.defaultalt}60`,
     "input.placeholderForeground": `${theme.ui.default}60`,
     "inputOption.activeBorder": theme.ui.primary,
     "inputValidation.errorBackground": theme.ui.primaryalt,
@@ -211,7 +211,7 @@ export default function ui(theme: Theme, hc?: boolean): unknown {
     // panel
     "panel.background": theme.ui.uibackgroundmid,
     "panel.border": theme.ui.uiborder,
-    "panelInput.border": theme.ui.defaultalt,
+    "panel.dropBorder": theme.ui.uiborder,
     "panelSection.border": theme.ui.uiborder,
     "panelTitle.activeBorder": theme.ui.primary,
     "panelTitle.activeForeground": theme.ui.primary,
