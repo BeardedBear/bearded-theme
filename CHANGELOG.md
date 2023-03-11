@@ -1,5 +1,20 @@
 # Changelog for Bearded Theme
 
+## 7.6.2 - 2023-03-11
+
+### Fixes
+
+- Fix welcome tiles colors
+- Fix focused quickmenu item color
+- Fix status bar error background
+- Fix activity bar active border color in HC variants
+- Fix disabled items in menus color
+
+### Enhancements
+
+- Add more brackets pairs colors
+- Add status bar warning background
+
 ## 7.6.1 - 2023-03-09
 
 ### Fixes
