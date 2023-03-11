@@ -10,6 +10,14 @@ export default function ui(theme: Theme, hc?: boolean): unknown {
     "activityBar.inactiveForeground": `${theme.ui.defaultalt}AA`,
     "activityBarBadge.background": theme.ui.primary,
     "activityBarBadge.foreground": theme.ui.uibackgroundalt,
+
+    // welcome
+    "welcomePage.tileBackground": theme.ui.defaultMain + 10,
+    "welcomePage.tileBorder": theme.ui.defaultMain + 20,
+    "welcomePage.tileHoverBackground": theme.ui.defaultMain + 20,
+    "welcomePage.progress.background": theme.ui.primaryalt,
+    "welcomePage.progress.foreground": theme.ui.primary,
+
     // badge
     "badge.background": theme.ui.primary,
     "badge.foreground": theme.ui.uibackground,
@@ -161,7 +169,7 @@ export default function ui(theme: Theme, hc?: boolean): unknown {
 
     // list
     "list.dropBackground": `${theme.ui.primary}15`,
-    disabledForeground: theme.ui.defaultalt + "aa",
+    disabledForeground: theme.ui.default + 80,
     "list.focusBackground": `${theme.ui.primary}40`,
     "list.focusForeground": theme.ui.defaultMain,
     "list.errorForeground": theme.levels.danger,
@@ -252,7 +260,6 @@ export default function ui(theme: Theme, hc?: boolean): unknown {
     // settings
     "settings.modifiedItemIndicator": theme.ui.primary,
     "settings.headerForeground": theme.ui.primary,
-
     "keybindingLabel.foreground": hc && theme.ui.primary,
     "keybindingLabel.border": hc && theme.ui.primary + 60,
     "keybindingLabel.bottomBorder": hc && theme.ui.primary + 60,
