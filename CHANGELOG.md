@@ -1,5 +1,11 @@
 # Changelog for Bearded Theme
 
+## 7.6.3 - 2023-03-14
+
+### Fixes
+
+- Fix contrast ratio for Black & Gems variants
+
 ## 7.6.2 - 2023-03-11
 
 ### Fixes
