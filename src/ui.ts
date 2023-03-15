@@ -1,9 +1,12 @@
-import { Theme } from "./typing";
+import { Theme, UIKey } from "./typing";
 
-export default function ui(theme: Theme, hc?: boolean): unknown {
+// type IUVH = keyof typeof ThemeUI;
+
+export default function ui(theme: Theme, hc?: boolean): Partial<UIKey> {
   return {
     contrastBorder: theme.ui.uiborder,
     // activityBar
+
     "activityBar.background": theme.ui.uibackgroundalt,
     "activityBar.border": theme.ui.uiborder,
     "activityBar.foreground": theme.ui.primary,
