@@ -279,6 +279,7 @@
     "@types/vscode": "^1.76.0",
     "@typescript-eslint/eslint-plugin": "^5.54.1",
     "@typescript-eslint/parser": "^5.54.1",
+    "colord": "^2.9.3",
     "eslint": "^8.35.0",
     "ovsx": "^0.8.0",
     "prettier": "^2.8.4",

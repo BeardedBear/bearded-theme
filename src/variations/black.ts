@@ -1,19 +1,7 @@
-import { Theme, ThemeColors, ThemeLevels, ThemeUi } from "../typing";
+import { makeMainColors } from "../helper";
+import { Theme, ThemeColors, ThemeLevels } from "../typing";
 
-const blackUI = (primary: string): ThemeUi => {
-  return {
-    primary,
-    primaryalt: "#191c21",
-    uiborder: "#000000",
-    uibackground: "#111418",
-    uibackgroundmid: "#0F1215",
-    uibackgroundalt: "#0D0F12",
-    default: "#AEB2B2",
-    defaultMain: "#999F9F",
-    defaultalt: "#4d5258",
-  };
-};
-
+const baseColor = "#111418";
 const blackColors: ThemeColors = {
   blue: "#4eb2d4",
   green: "#2fbe85",
@@ -35,31 +23,31 @@ const blackLevels: ThemeLevels = {
 };
 
 export const blackAndGold: Theme = {
-  ui: blackUI(blackColors.yellow),
+  ui: makeMainColors({ baseColor, primaryColor: blackColors.yellow }),
   colors: blackColors,
   levels: blackLevels,
 };
 
 export const blackAndRuby: Theme = {
-  ui: blackUI(blackColors.salmon),
+  ui: makeMainColors({ baseColor, primaryColor: blackColors.salmon }),
   colors: blackColors,
   levels: blackLevels,
 };
 
 export const blackAndEmerald: Theme = {
-  ui: blackUI(blackColors.turquoize),
+  ui: makeMainColors({ baseColor, primaryColor: blackColors.turquoize }),
   colors: blackColors,
   levels: blackLevels,
 };
 
 export const blackAndDiamond: Theme = {
-  ui: blackUI(blackColors.blue),
+  ui: makeMainColors({ baseColor, primaryColor: blackColors.blue }),
   colors: blackColors,
   levels: blackLevels,
 };
 
 export const blackAndAmethyst: Theme = {
-  ui: blackUI(blackColors.purple),
+  ui: makeMainColors({ baseColor, primaryColor: blackColors.purple }),
   colors: blackColors,
   levels: blackLevels,
 };
