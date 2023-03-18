@@ -1,3 +1,4 @@
+import { makeMainColors } from "../helper";
 import { Theme, ThemeColors } from "../typing";
 
 const colors: ThemeColors = {
@@ -21,33 +22,13 @@ const levelColors = {
 };
 
 export const stainedPurple: Theme = {
-  ui: {
-    primary: "#a948ef",
-    primaryalt: "#301e43",
-    uiborder: "#140e1b",
-    uibackground: "#20192b",
-    uibackgroundmid: "#1d1628",
-    uibackgroundalt: "#1a1424",
-    default: "#cbc4cf",
-    defaultMain: "#A89FAC",
-    defaultalt: "#655785",
-  },
-  colors: colors,
+  ui: makeMainColors({ base: "#20192b", primary: "#a948ef" }),
+  colors,
   levels: levelColors,
 };
 
 export const stainedBlue: Theme = {
-  ui: {
-    primary: "#3A7FFF",
-    primaryalt: "#122444",
-    uiborder: "#06080e",
-    uibackground: "#121726",
-    uibackgroundmid: "#101523",
-    uibackgroundalt: "#0e1320",
-    default: "#bfcbd4",
-    defaultMain: "#A1ACB5",
-    defaultalt: "#5d7189",
-  },
-  colors: colors,
+  ui: makeMainColors({ base: "#121726", primary: "#3A7FFF" }),
+  colors,
   levels: levelColors,
 };

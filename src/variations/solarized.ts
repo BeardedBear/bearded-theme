@@ -1,3 +1,4 @@
+import { makeMainColors } from "../helper";
 import { Theme, ThemeColors, ThemeLevels } from "../typing";
 
 const solarizedColors: ThemeColors = {
@@ -21,33 +22,13 @@ const solarizedLevels: ThemeLevels = {
 };
 
 export const solarizedDark: Theme = {
-  ui: {
-    primary: "#47cfc4",
-    primaryalt: "#003947",
-    uiborder: "#001b21",
-    uibackground: "#002b36",
-    uibackgroundmid: "#002730",
-    uibackgroundalt: "#002229",
-    default: "#cedbdb",
-    defaultMain: "#B8C6C6",
-    defaultalt: "#547783",
-  },
+  ui: makeMainColors({ base: "#132c34", primary: "#47cfc4" }),
   colors: solarizedColors,
   levels: solarizedLevels,
 };
 
 export const solarizedReversed: Theme = {
-  ui: {
-    primary: "#47cfc4",
-    primaryalt: "#022f3a",
-    uiborder: "#001418",
-    uibackground: "#001a20",
-    uibackgroundmid: "#001e25",
-    uibackgroundalt: "#002229",
-    default: "#cedbdb",
-    defaultMain: "#B8C6C6",
-    defaultalt: "#547783",
-  },
+  ui: makeMainColors({ base: "#102128", primary: "#47cfc4", reversed: true }),
   colors: solarizedColors,
   levels: solarizedLevels,
 };
@@ -84,17 +65,11 @@ const oceanicColors: ThemeColors = {
 };
 
 export const oceanic: Theme = {
-  ui: {
+  ui: makeMainColors({
+    base: "#1a2b34",
     primary: "#97c892",
-    primaryalt: "#254A52",
-    uiborder: "#111C22",
-    uibackground: "#1a2b34",
-    uibackgroundmid: "#182830",
-    uibackgroundalt: "#16242C",
-    default: "#D3DFDB",
-    defaultMain: "#A6BAB4",
-    defaultalt: "#51727C",
-  },
+    primaryAlt: "#284450",
+  }),
   colors: oceanicColors,
   levels: {
     danger: oceanicColors.salmon,
@@ -104,17 +79,7 @@ export const oceanic: Theme = {
   },
 };
 export const oceanicReverded: Theme = {
-  ui: {
-    primary: "#97c892",
-    primaryalt: "#192a34",
-    uiborder: "#0d151a",
-    uibackground: "#111c23",
-    uibackgroundmid: "#142028",
-    uibackgroundalt: "#16242C",
-    default: "#D3DFDB",
-    defaultMain: "#A6BAB4",
-    defaultalt: "#51727C",
-  },
+  ui: makeMainColors({ base: "#152229", primary: "#97c892", reversed: true }),
   colors: oceanicColors,
   levels: {
     danger: oceanicColors.salmon,

@@ -1,25 +1,36 @@
-import { colord, extend } from "colord";
+import { colord as c, extend } from "colord";
 import mixPlugin from "colord/plugins/mix";
 import { ThemeUi } from "./typing";
 
 extend([mixPlugin]);
 
 interface ThemeProps {
-  primaryColor: string;
-  baseColor: string;
+  primary: string;
+  base: string;
+  primaryAlt?: string;
+  fontTeinted?: boolean;
+  reversed?: boolean;
 }
 
-export function makeMainColors({ baseColor, primaryColor }: ThemeProps): ThemeUi {
-  const darkenColor: string = colord(baseColor).darken(0.02).toHex();
+export function makeMainColors({ base, primary, primaryAlt, fontTeinted, reversed }: ThemeProps): ThemeUi {
+  const darkenColor: string = c(base).darken(0.022).toHex();
+  const sat = 0.15;
+
   return {
-    primary: primaryColor,
-    uibackground: baseColor,
-    uibackgroundmid: colord(baseColor).mix(darkenColor).toHex(),
-    uibackgroundalt: darkenColor,
-    primaryalt: colord(baseColor).lighten(0.03).toHex(),
-    uiborder: colord(baseColor).darken(0.06).toHex(),
-    default: colord(baseColor).lighten(0.6).desaturate(0.1).toHex(),
-    defaultalt: colord(baseColor).lighten(0.25).desaturate(0.1).toHex(),
-    defaultMain: colord(baseColor).lighten(0.5).desaturate(0.1).toHex(),
+    // UI
+    primary,
+    uibackground: reversed ? darkenColor : base,
+    uibackgroundmid: c(base).mix(darkenColor).toHex(),
+    uibackgroundalt: reversed ? base : darkenColor,
+    primaryalt: primaryAlt ? primaryAlt : c(base).lighten(0.05).toHex(),
+    uiborder: c(base).darken(0.06).toHex(),
+    // Fonts
+    default: fontTeinted ? c(base).lighten(0.65).saturate(0.15).toHex() : c(base).lighten(0.7).desaturate(sat).toHex(),
+    defaultMain: fontTeinted
+      ? c(base).lighten(0.55).saturate(0.07).toHex()
+      : c(base).lighten(0.5).desaturate(0.15).toHex(),
+    defaultalt: fontTeinted
+      ? c(base).lighten(0.15).saturate(0.05).toHex()
+      : c(base).lighten(0.2).desaturate(0.15).toHex(),
   };
 }

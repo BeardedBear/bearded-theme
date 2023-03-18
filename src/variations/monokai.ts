@@ -1,6 +1,7 @@
+import { makeMainColors } from "../helper";
 import { Theme, ThemeColors, ThemeLevels } from "../typing";
 
-const monokaiColors: ThemeColors = {
+const colors: ThemeColors = {
   blue: "#78dce8",
   green: "#a9dc76",
   greenAlt: "#b7d175",
@@ -13,89 +14,39 @@ const monokaiColors: ThemeColors = {
   yellow: "#ffd866",
 };
 
-const monokaiLevels: ThemeLevels = {
-  danger: monokaiColors.red,
-  info: monokaiColors.blue,
-  success: monokaiColors.green,
-  warning: monokaiColors.yellow,
+const levels: ThemeLevels = {
+  danger: colors.red,
+  info: colors.blue,
+  success: colors.green,
+  warning: colors.yellow,
 };
 
 export const monokaiTerra: Theme = {
-  ui: {
-    primary: "#b0a2a6",
-    primaryalt: "#3e3942",
-    uiborder: "#131114",
-    uibackground: "#262329",
-    uibackgroundmid: "#222025",
-    uibackgroundalt: "#1e1c21",
-    default: "#dbd8d5",
-    defaultMain: "#C1BCB6",
-    defaultalt: "#6e686a",
-  },
-  colors: monokaiColors,
-  levels: monokaiLevels,
+  ui: makeMainColors({ base: "#262329", primary: "#b0a2a6" }),
+  colors,
+  levels,
 };
 
 export const monokaiMetallian: Theme = {
-  ui: {
-    primary: "#98a2b5",
-    primaryalt: "#363a4a",
-    uiborder: "#13131a",
-    uibackground: "#1e212b",
-    uibackgroundmid: "#1c1e28",
-    uibackgroundalt: "#191b24",
-    default: "#d0d3da",
-    defaultMain: "#B9BCC4",
-    defaultalt: "#515a6b",
-  },
-  colors: monokaiColors,
-  levels: monokaiLevels,
+  ui: makeMainColors({ base: "#1e212b", primary: "#98a2b5" }),
+  colors,
+  levels,
 };
 
 export const monokaiStone: Theme = {
-  ui: {
-    primary: "#9AA2A6",
-    primaryalt: "#383c42",
-    uiborder: "#1C1E21",
-    uibackground: "#2A2D33",
-    uibackgroundmid: "#282B30",
-    uibackgroundalt: "#26282C",
-    default: "#dddddd",
-    defaultMain: "#D6D6D6",
-    defaultalt: "#73737F",
-  },
-  colors: monokaiColors,
-  levels: monokaiLevels,
+  ui: makeMainColors({ base: "#2A2D33", primary: "#9AA2A6" }),
+  colors,
+  levels,
 };
 
 export const monokaiBlack: Theme = {
-  ui: {
-    primary: "#8f8f8f",
-    primaryalt: "#1a1a1a",
-    uiborder: "#000000",
-    uibackground: "#141414",
-    uibackgroundmid: "#101010",
-    uibackgroundalt: "#0d0d0d",
-    default: "#e3e3e3",
-    defaultMain: "#D6D6D6",
-    defaultalt: "#707070",
-  },
-  colors: monokaiColors,
-  levels: monokaiLevels,
+  ui: makeMainColors({ base: "#141414", primary: "#8f8f8f" }),
+  colors,
+  levels,
 };
 
 export const monokaiReversed: Theme = {
-  ui: {
-    primary: "#98a2b5",
-    primaryalt: "#222531",
-    uiborder: "#0c0d12",
-    uibackground: "#13141c",
-    uibackgroundmid: "#161820",
-    uibackgroundalt: "#191b24",
-    default: "#d0d3da",
-    defaultMain: "#B9BCC4",
-    defaultalt: "#515a6b",
-  },
-  colors: monokaiColors,
-  levels: monokaiLevels,
+  ui: makeMainColors({ base: "#171921", primary: "#98a2b5", reversed: true }),
+  colors,
+  levels,
 };

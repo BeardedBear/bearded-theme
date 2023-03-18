@@ -1,6 +1,7 @@
+import { makeMainColors } from "../helper";
 import { Theme, ThemeColors, ThemeLevels } from "../typing";
 
-const arcColors: ThemeColors = {
+const colors: ThemeColors = {
   blue: "#7fd7f5",
   green: "#AFEA7B",
   greenAlt: "#A4EF58",
@@ -14,56 +15,30 @@ const arcColors: ThemeColors = {
 };
 
 const arcLevels: ThemeLevels = {
-  danger: arcColors.red,
-  success: arcColors.green,
-  warning: arcColors.orange,
-  info: arcColors.blue,
+  danger: colors.red,
+  success: colors.green,
+  warning: colors.orange,
+  info: colors.blue,
 };
 
 export const HCEbony: Theme = {
-  ui: {
-    primary: "#dbdeea",
-    primaryalt: "#313140",
-    uiborder: "#0c0c0f",
-    uibackground: "#181820",
-    uibackgroundmid: "#15151c",
-    uibackgroundalt: "#121218",
-    default: "#c0c9d3",
-    defaultMain: "#d1d3dc",
-    defaultalt: "#6e7481",
-  },
-  colors: arcColors,
+  ui: makeMainColors({ base: "#181820", primary: "#dbdeea" }),
+  colors,
   levels: arcLevels,
 };
 
 export const HCMidnightVoid: Theme = {
-  ui: {
-    primary: "#dbefff",
-    primaryalt: "#1c323e",
-    uiborder: "#0b1116",
-    uibackground: "#151f27",
-    uibackgroundmid: "#121c23",
-    uibackgroundalt: "#10181f",
-    default: "#dbefff",
-    defaultMain: "#b6d0d9",
-    defaultalt: "#657d87",
-  },
-  colors: arcColors,
+  ui: makeMainColors({ base: "#151f27", primary: "#dbefff" }),
+  colors,
   levels: arcLevels,
 };
 
 export const HCWonderlandWood: Theme = {
-  ui: {
+  ui: makeMainColors({
+    base: "#1F1D36",
     primary: "#fbe7c3",
-    primaryalt: "#52426a",
-    uiborder: "#0b1116",
-    uibackground: "#1F1D36",
-    uibackgroundmid: "#1C1A31",
-    uibackgroundalt: "#19172b",
-    default: "#dadaf1",
-    defaultMain: "#bdbed8",
-    defaultalt: "#6c6c8c",
-  },
+    primaryAlt: "#52426a",
+  }),
   colors: {
     blue: "#92b4ff",
     green: "#91d6a7",
@@ -84,17 +59,11 @@ export const HCWonderlandWood: Theme = {
   },
 };
 export const HCBrewingStorm: Theme = {
-  ui: {
+  ui: makeMainColors({
+    base: "#0c2a42",
     primary: "#9dffd9",
-    primaryalt: "#2a5a5c",
-    uiborder: "#061928",
-    uibackground: "#0c2a42",
-    uibackgroundmid: "#0b273e",
-    uibackgroundalt: "#0a2439",
-    default: "#dae8f1",
-    defaultMain: "#b6cbd9",
-    defaultalt: "#657d87",
-  },
+    primaryAlt: "#2a5a5c",
+  }),
   colors: {
     blue: "#82c4ff",
     green: "#9dffbd",
@@ -148,17 +117,11 @@ export const HCFlurry: Theme = {
 };
 
 export const Minuit: Theme = {
-  ui: {
-    primary: "#e5c2a4",
-    primaryalt: "#2E253D",
-    uiborder: "#0a0910",
-    uibackground: "#1C1827",
-    uibackgroundmid: "#1A1624",
-    uibackgroundalt: "#171420",
-    default: "#bcc1dd",
-    defaultMain: "#9da2c0",
-    defaultalt: "#7d7d96",
-  },
+  ui: makeMainColors({
+    base: "#1C1827",
+    primary: "#ecc48c",
+    primaryAlt: "#635345",
+  }),
   colors: {
     blue: "#4fc1e8",
     green: "#69d2ab",
@@ -179,17 +142,12 @@ export const Minuit: Theme = {
   },
 };
 export const ChocolateEspresso: Theme = {
-  ui: {
+  ui: makeMainColors({
+    base: "#2e2424",
     primary: "#f69c95",
-    primaryalt: "#563c3c",
-    uiborder: "#13100e",
-    uibackground: "#322626",
-    uibackgroundmid: "#2e2323",
-    uibackgroundalt: "#2a2020",
-    default: "#ddc2bc",
-    defaultMain: "#c0a69d",
-    defaultalt: "#96807d",
-  },
+    primaryAlt: "#61413b",
+    fontTeinted: true,
+  }),
   colors: {
     blue: "#17d7d7",
     green: "#69d293",

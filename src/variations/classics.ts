@@ -1,3 +1,4 @@
+import { makeMainColors } from "../helper";
 import { Theme, ThemeColors, ThemeLevels } from "../typing";
 
 const classicsColors: ThemeColors = {
@@ -21,17 +22,7 @@ const levelColors: ThemeLevels = {
 };
 
 export const anthracite: Theme = {
-  ui: {
-    primary: "#76808c",
-    primaryalt: "#26282e",
-    uiborder: "#0b0c0e",
-    uibackground: "#181a1f",
-    uibackgroundmid: "#16181c",
-    uibackgroundalt: "#141519",
-    default: "#bbbbbb",
-    defaultMain: "#A4A4A4",
-    defaultalt: "#464b52",
-  },
+  ui: makeMainColors({ base: "#181a1f", primary: "#a2abb6" }),
   colors: classicsColors,
   levels: levelColors,
 };

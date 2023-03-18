@@ -1,3 +1,4 @@
+import { makeMainColors } from "../helper";
 import { Theme, ThemeColors, ThemeLevels } from "../typing";
 
 const arcColors: ThemeColors = {
@@ -14,88 +15,38 @@ const arcColors: ThemeColors = {
 };
 
 const arcLevels: ThemeLevels = {
-  danger: "#E35535",
-  success: "#3CEC85",
-  warning: "#cf9e57",
-  info: "#69C3FF",
+  danger: arcColors.red,
+  success: arcColors.green,
+  warning: arcColors.orange,
+  info: arcColors.blue,
 };
 
 export const arc: Theme = {
-  ui: {
-    primary: "#8196b5",
-    primaryalt: "#273145",
-    uiborder: "#111721",
-    uibackground: "#1c2433",
-    uibackgroundmid: "#19212e",
-    uibackgroundalt: "#161d29",
-    default: "#c3cfd9",
-    defaultMain: "#ABB7C1",
-    defaultalt: "#576375",
-  },
+  ui: makeMainColors({ base: "#1c2433", primary: "#8196b5" }),
   colors: arcColors,
   levels: arcLevels,
 };
 
 export const arcEolstorm: Theme = {
-  ui: {
-    primary: "#9DACC3",
-    primaryalt: "#364154",
-    uiborder: "#171d29",
-    uibackground: "#222A38",
-    uibackgroundmid: "#202734",
-    uibackgroundalt: "#1D232F",
-    default: "#ffffff",
-    defaultMain: "#CBCBCB",
-    defaultalt: "#576375",
-  },
+  ui: makeMainColors({ base: "#222A38", primary: "#9DACC3" }),
   colors: arcColors,
   levels: arcLevels,
 };
 
 export const arcBlueBerry: Theme = {
-  ui: {
-    primary: "#a4b9db",
-    primaryalt: "#222d47",
-    uiborder: "#090c17",
-    uibackground: "#121624",
-    uibackgroundmid: "#101422",
-    uibackgroundalt: "#0e121f",
-    default: "#ffffff",
-    defaultMain: "#CBCBCB",
-    defaultalt: "#576275",
-  },
+  ui: makeMainColors({ base: "#111422", primary: "#8eb0e6" }),
   colors: arcColors,
   levels: arcLevels,
 };
 
 export const arcEggplant: Theme = {
-  ui: {
-    primary: "#a3a5d6",
-    primaryalt: "#231e36",
-    uiborder: "#0b0812",
-    uibackground: "#181424",
-    uibackgroundmid: "#161222",
-    uibackgroundalt: "#14101f",
-    default: "#ffffff",
-    defaultMain: "#CBCBCB",
-    defaultalt: "#585775",
-  },
+  ui: makeMainColors({ base: "#181421", primary: "#9698d8" }),
   colors: arcColors,
   levels: arcLevels,
 };
 
 export const arcReversed: Theme = {
-  ui: {
-    primary: "#8196b5",
-    primaryalt: "#1f2432",
-    uiborder: "#0b0f16",
-    uibackground: "#111620",
-    uibackgroundmid: "#141a25",
-    uibackgroundalt: "#181e29",
-    default: "#c3cfd9",
-    defaultMain: "#ABB7C1",
-    defaultalt: "#576375",
-  },
+  ui: makeMainColors({ base: "#161c28", primary: "#8196b5", reversed: true }),
   colors: arcColors,
   levels: arcLevels,
 };

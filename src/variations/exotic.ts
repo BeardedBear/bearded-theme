@@ -1,6 +1,7 @@
+import { makeMainColors } from "../helper";
 import { Theme, ThemeLevels } from "../typing";
 
-const exoticLevels: ThemeLevels = {
+const levels: ThemeLevels = {
   danger: "#C13838",
   success: "#14b871",
   warning: "#cc8c39",
@@ -8,17 +9,12 @@ const exoticLevels: ThemeLevels = {
 };
 
 export const earth: Theme = {
-  ui: {
-    primary: "#cf3a76",
-    primaryalt: "#56152F",
-    uiborder: "#120d0d",
-    uibackground: "#1E1615",
-    uibackgroundmid: "#1B1413",
-    uibackgroundalt: "#181211",
-    default: "#C6BEAB",
-    defaultMain: "#B0A896",
-    defaultalt: "#6a5553",
-  },
+  ui: makeMainColors({
+    base: "#221b1b",
+    primary: "#d35386",
+    primaryAlt: "#40222e",
+    fontTeinted: true,
+  }),
   colors: {
     blue: "#BA9D6F",
     green: "#639E29",
@@ -31,21 +27,16 @@ export const earth: Theme = {
     turquoize: "#4EAAA4",
     yellow: "#C48519",
   },
-  levels: exoticLevels,
+  levels,
 };
 
 export const coffee: Theme = {
-  ui: {
+  ui: makeMainColors({
+    base: "#292423",
     primary: "#F09177",
-    primaryalt: "#51403b",
-    uiborder: "#1D1918",
-    uibackground: "#292423",
-    uibackgroundmid: "#272221",
-    uibackgroundalt: "#25201F",
-    default: "#CCBDB3",
-    defaultMain: "#AEA097",
-    defaultalt: "#6a5553",
-  },
+    primaryAlt: "#51403b",
+    fontTeinted: true,
+  }),
   colors: {
     blue: "#6EDDD6",
     green: "#9DCC57",
@@ -67,17 +58,13 @@ export const coffee: Theme = {
 };
 
 export const coffeeReversed: Theme = {
-  ui: {
+  ui: makeMainColors({
+    base: "#201c1b",
     primary: "#F09177",
-    primaryalt: "#51403b",
-    uiborder: "#110f0e",
-    uibackground: "#1b1817",
-    uibackgroundmid: "#201c1b",
-    uibackgroundalt: "#25201F",
-    default: "#CCBDB3",
-    defaultMain: "#AEA097",
-    defaultalt: "#6a5553",
-  },
+    primaryAlt: "#51403b",
+    fontTeinted: true,
+    reversed: true,
+  }),
   colors: {
     blue: "#6EDDD6",
     green: "#9DCC57",
@@ -131,17 +118,7 @@ export const coffeeCream: Theme = {
 };
 
 export const voided: Theme = {
-  ui: {
-    primary: "#7A63ED",
-    primaryalt: "#2A2156",
-    uiborder: "#000000",
-    uibackground: "#150F23",
-    uibackgroundmid: "#140D1F",
-    uibackgroundalt: "#120a1a",
-    default: "#D7E2EF",
-    defaultMain: "#B8C1CE",
-    defaultalt: "#585785",
-  },
+  ui: makeMainColors({ base: "#171322", primary: "#7A63ED" }),
   colors: {
     blue: "#7A63ED",
     green: "#6DBBFF",
@@ -154,7 +131,7 @@ export const voided: Theme = {
     turquoize: "#89C4FF",
     yellow: "#585785",
   },
-  levels: exoticLevels,
+  levels,
 };
 
 export const altica: Theme = {
@@ -181,7 +158,7 @@ export const altica: Theme = {
     turquoize: "#0187a6",
     yellow: "#d6ac63",
   },
-  levels: exoticLevels,
+  levels,
 };
 
 export const will: Theme = {

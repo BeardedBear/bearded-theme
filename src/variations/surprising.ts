@@ -1,3 +1,4 @@
+import { makeMainColors } from "../helper";
 import { Theme, ThemeColors, ThemeLevels } from "../typing";
 
 const surprisingColors = (primary: string): ThemeColors => {
@@ -24,51 +25,33 @@ const surprisingLevels: ThemeLevels = {
 
 const primarySurprisingEggplant = "#d24e4e";
 export const surprisingEggplant: Theme = {
-  ui: {
+  ui: makeMainColors({
+    base: "#1d1426",
     primary: primarySurprisingEggplant,
-    primaryalt: "#4e1d27",
-    uiborder: "#0F0B14",
-    uibackground: "#1d1426",
-    uibackgroundmid: "#1a1223",
-    uibackgroundalt: "#16111F",
-    default: "#c3b6cc",
-    defaultMain: "#A79DAE",
-    defaultalt: "#695091",
-  },
+    primaryAlt: "#441f30",
+  }),
   colors: surprisingColors(primarySurprisingEggplant),
   levels: surprisingLevels,
 };
 
 const primarySurprisingBlueberry = "#c93e71";
 export const surprisingBlueberry: Theme = {
-  ui: {
+  ui: makeMainColors({
+    base: "#101a29",
     primary: primarySurprisingBlueberry,
-    primaryalt: "#4e1d37",
-    uiborder: "#0F0B14",
-    uibackground: "#101a29",
-    uibackgroundmid: "#0f1725",
-    uibackgroundalt: "#0e1421",
-    default: "#bad1d9",
-    defaultMain: "#9AAFB6",
-    defaultalt: "#3e668c",
-  },
+    primaryAlt: "#441f30",
+  }),
   colors: surprisingColors(primarySurprisingBlueberry),
   levels: surprisingLevels,
 };
 
 const primarySurprisingWatermelon = "#da6c62";
 export const surprisingWatermelon: Theme = {
-  ui: {
+  ui: makeMainColors({
+    base: "#142326",
     primary: primarySurprisingWatermelon,
-    primaryalt: "#6a2b2a",
-    uiborder: "#0C1617",
-    uibackground: "#142326",
-    uibackgroundmid: "#122023",
-    uibackgroundalt: "#111d1f",
-    default: "#c0ccc4",
-    defaultMain: "#9CABA1",
-    defaultalt: "#2f6a69",
-  },
+    primaryAlt: "#5f3333",
+  }),
   colors: surprisingColors(primarySurprisingWatermelon),
   levels: surprisingLevels,
 };

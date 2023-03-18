@@ -1,3 +1,4 @@
+import { makeMainColors } from "../helper";
 import { Theme, ThemeColors, ThemeLevels } from "../typing";
 
 const vividColors: ThemeColors = {
@@ -21,33 +22,19 @@ const vividLevels: ThemeLevels = {
 };
 
 export const vividPurple: Theme = {
-  ui: {
+  ui: makeMainColors({
+    base: "#171131",
     primary: "#A680FF",
-    primaryalt: "#2c225d",
-    uiborder: "#08060e",
-    uibackground: "#171131",
-    uibackgroundmid: "#150e2d",
-    uibackgroundalt: "#130b28",
-    default: "#eeeeee",
-    defaultMain: "#CBCBCB",
-    defaultalt: "#6160a4",
-  },
+  }),
   colors: vividColors,
   levels: vividLevels,
 };
 
 export const vividBlack: Theme = {
-  ui: {
+  ui: makeMainColors({
+    base: "#141417",
     primary: "#AAAAAA",
-    primaryalt: "#1f1f24",
-    uiborder: "#000000",
-    uibackground: "#141417",
-    uibackgroundmid: "#121214",
-    uibackgroundalt: "#101012",
-    default: "#eeeeee",
-    defaultMain: "#CBCBCB",
-    defaultalt: "#555555",
-  },
+  }),
   colors: vividColors,
   levels: vividLevels,
 };
