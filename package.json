@@ -271,6 +271,11 @@
         "label": "Bearded Theme HC Flurry",
         "uiTheme": "hc-light",
         "path": "./themes/bearded-theme-hc-flurry.json"
+      },
+      {
+        "label": "Bearded Theme Buche",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-buche.json"
       }
     ]
   },
