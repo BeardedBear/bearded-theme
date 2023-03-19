@@ -115,9 +115,9 @@ export default function ui(
     "editorCursor.background": theme.ui.primary,
     "editorBracketHighlight.foreground1": theme.colors.yellow,
     "editorBracketHighlight.foreground2": theme.colors.pink,
-    "editorBracketHighlight.foreground3": theme.colors.purple,
-    "editorBracketHighlight.foreground4": theme.colors.greenAlt,
-    "editorBracketHighlight.foreground5": theme.colors.blue,
+    "editorBracketHighlight.foreground3": theme.colors.blue,
+    "editorBracketHighlight.foreground4": theme.colors.purple,
+    "editorBracketHighlight.foreground5": theme.colors.turquoize,
     "editorBracketHighlight.foreground6": theme.colors.salmon,
     "editorBracketHighlight.unexpectedBracket.foreground": theme.levels.danger,
     "editor.foldBackground": theme.ui.uibackgroundalt,
@@ -214,9 +214,13 @@ export default function ui(
     "list.hoverBackground": light
       ? c(theme.ui.defaultalt).alpha(0.05).toHex()
       : c(theme.ui.primaryalt).lighten(0.1).alpha(0.2).toHex(),
-    "list.hoverForeground": theme.ui.default,
+    "list.hoverForeground": light
+      ? c(theme.ui.defaultalt).darken(0.8).toHex()
+      : c(theme.ui.primaryalt).lighten(0.5).desaturate(0.1).toHex(),
     "quickInputTitle.background": theme.ui.uibackgroundalt,
-    "quickInputList.focusForeground": theme.ui.default,
+    "quickInputList.focusForeground": light
+      ? theme.ui.defaultMain
+      : c(theme.ui.primaryalt).lighten(0.8).desaturate(0.1).toHex(),
     "quickInput.foreground": light
       ? theme.ui.defaultMain
       : c(theme.ui.primaryalt).lighten(0.5).desaturate(0.1).toHex(),
@@ -229,15 +233,17 @@ export default function ui(
     "gitDecoration.ignoredResourceForeground": theme.ui.defaultalt,
     "gitDecoration.conflictingResourceForeground": theme.ui.primary,
     // menu
+    "menu.border": theme.ui.uiborder,
     "menu.background": theme.ui.primaryalt,
     "menu.foreground": light
       ? theme.ui.defaultMain
       : c(theme.ui.primaryalt).lighten(0.5).desaturate(0.1).toHex(),
     "menu.separatorBackground": theme.ui.uiborder + 65,
-    "menu.selectionForeground": theme.ui.defaultMain,
+    "menu.selectionForeground": light
+      ? theme.ui.defaultMain
+      : c(theme.ui.primaryalt).lighten(0.8).desaturate(0.1).toHex(),
     "menubar.selectionBackground": theme.ui.primaryalt,
     "menubar.selectionForeground": theme.ui.defaultMain,
-    "menu.border": theme.ui.uiborder,
 
     // merge
     "merge.border": theme.ui.uiborder,

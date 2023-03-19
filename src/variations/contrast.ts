@@ -145,7 +145,7 @@ export const ChocolateEspresso: Theme = {
   ui: makeMainColorsDark({
     base: "#2e2424",
     primary: "#f69c95",
-    primaryAlt: "#61413b",
+    primaryAlt: "#5d423d",
     fontTeinted: true,
   }),
   colors: {
