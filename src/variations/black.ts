@@ -3,16 +3,16 @@ import { Theme, ThemeColors, ThemeLevels } from "../typing";
 
 const base = "#111418";
 const blackColors: ThemeColors = {
-  blue: "#4eb2d4",
-  green: "#2fbe85",
+  blue: "#11B7D4",
+  green: "#00a884",
   greenAlt: "#3585bb",
-  orange: "#d17f2d",
-  pink: "#cf7dbe",
-  purple: "#ad7fdb",
-  red: "#da4e2f",
-  salmon: "#dc5574",
-  turquoize: "#07b6ad",
-  yellow: "#c4a046",
+  orange: "#d4770c",
+  pink: "#d46ec0",
+  purple: "#a85ff1",
+  red: "#E35535",
+  salmon: "#c62f52",
+  turquoize: "#38c7bd",
+  yellow: "#c7910c",
 };
 
 const blackLevels: ThemeLevels = {
