@@ -114,11 +114,11 @@ export default function ui(
     "editorGhostText.foreground": theme.ui.default + 70,
     "editorCursor.background": theme.ui.primary,
     "editorBracketHighlight.foreground1": theme.colors.yellow,
-    "editorBracketHighlight.foreground2": theme.colors.blue,
-    "editorBracketHighlight.foreground3": theme.colors.green,
-    "editorBracketHighlight.foreground4": theme.colors.purple,
-    "editorBracketHighlight.foreground5": theme.colors.turquoize,
-    "editorBracketHighlight.foreground6": theme.colors.pink,
+    "editorBracketHighlight.foreground2": theme.colors.pink,
+    "editorBracketHighlight.foreground3": theme.colors.purple,
+    "editorBracketHighlight.foreground4": theme.colors.greenAlt,
+    "editorBracketHighlight.foreground5": theme.colors.blue,
+    "editorBracketHighlight.foreground6": theme.colors.salmon,
     "editorBracketHighlight.unexpectedBracket.foreground": theme.levels.danger,
     "editor.foldBackground": theme.ui.uibackgroundalt,
     "editor.background": theme.ui.uibackground,
@@ -157,7 +157,9 @@ export default function ui(
     "editorInfo.border": hc && "#00000000",
     "editorGutter.commentRangeForeground": theme.ui.primaryalt,
     "sash.hoverBorder": `${theme.ui.primary}50`,
-    "editorRuler.foreground": `${theme.ui.primaryalt}AA`,
+    "editorRuler.foreground": light
+      ? c(theme.ui.defaultalt).alpha(0.2).toHex()
+      : c(theme.ui.primary).alpha(0.1).toHex(),
 
     // find
     "editorWarning.foreground": theme.colors.yellow,
@@ -194,7 +196,9 @@ export default function ui(
 
     // list
     "list.dropBackground": `${theme.ui.primary}15`,
-    disabledForeground: c(theme.ui.default).alpha(0.3).toHex(),
+    disabledForeground: light
+      ? c(theme.ui.primaryalt).darken(0.3).desaturate(0.1).toHex()
+      : c(theme.ui.primaryalt).lighten(0.3).desaturate(0.1).toHex(),
     "list.focusBackground": `${theme.ui.primary}40`,
     "list.focusForeground": theme.ui.defaultMain,
     "list.errorForeground": theme.levels.danger,
@@ -213,6 +217,9 @@ export default function ui(
     "list.hoverForeground": theme.ui.default,
     "quickInputTitle.background": theme.ui.uibackgroundalt,
     "quickInputList.focusForeground": theme.ui.default,
+    "quickInput.foreground": light
+      ? theme.ui.defaultMain
+      : c(theme.ui.primaryalt).lighten(0.5).desaturate(0.1).toHex(),
     "quickInputList.focusBackground": light
       ? c(theme.ui.defaultalt).alpha(0.2).toHex()
       : c(theme.ui.primaryalt).lighten(0.15).alpha(0.45).toHex(),
@@ -223,7 +230,9 @@ export default function ui(
     "gitDecoration.conflictingResourceForeground": theme.ui.primary,
     // menu
     "menu.background": theme.ui.primaryalt,
-    "menu.foreground": theme.ui.defaultMain,
+    "menu.foreground": light
+      ? theme.ui.defaultMain
+      : c(theme.ui.primaryalt).lighten(0.5).desaturate(0.1).toHex(),
     "menu.separatorBackground": theme.ui.uiborder + 65,
     "menu.selectionForeground": theme.ui.defaultMain,
     "menubar.selectionBackground": theme.ui.primaryalt,
