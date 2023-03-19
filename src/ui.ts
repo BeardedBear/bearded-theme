@@ -1,6 +1,5 @@
+import { colord } from "colord";
 import { Theme, UIKey } from "./typing";
-
-// type IUVH = keyof typeof ThemeUI;
 
 export default function ui(theme: Theme, hc?: boolean): Partial<UIKey> {
   return {
@@ -78,14 +77,20 @@ export default function ui(theme: Theme, hc?: boolean): Partial<UIKey> {
     "debugExceptionWidget.background": theme.ui.primaryalt,
     "debugExceptionWidget.border": theme.ui.uiborder,
     "debugToolBar.background": theme.ui.primaryalt,
-    "toolbar.hoverBackground": hc ? theme.ui.defaultMain + 40 : theme.ui.defaultalt + 60,
+    "toolbar.hoverBackground": hc
+      ? theme.ui.defaultMain + 40
+      : theme.ui.defaultalt + 60,
 
     // description
     descriptionForeground: theme.ui.default,
     // diff
     "diffEditor.border": theme.ui.uiborder,
-    "diffEditor.insertedTextBackground": hc ? "#00000000" : `${theme.levels.success}20`,
-    "diffEditor.removedTextBackground": hc ? "#00000000" : `${theme.levels.danger}25`,
+    "diffEditor.insertedTextBackground": hc
+      ? "#00000000"
+      : `${theme.levels.success}20`,
+    "diffEditor.removedTextBackground": hc
+      ? "#00000000"
+      : `${theme.levels.danger}25`,
     "diffEditor.diagonalFill": `${theme.ui.uiborder}80`,
     "diffEditor.insertedTextBorder": hc && `${theme.levels.success}30`,
     "diffEditor.removedTextBorder": hc && `${theme.levels.danger}40`,
@@ -137,8 +142,12 @@ export default function ui(theme: Theme, hc?: boolean): Partial<UIKey> {
     "editorGroup.dropBackground": `${theme.ui.primary}15`,
     "editorHoverWidget.background": theme.ui.primaryalt,
     "editorHoverWidget.border": theme.ui.uiborder,
-    "editorIndentGuide.background": hc ? `${theme.ui.defaultalt}70` : `${theme.ui.defaultalt}30`,
-    "editorIndentGuide.activeBackground": hc ? theme.ui.defaultalt : `${theme.ui.defaultalt}bb`,
+    "editorIndentGuide.background": hc
+      ? `${theme.ui.defaultalt}70`
+      : `${theme.ui.defaultalt}30`,
+    "editorIndentGuide.activeBackground": hc
+      ? theme.ui.defaultalt
+      : `${theme.ui.defaultalt}bb`,
     "editorLink.activeForeground": theme.ui.default,
     "editorWarning.border": hc && "#00000000",
     "editorInfo.border": hc && "#00000000",
@@ -157,7 +166,9 @@ export default function ui(theme: Theme, hc?: boolean): Partial<UIKey> {
     "editorGutter.addedBackground": `${theme.levels.success}cc`,
     "editorGutter.deletedBackground": `${theme.levels.danger}cc`,
     "editorGutter.modifiedBackground": `${theme.levels.info}cc`,
-    "editorLineNumber.foreground": `${hc ? theme.ui.defaultalt : theme.ui.defaultalt + 90}`,
+    "editorLineNumber.foreground": `${
+      hc ? theme.ui.defaultalt : theme.ui.defaultalt + 90
+    }`,
     "editorLineNumber.activeForeground": theme.ui.defaultalt,
     // dropdown
     "dropdown.background": theme.ui.uibackground,
@@ -179,20 +190,32 @@ export default function ui(theme: Theme, hc?: boolean): Partial<UIKey> {
 
     // list
     "list.dropBackground": `${theme.ui.primary}15`,
-    disabledForeground: theme.ui.default + 80,
+    disabledForeground: colord(theme.ui.default).alpha(0.4).toHex(),
     "list.focusBackground": `${theme.ui.primary}40`,
     "list.focusForeground": theme.ui.defaultMain,
     "list.errorForeground": theme.levels.danger,
     "list.warningForeground": theme.levels.warning,
     "list.highlightForeground": theme.colors.yellow,
     "list.activeSelectionForeground": theme.ui.default,
-    "list.activeSelectionBackground": theme.ui.default + 20,
-    "list.inactiveSelectionBackground": hc ? theme.ui.defaultalt + 25 : theme.ui.defaultalt + 30,
-    "list.hoverBackground": theme.ui.default + 10,
+    "list.activeSelectionBackground": colord(theme.ui.primaryalt)
+      .lighten(0.1)
+      .alpha(0.45)
+      .toHex(),
+    "list.inactiveSelectionBackground": colord(theme.ui.primaryalt)
+      .lighten(0.1)
+      .alpha(0.25)
+      .toHex(),
+    "list.hoverBackground": colord(theme.ui.primaryalt)
+      .lighten(0.1)
+      .alpha(0.2)
+      .toHex(),
     "list.hoverForeground": theme.ui.default,
     "quickInputTitle.background": theme.ui.uibackgroundalt,
     "quickInputList.focusForeground": theme.ui.default,
-    "quickInputList.focusBackground": theme.ui.default + 20,
+    "quickInputList.focusBackground": colord(theme.ui.primaryalt)
+      .lighten(0.15)
+      .alpha(0.45)
+      .toHex(),
     "gitDecoration.modifiedResourceForeground": theme.levels.info,
     "gitDecoration.deletedResourceForeground": theme.levels.danger,
     "gitDecoration.untrackedResourceForeground": theme.levels.success,
