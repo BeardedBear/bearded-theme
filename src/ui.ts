@@ -1,7 +1,11 @@
 import { colord as c } from "colord";
 import { Theme, UIKey } from "./typing";
 
-export default function ui(theme: Theme, hc?: boolean): Partial<UIKey> {
+export default function ui(
+  theme: Theme,
+  hc?: boolean,
+  light?: boolean,
+): Partial<UIKey> {
   return {
     contrastBorder: theme.ui.uiborder,
     // activityBar
@@ -190,32 +194,28 @@ export default function ui(theme: Theme, hc?: boolean): Partial<UIKey> {
 
     // list
     "list.dropBackground": `${theme.ui.primary}15`,
-    disabledForeground: c(theme.ui.default).alpha(0.4).toHex(),
+    disabledForeground: c(theme.ui.default).alpha(0.3).toHex(),
     "list.focusBackground": `${theme.ui.primary}40`,
     "list.focusForeground": theme.ui.defaultMain,
     "list.errorForeground": theme.levels.danger,
     "list.warningForeground": theme.levels.warning,
     "list.highlightForeground": theme.colors.yellow,
     "list.activeSelectionForeground": theme.ui.default,
-    "list.activeSelectionBackground": c(theme.ui.primaryalt)
-      .lighten(0.1)
-      .alpha(0.45)
-      .toHex(),
-    "list.inactiveSelectionBackground": c(theme.ui.primaryalt)
-      .lighten(0.1)
-      .alpha(0.25)
-      .toHex(),
-    "list.hoverBackground": c(theme.ui.primaryalt)
-      .lighten(0.1)
-      .alpha(0.2)
-      .toHex(),
+    "list.activeSelectionBackground": light
+      ? c(theme.ui.defaultalt).alpha(0.2).toHex()
+      : c(theme.ui.primaryalt).lighten(0.1).alpha(0.45).toHex(),
+    "list.inactiveSelectionBackground": light
+      ? c(theme.ui.defaultalt).alpha(0.12).toHex()
+      : c(theme.ui.primaryalt).lighten(0.1).alpha(0.25).toHex(),
+    "list.hoverBackground": light
+      ? c(theme.ui.defaultalt).alpha(0.05).toHex()
+      : c(theme.ui.primaryalt).lighten(0.1).alpha(0.2).toHex(),
     "list.hoverForeground": theme.ui.default,
     "quickInputTitle.background": theme.ui.uibackgroundalt,
     "quickInputList.focusForeground": theme.ui.default,
-    "quickInputList.focusBackground": c(theme.ui.primaryalt)
-      .lighten(0.15)
-      .alpha(0.45)
-      .toHex(),
+    "quickInputList.focusBackground": light
+      ? c(theme.ui.defaultalt).alpha(0.2).toHex()
+      : c(theme.ui.primaryalt).lighten(0.15).alpha(0.45).toHex(),
     "gitDecoration.modifiedResourceForeground": theme.levels.info,
     "gitDecoration.deletedResourceForeground": theme.levels.danger,
     "gitDecoration.untrackedResourceForeground": theme.levels.success,
