@@ -1,4 +1,4 @@
-import { makeMainColors } from "../helper";
+import { makeMainColorsDark } from "../helper";
 import { Theme, ThemeColors } from "../typing";
 
 const colors: ThemeColors = {
@@ -22,13 +22,13 @@ const levelColors = {
 };
 
 export const stainedPurple: Theme = {
-  ui: makeMainColors({ base: "#20192b", primary: "#a948ef" }),
+  ui: makeMainColorsDark({ base: "#20192b", primary: "#a948ef" }),
   colors,
   levels: levelColors,
 };
 
 export const stainedBlue: Theme = {
-  ui: makeMainColors({ base: "#121726", primary: "#3A7FFF" }),
+  ui: makeMainColorsDark({ base: "#121726", primary: "#3A7FFF" }),
   colors,
   levels: levelColors,
 };

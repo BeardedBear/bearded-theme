@@ -1,4 +1,4 @@
-import { colord } from "colord";
+import { colord as c } from "colord";
 import { Theme, UIKey } from "./typing";
 
 export default function ui(theme: Theme, hc?: boolean): Partial<UIKey> {
@@ -190,29 +190,29 @@ export default function ui(theme: Theme, hc?: boolean): Partial<UIKey> {
 
     // list
     "list.dropBackground": `${theme.ui.primary}15`,
-    disabledForeground: colord(theme.ui.default).alpha(0.4).toHex(),
+    disabledForeground: c(theme.ui.default).alpha(0.4).toHex(),
     "list.focusBackground": `${theme.ui.primary}40`,
     "list.focusForeground": theme.ui.defaultMain,
     "list.errorForeground": theme.levels.danger,
     "list.warningForeground": theme.levels.warning,
     "list.highlightForeground": theme.colors.yellow,
     "list.activeSelectionForeground": theme.ui.default,
-    "list.activeSelectionBackground": colord(theme.ui.primaryalt)
+    "list.activeSelectionBackground": c(theme.ui.primaryalt)
       .lighten(0.1)
       .alpha(0.45)
       .toHex(),
-    "list.inactiveSelectionBackground": colord(theme.ui.primaryalt)
+    "list.inactiveSelectionBackground": c(theme.ui.primaryalt)
       .lighten(0.1)
       .alpha(0.25)
       .toHex(),
-    "list.hoverBackground": colord(theme.ui.primaryalt)
+    "list.hoverBackground": c(theme.ui.primaryalt)
       .lighten(0.1)
       .alpha(0.2)
       .toHex(),
     "list.hoverForeground": theme.ui.default,
     "quickInputTitle.background": theme.ui.uibackgroundalt,
     "quickInputList.focusForeground": theme.ui.default,
-    "quickInputList.focusBackground": colord(theme.ui.primaryalt)
+    "quickInputList.focusBackground": c(theme.ui.primaryalt)
       .lighten(0.15)
       .alpha(0.45)
       .toHex(),

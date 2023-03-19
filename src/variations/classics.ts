@@ -1,4 +1,4 @@
-import { makeMainColors } from "../helper";
+import { makeMainColorsDark, makeMainColorsLight } from "../helper";
 import { Theme, ThemeColors, ThemeLevels } from "../typing";
 
 const classicsColors: ThemeColors = {
@@ -14,7 +14,7 @@ const classicsColors: ThemeColors = {
   yellow: "#c9a022",
 };
 
-const levelColors: ThemeLevels = {
+const levels: ThemeLevels = {
   danger: classicsColors.red,
   success: classicsColors.green,
   warning: classicsColors.yellow,
@@ -22,23 +22,16 @@ const levelColors: ThemeLevels = {
 };
 
 export const anthracite: Theme = {
-  ui: makeMainColors({ base: "#181a1f", primary: "#a2abb6" }),
+  ui: makeMainColorsDark({ base: "#181a1f", primary: "#a2abb6" }),
   colors: classicsColors,
-  levels: levelColors,
+  levels,
 };
 
 export const light: Theme = {
-  ui: {
+  ui: makeMainColorsLight({
+    base: "#f3f4f5",
     primary: "#52C1DA",
-    primaryalt: "#ffffff",
-    uiborder: "#C5CCCE",
-    uibackground: "#f4f4f4",
-    uibackgroundmid: "#f0f0f0",
-    uibackgroundalt: "#EBEBEB",
-    default: "#455059",
-    defaultMain: "#363E45",
-    defaultalt: "#8b99a7",
-  },
+  }),
   colors: {
     blue: "#0f8fe4",
     green: "#18ac31",
@@ -51,5 +44,5 @@ export const light: Theme = {
     turquoize: "#00aaaa",
     yellow: "#d49408",
   },
-  levels: levelColors,
+  levels,
 };

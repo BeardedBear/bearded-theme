@@ -1,4 +1,4 @@
-import { makeMainColors } from "../helper";
+import { makeMainColorsDark, makeMainColorsLight } from "../helper";
 import { Theme, ThemeColors, ThemeLevels } from "../typing";
 
 const solarizedColors: ThemeColors = {
@@ -22,29 +22,27 @@ const solarizedLevels: ThemeLevels = {
 };
 
 export const solarizedDark: Theme = {
-  ui: makeMainColors({ base: "#132c34", primary: "#47cfc4" }),
+  ui: makeMainColorsDark({ base: "#132c34", primary: "#47cfc4" }),
   colors: solarizedColors,
   levels: solarizedLevels,
 };
 
 export const solarizedReversed: Theme = {
-  ui: makeMainColors({ base: "#102128", primary: "#47cfc4", reversed: true }),
+  ui: makeMainColorsDark({
+    base: "#102128",
+    primary: "#47cfc4",
+    reversed: true,
+  }),
   colors: solarizedColors,
   levels: solarizedLevels,
 };
 
 export const solarizedLight: Theme = {
-  ui: {
+  ui: makeMainColorsLight({
+    base: "#fdf6e3",
     primary: "#2aa198",
-    primaryalt: "#fff9ea",
-    uiborder: "#d8cfbb",
-    uibackground: "#fdf6e3",
-    uibackgroundmid: "#f6efdc",
-    uibackgroundalt: "#eee8d5",
-    default: "#073642",
-    defaultMain: "#0B4A5A",
-    defaultalt: "#657b83",
-  },
+    desaturated: true,
+  }),
   colors: solarizedColors,
   levels: solarizedLevels,
 };
@@ -65,7 +63,7 @@ const oceanicColors: ThemeColors = {
 };
 
 export const oceanic: Theme = {
-  ui: makeMainColors({
+  ui: makeMainColorsDark({
     base: "#1a2b34",
     primary: "#97c892",
     primaryAlt: "#284450",
@@ -79,7 +77,11 @@ export const oceanic: Theme = {
   },
 };
 export const oceanicReverded: Theme = {
-  ui: makeMainColors({ base: "#152229", primary: "#97c892", reversed: true }),
+  ui: makeMainColorsDark({
+    base: "#152229",
+    primary: "#97c892",
+    reversed: true,
+  }),
   colors: oceanicColors,
   levels: {
     danger: oceanicColors.salmon,

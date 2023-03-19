@@ -1,4 +1,4 @@
-import { makeMainColors } from "../helper";
+import { makeMainColorsDark } from "../helper";
 import { Theme, ThemeColors, ThemeLevels } from "../typing";
 
 const base = "#111418";
@@ -23,31 +23,31 @@ const blackLevels: ThemeLevels = {
 };
 
 export const blackAndGold: Theme = {
-  ui: makeMainColors({ base, primary: blackColors.yellow }),
+  ui: makeMainColorsDark({ base, primary: blackColors.yellow }),
   colors: blackColors,
   levels: blackLevels,
 };
 
 export const blackAndRuby: Theme = {
-  ui: makeMainColors({ base, primary: blackColors.salmon }),
+  ui: makeMainColorsDark({ base, primary: blackColors.salmon }),
   colors: blackColors,
   levels: blackLevels,
 };
 
 export const blackAndEmerald: Theme = {
-  ui: makeMainColors({ base, primary: blackColors.turquoize }),
+  ui: makeMainColorsDark({ base, primary: blackColors.turquoize }),
   colors: blackColors,
   levels: blackLevels,
 };
 
 export const blackAndDiamond: Theme = {
-  ui: makeMainColors({ base, primary: blackColors.blue }),
+  ui: makeMainColorsDark({ base, primary: blackColors.blue }),
   colors: blackColors,
   levels: blackLevels,
 };
 
 export const blackAndAmethyst: Theme = {
-  ui: makeMainColors({ base, primary: blackColors.purple }),
+  ui: makeMainColorsDark({ base, primary: blackColors.purple }),
   colors: blackColors,
   levels: blackLevels,
 };

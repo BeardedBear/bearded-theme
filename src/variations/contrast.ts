@@ -1,4 +1,4 @@
-import { makeMainColors } from "../helper";
+import { makeMainColorsDark } from "../helper";
 import { Theme, ThemeColors, ThemeLevels } from "../typing";
 
 const colors: ThemeColors = {
@@ -22,19 +22,19 @@ const arcLevels: ThemeLevels = {
 };
 
 export const HCEbony: Theme = {
-  ui: makeMainColors({ base: "#181820", primary: "#dbdeea" }),
+  ui: makeMainColorsDark({ base: "#181820", primary: "#dbdeea" }),
   colors,
   levels: arcLevels,
 };
 
 export const HCMidnightVoid: Theme = {
-  ui: makeMainColors({ base: "#151f27", primary: "#dbefff" }),
+  ui: makeMainColorsDark({ base: "#151f27", primary: "#dbefff" }),
   colors,
   levels: arcLevels,
 };
 
 export const HCWonderlandWood: Theme = {
-  ui: makeMainColors({
+  ui: makeMainColorsDark({
     base: "#1F1D36",
     primary: "#fbe7c3",
     primaryAlt: "#52426a",
@@ -59,7 +59,7 @@ export const HCWonderlandWood: Theme = {
   },
 };
 export const HCBrewingStorm: Theme = {
-  ui: makeMainColors({
+  ui: makeMainColorsDark({
     base: "#0c2a42",
     primary: "#9dffd9",
     primaryAlt: "#2a5a5c",
@@ -117,7 +117,7 @@ export const HCFlurry: Theme = {
 };
 
 export const Minuit: Theme = {
-  ui: makeMainColors({
+  ui: makeMainColorsDark({
     base: "#1C1827",
     primary: "#ecc48c",
     primaryAlt: "#635345",
@@ -142,7 +142,7 @@ export const Minuit: Theme = {
   },
 };
 export const ChocolateEspresso: Theme = {
-  ui: makeMainColors({
+  ui: makeMainColorsDark({
     base: "#2e2424",
     primary: "#f69c95",
     primaryAlt: "#61413b",

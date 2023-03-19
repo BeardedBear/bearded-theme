@@ -1,4 +1,4 @@
-import { makeMainColors } from "../helper";
+import { makeMainColorsDark } from "../helper";
 import { Theme, ThemeColors, ThemeLevels } from "../typing";
 
 const arcColors: ThemeColors = {
@@ -22,31 +22,35 @@ const arcLevels: ThemeLevels = {
 };
 
 export const arc: Theme = {
-  ui: makeMainColors({ base: "#1c2433", primary: "#8196b5" }),
+  ui: makeMainColorsDark({ base: "#1c2433", primary: "#8196b5" }),
   colors: arcColors,
   levels: arcLevels,
 };
 
 export const arcEolstorm: Theme = {
-  ui: makeMainColors({ base: "#222A38", primary: "#9DACC3" }),
+  ui: makeMainColorsDark({ base: "#222A38", primary: "#9DACC3" }),
   colors: arcColors,
   levels: arcLevels,
 };
 
 export const arcBlueBerry: Theme = {
-  ui: makeMainColors({ base: "#111422", primary: "#8eb0e6" }),
+  ui: makeMainColorsDark({ base: "#111422", primary: "#8eb0e6" }),
   colors: arcColors,
   levels: arcLevels,
 };
 
 export const arcEggplant: Theme = {
-  ui: makeMainColors({ base: "#181421", primary: "#9698d8" }),
+  ui: makeMainColorsDark({ base: "#181421", primary: "#9698d8" }),
   colors: arcColors,
   levels: arcLevels,
 };
 
 export const arcReversed: Theme = {
-  ui: makeMainColors({ base: "#161c28", primary: "#8196b5", reversed: true }),
+  ui: makeMainColorsDark({
+    base: "#161c28",
+    primary: "#8196b5",
+    reversed: true,
+  }),
   colors: arcColors,
   levels: arcLevels,
 };

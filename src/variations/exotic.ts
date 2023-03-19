@@ -1,4 +1,4 @@
-import { makeMainColors } from "../helper";
+import { makeMainColorsDark, makeMainColorsLight } from "../helper";
 import { Theme, ThemeLevels } from "../typing";
 
 const levels: ThemeLevels = {
@@ -9,7 +9,7 @@ const levels: ThemeLevels = {
 };
 
 export const earth: Theme = {
-  ui: makeMainColors({
+  ui: makeMainColorsDark({
     base: "#221b1b",
     primary: "#d35386",
     primaryAlt: "#40222e",
@@ -31,7 +31,7 @@ export const earth: Theme = {
 };
 
 export const coffee: Theme = {
-  ui: makeMainColors({
+  ui: makeMainColorsDark({
     base: "#292423",
     primary: "#F09177",
     primaryAlt: "#51403b",
@@ -58,7 +58,7 @@ export const coffee: Theme = {
 };
 
 export const coffeeReversed: Theme = {
-  ui: makeMainColors({
+  ui: makeMainColorsDark({
     base: "#201c1b",
     primary: "#F09177",
     primaryAlt: "#51403b",
@@ -86,17 +86,10 @@ export const coffeeReversed: Theme = {
 };
 
 export const coffeeCream: Theme = {
-  ui: {
+  ui: makeMainColorsLight({
+    base: "#EAE4E1",
     primary: "#D3694C",
-    primaryalt: "#F1EBEA",
-    uiborder: "#BDAEA8",
-    uibackground: "#EAE4E1",
-    uibackgroundmid: "#E7E0DD",
-    uibackgroundalt: "#E4DCD8",
-    default: "#39332f",
-    defaultMain: "#544946",
-    defaultalt: "#AB9D98",
-  },
+  }),
   colors: {
     blue: "#009DB5",
     green: "#51A200",
@@ -118,7 +111,7 @@ export const coffeeCream: Theme = {
 };
 
 export const voided: Theme = {
-  ui: makeMainColors({ base: "#171322", primary: "#7A63ED" }),
+  ui: makeMainColorsDark({ base: "#171322", primary: "#7A63ED" }),
   colors: {
     blue: "#7A63ED",
     green: "#6DBBFF",

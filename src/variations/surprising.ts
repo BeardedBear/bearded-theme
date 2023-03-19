@@ -1,4 +1,4 @@
-import { makeMainColors } from "../helper";
+import { makeMainColorsDark } from "../helper";
 import { Theme, ThemeColors, ThemeLevels } from "../typing";
 
 const surprisingColors = (primary: string): ThemeColors => {
@@ -25,7 +25,7 @@ const surprisingLevels: ThemeLevels = {
 
 const primarySurprisingEggplant = "#d24e4e";
 export const surprisingEggplant: Theme = {
-  ui: makeMainColors({
+  ui: makeMainColorsDark({
     base: "#1d1426",
     primary: primarySurprisingEggplant,
     primaryAlt: "#441f30",
@@ -36,7 +36,7 @@ export const surprisingEggplant: Theme = {
 
 const primarySurprisingBlueberry = "#c93e71";
 export const surprisingBlueberry: Theme = {
-  ui: makeMainColors({
+  ui: makeMainColorsDark({
     base: "#101a29",
     primary: primarySurprisingBlueberry,
     primaryAlt: "#441f30",
@@ -47,7 +47,7 @@ export const surprisingBlueberry: Theme = {
 
 const primarySurprisingWatermelon = "#da6c62";
 export const surprisingWatermelon: Theme = {
-  ui: makeMainColors({
+  ui: makeMainColorsDark({
     base: "#142326",
     primary: primarySurprisingWatermelon,
     primaryAlt: "#5f3333",

@@ -1,4 +1,4 @@
-import { makeMainColors } from "../helper";
+import { makeMainColorsDark } from "../helper";
 import { Theme, ThemeColors, ThemeLevels } from "../typing";
 
 const colors: ThemeColors = {
@@ -22,31 +22,35 @@ const levels: ThemeLevels = {
 };
 
 export const monokaiTerra: Theme = {
-  ui: makeMainColors({ base: "#262329", primary: "#b0a2a6" }),
+  ui: makeMainColorsDark({ base: "#262329", primary: "#b0a2a6" }),
   colors,
   levels,
 };
 
 export const monokaiMetallian: Theme = {
-  ui: makeMainColors({ base: "#1e212b", primary: "#98a2b5" }),
+  ui: makeMainColorsDark({ base: "#1e212b", primary: "#98a2b5" }),
   colors,
   levels,
 };
 
 export const monokaiStone: Theme = {
-  ui: makeMainColors({ base: "#2A2D33", primary: "#9AA2A6" }),
+  ui: makeMainColorsDark({ base: "#2A2D33", primary: "#9AA2A6" }),
   colors,
   levels,
 };
 
 export const monokaiBlack: Theme = {
-  ui: makeMainColors({ base: "#141414", primary: "#8f8f8f" }),
+  ui: makeMainColorsDark({ base: "#141414", primary: "#8f8f8f" }),
   colors,
   levels,
 };
 
 export const monokaiReversed: Theme = {
-  ui: makeMainColors({ base: "#171921", primary: "#98a2b5", reversed: true }),
+  ui: makeMainColorsDark({
+    base: "#171921",
+    primary: "#98a2b5",
+    reversed: true,
+  }),
   colors,
   levels,
 };
