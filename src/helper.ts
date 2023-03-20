@@ -36,7 +36,7 @@ export function makeMainColorsDark({
       : c(base).lighten(0.7).desaturate(sat).toHex(),
     defaultMain: fontTeinted
       ? c(base).lighten(0.55).saturate(0.07).toHex()
-      : c(base).lighten(0.65).desaturate(sat).toHex(),
+      : c(base).lighten(0.6).desaturate(sat).toHex(),
     defaultalt: fontTeinted
       ? c(base).lighten(0.15).saturate(0.05).toHex()
       : c(base).lighten(0.25).desaturate(sat).toHex(),

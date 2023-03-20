@@ -157,9 +157,7 @@ export default function ui(
     "editorInfo.border": hc && "#00000000",
     "editorGutter.commentRangeForeground": theme.ui.primaryalt,
     "sash.hoverBorder": `${theme.ui.primary}50`,
-    "editorRuler.foreground": light
-      ? c(theme.ui.defaultalt).alpha(0.2).toHex()
-      : c(theme.ui.primary).alpha(0.1).toHex(),
+    "editorRuler.foreground": c(theme.ui.defaultalt).alpha(0.2).toHex(),
 
     // find
     "editorWarning.foreground": theme.colors.yellow,
@@ -211,12 +209,13 @@ export default function ui(
     "list.inactiveSelectionBackground": light
       ? c(theme.ui.defaultalt).alpha(0.12).toHex()
       : c(theme.ui.primaryalt).lighten(0.1).alpha(0.25).toHex(),
+    "list.inactiveSelectionForeground": theme.ui.default,
     "list.hoverBackground": light
       ? c(theme.ui.defaultalt).alpha(0.05).toHex()
-      : c(theme.ui.primaryalt).lighten(0.1).alpha(0.2).toHex(),
+      : c(theme.ui.primaryalt).lighten(0.05).alpha(0.2).toHex(),
     "list.hoverForeground": light
       ? c(theme.ui.defaultalt).darken(0.8).toHex()
-      : c(theme.ui.primaryalt).lighten(0.5).desaturate(0.1).toHex(),
+      : c(theme.ui.primaryalt).lighten(0.7).desaturate(0.1).toHex(),
     "quickInputTitle.background": theme.ui.uibackgroundalt,
     "quickInputList.focusForeground": light
       ? theme.ui.defaultMain
