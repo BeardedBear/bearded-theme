@@ -1,5 +1,18 @@
 # Changelog for Bearded Theme
 
+## 8.0.0 - 2023-03-20
+
+### Enhancements
+
+- Complete refactorisation for building UI colors (some variations may have some small differences from previous versions, but they are now all based on the same foundation, and creating new variations will now be much easier to do)
+- All focus and hover background color for menus and quickmenus are now consistents
+- All foreground color for menus and quickmenus are now consistents
+- Better order for brackets color pairing
+
+### Fixes
+
+- Fix ruler color for light variations
+
 ## 7.6.3 - 2023-03-14
 
 ### Fixes
