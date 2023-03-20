@@ -17,7 +17,7 @@ import {
   blackAndGold,
   blackAndRuby,
 } from "./variations/black";
-import { buche } from "./variations/buche";
+import { buche, bucheHC, bucheLight } from "./variations/buche";
 import { anthracite, light } from "./variations/classics";
 import {
   ChocolateEspresso,
@@ -153,3 +153,5 @@ makeTheme("hc-chocolateespresso", ChocolateEspresso, { hc: true });
 
 // Buche
 makeTheme("buche", buche, {});
+makeTheme("buche-light", bucheLight, { light: true });
+makeTheme("hc-buche", bucheHC, { hc: true });

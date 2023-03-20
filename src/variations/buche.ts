@@ -1,3 +1,4 @@
+import { makeMainColorsDark } from "../helper";
 import { Theme } from "../typing";
 
 /*
@@ -49,5 +50,63 @@ export const buche: Theme = {
     success: "#5fee9b", // C'est clair Luc ne pas ?
     warning: "#ffae82", // C'est clair Luc ne pas ?
     info: "#8ad0ff", // C'est clair Luc ne pas ?
+  },
+};
+
+export const bucheLight: Theme = {
+  ui: {
+    primary: "#444c54",
+    primaryalt: "#f9fbfe",
+    uiborder: "#c2c8ce",
+    uibackground: "#f5f8fc",
+    uibackgroundmid: "#f0f2f5",
+    uibackgroundalt: "#EAECEE",
+    default: "#272d34",
+    defaultMain: "#3f4750",
+    defaultalt: "#898989",
+  },
+  colors: {
+    blue: "#0aa3d6",
+    green: "#41ad4e",
+    greenAlt: "#589f11",
+    orange: "#e3946a",
+    pink: "#f08ad9",
+    purple: "#b377e3",
+    red: "#ee5f50",
+    salmon: "#ed7b89",
+    turquoize: "#00b696",
+    yellow: "#e39c03",
+  },
+  levels: {
+    danger: "#ee5f50",
+    success: "#41ad4e",
+    warning: "#e3946a",
+    info: "#0aa3d6",
+  },
+};
+
+export const bucheHC: Theme = {
+  ui: makeMainColorsDark({
+    base: "#0c2a42",
+    primary: "#9dffd9",
+    primaryAlt: "#2a5a5c",
+  }),
+  colors: {
+    blue: "#82c4ff",
+    green: "#9dffbd",
+    greenAlt: "#A4EF58",
+    orange: "#ffaf94",
+    pink: "#f1c6ee",
+    purple: "#b8b3ff",
+    red: "#ff7e70",
+    salmon: "#f994bf",
+    turquoize: "#22D3B1",
+    yellow: "#fff0a6",
+  },
+  levels: {
+    danger: "#ff7e70",
+    success: "#9dffbd",
+    warning: "#ffaf94",
+    info: "#82c4ff",
   },
 };

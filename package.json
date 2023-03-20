@@ -276,6 +276,16 @@
         "label": "Bearded Theme Buche",
         "uiTheme": "vs-dark",
         "path": "./themes/bearded-theme-buche.json"
+      },
+      {
+        "label": "Bearded Theme Buche Light",
+        "uiTheme": "hc-light",
+        "path": "./themes/bearded-theme-buche-light.json"
+      },
+      {
+        "label": "Bearded Theme Buche HC",
+        "uiTheme": "hc-black",
+        "path": "./themes/bearded-theme-hc-buche.json"
       }
     ]
   },
