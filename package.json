@@ -3,7 +3,7 @@
   "displayName": "Bearded Theme",
   "description": "The theme with a long beard.",
   "publisher": "BeardedBear",
-  "version": "8.0.0",
+  "version": "8.1.0",
   "engines": {
     "vscode": "^1.69.0"
   },
@@ -271,6 +271,11 @@
         "label": "Bearded Theme HC Flurry",
         "uiTheme": "hc-light",
         "path": "./themes/bearded-theme-hc-flurry.json"
+      },
+      {
+        "label": "Bearded Theme Paper",
+        "uiTheme": "hc-light",
+        "path": "./themes/bearded-theme-paper.json"
       }
     ]
   },

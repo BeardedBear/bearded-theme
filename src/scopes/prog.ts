@@ -74,6 +74,8 @@ export const keyword = [
   "keyword.operator.variadic.php",
   "keyword.operator.nullable-type.php",
   "keyword.other.use-as.php",
+  "keyword.import.go",
+  "keyword.operator.address.go",
 ];
 
 export const constants = ["constant", "support.constant.core.php"];
@@ -100,7 +102,10 @@ export const decorators = [
   "variable.parameter.gdscript",
 ];
 
-export const exportScope = ["keyword.control.export", "support.type.object.module"];
+export const exportScope = [
+  "keyword.control.export",
+  "support.type.object.module",
+];
 
 export const functions = [
   // "entity",
@@ -143,9 +148,16 @@ export const importScope = [
   "keyword.other.import.java",
 ];
 
-export const dataProperty = ["keyword.other.definition.ini", "support.type.property-name", "entity.name.tag.yaml"];
+export const dataProperty = [
+  "keyword.other.definition.ini",
+  "support.type.property-name",
+  "entity.name.tag.yaml",
+];
 
-export const objectProperty = ["meta.object-literal.key", "variable.object.property"];
+export const objectProperty = [
+  "meta.object-literal.key",
+  "variable.object.property",
+];
 
 export const operators = [
   "keyword.operator.comparison",
@@ -269,6 +281,8 @@ export const storages = [
   "source.graphql meta.enum.graphql keyword.enum.graphql",
   "source.graphql meta.fragment.graphql keyword.fragment.graphql",
   "storage.type.trait.php",
+  "keyword.type.go",
+  "keyword.var.go",
 ];
 
 export const strings = [

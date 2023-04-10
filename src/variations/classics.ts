@@ -46,3 +46,41 @@ export const light: Theme = {
   },
   levels,
 };
+// export const paper: Theme = {
+//   ui: makeMainColorsLight({
+//     base: "#efe9da",
+//     primary: "#be7809",
+//   }),
+//   colors: {
+//     blue: "#0f8fe4",
+//     green: "#18ac31",
+//     greenAlt: "#6b8d16",
+//     orange: "#dd7404",
+//     pink: "#dd39bf",
+//     purple: "#9244ec",
+//     red: "#df3c3c",
+//     salmon: "#ec4476",
+//     turquoize: "#00aaaa",
+//     yellow: "#d49408",
+//   },
+//   levels,
+// };
+export const paper: Theme = {
+  ui: makeMainColorsLight({
+    base: "#f3eae3",
+    primary: "#d1175b",
+  }),
+  colors: {
+    blue: "#0f8fe4",
+    green: "#18ac31",
+    greenAlt: "#6b8d16",
+    orange: "#dd7404",
+    pink: "#dd39bf",
+    purple: "#9244ec",
+    red: "#df3c3c",
+    salmon: "#ec4476",
+    turquoize: "#00aaaa",
+    yellow: "#d49408",
+  },
+  levels,
+};

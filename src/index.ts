@@ -17,7 +17,7 @@ import {
   blackAndGold,
   blackAndRuby,
 } from "./variations/black";
-import { anthracite, light } from "./variations/classics";
+import { anthracite, light, paper } from "./variations/classics";
 import {
   ChocolateEspresso,
   HCBrewingStorm,
@@ -135,6 +135,7 @@ makeTheme("arc-reversed", arcReversed, {});
 // Classics
 makeTheme("classics-anthracite", anthracite, {});
 makeTheme("classics-light", light, { light: true });
+makeTheme("paper", paper, { light: true });
 
 // Surprising
 makeTheme("surprising-eggplant", surprisingEggplant, {});

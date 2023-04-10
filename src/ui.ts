@@ -7,7 +7,7 @@ export default function ui(
   light?: boolean,
 ): Partial<UIKey> {
   return {
-    contrastBorder: theme.ui.uiborder,
+    contrastBorder: "#00000000",
     // activityBar
 
     "activityBar.background": theme.ui.uibackgroundalt,
@@ -96,14 +96,16 @@ export default function ui(
       ? "#00000000"
       : `${theme.levels.danger}25`,
     "diffEditor.diagonalFill": `${theme.ui.uiborder}80`,
-    "diffEditor.insertedTextBorder": hc && `${theme.levels.success}30`,
-    "diffEditor.removedTextBorder": hc && `${theme.levels.danger}40`,
+    "diffEditor.insertedTextBorder": "#00000000",
+    "diffEditor.removedTextBorder": "#00000000",
+    // "diffEditor.insertedTextBorder": hc && `${theme.levels.success}30`,
+    // "diffEditor.removedTextBorder": hc && `${theme.levels.danger}40`,
     "diffEditorGutter.insertedLineBackground": "#00000000",
     "diffEditorGutter.removedLineBackground": "#00000000",
-    "diffEditor.insertedLineBackground": hc && `${theme.levels.success}20`,
-    "diffEditor.removedLineBackground": hc && `${theme.levels.danger}25`,
-    "diffEditorOverview.insertedForeground": hc && `${theme.levels.success}25`,
-    "diffEditorOverview.removedForeground": hc && `${theme.levels.danger}30`,
+    "diffEditor.insertedLineBackground": `${theme.levels.success}20`,
+    "diffEditor.removedLineBackground": `${theme.levels.danger}25`,
+    "diffEditorOverview.insertedForeground": `${theme.levels.success}25`,
+    "diffEditorOverview.removedForeground": `${theme.levels.danger}30`,
     // Inlay hints
     "editorInlayHint.background": theme.ui.defaultMain + 20,
     "editorInlayHint.foreground": theme.ui.defaultMain + "90",
@@ -353,7 +355,6 @@ export default function ui(
     "tab.activeBorderTop": theme.ui.primary,
     "tab.activeBorder": theme.ui.uibackground,
     "tab.border": theme.ui.uiborder,
-    "tab.hoverBorder": "#00000000",
     "tab.hoverBackground": `${theme.ui.uibackground}cc`,
     "tab.unfocusedHoverBackground": `${theme.ui.primary}10`,
     "tab.unfocusedHoverBorder": "#00000000",
