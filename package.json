@@ -208,6 +208,16 @@
         "path": "./themes/bearded-theme-will.json"
       },
       {
+        "label": "Bearded Theme Gold D Raynh",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-gold-d-raynh.json"
+      },
+      {
+        "label": "Bearded Theme Mintshake D Raynh",
+        "uiTheme": "vs",
+        "path": "./themes/bearded-theme-gold-d-raynh-light.json"
+      },
+      {
         "label": "Bearded Theme Earth",
         "uiTheme": "vs-dark",
         "path": "./themes/bearded-theme-exotic-earth.json"
@@ -311,6 +321,11 @@
         "label": "Bearded Theme Milkshake Mango",
         "uiTheme": "hc-light",
         "path": "./themes/bearded-theme-milkshake-mango.json"
+      },
+      {
+        "label": "Bearded Theme Milkshake Mint",
+        "uiTheme": "hc-light",
+        "path": "./themes/bearded-theme-milkshake-mint.json"
       }
     ]
   },

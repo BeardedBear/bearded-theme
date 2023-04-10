@@ -31,7 +31,7 @@ import {
   earth,
   voided,
 } from "./variations/exotic";
-import { will } from "./variations/feat";
+import { goldDRaynh, goldDRaynhLight, will } from "./variations/feat";
 import {
   ChocolateEspresso,
   HCBrewingStorm,
@@ -44,6 +44,7 @@ import {
 import {
   milkshakeBlueberry,
   milkshakeMango,
+  milkshakeMint,
   milkshakeRaspberry,
 } from "./variations/milkshake";
 import {
@@ -144,8 +145,12 @@ makeTheme("coffee-reversed", coffeeReversed, {});
 makeTheme("coffee-cream", coffeeCream, { light: true });
 makeTheme("exotic-void", voided, {});
 makeTheme("exotic-altica", altica, {});
-makeTheme("will", will, {});
 makeTheme("arc-reversed", arcReversed, {});
+
+// Feat
+makeTheme("will", will, {});
+makeTheme("gold-d-raynh", goldDRaynh, {});
+makeTheme("gold-d-raynh-light", goldDRaynhLight, { light: true });
 
 // Classics
 makeTheme("classics-anthracite", anthracite, {});
@@ -169,3 +174,4 @@ makeTheme("hc-chocolateespresso", ChocolateEspresso, { hc: true });
 makeTheme("milkshake-raspberry", milkshakeRaspberry, { hc: true, light: true });
 makeTheme("milkshake-blueberry", milkshakeBlueberry, { hc: true, light: true });
 makeTheme("milkshake-mango", milkshakeMango, { hc: true, light: true });
+makeTheme("milkshake-mint", milkshakeMint, { hc: true, light: true });

@@ -49,6 +49,15 @@ export const milkshakeMango: Theme = {
   levels,
 };
 
+export const milkshakeMint: Theme = {
+  ui: makeMainColorsLight({
+    base: "#e1f4e4",
+    primary: "#3dd86e",
+  }),
+  colors,
+  levels,
+};
+
 export const paper: Theme = {
   ui: makeMainColorsLight({
     base: "#efe9da",
