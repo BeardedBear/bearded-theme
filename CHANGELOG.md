@@ -2,15 +2,16 @@
 
 ## 8.1.0 - 2023-04-??
 
-### Enhancements
+### New features
+
+- Add 5 new variations : Gems Soft
+- Add 5 new variations : Milkshake
 
 ### Fixes
 
 - Fix border bottom on active tab hover
 - Fix background colors for diffs
 - Fix unwanted border on buttons
-
-### New features
 
 ## 8.0.0 - 2023-03-20
 

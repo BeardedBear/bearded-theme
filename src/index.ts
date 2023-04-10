@@ -12,10 +12,15 @@ import {
 } from "./variations/arc";
 import {
   blackAndAmethyst,
+  blackAndAmethystSoft,
   blackAndDiamond,
+  blackAndDiamondSoft,
   blackAndEmerald,
+  blackAndEmeraldSoft,
   blackAndGold,
+  blackAndGoldSoft,
   blackAndRuby,
+  blackAndRubySoft,
 } from "./variations/black";
 import { anthracite, light } from "./variations/classics";
 import {
@@ -36,7 +41,11 @@ import {
   HCWonderlandWood,
   Minuit,
 } from "./variations/hc";
-import { milkshakeBlueberry, milkshakeRaspberry } from "./variations/milkshake";
+import {
+  milkshakeBlueberry,
+  milkshakeMango,
+  milkshakeRaspberry,
+} from "./variations/milkshake";
 import {
   monokaiBlack,
   monokaiMetallian,
@@ -102,10 +111,15 @@ makeTheme("solarized-reversed", solarizedReversed, {});
 
 // Black
 makeTheme("black-amethyst", blackAndAmethyst, {});
+makeTheme("black-amethyst-soft", blackAndAmethystSoft, {});
 makeTheme("black-diamond", blackAndDiamond, {});
+makeTheme("black-diamond-soft", blackAndDiamondSoft, {});
 makeTheme("black-emerald", blackAndEmerald, {});
+makeTheme("black-emerald-soft", blackAndEmeraldSoft, {});
 makeTheme("black-gold", blackAndGold, {});
+makeTheme("black-gold-soft", blackAndGoldSoft, {});
 makeTheme("black-ruby", blackAndRuby, {});
+makeTheme("black-ruby-soft", blackAndRubySoft, {});
 
 // Stained
 makeTheme("stained-purple", stainedPurple, {});
@@ -154,3 +168,4 @@ makeTheme("hc-chocolateespresso", ChocolateEspresso, { hc: true });
 // Milkshake
 makeTheme("milkshake-raspberry", milkshakeRaspberry, { hc: true, light: true });
 makeTheme("milkshake-blueberry", milkshakeBlueberry, { hc: true, light: true });
+makeTheme("milkshake-mango", milkshakeMango, { hc: true, light: true });

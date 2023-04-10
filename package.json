@@ -133,9 +133,19 @@
         "path": "./themes/bearded-theme-black-amethyst.json"
       },
       {
+        "label": "Bearded Theme Black & Amethyst Soft",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-black-amethyst-soft.json"
+      },
+      {
         "label": "Bearded Theme Black & Diamond",
         "uiTheme": "vs-dark",
         "path": "./themes/bearded-theme-black-diamond.json"
+      },
+      {
+        "label": "Bearded Theme Black & Diamond Soft",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-black-diamond-soft.json"
       },
       {
         "label": "Bearded Theme Black & Emerald",
@@ -143,14 +153,29 @@
         "path": "./themes/bearded-theme-black-emerald.json"
       },
       {
+        "label": "Bearded Theme Black & Emerald Soft",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-black-emerald-soft.json"
+      },
+      {
         "label": "Bearded Theme Black & Gold",
         "uiTheme": "vs-dark",
         "path": "./themes/bearded-theme-black-gold.json"
       },
       {
+        "label": "Bearded Theme Black & Gold Soft",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-black-gold-soft.json"
+      },
+      {
         "label": "Bearded Theme Black & Ruby",
         "uiTheme": "vs-dark",
         "path": "./themes/bearded-theme-black-ruby.json"
+      },
+      {
+        "label": "Bearded Theme Black & Ruby Soft",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-black-ruby-soft.json"
       },
       {
         "label": "Bearded Theme Stained Purple",
@@ -281,6 +306,11 @@
         "label": "Bearded Theme Milkshake Blueberry",
         "uiTheme": "hc-light",
         "path": "./themes/bearded-theme-milkshake-blueberry.json"
+      },
+      {
+        "label": "Bearded Theme Milkshake Mango",
+        "uiTheme": "hc-light",
+        "path": "./themes/bearded-theme-milkshake-mango.json"
       }
     ]
   },
