@@ -273,9 +273,14 @@
         "path": "./themes/bearded-theme-hc-flurry.json"
       },
       {
-        "label": "Bearded Theme Paper",
+        "label": "Bearded Theme Milkshake Raspberry",
         "uiTheme": "hc-light",
-        "path": "./themes/bearded-theme-paper.json"
+        "path": "./themes/bearded-theme-milkshake-raspberry.json"
+      },
+      {
+        "label": "Bearded Theme Milkshake Blueberry",
+        "uiTheme": "hc-light",
+        "path": "./themes/bearded-theme-milkshake-blueberry.json"
       }
     ]
   },

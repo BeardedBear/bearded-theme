@@ -17,7 +17,16 @@ import {
   blackAndGold,
   blackAndRuby,
 } from "./variations/black";
-import { anthracite, light, paper } from "./variations/classics";
+import { anthracite, light } from "./variations/classics";
+import {
+  altica,
+  coffee,
+  coffeeCream,
+  coffeeReversed,
+  earth,
+  voided,
+} from "./variations/exotic";
+import { will } from "./variations/feat";
 import {
   ChocolateEspresso,
   HCBrewingStorm,
@@ -26,16 +35,8 @@ import {
   HCMidnightVoid,
   HCWonderlandWood,
   Minuit,
-} from "./variations/contrast";
-import {
-  altica,
-  coffee,
-  coffeeCream,
-  coffeeReversed,
-  earth,
-  voided,
-  will,
-} from "./variations/exotic";
+} from "./variations/hc";
+import { milkshakeBlueberry, milkshakeRaspberry } from "./variations/milkshake";
 import {
   monokaiBlack,
   monokaiMetallian,
@@ -135,14 +136,13 @@ makeTheme("arc-reversed", arcReversed, {});
 // Classics
 makeTheme("classics-anthracite", anthracite, {});
 makeTheme("classics-light", light, { light: true });
-makeTheme("paper", paper, { light: true });
 
 // Surprising
 makeTheme("surprising-eggplant", surprisingEggplant, {});
 makeTheme("surprising-blueberry", surprisingBlueberry, {});
 makeTheme("surprising-watermelon", surprisingWatermelon, {});
 
-// Contrast
+// HC
 makeTheme("hc-ebony", HCEbony, { hc: true });
 makeTheme("hc-midnightvoid", HCMidnightVoid, { hc: true });
 makeTheme("hc-flurry", HCFlurry, { hc: true, light: true });
@@ -150,3 +150,7 @@ makeTheme("hc-wonderland-wood", HCWonderlandWood, { hc: true });
 makeTheme("hc-brewing-storm", HCBrewingStorm, { hc: true });
 makeTheme("hc-minuit", Minuit, { hc: true });
 makeTheme("hc-chocolateespresso", ChocolateEspresso, { hc: true });
+
+// Milkshake
+makeTheme("milkshake-raspberry", milkshakeRaspberry, { hc: true, light: true });
+makeTheme("milkshake-blueberry", milkshakeBlueberry, { hc: true, light: true });

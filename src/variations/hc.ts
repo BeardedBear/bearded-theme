@@ -80,7 +80,7 @@ export const HCBrewingStorm: Theme = {
     danger: "#ff5e4c",
     success: "#84ffad",
     warning: "#ff9d7c",
-    info: "#6ab6f9",
+    info: "#3391e3",
   },
 };
 
