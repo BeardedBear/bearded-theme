@@ -46,6 +46,7 @@ import {
   milkshakeMango,
   milkshakeMint,
   milkshakeRaspberry,
+  milkshakeVanilla,
 } from "./variations/milkshake";
 import {
   monokaiBlack,
@@ -175,3 +176,4 @@ makeTheme("milkshake-raspberry", milkshakeRaspberry, { hc: true, light: true });
 makeTheme("milkshake-blueberry", milkshakeBlueberry, { hc: true, light: true });
 makeTheme("milkshake-mango", milkshakeMango, { hc: true, light: true });
 makeTheme("milkshake-mint", milkshakeMint, { hc: true, light: true });
+makeTheme("milkshake-vanilla", milkshakeVanilla, { hc: true, light: true });

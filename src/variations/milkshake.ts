@@ -23,7 +23,7 @@ const levels: ThemeLevels = {
 
 export const milkshakeRaspberry: Theme = {
   ui: makeMainColorsLight({
-    base: "#f0e4e8",
+    base: "#f1e8eb",
     primary: "#d1175b",
     primaryAlt: "#f6eff1",
   }),
@@ -33,8 +33,8 @@ export const milkshakeRaspberry: Theme = {
 
 export const milkshakeBlueberry: Theme = {
   ui: makeMainColorsLight({
-    base: "#dfdeef",
-    primary: "#462ac3",
+    base: "#e1e0ed",
+    primary: "#4f38b7",
   }),
   colors,
   levels,
@@ -51,17 +51,17 @@ export const milkshakeMango: Theme = {
 
 export const milkshakeMint: Theme = {
   ui: makeMainColorsLight({
-    base: "#e1f4e4",
-    primary: "#3dd86e",
+    base: "#edf3ee",
+    primary: "#2a9b7d",
   }),
   colors,
   levels,
 };
 
-export const paper: Theme = {
+export const milkshakeVanilla: Theme = {
   ui: makeMainColorsLight({
-    base: "#efe9da",
-    primary: "#be7809",
+    base: "#ece7da",
+    primary: "#8d602c",
   }),
   colors,
   levels,

@@ -6,6 +6,7 @@
 
 - Add 5 new variations : Gems Soft
 - Add 5 new variations : Milkshake
+- Add 2
 
 ### Fixes
 
