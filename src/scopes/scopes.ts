@@ -24,7 +24,9 @@ export default function syntax(theme: Theme, hc?: boolean): Scope[] {
     createScope(prog.classes, theme.colors.greenAlt),
     createScope(
       prog.comments,
-      hc ? c(theme.ui.defaultalt).lighten(0.2).toHex() : theme.ui.defaultalt,
+      hc
+        ? c(theme.ui.default).saturate(0.15).alpha(0.55).toHex()
+        : theme.ui.defaultalt,
       "italic",
     ),
     createScope(prog.constants, theme.colors.red),

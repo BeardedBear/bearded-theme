@@ -234,7 +234,6 @@ export const punctuation = [
   "expression.embbeded.vue punctuation.definition.tag.begin.html.vue",
   "expression.embbeded.vue punctuation.definition.tag.end.html.vue",
   "source.graphql	meta.type.interface.graphql meta.type.object.graphql meta.type.list.graphql meta.brace.square.graphql",
-  "punctuation.definition.variable.php",
 ];
 
 export const self = [

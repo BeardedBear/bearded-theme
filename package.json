@@ -36,12 +36,12 @@
     "theme",
     "bear",
     "dark",
-    "elm",
     "solarized",
     "arc",
     "light",
     "oceanic",
-    "monokai"
+    "monokai",
+    "milkshake"
   ],
   "sponsor": {
     "url": "https://github.com/sponsors/BeardedBear"
