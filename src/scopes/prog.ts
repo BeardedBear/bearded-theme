@@ -9,7 +9,6 @@ export const accessors = [
   "storage.modifier.import.java",
   "storage.modifier.import.groovy",
   "meta.import.swift entity.name.type.swift",
-  "entity.name.variable.parameter.cs",
   "meta.member.access.python",
   "variable.other.property.ts",
   "variable.other.property.js",
@@ -76,6 +75,8 @@ export const keyword = [
   "keyword.other.use-as.php",
   "keyword.import.go",
   "keyword.operator.address.go",
+  "keyword.operator.null-coalescing",
+  "keyword.operator.arrow",
 ];
 
 export const constants = ["constant", "support.constant.core.php"];
@@ -100,6 +101,8 @@ export const decorators = [
   "punctuation.definition.decorator",
   "meta.decorator variable.other.readwrite.ts",
   "variable.parameter.gdscript",
+  "entity.name.variable.parameter",
+  "variable.parameter",
 ];
 
 export const exportScope = [
@@ -115,8 +118,6 @@ export const functions = [
   "meta.function",
   "meta.method.declaration",
   "meta.function-call support",
-  "meta.decorator meta.definition.method entity.name.function",
-  "meta.decorator meta.method.declaration entity.name.function",
   // Typescript
   "variable.language.super.ts",
   // VUE
@@ -217,7 +218,6 @@ export const punctuation = [
   "punctuation.definition.list.end.python",
   // VUE
   "text.html.vue-html meta.tag.block.any",
-  "entity.name.variable.tuple-element.cs",
   "keyword.operator.assignment.tsx",
   "meta.definition.method.signature.java",
   "meta.class.body.groovy",
@@ -365,6 +365,7 @@ export const variables = [
   "source.css meta.property-value.css",
   "source.css.scss meta.at-rule.keyframes.scss entity.name.function.scss",
   "source.css.scss meta.property-value.scss",
+  "entity.name.variable.tuple-element",
 ];
 
 export const typeConstructor = ["source.elm constant.type-constructor"];

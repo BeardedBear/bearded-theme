@@ -8,7 +8,9 @@ interface SemanticToken {
   underline?: boolean;
 }
 
-export default function semanticTokens(theme: Theme): { [index: string]: SemanticToken } {
+export default function semanticTokens(
+  theme: Theme,
+): Record<string, SemanticToken> {
   return {
     "property.declaration": { foreground: theme.ui.default },
     property: { foreground: theme.colors.orange },
