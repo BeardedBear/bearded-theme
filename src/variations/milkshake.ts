@@ -61,7 +61,7 @@ export const milkshakeMint: Theme = {
 export const milkshakeVanilla: Theme = {
   ui: makeMainColorsLight({
     base: "#ece7da",
-    primary: "#67543d",
+    primary: "#b68c18",
   }),
   colors,
   levels,
