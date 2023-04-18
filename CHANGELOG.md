@@ -1,18 +1,23 @@
 # Changelog for Bearded Theme
 
-## 8.1.0 - 2023-04-??
+## 8.1.0 - 2023-04-19
 
 ### New features
 
 - Add 5 new variations : Gems Soft
 - Add 5 new variations : Milkshake
-- Add 2
+- Add 2 new Featuring variations : Gold D Raynh and Mintshake D Raynh
 
 ### Fixes
 
 - Fix border bottom on active tab hover
 - Fix background colors for diffs
 - Fix unwanted border on buttons
+
+### Enhancements
+
+- Better support for Go
+- Better support for C#
 
 ## 8.0.0 - 2023-03-20
 

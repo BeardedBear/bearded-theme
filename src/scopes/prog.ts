@@ -25,6 +25,8 @@ export const comments = [
 ];
 
 export const keyword = [
+  "keyword.package.go",
+  "keyword.operator.pointer.go",
   "keyword.control",
   "keyword.control.conditional",
   "storage.modifier",
@@ -77,11 +79,14 @@ export const keyword = [
   "keyword.operator.address.go",
   "keyword.operator.null-coalescing",
   "keyword.operator.arrow",
+  "keyword.struct.go",
 ];
 
 export const constants = ["constant", "support.constant.core.php"];
 
 export const currentText = [
+  "meta.section.struct.go variable.other.field.go",
+  "meta.section.struct.go variable.other.declaration.go",
   "source",
   "support",
   "constant.character.entity.named",
@@ -237,6 +242,7 @@ export const punctuation = [
 ];
 
 export const self = [
+  "entity.name.package.go",
   "variable.language.this",
   "variable.language.special.self",
   "variable.parameter.function.language.special.self",
