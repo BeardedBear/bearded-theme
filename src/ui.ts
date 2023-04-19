@@ -310,9 +310,16 @@ export default function ui(
     // settings
     "settings.modifiedItemIndicator": theme.ui.primary,
     "settings.headerForeground": theme.ui.primary,
-    "keybindingLabel.foreground": hc ? theme.ui.primary : "#00000000",
-    "keybindingLabel.border": hc ? theme.ui.primary + 60 : "#00000000",
-    "keybindingLabel.bottomBorder": hc ? theme.ui.primary + 60 : "#00000000",
+    "keybindingLabel.background": theme.ui.primaryalt,
+    "keybindingLabel.foreground": light
+      ? theme.ui.defaultMain
+      : c(theme.ui.primaryalt).lighten(0.4).desaturate(0.1).toHex(),
+    "keybindingLabel.border": light
+      ? theme.ui.defaultalt
+      : c(theme.ui.primaryalt).lighten(0.2).desaturate(0.1).toHex(),
+    "keybindingLabel.bottomBorder": light
+      ? theme.ui.defaultalt
+      : c(theme.ui.primaryalt).lighten(0.2).desaturate(0.1).toHex(),
     // sidebar
     "sideBar.background": theme.ui.uibackgroundalt,
     "sideBar.border": theme.ui.uiborder,

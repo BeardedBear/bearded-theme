@@ -1,5 +1,11 @@
 # Changelog for Bearded Theme
 
+## 8.1.1 - 2023-04-19
+
+### Fixes
+
+- Fix keybinding labels (Thanks [plttn](https://github.com/BeardedBear/bearded-theme/issues/109))
+
 ## 8.1.0 - 2023-04-19
 
 ### New features
