@@ -7,7 +7,7 @@ export default function ui(
   light?: boolean,
 ): Partial<UIKey> {
   return {
-    contrastBorder: theme.ui.uiborder,
+    contrastBorder: "#00000000",
     // activityBar
 
     "activityBar.background": theme.ui.uibackgroundalt,
@@ -96,14 +96,14 @@ export default function ui(
       ? "#00000000"
       : `${theme.levels.danger}25`,
     "diffEditor.diagonalFill": `${theme.ui.uiborder}80`,
-    "diffEditor.insertedTextBorder": hc && `${theme.levels.success}30`,
-    "diffEditor.removedTextBorder": hc && `${theme.levels.danger}40`,
+    "diffEditor.insertedTextBorder": "#00000000",
+    "diffEditor.removedTextBorder": "#00000000",
     "diffEditorGutter.insertedLineBackground": "#00000000",
     "diffEditorGutter.removedLineBackground": "#00000000",
-    "diffEditor.insertedLineBackground": hc && `${theme.levels.success}20`,
-    "diffEditor.removedLineBackground": hc && `${theme.levels.danger}25`,
-    "diffEditorOverview.insertedForeground": hc && `${theme.levels.success}25`,
-    "diffEditorOverview.removedForeground": hc && `${theme.levels.danger}30`,
+    "diffEditor.insertedLineBackground": `${theme.levels.success}20`,
+    "diffEditor.removedLineBackground": `${theme.levels.danger}25`,
+    "diffEditorOverview.insertedForeground": `${theme.levels.success}25`,
+    "diffEditorOverview.removedForeground": `${theme.levels.danger}30`,
     // Inlay hints
     "editorInlayHint.background": theme.ui.defaultMain + 20,
     "editorInlayHint.foreground": theme.ui.defaultMain + "90",
@@ -131,7 +131,7 @@ export default function ui(
     "editor.lineHighlightBackground": `${theme.ui.primary}0c`,
     "editor.lineHighlightBorder": `${theme.ui.primary}1a`,
     "editor.rangeHighlightBackground": `${theme.ui.primary}20`,
-    "editor.selectionBackground": `${theme.ui.primary}27`,
+    "editor.selectionBackground": `${theme.ui.primary}30`,
     "editor.selectionForeground": theme.ui.default,
     "editor.inactiveSelectionBackground": `${theme.ui.primary}20`,
     "editor.selectionHighlightBorder": `${theme.ui.primary}80`,
@@ -153,8 +153,8 @@ export default function ui(
       ? theme.ui.defaultalt
       : `${theme.ui.defaultalt}bb`,
     "editorLink.activeForeground": theme.ui.default,
-    "editorWarning.border": hc && "#00000000",
-    "editorInfo.border": hc && "#00000000",
+    "editorWarning.border": "#00000000",
+    "editorInfo.border": "#00000000",
     "editorGutter.commentRangeForeground": theme.ui.primaryalt,
     "sash.hoverBorder": `${theme.ui.primary}50`,
     "editorRuler.foreground": c(theme.ui.defaultalt).alpha(0.2).toHex(),
@@ -310,9 +310,9 @@ export default function ui(
     // settings
     "settings.modifiedItemIndicator": theme.ui.primary,
     "settings.headerForeground": theme.ui.primary,
-    "keybindingLabel.foreground": hc && theme.ui.primary,
-    "keybindingLabel.border": hc && theme.ui.primary + 60,
-    "keybindingLabel.bottomBorder": hc && theme.ui.primary + 60,
+    "keybindingLabel.foreground": hc ? theme.ui.primary : "#00000000",
+    "keybindingLabel.border": hc ? theme.ui.primary + 60 : "#00000000",
+    "keybindingLabel.bottomBorder": hc ? theme.ui.primary + 60 : "#00000000",
     // sidebar
     "sideBar.background": theme.ui.uibackgroundalt,
     "sideBar.border": theme.ui.uiborder,
@@ -353,7 +353,6 @@ export default function ui(
     "tab.activeBorderTop": theme.ui.primary,
     "tab.activeBorder": theme.ui.uibackground,
     "tab.border": theme.ui.uiborder,
-    "tab.hoverBorder": "#00000000",
     "tab.hoverBackground": `${theme.ui.uibackground}cc`,
     "tab.unfocusedHoverBackground": `${theme.ui.primary}10`,
     "tab.unfocusedHoverBorder": "#00000000",

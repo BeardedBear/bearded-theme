@@ -77,10 +77,10 @@ export const HCBrewingStorm: Theme = {
     yellow: "#fff0a6",
   },
   levels: {
-    danger: "#ff7e70",
-    success: "#9dffbd",
-    warning: "#ffaf94",
-    info: "#82c4ff",
+    danger: "#ff5e4c",
+    success: "#84ffad",
+    warning: "#ff9d7c",
+    info: "#3391e3",
   },
 };
 

@@ -9,7 +9,6 @@ export const accessors = [
   "storage.modifier.import.java",
   "storage.modifier.import.groovy",
   "meta.import.swift entity.name.type.swift",
-  "entity.name.variable.parameter.cs",
   "meta.member.access.python",
   "variable.other.property.ts",
   "variable.other.property.js",
@@ -26,6 +25,8 @@ export const comments = [
 ];
 
 export const keyword = [
+  "keyword.package.go",
+  "keyword.operator.pointer.go",
   "keyword.control",
   "keyword.control.conditional",
   "storage.modifier",
@@ -74,11 +75,18 @@ export const keyword = [
   "keyword.operator.variadic.php",
   "keyword.operator.nullable-type.php",
   "keyword.other.use-as.php",
+  "keyword.import.go",
+  "keyword.operator.address.go",
+  "keyword.operator.null-coalescing",
+  "keyword.operator.arrow",
+  "keyword.struct.go",
 ];
 
 export const constants = ["constant", "support.constant.core.php"];
 
 export const currentText = [
+  "meta.section.struct.go variable.other.field.go",
+  "meta.section.struct.go variable.other.declaration.go",
   "source",
   "support",
   "constant.character.entity.named",
@@ -98,9 +106,14 @@ export const decorators = [
   "punctuation.definition.decorator",
   "meta.decorator variable.other.readwrite.ts",
   "variable.parameter.gdscript",
+  "entity.name.variable.parameter",
+  "variable.parameter",
 ];
 
-export const exportScope = ["keyword.control.export", "support.type.object.module"];
+export const exportScope = [
+  "keyword.control.export",
+  "support.type.object.module",
+];
 
 export const functions = [
   // "entity",
@@ -110,8 +123,6 @@ export const functions = [
   "meta.function",
   "meta.method.declaration",
   "meta.function-call support",
-  "meta.decorator meta.definition.method entity.name.function",
-  "meta.decorator meta.method.declaration entity.name.function",
   // Typescript
   "variable.language.super.ts",
   // VUE
@@ -143,9 +154,16 @@ export const importScope = [
   "keyword.other.import.java",
 ];
 
-export const dataProperty = ["keyword.other.definition.ini", "support.type.property-name", "entity.name.tag.yaml"];
+export const dataProperty = [
+  "keyword.other.definition.ini",
+  "support.type.property-name",
+  "entity.name.tag.yaml",
+];
 
-export const objectProperty = ["meta.object-literal.key", "variable.object.property"];
+export const objectProperty = [
+  "meta.object-literal.key",
+  "variable.object.property",
+];
 
 export const operators = [
   "keyword.operator.comparison",
@@ -205,7 +223,6 @@ export const punctuation = [
   "punctuation.definition.list.end.python",
   // VUE
   "text.html.vue-html meta.tag.block.any",
-  "entity.name.variable.tuple-element.cs",
   "keyword.operator.assignment.tsx",
   "meta.definition.method.signature.java",
   "meta.class.body.groovy",
@@ -222,10 +239,10 @@ export const punctuation = [
   "expression.embbeded.vue punctuation.definition.tag.begin.html.vue",
   "expression.embbeded.vue punctuation.definition.tag.end.html.vue",
   "source.graphql	meta.type.interface.graphql meta.type.object.graphql meta.type.list.graphql meta.brace.square.graphql",
-  "punctuation.definition.variable.php",
 ];
 
 export const self = [
+  "entity.name.package.go",
   "variable.language.this",
   "variable.language.special.self",
   "variable.parameter.function.language.special.self",
@@ -269,6 +286,8 @@ export const storages = [
   "source.graphql meta.enum.graphql keyword.enum.graphql",
   "source.graphql meta.fragment.graphql keyword.fragment.graphql",
   "storage.type.trait.php",
+  "keyword.type.go",
+  "keyword.var.go",
 ];
 
 export const strings = [
@@ -352,6 +371,7 @@ export const variables = [
   "source.css meta.property-value.css",
   "source.css.scss meta.at-rule.keyframes.scss entity.name.function.scss",
   "source.css.scss meta.property-value.scss",
+  "entity.name.variable.tuple-element",
 ];
 
 export const typeConstructor = ["source.elm constant.type-constructor"];

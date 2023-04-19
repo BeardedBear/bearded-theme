@@ -12,13 +12,27 @@ import {
 } from "./variations/arc";
 import {
   blackAndAmethyst,
+  blackAndAmethystSoft,
   blackAndDiamond,
+  blackAndDiamondSoft,
   blackAndEmerald,
+  blackAndEmeraldSoft,
   blackAndGold,
+  blackAndGoldSoft,
   blackAndRuby,
+  blackAndRubySoft,
 } from "./variations/black";
 import { buche, bucheHC, bucheLight } from "./variations/buche";
 import { anthracite, light } from "./variations/classics";
+import {
+  altica,
+  coffee,
+  coffeeCream,
+  coffeeReversed,
+  earth,
+  voided,
+} from "./variations/exotic";
+import { goldDRaynh, goldDRaynhLight, will } from "./variations/feat";
 import {
   ChocolateEspresso,
   HCBrewingStorm,
@@ -27,16 +41,14 @@ import {
   HCMidnightVoid,
   HCWonderlandWood,
   Minuit,
-} from "./variations/contrast";
+} from "./variations/hc";
 import {
-  altica,
-  coffee,
-  coffeeCream,
-  coffeeReversed,
-  earth,
-  voided,
-  will,
-} from "./variations/exotic";
+  milkshakeBlueberry,
+  milkshakeMango,
+  milkshakeMint,
+  milkshakeRaspberry,
+  milkshakeVanilla,
+} from "./variations/milkshake";
 import {
   monokaiBlack,
   monokaiMetallian,
@@ -102,10 +114,15 @@ makeTheme("solarized-reversed", solarizedReversed, {});
 
 // Black
 makeTheme("black-amethyst", blackAndAmethyst, {});
+makeTheme("black-amethyst-soft", blackAndAmethystSoft, {});
 makeTheme("black-diamond", blackAndDiamond, {});
+makeTheme("black-diamond-soft", blackAndDiamondSoft, {});
 makeTheme("black-emerald", blackAndEmerald, {});
+makeTheme("black-emerald-soft", blackAndEmeraldSoft, {});
 makeTheme("black-gold", blackAndGold, {});
+makeTheme("black-gold-soft", blackAndGoldSoft, {});
 makeTheme("black-ruby", blackAndRuby, {});
+makeTheme("black-ruby-soft", blackAndRubySoft, {});
 
 // Stained
 makeTheme("stained-purple", stainedPurple, {});
@@ -130,8 +147,12 @@ makeTheme("coffee-reversed", coffeeReversed, {});
 makeTheme("coffee-cream", coffeeCream, { light: true });
 makeTheme("exotic-void", voided, {});
 makeTheme("exotic-altica", altica, {});
-makeTheme("will", will, {});
 makeTheme("arc-reversed", arcReversed, {});
+
+// Feat
+makeTheme("will", will, {});
+makeTheme("gold-d-raynh", goldDRaynh, {});
+makeTheme("gold-d-raynh-light", goldDRaynhLight, { light: true });
 
 // Classics
 makeTheme("classics-anthracite", anthracite, {});
@@ -142,7 +163,7 @@ makeTheme("surprising-eggplant", surprisingEggplant, {});
 makeTheme("surprising-blueberry", surprisingBlueberry, {});
 makeTheme("surprising-watermelon", surprisingWatermelon, {});
 
-// Contrast
+// HC
 makeTheme("hc-ebony", HCEbony, { hc: true });
 makeTheme("hc-midnightvoid", HCMidnightVoid, { hc: true });
 makeTheme("hc-flurry", HCFlurry, { hc: true, light: true });
@@ -150,6 +171,13 @@ makeTheme("hc-wonderland-wood", HCWonderlandWood, { hc: true });
 makeTheme("hc-brewing-storm", HCBrewingStorm, { hc: true });
 makeTheme("hc-minuit", Minuit, { hc: true });
 makeTheme("hc-chocolateespresso", ChocolateEspresso, { hc: true });
+
+// Milkshake
+makeTheme("milkshake-raspberry", milkshakeRaspberry, { hc: true, light: true });
+makeTheme("milkshake-blueberry", milkshakeBlueberry, { hc: true, light: true });
+makeTheme("milkshake-mango", milkshakeMango, { hc: true, light: true });
+makeTheme("milkshake-mint", milkshakeMint, { hc: true, light: true });
+makeTheme("milkshake-vanilla", milkshakeVanilla, { hc: true, light: true });
 
 // Buche
 makeTheme("buche", buche, {});
