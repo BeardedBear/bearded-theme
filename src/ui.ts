@@ -158,6 +158,10 @@ export default function ui(
     "editorGutter.commentRangeForeground": theme.ui.primaryalt,
     "sash.hoverBorder": `${theme.ui.primary}50`,
     "editorRuler.foreground": c(theme.ui.defaultalt).alpha(0.2).toHex(),
+    "editor.linkedEditingBackground": c(theme.colors.blue)
+      .alpha(0.2)
+      .saturate(0.2)
+      .toHex(),
 
     // find
     "editorWarning.foreground": theme.colors.yellow,

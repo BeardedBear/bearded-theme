@@ -1,5 +1,12 @@
 # Changelog for Bearded Theme
 
+## 8.2.0 - 2023-06-14
+
+### Enhancements
+
+- Change background color for Gold D Raynh variation
+- Add support for linkedEditingBackground
+
 ## 8.1.1 - 2023-04-19
 
 ### Fixes

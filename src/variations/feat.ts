@@ -46,7 +46,7 @@ const colorsGoldDRaynh: ThemeColors = {
   yellow: "#ffd000",
 };
 export const goldDRaynh: Theme = {
-  ui: makeMainColorsDark({ base: "#111418", primary: "#e39000" }),
+  ui: makeMainColorsDark({ base: "#0f1628", primary: "#e39000" }),
   colors: colorsGoldDRaynh,
   levels: {
     danger: colorsGoldDRaynh.red,
