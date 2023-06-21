@@ -13,10 +13,14 @@ export default function ui(
     "activityBar.background": theme.ui.uibackgroundalt,
     "activityBar.border": theme.ui.uiborder,
     "activityBar.foreground": theme.ui.primary,
-    "activityBar.inactiveForeground": `${theme.ui.defaultalt}AA`,
+    "activityBar.inactiveForeground": hc
+      ? theme.ui.defaultalt
+      : c(theme.ui.defaultalt).alpha(0.7).toHex(),
     "activityBarBadge.background": theme.ui.primary,
     "activityBar.activeBorder": theme.ui.primary,
-    "activityBar.activeBackground": theme.ui.primary + 10,
+    "activityBar.activeBackground": hc
+      ? c(theme.ui.primary).alpha(0.2).toHex()
+      : c(theme.ui.primary).saturate(0.1).alpha(0.1).toHex(),
     "activityBarBadge.foreground": theme.ui.uibackgroundalt,
 
     // welcome
