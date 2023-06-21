@@ -13,15 +13,45 @@ export interface ThemeUi {
 }
 
 export interface ThemeColors {
+  /**
+   * Color for the keywords
+   */
   yellow: string;
+  /**
+   * Color for the constants
+   */
   red: string;
+  /**
+   * Color for typings
+   */
   purple: string;
+  /**
+   * Color for the functions
+   */
   blue: string;
+  /**
+   * Color for the strings
+   */
   green: string;
+  /**
+   * Color for the classes
+   */
   greenAlt: string;
+  /**
+   * Color for the storages of type of functions
+   */
   turquoize: string;
+  /**
+   * Color for the variables
+   */
   salmon: string;
+  /**
+   * Color for the accessors
+   */
   orange: string;
+  /**
+   * Color for the functions arguments or decorators
+   */
   pink: string;
 }
 
