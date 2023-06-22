@@ -1,15 +1,17 @@
 import { colord as c } from "colord";
 import { Theme, UIKey } from "./typing";
 
+const transparent = "#00000000";
+
 export default function ui(
   theme: Theme,
   hc?: boolean,
   light?: boolean,
 ): Partial<UIKey> {
   return {
-    contrastBorder: "#00000000",
-    // activityBar
+    contrastBorder: transparent,
 
+    // activityBar
     "activityBar.background": theme.ui.uibackgroundalt,
     "activityBar.border": theme.ui.uiborder,
     "activityBar.foreground": theme.ui.primary,
@@ -20,7 +22,7 @@ export default function ui(
     "activityBar.activeBorder": theme.ui.primary,
     "activityBar.activeBackground": hc
       ? c(theme.ui.primary).alpha(0.2).toHex()
-      : c(theme.ui.primary).saturate(0.1).alpha(0.1).toHex(),
+      : c(theme.ui.primary).alpha(0.15).toHex(),
     "activityBarBadge.foreground": theme.ui.uibackgroundalt,
 
     // welcome
@@ -33,9 +35,11 @@ export default function ui(
     // badge
     "badge.background": theme.ui.primary,
     "badge.foreground": theme.ui.uibackground,
+
     // breadcrumb
     "breadcrumb.background": theme.ui.uibackground,
     "breadcrumbPicker.background": theme.ui.uibackground,
+
     // button
     "button.background": `${theme.ui.primary}75`,
     "button.foreground": theme.ui.default,
@@ -50,6 +54,7 @@ export default function ui(
     "extensionButton.prominentBackground": `${theme.ui.primary}9d`,
     "extensionButton.prominentForeground": theme.ui.default,
     "extensionButton.prominentHoverBackground": theme.ui.primary,
+
     // charts
     "charts.foreground": theme.ui.default,
     "charts.lines": theme.ui.default,
@@ -59,8 +64,9 @@ export default function ui(
     "charts.orange": theme.colors.orange,
     "charts.green": theme.colors.green,
     "charts.purple": theme.colors.pink,
+
     // common
-    contrastActiveBorder: "#00000000",
+    contrastActiveBorder: transparent,
     errorForeground: theme.levels.danger,
     "errorLens.hintForeground": theme.levels.info + 99,
     "errorLens.infoForeground": theme.levels.info + 99,
@@ -73,14 +79,17 @@ export default function ui(
     "widget.shadow": `${theme.ui.uiborder}30`,
     "profileBadge.background": theme.ui.primary,
     "profileBadge.foreground": theme.ui.uibackground,
+
     // Command center
     "commandCenter.border": theme.ui.uiborder,
     "commandCenter.background": theme.ui.uibackground,
     "commandCenter.activeBackground": `${theme.ui.primaryalt}60`,
     "commandCenter.activeForeground": `${theme.ui.defaultMain}90`,
     "commandCenter.foreground": theme.ui.defaultalt,
+
     // Checkbox
     "checkbox.foreground": theme.ui.default,
+
     // debug
     "debugExceptionWidget.background": theme.ui.primaryalt,
     "debugExceptionWidget.border": theme.ui.uiborder,
@@ -91,30 +100,33 @@ export default function ui(
 
     // description
     descriptionForeground: theme.ui.default,
+
     // diff
     "diffEditor.border": theme.ui.uiborder,
     "diffEditor.insertedTextBackground": hc
-      ? "#00000000"
+      ? transparent
       : `${theme.levels.success}20`,
     "diffEditor.removedTextBackground": hc
-      ? "#00000000"
+      ? transparent
       : `${theme.levels.danger}25`,
     "diffEditor.diagonalFill": `${theme.ui.uiborder}80`,
-    "diffEditor.insertedTextBorder": "#00000000",
-    "diffEditor.removedTextBorder": "#00000000",
-    "diffEditorGutter.insertedLineBackground": "#00000000",
-    "diffEditorGutter.removedLineBackground": "#00000000",
+    "diffEditor.insertedTextBorder": transparent,
+    "diffEditor.removedTextBorder": transparent,
+    "diffEditorGutter.insertedLineBackground": transparent,
+    "diffEditorGutter.removedLineBackground": transparent,
     "diffEditor.insertedLineBackground": `${theme.levels.success}20`,
     "diffEditor.removedLineBackground": `${theme.levels.danger}25`,
     "diffEditorOverview.insertedForeground": `${theme.levels.success}25`,
     "diffEditorOverview.removedForeground": `${theme.levels.danger}30`,
+
     // Inlay hints
     "editorInlayHint.background": theme.ui.defaultMain + 20,
     "editorInlayHint.foreground": theme.ui.defaultMain + "90",
     "editorInlayHint.typeBackground": theme.colors.purple + 30,
     "editorInlayHint.typeForeground": theme.colors.purple + "aa",
+
     // editor
-    "editorGhostText.border": "#00000000",
+    "editorGhostText.border": transparent,
     "editorGhostText.foreground": theme.ui.default + 70,
     "editorCursor.background": theme.ui.primary,
     "editorBracketHighlight.foreground1": theme.colors.yellow,
@@ -157,8 +169,8 @@ export default function ui(
       ? theme.ui.defaultalt
       : `${theme.ui.defaultalt}bb`,
     "editorLink.activeForeground": theme.ui.default,
-    "editorWarning.border": "#00000000",
-    "editorInfo.border": "#00000000",
+    "editorWarning.border": transparent,
+    "editorInfo.border": transparent,
     "editorGutter.commentRangeForeground": theme.ui.primaryalt,
     "sash.hoverBorder": `${theme.ui.primary}50`,
     "editorRuler.foreground": c(theme.ui.defaultalt).alpha(0.2).toHex(),
@@ -182,13 +194,15 @@ export default function ui(
       hc ? theme.ui.defaultalt : theme.ui.defaultalt + 90
     }`,
     "editorLineNumber.activeForeground": theme.ui.defaultalt,
+
     // dropdown
     "dropdown.background": theme.ui.uibackground,
     "dropdown.listBackground": theme.ui.uibackground,
     "dropdown.foreground": theme.ui.default,
     "dropdown.border": `${theme.ui.defaultalt}50`,
+
     // input
-    "input.background": "#00000000",
+    "input.background": transparent,
     "input.foreground": theme.ui.default,
     "input.border": `${theme.ui.defaultalt}60`,
     "input.placeholderForeground": `${theme.ui.default}60`,
@@ -239,6 +253,7 @@ export default function ui(
     "gitDecoration.untrackedResourceForeground": theme.levels.success,
     "gitDecoration.ignoredResourceForeground": theme.ui.defaultalt,
     "gitDecoration.conflictingResourceForeground": theme.ui.primary,
+
     // menu
     "menu.border": theme.ui.uiborder,
     "menu.background": theme.ui.primaryalt,
@@ -264,6 +279,7 @@ export default function ui(
     "editorOverviewRuler.commonContentForeground": theme.colors.yellow,
     "editorOverviewRuler.currentContentForeground": theme.levels.danger,
     "editorOverviewRuler.incomingContentForeground": theme.levels.success,
+
     // notification
     "notificationCenterHeader.foreground": theme.ui.default,
     "notificationCenterHeader.background": theme.ui.primaryalt,
@@ -274,6 +290,7 @@ export default function ui(
     "notificationsErrorIcon.foreground": theme.colors.red,
     "notificationsWarningIcon.foreground": theme.colors.orange,
     "notificationsInfoIcon.foreground": theme.colors.blue,
+
     // panel
     "panel.background": theme.ui.uibackgroundmid,
     "panel.border": theme.ui.uiborder,
@@ -285,6 +302,7 @@ export default function ui(
     "panelSectionHeader.background": `${theme.ui.defaultalt}20`,
     "panelSectionHeader.foreground": theme.ui.default,
     "panelSectionHeader.border": theme.ui.uiborder,
+
     // pickView
     "peekView.border": theme.ui.primary,
     "peekViewEditor.background": `${theme.ui.primaryalt}40`,
@@ -303,18 +321,22 @@ export default function ui(
     "editorMarkerNavigationError.background": `${theme.levels.danger}90`,
     "editorMarkerNavigationWarning.background": `${theme.levels.warning}90`,
     "editorMarkerNavigationInfo.background": `${theme.levels.info}90`,
-    "editorError.border": "#00000000",
+    "editorError.border": transparent,
     "editorError.foreground": theme.levels.danger,
+
     // picker
     "pickerGroup.border": theme.ui.uiborder,
     "pickerGroup.foreground": theme.ui.default,
+
     // progressbar
     "progressBar.background": theme.colors.yellow,
+
     // scrollbar
     "scrollbar.shadow": `#00000000`,
     "scrollbarSlider.activeBackground": `${theme.ui.primary}40`,
     "scrollbarSlider.background": `${theme.ui.primary}20`,
     "scrollbarSlider.hoverBackground": `${theme.ui.primary}30`,
+
     // settings
     "settings.modifiedItemIndicator": theme.ui.primary,
     "settings.headerForeground": theme.ui.primary,
@@ -328,6 +350,7 @@ export default function ui(
     "keybindingLabel.bottomBorder": light
       ? theme.ui.defaultalt
       : c(theme.ui.primaryalt).lighten(0.2).desaturate(0.1).toHex(),
+
     // sidebar
     "sideBar.background": theme.ui.uibackgroundalt,
     "sideBar.border": theme.ui.uiborder,
@@ -337,6 +360,7 @@ export default function ui(
     "sideBarSectionHeader.border": theme.ui.uiborder,
     "sideBarTitle.foreground": theme.ui.defaultalt,
     "tree.indentGuidesStroke": theme.ui.defaultalt + 70,
+
     // statusBar
     "statusBar.background": theme.ui.uibackgroundalt,
     "statusBar.border": theme.ui.uiborder,
@@ -352,12 +376,14 @@ export default function ui(
     "statusBarItem.prominentHoverBackground": theme.ui.primaryalt,
     "statusBarItem.errorBackground": theme.levels.danger,
     "statusBarItem.warningBackground": theme.levels.warning,
+
     // suggest
     "editorSuggestWidget.background": theme.ui.uibackground,
     "editorSuggestWidget.border": theme.ui.uiborder,
     "editorSuggestWidget.foreground": theme.ui.defaultMain,
     "editorSuggestWidget.highlightForeground": theme.colors.yellow,
     "editorSuggestWidget.selectedBackground": `${theme.ui.primary}4d`,
+
     // tabs
     "editorGroupHeader.noTabsBackground": theme.ui.uibackground,
     "editorGroupHeader.tabsBackground": theme.ui.uibackgroundalt,
@@ -370,7 +396,7 @@ export default function ui(
     "tab.border": theme.ui.uiborder,
     "tab.hoverBackground": `${theme.ui.uibackground}cc`,
     "tab.unfocusedHoverBackground": `${theme.ui.primary}10`,
-    "tab.unfocusedHoverBorder": "#00000000",
+    "tab.unfocusedHoverBorder": transparent,
     "tab.inactiveBackground": theme.ui.uibackgroundalt,
     "tab.inactiveForeground": theme.ui.defaultalt,
     "tab.unfocusedActiveForeground": theme.ui.default,
@@ -399,6 +425,7 @@ export default function ui(
     "terminalCursor.background": theme.colors.yellow,
     "terminalCursor.foreground": theme.colors.yellow,
     "terminal.selectionForeground": theme.ui.default,
+
     // text
     "textBlockQuote.background": `${theme.levels.info}34`,
     "textBlockQuote.border": `${theme.levels.info}b9`,
@@ -408,6 +435,7 @@ export default function ui(
     "textPreformat.foreground": theme.colors.yellow,
     "textSeparator.foreground": theme.ui.primary,
     "walkThrough.embeddedEditorBackground": theme.ui.uibackground,
+
     // titleBar
     "titleBar.activeBackground": theme.ui.uibackgroundalt,
     "titleBar.activeForeground": theme.ui.defaultalt,
