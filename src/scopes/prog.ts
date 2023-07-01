@@ -14,6 +14,8 @@ export const accessors = [
   "variable.other.property.js",
   "constant.language.symbol.elixir",
   "punctuation.tag.liquid support.class.liquid",
+  "meta.scriptblock.powershell meta.group.simple.subexpression.powershell meta.group.simple.subexpression.powershell meta.scriptblock.powershell meta.scriptblock.powershell support.variable.automatic.powershell punctuation.definition.variable.powershell",
+  "meta.scriptblock.powershell meta.group.simple.subexpression.powershell meta.group.simple.subexpression.powershell meta.scriptblock.powershell meta.scriptblock.powershell support.variable.automatic.powershell",
 ];
 
 export const classes = ["entity.name.type"];
@@ -142,6 +144,8 @@ export const functions = [
   "punctuation.output.liquid support.variable.liquid",
   "meta.function.echo.edge source.js keyword.operator.error-control.js",
   "entity.name.type.variant.gdscript",
+  "entity.name.function.powershell",
+  // "meta.group.simple.subexpression.powershell",
 ];
 
 export const importScope = [
@@ -293,6 +297,8 @@ export const storages = [
   "storage.type.trait.php",
   "keyword.type.go",
   "keyword.var.go",
+  "entity.name.function",
+  "storage.type.powershell",
 ];
 
 export const strings = [
@@ -357,6 +363,7 @@ export const types = [
   "support.class.php",
   "entity.other.inherited-class.php",
   "entity.other.alias.php",
+  "meta.group.simple.subexpression.powershell meta.scriptblock.powershell storage.type.powershell",
 ];
 
 export const variables = [
@@ -382,6 +389,7 @@ export const variables = [
   "source.css.scss meta.at-rule.keyframes.scss entity.name.function.scss",
   "source.css.scss meta.property-value.scss",
   "entity.name.variable.tuple-element",
+  "meta.group.simple.subexpression.powershell support.variable.automatic.powershell",
 ];
 
 export const typeConstructor = ["source.elm constant.type-constructor"];

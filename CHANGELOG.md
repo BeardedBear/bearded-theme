@@ -10,6 +10,7 @@
 
 ### Fixes
 
+- Fix syntax highlight for powershell (Thanks [dt-flo](https://github.com/BeardedBear/bearded-theme/issues/111))
 - Fix end quote color for HTML attributes (Thanks [gmurad97](https://github.com/BeardedBear/bearded-theme/issues/114))
 - Fix few colors in liquid templates (Thanks [brady-sewall](https://github.com/BeardedBear/bearded-theme/issues/115))
 
