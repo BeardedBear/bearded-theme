@@ -19,11 +19,11 @@ export default function ui(
       ? theme.ui.defaultalt
       : c(theme.ui.defaultalt).alpha(0.7).toHex(),
     "activityBarBadge.background": theme.ui.primary,
+    "activityBarBadge.foreground": theme.ui.uibackgroundalt,
     "activityBar.activeBorder": theme.ui.primary,
     "activityBar.activeBackground": hc
       ? c(theme.ui.primary).alpha(0.2).toHex()
       : c(theme.ui.primary).alpha(0.15).toHex(),
-    "activityBarBadge.foreground": theme.ui.uibackgroundalt,
 
     // welcome
     "welcomePage.tileBackground": theme.ui.defaultMain + 10,
@@ -48,12 +48,12 @@ export default function ui(
     "extensionButton.foreground": theme.ui.default,
     "extensionButton.background": theme.ui.primary + 60,
     "extensionButton.hoverBackground": theme.ui.primary + 90,
-    "button.secondaryBackground": `${theme.ui.primary}20`,
-    "button.secondaryForeground": theme.ui.default,
-    "button.secondaryHoverBackground": `${theme.ui.primary}35`,
     "extensionButton.prominentBackground": `${theme.ui.primary}9d`,
     "extensionButton.prominentForeground": theme.ui.default,
     "extensionButton.prominentHoverBackground": theme.ui.primary,
+    "button.secondaryBackground": `${theme.ui.primary}20`,
+    "button.secondaryForeground": theme.ui.default,
+    "button.secondaryHoverBackground": `${theme.ui.primary}35`,
 
     // charts
     "charts.foreground": theme.ui.default,
@@ -99,7 +99,8 @@ export default function ui(
       : theme.ui.defaultalt + 60,
 
     // description
-    descriptionForeground: theme.ui.default,
+    descriptionForeground: c(theme.ui.default).alpha(0.3).toHex(),
+    disabledForeground: c(theme.ui.default).alpha(0.3).toHex(),
 
     // diff
     "diffEditor.border": theme.ui.uiborder,
@@ -216,9 +217,6 @@ export default function ui(
 
     // list
     "list.dropBackground": `${theme.ui.primary}15`,
-    disabledForeground: light
-      ? c(theme.ui.primaryalt).darken(0.3).desaturate(0.1).toHex()
-      : c(theme.ui.primaryalt).lighten(0.3).desaturate(0.1).toHex(),
     "list.focusBackground": `${theme.ui.primary}40`,
     "list.focusForeground": theme.ui.defaultMain,
     "list.errorForeground": theme.levels.danger,

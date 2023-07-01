@@ -7,6 +7,10 @@
 - Change background color for Gold D Raynh variation
 - Add support for linkedEditingBackground
 
+### Fixes
+
+- Fix end quote color for HTML attributes (Thanks [gmurad97](https://github.com/BeardedBear/bearded-theme/issues/115))
+
 ## 8.1.1 - 2023-04-19
 
 ### Fixes

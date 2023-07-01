@@ -49,8 +49,14 @@ export const mdHeadingPunctuation = ["punctuation.definition.heading"];
 export const mdLink = ["markup.underline.link", "markup.underline.link.image"];
 export const mdItalic = ["markup.italic", "punctuation.definition.italic"];
 export const mdBold = ["markup.bold", "punctuation.definition.bold"];
-export const mdStriked = ["markup.strikethrough", "punctuation.definition.strikethrough"];
-export const mdQuote = ["markup.quote", "markup.quote.markdown punctuation.definition.quote.begin"];
+export const mdStriked = [
+  "markup.strikethrough",
+  "punctuation.definition.strikethrough",
+];
+export const mdQuote = [
+  "markup.quote",
+  "markup.quote.markdown punctuation.definition.quote.begin",
+];
 export const mdQuotePunctuation = ["punctuation.definition.quote.begin"];
 export const component = [
   "entity.name.tag.other.html",
@@ -65,13 +71,12 @@ export const frontMatter = [
   "meta.embedded.block.frontmatter string.unquoted.plain.out",
 ];
 
-
 // DIFF/PATCH
 export const diffAdd = [
   "source.diff meta.diff.header.to-file",
-  "source.diff markup.inserted.diff", 
+  "source.diff markup.inserted.diff",
   "source.diff punctuation.definition.to-file.diff",
-  "source.diff punctuation.definition.inserted.diff"
+  "source.diff punctuation.definition.inserted.diff",
 ];
 export const diffDel = [
   "source.diff punctuation.definition.from-file.diff",
@@ -79,10 +84,8 @@ export const diffDel = [
   "source.diff markup.deleted.diff",
   "source.diff punctuation.definition.deleted.diff",
 ];
-export const diffHead = [
-  "source.diff meta.diff.header.command"
-];
+export const diffHead = ["source.diff meta.diff.header.command"];
 export const diffRange = [
   "source.diff punctuation.definition.range.diff",
-  "source.diff meta.diff.range.unified"
+  "source.diff meta.diff.range.unified",
 ];
