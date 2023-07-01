@@ -6,10 +6,12 @@
 
 - Change background color for Gold D Raynh variation
 - Add support for linkedEditingBackground
+- Improve foreground color for disabled extensions
 
 ### Fixes
 
-- Fix end quote color for HTML attributes (Thanks [gmurad97](https://github.com/BeardedBear/bearded-theme/issues/115))
+- Fix end quote color for HTML attributes (Thanks [gmurad97](https://github.com/BeardedBear/bearded-theme/issues/114))
+- Fix few colors in liquid templates (Thanks [brady-sewall](https://github.com/BeardedBear/bearded-theme/issues/115))
 
 ## 8.1.1 - 2023-04-19
 

@@ -13,6 +13,7 @@ export const accessors = [
   "variable.other.property.ts",
   "variable.other.property.js",
   "constant.language.symbol.elixir",
+  "punctuation.tag.liquid support.class.liquid",
 ];
 
 export const classes = ["entity.name.type"];
@@ -80,6 +81,7 @@ export const keyword = [
   "keyword.operator.null-coalescing",
   "keyword.operator.arrow",
   "keyword.struct.go",
+  "keyword.operator.liquid",
 ];
 
 export const constants = ["constant", "support.constant.core.php"];
@@ -239,6 +241,9 @@ export const punctuation = [
   "expression.embbeded.vue punctuation.definition.tag.begin.html.vue",
   "expression.embbeded.vue punctuation.definition.tag.end.html.vue",
   "source.graphql	meta.type.interface.graphql meta.type.object.graphql meta.type.list.graphql meta.brace.square.graphql",
+  // Liquid
+  "punctuation.output.liquid",
+  "text.html.liquid meta.tag.liquid punctuation.definition.tag.end.liquid",
 ];
 
 export const self = [
