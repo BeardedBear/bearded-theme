@@ -20,6 +20,7 @@ export default function semanticTokens(
     namespace: { foreground: theme.colors.blue },
     parameter: { foreground: theme.colors.pink },
     "class.decorator": { foreground: theme.colors.pink },
+    "meta.decorator": { foreground: theme.colors.pink },
     enumMember: { foreground: theme.colors.purple },
   };
 }

@@ -84,6 +84,7 @@ export const keyword = [
   "keyword.operator.arrow",
   "keyword.struct.go",
   "keyword.operator.liquid",
+  "keyword.operator.optional.ts",
 ];
 
 export const constants = ["constant", "support.constant.core.php"];
@@ -145,7 +146,6 @@ export const functions = [
   "meta.function.echo.edge source.js keyword.operator.error-control.js",
   "entity.name.type.variant.gdscript",
   "entity.name.function.powershell",
-  // "meta.group.simple.subexpression.powershell",
 ];
 
 export const importScope = [
@@ -297,7 +297,6 @@ export const storages = [
   "storage.type.trait.php",
   "keyword.type.go",
   "keyword.var.go",
-  "entity.name.function",
   "storage.type.powershell",
 ];
 
