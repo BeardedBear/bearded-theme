@@ -389,6 +389,7 @@ export const variables = [
   "source.css.scss meta.property-value.scss",
   "entity.name.variable.tuple-element",
   "meta.group.simple.subexpression.powershell support.variable.automatic.powershell",
+  "support.variable.automatic.powershell",
 ];
 
 export const typeConstructor = ["source.elm constant.type-constructor"];

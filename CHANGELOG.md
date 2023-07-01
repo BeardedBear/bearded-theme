@@ -1,5 +1,11 @@
 # Changelog for Bearded Theme
 
+## 8.2.1 - 2023-07-01
+
+### Fixes
+
+- Fix $matches syntax highlight for powershell (Thanks [dt-flo](https://github.com/BeardedBear/bearded-theme/issues/111))
+
 ## 8.2.0 - 2023-07-01
 
 ### Enhancements
