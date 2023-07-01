@@ -1,6 +1,6 @@
 # Changelog for Bearded Theme
 
-## 8.2.0 - 2023-06-14
+## 8.2.0 - 2023-07-01
 
 ### Enhancements
 
