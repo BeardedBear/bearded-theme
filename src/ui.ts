@@ -420,7 +420,7 @@ export default function ui(
     "terminal.ansiBrightWhite": theme.ui.default,
     "terminal.background": theme.ui.uibackgroundmid,
     "terminal.foreground": theme.ui.default,
-    "terminalCursor.background": theme.colors.yellow,
+    "terminalCursor.background": theme.ui.uibackground,
     "terminalCursor.foreground": theme.colors.yellow,
     "terminal.selectionForeground": theme.ui.default,
 
