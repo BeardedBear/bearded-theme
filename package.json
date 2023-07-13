@@ -3,7 +3,8 @@
   "displayName": "Bearded Theme",
   "description": "The theme with a long beard.",
   "publisher": "BeardedBear",
-  "version": "8.2.1",
+  "version": "8.3.0",
+  "type": "module",
   "engines": {
     "vscode": "^1.69.0"
   },
@@ -213,6 +214,11 @@
         "path": "./themes/bearded-theme-gold-d-raynh.json"
       },
       {
+        "label": "Bearded Theme feat. Melle Julie",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-mellejulie.json"
+      },
+      {
         "label": "Bearded Theme feat. Mintshake D Raynh",
         "uiTheme": "vs",
         "path": "./themes/bearded-theme-gold-d-raynh-light.json"
@@ -335,16 +341,16 @@
     ]
   },
   "dependencies": {
-    "@types/node": "^20.3.3",
-    "@types/vscode": "^1.79.1",
-    "@typescript-eslint/eslint-plugin": "^5.60.1",
-    "@typescript-eslint/parser": "^5.60.1",
+    "@types/node": "^20.4.2",
+    "@types/vscode": "^1.80.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
     "@vscode/vsce": "^2.19.0",
     "colord": "^2.9.3",
     "eslint": "^8.44.0",
-    "ovsx": "^0.8.0",
-    "prettier": "^2.8.4",
+    "ovsx": "^0.8.2",
+    "prettier": "^3.0.0",
     "typescript": "^5.1.6",
-    "vite-node": "^0.32.2"
+    "vite-node": "^0.33.0"
   }
 }
