@@ -55,7 +55,7 @@ export default function syntax(theme: Theme, hc?: boolean): Scope[] {
     createScope(prog.type, theme.colors.purple),
 
     // MARKUP
-    createScope(markup.component, theme.colors.blue),
+    createScope(markup.component, theme.colors.purple),
     createScope(markup.diffAdd, theme.colors.green),
     createScope(markup.diffDel, theme.colors.red),
     createScope(markup.diffHead, theme.colors.blue),

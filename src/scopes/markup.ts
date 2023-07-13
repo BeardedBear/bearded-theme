@@ -60,8 +60,6 @@ export const mdQuote = [
 export const mdQuotePunctuation = ["punctuation.definition.quote.begin"];
 export const component = [
   "entity.name.tag.other.html",
-  "meta.tag.other.html punctuation.definition.tag.end.html",
-  "meta.tag.other.html punctuation.definition.tag.begin.html",
   "entity.name.tag support.class.component",
   "support.class.component.html",
 ];
