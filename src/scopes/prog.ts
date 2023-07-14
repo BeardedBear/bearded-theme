@@ -85,6 +85,7 @@ export const keyword = [
   "keyword.struct.go",
   "keyword.operator.liquid",
   "keyword.operator.optional.ts",
+  "keyword.cmake",
 ];
 
 export const constants = ["constant", "support.constant.core.php"];
@@ -390,6 +391,8 @@ export const variables = [
   "entity.name.variable.tuple-element",
   "meta.group.simple.subexpression.powershell support.variable.automatic.powershell",
   "support.variable.automatic.powershell",
+  "storage.source.cmake",
+  "entity.source.cmake",
 ];
 
 export const typeConstructor = ["source.elm constant.type-constructor"];
