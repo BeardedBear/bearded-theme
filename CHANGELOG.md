@@ -1,5 +1,22 @@
 # Changelog for Bearded Theme
 
+## 8.3.0 - 2023-07-01
+
+### New features
+
+- Add new feat variation: MelleJulie
+
+### Enhancements
+
+- Add better syntax support for cmake files (Thanks [Nerixyz](https://github.com/BeardedBear/bearded-theme/issues/119))
+
+### Fixes
+
+- Fix const foreground color in go (Thanks [Sup0088](https://github.com/BeardedBear/bearded-theme/issues/117))
+- Fix foreground color custom React components (Thanks [safarli](https://github.com/BeardedBear/bearded-theme/issues/120))
+- Fix foreground color for terminal cursor in insert mode (Thanks [Loskir](https://github.com/BeardedBear/bearded-theme/issues/122))
+- Fix unconsistent tab colors (Thanks [Loskir](https://github.com/BeardedBear/bearded-theme/issues/123))
+
 ## 8.2.1 - 2023-07-01
 
 ### Fixes

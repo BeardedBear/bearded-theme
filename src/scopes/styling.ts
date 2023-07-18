@@ -5,7 +5,9 @@ export const classes = [
   "entity.other.attribute-name.class",
   "entity.other.attribute-name.class punctuation.definition.entity",
 ];
-export const suffix = ["entity.other.attribute-name.parent-selector-suffix punctuation.definition.entity"];
+export const suffix = [
+  "entity.other.attribute-name.parent-selector-suffix punctuation.definition.entity",
+];
 export const ids = [
   "source.css.scss entity.other.attribute-name.id ",
   "source.css entity.other.attribute-name.id ",
@@ -28,4 +30,7 @@ export const value = [
 ];
 
 export const nums = ["constant.numeric"];
-export const tag = ["entity.name.tag.css", "meta.property-list.scss entity.name.tag.css"];
+export const tag = [
+  "entity.name.tag.css",
+  "meta.property-list.scss entity.name.tag.css",
+];

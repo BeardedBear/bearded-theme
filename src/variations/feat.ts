@@ -81,3 +81,28 @@ export const goldDRaynhLight: Theme = {
     info: colorsGoldDRaynhLight.blue,
   },
 };
+
+const melleJulieColors: ThemeColors = {
+  blue: "#63c0ff",
+  green: "#71e893",
+  greenAlt: "#a4c947",
+  orange: "#edb492",
+  pink: "#c3a1e5",
+  // pink: "#92dcbe",
+  purple: "#968ffb",
+  red: "#e55454",
+  salmon: "#9dcace",
+  turquoize: "#50dbd4",
+  yellow: "#ecd282",
+};
+
+export const melleJulie: Theme = {
+  ui: makeMainColorsDark({ base: "#1c1f24", primary: "#63edef" }),
+  colors: melleJulieColors,
+  levels: {
+    danger: melleJulieColors.red,
+    success: melleJulieColors.green,
+    warning: melleJulieColors.orange,
+    info: melleJulieColors.blue,
+  },
+};
