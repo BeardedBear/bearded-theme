@@ -260,6 +260,7 @@ export const self = [
   "meta.class.body.php storage.type.php",
   "variable.parameter.function.swift entity.name.function.swift",
   "variable.other.jsdoc",
+  "support.variable.drive.powershell",
 ];
 
 export const storages = [
@@ -299,6 +300,7 @@ export const storages = [
   "keyword.type.go",
   "keyword.var.go",
   "storage.type.powershell",
+  "keyword.const.go",
 ];
 
 export const strings = [
@@ -326,6 +328,8 @@ export const strings = [
   "punctuation.definition.string.end.html source.css-ignored-vscode",
   "text.html.edge punctuation.definition.variable.js",
   "string.unquoted.plain.out.yaml",
+  "string.quoted.single.python punctuation.definition.string.begin.python",
+  "string.quoted.single.python punctuation.definition.string.end.python",
 ];
 
 export const stringsAlt = [
@@ -333,6 +337,8 @@ export const stringsAlt = [
   "string.quoted.double.block.python punctuation.definition.string.end.python",
   "string.quoted.double.block.python punctuation.definition.string.begin.python",
   "string.quoted.double.block.python",
+  "punctuation.definition.string.begin.python",
+  "punctuation.definition.string.end.python",
 ];
 
 export const types = [
