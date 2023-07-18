@@ -7,7 +7,18 @@ export default function ui(
   theme: Theme,
   hc?: boolean,
   light?: boolean,
+  untindedSelection?: boolean,
 ): Partial<UIKey> {
+  function createSelectionColor(delta: number): string {
+    return untindedSelection
+      ? c(theme.ui.uibackground)
+          .lighten(0.3 * delta)
+          .alpha(0.4)
+          .toHex()
+      : c(theme.ui.primary)
+          .alpha(0.25 * delta)
+          .toHex();
+  }
   return {
     contrastBorder: transparent,
 
@@ -139,24 +150,27 @@ export default function ui(
     "editorBracketHighlight.unexpectedBracket.foreground": theme.levels.danger,
     "editor.foldBackground": theme.ui.uibackgroundalt,
     "editor.background": theme.ui.uibackground,
-    "editor.findMatchBackground": `${theme.ui.primary}20`,
-    "editor.findMatchBorder": `${theme.ui.primary}60`,
-    "editor.findMatchHighlightBackground": `${theme.ui.primary}20`,
-    "editor.findMatchHighlightBorder": `${theme.ui.primary}40`,
     "editor.foreground": theme.ui.default,
-    "editor.hoverHighlightBackground": `${theme.ui.primary}40`,
-    "editor.lineHighlightBackground": `${theme.ui.primary}0c`,
-    "editor.lineHighlightBorder": `${theme.ui.primary}1a`,
-    "editor.rangeHighlightBackground": `${theme.ui.primary}20`,
-    "editor.selectionBackground": `${theme.ui.primary}30`,
+    // selection
+    "editor.findMatchBackground": `${theme.ui.primary}30`,
+    "editor.findMatchBorder": `${theme.ui.primary}60`,
+    "editor.findMatchHighlightBackground": createSelectionColor(0.8),
+    "editor.findMatchHighlightBorder": createSelectionColor(1.2),
+    "editor.hoverHighlightBackground": createSelectionColor(1),
+    "editor.lineHighlightBackground": createSelectionColor(0.2),
+    "editor.lineHighlightBorder": createSelectionColor(0.5),
+    "editor.rangeHighlightBackground": createSelectionColor(0.8),
+    "editor.selectionBackground": createSelectionColor(1),
     "editor.selectionForeground": theme.ui.default,
-    "editor.inactiveSelectionBackground": `${theme.ui.primary}20`,
-    "editor.selectionHighlightBorder": `${theme.ui.primary}80`,
+    "editor.inactiveSelectionBackground": createSelectionColor(1),
+    "editor.selectionHighlightBorder": createSelectionColor(1),
     "editor.selectionHighlightBackground": `${theme.ui.primary}15`,
-    "editor.wordHighlightStrongBackground": `${theme.ui.primary}40`,
-    "editor.wordHighlightBackground": `${theme.ui.primary}20`,
-    "editorBracketMatch.background": `${theme.ui.primary}20`,
-    "editorBracketMatch.border": `${theme.ui.primary}40`,
+    "editor.wordHighlightStrongBackground": createSelectionColor(1),
+    "editor.wordHighlightBorder": createSelectionColor(1.2),
+    "editor.wordHighlightBackground": createSelectionColor(0.5),
+    "editorBracketMatch.background": createSelectionColor(1),
+    "editorBracketMatch.border": createSelectionColor(1.5),
+    // end selection
     "editorCodeLens.foreground": theme.ui.defaultMain + 80,
     "editorCursor.foreground": theme.colors.yellow,
     "editorGroup.border": theme.ui.uiborder,
@@ -278,6 +292,17 @@ export default function ui(
     "editorOverviewRuler.currentContentForeground": theme.levels.danger,
     "editorOverviewRuler.incomingContentForeground": theme.levels.success,
 
+    // minimap
+    "minimap.background": theme.ui.uibackground,
+    "minimap.errorHighlight": theme.levels.danger,
+    "minimap.findMatchHighlight": theme.ui.primary,
+    "minimap.selectionHighlight": theme.ui.primary,
+    "minimap.selectionOccurrenceHighlight": theme.ui.primary,
+    "minimap.warningHighlight": theme.levels.warning,
+    "minimapGutter.addedBackground": theme.levels.success,
+    "minimapGutter.deletedBackground": theme.levels.danger,
+    "minimapGutter.modifiedBackground": theme.levels.info,
+
     // notification
     "notificationCenterHeader.foreground": theme.ui.default,
     "notificationCenterHeader.background": theme.ui.primaryalt,
@@ -392,13 +417,14 @@ export default function ui(
     "tab.activeBorderTop": theme.ui.primary,
     "tab.activeBorder": theme.ui.uibackground,
     "tab.border": theme.ui.uiborder,
-    "tab.hoverBackground": `${theme.ui.uibackground}cc`,
-    "tab.unfocusedHoverBackground": `${theme.ui.primary}10`,
-    "tab.unfocusedHoverBorder": transparent,
+    "tab.hoverBackground": theme.ui.uibackground,
     "tab.inactiveBackground": theme.ui.uibackgroundalt,
     "tab.inactiveForeground": theme.ui.defaultalt,
-    "tab.unfocusedActiveForeground": theme.ui.default,
-    "tab.unfocusedInactiveForeground": theme.ui.default,
+    "tab.unfocusedHoverBackground": theme.ui.uibackground,
+    "tab.unfocusedActiveForeground": theme.ui.primary,
+    "tab.unfocusedInactiveForeground": theme.ui.defaultalt,
+    "tab.unfocusedActiveBorder": theme.ui.uibackground,
+
     "tab.lastPinnedBorder": theme.ui.uiborder,
 
     // terminal
@@ -423,6 +449,7 @@ export default function ui(
     "terminalCursor.background": theme.ui.uibackground,
     "terminalCursor.foreground": theme.colors.yellow,
     "terminal.selectionForeground": theme.ui.default,
+    // "terminal.selectionBackground": `${theme.ui.primary}30`,
 
     // text
     "textBlockQuote.background": `${theme.levels.info}34`,
