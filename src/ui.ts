@@ -467,5 +467,17 @@ export default function ui(
     "titleBar.inactiveBackground": theme.ui.uiborder,
     "titleBar.inactiveForeground": theme.ui.defaultalt,
     "titleBar.border": theme.ui.uiborder,
+
+    "editorUnnecessaryCode.border": hc
+      ? c(theme.ui.defaultMain).alpha(0.6).toHex()
+      : transparent,
+    "editorUnnecessaryCode.opacity": "#000000aa",
+
+    // "editorError.background": theme.levels.danger + 99,
+    // "editorError.foreground": theme.levels.danger,
+    // "editorWarning.foreground": theme.levels.warning,
+    // "editorInfo.foreground": theme.levels.info,
+    // "editorHint.foreground": theme.levels.success,
+    // "editor.background": theme.ui.uibackground,
   };
 }

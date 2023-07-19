@@ -16,6 +16,7 @@
 - Fix foreground color custom React components (Thanks [safarli](https://github.com/BeardedBear/bearded-theme/issues/120))
 - Fix foreground color for terminal cursor in insert mode (Thanks [Loskir](https://github.com/BeardedBear/bearded-theme/issues/122))
 - Fix unconsistent tab colors (Thanks [Loskir](https://github.com/BeardedBear/bearded-theme/issues/123))
+- Fix unused/unnecessary code opacity/border (Thanks [knajjars](https://github.com/BeardedBear/bearded-theme/issues/124))
 
 ## 8.2.1 - 2023-07-01
 

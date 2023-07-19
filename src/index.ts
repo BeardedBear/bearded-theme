@@ -35,6 +35,7 @@ import {
   goldDRaynh,
   goldDRaynhLight,
   melleJulie,
+  melleJulieLight,
   will,
 } from "./variations/feat";
 import {
@@ -162,7 +163,8 @@ makeTheme("arc-reversed", arcReversed);
 makeTheme("will", will, { untindedSelection: true });
 makeTheme("gold-d-raynh", goldDRaynh, { untindedSelection: true });
 makeTheme("gold-d-raynh-light", goldDRaynhLight, { light: true });
-makeTheme("mellejulie", melleJulie, { untindedSelection: false });
+makeTheme("mellejulie", melleJulie);
+makeTheme("mellejulie-light", melleJulieLight, { light: true });
 
 // Classics
 makeTheme("classics-anthracite", anthracite);

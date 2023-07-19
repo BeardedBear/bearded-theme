@@ -219,6 +219,11 @@
         "path": "./themes/bearded-theme-mellejulie.json"
       },
       {
+        "label": "Bearded Theme feat. Melle Julie Light",
+        "uiTheme": "vs",
+        "path": "./themes/bearded-theme-mellejulie-light.json"
+      },
+      {
         "label": "Bearded Theme feat. Mintshake D Raynh",
         "uiTheme": "vs",
         "path": "./themes/bearded-theme-gold-d-raynh-light.json"
@@ -310,32 +315,32 @@
       },
       {
         "label": "Bearded Theme HC Flurry",
-        "uiTheme": "hc-light",
+        "uiTheme": "hc-black",
         "path": "./themes/bearded-theme-hc-flurry.json"
       },
       {
         "label": "Bearded Theme Milkshake Raspberry",
-        "uiTheme": "hc-light",
+        "uiTheme": "hc-black",
         "path": "./themes/bearded-theme-milkshake-raspberry.json"
       },
       {
         "label": "Bearded Theme Milkshake Blueberry",
-        "uiTheme": "hc-light",
+        "uiTheme": "hc-black",
         "path": "./themes/bearded-theme-milkshake-blueberry.json"
       },
       {
         "label": "Bearded Theme Milkshake Mango",
-        "uiTheme": "hc-light",
+        "uiTheme": "hc-black",
         "path": "./themes/bearded-theme-milkshake-mango.json"
       },
       {
         "label": "Bearded Theme Milkshake Mint",
-        "uiTheme": "hc-light",
+        "uiTheme": "hc-black",
         "path": "./themes/bearded-theme-milkshake-mint.json"
       },
       {
         "label": "Bearded Theme Milkshake Vanilla Banana",
-        "uiTheme": "hc-light",
+        "uiTheme": "hc-black",
         "path": "./themes/bearded-theme-milkshake-vanilla.json"
       }
     ]

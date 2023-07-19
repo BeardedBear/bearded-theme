@@ -88,7 +88,6 @@ const melleJulieColors: ThemeColors = {
   greenAlt: "#a4c947",
   orange: "#edb492",
   pink: "#c3a1e5",
-  // pink: "#92dcbe",
   purple: "#968ffb",
   red: "#e55454",
   salmon: "#9dcace",
@@ -104,5 +103,29 @@ export const melleJulie: Theme = {
     success: melleJulieColors.green,
     warning: melleJulieColors.orange,
     info: melleJulieColors.blue,
+  },
+};
+
+const melleJulieColorsLight: ThemeColors = {
+  blue: "#1f89cf",
+  green: "#2aa54d",
+  greenAlt: "#81a622",
+  orange: "#c97a2a",
+  pink: "#ae6cbe",
+  purple: "#7c68ef",
+  red: "#d24545",
+  salmon: "#39a9b4",
+  turquoize: "#23716d",
+  yellow: "#b48806",
+};
+
+export const melleJulieLight: Theme = {
+  ui: makeMainColorsLight({ base: "#edeeee", primary: "#218d8f" }),
+  colors: melleJulieColorsLight,
+  levels: {
+    danger: melleJulieColorsLight.red,
+    success: melleJulieColorsLight.green,
+    warning: melleJulieColorsLight.orange,
+    info: melleJulieColorsLight.blue,
   },
 };
