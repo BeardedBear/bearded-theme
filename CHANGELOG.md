@@ -1,6 +1,12 @@
 # Changelog for Bearded Theme
 
-## 8.3.0 - 2023-07-01
+## 8.3.1 - 2023-07-26
+
+- Fix drop color on activity bar buttons (Thanks [Loskir](https://github.com/BeardedBear/bearded-theme/issues/125))
+
+### Fixes
+
+## 8.3.0 - 2023-07-19
 
 ### New features
 

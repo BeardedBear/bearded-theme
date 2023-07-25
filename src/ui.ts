@@ -29,12 +29,13 @@ export default function ui(
     "activityBar.inactiveForeground": hc
       ? theme.ui.defaultalt
       : c(theme.ui.defaultalt).alpha(0.7).toHex(),
-    "activityBarBadge.background": theme.ui.primary,
-    "activityBarBadge.foreground": theme.ui.uibackgroundalt,
     "activityBar.activeBorder": theme.ui.primary,
     "activityBar.activeBackground": hc
       ? c(theme.ui.primary).alpha(0.2).toHex()
       : c(theme.ui.primary).alpha(0.15).toHex(),
+    "activityBarBadge.background": theme.ui.primary,
+    "activityBarBadge.foreground": theme.ui.uibackgroundalt,
+    "activityBar.dropBorder": c(theme.ui.primary).alpha(0.2).toHex(),
 
     // welcome
     "welcomePage.tileBackground": theme.ui.defaultMain + 10,
