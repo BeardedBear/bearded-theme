@@ -3,6 +3,7 @@
 ## 8.3.1 - 2023-07-26
 
 - Fix drop color on activity bar buttons (Thanks [Loskir](https://github.com/BeardedBear/bearded-theme/issues/125))
+- Fix drop border color on panels (Thanks [Loskir](https://github.com/BeardedBear/bearded-theme/issues/126))
 
 ### Fixes
 

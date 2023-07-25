@@ -318,7 +318,7 @@ export default function ui(
     // panel
     "panel.background": theme.ui.uibackgroundmid,
     "panel.border": theme.ui.uiborder,
-    "panel.dropBorder": theme.ui.uiborder,
+    "panel.dropBorder": c(theme.ui.defaultalt).alpha(0.5).toHex(),
     "panelSection.border": theme.ui.uiborder,
     "panelTitle.activeBorder": theme.ui.primary,
     "panelTitle.activeForeground": theme.ui.primary,
