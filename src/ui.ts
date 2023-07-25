@@ -35,7 +35,7 @@ export default function ui(
       : c(theme.ui.primary).alpha(0.15).toHex(),
     "activityBarBadge.background": theme.ui.primary,
     "activityBarBadge.foreground": theme.ui.uibackgroundalt,
-    "activityBar.dropBorder": c(theme.ui.primary).alpha(0.2).toHex(),
+    "activityBar.dropBorder": c(theme.ui.defaultalt).alpha(0.2).toHex(),
 
     // welcome
     "welcomePage.tileBackground": theme.ui.defaultMain + 10,
