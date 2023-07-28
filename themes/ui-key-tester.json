@@ -727,7 +727,7 @@
     "inlineChatInput.border": "#ff0000",
     "inlineChatInput.focusBorder": "#ff0000",
     "inlineChatInput.placeholderForeground": "#ff0000",
-    "inlineChatrDiff.removed": "#ff0000"
+    "inlineChatrDiff.removed": "#ff0000",
   },
   "tokenColors": [
     {

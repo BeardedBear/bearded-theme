@@ -211,6 +211,10 @@ export default function ui(
     }`,
     "editorLineNumber.activeForeground": theme.ui.defaultalt,
 
+    "editorStickyScrollHover.background": c(theme.ui.uibackground)
+      .lighten(0.06)
+      .toHex(),
+
     // dropdown
     "dropdown.background": theme.ui.uibackground,
     "dropdown.listBackground": theme.ui.uibackground,
@@ -327,20 +331,32 @@ export default function ui(
     "panelSectionHeader.foreground": theme.ui.default,
     "panelSectionHeader.border": theme.ui.uiborder,
 
-    // pickView
-    "peekView.border": theme.ui.primary,
-    "peekViewEditor.background": `${theme.ui.primaryalt}40`,
+    // Peekview
+    "peekViewEditor.background": c(theme.ui.uibackground).lighten(0.04).toHex(),
+    "peekViewEditorGutter.background": c(theme.ui.uibackground)
+      .lighten(0.04)
+      .toHex(),
     "peekViewEditor.matchHighlightBackground": `${theme.ui.primaryalt}40`,
-    "peekViewResult.background": `${theme.ui.primaryalt}40`,
+    "peekViewResult.background": c(theme.ui.uibackground)
+      .lighten(0.025)
+      .toHex(),
     "peekViewResult.fileForeground": theme.ui.default,
-    "peekViewResult.lineForeground": theme.ui.default,
-    "peekViewResult.matchHighlightBackground": theme.ui.primaryalt,
-    "peekViewResult.selectionBackground": theme.ui.primaryalt,
+    "peekViewResult.lineForeground": theme.ui.defaultMain,
+    "peekViewResult.matchHighlightBackground": c(theme.ui.primary)
+      .alpha(0.5)
+      .toHex(),
+    "peekViewEditor.matchHighlightBorder": transparent,
+    "peekViewResult.selectionBackground": c(theme.ui.primary)
+      .alpha(0.2)
+      .toHex(),
     "peekViewResult.selectionForeground": theme.ui.default,
-    "peekViewTitle.background": theme.ui.uiborder,
+    "peekViewTitle.background": c(theme.ui.uibackground).lighten(0.05).toHex(),
+    "peekView.border": theme.ui.uiborder,
     "peekViewTitleDescription.foreground": theme.ui.default,
     "peekViewTitleLabel.foreground": theme.ui.default,
-    "peekViewEditorGutter.background": `${theme.ui.primaryalt}40`,
+    "peekViewEditorStickyScroll.background": c(theme.ui.uibackground)
+      .lighten(0.04)
+      .toHex(),
     "editorMarkerNavigation.background": theme.ui.uibackgroundalt,
     "editorMarkerNavigationError.background": `${theme.levels.danger}90`,
     "editorMarkerNavigationWarning.background": `${theme.levels.warning}90`,
