@@ -80,21 +80,23 @@ interface ThemeOptions {
   hc?: boolean;
   light?: boolean;
   untindedSelection?: boolean;
+  desaturateInputs?: boolean;
 }
 
 function makeTheme(
   name: string,
   theme: Theme,
-  { hc, light, untindedSelection }: ThemeOptions = {
+  { hc, light, untindedSelection, desaturateInputs }: ThemeOptions = {
     hc: false,
     light: false,
     untindedSelection: false,
+    desaturateInputs: false,
   },
 ): void {
   const themeTemplate = {
     $schema: "vscode://schemas/color-theme",
     name: `BeardedTheme ${name.charAt(0).toUpperCase()}${name.slice(1)}`,
-    colors: ui(theme, hc, light, untindedSelection),
+    colors: ui(theme, hc, light, untindedSelection, desaturateInputs),
     tokenColors: syntax(theme, hc),
     semanticHighlighting: true,
     semanticTokenColors: semanticTokens(theme),
@@ -119,7 +121,10 @@ makeTheme("arc-eggplant", arcEggplant);
 makeTheme("oceanic", oceanic);
 makeTheme("oceanic-reversed", oceanicReverded);
 makeTheme("solarized-dark", solarizedDark);
-makeTheme("solarized-light", solarizedLight, { light: true });
+makeTheme("solarized-light", solarizedLight, {
+  light: true,
+  desaturateInputs: true,
+});
 makeTheme("solarized-reversed", solarizedReversed);
 
 // Black

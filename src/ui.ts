@@ -8,6 +8,7 @@ export default function ui(
   hc?: boolean,
   light?: boolean,
   untindedSelection?: boolean,
+  desaturateInputs?: boolean,
 ): Partial<UIKey> {
   function createSelectionColor(delta: number): string {
     return untindedSelection
@@ -18,6 +19,22 @@ export default function ui(
       : c(theme.ui.primary)
           .alpha(0.25 * delta)
           .toHex();
+  }
+
+  function inputBackground(): string {
+    return light
+      ? desaturateInputs
+        ? c(theme.ui.uibackground).desaturate(0.3).darken(0.02).toHex()
+        : c(theme.ui.uibackground).darken(0.02).toHex()
+      : c(theme.ui.uibackground).lighten(0.02).toHex();
+  }
+
+  function inputBorder(): string {
+    return light
+      ? desaturateInputs
+        ? c(theme.ui.uibackground).desaturate(0.5).darken(0.1).toHex()
+        : c(theme.ui.uibackground).darken(0.1).toHex()
+      : c(theme.ui.uibackground).lighten(0.1).toHex();
   }
   return {
     contrastBorder: transparent,
@@ -84,7 +101,10 @@ export default function ui(
     "errorLens.infoForeground": theme.levels.info + 99,
     "errorLens.errorForeground": theme.levels.danger + 99,
     "errorLens.warningForeground": theme.levels.warning + 99,
-    focusBorder: `${theme.ui.primary}40`,
+    // focusBorder: `${theme.ui.primary}40`,
+    focusBorder: light
+      ? c(theme.ui.uibackground).darken(0.2).toHex()
+      : c(theme.ui.uibackground).lighten(0.2).toHex(),
     foreground: `${theme.ui.defaultMain}AA`,
     "icon.foreground": `${theme.ui.defaultMain}AA`,
     "selection.background": `${theme.ui.primary}60`,
@@ -210,29 +230,39 @@ export default function ui(
       hc ? theme.ui.defaultalt : theme.ui.defaultalt + 90
     }`,
     "editorLineNumber.activeForeground": theme.ui.defaultalt,
-
     "editorStickyScrollHover.background": c(theme.ui.uibackground)
       .lighten(0.06)
       .toHex(),
 
     // dropdown
-    "dropdown.background": theme.ui.uibackground,
-    "dropdown.listBackground": theme.ui.uibackground,
     "dropdown.foreground": theme.ui.default,
-    "dropdown.border": `${theme.ui.defaultalt}50`,
+    "dropdown.background": inputBackground(),
+    "dropdown.listBackground": inputBackground(),
+    "dropdown.border": inputBorder(),
 
     // input
-    "input.background": transparent,
     "input.foreground": theme.ui.default,
-    "input.border": `${theme.ui.defaultalt}60`,
-    "input.placeholderForeground": `${theme.ui.default}60`,
-    "inputOption.activeBorder": theme.ui.primary,
+    "input.background": inputBackground(),
+    "input.border": inputBorder(),
+    "input.placeholderForeground": light
+      ? desaturateInputs
+        ? c(theme.ui.uibackground).desaturate(0.7).darken(0.3).toHex()
+        : c(theme.ui.uibackground).darken(0.3).toHex()
+      : c(theme.ui.uibackground).lighten(0.25).toHex(),
+    // "inputOption.activeBorder": theme.ui.primary,
+    // "inputOption.hoverBackground": theme.colors.blue,
+    // "inputOption.activeBackground": theme.colors.orange,
     "inputValidation.errorBackground": theme.ui.primaryalt,
     "inputValidation.errorBorder": theme.colors.yellow,
     "inputValidation.infoBackground": theme.ui.primaryalt,
     "inputValidation.infoBorder": theme.ui.primary,
     "inputValidation.warningBackground": theme.ui.primaryalt,
     "inputValidation.warningBorder": theme.colors.yellow,
+    // "inputOption.activeBackground": `${theme.ui.primary}30`,
+    // "inputOption.activeForeground": theme.ui.default,
+    // "inputValidation.errorForeground": theme.ui.default,
+    // "inputValidation.infoForeground": theme.ui.default,
+    // "inputValidation.warningForeground": theme.ui.default,
 
     // list
     "list.dropBackground": `${theme.ui.primary}15`,
@@ -330,6 +360,11 @@ export default function ui(
     "panelSectionHeader.background": `${theme.ui.defaultalt}20`,
     "panelSectionHeader.foreground": theme.ui.default,
     "panelSectionHeader.border": theme.ui.uiborder,
+    "panelInput.border": light
+      ? desaturateInputs
+        ? c(theme.ui.uibackground).desaturate(0.5).darken(0.1).toHex()
+        : c(theme.ui.uibackground).darken(0.1).toHex()
+      : c(theme.ui.uibackground).lighten(0.1).toHex(),
 
     // Peekview
     "peekViewEditor.background": c(theme.ui.uibackground).lighten(0.04).toHex(),
