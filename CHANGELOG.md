@@ -8,6 +8,8 @@
 - Fix quick input background color
 - Fix input background opacity and border color
 - Fix input placeholder color
+- Fix Milkshake Blueberry primary color
+- Fix Milkshake Mango primary color
 
 ## 8.3.2 - 2023-07-28
 

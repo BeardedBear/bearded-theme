@@ -84,6 +84,6 @@ export function makeMainColorsLight({
       : c(fontColor).darken(0.5).desaturate(0.3).toHex(),
     defaultalt: desaturated
       ? c(fontColor).lighten(0.3).desaturate(0.5).toHex()
-      : c(fontColor).lighten(0.15).desaturate(0.5).toHex(),
+      : c(fontColor).lighten(0.15).desaturate(0.4).toHex(),
   };
 }

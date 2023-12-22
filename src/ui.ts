@@ -34,7 +34,7 @@ export default function ui(
       ? desaturateInputs
         ? c(theme.ui.uibackground).desaturate(0.5).darken(0.1).toHex()
         : c(theme.ui.uibackground).darken(0.1).toHex()
-      : c(theme.ui.uibackground).lighten(0.1).toHex();
+      : c(theme.ui.uibackground).desaturate(0.05).lighten(0.1).toHex();
   }
   return {
     contrastBorder: transparent,
@@ -268,9 +268,9 @@ export default function ui(
     "input.border": inputBorder(),
     "input.placeholderForeground": light
       ? desaturateInputs
-        ? c(theme.ui.uibackground).desaturate(0.7).darken(0.3).toHex()
+        ? c(theme.ui.uibackground).desaturate(0.8).darken(0.2).toHex()
         : c(theme.ui.uibackground).darken(0.3).toHex()
-      : c(theme.ui.uibackground).lighten(0.25).toHex(),
+      : c(theme.ui.uibackground).desaturate(0.05).lighten(0.3).toHex(),
     // "inputOption.activeBorder": theme.ui.primary,
     // "inputOption.hoverBackground": theme.colors.blue,
     // "inputOption.activeBackground": theme.colors.orange,
@@ -384,7 +384,7 @@ export default function ui(
     "panelTitle.inactiveForeground": theme.ui.defaultalt,
     "panelSectionHeader.background": light
       ? c(theme.ui.uibackgroundmid).darken(0.05).toHex()
-      : c(theme.ui.uibackgroundmid).lighten(0.05).toHex(),
+      : c(theme.ui.uibackgroundmid).lighten(0.03).toHex(),
     "panelSectionHeader.foreground": theme.ui.default,
     "panelSectionHeader.border": theme.ui.uiborder,
     "panelInput.border": light
