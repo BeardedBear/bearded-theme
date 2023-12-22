@@ -198,12 +198,27 @@ export default function ui(
     "editorGroup.dropBackground": `${theme.ui.primary}15`,
     "editorHoverWidget.background": theme.ui.primaryalt,
     "editorHoverWidget.border": theme.ui.uiborder,
-    "editorIndentGuide.background": hc
-      ? `${theme.ui.defaultalt}70`
-      : `${theme.ui.defaultalt}30`,
-    "editorIndentGuide.activeBackground": hc
-      ? theme.ui.defaultalt
-      : `${theme.ui.defaultalt}bb`,
+    "editorIndentGuide.activeBackground1": c(theme.colors.yellow).toHex(),
+    "editorIndentGuide.activeBackground2": c(theme.colors.pink).toHex(),
+    "editorIndentGuide.activeBackground3": c(theme.colors.blue).toHex(),
+    "editorIndentGuide.activeBackground4": c(theme.colors.purple).toHex(),
+    "editorIndentGuide.activeBackground5": c(theme.colors.turquoize).toHex(),
+    "editorIndentGuide.activeBackground6": c(theme.colors.salmon).toHex(),
+    "editorIndentGuide.background1": c(theme.colors.yellow).alpha(0.3).toHex(),
+    "editorIndentGuide.background2": c(theme.colors.pink).alpha(0.3).toHex(),
+    "editorIndentGuide.background3": c(theme.colors.blue).alpha(0.3).toHex(),
+    "editorIndentGuide.background4": c(theme.colors.purple).alpha(0.3).toHex(),
+    "editorIndentGuide.background5": c(theme.colors.turquoize)
+      .alpha(0.3)
+      .toHex(),
+    "editorIndentGuide.background6": c(theme.colors.salmon).alpha(0.3).toHex(),
+
+    // "editorIndentGuide.background": hc
+    //   ? `${theme.ui.defaultalt}70`
+    //   : `${theme.ui.defaultalt}30`,
+    // "editorIndentGuide.activeBackground": hc
+    //   ? theme.ui.defaultalt
+    //   : `${theme.ui.defaultalt}bb`,
     "editorLink.activeForeground": theme.ui.default,
     "editorWarning.border": transparent,
     "editorInfo.border": transparent,
@@ -227,7 +242,11 @@ export default function ui(
     "editorGutter.deletedBackground": `${theme.levels.danger}cc`,
     "editorGutter.modifiedBackground": `${theme.levels.info}cc`,
     "editorLineNumber.foreground": `${
-      hc ? theme.ui.defaultalt : theme.ui.defaultalt + 90
+      hc
+        ? theme.ui.defaultalt
+        : light
+        ? c(theme.ui.uibackgroundmid).darken(0.2).toHex()
+        : c(theme.ui.uibackgroundmid).lighten(0.2).toHex()
     }`,
     "editorLineNumber.activeForeground": theme.ui.defaultalt,
     "editorStickyScrollHover.background": c(theme.ui.uibackground)
@@ -357,7 +376,9 @@ export default function ui(
     "panelTitle.activeBorder": theme.ui.primary,
     "panelTitle.activeForeground": theme.ui.primary,
     "panelTitle.inactiveForeground": theme.ui.defaultalt,
-    "panelSectionHeader.background": `${theme.ui.defaultalt}20`,
+    "panelSectionHeader.background": light
+      ? c(theme.ui.uibackgroundmid).darken(0.05).toHex()
+      : c(theme.ui.uibackgroundmid).lighten(0.05).toHex(),
     "panelSectionHeader.foreground": theme.ui.default,
     "panelSectionHeader.border": theme.ui.uiborder,
     "panelInput.border": light

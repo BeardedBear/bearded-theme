@@ -45,6 +45,7 @@ const colorsGoldDRaynh: ThemeColors = {
   turquoize: "#44f8e9",
   yellow: "#ffd000",
 };
+
 export const goldDRaynh: Theme = {
   ui: makeMainColorsDark({ base: "#0f1628", primary: "#e39000" }),
   colors: colorsGoldDRaynh,
@@ -61,7 +62,7 @@ const colorsGoldDRaynhLight: ThemeColors = {
   green: "#03810d",
   greenAlt: "#A4EF58",
   orange: "#c0571f",
-  pink: "#bb2f63",
+  pink: "#002e74",
   purple: "#7537d7",
   red: "#f7775a",
   salmon: "#1da90d",
@@ -70,8 +71,8 @@ const colorsGoldDRaynhLight: ThemeColors = {
 };
 export const goldDRaynhLight: Theme = {
   ui: makeMainColorsLight({
-    base: "#e1f4f4",
-    primary: "#00b2a6",
+    base: "#f5f5f5",
+    primary: "#2397e5",
   }),
   colors: colorsGoldDRaynhLight,
   levels: {
