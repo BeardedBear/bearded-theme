@@ -260,6 +260,7 @@ export default function ui(
     "dropdown.border": inputBorder(),
 
     // input
+
     "input.foreground": theme.ui.default,
     "input.background": inputBackground(),
     "input.border": inputBorder(),
@@ -304,16 +305,19 @@ export default function ui(
     "list.hoverForeground": light
       ? c(theme.ui.defaultalt).darken(0.8).toHex()
       : c(theme.ui.primaryalt).lighten(0.7).desaturate(0.1).toHex(),
+    "quickInput.background": c(theme.ui.uibackground).lighten(0.03).toHex(),
+    "quickInputList.focusIconForeground": theme.ui.defaultalt,
     "quickInputTitle.background": theme.ui.uibackgroundalt,
     "quickInputList.focusForeground": light
       ? theme.ui.defaultMain
       : c(theme.ui.primaryalt).lighten(0.8).desaturate(0.1).toHex(),
     "quickInput.foreground": light
       ? theme.ui.defaultMain
-      : c(theme.ui.primaryalt).lighten(0.5).desaturate(0.1).toHex(),
+      : c(theme.ui.default).alpha(0.7).toHex(),
+    // : c(theme.ui.primaryalt).lighten(0.5).desaturate(0.1).toHex(),
     "quickInputList.focusBackground": light
       ? c(theme.ui.defaultalt).alpha(0.2).toHex()
-      : c(theme.ui.primaryalt).lighten(0.15).alpha(0.45).toHex(),
+      : c(theme.ui.primaryalt).lighten(0.2).alpha(0.45).toHex(),
     "gitDecoration.modifiedResourceForeground": theme.levels.info,
     "gitDecoration.deletedResourceForeground": theme.levels.danger,
     "gitDecoration.untrackedResourceForeground": theme.levels.success,

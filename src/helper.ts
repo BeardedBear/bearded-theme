@@ -32,7 +32,7 @@ export function makeMainColorsDark({
     uiborder: c(base).darken(0.06).toHex(),
     // Fonts
     default: fontTeinted
-      ? c(base).lighten(0.6).saturate(0.15).toHex()
+      ? c(base).lighten(0.6).saturate(0.1).toHex()
       : c(base).lighten(0.7).desaturate(sat).toHex(),
     defaultMain: fontTeinted
       ? c(base).lighten(0.55).saturate(0.07).toHex()
