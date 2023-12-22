@@ -243,12 +243,14 @@ export default function ui(
     "editorGutter.modifiedBackground": `${theme.levels.info}cc`,
     "editorLineNumber.foreground": `${
       hc
-        ? theme.ui.defaultalt
+        ? c(theme.ui.defaultalt).alpha(0.7).toHex()
         : light
-        ? c(theme.ui.uibackgroundmid).darken(0.2).toHex()
-        : c(theme.ui.uibackgroundmid).lighten(0.2).toHex()
+        ? c(theme.ui.uibackground).darken(0.2).toHex()
+        : c(theme.ui.uibackgroundmid).lighten(0.15).desaturate(0.05).toHex()
     }`,
-    "editorLineNumber.activeForeground": theme.ui.defaultalt,
+    "editorLineNumber.activeForeground": light
+      ? c(theme.ui.uibackground).darken(0.7).toHex()
+      : c(theme.ui.uibackgroundmid).lighten(0.5).desaturate(0.05).toHex(),
     "editorStickyScrollHover.background": c(theme.ui.uibackground)
       .lighten(0.06)
       .toHex(),

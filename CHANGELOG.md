@@ -1,5 +1,14 @@
 # Changelog for Bearded Theme
 
+## 9.0.0 - 2023-12-22
+
+### Fixes
+
+- Fix line number foreground color
+- Fix quick input background color
+- Fix input background opacity and border color
+- Fix input placeholder color
+
 ## 8.3.2 - 2023-07-28
 
 ### Enhancements
