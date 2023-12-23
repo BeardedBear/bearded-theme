@@ -3,17 +3,17 @@
   "displayName": "Bearded Theme",
   "description": "The theme with a long beard.",
   "publisher": "BeardedBear",
-  "version": "0.0.1",
+  "version": "9.0.0-beta",
   "type": "module",
   "engines": {
     "vscode": "^1.69.0"
   },
   "scripts": {
     "build": "vite-node src/index.ts",
-    "build:ext": "vsce package --no-yarn",
+    "build:ext": "vsce package --out ./releases/%npm_package_version%.vsix --no-yarn",
     "dev": "vite-node src/index.ts -w",
     "fix": "prettier --write ./src/**/*.ts",
-    "release": "gh release create v%npm_package_version% --generate-notes --draft"
+    "release": "gh release create v%npm_package_version% --notes-file ./releases/%npm_package_version%.md --generate-notes"
   },
   "__metadata": {
     "id": "dffaf5a1-2219-434b-9d87-cb586fd59260",
