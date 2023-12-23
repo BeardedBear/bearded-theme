@@ -444,18 +444,51 @@ export default function ui(
     // statusBar
     "statusBar.background": theme.ui.uibackgroundalt,
     "statusBar.border": theme.ui.uiborder,
-    "statusBar.debuggingBackground": `${theme.ui.primary}44`,
-    "statusBar.debuggingForeground": theme.ui.default,
-    "statusBar.foreground": `${theme.ui.defaultMain}BB`,
+    "statusBar.foreground": c(theme.ui.defaultMain).alpha(0.5).toHex(),
+    "statusBar.debuggingBackground": c(theme.colors.orange)
+      .desaturate(0.5)
+      .darken(0.5)
+      .toHex(),
+    "statusBar.debuggingForeground": c(theme.colors.orange)
+      .desaturate(0.5)
+      .lighten()
+      .toHex(),
     "statusBar.noFolderBackground": theme.ui.uibackgroundalt,
     "statusBar.noFolderBorder": theme.ui.uiborder,
-    "statusBar.noFolderForeground": `${theme.ui.defaultMain}BB`,
+    "statusBarItem.hoverBackground": c(theme.ui.defaultMain).alpha(0.1).toHex(),
+    "statusBar.noFolderForeground": c(theme.ui.defaultMain).alpha(0.8).toHex(),
     "statusBarItem.activeBackground": theme.ui.primaryalt,
-    "statusBarItem.hoverBackground": `${theme.ui.defaultalt}30`,
-    "statusBarItem.prominentBackground": theme.ui.uiborder,
-    "statusBarItem.prominentHoverBackground": theme.ui.primaryalt,
-    "statusBarItem.errorBackground": theme.levels.danger,
-    "statusBarItem.warningBackground": theme.levels.warning,
+    "statusBarItem.errorBackground": c(theme.levels.danger).toHex(),
+    "statusBarItem.errorHoverBackground": c(theme.levels.danger)
+      .lighten(0.05)
+      .toHex(),
+    "statusBarItem.errorForeground": c(theme.levels.danger).darken(0.5).toHex(),
+    "statusBarItem.warningBackground": c(theme.levels.warning).toHex(),
+    "statusBarItem.warningHoverBackground": c(theme.levels.warning)
+      .lighten(0.05)
+      .toHex(),
+    "statusBarItem.warningForeground": c(theme.levels.warning)
+      .darken(0.5)
+      .toHex(),
+    "statusBarItem.prominentBackground": c(theme.ui.primary).toHex(),
+    "statusBarItem.prominentHoverBackground": c(theme.ui.primary)
+      .lighten(0.05)
+      .toHex(),
+    "statusBarItem.prominentForeground": c(theme.ui.primary)
+      .darken(0.5)
+      .toHex(),
+    "statusBarItem.offlineBackground": c(theme.colors.pink).toHex(),
+    "statusBarItem.offlineHoverBackground": c(theme.colors.pink)
+      .lighten(0.05)
+      .toHex(),
+    "statusBarItem.offlineForeground": c(theme.colors.pink).darken(0.5).toHex(),
+    "statusBarItem.remoteBackground": c(theme.colors.turquoize).toHex(),
+    "statusBarItem.remoteHoverBackground": c(theme.colors.turquoize)
+      .lighten(0.05)
+      .toHex(),
+    "statusBarItem.remoteForeground": c(theme.colors.turquoize)
+      .darken(0.5)
+      .toHex(),
 
     // suggest
     "editorSuggestWidget.background": theme.ui.uibackground,
