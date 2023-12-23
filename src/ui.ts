@@ -198,27 +198,13 @@ export default function ui(
     "editorGroup.dropBackground": `${theme.ui.primary}15`,
     "editorHoverWidget.background": theme.ui.primaryalt,
     "editorHoverWidget.border": theme.ui.uiborder,
-    "editorIndentGuide.activeBackground1": c(theme.colors.yellow).toHex(),
-    "editorIndentGuide.activeBackground2": c(theme.colors.pink).toHex(),
-    "editorIndentGuide.activeBackground3": c(theme.colors.blue).toHex(),
-    "editorIndentGuide.activeBackground4": c(theme.colors.purple).toHex(),
-    "editorIndentGuide.activeBackground5": c(theme.colors.turquoize).toHex(),
-    "editorIndentGuide.activeBackground6": c(theme.colors.salmon).toHex(),
-    "editorIndentGuide.background1": c(theme.colors.yellow).alpha(0.3).toHex(),
-    "editorIndentGuide.background2": c(theme.colors.pink).alpha(0.3).toHex(),
-    "editorIndentGuide.background3": c(theme.colors.blue).alpha(0.3).toHex(),
-    "editorIndentGuide.background4": c(theme.colors.purple).alpha(0.3).toHex(),
-    "editorIndentGuide.background5": c(theme.colors.turquoize)
-      .alpha(0.3)
-      .toHex(),
-    "editorIndentGuide.background6": c(theme.colors.salmon).alpha(0.3).toHex(),
+    "editorIndentGuide.background1": hc
+      ? c(theme.ui.defaultalt).alpha(0.4).toHex()
+      : c(theme.ui.defaultalt).alpha(0.2).toHex(),
+    "editorIndentGuide.activeBackground1": hc
+      ? c(theme.ui.defaultalt).alpha(0.9).toHex()
+      : c(theme.ui.defaultalt).alpha(0.8).toHex(),
 
-    // "editorIndentGuide.background": hc
-    //   ? `${theme.ui.defaultalt}70`
-    //   : `${theme.ui.defaultalt}30`,
-    // "editorIndentGuide.activeBackground": hc
-    //   ? theme.ui.defaultalt
-    //   : `${theme.ui.defaultalt}bb`,
     "editorLink.activeForeground": theme.ui.default,
     "editorWarning.border": transparent,
     "editorInfo.border": transparent,
@@ -271,20 +257,12 @@ export default function ui(
         ? c(theme.ui.uibackground).desaturate(0.8).darken(0.2).toHex()
         : c(theme.ui.uibackground).darken(0.3).toHex()
       : c(theme.ui.uibackground).desaturate(0.05).lighten(0.3).toHex(),
-    // "inputOption.activeBorder": theme.ui.primary,
-    // "inputOption.hoverBackground": theme.colors.blue,
-    // "inputOption.activeBackground": theme.colors.orange,
     "inputValidation.errorBackground": theme.ui.primaryalt,
     "inputValidation.errorBorder": theme.colors.yellow,
     "inputValidation.infoBackground": theme.ui.primaryalt,
     "inputValidation.infoBorder": theme.ui.primary,
     "inputValidation.warningBackground": theme.ui.primaryalt,
     "inputValidation.warningBorder": theme.colors.yellow,
-    // "inputOption.activeBackground": `${theme.ui.primary}30`,
-    // "inputOption.activeForeground": theme.ui.default,
-    // "inputValidation.errorForeground": theme.ui.default,
-    // "inputValidation.infoForeground": theme.ui.default,
-    // "inputValidation.warningForeground": theme.ui.default,
 
     // list
     "list.dropBackground": `${theme.ui.primary}15`,
