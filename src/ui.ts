@@ -63,7 +63,7 @@ export default function ui(
 
     // badge
     "badge.background": theme.ui.primary,
-    "badge.foreground": theme.ui.uibackground,
+    // "badge.foreground": theme.ui.uibackground,
 
     // breadcrumb
     "breadcrumb.background": theme.ui.uibackground,
@@ -501,8 +501,11 @@ export default function ui(
     "editorGroupHeader.noTabsBackground": theme.ui.uibackground,
     "editorGroupHeader.tabsBackground": theme.ui.uibackgroundalt,
     "editorGroupHeader.tabsBorder": theme.ui.uiborder,
-    "editorGroupHeader.border": "#bb272700",
-    "tab.activeBackground": hc ? theme.ui.primary + 20 : theme.ui.uibackground,
+    // "editorGroupHeader.border": "#bb272700",
+    "editorGroupHeader.border": transparent,
+    "tab.activeBackground": hc
+      ? c(theme.ui.primary).mix(theme.ui.uibackground, 0.9).toHex()
+      : theme.ui.uibackground,
     "tab.activeForeground": theme.ui.primary,
     "tab.activeBorderTop": theme.ui.primary,
     "tab.activeBorder": theme.ui.uibackground,
