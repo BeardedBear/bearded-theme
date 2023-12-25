@@ -343,6 +343,11 @@
         "label": "Bearded Theme Milkshake Vanilla Banana",
         "uiTheme": "hc-black",
         "path": "./themes/bearded-theme-milkshake-vanilla.json"
+      },
+      {
+        "label": "Bearded Theme Color Blindness",
+        "uiTheme": "hc-black",
+        "path": "./themes/bearded-theme-colorblind.json"
       }
     ]
   },

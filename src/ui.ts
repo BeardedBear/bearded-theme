@@ -229,7 +229,7 @@ export default function ui(
     "editorGutter.modifiedBackground": `${theme.levels.info}cc`,
     "editorLineNumber.foreground": `${
       hc
-        ? c(theme.ui.defaultalt).alpha(0.7).toHex()
+        ? c(theme.ui.defaultalt).alpha(0.3).toHex()
         : light
         ? c(theme.ui.uibackground).darken(0.2).toHex()
         : c(theme.ui.uibackgroundmid).lighten(0.15).desaturate(0.05).toHex()
