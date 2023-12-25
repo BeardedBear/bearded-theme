@@ -345,7 +345,7 @@
         "path": "./themes/bearded-theme-milkshake-vanilla.json"
       },
       {
-        "label": "Bearded Theme Color Blindness",
+        "label": "Bearded Themanopia",
         "uiTheme": "hc-black",
         "path": "./themes/bearded-theme-colorblind.json"
       }

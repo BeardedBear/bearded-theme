@@ -1,21 +1,23 @@
 import { makeMainColorsDark } from "../helper";
 import { Theme, ThemeColors } from "../typing";
 
+const ui = makeMainColorsDark({ base: "#1b1e28", primary: "#9887eb" });
+
 const colorsColorBlind: ThemeColors = {
-  blue: "#66ddef",
-  green: "#92e8ae",
-  greenAlt: "#46bfab",
-  orange: "#ec9f69",
-  pink: "#f5b1e7",
-  purple: "#b3a3ff",
-  red: "#e06075",
-  salmon: "#dc7da9",
-  turquoize: "#91e6e4",
-  yellow: "#f9e580",
+  blue: "#6b93f8",
+  green: "#f4e094",
+  greenAlt: "#ffefba",
+  orange: "#cfc08c",
+  pink: "#b1b4cf",
+  purple: "#6e79a4",
+  red: "#95939c",
+  salmon: "#8597d5",
+  turquoize: "#d1c7b3",
+  yellow: "#ece0c1",
 };
 
 export const colorBlind: Theme = {
-  ui: makeMainColorsDark({ base: "#1b1e28", primary: "#b3a3ff" }),
+  ui,
   colors: colorsColorBlind,
   levels: {
     danger: colorsColorBlind.red,
