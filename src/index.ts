@@ -1,4 +1,5 @@
 import { writeFile, writeFileSync } from "fs";
+
 import bridge from "../bridge.json" assert { type: "json" };
 import syntax from "./scopes/scopes";
 import semanticTokens from "./scopes/semanticTokens";
@@ -79,15 +80,15 @@ import {
 import { vividBlack, vividLight, vividPurple } from "./variations/vivid";
 
 interface ThemeOptions {
+  desaturateInputs?: boolean;
   hc?: boolean;
   light?: boolean;
   untindedSelection?: boolean;
-  desaturateInputs?: boolean;
 }
 
 interface BridgeItem {
-  slug: string;
   name: string;
+  slug: string;
   theme: Theme;
   uiTheme: string;
 }
@@ -97,20 +98,20 @@ const bfile: BridgeItem[] = JSON.parse(JSON.stringify(bridge));
 async function makeTheme(
   name: string,
   theme: Theme,
-  { hc, light, untindedSelection, desaturateInputs }: ThemeOptions = {
+  { desaturateInputs, hc, light, untindedSelection }: ThemeOptions = {
+    desaturateInputs: false,
     hc: false,
     light: false,
     untindedSelection: false,
-    desaturateInputs: false,
   },
 ): Promise<void> {
   const themeTemplate = {
     $schema: "vscode://schemas/color-theme",
-    name: `BeardedTheme ${name.charAt(0).toUpperCase()}${name.slice(1)}`,
     colors: ui(theme, hc, light, untindedSelection, desaturateInputs),
-    tokenColors: syntax(theme, hc),
+    name: `BeardedTheme ${name.charAt(0).toUpperCase()}${name.slice(1)}`,
     semanticHighlighting: true,
     semanticTokenColors: semanticTokens(theme),
+    tokenColors: syntax(theme, hc),
   };
 
   writeFile(
@@ -128,8 +129,8 @@ async function makeTheme(
     .join(" ");
 
   bfile.push({
-    slug: name.split(" ").join("-").toLowerCase(),
     name: `Bearded Theme ${themeName}`,
+    slug: name.split(" ").join("-").toLowerCase(),
     theme,
     uiTheme: "vs-dark",
   });
@@ -150,8 +151,8 @@ makeTheme("oceanic", oceanic);
 makeTheme("oceanic-reversed", oceanicReverded);
 makeTheme("solarized-dark", solarizedDark);
 makeTheme("solarized-light", solarizedLight, {
-  light: true,
   desaturateInputs: true,
+  light: true,
 });
 makeTheme("solarized-reversed", solarizedReversed);
 

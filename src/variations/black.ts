@@ -17,72 +17,72 @@ const blackColors: ThemeColors = {
 
 const blackLevels: ThemeLevels = {
   danger: blackColors.red,
+  info: blackColors.blue,
   success: blackColors.green,
   warning: blackColors.orange,
-  info: blackColors.blue,
 };
 
 // Gold
 export const blackAndGold: Theme = {
-  ui: makeMainColorsDark({ base, primary: blackColors.yellow }),
   colors: blackColors,
   levels: blackLevels,
+  ui: makeMainColorsDark({ base, primary: blackColors.yellow }),
 };
 
 export const blackAndGoldSoft: Theme = {
-  ui: makeMainColorsDark({ base: "#221f1d", primary: blackColors.yellow }),
   colors: blackColors,
   levels: blackLevels,
+  ui: makeMainColorsDark({ base: "#221f1d", primary: blackColors.yellow }),
 };
 
 // Ruby
 export const blackAndRuby: Theme = {
-  ui: makeMainColorsDark({ base, primary: blackColors.salmon }),
   colors: blackColors,
   levels: blackLevels,
+  ui: makeMainColorsDark({ base, primary: blackColors.salmon }),
 };
 
 export const blackAndRubySoft: Theme = {
-  ui: makeMainColorsDark({ base: "#281a21", primary: blackColors.salmon }),
   colors: blackColors,
   levels: blackLevels,
+  ui: makeMainColorsDark({ base: "#281a21", primary: blackColors.salmon }),
 };
 
 // Emerald
 export const blackAndEmerald: Theme = {
-  ui: makeMainColorsDark({ base, primary: blackColors.turquoize }),
   colors: blackColors,
   levels: blackLevels,
+  ui: makeMainColorsDark({ base, primary: blackColors.turquoize }),
 };
 
 export const blackAndEmeraldSoft: Theme = {
-  ui: makeMainColorsDark({ base: "#162226", primary: blackColors.turquoize }),
   colors: blackColors,
   levels: blackLevels,
+  ui: makeMainColorsDark({ base: "#162226", primary: blackColors.turquoize }),
 };
 
 // Diamond
 export const blackAndDiamond: Theme = {
-  ui: makeMainColorsDark({ base, primary: blackColors.blue }),
   colors: blackColors,
   levels: blackLevels,
+  ui: makeMainColorsDark({ base, primary: blackColors.blue }),
 };
 
 export const blackAndDiamondSoft: Theme = {
-  ui: makeMainColorsDark({ base: "#161d26", primary: blackColors.blue }),
   colors: blackColors,
   levels: blackLevels,
+  ui: makeMainColorsDark({ base: "#161d26", primary: blackColors.blue }),
 };
 
 // Amethyst
 export const blackAndAmethyst: Theme = {
-  ui: makeMainColorsDark({ base, primary: blackColors.purple }),
   colors: blackColors,
   levels: blackLevels,
+  ui: makeMainColorsDark({ base, primary: blackColors.purple }),
 };
 
 export const blackAndAmethystSoft: Theme = {
-  ui: makeMainColorsDark({ base: "#171626", primary: blackColors.purple }),
   colors: blackColors,
   levels: blackLevels,
+  ui: makeMainColorsDark({ base: "#171626", primary: blackColors.purple }),
 };

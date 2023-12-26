@@ -2,8 +2,8 @@
 import { Theme } from "../typing";
 
 interface SemanticToken {
-  foreground: string;
   bold?: boolean;
+  foreground: string;
   italic?: boolean;
   underline?: boolean;
 }
@@ -12,15 +12,15 @@ export default function semanticTokens(
   theme: Theme,
 ): Record<string, SemanticToken> {
   return {
-    "property.declaration": { foreground: theme.ui.default },
-    property: { foreground: theme.colors.orange },
-    variable: { foreground: theme.colors.salmon },
-    "variable.defaultLibrary": { foreground: theme.colors.turquoize },
     "class.declaration": { foreground: theme.colors.purple },
+    "class.decorator": { foreground: theme.colors.pink },
+    enumMember: { foreground: theme.colors.purple },
+    "meta.decorator": { foreground: theme.colors.pink },
     namespace: { foreground: theme.colors.blue },
     parameter: { foreground: theme.colors.pink },
-    "class.decorator": { foreground: theme.colors.pink },
-    "meta.decorator": { foreground: theme.colors.pink },
-    enumMember: { foreground: theme.colors.purple },
+    property: { foreground: theme.colors.orange },
+    "property.declaration": { foreground: theme.ui.default },
+    variable: { foreground: theme.colors.salmon },
+    "variable.defaultLibrary": { foreground: theme.colors.turquoize },
   };
 }

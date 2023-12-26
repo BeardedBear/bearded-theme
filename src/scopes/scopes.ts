@@ -1,4 +1,5 @@
 import { colord as c } from "colord";
+
 import { FontStyle, Scope, Theme } from "../typing";
 import * as markup from "./markup";
 import * as prog from "./prog";
@@ -12,8 +13,8 @@ function createScope(
   return {
     scope,
     settings: {
-      foreground,
       fontStyle,
+      foreground,
     },
   };
 }

@@ -16,35 +16,35 @@ const solarizedColors: ThemeColors = {
 
 const solarizedLevels: ThemeLevels = {
   danger: solarizedColors.red,
+  info: solarizedColors.blue,
   success: solarizedColors.green,
   warning: solarizedColors.yellow,
-  info: solarizedColors.blue,
 };
 
 export const solarizedDark: Theme = {
-  ui: makeMainColorsDark({ base: "#132c34", primary: "#47cfc4" }),
   colors: solarizedColors,
   levels: solarizedLevels,
+  ui: makeMainColorsDark({ base: "#132c34", primary: "#47cfc4" }),
 };
 
 export const solarizedReversed: Theme = {
+  colors: solarizedColors,
+  levels: solarizedLevels,
   ui: makeMainColorsDark({
     base: "#102128",
     primary: "#47cfc4",
     reversed: true,
   }),
-  colors: solarizedColors,
-  levels: solarizedLevels,
 };
 
 export const solarizedLight: Theme = {
-  ui: makeMainColorsLight({
-    base: "#fdf6e3",
-    primary: "#2aa198",
-    desaturated: true,
-  }),
   colors: solarizedColors,
   levels: solarizedLevels,
+  ui: makeMainColorsLight({
+    base: "#fdf6e3",
+    desaturated: true,
+    primary: "#2aa198",
+  }),
 };
 
 // Oceanic
@@ -63,30 +63,30 @@ const oceanicColors: ThemeColors = {
 };
 
 export const oceanic: Theme = {
+  colors: oceanicColors,
+  levels: {
+    danger: oceanicColors.salmon,
+    info: oceanicColors.blue,
+    success: oceanicColors.green,
+    warning: oceanicColors.orange,
+  },
   ui: makeMainColorsDark({
     base: "#1a2b34",
     primary: "#97c892",
     primaryAlt: "#284450",
   }),
+};
+export const oceanicReverded: Theme = {
   colors: oceanicColors,
   levels: {
     danger: oceanicColors.salmon,
+    info: oceanicColors.blue,
     success: oceanicColors.green,
     warning: oceanicColors.orange,
-    info: oceanicColors.blue,
   },
-};
-export const oceanicReverded: Theme = {
   ui: makeMainColorsDark({
     base: "#152229",
     primary: "#97c892",
     reversed: true,
   }),
-  colors: oceanicColors,
-  levels: {
-    danger: oceanicColors.salmon,
-    success: oceanicColors.green,
-    warning: oceanicColors.orange,
-    info: oceanicColors.blue,
-  },
 };

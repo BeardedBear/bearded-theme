@@ -16,22 +16,18 @@ const classicsColors: ThemeColors = {
 
 const levels: ThemeLevels = {
   danger: classicsColors.red,
+  info: classicsColors.blue,
   success: classicsColors.green,
   warning: classicsColors.yellow,
-  info: classicsColors.blue,
 };
 
 export const anthracite: Theme = {
-  ui: makeMainColorsDark({ base: "#181a1f", primary: "#a2abb6" }),
   colors: classicsColors,
   levels,
+  ui: makeMainColorsDark({ base: "#181a1f", primary: "#a2abb6" }),
 };
 
 export const light: Theme = {
-  ui: makeMainColorsLight({
-    base: "#f3f4f5",
-    primary: "#52C1DA",
-  }),
   colors: {
     blue: "#0f8fe4",
     green: "#18ac31",
@@ -45,4 +41,8 @@ export const light: Theme = {
     yellow: "#d49408",
   },
   levels,
+  ui: makeMainColorsLight({
+    base: "#f3f4f5",
+    primary: "#52C1DA",
+  }),
 };

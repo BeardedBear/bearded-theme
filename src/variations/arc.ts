@@ -16,41 +16,41 @@ const arcColors: ThemeColors = {
 
 const arcLevels: ThemeLevels = {
   danger: arcColors.red,
+  info: arcColors.blue,
   success: arcColors.green,
   warning: arcColors.orange,
-  info: arcColors.blue,
 };
 
 export const arc: Theme = {
-  ui: makeMainColorsDark({ base: "#1c2433", primary: "#8196b5" }),
   colors: arcColors,
   levels: arcLevels,
+  ui: makeMainColorsDark({ base: "#1c2433", primary: "#8196b5" }),
 };
 
 export const arcEolstorm: Theme = {
-  ui: makeMainColorsDark({ base: "#222A38", primary: "#9DACC3" }),
   colors: arcColors,
   levels: arcLevels,
+  ui: makeMainColorsDark({ base: "#222A38", primary: "#9DACC3" }),
 };
 
 export const arcBlueBerry: Theme = {
-  ui: makeMainColorsDark({ base: "#111422", primary: "#8eb0e6" }),
   colors: arcColors,
   levels: arcLevels,
+  ui: makeMainColorsDark({ base: "#111422", primary: "#8eb0e6" }),
 };
 
 export const arcEggplant: Theme = {
-  ui: makeMainColorsDark({ base: "#181421", primary: "#9698d8" }),
   colors: arcColors,
   levels: arcLevels,
+  ui: makeMainColorsDark({ base: "#181421", primary: "#9698d8" }),
 };
 
 export const arcReversed: Theme = {
+  colors: arcColors,
+  levels: arcLevels,
   ui: makeMainColorsDark({
     base: "#161c28",
     primary: "#8196b5",
     reversed: true,
   }),
-  colors: arcColors,
-  levels: arcLevels,
 };

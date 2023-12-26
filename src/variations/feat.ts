@@ -2,17 +2,6 @@ import { makeMainColorsDark, makeMainColorsLight } from "../helper";
 import { Theme, ThemeColors } from "../typing";
 
 export const will: Theme = {
-  ui: {
-    primary: "#b498f5",
-    primaryalt: "#231e36",
-    uiborder: "#000000",
-    uibackground: "#14111f",
-    uibackgroundmid: "#100e1a",
-    uibackgroundalt: "#0d0a14",
-    default: "#bdb6d3",
-    defaultMain: "#bfb9da",
-    defaultalt: "#585775",
-  },
   colors: {
     blue: "#8ad0ff",
     green: "#5fee9b",
@@ -27,9 +16,20 @@ export const will: Theme = {
   },
   levels: {
     danger: "#f7775a",
+    info: "#8ad0ff",
     success: "#5fee9b",
     warning: "#ffae82",
-    info: "#8ad0ff",
+  },
+  ui: {
+    default: "#bdb6d3",
+    defaultMain: "#bfb9da",
+    defaultalt: "#585775",
+    primary: "#b498f5",
+    primaryalt: "#231e36",
+    uibackground: "#14111f",
+    uibackgroundalt: "#0d0a14",
+    uibackgroundmid: "#100e1a",
+    uiborder: "#000000",
   },
 };
 
@@ -47,14 +47,14 @@ const colorsGoldDRaynh: ThemeColors = {
 };
 
 export const goldDRaynh: Theme = {
-  ui: makeMainColorsDark({ base: "#0f1628", primary: "#e39000" }),
   colors: colorsGoldDRaynh,
   levels: {
     danger: colorsGoldDRaynh.red,
+    info: colorsGoldDRaynh.blue,
     success: colorsGoldDRaynh.green,
     warning: colorsGoldDRaynh.orange,
-    info: colorsGoldDRaynh.blue,
   },
+  ui: makeMainColorsDark({ base: "#0f1628", primary: "#e39000" }),
 };
 
 const colorsGoldDRaynhLight: ThemeColors = {
@@ -70,17 +70,17 @@ const colorsGoldDRaynhLight: ThemeColors = {
   yellow: "#d0a00f",
 };
 export const goldDRaynhLight: Theme = {
+  colors: colorsGoldDRaynhLight,
+  levels: {
+    danger: colorsGoldDRaynhLight.red,
+    info: colorsGoldDRaynhLight.blue,
+    success: colorsGoldDRaynhLight.green,
+    warning: colorsGoldDRaynhLight.orange,
+  },
   ui: makeMainColorsLight({
     base: "#f5f5f5",
     primary: "#2397e5",
   }),
-  colors: colorsGoldDRaynhLight,
-  levels: {
-    danger: colorsGoldDRaynhLight.red,
-    success: colorsGoldDRaynhLight.green,
-    warning: colorsGoldDRaynhLight.orange,
-    info: colorsGoldDRaynhLight.blue,
-  },
 };
 
 const melleJulieColors: ThemeColors = {
@@ -97,14 +97,14 @@ const melleJulieColors: ThemeColors = {
 };
 
 export const melleJulie: Theme = {
-  ui: makeMainColorsDark({ base: "#1c1f24", primary: "#63edef" }),
   colors: melleJulieColors,
   levels: {
     danger: melleJulieColors.red,
+    info: melleJulieColors.blue,
     success: melleJulieColors.green,
     warning: melleJulieColors.orange,
-    info: melleJulieColors.blue,
   },
+  ui: makeMainColorsDark({ base: "#1c1f24", primary: "#63edef" }),
 };
 
 const melleJulieColorsLight: ThemeColors = {
@@ -121,12 +121,12 @@ const melleJulieColorsLight: ThemeColors = {
 };
 
 export const melleJulieLight: Theme = {
-  ui: makeMainColorsLight({ base: "#edeeee", primary: "#218d8f" }),
   colors: melleJulieColorsLight,
   levels: {
     danger: melleJulieColorsLight.red,
+    info: melleJulieColorsLight.blue,
     success: melleJulieColorsLight.green,
     warning: melleJulieColorsLight.orange,
-    info: melleJulieColorsLight.blue,
   },
+  ui: makeMainColorsLight({ base: "#edeeee", primary: "#218d8f" }),
 };

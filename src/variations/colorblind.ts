@@ -18,12 +18,12 @@ const colorsColorBlind: ThemeColors = {
 };
 
 export const colorBlind: Theme = {
-  ui,
   colors: colorsColorBlind,
   levels: {
     danger: colorsColorBlind.red,
+    info: colorsColorBlind.blue,
     success: colorsColorBlind.green,
     warning: colorsColorBlind.orange,
-    info: colorsColorBlind.blue,
   },
+  ui,
 };

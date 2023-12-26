@@ -16,19 +16,19 @@ const colors: ThemeColors = {
 
 const levelColors = {
   danger: colors.red,
+  info: colors.blue,
   success: colors.green,
   warning: colors.yellow,
-  info: colors.blue,
 };
 
 export const stainedPurple: Theme = {
-  ui: makeMainColorsDark({ base: "#20192b", primary: "#a948ef" }),
   colors,
   levels: levelColors,
+  ui: makeMainColorsDark({ base: "#20192b", primary: "#a948ef" }),
 };
 
 export const stainedBlue: Theme = {
-  ui: makeMainColorsDark({ base: "#121726", primary: "#3A7FFF" }),
   colors,
   levels: levelColors,
+  ui: makeMainColorsDark({ base: "#121726", primary: "#3A7FFF" }),
 };

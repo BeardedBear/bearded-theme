@@ -17,41 +17,41 @@ const surprisingColors = (primary: string): ThemeColors => {
 };
 
 const surprisingLevels: ThemeLevels = {
-  warning: "#d1a456",
-  info: "#00B3BD",
   danger: "#E35535",
+  info: "#00B3BD",
   success: "#a9dc76",
+  warning: "#d1a456",
 };
 
 const primarySurprisingEggplant = "#d24e4e";
 export const surprisingEggplant: Theme = {
+  colors: surprisingColors(primarySurprisingEggplant),
+  levels: surprisingLevels,
   ui: makeMainColorsDark({
     base: "#1d1426",
     primary: primarySurprisingEggplant,
     primaryAlt: "#441f30",
   }),
-  colors: surprisingColors(primarySurprisingEggplant),
-  levels: surprisingLevels,
 };
 
 const primarySurprisingBlueberry = "#c93e71";
 export const surprisingBlueberry: Theme = {
+  colors: surprisingColors(primarySurprisingBlueberry),
+  levels: surprisingLevels,
   ui: makeMainColorsDark({
     base: "#101a29",
     primary: primarySurprisingBlueberry,
     primaryAlt: "#441f30",
   }),
-  colors: surprisingColors(primarySurprisingBlueberry),
-  levels: surprisingLevels,
 };
 
 const primarySurprisingWatermelon = "#da6c62";
 export const surprisingWatermelon: Theme = {
+  colors: surprisingColors(primarySurprisingWatermelon),
+  levels: surprisingLevels,
   ui: makeMainColorsDark({
     base: "#142326",
     primary: primarySurprisingWatermelon,
     primaryAlt: "#5f3333",
   }),
-  colors: surprisingColors(primarySurprisingWatermelon),
-  levels: surprisingLevels,
 };
