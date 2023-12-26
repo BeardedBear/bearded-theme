@@ -65,6 +65,7 @@ export default function ui(
 
     // badge
     "badge.background": theme.ui.primary,
+    "badge.foreground": theme.ui.uibackgroundalt,
 
     // breadcrumb
     "breadcrumb.background": theme.ui.uibackground,
