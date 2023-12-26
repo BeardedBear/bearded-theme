@@ -552,8 +552,10 @@ export default function ui(
     "textCodeBlock.background": `${theme.levels.info}34`,
     "textLink.activeForeground": theme.levels.info,
     "textLink.foreground": theme.levels.info,
-    "textPreformat.background": c(theme.ui.uibackground).darken(0.1).toHex(), // "terminal.selectionBackground": `${theme.ui.primary}30`,
-    "textPreformat.foreground": theme.ui.defaultMain,
+    "textPreformat.background": c(theme.colors.yellow)
+      .mix(theme.ui.uibackground, 0.8)
+      .toHex(),
+    "textPreformat.foreground": theme.colors.yellow,
 
     "textSeparator.foreground": theme.ui.primary,
     // titleBar
