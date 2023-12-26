@@ -58,8 +58,8 @@ export default function ui(
     "activityBar.dropBorder": c(theme.ui.defaultalt).alpha(0.2).toHex(),
     "activityBar.foreground": theme.ui.primary,
     "activityBar.inactiveForeground": hc
-      ? theme.ui.defaultalt
-      : c(theme.ui.defaultalt).alpha(0.7).toHex(),
+      ? c(theme.ui.default).mix(theme.ui.uibackground, 0.6).toHex()
+      : c(theme.ui.default).mix(theme.ui.uibackground, 0.7).toHex(),
     "activityBarBadge.background": theme.ui.primary,
     "activityBarBadge.foreground": theme.ui.uibackgroundalt,
 
@@ -214,8 +214,8 @@ export default function ui(
       hc
         ? c(theme.ui.defaultalt).alpha(0.3).toHex()
         : light
-        ? c(theme.ui.uibackground).darken(0.2).toHex()
-        : c(theme.ui.uibackgroundmid).lighten(0.15).desaturate(0.05).toHex()
+          ? c(theme.ui.uibackground).darken(0.2).toHex()
+          : c(theme.ui.uibackgroundmid).lighten(0.15).desaturate(0.05).toHex()
     }`,
     "editorLink.activeForeground": theme.ui.default,
     "editorMarkerNavigation.background": theme.ui.uibackgroundalt,
