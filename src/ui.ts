@@ -552,8 +552,8 @@ export default function ui(
     "textCodeBlock.background": `${theme.levels.info}34`,
     "textLink.activeForeground": theme.levels.info,
     "textLink.foreground": theme.levels.info,
-    "textPreformat.foreground": theme.colors.yellow,
-    // "terminal.selectionBackground": `${theme.ui.primary}30`,
+    "textPreformat.background": c(theme.ui.uibackground).darken(0.1).toHex(), // "terminal.selectionBackground": `${theme.ui.primary}30`,
+    "textPreformat.foreground": theme.ui.defaultMain,
 
     "textSeparator.foreground": theme.ui.primary,
     // titleBar
@@ -576,12 +576,5 @@ export default function ui(
 
     "welcomePage.tileHoverBackground": theme.ui.defaultMain + 20,
     "widget.shadow": `${theme.ui.uiborder}30`,
-
-    // "editorError.background": theme.levels.danger + 99,
-    // "editorError.foreground": theme.levels.danger,
-    // "editorWarning.foreground": theme.levels.warning,
-    // "editorInfo.foreground": theme.levels.info,
-    // "editorHint.foreground": theme.levels.success,
-    // "editor.background": theme.ui.uibackground,
   };
 }
