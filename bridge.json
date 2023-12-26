@@ -1,297 +1,2126 @@
 [
   {
-    "path": "themes/bearded-theme-arc.jsonsss",
-    "uiTheme": "vs-dark",
-    "name": "BeardedTheme Arc"
+    "slug": "arc",
+    "name": "Bearded Theme Arc",
+    "theme": {
+      "ui": {
+        "primary": "#8196b5",
+        "uibackground": "#1c2433",
+        "uibackgroundmid": "#1a212f",
+        "uibackgroundalt": "#181f2c",
+        "primaryalt": "#253043",
+        "uiborder": "#11161f",
+        "default": "#d3d8e1",
+        "defaultMain": "#b5bdcc",
+        "defaultalt": "#99abcf"
+      },
+      "colors": {
+        "blue": "#69C3FF",
+        "green": "#3CEC85",
+        "greenAlt": "#A4EF58",
+        "orange": "#FF955C",
+        "pink": "#F38CEC",
+        "purple": "#B78AFF",
+        "red": "#E35535",
+        "salmon": "#FF738A",
+        "turquoize": "#22ECDB",
+        "yellow": "#EACD61"
+      },
+      "levels": {
+        "danger": "#E35535",
+        "success": "#3CEC85",
+        "warning": "#FF955C",
+        "info": "#69C3FF"
+      }
+    },
+    "uiTheme": "vs-dark"
   },
   {
-    "path": "themes/bearded-theme-arc-eolstorm.jsonsss",
-    "uiTheme": "vs-dark",
-    "name": "BeardedTheme Arc-eolstorm"
+    "slug": "arc-eolstorm",
+    "name": "Bearded Theme Arc Eolstorm",
+    "theme": {
+      "ui": {
+        "primary": "#9DACC3",
+        "uibackground": "#222A38",
+        "uibackgroundmid": "#202734",
+        "uibackgroundalt": "#1e2531",
+        "primaryalt": "#2c3648",
+        "uiborder": "#161c25",
+        "default": "#dbdee4",
+        "defaultMain": "#bec4ce",
+        "defaultalt": "#a3b3cf"
+      },
+      "colors": {
+        "blue": "#69C3FF",
+        "green": "#3CEC85",
+        "greenAlt": "#A4EF58",
+        "orange": "#FF955C",
+        "pink": "#F38CEC",
+        "purple": "#B78AFF",
+        "red": "#E35535",
+        "salmon": "#FF738A",
+        "turquoize": "#22ECDB",
+        "yellow": "#EACD61"
+      },
+      "levels": {
+        "danger": "#E35535",
+        "success": "#3CEC85",
+        "warning": "#FF955C",
+        "info": "#69C3FF"
+      }
+    },
+    "uiTheme": "vs-dark"
   },
   {
-    "path": "themes/bearded-theme-arc-blueberry.jsonsss",
-    "uiTheme": "vs-dark",
-    "name": "BeardedTheme Arc-blueberry"
+    "slug": "arc-blueberry",
+    "name": "Bearded Theme Arc Blueberry",
+    "theme": {
+      "ui": {
+        "primary": "#8eb0e6",
+        "uibackground": "#111422",
+        "uibackgroundmid": "#0f121e",
+        "uibackgroundalt": "#0d101b",
+        "primaryalt": "#1a1e33",
+        "uiborder": "#07080e",
+        "default": "#c0c4d8",
+        "defaultMain": "#a1a7c4",
+        "defaultalt": "#828eca"
+      },
+      "colors": {
+        "blue": "#69C3FF",
+        "green": "#3CEC85",
+        "greenAlt": "#A4EF58",
+        "orange": "#FF955C",
+        "pink": "#F38CEC",
+        "purple": "#B78AFF",
+        "red": "#E35535",
+        "salmon": "#FF738A",
+        "turquoize": "#22ECDB",
+        "yellow": "#EACD61"
+      },
+      "levels": {
+        "danger": "#E35535",
+        "success": "#3CEC85",
+        "warning": "#FF955C",
+        "info": "#69C3FF"
+      }
+    },
+    "uiTheme": "vs-dark"
   },
   {
-    "path": "themes/bearded-theme-arc-eggplant.jsonsss",
-    "uiTheme": "vs-dark",
-    "name": "BeardedTheme Arc-eggplant"
+    "slug": "arc-eggplant",
+    "name": "Bearded Theme Arc Eggplant",
+    "theme": {
+      "ui": {
+        "primary": "#9698d8",
+        "uibackground": "#181421",
+        "uibackgroundmid": "#16121d",
+        "uibackgroundalt": "#13101a",
+        "primaryalt": "#241e31",
+        "uiborder": "#0a080e",
+        "default": "#cac6d4",
+        "defaultMain": "#afa9be",
+        "defaultalt": "#9c8bc3"
+      },
+      "colors": {
+        "blue": "#69C3FF",
+        "green": "#3CEC85",
+        "greenAlt": "#A4EF58",
+        "orange": "#FF955C",
+        "pink": "#F38CEC",
+        "purple": "#B78AFF",
+        "red": "#E35535",
+        "salmon": "#FF738A",
+        "turquoize": "#22ECDB",
+        "yellow": "#EACD61"
+      },
+      "levels": {
+        "danger": "#E35535",
+        "success": "#3CEC85",
+        "warning": "#FF955C",
+        "info": "#69C3FF"
+      }
+    },
+    "uiTheme": "vs-dark"
   },
   {
-    "path": "themes/bearded-theme-oceanic.jsonsss",
-    "uiTheme": "vs-dark",
-    "name": "BeardedTheme Oceanic"
+    "slug": "oceanic",
+    "name": "Bearded Theme Oceanic",
+    "theme": {
+      "ui": {
+        "primary": "#97c892",
+        "uibackground": "#1a2b34",
+        "uibackgroundmid": "#182830",
+        "uibackgroundalt": "#16252d",
+        "primaryalt": "#284450",
+        "uiborder": "#101a20",
+        "default": "#d1dce2",
+        "defaultMain": "#b1c5cf",
+        "defaultalt": "#95bdd2"
+      },
+      "colors": {
+        "blue": "#5fb2df",
+        "green": "#97c892",
+        "greenAlt": "#A4EF58",
+        "orange": "#DC8255",
+        "pink": "#d194cd",
+        "purple": "#978dd6",
+        "red": "#B4552D",
+        "salmon": "#ee5d75",
+        "turquoize": "#59c6c8",
+        "yellow": "#f6cc73"
+      },
+      "levels": {
+        "danger": "#ee5d75",
+        "success": "#97c892",
+        "warning": "#DC8255",
+        "info": "#5fb2df"
+      }
+    },
+    "uiTheme": "vs-dark"
   },
   {
-    "path": "themes/bearded-theme-oceanic-reversed.jsonsss",
-    "uiTheme": "vs-dark",
-    "name": "BeardedTheme Oceanic-reversed"
+    "slug": "oceanic-reversed",
+    "name": "Bearded Theme Oceanic Reversed",
+    "theme": {
+      "ui": {
+        "primary": "#97c892",
+        "uibackground": "#111c22",
+        "uibackgroundmid": "#131f25",
+        "uibackgroundalt": "#152229",
+        "primaryalt": "#1e303a",
+        "uiborder": "#0b1115",
+        "default": "#c7d5dc",
+        "defaultMain": "#a8bdc8",
+        "defaultalt": "#8ab5cc"
+      },
+      "colors": {
+        "blue": "#5fb2df",
+        "green": "#97c892",
+        "greenAlt": "#A4EF58",
+        "orange": "#DC8255",
+        "pink": "#d194cd",
+        "purple": "#978dd6",
+        "red": "#B4552D",
+        "salmon": "#ee5d75",
+        "turquoize": "#59c6c8",
+        "yellow": "#f6cc73"
+      },
+      "levels": {
+        "danger": "#ee5d75",
+        "success": "#97c892",
+        "warning": "#DC8255",
+        "info": "#5fb2df"
+      }
+    },
+    "uiTheme": "vs-dark"
   },
   {
-    "path": "themes/bearded-theme-solarized-dark.jsonsss",
-    "uiTheme": "vs-dark",
-    "name": "BeardedTheme Solarized-dark"
+    "slug": "solarized-dark",
+    "name": "Bearded Theme Solarized Dark",
+    "theme": {
+      "ui": {
+        "primary": "#47cfc4",
+        "uibackground": "#132c34",
+        "uibackgroundmid": "#112830",
+        "uibackgroundalt": "#10252c",
+        "primaryalt": "#1a3c47",
+        "uiborder": "#0b191e",
+        "default": "#c7dee5",
+        "defaultMain": "#a4c9d5",
+        "defaultalt": "#85c6da"
+      },
+      "colors": {
+        "blue": "#399fe8",
+        "green": "#94a522",
+        "greenAlt": "#A4EF58",
+        "orange": "#d8822c",
+        "pink": "#ce81c8",
+        "purple": "#767cde",
+        "red": "#eb4937",
+        "salmon": "#e54b95",
+        "turquoize": "#38bbb0",
+        "yellow": "#dfbe5a"
+      },
+      "levels": {
+        "danger": "#eb4937",
+        "success": "#94a522",
+        "warning": "#dfbe5a",
+        "info": "#399fe8"
+      }
+    },
+    "uiTheme": "vs-dark"
   },
   {
-    "path": "themes/bearded-theme-solarized-light.jsonsss",
-    "uiTheme": "vs-dark",
-    "name": "BeardedTheme Solarized-light"
+    "slug": "solarized-light",
+    "name": "Bearded Theme Solarized Light",
+    "theme": {
+      "ui": {
+        "primary": "#2aa198",
+        "uibackground": "#fdf6e3",
+        "uibackgroundmid": "#f8f1df",
+        "uibackgroundalt": "#f4edda",
+        "primaryalt": "#fef9ed",
+        "uiborder": "#ddd3b7",
+        "default": "#000000",
+        "defaultMain": "#000000",
+        "defaultalt": "#8fa2a0"
+      },
+      "colors": {
+        "blue": "#399fe8",
+        "green": "#94a522",
+        "greenAlt": "#A4EF58",
+        "orange": "#d8822c",
+        "pink": "#ce81c8",
+        "purple": "#767cde",
+        "red": "#eb4937",
+        "salmon": "#e54b95",
+        "turquoize": "#38bbb0",
+        "yellow": "#dfbe5a"
+      },
+      "levels": {
+        "danger": "#eb4937",
+        "success": "#94a522",
+        "warning": "#dfbe5a",
+        "info": "#399fe8"
+      }
+    },
+    "uiTheme": "vs-dark"
   },
   {
-    "path": "themes/bearded-theme-solarized-reversed.jsonsss",
-    "uiTheme": "vs-dark",
-    "name": "BeardedTheme Solarized-reversed"
+    "slug": "solarized-reversed",
+    "name": "Bearded Theme Solarized Reversed",
+    "theme": {
+      "ui": {
+        "primary": "#47cfc4",
+        "uibackground": "#0d1a20",
+        "uibackgroundmid": "#0f1d24",
+        "uibackgroundalt": "#102128",
+        "primaryalt": "#17303a",
+        "uiborder": "#070f12",
+        "default": "#bfd5de",
+        "defaultMain": "#9dbfcd",
+        "defaultalt": "#7dbad4"
+      },
+      "colors": {
+        "blue": "#399fe8",
+        "green": "#94a522",
+        "greenAlt": "#A4EF58",
+        "orange": "#d8822c",
+        "pink": "#ce81c8",
+        "purple": "#767cde",
+        "red": "#eb4937",
+        "salmon": "#e54b95",
+        "turquoize": "#38bbb0",
+        "yellow": "#dfbe5a"
+      },
+      "levels": {
+        "danger": "#eb4937",
+        "success": "#94a522",
+        "warning": "#dfbe5a",
+        "info": "#399fe8"
+      }
+    },
+    "uiTheme": "vs-dark"
   },
   {
-    "path": "themes/bearded-theme-black-amethyst.jsonsss",
-    "uiTheme": "vs-dark",
-    "name": "BeardedTheme Black-amethyst"
+    "slug": "black-&-amethyst",
+    "name": "Bearded Theme Black & Amethyst",
+    "theme": {
+      "ui": {
+        "primary": "#a85ff1",
+        "uibackground": "#111418",
+        "uibackgroundmid": "#0f1215",
+        "uibackgroundalt": "#0c0f11",
+        "primaryalt": "#1c2027",
+        "uiborder": "#040506",
+        "default": "#c3c6cb",
+        "defaultMain": "#a8adb3",
+        "defaultalt": "#8a9eb7"
+      },
+      "colors": {
+        "blue": "#11B7D4",
+        "green": "#00a884",
+        "greenAlt": "#3585bb",
+        "orange": "#d4770c",
+        "pink": "#d46ec0",
+        "purple": "#a85ff1",
+        "red": "#E35535",
+        "salmon": "#c62f52",
+        "turquoize": "#38c7bd",
+        "yellow": "#c7910c"
+      },
+      "levels": {
+        "danger": "#E35535",
+        "success": "#00a884",
+        "warning": "#d4770c",
+        "info": "#11B7D4"
+      }
+    },
+    "uiTheme": "vs-dark"
   },
   {
-    "path": "themes/bearded-theme-black-amethyst-soft.jsonsss",
-    "uiTheme": "vs-dark",
-    "name": "BeardedTheme Black-amethyst-soft"
+    "slug": "black-&-amethyst-soft",
+    "name": "Bearded Theme Black & Amethyst Soft",
+    "theme": {
+      "ui": {
+        "primary": "#a85ff1",
+        "uibackground": "#171626",
+        "uibackgroundmid": "#151422",
+        "uibackgroundalt": "#13121f",
+        "primaryalt": "#211f36",
+        "uiborder": "#0b0b13",
+        "default": "#cac9d8",
+        "defaultMain": "#acabc3",
+        "defaultalt": "#918ec7"
+      },
+      "colors": {
+        "blue": "#11B7D4",
+        "green": "#00a884",
+        "greenAlt": "#3585bb",
+        "orange": "#d4770c",
+        "pink": "#d46ec0",
+        "purple": "#a85ff1",
+        "red": "#E35535",
+        "salmon": "#c62f52",
+        "turquoize": "#38c7bd",
+        "yellow": "#c7910c"
+      },
+      "levels": {
+        "danger": "#E35535",
+        "success": "#00a884",
+        "warning": "#d4770c",
+        "info": "#11B7D4"
+      }
+    },
+    "uiTheme": "vs-dark"
   },
   {
-    "path": "themes/bearded-theme-black-diamond.jsonsss",
-    "uiTheme": "vs-dark",
-    "name": "BeardedTheme Black-diamond"
+    "slug": "black-&-diamond",
+    "name": "Bearded Theme Black & Diamond",
+    "theme": {
+      "ui": {
+        "primary": "#11B7D4",
+        "uibackground": "#111418",
+        "uibackgroundmid": "#0f1215",
+        "uibackgroundalt": "#0c0f11",
+        "primaryalt": "#1c2027",
+        "uiborder": "#040506",
+        "default": "#c3c6cb",
+        "defaultMain": "#a8adb3",
+        "defaultalt": "#8a9eb7"
+      },
+      "colors": {
+        "blue": "#11B7D4",
+        "green": "#00a884",
+        "greenAlt": "#3585bb",
+        "orange": "#d4770c",
+        "pink": "#d46ec0",
+        "purple": "#a85ff1",
+        "red": "#E35535",
+        "salmon": "#c62f52",
+        "turquoize": "#38c7bd",
+        "yellow": "#c7910c"
+      },
+      "levels": {
+        "danger": "#E35535",
+        "success": "#00a884",
+        "warning": "#d4770c",
+        "info": "#11B7D4"
+      }
+    },
+    "uiTheme": "vs-dark"
   },
   {
-    "path": "themes/bearded-theme-black-diamond-soft.jsonsss",
-    "uiTheme": "vs-dark",
-    "name": "BeardedTheme Black-diamond-soft"
+    "slug": "black-&-diamond-soft",
+    "name": "Bearded Theme Black & Diamond Soft",
+    "theme": {
+      "ui": {
+        "primary": "#11B7D4",
+        "uibackground": "#161d26",
+        "uibackgroundmid": "#141a22",
+        "uibackgroundalt": "#12181f",
+        "primaryalt": "#1f2936",
+        "uiborder": "#0b0e13",
+        "default": "#c9d0d8",
+        "defaultMain": "#abb6c3",
+        "defaultalt": "#8ea7c7"
+      },
+      "colors": {
+        "blue": "#11B7D4",
+        "green": "#00a884",
+        "greenAlt": "#3585bb",
+        "orange": "#d4770c",
+        "pink": "#d46ec0",
+        "purple": "#a85ff1",
+        "red": "#E35535",
+        "salmon": "#c62f52",
+        "turquoize": "#38c7bd",
+        "yellow": "#c7910c"
+      },
+      "levels": {
+        "danger": "#E35535",
+        "success": "#00a884",
+        "warning": "#d4770c",
+        "info": "#11B7D4"
+      }
+    },
+    "uiTheme": "vs-dark"
   },
   {
-    "path": "themes/bearded-theme-black-emerald.jsonsss",
-    "uiTheme": "vs-dark",
-    "name": "BeardedTheme Black-emerald"
+    "slug": "black-&-emerald",
+    "name": "Bearded Theme Black & Emerald",
+    "theme": {
+      "ui": {
+        "primary": "#38c7bd",
+        "uibackground": "#111418",
+        "uibackgroundmid": "#0f1215",
+        "uibackgroundalt": "#0c0f11",
+        "primaryalt": "#1c2027",
+        "uiborder": "#040506",
+        "default": "#c3c6cb",
+        "defaultMain": "#a8adb3",
+        "defaultalt": "#8a9eb7"
+      },
+      "colors": {
+        "blue": "#11B7D4",
+        "green": "#00a884",
+        "greenAlt": "#3585bb",
+        "orange": "#d4770c",
+        "pink": "#d46ec0",
+        "purple": "#a85ff1",
+        "red": "#E35535",
+        "salmon": "#c62f52",
+        "turquoize": "#38c7bd",
+        "yellow": "#c7910c"
+      },
+      "levels": {
+        "danger": "#E35535",
+        "success": "#00a884",
+        "warning": "#d4770c",
+        "info": "#11B7D4"
+      }
+    },
+    "uiTheme": "vs-dark"
   },
   {
-    "path": "themes/bearded-theme-black-emerald-soft.jsonsss",
-    "uiTheme": "vs-dark",
-    "name": "BeardedTheme Black-emerald-soft"
+    "slug": "black-&-emerald-soft",
+    "name": "Bearded Theme Black & Emerald Soft",
+    "theme": {
+      "ui": {
+        "primary": "#38c7bd",
+        "uibackground": "#162226",
+        "uibackgroundmid": "#141f22",
+        "uibackgroundalt": "#121c1f",
+        "primaryalt": "#1f3036",
+        "uiborder": "#0b1113",
+        "default": "#c9d4d8",
+        "defaultMain": "#abbdc3",
+        "defaultalt": "#8eb9c7"
+      },
+      "colors": {
+        "blue": "#11B7D4",
+        "green": "#00a884",
+        "greenAlt": "#3585bb",
+        "orange": "#d4770c",
+        "pink": "#d46ec0",
+        "purple": "#a85ff1",
+        "red": "#E35535",
+        "salmon": "#c62f52",
+        "turquoize": "#38c7bd",
+        "yellow": "#c7910c"
+      },
+      "levels": {
+        "danger": "#E35535",
+        "success": "#00a884",
+        "warning": "#d4770c",
+        "info": "#11B7D4"
+      }
+    },
+    "uiTheme": "vs-dark"
   },
   {
-    "path": "themes/bearded-theme-black-gold.jsonsss",
-    "uiTheme": "vs-dark",
-    "name": "BeardedTheme Black-gold"
+    "slug": "black-&-gold",
+    "name": "Bearded Theme Black & Gold",
+    "theme": {
+      "ui": {
+        "primary": "#c7910c",
+        "uibackground": "#111418",
+        "uibackgroundmid": "#0f1215",
+        "uibackgroundalt": "#0c0f11",
+        "primaryalt": "#1c2027",
+        "uiborder": "#040506",
+        "default": "#c3c6cb",
+        "defaultMain": "#a8adb3",
+        "defaultalt": "#8a9eb7"
+      },
+      "colors": {
+        "blue": "#11B7D4",
+        "green": "#00a884",
+        "greenAlt": "#3585bb",
+        "orange": "#d4770c",
+        "pink": "#d46ec0",
+        "purple": "#a85ff1",
+        "red": "#E35535",
+        "salmon": "#c62f52",
+        "turquoize": "#38c7bd",
+        "yellow": "#c7910c"
+      },
+      "levels": {
+        "danger": "#E35535",
+        "success": "#00a884",
+        "warning": "#d4770c",
+        "info": "#11B7D4"
+      }
+    },
+    "uiTheme": "vs-dark"
   },
   {
-    "path": "themes/bearded-theme-black-gold-soft.jsonsss",
-    "uiTheme": "vs-dark",
-    "name": "BeardedTheme Black-gold-soft"
+    "slug": "black-&-gold-soft",
+    "name": "Bearded Theme Black & Gold Soft",
+    "theme": {
+      "ui": {
+        "primary": "#c7910c",
+        "uibackground": "#221f1d",
+        "uibackgroundmid": "#1f1c1a",
+        "uibackgroundalt": "#1c1918",
+        "primaryalt": "#302c29",
+        "uiborder": "#11100f",
+        "default": "#d2d2d2",
+        "defaultMain": "#b8b8b8",
+        "defaultalt": "#b8a99f"
+      },
+      "colors": {
+        "blue": "#11B7D4",
+        "green": "#00a884",
+        "greenAlt": "#3585bb",
+        "orange": "#d4770c",
+        "pink": "#d46ec0",
+        "purple": "#a85ff1",
+        "red": "#E35535",
+        "salmon": "#c62f52",
+        "turquoize": "#38c7bd",
+        "yellow": "#c7910c"
+      },
+      "levels": {
+        "danger": "#E35535",
+        "success": "#00a884",
+        "warning": "#d4770c",
+        "info": "#11B7D4"
+      }
+    },
+    "uiTheme": "vs-dark"
   },
   {
-    "path": "themes/bearded-theme-black-ruby.jsonsss",
-    "uiTheme": "vs-dark",
-    "name": "BeardedTheme Black-ruby"
+    "slug": "black-&-ruby",
+    "name": "Bearded Theme Black & Ruby",
+    "theme": {
+      "ui": {
+        "primary": "#c62f52",
+        "uibackground": "#111418",
+        "uibackgroundmid": "#0f1215",
+        "uibackgroundalt": "#0c0f11",
+        "primaryalt": "#1c2027",
+        "uiborder": "#040506",
+        "default": "#c3c6cb",
+        "defaultMain": "#a8adb3",
+        "defaultalt": "#8a9eb7"
+      },
+      "colors": {
+        "blue": "#11B7D4",
+        "green": "#00a884",
+        "greenAlt": "#3585bb",
+        "orange": "#d4770c",
+        "pink": "#d46ec0",
+        "purple": "#a85ff1",
+        "red": "#E35535",
+        "salmon": "#c62f52",
+        "turquoize": "#38c7bd",
+        "yellow": "#c7910c"
+      },
+      "levels": {
+        "danger": "#E35535",
+        "success": "#00a884",
+        "warning": "#d4770c",
+        "info": "#11B7D4"
+      }
+    },
+    "uiTheme": "vs-dark"
   },
   {
-    "path": "themes/bearded-theme-black-ruby-soft.jsonsss",
-    "uiTheme": "vs-dark",
-    "name": "BeardedTheme Black-ruby-soft"
+    "slug": "black-&-ruby-soft",
+    "name": "Bearded Theme Black & Ruby Soft",
+    "theme": {
+      "ui": {
+        "primary": "#c62f52",
+        "uibackground": "#281a21",
+        "uibackgroundmid": "#24181e",
+        "uibackgroundalt": "#21161b",
+        "primaryalt": "#37242e",
+        "uiborder": "#150e12",
+        "default": "#d8cfd3",
+        "defaultMain": "#c2b2ba",
+        "defaultalt": "#c496ad"
+      },
+      "colors": {
+        "blue": "#11B7D4",
+        "green": "#00a884",
+        "greenAlt": "#3585bb",
+        "orange": "#d4770c",
+        "pink": "#d46ec0",
+        "purple": "#a85ff1",
+        "red": "#E35535",
+        "salmon": "#c62f52",
+        "turquoize": "#38c7bd",
+        "yellow": "#c7910c"
+      },
+      "levels": {
+        "danger": "#E35535",
+        "success": "#00a884",
+        "warning": "#d4770c",
+        "info": "#11B7D4"
+      }
+    },
+    "uiTheme": "vs-dark"
   },
   {
-    "path": "themes/bearded-theme-stained-purple.jsonsss",
-    "uiTheme": "vs-dark",
-    "name": "BeardedTheme Stained-purple"
+    "slug": "stained-purple",
+    "name": "Bearded Theme Stained Purple",
+    "theme": {
+      "ui": {
+        "primary": "#a948ef",
+        "uibackground": "#20192b",
+        "uibackgroundmid": "#1d1727",
+        "uibackgroundalt": "#1b1524",
+        "primaryalt": "#2c223b",
+        "uiborder": "#120e18",
+        "default": "#d3cedc",
+        "defaultMain": "#b9b0c6",
+        "defaultalt": "#a893c9"
+      },
+      "colors": {
+        "blue": "#3398DB",
+        "green": "#37ae6f",
+        "greenAlt": "#7E9E2D",
+        "orange": "#D26D32",
+        "pink": "#CC71BC",
+        "purple": "#935cd1",
+        "red": "#C13838",
+        "salmon": "#de456b",
+        "turquoize": "#24B5A8",
+        "yellow": "#c9a022"
+      },
+      "levels": {
+        "danger": "#C13838",
+        "success": "#37ae6f",
+        "warning": "#c9a022",
+        "info": "#3398DB"
+      }
+    },
+    "uiTheme": "vs-dark"
   },
   {
-    "path": "themes/bearded-theme-stained-blue.jsonsss",
-    "uiTheme": "vs-dark",
-    "name": "BeardedTheme Stained-blue"
+    "slug": "stained-blue",
+    "name": "Bearded Theme Stained Blue",
+    "theme": {
+      "ui": {
+        "primary": "#3A7FFF",
+        "uibackground": "#121726",
+        "uibackgroundmid": "#101522",
+        "uibackgroundalt": "#0e121e",
+        "primaryalt": "#1a2137",
+        "uiborder": "#080a11",
+        "default": "#c2c8db",
+        "defaultMain": "#a2abc8",
+        "defaultalt": "#8396cd"
+      },
+      "colors": {
+        "blue": "#3398DB",
+        "green": "#37ae6f",
+        "greenAlt": "#7E9E2D",
+        "orange": "#D26D32",
+        "pink": "#CC71BC",
+        "purple": "#935cd1",
+        "red": "#C13838",
+        "salmon": "#de456b",
+        "turquoize": "#24B5A8",
+        "yellow": "#c9a022"
+      },
+      "levels": {
+        "danger": "#C13838",
+        "success": "#37ae6f",
+        "warning": "#c9a022",
+        "info": "#3398DB"
+      }
+    },
+    "uiTheme": "vs-dark"
   },
   {
-    "path": "themes/bearded-theme-vivid-purple.jsonsss",
-    "uiTheme": "vs-dark",
-    "name": "BeardedTheme Vivid-purple"
+    "slug": "vivid-purple",
+    "name": "Bearded Theme Vivid Purple",
+    "theme": {
+      "ui": {
+        "primary": "#A680FF",
+        "uibackground": "#171131",
+        "uibackgroundmid": "#15102d",
+        "uibackgroundalt": "#130e29",
+        "primaryalt": "#201844",
+        "uiborder": "#0c091a",
+        "default": "#c9c3e4",
+        "defaultMain": "#a99fd5",
+        "defaultalt": "#9180db"
+      },
+      "colors": {
+        "blue": "#28A9FF",
+        "green": "#42DD76",
+        "greenAlt": "#b7d175",
+        "orange": "#FF7135",
+        "pink": "#E66DFF",
+        "purple": "#A95EFF",
+        "red": "#D62C2C",
+        "salmon": "#FF478D",
+        "turquoize": "#14E5D4",
+        "yellow": "#FFB638"
+      },
+      "levels": {
+        "danger": "#D62C2C",
+        "info": "#28A9FF",
+        "success": "#42DD76",
+        "warning": "#FFB638"
+      }
+    },
+    "uiTheme": "vs-dark"
   },
   {
-    "path": "themes/bearded-theme-vivid-black.jsonsss",
-    "uiTheme": "vs-dark",
-    "name": "BeardedTheme Vivid-black"
+    "slug": "vivid-black",
+    "name": "Bearded Theme Vivid Black",
+    "theme": {
+      "ui": {
+        "primary": "#AAAAAA",
+        "uibackground": "#141417",
+        "uibackgroundmid": "#121214",
+        "uibackgroundalt": "#0f0f11",
+        "primaryalt": "#202025",
+        "uiborder": "#060607",
+        "default": "#c8c8c8",
+        "defaultMain": "#afafaf",
+        "defaultalt": "#9595af"
+      },
+      "colors": {
+        "blue": "#28A9FF",
+        "green": "#42DD76",
+        "greenAlt": "#b7d175",
+        "orange": "#FF7135",
+        "pink": "#E66DFF",
+        "purple": "#A95EFF",
+        "red": "#D62C2C",
+        "salmon": "#FF478D",
+        "turquoize": "#14E5D4",
+        "yellow": "#FFB638"
+      },
+      "levels": {
+        "danger": "#D62C2C",
+        "info": "#28A9FF",
+        "success": "#42DD76",
+        "warning": "#FFB638"
+      }
+    },
+    "uiTheme": "vs-dark"
   },
   {
-    "path": "themes/bearded-theme-vivid-light.jsonsss",
-    "uiTheme": "vs-dark",
-    "name": "BeardedTheme Vivid-light"
+    "slug": "vivid-light",
+    "name": "Bearded Theme Vivid Light",
+    "theme": {
+      "ui": {
+        "primary": "#7e7e7e",
+        "uibackground": "#f4f4f4",
+        "uibackgroundmid": "#efefef",
+        "uibackgroundalt": "#ebebeb",
+        "primaryalt": "#f9f9f9",
+        "uiborder": "#cecece",
+        "default": "#181818",
+        "defaultMain": "#000000",
+        "defaultalt": "#8a8a8a"
+      },
+      "colors": {
+        "blue": "#28A9FF",
+        "green": "#00d647",
+        "greenAlt": "#b7d175",
+        "orange": "#FF7135",
+        "pink": "#E66DFF",
+        "purple": "#A95EFF",
+        "red": "#D62C2C",
+        "salmon": "#FF478D",
+        "turquoize": "#00d6c4",
+        "yellow": "#ffaa18"
+      },
+      "levels": {
+        "danger": "#D62C2C",
+        "info": "#28A9FF",
+        "success": "#42DD76",
+        "warning": "#FFB638"
+      }
+    },
+    "uiTheme": "vs-dark"
   },
   {
-    "path": "themes/bearded-theme-monokai-terra.jsonsss",
-    "uiTheme": "vs-dark",
-    "name": "BeardedTheme Monokai-terra"
+    "slug": "monokai-terra",
+    "name": "Bearded Theme Monokai Terra",
+    "theme": {
+      "ui": {
+        "primary": "#b0a2a6",
+        "uibackground": "#262329",
+        "uibackgroundmid": "#232026",
+        "uibackgroundalt": "#201e23",
+        "primaryalt": "#332f37",
+        "uiborder": "#171518",
+        "default": "#d9d9d9",
+        "defaultMain": "#bfbfbf",
+        "defaultalt": "#b2a7be"
+      },
+      "colors": {
+        "blue": "#78dce8",
+        "green": "#a9dc76",
+        "greenAlt": "#b7d175",
+        "orange": "#fc9867",
+        "pink": "#e991e3",
+        "purple": "#ab9df2",
+        "red": "#fc6a67",
+        "salmon": "#ff6188",
+        "turquoize": "#78e8c6",
+        "yellow": "#ffd866"
+      },
+      "levels": {
+        "danger": "#fc6a67",
+        "info": "#78dce8",
+        "success": "#a9dc76",
+        "warning": "#ffd866"
+      }
+    },
+    "uiTheme": "vs-dark"
   },
   {
-    "path": "themes/bearded-theme-monokai-metallian.jsonsss",
-    "uiTheme": "vs-dark",
-    "name": "BeardedTheme Monokai-metallian"
+    "slug": "monokai-metallian",
+    "name": "Bearded Theme Monokai Metallian",
+    "theme": {
+      "ui": {
+        "primary": "#98a2b5",
+        "uibackground": "#1e212b",
+        "uibackgroundmid": "#1b1e27",
+        "uibackgroundalt": "#191c24",
+        "primaryalt": "#282d3a",
+        "uiborder": "#111319",
+        "default": "#d4d5da",
+        "defaultMain": "#b8bbc3",
+        "defaultalt": "#9da6c4"
+      },
+      "colors": {
+        "blue": "#78dce8",
+        "green": "#a9dc76",
+        "greenAlt": "#b7d175",
+        "orange": "#fc9867",
+        "pink": "#e991e3",
+        "purple": "#ab9df2",
+        "red": "#fc6a67",
+        "salmon": "#ff6188",
+        "turquoize": "#78e8c6",
+        "yellow": "#ffd866"
+      },
+      "levels": {
+        "danger": "#fc6a67",
+        "info": "#78dce8",
+        "success": "#a9dc76",
+        "warning": "#ffd866"
+      }
+    },
+    "uiTheme": "vs-dark"
   },
   {
-    "path": "themes/bearded-theme-monokai-stone.jsonsss",
-    "uiTheme": "vs-dark",
-    "name": "BeardedTheme Monokai-stone"
+    "slug": "monokai-stone",
+    "name": "Bearded Theme Monokai Stone",
+    "theme": {
+      "ui": {
+        "primary": "#9AA2A6",
+        "uibackground": "#2A2D33",
+        "uibackgroundmid": "#272a30",
+        "uibackgroundalt": "#25282d",
+        "primaryalt": "#363941",
+        "uiborder": "#1c1e22",
+        "default": "#e1e1e1",
+        "defaultMain": "#c8c8c8",
+        "defaultalt": "#afb7c6"
+      },
+      "colors": {
+        "blue": "#78dce8",
+        "green": "#a9dc76",
+        "greenAlt": "#b7d175",
+        "orange": "#fc9867",
+        "pink": "#e991e3",
+        "purple": "#ab9df2",
+        "red": "#fc6a67",
+        "salmon": "#ff6188",
+        "turquoize": "#78e8c6",
+        "yellow": "#ffd866"
+      },
+      "levels": {
+        "danger": "#fc6a67",
+        "info": "#78dce8",
+        "success": "#a9dc76",
+        "warning": "#ffd866"
+      }
+    },
+    "uiTheme": "vs-dark"
   },
   {
-    "path": "themes/bearded-theme-monokai-black.jsonsss",
-    "uiTheme": "vs-dark",
-    "name": "BeardedTheme Monokai-black"
+    "slug": "monokai-black",
+    "name": "Bearded Theme Monokai Black",
+    "theme": {
+      "ui": {
+        "primary": "#8f8f8f",
+        "uibackground": "#141414",
+        "uibackgroundmid": "#111111",
+        "uibackgroundalt": "#0e0e0e",
+        "primaryalt": "#212121",
+        "uiborder": "#050505",
+        "default": "#c7c7c7",
+        "defaultMain": "#adadad",
+        "defaultalt": "#a79a9a"
+      },
+      "colors": {
+        "blue": "#78dce8",
+        "green": "#a9dc76",
+        "greenAlt": "#b7d175",
+        "orange": "#fc9867",
+        "pink": "#e991e3",
+        "purple": "#ab9df2",
+        "red": "#fc6a67",
+        "salmon": "#ff6188",
+        "turquoize": "#78e8c6",
+        "yellow": "#ffd866"
+      },
+      "levels": {
+        "danger": "#fc6a67",
+        "info": "#78dce8",
+        "success": "#a9dc76",
+        "warning": "#ffd866"
+      }
+    },
+    "uiTheme": "vs-dark"
   },
   {
-    "path": "themes/bearded-theme-monokai-reversed.jsonsss",
-    "uiTheme": "vs-dark",
-    "name": "BeardedTheme Monokai-reversed"
+    "slug": "monokai-reversed",
+    "name": "Bearded Theme Monokai Reversed",
+    "theme": {
+      "ui": {
+        "primary": "#98a2b5",
+        "uibackground": "#12141a",
+        "uibackgroundmid": "#15171d",
+        "uibackgroundalt": "#171921",
+        "primaryalt": "#212430",
+        "uiborder": "#0a0b0f",
+        "default": "#cbccd2",
+        "defaultMain": "#afb2bb",
+        "defaultalt": "#939bbe"
+      },
+      "colors": {
+        "blue": "#78dce8",
+        "green": "#a9dc76",
+        "greenAlt": "#b7d175",
+        "orange": "#fc9867",
+        "pink": "#e991e3",
+        "purple": "#ab9df2",
+        "red": "#fc6a67",
+        "salmon": "#ff6188",
+        "turquoize": "#78e8c6",
+        "yellow": "#ffd866"
+      },
+      "levels": {
+        "danger": "#fc6a67",
+        "info": "#78dce8",
+        "success": "#a9dc76",
+        "warning": "#ffd866"
+      }
+    },
+    "uiTheme": "vs-dark"
   },
   {
-    "path": "themes/bearded-theme-exotic-earth.jsonsss",
-    "uiTheme": "vs-dark",
-    "name": "BeardedTheme Exotic-earth"
+    "slug": "earth",
+    "name": "Bearded Theme Earth",
+    "theme": {
+      "ui": {
+        "primary": "#d35386",
+        "uibackground": "#221b1b",
+        "uibackgroundmid": "#1f1819",
+        "uibackgroundalt": "#1c1616",
+        "primaryalt": "#40222e",
+        "uiborder": "#110d0d",
+        "default": "#c7a8a8",
+        "defaultMain": "#ba9b9b",
+        "defaultalt": "#503939"
+      },
+      "colors": {
+        "blue": "#BA9D6F",
+        "green": "#639E29",
+        "greenAlt": "#7E9E2D",
+        "orange": "#D1711D",
+        "pink": "#A8547A",
+        "purple": "#BAB13B",
+        "red": "#C13838",
+        "salmon": "#D65151",
+        "turquoize": "#4EAAA4",
+        "yellow": "#C48519"
+      },
+      "levels": {
+        "danger": "#C13838",
+        "success": "#14b871",
+        "warning": "#cc8c39",
+        "info": "#04c4d9"
+      }
+    },
+    "uiTheme": "vs-dark"
   },
   {
-    "path": "themes/bearded-theme-coffee.jsonsss",
-    "uiTheme": "vs-dark",
-    "name": "BeardedTheme Coffee"
+    "slug": "coffee",
+    "name": "Bearded Theme Coffee",
+    "theme": {
+      "ui": {
+        "primary": "#F09177",
+        "uibackground": "#292423",
+        "uibackgroundmid": "#262120",
+        "uibackgroundalt": "#231f1e",
+        "primaryalt": "#51403b",
+        "uiborder": "#181615",
+        "default": "#cab7b4",
+        "defaultMain": "#beaba7",
+        "defaultalt": "#564642"
+      },
+      "colors": {
+        "blue": "#6EDDD6",
+        "green": "#9DCC57",
+        "greenAlt": "#7E9E2D",
+        "orange": "#ffa777",
+        "pink": "#E480AD",
+        "purple": "#9991F1",
+        "red": "#f24343",
+        "salmon": "#f77a6a",
+        "turquoize": "#3ceaa8",
+        "yellow": "#f7d979"
+      },
+      "levels": {
+        "danger": "#f24343",
+        "success": "#94D652",
+        "warning": "#ffa777",
+        "info": "#6EDDD6"
+      }
+    },
+    "uiTheme": "vs-dark"
   },
   {
-    "path": "themes/bearded-theme-coffee-reversed.jsonsss",
-    "uiTheme": "vs-dark",
-    "name": "BeardedTheme Coffee-reversed"
+    "slug": "coffee-reversed",
+    "name": "Bearded Theme Coffee Reversed",
+    "theme": {
+      "ui": {
+        "primary": "#F09177",
+        "uibackground": "#1a1716",
+        "uibackgroundmid": "#1d1919",
+        "uibackgroundalt": "#201c1b",
+        "primaryalt": "#51403b",
+        "uiborder": "#0f0d0d",
+        "default": "#c4aea9",
+        "defaultMain": "#b7a29d",
+        "defaultalt": "#4d3e3b"
+      },
+      "colors": {
+        "blue": "#6EDDD6",
+        "green": "#9DCC57",
+        "greenAlt": "#7E9E2D",
+        "orange": "#ffa777",
+        "pink": "#E480AD",
+        "purple": "#9991F1",
+        "red": "#f24343",
+        "salmon": "#f77a6a",
+        "turquoize": "#3ceaa8",
+        "yellow": "#f7d979"
+      },
+      "levels": {
+        "danger": "#f24343",
+        "success": "#94D652",
+        "warning": "#ffa777",
+        "info": "#6EDDD6"
+      }
+    },
+    "uiTheme": "vs-dark"
   },
   {
-    "path": "themes/bearded-theme-coffee-cream.jsonsss",
-    "uiTheme": "vs-dark",
-    "name": "BeardedTheme Coffee-cream"
+    "slug": "coffee-cream",
+    "name": "Bearded Theme Coffee Cream",
+    "theme": {
+      "ui": {
+        "primary": "#D3694C",
+        "uibackground": "#EAE4E1",
+        "uibackgroundmid": "#e6dfdc",
+        "uibackgroundalt": "#e3dbd7",
+        "primaryalt": "#eee9e7",
+        "uiborder": "#cbbbb4",
+        "default": "#36221d",
+        "defaultMain": "#000000",
+        "defaultalt": "#b09188"
+      },
+      "colors": {
+        "blue": "#009DB5",
+        "green": "#51A200",
+        "greenAlt": "#7E9E2D",
+        "orange": "#ce6700",
+        "pink": "#CE4985",
+        "purple": "#7056c4",
+        "red": "#dc2e2e",
+        "salmon": "#D8573E",
+        "turquoize": "#00A47B",
+        "yellow": "#ad8200"
+      },
+      "levels": {
+        "danger": "#FF3A3A",
+        "success": "#51A200",
+        "warning": "#ce6700",
+        "info": "#009DB5"
+      }
+    },
+    "uiTheme": "vs-dark"
   },
   {
-    "path": "themes/bearded-theme-exotic-void.jsonsss",
-    "uiTheme": "vs-dark",
-    "name": "BeardedTheme Exotic-void"
+    "slug": "void",
+    "name": "Bearded Theme Void",
+    "theme": {
+      "ui": {
+        "primary": "#7A63ED",
+        "uibackground": "#171322",
+        "uibackgroundmid": "#15111e",
+        "uibackgroundalt": "#120f1b",
+        "primaryalt": "#221c32",
+        "uiborder": "#0a080e",
+        "default": "#c9c4d6",
+        "defaultMain": "#ada6c1",
+        "defaultalt": "#9888c6"
+      },
+      "colors": {
+        "blue": "#7A63ED",
+        "green": "#6DBBFF",
+        "greenAlt": "#2C729E",
+        "orange": "#3D8DE2",
+        "pink": "#A8547A",
+        "purple": "#2BD3E2",
+        "red": "#C13838",
+        "salmon": "#D65170",
+        "turquoize": "#89C4FF",
+        "yellow": "#585785"
+      },
+      "levels": {
+        "danger": "#C13838",
+        "success": "#14b871",
+        "warning": "#cc8c39",
+        "info": "#04c4d9"
+      }
+    },
+    "uiTheme": "vs-dark"
   },
   {
-    "path": "themes/bearded-theme-exotic-altica.jsonsss",
-    "uiTheme": "vs-dark",
-    "name": "BeardedTheme Exotic-altica"
+    "slug": "altica",
+    "name": "Bearded Theme Altica",
+    "theme": {
+      "ui": {
+        "primary": "#0187a6",
+        "primaryalt": "#15262e",
+        "uiborder": "#0a1217",
+        "uibackground": "#0f1c21",
+        "uibackgroundmid": "#0f1a1f",
+        "uibackgroundalt": "#0e171c",
+        "default": "#c2ced1",
+        "defaultMain": "#9FADB1",
+        "defaultalt": "#45565c"
+      },
+      "colors": {
+        "blue": "#10bdc9",
+        "green": "#6bc793",
+        "greenAlt": "#2C729E",
+        "orange": "#0187a6",
+        "pink": "#A8547A",
+        "purple": "#9c8acf",
+        "red": "#C13838",
+        "salmon": "#d6724d",
+        "turquoize": "#0187a6",
+        "yellow": "#d6ac63"
+      },
+      "levels": {
+        "danger": "#C13838",
+        "success": "#14b871",
+        "warning": "#cc8c39",
+        "info": "#04c4d9"
+      }
+    },
+    "uiTheme": "vs-dark"
   },
   {
-    "path": "themes/bearded-theme-arc-reversed.jsonsss",
-    "uiTheme": "vs-dark",
-    "name": "BeardedTheme Arc-reversed"
+    "slug": "arc-reversed",
+    "name": "Bearded Theme Arc Reversed",
+    "theme": {
+      "ui": {
+        "primary": "#8196b5",
+        "uibackground": "#121721",
+        "uibackgroundmid": "#141924",
+        "uibackgroundalt": "#161c28",
+        "primaryalt": "#1f2838",
+        "uiborder": "#0b0e14",
+        "default": "#c9cfda",
+        "defaultMain": "#aab3c6",
+        "defaultalt": "#8da1c9"
+      },
+      "colors": {
+        "blue": "#69C3FF",
+        "green": "#3CEC85",
+        "greenAlt": "#A4EF58",
+        "orange": "#FF955C",
+        "pink": "#F38CEC",
+        "purple": "#B78AFF",
+        "red": "#E35535",
+        "salmon": "#FF738A",
+        "turquoize": "#22ECDB",
+        "yellow": "#EACD61"
+      },
+      "levels": {
+        "danger": "#E35535",
+        "success": "#3CEC85",
+        "warning": "#FF955C",
+        "info": "#69C3FF"
+      }
+    },
+    "uiTheme": "vs-dark"
   },
   {
-    "path": "themes/bearded-theme-will.jsonsss",
-    "uiTheme": "vs-dark",
-    "name": "BeardedTheme Will"
+    "slug": "feat-will",
+    "name": "Bearded Theme Feat Will",
+    "theme": {
+      "ui": {
+        "primary": "#b498f5",
+        "primaryalt": "#231e36",
+        "uiborder": "#000000",
+        "uibackground": "#14111f",
+        "uibackgroundmid": "#100e1a",
+        "uibackgroundalt": "#0d0a14",
+        "default": "#bdb6d3",
+        "defaultMain": "#bfb9da",
+        "defaultalt": "#585775"
+      },
+      "colors": {
+        "blue": "#8ad0ff",
+        "green": "#5fee9b",
+        "greenAlt": "#A4EF58",
+        "orange": "#ffae82",
+        "pink": "#fda7f7",
+        "purple": "#c39eff",
+        "red": "#f7775a",
+        "salmon": "#ff8ea0",
+        "turquoize": "#44f8e9",
+        "yellow": "#fce38a"
+      },
+      "levels": {
+        "danger": "#f7775a",
+        "success": "#5fee9b",
+        "warning": "#ffae82",
+        "info": "#8ad0ff"
+      }
+    },
+    "uiTheme": "vs-dark"
   },
   {
-    "path": "themes/bearded-theme-gold-d-raynh.jsonsss",
-    "uiTheme": "vs-dark",
-    "name": "BeardedTheme Gold-d-raynh"
+    "slug": "feat-gold-d-raynh",
+    "name": "Bearded Theme Feat Gold D Raynh",
+    "theme": {
+      "ui": {
+        "primary": "#e39000",
+        "uibackground": "#0f1628",
+        "uibackgroundmid": "#0e1424",
+        "uibackgroundalt": "#0c1220",
+        "primaryalt": "#16203b",
+        "uiborder": "#070a12",
+        "default": "#bdc6df",
+        "defaultMain": "#9aa9cf",
+        "defaultalt": "#7a94d6"
+      },
+      "colors": {
+        "blue": "#3eb2ff",
+        "green": "#21ff7d",
+        "greenAlt": "#A4EF58",
+        "orange": "#ff823f",
+        "pink": "#e4ac73",
+        "purple": "#a167ff",
+        "red": "#f7775a",
+        "salmon": "#ff3d3d",
+        "turquoize": "#44f8e9",
+        "yellow": "#ffd000"
+      },
+      "levels": {
+        "danger": "#f7775a",
+        "success": "#21ff7d",
+        "warning": "#ff823f",
+        "info": "#3eb2ff"
+      }
+    },
+    "uiTheme": "vs-dark"
   },
   {
-    "path": "themes/bearded-theme-gold-d-raynh-light.jsonsss",
-    "uiTheme": "vs-dark",
-    "name": "BeardedTheme Gold-d-raynh-light"
+    "slug": "feat-gold-d-raynh-light",
+    "name": "Bearded Theme Feat Gold D Raynh Light",
+    "theme": {
+      "ui": {
+        "primary": "#2397e5",
+        "uibackground": "#f5f5f5",
+        "uibackgroundmid": "#f0f0f0",
+        "uibackgroundalt": "#ececec",
+        "primaryalt": "#fafafa",
+        "uiborder": "#cfcfcf",
+        "default": "#0f212d",
+        "defaultMain": "#000000",
+        "defaultalt": "#6699bb"
+      },
+      "colors": {
+        "blue": "#037ed1",
+        "green": "#03810d",
+        "greenAlt": "#A4EF58",
+        "orange": "#c0571f",
+        "pink": "#002e74",
+        "purple": "#7537d7",
+        "red": "#f7775a",
+        "salmon": "#1da90d",
+        "turquoize": "#009c8f",
+        "yellow": "#d0a00f"
+      },
+      "levels": {
+        "danger": "#f7775a",
+        "success": "#03810d",
+        "warning": "#c0571f",
+        "info": "#037ed1"
+      }
+    },
+    "uiTheme": "vs-dark"
   },
   {
-    "path": "themes/bearded-theme-mellejulie.jsonsss",
-    "uiTheme": "vs-dark",
-    "name": "BeardedTheme Mellejulie"
+    "slug": "feat-mellejulie",
+    "name": "Bearded Theme Feat Mellejulie",
+    "theme": {
+      "ui": {
+        "primary": "#63edef",
+        "uibackground": "#1c1f24",
+        "uibackgroundmid": "#191c21",
+        "uibackgroundalt": "#171a1e",
+        "primaryalt": "#272b32",
+        "uiborder": "#0f1013",
+        "default": "#d1d2d4",
+        "defaultMain": "#b7b9bb",
+        "defaultalt": "#9ca8bc"
+      },
+      "colors": {
+        "blue": "#63c0ff",
+        "green": "#71e893",
+        "greenAlt": "#a4c947",
+        "orange": "#edb492",
+        "pink": "#c3a1e5",
+        "purple": "#968ffb",
+        "red": "#e55454",
+        "salmon": "#9dcace",
+        "turquoize": "#50dbd4",
+        "yellow": "#ecd282"
+      },
+      "levels": {
+        "danger": "#e55454",
+        "success": "#71e893",
+        "warning": "#edb492",
+        "info": "#63c0ff"
+      }
+    },
+    "uiTheme": "vs-dark"
   },
   {
-    "path": "themes/bearded-theme-mellejulie-light.jsonsss",
-    "uiTheme": "vs-dark",
-    "name": "BeardedTheme Mellejulie-light"
+    "slug": "feat-mellejulie-light",
+    "name": "Bearded Theme Feat Mellejulie Light",
+    "theme": {
+      "ui": {
+        "primary": "#218d8f",
+        "uibackground": "#edeeee",
+        "uibackgroundmid": "#e8e9e9",
+        "uibackgroundalt": "#e4e5e5",
+        "primaryalt": "#f2f3f3",
+        "uiborder": "#c6c9c9",
+        "default": "#000000",
+        "defaultMain": "#000000",
+        "defaultalt": "#4d7b7c"
+      },
+      "colors": {
+        "blue": "#1f89cf",
+        "green": "#2aa54d",
+        "greenAlt": "#81a622",
+        "orange": "#c97a2a",
+        "pink": "#ae6cbe",
+        "purple": "#7c68ef",
+        "red": "#d24545",
+        "salmon": "#39a9b4",
+        "turquoize": "#23716d",
+        "yellow": "#b48806"
+      },
+      "levels": {
+        "danger": "#d24545",
+        "success": "#2aa54d",
+        "warning": "#c97a2a",
+        "info": "#1f89cf"
+      }
+    },
+    "uiTheme": "vs-dark"
   },
   {
-    "path": "themes/bearded-theme-classics-anthracite.jsonsss",
-    "uiTheme": "vs-dark",
-    "name": "BeardedTheme Classics-anthracite"
+    "slug": "classics-anthracite",
+    "name": "Bearded Theme Classics Anthracite",
+    "theme": {
+      "ui": {
+        "primary": "#a2abb6",
+        "uibackground": "#181a1f",
+        "uibackgroundmid": "#16181c",
+        "uibackgroundalt": "#131519",
+        "primaryalt": "#23262d",
+        "uiborder": "#0b0c0e",
+        "default": "#cdcdcf",
+        "defaultMain": "#b2b4b7",
+        "defaultalt": "#97a0b9"
+      },
+      "colors": {
+        "blue": "#3398DB",
+        "green": "#37ae6f",
+        "greenAlt": "#7E9E2D",
+        "orange": "#D26D32",
+        "pink": "#CC71BC",
+        "purple": "#935cd1",
+        "red": "#C13838",
+        "salmon": "#de456b",
+        "turquoize": "#24B5A8",
+        "yellow": "#c9a022"
+      },
+      "levels": {
+        "danger": "#C13838",
+        "success": "#37ae6f",
+        "warning": "#c9a022",
+        "info": "#3398DB"
+      }
+    },
+    "uiTheme": "vs-dark"
   },
   {
-    "path": "themes/bearded-theme-classics-light.jsonsss",
-    "uiTheme": "vs-dark",
-    "name": "BeardedTheme Classics-light"
+    "slug": "classics-light",
+    "name": "Bearded Theme Classics Light",
+    "theme": {
+      "ui": {
+        "primary": "#52C1DA",
+        "uibackground": "#f3f4f5",
+        "uibackgroundmid": "#eeeff1",
+        "uibackgroundalt": "#e9ebed",
+        "primaryalt": "#f9f9fa",
+        "uiborder": "#c9ced2",
+        "default": "#1f3a41",
+        "defaultMain": "#000000",
+        "defaultalt": "#8cb1b9"
+      },
+      "colors": {
+        "blue": "#0f8fe4",
+        "green": "#18ac31",
+        "greenAlt": "#6b8d16",
+        "orange": "#dd7404",
+        "pink": "#dd39bf",
+        "purple": "#9244ec",
+        "red": "#df3c3c",
+        "salmon": "#ec4476",
+        "turquoize": "#00aaaa",
+        "yellow": "#d49408"
+      },
+      "levels": {
+        "danger": "#C13838",
+        "success": "#37ae6f",
+        "warning": "#c9a022",
+        "info": "#3398DB"
+      }
+    },
+    "uiTheme": "vs-dark"
   },
   {
-    "path": "themes/bearded-theme-surprising-eggplant.jsonsss",
-    "uiTheme": "vs-dark",
-    "name": "BeardedTheme Surprising-eggplant"
+    "slug": "surprising-eggplant",
+    "name": "Bearded Theme Surprising Eggplant",
+    "theme": {
+      "ui": {
+        "primary": "#d24e4e",
+        "uibackground": "#1d1426",
+        "uibackgroundmid": "#1a1222",
+        "uibackgroundalt": "#17101f",
+        "primaryalt": "#441f30",
+        "uiborder": "#0e0912",
+        "default": "#d0c6d9",
+        "defaultMain": "#b6a7c5",
+        "defaultalt": "#a989ca"
+      },
+      "colors": {
+        "blue": "#00B3BD",
+        "green": "#a9dc76",
+        "greenAlt": "#b7d175",
+        "orange": "#5288BA",
+        "pink": "#c47cbf",
+        "purple": "#CC9B52",
+        "red": "#C13838",
+        "salmon": "#B85C40",
+        "turquoize": "#d24e4e",
+        "yellow": "#d24e4e"
+      },
+      "levels": {
+        "warning": "#d1a456",
+        "info": "#00B3BD",
+        "danger": "#E35535",
+        "success": "#a9dc76"
+      }
+    },
+    "uiTheme": "vs-dark"
   },
   {
-    "path": "themes/bearded-theme-surprising-blueberry.jsonsss",
-    "uiTheme": "vs-dark",
-    "name": "BeardedTheme Surprising-blueberry"
+    "slug": "surprising-blueberry",
+    "name": "Bearded Theme Surprising Blueberry",
+    "theme": {
+      "ui": {
+        "primary": "#c93e71",
+        "uibackground": "#101a29",
+        "uibackgroundmid": "#0f1825",
+        "uibackgroundalt": "#0d1521",
+        "primaryalt": "#441f30",
+        "uiborder": "#070c13",
+        "default": "#bfccdf",
+        "defaultMain": "#9db1ce",
+        "defaultalt": "#7da0d5"
+      },
+      "colors": {
+        "blue": "#00B3BD",
+        "green": "#a9dc76",
+        "greenAlt": "#b7d175",
+        "orange": "#5288BA",
+        "pink": "#c47cbf",
+        "purple": "#CC9B52",
+        "red": "#C13838",
+        "salmon": "#B85C40",
+        "turquoize": "#c93e71",
+        "yellow": "#c93e71"
+      },
+      "levels": {
+        "warning": "#d1a456",
+        "info": "#00B3BD",
+        "danger": "#E35535",
+        "success": "#a9dc76"
+      }
+    },
+    "uiTheme": "vs-dark"
   },
   {
-    "path": "themes/bearded-theme-surprising-watermelon.jsonsss",
-    "uiTheme": "vs-dark",
-    "name": "BeardedTheme Surprising-watermelon"
+    "slug": "surprising-watermelon",
+    "name": "Bearded Theme Surprising Watermelon",
+    "theme": {
+      "ui": {
+        "primary": "#da6c62",
+        "uibackground": "#142326",
+        "uibackgroundmid": "#121f22",
+        "uibackgroundalt": "#101c1f",
+        "primaryalt": "#5f3333",
+        "uiborder": "#091112",
+        "default": "#c6d6d9",
+        "defaultMain": "#a7c0c5",
+        "defaultalt": "#89bfca"
+      },
+      "colors": {
+        "blue": "#00B3BD",
+        "green": "#a9dc76",
+        "greenAlt": "#b7d175",
+        "orange": "#5288BA",
+        "pink": "#c47cbf",
+        "purple": "#CC9B52",
+        "red": "#C13838",
+        "salmon": "#B85C40",
+        "turquoize": "#da6c62",
+        "yellow": "#da6c62"
+      },
+      "levels": {
+        "warning": "#d1a456",
+        "info": "#00B3BD",
+        "danger": "#E35535",
+        "success": "#a9dc76"
+      }
+    },
+    "uiTheme": "vs-dark"
   },
   {
-    "path": "themes/bearded-theme-hc-ebony.jsonsss",
-    "uiTheme": "vs-dark",
-    "name": "BeardedTheme Hc-ebony"
+    "slug": "hc-ebony",
+    "name": "Bearded Theme Hc Ebony",
+    "theme": {
+      "ui": {
+        "primary": "#dbdeea",
+        "uibackground": "#181820",
+        "uibackgroundmid": "#16161d",
+        "uibackgroundalt": "#13131a",
+        "primaryalt": "#23232f",
+        "uiborder": "#0b0b0f",
+        "default": "#ccccd1",
+        "defaultMain": "#b2b2b8",
+        "defaultalt": "#9696bb"
+      },
+      "colors": {
+        "blue": "#7fd7f5",
+        "green": "#AFEA7B",
+        "greenAlt": "#A4EF58",
+        "orange": "#ffaa7d",
+        "pink": "#e4a3df",
+        "purple": "#bc98ff",
+        "red": "#fd604f",
+        "salmon": "#EC7886",
+        "turquoize": "#22D3B1",
+        "yellow": "#F5DF76"
+      },
+      "levels": {
+        "danger": "#fd604f",
+        "success": "#AFEA7B",
+        "warning": "#ffaa7d",
+        "info": "#7fd7f5"
+      }
+    },
+    "uiTheme": "vs-dark"
   },
   {
-    "path": "themes/bearded-theme-hc-midnightvoid.jsonsss",
-    "uiTheme": "vs-dark",
-    "name": "BeardedTheme Hc-midnightvoid"
+    "slug": "hc-midnightvoid",
+    "name": "Bearded Theme Hc Midnightvoid",
+    "theme": {
+      "ui": {
+        "primary": "#dbefff",
+        "uibackground": "#151f27",
+        "uibackgroundmid": "#131c23",
+        "uibackgroundalt": "#111920",
+        "primaryalt": "#1e2c38",
+        "uiborder": "#0a0f13",
+        "default": "#c7d2da",
+        "defaultMain": "#a9b9c5",
+        "defaultalt": "#8baeca"
+      },
+      "colors": {
+        "blue": "#7fd7f5",
+        "green": "#AFEA7B",
+        "greenAlt": "#A4EF58",
+        "orange": "#ffaa7d",
+        "pink": "#e4a3df",
+        "purple": "#bc98ff",
+        "red": "#fd604f",
+        "salmon": "#EC7886",
+        "turquoize": "#22D3B1",
+        "yellow": "#F5DF76"
+      },
+      "levels": {
+        "danger": "#fd604f",
+        "success": "#AFEA7B",
+        "warning": "#ffaa7d",
+        "info": "#7fd7f5"
+      }
+    },
+    "uiTheme": "vs-dark"
   },
   {
-    "path": "themes/bearded-theme-hc-flurry.jsonsss",
-    "uiTheme": "vs-dark",
-    "name": "BeardedTheme Hc-flurry"
+    "slug": "hc-flurry",
+    "name": "Bearded Theme Hc Flurry",
+    "theme": {
+      "ui": {
+        "primary": "#444c54",
+        "primaryalt": "#f9fbfe",
+        "uiborder": "#c2c8ce",
+        "uibackground": "#f5f8fc",
+        "uibackgroundmid": "#f0f2f5",
+        "uibackgroundalt": "#EAECEE",
+        "default": "#272d34",
+        "defaultMain": "#3f4750",
+        "defaultalt": "#898989"
+      },
+      "colors": {
+        "blue": "#0aa3d6",
+        "green": "#41ad4e",
+        "greenAlt": "#589f11",
+        "orange": "#e3946a",
+        "pink": "#f08ad9",
+        "purple": "#b377e3",
+        "red": "#ee5f50",
+        "salmon": "#ed7b89",
+        "turquoize": "#00b696",
+        "yellow": "#e39c03"
+      },
+      "levels": {
+        "danger": "#ee5f50",
+        "success": "#41ad4e",
+        "warning": "#e3946a",
+        "info": "#0aa3d6"
+      }
+    },
+    "uiTheme": "vs-dark"
   },
   {
-    "path": "themes/bearded-theme-hc-wonderland-wood.jsonsss",
-    "uiTheme": "vs-dark",
-    "name": "BeardedTheme Hc-wonderland-wood"
+    "slug": "hc-wonderland-wood",
+    "name": "Bearded Theme Hc Wonderland Wood",
+    "theme": {
+      "ui": {
+        "primary": "#fbe7c3",
+        "uibackground": "#1F1D36",
+        "uibackgroundmid": "#1d1b32",
+        "uibackgroundalt": "#1b192f",
+        "primaryalt": "#52426a",
+        "uiborder": "#141222",
+        "default": "#d6d5e3",
+        "defaultMain": "#b8b6cf",
+        "defaultalt": "#9f9bd1"
+      },
+      "colors": {
+        "blue": "#92b4ff",
+        "green": "#91d6a7",
+        "greenAlt": "#A4EF58",
+        "orange": "#e4a792",
+        "pink": "#de98ae",
+        "purple": "#9a94e9",
+        "red": "#ff7e70",
+        "salmon": "#ed98cb",
+        "turquoize": "#7ddcbf",
+        "yellow": "#fbe7c3"
+      },
+      "levels": {
+        "danger": "#ff7e70",
+        "success": "#91d6a7",
+        "warning": "#e4a792",
+        "info": "#92b4ff"
+      }
+    },
+    "uiTheme": "vs-dark"
   },
   {
-    "path": "themes/bearded-theme-hc-brewing-storm.jsonsss",
-    "uiTheme": "vs-dark",
-    "name": "BeardedTheme Hc-brewing-storm"
+    "slug": "hc-brewing-storm",
+    "name": "Bearded Theme Hc Brewing Storm",
+    "theme": {
+      "ui": {
+        "primary": "#9dffd9",
+        "uibackground": "#0c2a42",
+        "uibackgroundmid": "#0b273d",
+        "uibackgroundalt": "#0a2439",
+        "primaryalt": "#2a5a5c",
+        "uiborder": "#071a28",
+        "default": "#c3dcf0",
+        "defaultMain": "#9bc4e5",
+        "defaultalt": "#7abaed"
+      },
+      "colors": {
+        "blue": "#82c4ff",
+        "green": "#9dffbd",
+        "greenAlt": "#A4EF58",
+        "orange": "#ffaf94",
+        "pink": "#f1c6ee",
+        "purple": "#b8b3ff",
+        "red": "#ff7e70",
+        "salmon": "#f994bf",
+        "turquoize": "#22D3B1",
+        "yellow": "#fff0a6"
+      },
+      "levels": {
+        "danger": "#ff5e4c",
+        "success": "#84ffad",
+        "warning": "#ff9d7c",
+        "info": "#3391e3"
+      }
+    },
+    "uiTheme": "vs-dark"
   },
   {
-    "path": "themes/bearded-theme-hc-minuit.jsonsss",
-    "uiTheme": "vs-dark",
-    "name": "BeardedTheme Hc-minuit"
+    "slug": "hc-minuit",
+    "name": "Bearded Theme Hc Minuit",
+    "theme": {
+      "ui": {
+        "primary": "#ecc48c",
+        "uibackground": "#1C1827",
+        "uibackgroundmid": "#191623",
+        "uibackgroundalt": "#171420",
+        "primaryalt": "#635345",
+        "uiborder": "#0e0c14",
+        "default": "#cfccd8",
+        "defaultMain": "#b4afc2",
+        "defaultalt": "#a092c5"
+      },
+      "colors": {
+        "blue": "#4fc1e8",
+        "green": "#69d2ab",
+        "greenAlt": "#77b03e",
+        "orange": "#eea67f",
+        "pink": "#d995c9",
+        "purple": "#ad92ff",
+        "red": "#fb7a6c",
+        "salmon": "#e38d97",
+        "turquoize": "#17d7b4",
+        "yellow": "#dbc2a3"
+      },
+      "levels": {
+        "danger": "#fb7a6c",
+        "success": "#74be7d",
+        "warning": "#eea67f",
+        "info": "#4fc1e8"
+      }
+    },
+    "uiTheme": "vs-dark"
   },
   {
-    "path": "themes/bearded-theme-hc-chocolateespresso.jsonsss",
-    "uiTheme": "vs-dark",
-    "name": "BeardedTheme Hc-chocolateespresso"
+    "slug": "hc-chocolate-espresso",
+    "name": "Bearded Theme Hc Chocolate Espresso",
+    "theme": {
+      "ui": {
+        "primary": "#f69c95",
+        "uibackground": "#2e2424",
+        "uibackgroundmid": "#2b2121",
+        "uibackgroundalt": "#281f1f",
+        "primaryalt": "#5d423d",
+        "uiborder": "#1d1717",
+        "default": "#d0b4b4",
+        "defaultMain": "#c3a7a7",
+        "defaultalt": "#5d4242"
+      },
+      "colors": {
+        "blue": "#17d7d7",
+        "green": "#69d293",
+        "greenAlt": "#77b03e",
+        "orange": "#f69662",
+        "pink": "#d995c9",
+        "purple": "#ad92ff",
+        "red": "#fb7a6c",
+        "salmon": "#f08390",
+        "turquoize": "#17d7c4",
+        "yellow": "#edbc7f"
+      },
+      "levels": {
+        "danger": "#fb7a6c",
+        "success": "#74be7d",
+        "warning": "#eea67f",
+        "info": "#4fc1e8"
+      }
+    },
+    "uiTheme": "vs-dark"
   },
   {
-    "path": "themes/bearded-theme-milkshake-raspberry.jsonsss",
-    "uiTheme": "vs-dark",
-    "name": "BeardedTheme Milkshake-raspberry"
+    "slug": "milkshake-raspberry",
+    "name": "Bearded Theme Milkshake Raspberry",
+    "theme": {
+      "ui": {
+        "primary": "#d1174f",
+        "uibackground": "#f1e8eb",
+        "uibackgroundmid": "#eee2e6",
+        "uibackgroundalt": "#eadde1",
+        "primaryalt": "#f6eff1",
+        "uiborder": "#d4b8c2",
+        "default": "#15070b",
+        "defaultMain": "#000000",
+        "defaultalt": "#b34e6d"
+      },
+      "colors": {
+        "blue": "#0f8fe4",
+        "green": "#18ac31",
+        "greenAlt": "#6b8d16",
+        "orange": "#dd7404",
+        "pink": "#dd39bf",
+        "purple": "#9244ec",
+        "red": "#df3c3c",
+        "salmon": "#ec4476",
+        "turquoize": "#00aaaa",
+        "yellow": "#d49408"
+      },
+      "levels": {
+        "danger": "#df3c3c",
+        "success": "#18ac31",
+        "warning": "#d49408",
+        "info": "#0f8fe4"
+      }
+    },
+    "uiTheme": "vs-dark"
   },
   {
-    "path": "themes/bearded-theme-milkshake-blueberry.jsonsss",
-    "uiTheme": "vs-dark",
-    "name": "BeardedTheme Milkshake-blueberry"
+    "slug": "milkshake-blueberry",
+    "name": "Bearded Theme Milkshake Blueberry",
+    "theme": {
+      "ui": {
+        "primary": "#422eb0",
+        "uibackground": "#dad9eb",
+        "uibackgroundmid": "#d4d3e8",
+        "uibackgroundalt": "#cfcde5",
+        "primaryalt": "#e1e0ef",
+        "uiborder": "#a9a7d1",
+        "default": "#07060c",
+        "defaultMain": "#000000",
+        "defaultalt": "#6c6493"
+      },
+      "colors": {
+        "blue": "#0f8fe4",
+        "green": "#18ac31",
+        "greenAlt": "#6b8d16",
+        "orange": "#dd7404",
+        "pink": "#dd39bf",
+        "purple": "#9244ec",
+        "red": "#df3c3c",
+        "salmon": "#ec4476",
+        "turquoize": "#00aaaa",
+        "yellow": "#d49408"
+      },
+      "levels": {
+        "danger": "#df3c3c",
+        "success": "#18ac31",
+        "warning": "#d49408",
+        "info": "#0f8fe4"
+      }
+    },
+    "uiTheme": "vs-dark"
   },
   {
-    "path": "themes/bearded-theme-milkshake-mango.jsonsss",
-    "uiTheme": "vs-dark",
-    "name": "BeardedTheme Milkshake-mango"
+    "slug": "milkshake-mango",
+    "name": "Bearded Theme Milkshake Mango",
+    "theme": {
+      "ui": {
+        "primary": "#bd4f27",
+        "uibackground": "#f3eae3",
+        "uibackgroundmid": "#f1e5dd",
+        "uibackgroundalt": "#eee1d7",
+        "primaryalt": "#f6efea",
+        "uiborder": "#dcc2ad",
+        "default": "#100a08",
+        "defaultMain": "#000000",
+        "defaultalt": "#a06f5e"
+      },
+      "colors": {
+        "blue": "#0f8fe4",
+        "green": "#18ac31",
+        "greenAlt": "#6b8d16",
+        "orange": "#dd7404",
+        "pink": "#dd39bf",
+        "purple": "#9244ec",
+        "red": "#df3c3c",
+        "salmon": "#ec4476",
+        "turquoize": "#00aaaa",
+        "yellow": "#d49408"
+      },
+      "levels": {
+        "danger": "#df3c3c",
+        "success": "#18ac31",
+        "warning": "#d49408",
+        "info": "#0f8fe4"
+      }
+    },
+    "uiTheme": "vs-dark"
   },
   {
-    "path": "themes/bearded-theme-milkshake-mint.jsonsss",
-    "uiTheme": "vs-dark",
-    "name": "BeardedTheme Milkshake-mint"
+    "slug": "milkshake-mint",
+    "name": "Bearded Theme Milkshake Mint",
+    "theme": {
+      "ui": {
+        "primary": "#2a9b7d",
+        "uibackground": "#edf3ee",
+        "uibackgroundmid": "#e7efe9",
+        "uibackgroundalt": "#e2ece4",
+        "primaryalt": "#f3f7f4",
+        "uiborder": "#bfd4c3",
+        "default": "#000000",
+        "defaultMain": "#000000",
+        "defaultalt": "#5c8379"
+      },
+      "colors": {
+        "blue": "#0f8fe4",
+        "green": "#18ac31",
+        "greenAlt": "#6b8d16",
+        "orange": "#dd7404",
+        "pink": "#dd39bf",
+        "purple": "#9244ec",
+        "red": "#df3c3c",
+        "salmon": "#ec4476",
+        "turquoize": "#00aaaa",
+        "yellow": "#d49408"
+      },
+      "levels": {
+        "danger": "#df3c3c",
+        "success": "#18ac31",
+        "warning": "#d49408",
+        "info": "#0f8fe4"
+      }
+    },
+    "uiTheme": "vs-dark"
   },
   {
-    "path": "themes/bearded-theme-milkshake-vanilla.jsonsss",
-    "uiTheme": "vs-dark",
-    "name": "BeardedTheme Milkshake-vanilla"
+    "slug": "milkshake-vanilla",
+    "name": "Bearded Theme Milkshake Vanilla",
+    "theme": {
+      "ui": {
+        "primary": "#937416",
+        "uibackground": "#ece7da",
+        "uibackgroundmid": "#e9e3d4",
+        "uibackgroundalt": "#e6dfce",
+        "primaryalt": "#efebe1",
+        "uiborder": "#d2c6a7",
+        "default": "#000000",
+        "defaultMain": "#000000",
+        "defaultalt": "#837240"
+      },
+      "colors": {
+        "blue": "#0f8fe4",
+        "green": "#18ac31",
+        "greenAlt": "#6b8d16",
+        "orange": "#dd7404",
+        "pink": "#dd39bf",
+        "purple": "#9244ec",
+        "red": "#df3c3c",
+        "salmon": "#ec4476",
+        "turquoize": "#00aaaa",
+        "yellow": "#d49408"
+      },
+      "levels": {
+        "danger": "#df3c3c",
+        "success": "#18ac31",
+        "warning": "#d49408",
+        "info": "#0f8fe4"
+      }
+    },
+    "uiTheme": "vs-dark"
   },
   {
-    "path": "themes/bearded-theme-colorblind.jsonsss",
-    "uiTheme": "vs-dark",
-    "name": "BeardedTheme Colorblind"
+    "slug": "themanopia",
+    "name": "Bearded Theme Themanopia",
+    "theme": {
+      "ui": {
+        "primary": "#9887eb",
+        "uibackground": "#1b1e28",
+        "uibackgroundmid": "#181b24",
+        "uibackgroundalt": "#161921",
+        "primaryalt": "#252937",
+        "uiborder": "#0f1016",
+        "default": "#d0d2d8",
+        "defaultMain": "#b4b7c1",
+        "defaultalt": "#98a2c3"
+      },
+      "colors": {
+        "blue": "#7c9cf8",
+        "green": "#f4e094",
+        "greenAlt": "#ffefba",
+        "orange": "#cfc08c",
+        "pink": "#b1b4cf",
+        "purple": "#4a7ade",
+        "red": "#95939c",
+        "salmon": "#b1b4cf",
+        "turquoize": "#cec8c4",
+        "yellow": "#ece0c1"
+      },
+      "levels": {
+        "danger": "#95939c",
+        "success": "#f4e094",
+        "warning": "#cfc08c",
+        "info": "#7c9cf8"
+      }
+    },
+    "uiTheme": "vs-dark"
   }
 ]

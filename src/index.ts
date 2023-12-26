@@ -86,9 +86,10 @@ interface ThemeOptions {
 }
 
 interface BridgeItem {
-  path: string;
-  uiTheme: string;
+  slug: string;
   name: string;
+  theme: Theme;
+  uiTheme: string;
 }
 
 const bfile: BridgeItem[] = JSON.parse(JSON.stringify(bridge));
@@ -121,10 +122,16 @@ async function makeTheme(
   );
 
   // Generate bridge.json
+  const themeName = name
+    .split("-")
+    .map((item) => item.charAt(0).toUpperCase() + item.slice(1))
+    .join(" ");
+
   bfile.push({
-    path: `themes/bearded-theme-${name}.json`,
+    slug: name.split(" ").join("-").toLowerCase(),
+    name: `Bearded Theme ${themeName}`,
+    theme,
     uiTheme: "vs-dark",
-    name: `BeardedTheme ${name.charAt(0).toUpperCase()}${name.slice(1)}`,
   });
 
   if (bfile.length === [...new Set(bfile.map((item) => item.name))].length) {
@@ -149,16 +156,16 @@ makeTheme("solarized-light", solarizedLight, {
 makeTheme("solarized-reversed", solarizedReversed);
 
 // Black
-makeTheme("black-amethyst", blackAndAmethyst);
-makeTheme("black-amethyst-soft", blackAndAmethystSoft);
-makeTheme("black-diamond", blackAndDiamond);
-makeTheme("black-diamond-soft", blackAndDiamondSoft);
-makeTheme("black-emerald", blackAndEmerald);
-makeTheme("black-emerald-soft", blackAndEmeraldSoft);
-makeTheme("black-gold", blackAndGold);
-makeTheme("black-gold-soft", blackAndGoldSoft);
-makeTheme("black-ruby", blackAndRuby);
-makeTheme("black-ruby-soft", blackAndRubySoft);
+makeTheme("black-&-amethyst", blackAndAmethyst);
+makeTheme("black-&-amethyst-soft", blackAndAmethystSoft);
+makeTheme("black-&-diamond", blackAndDiamond);
+makeTheme("black-&-diamond-soft", blackAndDiamondSoft);
+makeTheme("black-&-emerald", blackAndEmerald);
+makeTheme("black-&-emerald-soft", blackAndEmeraldSoft);
+makeTheme("black-&-gold", blackAndGold);
+makeTheme("black-&-gold-soft", blackAndGoldSoft);
+makeTheme("black-&-ruby", blackAndRuby);
+makeTheme("black-&-ruby-soft", blackAndRubySoft);
 
 // Stained
 makeTheme("stained-purple", stainedPurple);
@@ -177,20 +184,20 @@ makeTheme("monokai-black", monokaiBlack);
 makeTheme("monokai-reversed", monokaiReversed);
 
 // Exotic
-makeTheme("exotic-earth", earth);
+makeTheme("earth", earth);
 makeTheme("coffee", coffee);
 makeTheme("coffee-reversed", coffeeReversed);
 makeTheme("coffee-cream", coffeeCream, { light: true });
-makeTheme("exotic-void", voided);
-makeTheme("exotic-altica", altica);
+makeTheme("void", voided);
+makeTheme("altica", altica);
 makeTheme("arc-reversed", arcReversed);
 
 // Feat
-makeTheme("will", will, { untindedSelection: true });
-makeTheme("gold-d-raynh", goldDRaynh, { untindedSelection: true });
-makeTheme("gold-d-raynh-light", goldDRaynhLight, { light: true });
-makeTheme("mellejulie", melleJulie);
-makeTheme("mellejulie-light", melleJulieLight, { light: true });
+makeTheme("feat-will", will, { untindedSelection: true });
+makeTheme("feat-gold-d-raynh", goldDRaynh, { untindedSelection: true });
+makeTheme("feat-gold-d-raynh-light", goldDRaynhLight, { light: true });
+makeTheme("feat-mellejulie", melleJulie);
+makeTheme("feat-mellejulie-light", melleJulieLight, { light: true });
 
 // Classics
 makeTheme("classics-anthracite", anthracite);
@@ -208,7 +215,7 @@ makeTheme("hc-flurry", HCFlurry, { hc: true, light: true });
 makeTheme("hc-wonderland-wood", HCWonderlandWood, { hc: true });
 makeTheme("hc-brewing-storm", HCBrewingStorm, { hc: true });
 makeTheme("hc-minuit", Minuit, { hc: true });
-makeTheme("hc-chocolateespresso", ChocolateEspresso, { hc: true });
+makeTheme("hc-chocolate-espresso", ChocolateEspresso, { hc: true });
 
 // Milkshake
 makeTheme("milkshake-raspberry", milkshakeRaspberry, {
@@ -227,4 +234,4 @@ makeTheme("milkshake-vanilla", milkshakeVanilla, {
 });
 
 // Colorblind
-makeTheme("colorblind", colorBlind, { hc: true });
+makeTheme("Themanopia", colorBlind, { hc: true });
