@@ -13,6 +13,12 @@ interface ThemePropsDark {
   reversed?: boolean;
 }
 
+/**
+ * Calculates and returns an object with color values based on the input properties.
+ *
+ * @param {ThemePropsDark} themeProps - The input object with color properties.
+ * @returns {ThemeUi} - An object with color values based on the input properties.
+ */
 export function makeMainColorsDark({
   base,
   fontTeinted,
@@ -53,6 +59,11 @@ interface ThemePropsLight {
   primaryAlt?: string;
 }
 
+/**
+ * Generates color values for various elements of a UI theme based on the provided theme properties.
+ * @param themeProps - The theme properties.
+ * @returns An object containing color values for various elements of a UI theme.
+ */
 export function makeMainColorsLight({
   base,
   desaturated,

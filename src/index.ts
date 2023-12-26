@@ -95,6 +95,17 @@ interface BridgeItem {
 
 const bfile: BridgeItem[] = JSON.parse(JSON.stringify(bridge));
 
+/**
+ * Generates a theme template and writes it to a JSON file.
+ * @param name - The name of the theme.
+ * @param theme - The theme object containing color definitions.
+ * @param options - Optional configuration for the theme generation.
+ * @param options.desaturateInputs - Whether to desaturate input colors. Default is false.
+ * @param options.hc - Whether to generate a high contrast theme. Default is false.
+ * @param options.light - Whether to generate a light theme. Default is false.
+ * @param options.untindedSelection - Whether to generate an untinted selection color. Default is false.
+ * @returns A Promise that resolves when the theme file is written successfully.
+ */
 async function makeTheme(
   name: string,
   theme: Theme,

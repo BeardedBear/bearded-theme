@@ -4,6 +4,16 @@ import { Theme, UIKey } from "./typing";
 
 const transparent = "#00000000";
 
+/**
+ * Creates a UI configuration object based on the provided theme and optional parameters.
+ *
+ * @param theme - The theme object.
+ * @param hc - Optional. Specifies whether the UI should be in high contrast mode.
+ * @param light - Optional. Specifies whether the UI should be in light mode.
+ * @param untindedSelection - Optional. Specifies whether the selection color should be untinted.
+ * @param desaturateInputs - Optional. Specifies whether the input colors should be desaturated.
+ * @returns A partial UIKey object representing the UI configuration.
+ */
 export default function ui(
   theme: Theme,
   hc?: boolean,
