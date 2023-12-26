@@ -1,0 +1,297 @@
+[
+  {
+    "path": "themes/bearded-theme-arc.jsonsss",
+    "uiTheme": "vs-dark",
+    "name": "BeardedTheme Arc"
+  },
+  {
+    "path": "themes/bearded-theme-arc-eolstorm.jsonsss",
+    "uiTheme": "vs-dark",
+    "name": "BeardedTheme Arc-eolstorm"
+  },
+  {
+    "path": "themes/bearded-theme-arc-blueberry.jsonsss",
+    "uiTheme": "vs-dark",
+    "name": "BeardedTheme Arc-blueberry"
+  },
+  {
+    "path": "themes/bearded-theme-arc-eggplant.jsonsss",
+    "uiTheme": "vs-dark",
+    "name": "BeardedTheme Arc-eggplant"
+  },
+  {
+    "path": "themes/bearded-theme-oceanic.jsonsss",
+    "uiTheme": "vs-dark",
+    "name": "BeardedTheme Oceanic"
+  },
+  {
+    "path": "themes/bearded-theme-oceanic-reversed.jsonsss",
+    "uiTheme": "vs-dark",
+    "name": "BeardedTheme Oceanic-reversed"
+  },
+  {
+    "path": "themes/bearded-theme-solarized-dark.jsonsss",
+    "uiTheme": "vs-dark",
+    "name": "BeardedTheme Solarized-dark"
+  },
+  {
+    "path": "themes/bearded-theme-solarized-light.jsonsss",
+    "uiTheme": "vs-dark",
+    "name": "BeardedTheme Solarized-light"
+  },
+  {
+    "path": "themes/bearded-theme-solarized-reversed.jsonsss",
+    "uiTheme": "vs-dark",
+    "name": "BeardedTheme Solarized-reversed"
+  },
+  {
+    "path": "themes/bearded-theme-black-amethyst.jsonsss",
+    "uiTheme": "vs-dark",
+    "name": "BeardedTheme Black-amethyst"
+  },
+  {
+    "path": "themes/bearded-theme-black-amethyst-soft.jsonsss",
+    "uiTheme": "vs-dark",
+    "name": "BeardedTheme Black-amethyst-soft"
+  },
+  {
+    "path": "themes/bearded-theme-black-diamond.jsonsss",
+    "uiTheme": "vs-dark",
+    "name": "BeardedTheme Black-diamond"
+  },
+  {
+    "path": "themes/bearded-theme-black-diamond-soft.jsonsss",
+    "uiTheme": "vs-dark",
+    "name": "BeardedTheme Black-diamond-soft"
+  },
+  {
+    "path": "themes/bearded-theme-black-emerald.jsonsss",
+    "uiTheme": "vs-dark",
+    "name": "BeardedTheme Black-emerald"
+  },
+  {
+    "path": "themes/bearded-theme-black-emerald-soft.jsonsss",
+    "uiTheme": "vs-dark",
+    "name": "BeardedTheme Black-emerald-soft"
+  },
+  {
+    "path": "themes/bearded-theme-black-gold.jsonsss",
+    "uiTheme": "vs-dark",
+    "name": "BeardedTheme Black-gold"
+  },
+  {
+    "path": "themes/bearded-theme-black-gold-soft.jsonsss",
+    "uiTheme": "vs-dark",
+    "name": "BeardedTheme Black-gold-soft"
+  },
+  {
+    "path": "themes/bearded-theme-black-ruby.jsonsss",
+    "uiTheme": "vs-dark",
+    "name": "BeardedTheme Black-ruby"
+  },
+  {
+    "path": "themes/bearded-theme-black-ruby-soft.jsonsss",
+    "uiTheme": "vs-dark",
+    "name": "BeardedTheme Black-ruby-soft"
+  },
+  {
+    "path": "themes/bearded-theme-stained-purple.jsonsss",
+    "uiTheme": "vs-dark",
+    "name": "BeardedTheme Stained-purple"
+  },
+  {
+    "path": "themes/bearded-theme-stained-blue.jsonsss",
+    "uiTheme": "vs-dark",
+    "name": "BeardedTheme Stained-blue"
+  },
+  {
+    "path": "themes/bearded-theme-vivid-purple.jsonsss",
+    "uiTheme": "vs-dark",
+    "name": "BeardedTheme Vivid-purple"
+  },
+  {
+    "path": "themes/bearded-theme-vivid-black.jsonsss",
+    "uiTheme": "vs-dark",
+    "name": "BeardedTheme Vivid-black"
+  },
+  {
+    "path": "themes/bearded-theme-vivid-light.jsonsss",
+    "uiTheme": "vs-dark",
+    "name": "BeardedTheme Vivid-light"
+  },
+  {
+    "path": "themes/bearded-theme-monokai-terra.jsonsss",
+    "uiTheme": "vs-dark",
+    "name": "BeardedTheme Monokai-terra"
+  },
+  {
+    "path": "themes/bearded-theme-monokai-metallian.jsonsss",
+    "uiTheme": "vs-dark",
+    "name": "BeardedTheme Monokai-metallian"
+  },
+  {
+    "path": "themes/bearded-theme-monokai-stone.jsonsss",
+    "uiTheme": "vs-dark",
+    "name": "BeardedTheme Monokai-stone"
+  },
+  {
+    "path": "themes/bearded-theme-monokai-black.jsonsss",
+    "uiTheme": "vs-dark",
+    "name": "BeardedTheme Monokai-black"
+  },
+  {
+    "path": "themes/bearded-theme-monokai-reversed.jsonsss",
+    "uiTheme": "vs-dark",
+    "name": "BeardedTheme Monokai-reversed"
+  },
+  {
+    "path": "themes/bearded-theme-exotic-earth.jsonsss",
+    "uiTheme": "vs-dark",
+    "name": "BeardedTheme Exotic-earth"
+  },
+  {
+    "path": "themes/bearded-theme-coffee.jsonsss",
+    "uiTheme": "vs-dark",
+    "name": "BeardedTheme Coffee"
+  },
+  {
+    "path": "themes/bearded-theme-coffee-reversed.jsonsss",
+    "uiTheme": "vs-dark",
+    "name": "BeardedTheme Coffee-reversed"
+  },
+  {
+    "path": "themes/bearded-theme-coffee-cream.jsonsss",
+    "uiTheme": "vs-dark",
+    "name": "BeardedTheme Coffee-cream"
+  },
+  {
+    "path": "themes/bearded-theme-exotic-void.jsonsss",
+    "uiTheme": "vs-dark",
+    "name": "BeardedTheme Exotic-void"
+  },
+  {
+    "path": "themes/bearded-theme-exotic-altica.jsonsss",
+    "uiTheme": "vs-dark",
+    "name": "BeardedTheme Exotic-altica"
+  },
+  {
+    "path": "themes/bearded-theme-arc-reversed.jsonsss",
+    "uiTheme": "vs-dark",
+    "name": "BeardedTheme Arc-reversed"
+  },
+  {
+    "path": "themes/bearded-theme-will.jsonsss",
+    "uiTheme": "vs-dark",
+    "name": "BeardedTheme Will"
+  },
+  {
+    "path": "themes/bearded-theme-gold-d-raynh.jsonsss",
+    "uiTheme": "vs-dark",
+    "name": "BeardedTheme Gold-d-raynh"
+  },
+  {
+    "path": "themes/bearded-theme-gold-d-raynh-light.jsonsss",
+    "uiTheme": "vs-dark",
+    "name": "BeardedTheme Gold-d-raynh-light"
+  },
+  {
+    "path": "themes/bearded-theme-mellejulie.jsonsss",
+    "uiTheme": "vs-dark",
+    "name": "BeardedTheme Mellejulie"
+  },
+  {
+    "path": "themes/bearded-theme-mellejulie-light.jsonsss",
+    "uiTheme": "vs-dark",
+    "name": "BeardedTheme Mellejulie-light"
+  },
+  {
+    "path": "themes/bearded-theme-classics-anthracite.jsonsss",
+    "uiTheme": "vs-dark",
+    "name": "BeardedTheme Classics-anthracite"
+  },
+  {
+    "path": "themes/bearded-theme-classics-light.jsonsss",
+    "uiTheme": "vs-dark",
+    "name": "BeardedTheme Classics-light"
+  },
+  {
+    "path": "themes/bearded-theme-surprising-eggplant.jsonsss",
+    "uiTheme": "vs-dark",
+    "name": "BeardedTheme Surprising-eggplant"
+  },
+  {
+    "path": "themes/bearded-theme-surprising-blueberry.jsonsss",
+    "uiTheme": "vs-dark",
+    "name": "BeardedTheme Surprising-blueberry"
+  },
+  {
+    "path": "themes/bearded-theme-surprising-watermelon.jsonsss",
+    "uiTheme": "vs-dark",
+    "name": "BeardedTheme Surprising-watermelon"
+  },
+  {
+    "path": "themes/bearded-theme-hc-ebony.jsonsss",
+    "uiTheme": "vs-dark",
+    "name": "BeardedTheme Hc-ebony"
+  },
+  {
+    "path": "themes/bearded-theme-hc-midnightvoid.jsonsss",
+    "uiTheme": "vs-dark",
+    "name": "BeardedTheme Hc-midnightvoid"
+  },
+  {
+    "path": "themes/bearded-theme-hc-flurry.jsonsss",
+    "uiTheme": "vs-dark",
+    "name": "BeardedTheme Hc-flurry"
+  },
+  {
+    "path": "themes/bearded-theme-hc-wonderland-wood.jsonsss",
+    "uiTheme": "vs-dark",
+    "name": "BeardedTheme Hc-wonderland-wood"
+  },
+  {
+    "path": "themes/bearded-theme-hc-brewing-storm.jsonsss",
+    "uiTheme": "vs-dark",
+    "name": "BeardedTheme Hc-brewing-storm"
+  },
+  {
+    "path": "themes/bearded-theme-hc-minuit.jsonsss",
+    "uiTheme": "vs-dark",
+    "name": "BeardedTheme Hc-minuit"
+  },
+  {
+    "path": "themes/bearded-theme-hc-chocolateespresso.jsonsss",
+    "uiTheme": "vs-dark",
+    "name": "BeardedTheme Hc-chocolateespresso"
+  },
+  {
+    "path": "themes/bearded-theme-milkshake-raspberry.jsonsss",
+    "uiTheme": "vs-dark",
+    "name": "BeardedTheme Milkshake-raspberry"
+  },
+  {
+    "path": "themes/bearded-theme-milkshake-blueberry.jsonsss",
+    "uiTheme": "vs-dark",
+    "name": "BeardedTheme Milkshake-blueberry"
+  },
+  {
+    "path": "themes/bearded-theme-milkshake-mango.jsonsss",
+    "uiTheme": "vs-dark",
+    "name": "BeardedTheme Milkshake-mango"
+  },
+  {
+    "path": "themes/bearded-theme-milkshake-mint.jsonsss",
+    "uiTheme": "vs-dark",
+    "name": "BeardedTheme Milkshake-mint"
+  },
+  {
+    "path": "themes/bearded-theme-milkshake-vanilla.jsonsss",
+    "uiTheme": "vs-dark",
+    "name": "BeardedTheme Milkshake-vanilla"
+  },
+  {
+    "path": "themes/bearded-theme-colorblind.jsonsss",
+    "uiTheme": "vs-dark",
+    "name": "BeardedTheme Colorblind"
+  }
+]

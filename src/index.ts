@@ -1,4 +1,5 @@
-import { writeFile } from "fs";
+import { writeFile, writeFileSync } from "fs";
+import bridge from "../bridge.json" assert { type: "json" };
 import syntax from "./scopes/scopes";
 import semanticTokens from "./scopes/semanticTokens";
 import { Theme } from "./typing";
@@ -84,7 +85,15 @@ interface ThemeOptions {
   desaturateInputs?: boolean;
 }
 
-function makeTheme(
+interface BridgeItem {
+  path: string;
+  uiTheme: string;
+  name: string;
+}
+
+const bfile: BridgeItem[] = JSON.parse(JSON.stringify(bridge));
+
+async function makeTheme(
   name: string,
   theme: Theme,
   { hc, light, untindedSelection, desaturateInputs }: ThemeOptions = {
@@ -93,7 +102,7 @@ function makeTheme(
     untindedSelection: false,
     desaturateInputs: false,
   },
-): void {
+): Promise<void> {
   const themeTemplate = {
     $schema: "vscode://schemas/color-theme",
     name: `BeardedTheme ${name.charAt(0).toUpperCase()}${name.slice(1)}`,
@@ -110,6 +119,17 @@ function makeTheme(
       if (err) console.log("error", err);
     },
   );
+
+  // Generate bridge.json
+  bfile.push({
+    path: `themes/bearded-theme-${name}.json`,
+    uiTheme: "vs-dark",
+    name: `BeardedTheme ${name.charAt(0).toUpperCase()}${name.slice(1)}`,
+  });
+
+  if (bfile.length === [...new Set(bfile.map((item) => item.name))].length) {
+    writeFileSync("bridge.json", JSON.stringify(bfile), { encoding: "utf8" });
+  }
 }
 
 // Arc
@@ -191,11 +211,20 @@ makeTheme("hc-minuit", Minuit, { hc: true });
 makeTheme("hc-chocolateespresso", ChocolateEspresso, { hc: true });
 
 // Milkshake
-makeTheme("milkshake-raspberry", milkshakeRaspberry, { hc: true, light: true });
-makeTheme("milkshake-blueberry", milkshakeBlueberry, { hc: true, light: true });
+makeTheme("milkshake-raspberry", milkshakeRaspberry, {
+  hc: true,
+  light: true,
+});
+makeTheme("milkshake-blueberry", milkshakeBlueberry, {
+  hc: true,
+  light: true,
+});
 makeTheme("milkshake-mango", milkshakeMango, { hc: true, light: true });
 makeTheme("milkshake-mint", milkshakeMint, { hc: true, light: true });
-makeTheme("milkshake-vanilla", milkshakeVanilla, { hc: true, light: true });
+makeTheme("milkshake-vanilla", milkshakeVanilla, {
+  hc: true,
+  light: true,
+});
 
 // Colorblind
 makeTheme("colorblind", colorBlind, { hc: true });
