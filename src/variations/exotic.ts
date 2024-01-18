@@ -142,6 +142,7 @@ export const altica: Theme = {
   },
   levels,
   ui: {
+    border: "#0a1217",
     default: "#c2ced1",
     defaultMain: "#9FADB1",
     defaultalt: "#45565c",
@@ -150,6 +151,5 @@ export const altica: Theme = {
     uibackground: "#0f1c21",
     uibackgroundalt: "#0e171c",
     uibackgroundmid: "#0f1a1f",
-    uiborder: "#0a1217",
   },
 };

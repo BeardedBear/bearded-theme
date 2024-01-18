@@ -32,6 +32,7 @@ export function makeMainColorsDark({
   const mainColor = c(base).lighten(0.55).saturate(0.07).toHex();
 
   return {
+    border: c(base).darken(0.06).toHex(),
     // Fonts
     default: fontTeinted
       ? fontColor
@@ -48,7 +49,6 @@ export function makeMainColorsDark({
     uibackground: reversed ? darkenColor : base,
     uibackgroundalt: reversed ? base : darkenColor,
     uibackgroundmid: c(base).mix(darkenColor).toHex(),
-    uiborder: c(base).darken(0.06).toHex(),
   };
 }
 
@@ -76,6 +76,7 @@ export function makeMainColorsLight({
   const fontColor: string = c(primary).darken(0.1).toHex();
 
   return {
+    border: desaturated ? c(borderColor).desaturate(0.5).toHex() : borderColor,
     // Fonts
     default: desaturated
       ? c(fontColor).darken(0.4).desaturate(0.3).toHex()
@@ -96,8 +97,5 @@ export function makeMainColorsLight({
     uibackgroundmid: desaturated
       ? c(mixedColor).desaturate(0.25).toHex()
       : mixedColor,
-    uiborder: desaturated
-      ? c(borderColor).desaturate(0.5).toHex()
-      : borderColor,
   };
 }

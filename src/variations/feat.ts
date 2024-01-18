@@ -21,6 +21,7 @@ export const will: Theme = {
     warning: "#ffae82",
   },
   ui: {
+    border: "#000000",
     default: "#bdb6d3",
     defaultMain: "#bfb9da",
     defaultalt: "#585775",
@@ -29,7 +30,6 @@ export const will: Theme = {
     uibackground: "#14111f",
     uibackgroundalt: "#0d0a14",
     uibackgroundmid: "#100e1a",
-    uiborder: "#000000",
   },
 };
 

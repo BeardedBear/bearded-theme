@@ -54,7 +54,7 @@ export default function ui(
       : c(theme.ui.primary).alpha(0.15).toHex(),
     "activityBar.activeBorder": theme.ui.primary,
     "activityBar.background": theme.ui.uibackgroundalt,
-    "activityBar.border": theme.ui.uiborder,
+    "activityBar.border": theme.ui.border,
     "activityBar.dropBorder": c(theme.ui.defaultalt).alpha(0.2).toHex(),
     "activityBar.foreground": theme.ui.primary,
     "activityBar.inactiveForeground": hc
@@ -97,7 +97,7 @@ export default function ui(
     "commandCenter.activeBackground": `${theme.ui.primaryalt}60`,
     "commandCenter.activeForeground": `${theme.ui.defaultMain}90`,
     "commandCenter.background": theme.ui.uibackground,
-    "commandCenter.border": theme.ui.uiborder,
+    "commandCenter.border": theme.ui.border,
     "commandCenter.foreground": theme.ui.defaultalt,
 
     // common
@@ -106,15 +106,15 @@ export default function ui(
 
     // debug
     "debugExceptionWidget.background": theme.ui.primaryalt,
-    "debugExceptionWidget.border": theme.ui.uiborder,
+    "debugExceptionWidget.border": theme.ui.border,
     "debugToolBar.background": theme.ui.primaryalt,
 
     // description
     descriptionForeground: c(theme.ui.default).alpha(0.3).toHex(),
 
     // diff
-    "diffEditor.border": theme.ui.uiborder,
-    "diffEditor.diagonalFill": `${theme.ui.uiborder}80`,
+    "diffEditor.border": theme.ui.border,
+    "diffEditor.diagonalFill": `${theme.ui.border}80`,
     "diffEditor.insertedLineBackground": `${theme.levels.success}20`,
     "diffEditor.insertedTextBackground": hc
       ? transparent
@@ -179,12 +179,12 @@ export default function ui(
     "editorGhostText.foreground": theme.ui.default + 70,
 
     // tabs
-    "editorGroup.border": theme.ui.uiborder,
+    "editorGroup.border": theme.ui.border,
     "editorGroup.dropBackground": `${theme.ui.primary}15`,
     "editorGroupHeader.border": transparent,
     "editorGroupHeader.noTabsBackground": theme.ui.uibackground,
     "editorGroupHeader.tabsBackground": theme.ui.uibackgroundalt,
-    "editorGroupHeader.tabsBorder": theme.ui.uiborder,
+    "editorGroupHeader.tabsBorder": theme.ui.border,
     "editorGutter.addedBackground": `${theme.levels.success}cc`,
 
     // gutter
@@ -193,7 +193,7 @@ export default function ui(
     "editorGutter.deletedBackground": `${theme.levels.danger}cc`,
     "editorGutter.modifiedBackground": `${theme.levels.info}cc`,
     "editorHoverWidget.background": theme.ui.primaryalt,
-    "editorHoverWidget.border": theme.ui.uiborder,
+    "editorHoverWidget.border": theme.ui.border,
     "editorIndentGuide.activeBackground1": hc
       ? c(theme.ui.defaultalt).alpha(0.9).toHex()
       : c(theme.ui.defaultalt).alpha(0.8).toHex(),
@@ -222,7 +222,7 @@ export default function ui(
     "editorMarkerNavigationError.background": `${theme.levels.danger}90`,
     "editorMarkerNavigationInfo.background": `${theme.levels.info}90`,
     "editorMarkerNavigationWarning.background": `${theme.levels.warning}90`,
-    "editorOverviewRuler.border": theme.ui.uiborder,
+    "editorOverviewRuler.border": theme.ui.border,
     "editorOverviewRuler.commonContentForeground": theme.colors.yellow,
     "editorOverviewRuler.currentContentForeground": theme.levels.danger,
     "editorOverviewRuler.incomingContentForeground": theme.levels.success,
@@ -233,7 +233,7 @@ export default function ui(
 
     // suggest
     "editorSuggestWidget.background": theme.ui.uibackground,
-    "editorSuggestWidget.border": theme.ui.uiborder,
+    "editorSuggestWidget.border": theme.ui.border,
     "editorSuggestWidget.foreground": theme.ui.defaultMain,
     "editorSuggestWidget.highlightForeground": theme.colors.yellow,
     "editorSuggestWidget.selectedBackground": `${theme.ui.primary}4d`,
@@ -326,19 +326,19 @@ export default function ui(
 
     // menu
     "menu.background": theme.ui.primaryalt,
-    "menu.border": theme.ui.uiborder,
+    "menu.border": theme.ui.border,
     "menu.foreground": light
       ? theme.ui.defaultMain
       : c(theme.ui.primaryalt).lighten(0.5).desaturate(0.1).toHex(),
     "menu.selectionForeground": light
       ? theme.ui.defaultMain
       : c(theme.ui.primaryalt).lighten(0.8).desaturate(0.1).toHex(),
-    "menu.separatorBackground": theme.ui.uiborder + 65,
+    "menu.separatorBackground": theme.ui.border + 65,
     "menubar.selectionBackground": theme.ui.primaryalt,
     "menubar.selectionForeground": theme.ui.defaultMain,
 
     // merge
-    "merge.border": theme.ui.uiborder,
+    "merge.border": theme.ui.border,
     "merge.commonContentBackground": `${theme.colors.yellow}30`,
     "merge.commonHeaderBackground": `${theme.colors.yellow}80`,
     "merge.currentContentBackground": `${theme.levels.success}30`,
@@ -362,7 +362,7 @@ export default function ui(
     "notificationCenterHeader.foreground": theme.ui.default,
     "notificationLink.foreground": theme.colors.yellow,
     "notifications.background": theme.ui.primaryalt,
-    "notifications.border": theme.ui.uiborder,
+    "notifications.border": theme.ui.border,
     "notifications.foreground": theme.ui.defaultMain,
     "notificationsErrorIcon.foreground": theme.colors.red,
     "notificationsInfoIcon.foreground": theme.colors.blue,
@@ -370,25 +370,25 @@ export default function ui(
 
     // panel
     "panel.background": theme.ui.uibackgroundmid,
-    "panel.border": theme.ui.uiborder,
+    "panel.border": theme.ui.border,
     "panel.dropBorder": c(theme.ui.defaultalt).alpha(0.5).toHex(),
     "panelInput.border": light
       ? desaturateInputs
         ? c(theme.ui.uibackground).desaturate(0.5).darken(0.1).toHex()
         : c(theme.ui.uibackground).darken(0.1).toHex()
       : c(theme.ui.uibackground).lighten(0.1).toHex(),
-    "panelSection.border": theme.ui.uiborder,
+    "panelSection.border": theme.ui.border,
     "panelSectionHeader.background": light
       ? c(theme.ui.uibackgroundmid).darken(0.05).toHex()
       : c(theme.ui.uibackgroundmid).lighten(0.03).toHex(),
-    "panelSectionHeader.border": theme.ui.uiborder,
+    "panelSectionHeader.border": theme.ui.border,
     "panelSectionHeader.foreground": theme.ui.default,
     "panelTitle.activeBorder": theme.ui.primary,
     "panelTitle.activeForeground": theme.ui.primary,
     "panelTitle.inactiveForeground": theme.ui.defaultalt,
 
     // Peekview
-    "peekView.border": theme.ui.uiborder,
+    "peekView.border": theme.ui.border,
     "peekViewEditor.background": c(theme.ui.uibackground).lighten(0.04).toHex(),
     "peekViewEditor.matchHighlightBackground": `${theme.ui.primaryalt}40`,
     "peekViewEditor.matchHighlightBorder": transparent,
@@ -415,7 +415,7 @@ export default function ui(
     "peekViewTitleLabel.foreground": theme.ui.default,
 
     // picker
-    "pickerGroup.border": theme.ui.uiborder,
+    "pickerGroup.border": theme.ui.border,
     "pickerGroup.foreground": theme.ui.default,
     "profileBadge.background": theme.ui.primary,
     "profileBadge.foreground": theme.ui.uibackground,
@@ -452,16 +452,16 @@ export default function ui(
 
     // sidebar
     "sideBar.background": theme.ui.uibackgroundalt,
-    "sideBar.border": theme.ui.uiborder,
+    "sideBar.border": theme.ui.border,
     "sideBar.foreground": `${theme.ui.defaultMain}CC`,
     "sideBarSectionHeader.background": theme.ui.uibackgroundalt,
-    "sideBarSectionHeader.border": theme.ui.uiborder,
+    "sideBarSectionHeader.border": theme.ui.border,
     "sideBarSectionHeader.foreground": theme.ui.default,
     "sideBarTitle.foreground": theme.ui.defaultalt,
 
     // statusBar
     "statusBar.background": theme.ui.uibackgroundalt,
-    "statusBar.border": theme.ui.uiborder,
+    "statusBar.border": theme.ui.border,
     "statusBar.debuggingBackground": c(theme.colors.orange)
       .desaturate(0.5)
       .darken(0.5)
@@ -472,7 +472,7 @@ export default function ui(
       .toHex(),
     "statusBar.foreground": c(theme.ui.defaultMain).alpha(0.5).toHex(),
     "statusBar.noFolderBackground": theme.ui.uibackgroundalt,
-    "statusBar.noFolderBorder": theme.ui.uiborder,
+    "statusBar.noFolderBorder": theme.ui.border,
     "statusBar.noFolderForeground": c(theme.ui.defaultMain).alpha(0.8).toHex(),
     "statusBarItem.activeBackground": theme.ui.primaryalt,
     "statusBarItem.errorBackground": c(theme.levels.danger).toHex(),
@@ -515,11 +515,11 @@ export default function ui(
     "tab.activeBorder": theme.ui.uibackground,
     "tab.activeBorderTop": theme.ui.primary,
     "tab.activeForeground": theme.ui.primary,
-    "tab.border": theme.ui.uiborder,
+    "tab.border": theme.ui.border,
     "tab.hoverBackground": theme.ui.uibackground,
     "tab.inactiveBackground": theme.ui.uibackgroundalt,
     "tab.inactiveForeground": theme.ui.defaultalt,
-    "tab.lastPinnedBorder": theme.ui.uiborder,
+    "tab.lastPinnedBorder": theme.ui.border,
     "tab.unfocusedActiveBorder": theme.ui.uibackground,
     "tab.unfocusedActiveForeground": theme.ui.primary,
     "tab.unfocusedHoverBackground": theme.ui.uibackground,
@@ -565,8 +565,8 @@ export default function ui(
     // titleBar
     "titleBar.activeBackground": theme.ui.uibackgroundalt,
     "titleBar.activeForeground": theme.ui.defaultalt,
-    "titleBar.border": theme.ui.uiborder,
-    "titleBar.inactiveBackground": theme.ui.uiborder,
+    "titleBar.border": theme.ui.border,
+    "titleBar.inactiveBackground": theme.ui.border,
     "titleBar.inactiveForeground": theme.ui.defaultalt,
     "toolbar.hoverBackground": hc
       ? theme.ui.defaultMain + 40
@@ -584,6 +584,6 @@ export default function ui(
     "welcomePage.tileHoverBackground": theme.ui.defaultMain + 20,
 
     // widget
-    "widget.shadow": `${theme.ui.uiborder}30`,
+    "widget.shadow": `${theme.ui.border}30`,
   };
 }

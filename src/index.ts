@@ -146,7 +146,7 @@ async function makeTheme(
     uiTheme: "vs-dark",
   });
 
-  if (bfile.length === [...new Set(bfile.map((item) => item.name))].length) {
+  if (bfile.length === new Set(bfile.map((item) => item.name)).size) {
     writeFileSync("bridge.json", JSON.stringify(bfile), { encoding: "utf8" });
   }
 }

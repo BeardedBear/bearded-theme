@@ -1,6 +1,7 @@
 import { colors } from "../themes/ui-key-tester.json";
 
 export interface ThemeUi {
+  border: string;
   default: string;
   defaultMain: string;
   defaultalt: string;
@@ -9,7 +10,6 @@ export interface ThemeUi {
   uibackground: string;
   uibackgroundalt: string;
   uibackgroundmid: string;
-  uiborder: string;
 }
 
 export interface ThemeColors {
