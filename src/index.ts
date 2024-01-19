@@ -64,6 +64,7 @@ import {
   monokaiStone,
   monokaiTerra,
 } from "./variations/monokai";
+import { paleCoffee, paleGlacier, paleNight } from "./variations/pale";
 import {
   oceanic,
   oceanicReverded,
@@ -247,3 +248,8 @@ makeTheme("milkshake-vanilla", milkshakeVanilla, {
 
 // Colorblind
 makeTheme("Themanopia", colorBlind, { hc: true });
+
+// Pale
+makeTheme("pale-glacier", paleGlacier);
+makeTheme("pale-night", paleNight);
+makeTheme("pale-coffee", paleCoffee);

@@ -349,6 +349,21 @@
         "label": "Bearded Themanopia",
         "uiTheme": "hc-black",
         "path": "./themes/bearded-theme-themanopia.json"
+      },
+      {
+        "label": "Bearded Pale Glacier",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-pale-glacier.json"
+      },
+      {
+        "label": "Bearded Pale Night",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-pale-night.json"
+      },
+      {
+        "label": "Bearded Pale Coffee",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-pale-coffee.json"
       }
     ]
   },
