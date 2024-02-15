@@ -7,6 +7,7 @@
 - Fix line number foreground color
 - Fix Milkshake Blueberry primary color
 - Fix Milkshake Mango primary color
+- Fix current text for react with babel syntax HL [Thanks oguzhanuzunay](https://github.com/BeardedBear/bearded-theme/issues/133)
 - Fix TODO keyword in comments [Thanks lperson](https://github.com/BeardedBear/bearded-theme/issues/135)
 - Fix const keyword missing for julia [Thanks SabeDoesThings](https://github.com/BeardedBear/bearded-theme/issues/136)
 - Fix quoted style attribute for HTML [Thanks gmurad97](https://github.com/BeardedBear/bearded-theme/issues/139)
