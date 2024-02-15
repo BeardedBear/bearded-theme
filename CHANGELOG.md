@@ -8,6 +8,7 @@
 - Fix Milkshake Blueberry primary color
 - Fix Milkshake Mango primary color
 - Fix TODO keyword in comments [Thanks lperson](https://github.com/BeardedBear/bearded-theme/issues/135)
+- Fix const keyword missing for julia [Thanks SabeDoesThings](https://github.com/BeardedBear/bearded-theme/issues/136)
 
 ### Enhancements
 

@@ -302,6 +302,7 @@ export const storages = [
   "keyword.var.go",
   "storage.type.powershell",
   "keyword.const.go",
+  "keyword.storage.modifier",
 ];
 
 export const strings = [
