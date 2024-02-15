@@ -5,11 +5,16 @@
 ### Fixes
 
 - Fix line number foreground color
-- Fix quick input background color
-- Fix input background opacity and border color
-- Fix input placeholder color
 - Fix Milkshake Blueberry primary color
 - Fix Milkshake Mango primary color
+- Fix TODO keyword in comments [Thanks lperson](https://github.com/BeardedBear/bearded-theme/issues/135)
+
+### Enhancements
+
+- Rework inputs
+  - Fix quick input background color
+  - Fix input background opacity and border color
+  - Fix input placeholder color
 
 ## 8.3.2 - 2023-07-28
 

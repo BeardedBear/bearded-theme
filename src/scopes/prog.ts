@@ -86,6 +86,7 @@ export const keyword = [
   "keyword.operator.liquid",
   "keyword.operator.optional.ts",
   "keyword.cmake",
+  "keyword.codetag.notation",
 ];
 
 export const constants = ["constant", "support.constant.core.php"];
