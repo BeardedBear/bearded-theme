@@ -332,6 +332,8 @@ export const strings = [
   "string.unquoted.plain.out.yaml",
   "string.quoted.single.python punctuation.definition.string.begin.python",
   "string.quoted.single.python punctuation.definition.string.end.python",
+  "punctuation.definition.string.end.html source.css",
+  "string.quoted.double.html source.css",
 ];
 
 export const stringsAlt = [
