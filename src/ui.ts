@@ -121,20 +121,20 @@ export default function ui(
     "diffEditor.border": theme.ui.border,
     "diffEditor.diagonalFill": c(theme.ui.uibackground).lighten(0.05).toHex(),
     "diffEditor.insertedLineBackground": c(theme.levels.success)
-      .alpha(0.2)
+      .alpha(0.1)
       .toHex(),
-    "diffEditor.insertedTextBackground": hc
-      ? transparent
-      : `${theme.levels.success}20`,
+    "diffEditor.insertedTextBackground": c(theme.levels.success)
+      .alpha(0.15)
+      .toHex(),
     "diffEditor.insertedTextBorder": transparent,
-    "diffEditor.move.border": c(theme.ui.default).alpha(0.3).toHex(),
-    "diffEditor.moveActive.border": c(theme.ui.default).alpha(0.5).toHex(),
+    "diffEditor.move.border": c(theme.colors.yellow).alpha(0.3).toHex(),
+    "diffEditor.moveActive.border": c(theme.colors.yellow).alpha(0.7).toHex(),
     "diffEditor.removedLineBackground": c(theme.levels.danger)
-      .alpha(0.2)
+      .alpha(0.1)
       .toHex(),
-    "diffEditor.removedTextBackground": hc
-      ? transparent
-      : `${theme.levels.danger}25`,
+    "diffEditor.removedTextBackground": c(theme.levels.danger)
+      .alpha(0.15)
+      .toHex(),
     "diffEditor.removedTextBorder": transparent,
     "diffEditorGutter.insertedLineBackground": transparent,
     "diffEditorGutter.removedLineBackground": transparent,

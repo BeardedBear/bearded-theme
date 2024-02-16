@@ -27,7 +27,7 @@ export default function syntax(theme: Theme, hc?: boolean): Scope[] {
       prog.comments,
       c(theme.ui.default)
         .saturate(0.15)
-        .alpha(hc ? 0.55 : 0.25)
+        .alpha(hc ? 0.55 : 0.35)
         .toHex(),
       "italic",
     ),
