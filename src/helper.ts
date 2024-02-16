@@ -28,21 +28,19 @@ export function makeMainColorsDark({
 }: ThemePropsDark): ThemeUi {
   const darkenColor: string = c(base).darken(0.022).toHex();
   const sat = 0.1;
-  const fontColor = c(base).lighten(0.6).saturate(0.1).toHex();
-  const mainColor = c(base).lighten(0.55).saturate(0.07).toHex();
 
   return {
     border: c(base).darken(0.06).toHex(),
     // Fonts
     default: fontTeinted
-      ? fontColor
+      ? c(base).lighten(0.6).saturate(0.15).toHex()
       : c(base).lighten(0.7).desaturate(sat).toHex(),
     defaultMain: fontTeinted
-      ? mainColor
+      ? c(base).lighten(0.55).saturate(0.07).toHex()
       : c(base).lighten(0.6).desaturate(sat).toHex(),
     defaultalt: fontTeinted
       ? c(base).lighten(0.15).saturate(0.05).toHex()
-      : mainColor,
+      : c(base).lighten(0.25).desaturate(sat).toHex(),
     // UI
     primary,
     primaryalt: primaryAlt ? primaryAlt : c(base).lighten(0.05).toHex(),
@@ -86,7 +84,7 @@ export function makeMainColorsLight({
       : c(fontColor).darken(0.5).desaturate(0.3).toHex(),
     defaultalt: desaturated
       ? c(fontColor).lighten(0.3).desaturate(0.5).toHex()
-      : c(fontColor).lighten(0.15).desaturate(0.4).toHex(),
+      : c(fontColor).lighten(0.15).desaturate(0.5).toHex(),
     // UI
     primary,
     primaryalt: primaryAlt ? primaryAlt : c(base).lighten(0.02).toHex(),
