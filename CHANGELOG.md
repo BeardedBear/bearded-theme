@@ -12,6 +12,7 @@
 - Fix const keyword missing for julia [Thanks SabeDoesThings](https://github.com/BeardedBear/bearded-theme/issues/136)
 - Fix quoted style attribute for HTML [Thanks gmurad97](https://github.com/BeardedBear/bearded-theme/issues/139)
 - Fix inserted comment background color in diff editor [Thanks hadirgax](https://github.com/BeardedBear/bearded-theme/issues/144)
+- Fix terminal bright palette [Thanks Loskir](https://github.com/BeardedBear/bearded-theme/issues/145)
 
 ### Enhancements
 
