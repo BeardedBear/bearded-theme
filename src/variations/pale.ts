@@ -2,13 +2,13 @@ import { makeMainColorsDark } from "../helper";
 import { Theme, ThemeColors, ThemeLevels } from "../typing";
 
 const colors: ThemeColors = {
-  blue: "#b0e6ff",
-  green: "#d3faad",
+  blue: "#9bdaf7",
+  green: "#c3f493",
   greenAlt: "#ddf1a8",
-  orange: "#ffcfb8",
+  orange: "#f9bb9f",
   pink: "#f3d0f0",
   purple: "#bdb0ff",
-  red: "#ffbfbe",
+  red: "#ffa6a5",
   salmon: "#ffbacb",
   turquoize: "#aef6e0",
   yellow: "#feeebe",
@@ -36,5 +36,5 @@ export const paleNight: Theme = {
 export const paleCoffee: Theme = {
   colors,
   levels,
-  ui: makeMainColorsDark({ base: "#363034", primary: "#ffcca0" }),
+  ui: makeMainColorsDark({ base: "#22212e", primary: "#ab93f3" }),
 };

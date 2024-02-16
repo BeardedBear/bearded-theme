@@ -252,4 +252,4 @@ makeTheme("Themanopia", colorBlind, { hc: true });
 // Pale
 makeTheme("pale-glacier", paleGlacier);
 makeTheme("pale-night", paleNight);
-makeTheme("pale-coffee", paleCoffee);
+makeTheme("pale-coffee", paleCoffee, { untindedSelection: true });

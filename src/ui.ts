@@ -25,10 +25,10 @@ export default function ui(
     return untindedSelection
       ? c(theme.ui.uibackground)
           .lighten(0.3 * delta)
-          .alpha(0.4)
+          .alpha(0.5)
           .toHex()
       : c(theme.ui.primary)
-          .alpha(0.25 * delta)
+          .alpha(0.3 * delta)
           .toHex();
   }
 
