@@ -57,9 +57,10 @@ export default function ui(
     "activityBar.border": theme.ui.border,
     "activityBar.dropBorder": c(theme.ui.defaultalt).alpha(0.2).toHex(),
     "activityBar.foreground": theme.ui.primary,
-    "activityBar.inactiveForeground": hc
-      ? c(theme.ui.default).mix(theme.ui.uibackground, 0.6).toHex()
-      : c(theme.ui.default).mix(theme.ui.uibackground, 0.7).toHex(),
+    "activityBar.inactiveForeground": c(theme.ui.default)
+      .mix(theme.ui.uibackground, 0.65)
+      .saturate(0.05)
+      .toHex(),
     "activityBarBadge.background": theme.ui.primary,
     "activityBarBadge.foreground": theme.ui.uibackgroundalt,
     "activityBarTop.activeBorder": theme.ui.primary,

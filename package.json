@@ -346,24 +346,24 @@
         "path": "./themes/bearded-theme-milkshake-vanilla.json"
       },
       {
-        "label": "Bearded Themanopia",
+        "label": "Bearded Themanopia (Experimental)",
         "uiTheme": "hc-black",
         "path": "./themes/bearded-theme-themanopia.json"
       },
       {
-        "label": "Bearded Pale Glacier",
+        "label": "Bearded Theme Aquarelle Cymbidium",
         "uiTheme": "vs-dark",
-        "path": "./themes/bearded-theme-pale-glacier.json"
+        "path": "./themes/bearded-theme-aquarelle-cymbidium.json"
       },
       {
-        "label": "Bearded Pale Night",
+        "label": "Bearded Theme Aquarelle Hydrangea",
         "uiTheme": "vs-dark",
-        "path": "./themes/bearded-theme-pale-night.json"
+        "path": "./themes/bearded-theme-aquarelle-hydrangea.json"
       },
       {
-        "label": "Bearded Pale Coffee",
+        "label": "Bearded Theme Aquarelle Lilac",
         "uiTheme": "vs-dark",
-        "path": "./themes/bearded-theme-pale-coffee.json"
+        "path": "./themes/bearded-theme-aquarelle-lilac.json"
       }
     ]
   },

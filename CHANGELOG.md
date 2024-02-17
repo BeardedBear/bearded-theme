@@ -2,6 +2,14 @@
 
 ## 9.0.0 - 2023-12-22
 
+### New features
+
+- Add experimental variation for color blind users `Bearded Themanopia`
+- Add 3 variations of new serie `Aquarelle`
+  - `Aquarelle Cymbidium`
+  - `Aquarelle Hydrangea`
+  - `Aquarelle Lilac`
+
 ### Fixes
 
 - Fix line number foreground color

@@ -6,6 +6,11 @@ import semanticTokens from "./scopes/semanticTokens";
 import { Theme } from "./typing";
 import ui from "./ui";
 import {
+  aquarelleCymbidium,
+  aquarelleHydrangea,
+  aquarelleLilac,
+} from "./variations/aquarelle";
+import {
   arc,
   arcBlueBerry,
   arcEggplant,
@@ -64,7 +69,6 @@ import {
   monokaiStone,
   monokaiTerra,
 } from "./variations/monokai";
-import { paleCoffee, paleGlacier, paleNight } from "./variations/pale";
 import {
   oceanic,
   oceanicReverded,
@@ -250,6 +254,6 @@ makeTheme("milkshake-vanilla", milkshakeVanilla, {
 makeTheme("Themanopia", colorBlind, { hc: true });
 
 // Pale
-makeTheme("pale-glacier", paleGlacier);
-makeTheme("pale-night", paleNight);
-makeTheme("pale-coffee", paleCoffee, { untindedSelection: true });
+makeTheme("aquarelle-cymbidium", aquarelleCymbidium);
+makeTheme("aquarelle-hydrangea", aquarelleHydrangea);
+makeTheme("aquarelle-lilac", aquarelleLilac);
