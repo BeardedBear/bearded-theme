@@ -3,16 +3,16 @@
   "displayName": "Bearded Theme",
   "description": "The theme with a long beard.",
   "publisher": "BeardedBear",
-  "version": "8.3.2",
-  "type": "module",
+  "version": "9.0.0",
   "engines": {
     "vscode": "^1.69.0"
   },
+  "type": "module",
   "scripts": {
     "build": "vite-node src/index.ts",
     "build:ext": "vsce package --out ./releases/%npm_package_version%.vsix --no-yarn",
     "dev": "vite-node src/index.ts -w",
-    "fix": "prettier --write ./src/**/*.ts",
+    "fix": "prettier --write ./src/**/*.ts && eslint src/**/*.{vue,ts} --fix",
     "release": "gh release create v%npm_package_version% --notes-file ./releases/%npm_package_version%.md --generate-notes"
   },
   "__metadata": {
@@ -43,7 +43,8 @@
     "light",
     "oceanic",
     "monokai",
-    "milkshake"
+    "milkshake",
+    "colorblind"
   ],
   "sponsor": {
     "url": "https://github.com/sponsors/BeardedBear"
@@ -132,52 +133,52 @@
       {
         "label": "Bearded Theme Black & Amethyst",
         "uiTheme": "vs-dark",
-        "path": "./themes/bearded-theme-black-amethyst.json"
+        "path": "./themes/bearded-theme-black-&-amethyst.json"
       },
       {
         "label": "Bearded Theme Black & Amethyst Soft",
         "uiTheme": "vs-dark",
-        "path": "./themes/bearded-theme-black-amethyst-soft.json"
+        "path": "./themes/bearded-theme-black-&-amethyst-soft.json"
       },
       {
         "label": "Bearded Theme Black & Diamond",
         "uiTheme": "vs-dark",
-        "path": "./themes/bearded-theme-black-diamond.json"
+        "path": "./themes/bearded-theme-black-&-diamond.json"
       },
       {
         "label": "Bearded Theme Black & Diamond Soft",
         "uiTheme": "vs-dark",
-        "path": "./themes/bearded-theme-black-diamond-soft.json"
+        "path": "./themes/bearded-theme-black-&-diamond-soft.json"
       },
       {
         "label": "Bearded Theme Black & Emerald",
         "uiTheme": "vs-dark",
-        "path": "./themes/bearded-theme-black-emerald.json"
+        "path": "./themes/bearded-theme-black-&-emerald.json"
       },
       {
         "label": "Bearded Theme Black & Emerald Soft",
         "uiTheme": "vs-dark",
-        "path": "./themes/bearded-theme-black-emerald-soft.json"
+        "path": "./themes/bearded-theme-black-&-emerald-soft.json"
       },
       {
         "label": "Bearded Theme Black & Gold",
         "uiTheme": "vs-dark",
-        "path": "./themes/bearded-theme-black-gold.json"
+        "path": "./themes/bearded-theme-black-&-gold.json"
       },
       {
         "label": "Bearded Theme Black & Gold Soft",
         "uiTheme": "vs-dark",
-        "path": "./themes/bearded-theme-black-gold-soft.json"
+        "path": "./themes/bearded-theme-black-&-gold-soft.json"
       },
       {
         "label": "Bearded Theme Black & Ruby",
         "uiTheme": "vs-dark",
-        "path": "./themes/bearded-theme-black-ruby.json"
+        "path": "./themes/bearded-theme-black-&-ruby.json"
       },
       {
         "label": "Bearded Theme Black & Ruby Soft",
         "uiTheme": "vs-dark",
-        "path": "./themes/bearded-theme-black-ruby-soft.json"
+        "path": "./themes/bearded-theme-black-&-ruby-soft.json"
       },
       {
         "label": "Bearded Theme Stained Purple",
@@ -207,32 +208,32 @@
       {
         "label": "Bearded Theme feat. Will",
         "uiTheme": "vs-dark",
-        "path": "./themes/bearded-theme-will.json"
+        "path": "./themes/bearded-theme-feat-will.json"
       },
       {
         "label": "Bearded Theme feat. Gold D Raynh",
         "uiTheme": "vs-dark",
-        "path": "./themes/bearded-theme-gold-d-raynh.json"
+        "path": "./themes/bearded-theme-feat-gold-d-raynh.json"
       },
       {
         "label": "Bearded Theme feat. Melle Julie",
         "uiTheme": "vs-dark",
-        "path": "./themes/bearded-theme-mellejulie.json"
+        "path": "./themes/bearded-theme-feat-mellejulie.json"
       },
       {
         "label": "Bearded Theme feat. Melle Julie Light",
         "uiTheme": "vs",
-        "path": "./themes/bearded-theme-mellejulie-light.json"
+        "path": "./themes/bearded-theme-feat-mellejulie-light.json"
       },
       {
         "label": "Bearded Theme feat. Mintshake D Raynh",
         "uiTheme": "vs",
-        "path": "./themes/bearded-theme-gold-d-raynh-light.json"
+        "path": "./themes/bearded-theme-feat-gold-d-raynh-light.json"
       },
       {
         "label": "Bearded Theme Earth",
         "uiTheme": "vs-dark",
-        "path": "./themes/bearded-theme-exotic-earth.json"
+        "path": "./themes/bearded-theme-earth.json"
       },
       {
         "label": "Bearded Theme Coffee",
@@ -252,12 +253,12 @@
       {
         "label": "Bearded Theme Void",
         "uiTheme": "vs-dark",
-        "path": "./themes/bearded-theme-exotic-void.json"
+        "path": "./themes/bearded-theme-void.json"
       },
       {
         "label": "Bearded Theme Altica",
         "uiTheme": "vs-dark",
-        "path": "./themes/bearded-theme-exotic-altica.json"
+        "path": "./themes/bearded-theme-altica.json"
       },
       {
         "label": "Bearded Theme Anthracite",
@@ -312,7 +313,7 @@
       {
         "label": "Bearded Theme HC Chocolate Espresso",
         "uiTheme": "hc-black",
-        "path": "./themes/bearded-theme-hc-chocolateespresso.json"
+        "path": "./themes/bearded-theme-hc-chocolate-espresso.json"
       },
       {
         "label": "Bearded Theme HC Flurry",
@@ -343,20 +344,41 @@
         "label": "Bearded Theme Milkshake Vanilla Banana",
         "uiTheme": "hc-black",
         "path": "./themes/bearded-theme-milkshake-vanilla.json"
+      },
+      {
+        "label": "Bearded Themanopia (Experimental)",
+        "uiTheme": "hc-black",
+        "path": "./themes/bearded-theme-themanopia.json"
+      },
+      {
+        "label": "Bearded Theme Aquarelle Cymbidium",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-aquarelle-cymbidium.json"
+      },
+      {
+        "label": "Bearded Theme Aquarelle Hydrangea",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-aquarelle-hydrangea.json"
+      },
+      {
+        "label": "Bearded Theme Aquarelle Lilac",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-aquarelle-lilac.json"
       }
     ]
   },
   "dependencies": {
-    "@types/node": "^20.4.5",
-    "@types/vscode": "^1.80.0",
-    "@typescript-eslint/eslint-plugin": "^6.2.0",
-    "@typescript-eslint/parser": "^6.2.0",
-    "@vscode/vsce": "^2.20.0",
+    "@types/node": "^20.10.5",
+    "@types/vscode": "^1.85.0",
+    "@typescript-eslint/eslint-plugin": "^6.16.0",
+    "@typescript-eslint/parser": "^6.16.0",
+    "@vscode/vsce": "^2.22.0",
     "colord": "^2.9.3",
-    "eslint": "^8.45.0",
-    "ovsx": "^0.8.2",
-    "prettier": "^3.0.0",
-    "typescript": "^5.1.6",
+    "eslint": "^8.56.0",
+    "eslint-plugin-perfectionist": "^2.5.0",
+    "ovsx": "^0.8.3",
+    "prettier": "^3.1.1",
+    "typescript": "^5.3.3",
     "vite-node": "^0.33.0"
   }
 }

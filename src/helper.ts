@@ -1,35 +1,36 @@
 import { colord as c, extend } from "colord";
 import mixPlugin from "colord/plugins/mix";
+
 import { ThemeUi } from "./typing";
 
 extend([mixPlugin]);
 
 interface ThemePropsDark {
-  primary: string;
   base: string;
-  primaryAlt?: string;
   fontTeinted?: boolean;
+  primary: string;
+  primaryAlt?: string;
   reversed?: boolean;
 }
 
+/**
+ * Calculates and returns an object with color values based on the input properties.
+ *
+ * @param {ThemePropsDark} themeProps - The input object with color properties.
+ * @returns {ThemeUi} - An object with color values based on the input properties.
+ */
 export function makeMainColorsDark({
   base,
+  fontTeinted,
   primary,
   primaryAlt,
-  fontTeinted,
   reversed,
 }: ThemePropsDark): ThemeUi {
   const darkenColor: string = c(base).darken(0.022).toHex();
   const sat = 0.1;
 
   return {
-    // UI
-    primary,
-    uibackground: reversed ? darkenColor : base,
-    uibackgroundmid: c(base).mix(darkenColor).toHex(),
-    uibackgroundalt: reversed ? base : darkenColor,
-    primaryalt: primaryAlt ? primaryAlt : c(base).lighten(0.05).toHex(),
-    uiborder: c(base).darken(0.06).toHex(),
+    border: c(base).darken(0.06).toHex(),
     // Fonts
     default: fontTeinted
       ? c(base).lighten(0.6).saturate(0.15).toHex()
@@ -40,21 +41,32 @@ export function makeMainColorsDark({
     defaultalt: fontTeinted
       ? c(base).lighten(0.15).saturate(0.05).toHex()
       : c(base).lighten(0.25).desaturate(sat).toHex(),
+    // UI
+    primary,
+    primaryalt: primaryAlt ? primaryAlt : c(base).lighten(0.05).toHex(),
+    uibackground: reversed ? darkenColor : base,
+    uibackgroundalt: reversed ? base : darkenColor,
+    uibackgroundmid: c(base).mix(darkenColor).toHex(),
   };
 }
 
 interface ThemePropsLight {
-  primary: string;
   base: string;
-  primaryAlt?: string;
   desaturated?: boolean;
+  primary: string;
+  primaryAlt?: string;
 }
 
+/**
+ * Generates color values for various elements of a UI theme based on the provided theme properties.
+ * @param themeProps - The theme properties.
+ * @returns An object containing color values for various elements of a UI theme.
+ */
 export function makeMainColorsLight({
   base,
+  desaturated,
   primary,
   primaryAlt,
-  desaturated,
 }: ThemePropsLight): ThemeUi {
   const darkenColor: string = c(base).darken(0.035).toHex();
   const mixedColor: string = c(base).mix(darkenColor).toHex();
@@ -62,19 +74,7 @@ export function makeMainColorsLight({
   const fontColor: string = c(primary).darken(0.1).toHex();
 
   return {
-    // UI
-    primary,
-    uibackground: base,
-    uibackgroundmid: desaturated
-      ? c(mixedColor).desaturate(0.25).toHex()
-      : mixedColor,
-    uibackgroundalt: desaturated
-      ? c(darkenColor).desaturate(0.35).toHex()
-      : darkenColor,
-    primaryalt: primaryAlt ? primaryAlt : c(base).lighten(0.02).toHex(),
-    uiborder: desaturated
-      ? c(borderColor).desaturate(0.5).toHex()
-      : borderColor,
+    border: desaturated ? c(borderColor).desaturate(0.5).toHex() : borderColor,
     // Fonts
     default: desaturated
       ? c(fontColor).darken(0.4).desaturate(0.3).toHex()
@@ -85,5 +85,15 @@ export function makeMainColorsLight({
     defaultalt: desaturated
       ? c(fontColor).lighten(0.3).desaturate(0.5).toHex()
       : c(fontColor).lighten(0.15).desaturate(0.5).toHex(),
+    // UI
+    primary,
+    primaryalt: primaryAlt ? primaryAlt : c(base).lighten(0.02).toHex(),
+    uibackground: base,
+    uibackgroundalt: desaturated
+      ? c(darkenColor).desaturate(0.35).toHex()
+      : darkenColor,
+    uibackgroundmid: desaturated
+      ? c(mixedColor).desaturate(0.25).toHex()
+      : mixedColor,
   };
 }

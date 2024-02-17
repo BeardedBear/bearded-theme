@@ -1,4 +1,5 @@
 import { colord as c } from "colord";
+
 import { FontStyle, Scope, Theme } from "../typing";
 import * as markup from "./markup";
 import * as prog from "./prog";
@@ -12,8 +13,8 @@ function createScope(
   return {
     scope,
     settings: {
-      foreground,
       fontStyle,
+      foreground,
     },
   };
 }
@@ -24,9 +25,10 @@ export default function syntax(theme: Theme, hc?: boolean): Scope[] {
     createScope(prog.classes, theme.colors.greenAlt),
     createScope(
       prog.comments,
-      hc
-        ? c(theme.ui.default).saturate(0.15).alpha(0.55).toHex()
-        : theme.ui.defaultalt,
+      c(theme.ui.default)
+        .saturate(0.15)
+        .alpha(hc ? 0.55 : 0.35)
+        .toHex(),
       "italic",
     ),
     createScope(prog.constants, theme.colors.red),

@@ -1,30 +1,18 @@
 import { colors } from "../themes/ui-key-tester.json";
 
 export interface ThemeUi {
-  primary: string;
-  primaryalt: string;
-  uiborder: string;
-  uibackground: string;
-  uibackgroundmid: string;
-  uibackgroundalt: string;
+  border: string;
   default: string;
   defaultMain: string;
   defaultalt: string;
+  primary: string;
+  primaryalt: string;
+  uibackground: string;
+  uibackgroundalt: string;
+  uibackgroundmid: string;
 }
 
 export interface ThemeColors {
-  /**
-   * Color for the keywords
-   */
-  yellow: string;
-  /**
-   * Color for the constants
-   */
-  red: string;
-  /**
-   * Color for typings
-   */
-  purple: string;
   /**
    * Color for the functions
    */
@@ -38,14 +26,6 @@ export interface ThemeColors {
    */
   greenAlt: string;
   /**
-   * Color for the storages of type of functions
-   */
-  turquoize: string;
-  /**
-   * Color for the variables
-   */
-  salmon: string;
-  /**
    * Color for the accessors
    */
   orange: string;
@@ -53,29 +33,49 @@ export interface ThemeColors {
    * Color for the functions arguments or decorators
    */
   pink: string;
+  /**
+   * Color for typings
+   */
+  purple: string;
+  /**
+   * Color for the constants
+   */
+  red: string;
+  /**
+   * Color for the variables
+   */
+  salmon: string;
+  /**
+   * Color for the storages of type of functions
+   */
+  turquoize: string;
+  /**
+   * Color for the keywords
+   */
+  yellow: string;
 }
 
 export interface ThemeLevels {
   danger: string;
+  info: string;
   success: string;
   warning: string;
-  info: string;
 }
 
 export interface Theme {
-  ui: ThemeUi;
   colors: ThemeColors;
   levels: ThemeLevels;
+  ui: ThemeUi;
 }
 
-export type FontStyle = "italic" | "normal" | "bold";
+export type FontStyle = "bold" | "italic" | "normal";
 
 export interface Scope {
   scope: string[];
   settings: {
-    foreground: string;
     fontStyle?: FontStyle;
+    foreground: string;
   };
 }
 
-export type UIKey = Record<keyof typeof colors, string | false | undefined>;
+export type UIKey = Record<keyof typeof colors, false | string | undefined>;

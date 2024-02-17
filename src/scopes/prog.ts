@@ -86,6 +86,7 @@ export const keyword = [
   "keyword.operator.liquid",
   "keyword.operator.optional.ts",
   "keyword.cmake",
+  "keyword.codetag.notation",
 ];
 
 export const constants = ["constant", "support.constant.core.php"];
@@ -103,6 +104,7 @@ export const currentText = [
   "source.graphql meta.selections variable.other.alias.graphql",
   "source.graphql meta.type.interface.graphql meta.type.object.graphql variable.graphql",
   "source.graphql variable.arguments.graphql",
+  "JSXNested",
 ];
 
 export const decorators = [
@@ -249,6 +251,8 @@ export const punctuation = [
   // Liquid
   "punctuation.output.liquid",
   "text.html.liquid meta.tag.liquid punctuation.definition.tag.end.liquid",
+  "JSXAttrs keyword.operator.assignment.jsx",
+  "meta.tag.attributes.js keyword.operator.assignment.js",
 ];
 
 export const self = [
@@ -301,6 +305,7 @@ export const storages = [
   "keyword.var.go",
   "storage.type.powershell",
   "keyword.const.go",
+  "keyword.storage.modifier",
 ];
 
 export const strings = [
@@ -330,6 +335,8 @@ export const strings = [
   "string.unquoted.plain.out.yaml",
   "string.quoted.single.python punctuation.definition.string.begin.python",
   "string.quoted.single.python punctuation.definition.string.end.python",
+  "punctuation.definition.string.end.html source.css",
+  "string.quoted.double.html source.css",
 ];
 
 export const stringsAlt = [

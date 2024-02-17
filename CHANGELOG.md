@@ -1,5 +1,34 @@
 # Changelog for Bearded Theme
 
+## 9.0.0 - 2023-12-22
+
+### New features
+
+- Add experimental variation for color blind users `Bearded Themanopia`
+- Add 3 variations of new serie `Aquarelle`
+  - `Aquarelle Cymbidium`
+  - `Aquarelle Hydrangea`
+  - `Aquarelle Lilac`
+
+### Fixes
+
+- Fix line number foreground color
+- Fix Milkshake Blueberry primary color
+- Fix Milkshake Mango primary color
+- Fix current text for react with babel syntax HL [Thanks oguzhanuzunay](https://github.com/BeardedBear/bearded-theme/issues/133)
+- Fix TODO keyword in comments [Thanks lperson](https://github.com/BeardedBear/bearded-theme/issues/135)
+- Fix const keyword missing for julia [Thanks SabeDoesThings](https://github.com/BeardedBear/bearded-theme/issues/136)
+- Fix quoted style attribute for HTML [Thanks gmurad97](https://github.com/BeardedBear/bearded-theme/issues/139)
+- Fix inserted comment background color in diff editor [Thanks hadirgax](https://github.com/BeardedBear/bearded-theme/issues/144)
+- Fix terminal bright palette [Thanks Loskir](https://github.com/BeardedBear/bearded-theme/issues/145)
+
+### Enhancements
+
+- Rework inputs
+  - Fix quick input background color
+  - Fix input background opacity and border color
+  - Fix input placeholder color
+
 ## 8.3.2 - 2023-07-28
 
 ### Enhancements

@@ -22,35 +22,35 @@ const levels: ThemeLevels = {
 };
 
 export const monokaiTerra: Theme = {
-  ui: makeMainColorsDark({ base: "#262329", primary: "#b0a2a6" }),
   colors,
   levels,
+  ui: makeMainColorsDark({ base: "#262329", primary: "#b0a2a6" }),
 };
 
 export const monokaiMetallian: Theme = {
-  ui: makeMainColorsDark({ base: "#1e212b", primary: "#98a2b5" }),
   colors,
   levels,
+  ui: makeMainColorsDark({ base: "#1e212b", primary: "#98a2b5" }),
 };
 
 export const monokaiStone: Theme = {
-  ui: makeMainColorsDark({ base: "#2A2D33", primary: "#9AA2A6" }),
   colors,
   levels,
+  ui: makeMainColorsDark({ base: "#2A2D33", primary: "#9AA2A6" }),
 };
 
 export const monokaiBlack: Theme = {
-  ui: makeMainColorsDark({ base: "#141414", primary: "#8f8f8f" }),
   colors,
   levels,
+  ui: makeMainColorsDark({ base: "#141414", primary: "#8f8f8f" }),
 };
 
 export const monokaiReversed: Theme = {
+  colors,
+  levels,
   ui: makeMainColorsDark({
     base: "#171921",
     primary: "#98a2b5",
     reversed: true,
   }),
-  colors,
-  levels,
 };

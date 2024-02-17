@@ -22,28 +22,24 @@ const vividLevels: ThemeLevels = {
 };
 
 export const vividPurple: Theme = {
+  colors: vividColors,
+  levels: vividLevels,
   ui: makeMainColorsDark({
     base: "#171131",
     primary: "#A680FF",
   }),
-  colors: vividColors,
-  levels: vividLevels,
 };
 
 export const vividBlack: Theme = {
+  colors: vividColors,
+  levels: vividLevels,
   ui: makeMainColorsDark({
     base: "#141417",
     primary: "#AAAAAA",
   }),
-  colors: vividColors,
-  levels: vividLevels,
 };
 
 export const vividLight: Theme = {
-  ui: makeMainColorsLight({
-    base: "#f4f4f4",
-    primary: "#7e7e7e",
-  }),
   colors: {
     blue: "#28A9FF",
     green: "#00d647",
@@ -57,4 +53,8 @@ export const vividLight: Theme = {
     yellow: "#ffaa18",
   },
   levels: vividLevels,
+  ui: makeMainColorsLight({
+    base: "#f4f4f4",
+    primary: "#7e7e7e",
+  }),
 };

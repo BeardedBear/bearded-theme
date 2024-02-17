@@ -3,18 +3,12 @@ import { Theme, ThemeLevels } from "../typing";
 
 const levels: ThemeLevels = {
   danger: "#C13838",
+  info: "#04c4d9",
   success: "#14b871",
   warning: "#cc8c39",
-  info: "#04c4d9",
 };
 
 export const earth: Theme = {
-  ui: makeMainColorsDark({
-    base: "#221b1b",
-    primary: "#d35386",
-    primaryAlt: "#40222e",
-    fontTeinted: true,
-  }),
   colors: {
     blue: "#BA9D6F",
     green: "#639E29",
@@ -28,15 +22,15 @@ export const earth: Theme = {
     yellow: "#C48519",
   },
   levels,
+  ui: makeMainColorsDark({
+    base: "#221b1b",
+    fontTeinted: true,
+    primary: "#d35386",
+    primaryAlt: "#40222e",
+  }),
 };
 
 export const coffee: Theme = {
-  ui: makeMainColorsDark({
-    base: "#292423",
-    primary: "#F09177",
-    primaryAlt: "#51403b",
-    fontTeinted: true,
-  }),
   colors: {
     blue: "#6EDDD6",
     green: "#9DCC57",
@@ -51,20 +45,19 @@ export const coffee: Theme = {
   },
   levels: {
     danger: "#f24343",
+    info: "#6EDDD6",
     success: "#94D652",
     warning: "#ffa777",
-    info: "#6EDDD6",
   },
+  ui: makeMainColorsDark({
+    base: "#292423",
+    fontTeinted: true,
+    primary: "#F09177",
+    primaryAlt: "#51403b",
+  }),
 };
 
 export const coffeeReversed: Theme = {
-  ui: makeMainColorsDark({
-    base: "#201c1b",
-    primary: "#F09177",
-    primaryAlt: "#51403b",
-    fontTeinted: true,
-    reversed: true,
-  }),
   colors: {
     blue: "#6EDDD6",
     green: "#9DCC57",
@@ -79,17 +72,20 @@ export const coffeeReversed: Theme = {
   },
   levels: {
     danger: "#f24343",
+    info: "#6EDDD6",
     success: "#94D652",
     warning: "#ffa777",
-    info: "#6EDDD6",
   },
+  ui: makeMainColorsDark({
+    base: "#201c1b",
+    fontTeinted: true,
+    primary: "#F09177",
+    primaryAlt: "#51403b",
+    reversed: true,
+  }),
 };
 
 export const coffeeCream: Theme = {
-  ui: makeMainColorsLight({
-    base: "#EAE4E1",
-    primary: "#D3694C",
-  }),
   colors: {
     blue: "#009DB5",
     green: "#51A200",
@@ -104,14 +100,17 @@ export const coffeeCream: Theme = {
   },
   levels: {
     danger: "#FF3A3A",
+    info: "#009DB5",
     success: "#51A200",
     warning: "#ce6700",
-    info: "#009DB5",
   },
+  ui: makeMainColorsLight({
+    base: "#EAE4E1",
+    primary: "#D3694C",
+  }),
 };
 
 export const voided: Theme = {
-  ui: makeMainColorsDark({ base: "#171322", primary: "#7A63ED" }),
   colors: {
     blue: "#7A63ED",
     green: "#6DBBFF",
@@ -125,20 +124,10 @@ export const voided: Theme = {
     yellow: "#585785",
   },
   levels,
+  ui: makeMainColorsDark({ base: "#171322", primary: "#7A63ED" }),
 };
 
 export const altica: Theme = {
-  ui: {
-    primary: "#0187a6",
-    primaryalt: "#15262e",
-    uiborder: "#0a1217",
-    uibackground: "#0f1c21",
-    uibackgroundmid: "#0f1a1f",
-    uibackgroundalt: "#0e171c",
-    default: "#c2ced1",
-    defaultMain: "#9FADB1",
-    defaultalt: "#45565c",
-  },
   colors: {
     blue: "#10bdc9",
     green: "#6bc793",
@@ -152,4 +141,15 @@ export const altica: Theme = {
     yellow: "#d6ac63",
   },
   levels,
+  ui: {
+    border: "#0a1217",
+    default: "#c2ced1",
+    defaultMain: "#9FADB1",
+    defaultalt: "#45565c",
+    primary: "#0187a6",
+    primaryalt: "#15262e",
+    uibackground: "#0f1c21",
+    uibackgroundalt: "#0e171c",
+    uibackgroundmid: "#0f1a1f",
+  },
 };
