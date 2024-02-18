@@ -152,7 +152,9 @@ async function makeTheme(
   });
 
   if (bfile.length === new Set(bfile.map((item) => item.name)).size) {
-    writeFileSync("bridge.json", JSON.stringify(bfile), { encoding: "utf8" });
+    writeFileSync("bridge.json", JSON.stringify(bfile), {
+      encoding: "utf8",
+    });
   }
 }
 

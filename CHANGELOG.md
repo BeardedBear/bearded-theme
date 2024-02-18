@@ -1,5 +1,11 @@
 # Changelog for Bearded Theme
 
+## 9.0.1 - 2024-02-18
+
+### Fixes
+
+- Adjust contrast of Aquarelle serie colors
+
 ## 9.0.0 - 2024-02-17
 
 ### New features
