@@ -113,10 +113,28 @@ export default function ui(
     contrastBorder: transparent,
 
     // debug
+    "debugConsole.errorForeground": theme.levels.danger,
+    "debugConsole.infoForeground": theme.levels.info,
+    "debugConsole.warningForeground": theme.levels.warning,
     "debugExceptionWidget.background": theme.ui.primaryalt,
     "debugExceptionWidget.border": theme.ui.border,
+    "debugIcon.breakpointCurrentStackframeForeground": theme.levels.info,
+    "debugIcon.breakpointDisabledForeground": theme.levels.info,
+    "debugIcon.breakpointForeground": theme.levels.info,
+    "debugIcon.continueForeground": theme.levels.info,
+    "debugIcon.disconnectForeground": theme.levels.danger,
+    "debugIcon.pauseForeground": theme.levels.danger,
+    "debugIcon.restartForeground": theme.levels.success,
+    "debugIcon.startForeground": theme.levels.success,
+    "debugIcon.stepBackForeground": theme.levels.info,
+    "debugIcon.stepIntoForeground": theme.levels.info,
+    "debugIcon.stepOutForeground": theme.levels.info,
+    "debugIcon.stepOverForeground": theme.levels.info,
+    "debugIcon.stopForeground": theme.levels.danger,
+    "debugToolBar.background": c(theme.ui.primary)
+      .mix(theme.ui.uibackground, 0.9)
+      .toHex(),
 
-    "debugToolBar.background": theme.ui.primaryalt,
     // description
     descriptionForeground: c(theme.ui.default).alpha(0.3).toHex(),
     // diff
@@ -495,17 +513,15 @@ export default function ui(
     "sideBarSectionHeader.foreground": theme.ui.default,
     "sideBarTitle.foreground": theme.ui.defaultalt,
 
-    // statusBar
-    "statusBar.background": theme.ui.uibackgroundalt,
+    "statusBar.background": theme.ui.uibackground,
     "statusBar.border": theme.ui.border,
-    "statusBar.debuggingBackground": c(theme.colors.orange)
-      .desaturate(0.5)
-      .darken(0.5)
+    "statusBar.debuggingBackground": c(theme.ui.primary)
+      .mix(theme.ui.uibackground, 0.8)
       .toHex(),
-    "statusBar.debuggingForeground": c(theme.colors.orange)
-      .desaturate(0.5)
-      .lighten()
+    "statusBar.debuggingForeground": c(theme.ui.default)
+      .mix(c(theme.ui.primary).darken(0.2), 0.4)
       .toHex(),
+
     "statusBar.foreground": c(theme.ui.defaultMain).alpha(0.5).toHex(),
     "statusBar.noFolderBackground": theme.ui.uibackgroundalt,
     "statusBar.noFolderBorder": theme.ui.border,
@@ -516,7 +532,11 @@ export default function ui(
     "statusBarItem.errorHoverBackground": c(theme.levels.danger)
       .lighten(0.05)
       .toHex(),
-    "statusBarItem.hoverBackground": c(theme.ui.defaultMain).alpha(0.1).toHex(),
+    "statusBarItem.errorHoverForeground": c(theme.ui.uibackground).toHex(),
+    "statusBarItem.hoverBackground": c(theme.ui.primary)
+      .mix(theme.ui.uibackground, 0.6)
+      .toHex(),
+    "statusBarItem.hoverForeground": c(theme.ui.default).toHex(),
     "statusBarItem.offlineBackground": c(theme.colors.pink).toHex(),
     "statusBarItem.offlineForeground": c(theme.colors.pink).darken(0.5).toHex(),
     "statusBarItem.offlineHoverBackground": c(theme.colors.pink)
@@ -529,6 +549,7 @@ export default function ui(
     "statusBarItem.prominentHoverBackground": c(theme.ui.primary)
       .lighten(0.05)
       .toHex(),
+    // statusBar
     "statusBarItem.remoteBackground": c(theme.colors.turquoize).toHex(),
     "statusBarItem.remoteForeground": c(theme.colors.turquoize)
       .darken(0.5)
@@ -536,6 +557,7 @@ export default function ui(
     "statusBarItem.remoteHoverBackground": c(theme.colors.turquoize)
       .lighten(0.05)
       .toHex(),
+    "statusBarItem.remoteHoverForeground": c(theme.ui.uibackground).toHex(),
     "statusBarItem.warningBackground": c(theme.levels.warning).toHex(),
     "statusBarItem.warningForeground": c(theme.levels.warning)
       .darken(0.5)
@@ -543,6 +565,7 @@ export default function ui(
     "statusBarItem.warningHoverBackground": c(theme.levels.warning)
       .lighten(0.05)
       .toHex(),
+    "statusBarItem.warningHoverForeground": c(theme.ui.uibackground).toHex(),
 
     // tab
     "tab.activeBackground": hc

@@ -10,6 +10,7 @@
 
 - Add better support for inline chat
 - Add more readable colors for breadcrumb picker
+- Improve debug mode colors
 
 ## 9.0.1 - 2024-02-18
 
