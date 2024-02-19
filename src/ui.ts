@@ -69,18 +69,18 @@ export default function ui(
     "activityBarTop.inactiveForeground": hc
       ? c(theme.ui.default).mix(theme.ui.uibackground, 0.6).toHex()
       : c(theme.ui.default).mix(theme.ui.uibackground, 0.7).toHex(),
-
     // badge
     "badge.background": theme.ui.primary,
+
     "badge.foreground": theme.ui.uibackgroundalt,
     // breadcrumb
     "breadcrumb.background": theme.ui.uibackground,
-
     "breadcrumbPicker.background": theme.ui.uibackground,
+
     // button
     "button.background": `${theme.ui.primary}75`,
-
     "button.border": `${theme.ui.primary}75`,
+
     "button.foreground": theme.ui.default,
     "button.hoverBackground": `${theme.ui.primary}90`,
     "button.secondaryBackground": `${theme.ui.primary}20`,
@@ -89,8 +89,8 @@ export default function ui(
     "charts.blue": theme.colors.blue,
     // charts
     "charts.foreground": theme.ui.default,
-
     "charts.green": theme.colors.green,
+
     "charts.lines": theme.ui.default,
     "charts.orange": theme.colors.orange,
     "charts.purple": theme.colors.pink,
@@ -98,28 +98,28 @@ export default function ui(
     "charts.yellow": theme.colors.yellow,
     // Checkbox
     "checkbox.foreground": theme.ui.default,
-
     // Command center
     "commandCenter.activeBackground": `${theme.ui.primaryalt}60`,
 
     "commandCenter.activeForeground": `${theme.ui.defaultMain}90`,
+
     "commandCenter.background": theme.ui.uibackground,
     "commandCenter.border": theme.ui.border,
     "commandCenter.foreground": theme.ui.defaultalt,
     // common
     contrastActiveBorder: transparent,
-
     contrastBorder: transparent,
+
     // debug
     "debugExceptionWidget.background": theme.ui.primaryalt,
-
     "debugExceptionWidget.border": theme.ui.border,
+
     "debugToolBar.background": theme.ui.primaryalt,
     // description
     descriptionForeground: c(theme.ui.default).alpha(0.3).toHex(),
-
     // diff
     "diffEditor.border": theme.ui.border,
+
     "diffEditor.diagonalFill": c(theme.ui.uibackground).lighten(0.05).toHex(),
     "diffEditor.insertedLineBackground": c(theme.levels.success)
       .alpha(0.1)
@@ -149,8 +149,8 @@ export default function ui(
     "dropdown.listBackground": inputBackground(),
     // editor
     "editor.background": theme.ui.uibackground,
-
     "editor.findMatchBackground": `${theme.ui.primary}30`,
+
     "editor.findMatchBorder": `${theme.ui.primary}60`,
     "editor.findMatchHighlightBackground": createSelectionColor(0.8),
     "editor.findMatchHighlightBorder": createSelectionColor(1.2),
@@ -190,7 +190,6 @@ export default function ui(
     "editorGhostText.foreground": theme.ui.default + 70,
     // tabs
     "editorGroup.border": theme.ui.border,
-
     "editorGroup.dropBackground": `${theme.ui.primary}15`,
     "editorGroupHeader.border": transparent,
     "editorGroupHeader.noTabsBackground": theme.ui.uibackground,
@@ -199,7 +198,6 @@ export default function ui(
     "editorGutter.addedBackground": `${theme.levels.success}cc`,
     // gutter
     "editorGutter.background": theme.ui.uibackground,
-
     "editorGutter.commentRangeForeground": theme.ui.primaryalt,
     "editorGutter.deletedBackground": `${theme.levels.danger}cc`,
     "editorGutter.modifiedBackground": `${theme.levels.info}cc`,
@@ -214,7 +212,6 @@ export default function ui(
     "editorInfo.border": transparent,
     // Inlay hints
     "editorInlayHint.background": theme.ui.defaultMain + 20,
-
     "editorInlayHint.foreground": theme.ui.defaultMain + "90",
     "editorInlayHint.typeBackground": theme.colors.purple + 30,
     "editorInlayHint.typeForeground": theme.colors.purple + "aa",
@@ -257,7 +254,6 @@ export default function ui(
     "editorStickyScrollHover.background": c(theme.ui.uibackground)
       .lighten(0.06)
       .toHex(),
-
     // suggest
     "editorSuggestWidget.background": theme.ui.uibackground,
     "editorSuggestWidget.border": theme.ui.border,
@@ -271,7 +267,6 @@ export default function ui(
     "editorWarning.border": transparent,
     // find
     "editorWarning.foreground": theme.colors.yellow,
-
     "editorWhitespace.foreground": `${theme.ui.defaultalt}60`,
     "editorWidget.background": theme.ui.primaryalt,
     "editorWidget.resizeBorder": `${theme.ui.primary}50`,
@@ -280,8 +275,8 @@ export default function ui(
     "errorLens.hintForeground": theme.levels.info + 99,
     "errorLens.infoForeground": theme.levels.info + 99,
     "errorLens.warningForeground": theme.levels.warning + 99,
-
     "extensionButton.background": theme.ui.primary + 60,
+
     "extensionButton.foreground": theme.ui.default,
     "extensionButton.hoverBackground": theme.ui.primary + 90,
     "extensionButton.prominentBackground": `${theme.ui.primary}9d`,
@@ -293,12 +288,23 @@ export default function ui(
     foreground: `${theme.ui.defaultMain}AA`,
     // git
     "gitDecoration.conflictingResourceForeground": theme.ui.primary,
-
     "gitDecoration.deletedResourceForeground": theme.levels.danger,
+
     "gitDecoration.ignoredResourceForeground": theme.ui.defaultalt,
     "gitDecoration.modifiedResourceForeground": theme.levels.info,
     "gitDecoration.untrackedResourceForeground": theme.levels.success,
     "icon.foreground": `${theme.ui.defaultMain}AA`,
+    // "inlineChatInput.placeholderForeground":
+    "inlineChat.background": c(theme.ui.uibackground).lighten(0.05).toHex(),
+    "inlineChat.border": light
+      ? c(theme.ui.uibackground).darken(0.1).toHex()
+      : c(theme.ui.uibackground).lighten(0.1).toHex(),
+    "inlineChatInput.background": c(theme.ui.uibackground)
+      .lighten(0.02)
+      .toHex(),
+    "inlineChatInput.border": light
+      ? c(theme.ui.uibackground).darken(0.1).toHex()
+      : c(theme.ui.uibackground).lighten(0.1).toHex(),
 
     // input
     "input.background": inputBackground(),

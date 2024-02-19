@@ -27,7 +27,7 @@ export function makeMainColorsDark({
   reversed,
 }: ThemePropsDark): ThemeUi {
   const darkenColor: string = c(base).darken(0.022).toHex();
-  const sat = 0.1;
+  const sat = 0.01;
 
   return {
     border: c(base).darken(0.06).toHex(),
