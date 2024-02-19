@@ -1,5 +1,17 @@
 # Changelog for Bearded Theme
 
+## 9.1.0 - 2024-02-19
+
+### Fixes
+
+- Fix teinted hover icon color
+
+### Enhancements
+
+- Add better support for inline chat
+- Add more readable colors for breadcrumb picker
+- Improve debug mode colors
+
 ## 9.0.1 - 2024-02-18
 
 ### Fixes
