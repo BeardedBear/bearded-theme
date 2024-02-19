@@ -9,6 +9,7 @@
 ### Enhancements
 
 - Add better support for inline chat
+- Add more readable colors for breadcrumb picker
 
 ## 9.0.1 - 2024-02-18
 

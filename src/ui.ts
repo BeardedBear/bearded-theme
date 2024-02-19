@@ -75,7 +75,9 @@ export default function ui(
     "badge.foreground": theme.ui.uibackgroundalt,
     // breadcrumb
     "breadcrumb.background": theme.ui.uibackground,
-    "breadcrumbPicker.background": theme.ui.uibackground,
+    "breadcrumbPicker.background": c(theme.ui.uibackground)
+      .lighten(0.05)
+      .toHex(),
 
     // button
     "button.background": `${theme.ui.primary}75`,
@@ -294,7 +296,6 @@ export default function ui(
     "gitDecoration.modifiedResourceForeground": theme.levels.info,
     "gitDecoration.untrackedResourceForeground": theme.levels.success,
     "icon.foreground": `${theme.ui.defaultMain}AA`,
-    // "inlineChatInput.placeholderForeground":
     "inlineChat.background": c(theme.ui.uibackground).lighten(0.05).toHex(),
     "inlineChat.border": light
       ? c(theme.ui.uibackground).darken(0.1).toHex()
@@ -305,6 +306,9 @@ export default function ui(
     "inlineChatInput.border": light
       ? c(theme.ui.uibackground).darken(0.1).toHex()
       : c(theme.ui.uibackground).lighten(0.1).toHex(),
+    "inlineChatInput.focusBorder": light
+      ? c(theme.ui.uibackground).darken(0.2).toHex()
+      : c(theme.ui.uibackground).lighten(0.2).toHex(),
 
     // input
     "input.background": inputBackground(),
