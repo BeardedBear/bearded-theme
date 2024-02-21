@@ -608,6 +608,9 @@ export default function ui(
     "terminal.selectionForeground": theme.ui.default,
     "terminalCursor.background": theme.ui.uibackground,
     "terminalCursor.foreground": theme.colors.yellow,
+    "terminalStickyScrollHover.background": c(theme.ui.uibackground)
+      .lighten(0.03)
+      .toHex(),
 
     // text
     "textBlockQuote.background": `${theme.levels.info}34`,
