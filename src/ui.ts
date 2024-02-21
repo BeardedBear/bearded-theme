@@ -292,6 +292,9 @@ export default function ui(
     "editorWarning.foreground": theme.colors.yellow,
     "editorWhitespace.foreground": `${theme.ui.defaultalt}60`,
     "editorWidget.background": theme.ui.primaryalt,
+    "editorWidget.border": light
+      ? c(theme.ui.uibackground).darken(0.1).toHex()
+      : c(theme.ui.uibackground).lighten(0.1).toHex(),
     "editorWidget.resizeBorder": `${theme.ui.primary}50`,
     errorForeground: theme.levels.danger,
     "errorLens.errorForeground": theme.levels.danger + 99,
@@ -433,7 +436,9 @@ export default function ui(
         ? c(theme.ui.uibackground).desaturate(0.5).darken(0.1).toHex()
         : c(theme.ui.uibackground).darken(0.1).toHex()
       : c(theme.ui.uibackground).lighten(0.1).toHex(),
-    "panelSection.border": theme.ui.border,
+    "panelSection.border": light
+      ? c(theme.ui.uibackground).darken(0.1).toHex()
+      : c(theme.ui.uibackground).lighten(0.1).toHex(),
     "panelSectionHeader.background": light
       ? c(theme.ui.uibackgroundmid).darken(0.05).toHex()
       : c(theme.ui.uibackgroundmid).lighten(0.03).toHex(),

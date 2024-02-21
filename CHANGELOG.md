@@ -8,6 +8,7 @@
 - Fix sticky scroll hover on terminal
 - Fix bright color for terminal
 - Fix shadow for sticky scroll
+- Fix border color for widgets
 
 ## 9.1.0 - 2024-02-19
 
