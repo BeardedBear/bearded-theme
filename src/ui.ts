@@ -118,9 +118,11 @@ export default function ui(
     "debugConsole.warningForeground": theme.levels.warning,
     "debugExceptionWidget.background": theme.ui.primaryalt,
     "debugExceptionWidget.border": theme.ui.border,
-    "debugIcon.breakpointCurrentStackframeForeground": theme.levels.info,
-    "debugIcon.breakpointDisabledForeground": theme.levels.info,
-    "debugIcon.breakpointForeground": theme.levels.info,
+    "debugIcon.breakpointCurrentStackframeForeground": theme.levels.danger,
+    "debugIcon.breakpointDisabledForeground": c(theme.levels.danger)
+      .alpha(0.5)
+      .toHex(),
+    "debugIcon.breakpointForeground": theme.levels.danger,
     "debugIcon.continueForeground": theme.levels.info,
     "debugIcon.disconnectForeground": theme.levels.danger,
     "debugIcon.pauseForeground": theme.levels.danger,
