@@ -589,7 +589,7 @@ export default function ui(
     // terminal
     "terminal.ansiBlack": theme.ui.uibackground,
     "terminal.ansiBlue": theme.levels.info,
-    "terminal.ansiBrightBlack": c(theme.ui.uibackgroundalt).darken(0.2).toHex(),
+    "terminal.ansiBrightBlack": c(theme.ui.default).alpha(0.4).toHex(),
     "terminal.ansiBrightBlue": c(theme.levels.info).saturate(0.3).toHex(),
     "terminal.ansiBrightCyan": c(theme.colors.turquoize).saturate(0.3).toHex(),
     "terminal.ansiBrightGreen": c(theme.levels.success).saturate(0.3).toHex(),
