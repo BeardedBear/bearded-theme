@@ -273,8 +273,9 @@ export default function ui(
     "editorOverviewRuler.warningForeground": theme.levels.warning,
     "editorRuler.foreground": c(theme.ui.defaultalt).alpha(0.2).toHex(),
     "editorStickyScroll.border": theme.ui.border,
+    "editorStickyScroll.shadow": theme.ui.uibackgroundmid,
     "editorStickyScrollHover.background": c(theme.ui.uibackground)
-      .lighten(0.06)
+      .lighten(0.03)
       .toHex(),
     // suggest
     "editorSuggestWidget.background": theme.ui.uibackground,
@@ -298,7 +299,6 @@ export default function ui(
     "errorLens.infoForeground": theme.levels.info + 99,
     "errorLens.warningForeground": theme.levels.warning + 99,
     "extensionButton.background": theme.ui.primary + 60,
-
     "extensionButton.foreground": theme.ui.default,
     "extensionButton.hoverBackground": theme.ui.primary + 90,
     "extensionButton.prominentBackground": `${theme.ui.primary}9d`,
@@ -311,8 +311,8 @@ export default function ui(
     // git
     "gitDecoration.conflictingResourceForeground": theme.ui.primary,
     "gitDecoration.deletedResourceForeground": theme.levels.danger,
-
     "gitDecoration.ignoredResourceForeground": theme.ui.defaultalt,
+
     "gitDecoration.modifiedResourceForeground": theme.levels.info,
     "gitDecoration.untrackedResourceForeground": theme.levels.success,
     "icon.foreground": `${theme.ui.defaultMain}AA`,
@@ -329,11 +329,11 @@ export default function ui(
     "inlineChatInput.focusBorder": light
       ? c(theme.ui.uibackground).darken(0.2).toHex()
       : c(theme.ui.uibackground).lighten(0.2).toHex(),
-
     // input
     "input.background": inputBackground(),
 
     "input.border": inputBorder(),
+
     "input.foreground": theme.ui.default,
     "input.placeholderForeground": light
       ? desaturateInputs
@@ -348,10 +348,10 @@ export default function ui(
     "inputValidation.warningBorder": theme.colors.yellow,
     // keybinding
     "keybindingLabel.background": theme.ui.primaryalt,
-
     "keybindingLabel.border": light
       ? theme.ui.defaultalt
       : c(theme.ui.primaryalt).lighten(0.2).desaturate(0.1).toHex(),
+
     "keybindingLabel.bottomBorder": light
       ? theme.ui.defaultalt
       : c(theme.ui.primaryalt).lighten(0.2).desaturate(0.1).toHex(),
@@ -359,10 +359,10 @@ export default function ui(
       ? theme.ui.defaultMain
       : c(theme.ui.primaryalt).lighten(0.4).desaturate(0.1).toHex(),
     // list
+
     "list.activeSelectionBackground": light
       ? c(theme.ui.defaultalt).alpha(0.2).toHex()
       : c(theme.ui.primaryalt).lighten(0.1).alpha(0.45).toHex(),
-
     "list.activeSelectionForeground": theme.ui.default,
     "list.dropBackground": `${theme.ui.primary}15`,
     "list.errorForeground": theme.levels.danger,
@@ -382,8 +382,8 @@ export default function ui(
     "list.warningForeground": theme.levels.warning,
     // menu
     "menu.background": theme.ui.primaryalt,
-
     "menu.border": theme.ui.border,
+
     "menu.foreground": light
       ? theme.ui.defaultMain
       : c(theme.ui.primaryalt).lighten(0.5).desaturate(0.1).toHex(),
@@ -395,8 +395,8 @@ export default function ui(
     "menubar.selectionForeground": theme.ui.defaultMain,
     // merge
     "merge.border": theme.ui.border,
-
     "merge.commonContentBackground": `${theme.colors.yellow}30`,
+
     "merge.commonHeaderBackground": `${theme.colors.yellow}80`,
     "merge.currentContentBackground": `${theme.levels.success}30`,
     "merge.currentHeaderBackground": `${theme.levels.success}80`,
@@ -412,8 +412,8 @@ export default function ui(
     "minimapGutter.addedBackground": theme.levels.success,
     "minimapGutter.deletedBackground": theme.levels.danger,
     "minimapGutter.modifiedBackground": theme.levels.info,
-
     "notificationCenterHeader.background": theme.ui.primaryalt,
+
     // notification
     "notificationCenterHeader.foreground": theme.ui.default,
     "notificationLink.foreground": theme.colors.yellow,
@@ -422,8 +422,8 @@ export default function ui(
     "notifications.foreground": theme.ui.defaultMain,
     "notificationsErrorIcon.foreground": theme.colors.red,
     "notificationsInfoIcon.foreground": theme.colors.blue,
-
     "notificationsWarningIcon.foreground": theme.colors.orange,
+
     // panel
     "panel.background": theme.ui.uibackgroundmid,
     "panel.border": theme.ui.border,
@@ -441,8 +441,8 @@ export default function ui(
     "panelSectionHeader.foreground": theme.ui.default,
     "panelTitle.activeBorder": theme.ui.primary,
     "panelTitle.activeForeground": theme.ui.primary,
-
     "panelTitle.inactiveForeground": theme.ui.defaultalt,
+
     // Peekview
     "peekView.border": theme.ui.border,
     "peekViewEditor.background": c(theme.ui.uibackground).lighten(0.04).toHex(),
@@ -452,7 +452,7 @@ export default function ui(
       .lighten(0.04)
       .toHex(),
     "peekViewEditorStickyScroll.background": c(theme.ui.uibackground)
-      .lighten(0.04)
+      .lighten(0.03)
       .toHex(),
     "peekViewResult.background": c(theme.ui.uibackground)
       .lighten(0.025)
@@ -468,17 +468,17 @@ export default function ui(
     "peekViewResult.selectionForeground": theme.ui.default,
     "peekViewTitle.background": c(theme.ui.uibackground).lighten(0.05).toHex(),
     "peekViewTitleDescription.foreground": theme.ui.default,
-
     "peekViewTitleLabel.foreground": theme.ui.default,
+
     // picker
     "pickerGroup.border": theme.ui.border,
     "pickerGroup.foreground": theme.ui.default,
     "profileBadge.background": theme.ui.primary,
-
     "profileBadge.foreground": theme.ui.uibackground,
 
     // progressbar
     "progressBar.background": theme.colors.yellow,
+
     // quickInput
     "quickInput.background": c(theme.ui.uibackground).lighten(0.03).toHex(),
     "quickInput.foreground": light
@@ -493,19 +493,19 @@ export default function ui(
       : c(theme.ui.primaryalt).lighten(0.8).desaturate(0.1).toHex(),
     "quickInputList.focusIconForeground": theme.ui.defaultalt,
     "quickInputTitle.background": theme.ui.uibackgroundalt,
-
     "sash.hoverBorder": `${theme.ui.primary}50`,
+
     // scrollbar
     "scrollbar.shadow": `#00000000`,
     "scrollbarSlider.activeBackground": `${theme.ui.primary}40`,
     "scrollbarSlider.background": `${theme.ui.primary}20`,
     "scrollbarSlider.hoverBackground": `${theme.ui.primary}30`,
-
     "selection.background": `${theme.ui.primary}60`,
+
     // settings
     "settings.headerForeground": theme.ui.primary,
-
     "settings.modifiedItemIndicator": theme.ui.primary,
+
     // sidebar
     "sideBar.background": theme.ui.uibackgroundalt,
     "sideBar.border": theme.ui.border,
@@ -514,8 +514,8 @@ export default function ui(
     "sideBarSectionHeader.border": theme.ui.border,
     "sideBarSectionHeader.foreground": theme.ui.default,
     "sideBarTitle.foreground": theme.ui.defaultalt,
-
     "statusBar.background": theme.ui.uibackground,
+
     "statusBar.border": theme.ui.border,
     "statusBar.debuggingBackground": c(theme.ui.primary)
       .mix(theme.ui.uibackground, 0.8)
@@ -523,8 +523,8 @@ export default function ui(
     "statusBar.debuggingForeground": c(theme.ui.default)
       .mix(c(theme.ui.primary).darken(0.2), 0.4)
       .toHex(),
-
     "statusBar.foreground": c(theme.ui.defaultMain).alpha(0.5).toHex(),
+
     "statusBar.noFolderBackground": theme.ui.uibackgroundalt,
     "statusBar.noFolderBorder": theme.ui.border,
     "statusBar.noFolderForeground": c(theme.ui.defaultMain).alpha(0.8).toHex(),
@@ -568,11 +568,11 @@ export default function ui(
       .lighten(0.05)
       .toHex(),
     "statusBarItem.warningHoverForeground": c(theme.ui.uibackground).toHex(),
-
     // tab
     "tab.activeBackground": hc
       ? c(theme.ui.primary).mix(theme.ui.uibackground, 0.9).toHex()
       : theme.ui.uibackground,
+
     "tab.activeBorder": theme.ui.uibackground,
     "tab.activeBorderTop": theme.ui.primary,
     "tab.activeForeground": theme.ui.primary,
@@ -585,9 +585,10 @@ export default function ui(
     "tab.unfocusedActiveForeground": theme.ui.primary,
     "tab.unfocusedHoverBackground": theme.ui.uibackground,
     "tab.unfocusedInactiveForeground": theme.ui.defaultalt,
+    "terminal.ansiBlack": theme.ui.uibackground,
 
     // terminal
-    "terminal.ansiBlack": theme.ui.uibackground,
+
     "terminal.ansiBlue": theme.levels.info,
     "terminal.ansiBrightBlack": c(theme.ui.default).alpha(0.4).toHex(),
     "terminal.ansiBrightBlue": c(theme.levels.info).saturate(0.3).toHex(),

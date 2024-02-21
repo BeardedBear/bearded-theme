@@ -1,5 +1,14 @@
 # Changelog for Bearded Theme
 
+## 9.1.1 - 2024-02-21
+
+### Fixes
+
+- Fix debug breakpoint color
+- Fix sticky scroll hover on terminal
+- Fix bright color for terminal
+- Fix shadow for sticky scroll
+
 ## 9.1.0 - 2024-02-19
 
 ### Fixes
