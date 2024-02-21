@@ -9,6 +9,7 @@
 - Fix bright color for terminal
 - Fix shadow for sticky scroll
 - Fix border color for widgets
+- Fix overview ruler HL opacity
 
 ## 9.1.0 - 2024-02-19
 

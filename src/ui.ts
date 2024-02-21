@@ -269,7 +269,9 @@ export default function ui(
     "editorOverviewRuler.modifiedForeground": c(theme.levels.info)
       .alpha(0.5)
       .toHex(),
-    "editorOverviewRuler.selectionHighlightForeground": theme.ui.primary,
+    "editorOverviewRuler.selectionHighlightForeground": c(theme.ui.primary)
+      .alpha(0.5)
+      .toHex(),
     "editorOverviewRuler.warningForeground": theme.levels.warning,
     "editorRuler.foreground": c(theme.ui.defaultalt).alpha(0.2).toHex(),
     "editorStickyScroll.border": theme.ui.border,
