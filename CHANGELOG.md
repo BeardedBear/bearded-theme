@@ -1,5 +1,9 @@
 # Changelog for Bearded Theme
 
+## 9.1.2 - 2024-02-21
+
+- Fix panelSection.border color
+
 ## 9.1.1 - 2024-02-21
 
 ### Fixes
