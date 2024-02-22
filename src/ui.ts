@@ -210,6 +210,7 @@ export default function ui(
     "editorError.foreground": theme.levels.danger,
     "editorGhostText.border": transparent,
     "editorGhostText.foreground": theme.ui.default + 70,
+
     // tabs
     "editorGroup.border": theme.ui.border,
     "editorGroup.dropBackground": `${theme.ui.primary}15`,
@@ -240,13 +241,11 @@ export default function ui(
     "editorLineNumber.activeForeground": light
       ? c(theme.ui.uibackground).darken(0.7).toHex()
       : c(theme.ui.uibackgroundmid).lighten(0.5).desaturate(0.05).toHex(),
-    "editorLineNumber.foreground": `${
-      hc
-        ? c(theme.ui.defaultalt).alpha(0.6).toHex()
-        : light
-          ? c(theme.ui.uibackground).darken(0.2).toHex()
-          : c(theme.ui.uibackgroundmid).lighten(0.15).desaturate(0.05).toHex()
-    }`,
+
+    "editorLineNumber.foreground": c(theme.ui.default)
+      .mix(theme.ui.uibackground, 0.75)
+      .saturate(0.05)
+      .toHex(),
     "editorLink.activeForeground": theme.ui.default,
     "editorMarkerNavigation.background": theme.ui.uibackgroundalt,
     "editorMarkerNavigationError.background": `${theme.levels.danger}90`,
@@ -322,8 +321,8 @@ export default function ui(
     "gitDecoration.conflictingResourceForeground": theme.ui.primary,
     "gitDecoration.deletedResourceForeground": theme.levels.danger,
     "gitDecoration.ignoredResourceForeground": theme.ui.defaultalt,
-
     "gitDecoration.modifiedResourceForeground": theme.levels.info,
+
     "gitDecoration.untrackedResourceForeground": theme.levels.success,
     "icon.foreground": `${theme.ui.defaultMain}AA`,
     "inlineChat.background": c(theme.ui.uibackground).lighten(0.05).toHex(),
@@ -341,10 +340,10 @@ export default function ui(
       : c(theme.ui.uibackground).lighten(0.2).toHex(),
     // input
     "input.background": inputBackground(),
-
     "input.border": inputBorder(),
 
     "input.foreground": theme.ui.default,
+
     "input.placeholderForeground": light
       ? desaturateInputs
         ? c(theme.ui.uibackground).desaturate(0.8).darken(0.2).toHex()
@@ -361,18 +360,18 @@ export default function ui(
     "keybindingLabel.border": light
       ? theme.ui.defaultalt
       : c(theme.ui.primaryalt).lighten(0.2).desaturate(0.1).toHex(),
-
     "keybindingLabel.bottomBorder": light
       ? theme.ui.defaultalt
       : c(theme.ui.primaryalt).lighten(0.2).desaturate(0.1).toHex(),
+
     "keybindingLabel.foreground": light
       ? theme.ui.defaultMain
       : c(theme.ui.primaryalt).lighten(0.4).desaturate(0.1).toHex(),
-    // list
-
     "list.activeSelectionBackground": light
       ? c(theme.ui.defaultalt).alpha(0.2).toHex()
       : c(theme.ui.primaryalt).lighten(0.1).alpha(0.45).toHex(),
+    // list
+
     "list.activeSelectionForeground": theme.ui.default,
     "list.dropBackground": `${theme.ui.primary}15`,
     "list.errorForeground": theme.levels.danger,
@@ -393,10 +392,10 @@ export default function ui(
     // menu
     "menu.background": theme.ui.primaryalt,
     "menu.border": theme.ui.border,
-
     "menu.foreground": light
       ? theme.ui.defaultMain
       : c(theme.ui.primaryalt).lighten(0.5).desaturate(0.1).toHex(),
+
     "menu.selectionForeground": light
       ? theme.ui.defaultMain
       : c(theme.ui.primaryalt).lighten(0.8).desaturate(0.1).toHex(),
@@ -406,8 +405,8 @@ export default function ui(
     // merge
     "merge.border": theme.ui.border,
     "merge.commonContentBackground": `${theme.colors.yellow}30`,
-
     "merge.commonHeaderBackground": `${theme.colors.yellow}80`,
+
     "merge.currentContentBackground": `${theme.levels.success}30`,
     "merge.currentHeaderBackground": `${theme.levels.success}80`,
     "merge.incomingContentBackground": `${theme.levels.info}30`,
@@ -422,6 +421,7 @@ export default function ui(
     "minimapGutter.addedBackground": theme.levels.success,
     "minimapGutter.deletedBackground": theme.levels.danger,
     "minimapGutter.modifiedBackground": theme.levels.info,
+
     "notificationCenterHeader.background": theme.ui.primaryalt,
 
     // notification
