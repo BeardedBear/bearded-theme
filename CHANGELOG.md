@@ -1,5 +1,9 @@
 # Changelog for Bearded Theme
 
+## 9.1.3 - 2024-02-22
+
+- Fix icon color on hover suggest widget [Thanks rohitxdev](https://github.com/BeardedBear/bearded-theme/issues/153)
+
 ## 9.1.2 - 2024-02-21
 
 - Fix panelSection.border color

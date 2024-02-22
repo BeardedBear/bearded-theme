@@ -280,11 +280,16 @@ export default function ui(
       .lighten(0.03)
       .toHex(),
     // suggest
-    "editorSuggestWidget.background": theme.ui.uibackground,
+    "editorSuggestWidget.background": c(theme.ui.uibackground)
+      .lighten(0.02)
+      .toHex(),
     "editorSuggestWidget.border": theme.ui.border,
     "editorSuggestWidget.foreground": theme.ui.defaultMain,
     "editorSuggestWidget.highlightForeground": theme.colors.yellow,
-    "editorSuggestWidget.selectedBackground": `${theme.ui.primary}4d`,
+    "editorSuggestWidget.selectedBackground": light
+      ? c(theme.ui.uibackground).darken(0.05).toHex()
+      : c(theme.ui.uibackground).lighten(0.1).toHex(),
+    "editorSuggestWidget.selectedIconForeground": theme.ui.default,
     "editorUnnecessaryCode.border": hc
       ? c(theme.ui.defaultMain).alpha(0.6).toHex()
       : transparent,
