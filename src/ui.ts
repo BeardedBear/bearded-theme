@@ -316,7 +316,7 @@ export default function ui(
     focusBorder: light
       ? c(theme.ui.uibackground).darken(0.2).toHex()
       : c(theme.ui.uibackground).lighten(0.2).toHex(),
-    foreground: `${theme.ui.defaultMain}AA`,
+    foreground: theme.ui.defaultMain,
     // git
     "gitDecoration.conflictingResourceForeground": theme.ui.primary,
     "gitDecoration.deletedResourceForeground": theme.levels.danger,
@@ -554,13 +554,13 @@ export default function ui(
     "statusBarItem.offlineHoverBackground": c(theme.colors.pink)
       .lighten(0.05)
       .toHex(),
-    "statusBarItem.prominentBackground": c(theme.ui.primary).toHex(),
-    "statusBarItem.prominentForeground": c(theme.ui.primary)
-      .darken(0.5)
-      .toHex(),
-    "statusBarItem.prominentHoverBackground": c(theme.ui.primary)
-      .lighten(0.05)
-      .toHex(),
+    "statusBarItem.prominentBackground": light
+      ? c(theme.ui.uibackground).darken(0.1).toHex()
+      : c(theme.ui.uibackground).lighten(0.1).toHex(),
+    "statusBarItem.prominentForeground": c(theme.ui.default).toHex(),
+    "statusBarItem.prominentHoverBackground": light
+      ? c(theme.ui.uibackground).darken(0.2).toHex()
+      : c(theme.ui.uibackground).lighten(0.2).toHex(),
     // statusBar
     "statusBarItem.remoteBackground": c(theme.colors.turquoize).toHex(),
     "statusBarItem.remoteForeground": c(theme.colors.turquoize)
