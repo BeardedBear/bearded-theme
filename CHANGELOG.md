@@ -3,6 +3,7 @@
 ## 9.1.4 - 2024-02-28
 
 - Fix prominent colors [Thanks nerdydaemon10](https://github.com/BeardedBear/bearded-theme/issues/158)
+- Fix active input option colors [Thanks Djojo77](https://github.com/BeardedBear/bearded-theme/issues/159)
 
 ## 9.1.3 - 2024-02-22
 
