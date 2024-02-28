@@ -349,11 +349,17 @@ export default function ui(
         ? c(theme.ui.uibackground).desaturate(0.8).darken(0.2).toHex()
         : c(theme.ui.uibackground).darken(0.3).toHex()
       : c(theme.ui.uibackground).desaturate(0.05).lighten(0.3).toHex(),
+    "inputOption.activeBackground": light
+      ? c(theme.ui.uibackground).darken(0.3).toHex()
+      : c(theme.ui.uibackground).lighten(0.3).toHex(),
+    "inputOption.activeBorder": transparent,
+    "inputOption.activeForeground": theme.ui.default,
     "inputValidation.errorBackground": theme.ui.primaryalt,
     "inputValidation.errorBorder": theme.colors.yellow,
     "inputValidation.infoBackground": theme.ui.primaryalt,
     "inputValidation.infoBorder": theme.ui.primary,
     "inputValidation.warningBackground": theme.ui.primaryalt,
+
     "inputValidation.warningBorder": theme.colors.yellow,
     // keybinding
     "keybindingLabel.background": theme.ui.primaryalt,
