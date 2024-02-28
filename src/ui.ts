@@ -354,6 +354,9 @@ export default function ui(
       : c(theme.ui.uibackground).lighten(0.3).toHex(),
     "inputOption.activeBorder": transparent,
     "inputOption.activeForeground": theme.ui.default,
+    "inputOption.hoverBackground": light
+      ? c(theme.ui.uibackground).darken(0.1).toHex()
+      : c(theme.ui.uibackground).lighten(0.1).toHex(),
     "inputValidation.errorBackground": theme.ui.primaryalt,
     "inputValidation.errorBorder": theme.colors.yellow,
     "inputValidation.infoBackground": theme.ui.primaryalt,
