@@ -1,5 +1,9 @@
 # Changelog for Bearded Theme
 
+## 9.1.4 - 2024-02-28
+
+- Fix prominent colors [Thanks nerdydaemon10](https://github.com/BeardedBear/bearded-theme/issues/158)
+
 ## 9.1.3 - 2024-02-22
 
 - Fix icon color on hover suggest widget [Thanks rohitxdev](https://github.com/BeardedBear/bearded-theme/issues/153)
