@@ -1,5 +1,9 @@
 # Changelog for Bearded Theme
 
+## 9.1.5 - 2024-03-27
+
+- Fix shadows for sticky elements [Thanks Code-DJ](https://github.com/BeardedBear/bearded-theme/issues/163)
+
 ## 9.1.4 - 2024-02-28
 
 - Fix prominent colors [Thanks nerdydaemon10](https://github.com/BeardedBear/bearded-theme/issues/158)
