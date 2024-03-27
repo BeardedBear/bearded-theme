@@ -793,6 +793,8 @@
     "testing.uncoveredBorder": "#ff0000",
     "testing.uncoveredBranchBackground": "#ff0000",
     "testing.uncoveredGutterBackground": "#ff0000",
+    "chat.requestBackground": "#ff0000",
+    "tab.dragAndDropBorder": "#ff0000",
   },
   "tokenColors": [
     {

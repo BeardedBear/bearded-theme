@@ -47,6 +47,14 @@ export default function ui(
         : c(theme.ui.uibackground).darken(0.1).toHex()
       : c(theme.ui.uibackground).desaturate(0.05).lighten(0.1).toHex();
   }
+
+  const shadow = light
+    ? c("#000000").alpha(0.2).toHex()
+    : c("#000000").alpha(0.4).toHex();
+  const widgetShadow = light
+    ? c("#000000").alpha(0.05).toHex()
+    : c("#000000").alpha(0.2).toHex();
+
   return {
     // activityBar
     "activityBar.activeBackground": hc
@@ -273,8 +281,9 @@ export default function ui(
       .toHex(),
     "editorOverviewRuler.warningForeground": theme.levels.warning,
     "editorRuler.foreground": c(theme.ui.defaultalt).alpha(0.2).toHex(),
-    "editorStickyScroll.border": theme.ui.border,
-    "editorStickyScroll.shadow": theme.ui.uibackgroundmid,
+    // "editorStickyScroll.background": c(theme.colors.blue).toHex(),
+    // "editorStickyScroll.border": theme.ui.border,
+    "editorStickyScroll.shadow": shadow,
     "editorStickyScrollHover.background": c(theme.ui.uibackground)
       .lighten(0.03)
       .toHex(),
@@ -321,8 +330,8 @@ export default function ui(
     "gitDecoration.conflictingResourceForeground": theme.ui.primary,
     "gitDecoration.deletedResourceForeground": theme.levels.danger,
     "gitDecoration.ignoredResourceForeground": theme.ui.defaultalt,
-    "gitDecoration.modifiedResourceForeground": theme.levels.info,
 
+    "gitDecoration.modifiedResourceForeground": theme.levels.info,
     "gitDecoration.untrackedResourceForeground": theme.levels.success,
     "icon.foreground": `${theme.ui.defaultMain}AA`,
     "inlineChat.background": c(theme.ui.uibackground).lighten(0.05).toHex(),
@@ -340,10 +349,10 @@ export default function ui(
       : c(theme.ui.uibackground).lighten(0.2).toHex(),
     // input
     "input.background": inputBackground(),
+
     "input.border": inputBorder(),
 
     "input.foreground": theme.ui.default,
-
     "input.placeholderForeground": light
       ? desaturateInputs
         ? c(theme.ui.uibackground).desaturate(0.8).darken(0.2).toHex()
@@ -361,26 +370,26 @@ export default function ui(
     "inputValidation.errorBorder": theme.colors.yellow,
     "inputValidation.infoBackground": theme.ui.primaryalt,
     "inputValidation.infoBorder": theme.ui.primary,
-    "inputValidation.warningBackground": theme.ui.primaryalt,
 
+    "inputValidation.warningBackground": theme.ui.primaryalt,
     "inputValidation.warningBorder": theme.colors.yellow,
     // keybinding
     "keybindingLabel.background": theme.ui.primaryalt,
     "keybindingLabel.border": light
       ? theme.ui.defaultalt
       : c(theme.ui.primaryalt).lighten(0.2).desaturate(0.1).toHex(),
+
     "keybindingLabel.bottomBorder": light
       ? theme.ui.defaultalt
       : c(theme.ui.primaryalt).lighten(0.2).desaturate(0.1).toHex(),
-
     "keybindingLabel.foreground": light
       ? theme.ui.defaultMain
       : c(theme.ui.primaryalt).lighten(0.4).desaturate(0.1).toHex(),
+    // list
+
     "list.activeSelectionBackground": light
       ? c(theme.ui.defaultalt).alpha(0.2).toHex()
       : c(theme.ui.primaryalt).lighten(0.1).alpha(0.45).toHex(),
-    // list
-
     "list.activeSelectionForeground": theme.ui.default,
     "list.dropBackground": `${theme.ui.primary}15`,
     "list.errorForeground": theme.levels.danger,
@@ -401,10 +410,10 @@ export default function ui(
     // menu
     "menu.background": theme.ui.primaryalt,
     "menu.border": theme.ui.border,
+
     "menu.foreground": light
       ? theme.ui.defaultMain
       : c(theme.ui.primaryalt).lighten(0.5).desaturate(0.1).toHex(),
-
     "menu.selectionForeground": light
       ? theme.ui.defaultMain
       : c(theme.ui.primaryalt).lighten(0.8).desaturate(0.1).toHex(),
@@ -414,8 +423,8 @@ export default function ui(
     // merge
     "merge.border": theme.ui.border,
     "merge.commonContentBackground": `${theme.colors.yellow}30`,
-    "merge.commonHeaderBackground": `${theme.colors.yellow}80`,
 
+    "merge.commonHeaderBackground": `${theme.colors.yellow}80`,
     "merge.currentContentBackground": `${theme.levels.success}30`,
     "merge.currentHeaderBackground": `${theme.levels.success}80`,
     "merge.incomingContentBackground": `${theme.levels.info}30`,
@@ -515,7 +524,7 @@ export default function ui(
     "sash.hoverBorder": `${theme.ui.primary}50`,
 
     // scrollbar
-    "scrollbar.shadow": `#00000000`,
+    "scrollbar.shadow": shadow,
     "scrollbarSlider.activeBackground": `${theme.ui.primary}40`,
     "scrollbarSlider.background": `${theme.ui.primary}20`,
     "scrollbarSlider.hoverBackground": `${theme.ui.primary}30`,
@@ -668,6 +677,6 @@ export default function ui(
     "welcomePage.tileHoverBackground": theme.ui.defaultMain + 20,
 
     // widget
-    "widget.shadow": `${theme.ui.border}30`,
+    "widget.shadow": widgetShadow,
   };
 }
