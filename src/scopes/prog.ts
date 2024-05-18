@@ -265,6 +265,7 @@ export const self = [
   "variable.parameter.function.swift entity.name.function.swift",
   "variable.other.jsdoc",
   "support.variable.drive.powershell",
+  "entity.other.attribute.lua",
 ];
 
 export const storages = [

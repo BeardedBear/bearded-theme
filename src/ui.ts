@@ -184,7 +184,9 @@ export default function ui(
     "editor.findMatchBorder": `${theme.ui.primary}60`,
     "editor.findMatchHighlightBackground": createSelectionColor(0.8),
     "editor.findMatchHighlightBorder": createSelectionColor(1.2),
-    "editor.foldBackground": theme.ui.uibackgroundalt,
+    "editor.foldBackground": light
+      ? c("#000000").alpha(0.05).toHex()
+      : c("#000000").alpha(0.2).toHex(),
     "editor.foreground": theme.ui.default,
     "editor.hoverHighlightBackground": createSelectionColor(1),
     "editor.inactiveSelectionBackground": createSelectionColor(1),
