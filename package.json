@@ -231,6 +231,11 @@
         "path": "./themes/bearded-theme-feat-gold-d-raynh-light.json"
       },
       {
+        "label": "Bearded Theme feat. WebDevCody",
+        "uiTheme": "hc-black",
+        "path": "./themes/bearded-theme-feat-webDevCody.json"
+      },
+      {
         "label": "Bearded Theme Earth",
         "uiTheme": "vs-dark",
         "path": "./themes/bearded-theme-earth.json"
