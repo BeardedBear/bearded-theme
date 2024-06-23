@@ -44,6 +44,7 @@ import {
   goldDRaynhLight,
   melleJulie,
   melleJulieLight,
+  webDevCody,
   will,
 } from "./variations/feat";
 import {
@@ -217,6 +218,7 @@ makeTheme("feat-gold-d-raynh", goldDRaynh, { untindedSelection: true });
 makeTheme("feat-gold-d-raynh-light", goldDRaynhLight, { light: true });
 makeTheme("feat-mellejulie", melleJulie);
 makeTheme("feat-mellejulie-light", melleJulieLight, { light: true });
+makeTheme("feat-webDevCody", webDevCody, { hc: true, untindedSelection: true });
 
 // Classics
 makeTheme("classics-anthracite", anthracite);
