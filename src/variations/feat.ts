@@ -135,7 +135,7 @@ export const webDevCody: Theme = {
     blue: "#82f0ff",
     green: "#f75f94",
     greenAlt: "#60e66f",
-    orange: "#eeeeee",
+    orange: "#f75f94",
     pink: "#f75f94",
     purple: "#f75f94",
     red: "#ec5342",
