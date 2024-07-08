@@ -130,3 +130,28 @@ export const melleJulieLight: Theme = {
   },
   ui: makeMainColorsLight({ base: "#edeeee", primary: "#218d8f" }),
 };
+export const webDevCody: Theme = {
+  colors: {
+    blue: "#82f0ff",
+    green: "#f75f94",
+    greenAlt: "#60e66f",
+    orange: "#f75f94",
+    pink: "#f75f94",
+    purple: "#f75f94",
+    red: "#ec5342",
+    salmon: "#eeeeee",
+    turquoize: "#f1d868",
+    yellow: "#f1d868",
+  },
+  levels: {
+    danger: "#e61e3f",
+    info: "#f1d868",
+    success: "#60e66f",
+    warning: "#e3946a",
+  },
+  ui: makeMainColorsDark({
+    base: "#00171a",
+    primary: "#e95d74",
+    primaryAlt: "#104c52",
+  }),
+};

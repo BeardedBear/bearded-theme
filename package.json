@@ -231,6 +231,11 @@
         "path": "./themes/bearded-theme-feat-gold-d-raynh-light.json"
       },
       {
+        "label": "Bearded Theme feat. WebDevCody",
+        "uiTheme": "hc-black",
+        "path": "./themes/bearded-theme-feat-webDevCody.json"
+      },
+      {
         "label": "Bearded Theme Earth",
         "uiTheme": "vs-dark",
         "path": "./themes/bearded-theme-earth.json"
@@ -372,7 +377,7 @@
     "@types/vscode": "^1.85.0",
     "@typescript-eslint/eslint-plugin": "^6.16.0",
     "@typescript-eslint/parser": "^6.16.0",
-    "@vscode/vsce": "^2.26.1",
+    "@vscode/vsce": "^2.29.0",
     "colord": "^2.9.3",
     "eslint": "^8.56.0",
     "eslint-plugin-perfectionist": "^2.5.0",

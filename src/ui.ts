@@ -88,19 +88,21 @@ export default function ui(
       .toHex(),
 
     // button
-    "button.background": `${theme.ui.primary}75`,
-    "button.border": `${theme.ui.primary}75`,
+    "button.background": c(theme.ui.primary).alpha(0.5).toHex(),
+    "button.border": c(theme.ui.primary).alpha(0.5).toHex(),
+    "button.foreground": light
+      ? c(theme.ui.primary).darken(0.22).toHex()
+      : c(theme.ui.primary).lighten(0.22).toHex(),
+    "button.hoverBackground": c(theme.ui.primary).alpha(0.6).toHex(),
 
-    "button.foreground": theme.ui.default,
-    "button.hoverBackground": `${theme.ui.primary}90`,
-    "button.secondaryBackground": `${theme.ui.primary}20`,
+    "button.secondaryBackground": `${theme.ui.primary}90`,
     "button.secondaryForeground": theme.ui.default,
     "button.secondaryHoverBackground": `${theme.ui.primary}35`,
-    "charts.blue": theme.colors.blue,
+
     // charts
+    "charts.blue": theme.colors.blue,
     "charts.foreground": theme.ui.default,
     "charts.green": theme.colors.green,
-
     "charts.lines": theme.ui.default,
     "charts.orange": theme.colors.orange,
     "charts.purple": theme.colors.pink,
@@ -108,11 +110,10 @@ export default function ui(
     "charts.yellow": theme.colors.yellow,
     // Checkbox
     "checkbox.foreground": theme.ui.default,
+
     // Command center
     "commandCenter.activeBackground": `${theme.ui.primaryalt}60`,
-
     "commandCenter.activeForeground": `${theme.ui.defaultMain}90`,
-
     "commandCenter.background": theme.ui.uibackground,
     "commandCenter.border": theme.ui.border,
     "commandCenter.foreground": theme.ui.defaultalt,
@@ -122,11 +123,13 @@ export default function ui(
 
     // debug
     "debugConsole.errorForeground": theme.levels.danger,
+
     "debugConsole.infoForeground": theme.levels.info,
     "debugConsole.warningForeground": theme.levels.warning,
     "debugExceptionWidget.background": theme.ui.primaryalt,
     "debugExceptionWidget.border": theme.ui.border,
     "debugIcon.breakpointCurrentStackframeForeground": theme.levels.danger,
+
     "debugIcon.breakpointDisabledForeground": c(theme.levels.danger)
       .alpha(0.5)
       .toHex(),
@@ -144,12 +147,10 @@ export default function ui(
     "debugToolBar.background": c(theme.ui.primary)
       .mix(theme.ui.uibackground, 0.9)
       .toHex(),
-
     // description
     descriptionForeground: c(theme.ui.default).alpha(0.3).toHex(),
     // diff
     "diffEditor.border": theme.ui.border,
-
     "diffEditor.diagonalFill": c(theme.ui.uibackground).lighten(0.05).toHex(),
     "diffEditor.insertedLineBackground": c(theme.levels.success)
       .alpha(0.1)
@@ -158,8 +159,10 @@ export default function ui(
       .alpha(0.15)
       .toHex(),
     "diffEditor.insertedTextBorder": transparent,
+
     "diffEditor.move.border": c(theme.colors.yellow).alpha(0.3).toHex(),
     "diffEditor.moveActive.border": c(theme.colors.yellow).alpha(0.7).toHex(),
+
     "diffEditor.removedLineBackground": c(theme.levels.danger)
       .alpha(0.1)
       .toHex(),
@@ -180,7 +183,6 @@ export default function ui(
     // editor
     "editor.background": theme.ui.uibackground,
     "editor.findMatchBackground": `${theme.ui.primary}30`,
-
     "editor.findMatchBorder": `${theme.ui.primary}60`,
     "editor.findMatchHighlightBackground": createSelectionColor(0.8),
     "editor.findMatchHighlightBorder": createSelectionColor(1.2),
@@ -189,6 +191,7 @@ export default function ui(
       : c("#000000").alpha(0.2).toHex(),
     "editor.foreground": theme.ui.default,
     "editor.hoverHighlightBackground": createSelectionColor(1),
+
     "editor.inactiveSelectionBackground": createSelectionColor(1),
     "editor.lineHighlightBackground": createSelectionColor(0.2),
     "editor.lineHighlightBorder": createSelectionColor(0.5),
@@ -220,7 +223,6 @@ export default function ui(
     "editorError.foreground": theme.levels.danger,
     "editorGhostText.border": transparent,
     "editorGhostText.foreground": theme.ui.default + 70,
-
     // tabs
     "editorGroup.border": theme.ui.border,
     "editorGroup.dropBackground": `${theme.ui.primary}15`,
@@ -228,6 +230,7 @@ export default function ui(
     "editorGroupHeader.noTabsBackground": theme.ui.uibackground,
     "editorGroupHeader.tabsBackground": theme.ui.uibackgroundalt,
     "editorGroupHeader.tabsBorder": theme.ui.border,
+
     "editorGutter.addedBackground": `${theme.levels.success}cc`,
     // gutter
     "editorGutter.background": theme.ui.uibackground,
@@ -251,7 +254,6 @@ export default function ui(
     "editorLineNumber.activeForeground": light
       ? c(theme.ui.uibackground).darken(0.7).toHex()
       : c(theme.ui.uibackgroundmid).lighten(0.5).desaturate(0.05).toHex(),
-
     "editorLineNumber.foreground": c(theme.ui.default)
       .mix(theme.ui.uibackground, 0.75)
       .saturate(0.05)
@@ -261,6 +263,7 @@ export default function ui(
     "editorMarkerNavigationError.background": `${theme.levels.danger}90`,
     "editorMarkerNavigationInfo.background": `${theme.levels.info}90`,
     "editorMarkerNavigationWarning.background": `${theme.levels.warning}90`,
+
     "editorOverviewRuler.addedForeground": c(theme.levels.success)
       .alpha(0.5)
       .toHex(),
@@ -283,7 +286,6 @@ export default function ui(
       .toHex(),
     "editorOverviewRuler.warningForeground": theme.levels.warning,
     "editorRuler.foreground": c(theme.ui.defaultalt).alpha(0.2).toHex(),
-    // "editorStickyScroll.background": c(theme.colors.blue).toHex(),
     // "editorStickyScroll.border": theme.ui.border,
     "editorStickyScroll.shadow": shadow,
     "editorStickyScrollHover.background": c(theme.ui.uibackground)
@@ -296,6 +298,7 @@ export default function ui(
     "editorSuggestWidget.border": theme.ui.border,
     "editorSuggestWidget.foreground": theme.ui.defaultMain,
     "editorSuggestWidget.highlightForeground": theme.colors.yellow,
+    // "editorStickyScroll.background": c(theme.colors.blue).toHex(),
     "editorSuggestWidget.selectedBackground": light
       ? c(theme.ui.uibackground).darken(0.05).toHex()
       : c(theme.ui.uibackground).lighten(0.1).toHex(),
@@ -318,9 +321,11 @@ export default function ui(
     "errorLens.hintForeground": theme.levels.info + 99,
     "errorLens.infoForeground": theme.levels.info + 99,
     "errorLens.warningForeground": theme.levels.warning + 99,
-    "extensionButton.background": theme.ui.primary + 60,
-    "extensionButton.foreground": theme.ui.default,
-    "extensionButton.hoverBackground": theme.ui.primary + 90,
+    "extensionButton.background": c(theme.ui.primary).alpha(0.5).toHex(),
+    "extensionButton.foreground": light
+      ? c(theme.ui.primary).darken(0.22).toHex()
+      : c(theme.ui.primary).lighten(0.22).toHex(),
+    "extensionButton.hoverBackground": c(theme.ui.primary).alpha(0.6).toHex(),
     "extensionButton.prominentBackground": `${theme.ui.primary}9d`,
     "extensionButton.prominentForeground": theme.ui.default,
     "extensionButton.prominentHoverBackground": theme.ui.primary,
