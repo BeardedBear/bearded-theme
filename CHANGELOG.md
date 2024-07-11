@@ -3,9 +3,10 @@
 ## 9.2.0 - 2024-07-12
 
 - 🎉 Add new feat variation for WebDevCody [Thanks Cody](https://github.com/webdevcody)
+- 🪄 Fix contrast background color for title bar
 - 🐛 Fix highlight color for matching words
 - 🐛 Fix shadow for sticky scroll in tree view
-- 🐛 Better contrast background color for title bar
+- 🐛 Fix compactHoverBackground color
 
 ## 9.1.5 - 2024-03-27
 
