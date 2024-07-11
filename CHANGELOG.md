@@ -1,5 +1,12 @@
 # Changelog for Bearded Theme
 
+## 9.2.0 - 2024-07-12
+
+- 🎉 Add new feat variation for WebDevCody [Thanks Cody](https://github.com/webdevcody)
+- 🐛 Fix highlight color for matching words
+- 🐛 Fix shadow for sticky scroll in tree view
+- 🐛 Better contrast background color for title bar
+
 ## 9.1.5 - 2024-03-27
 
 - Fix shadows for sticky elements [Thanks Code-DJ](https://github.com/BeardedBear/bearded-theme/issues/163)
