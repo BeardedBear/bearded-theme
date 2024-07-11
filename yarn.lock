@@ -503,10 +503,10 @@
   optionalDependencies:
     keytar "^7.7.0"
 
-"@vscode/vsce@^2.29.0":
-  version "2.29.0"
-  resolved "https://registry.yarnpkg.com/@vscode/vsce/-/vsce-2.29.0.tgz#527e1ae104d6ba38cf4ba9509ba414e3b0629328"
-  integrity sha512-63+aEO8SpjE6qKiIh2Cqy/P9zC7+USElGwpEdkyPp89xIBDBr5IqeNS3zkD3mp3wZqbvHIpJsCCNu74WQirYCg==
+"@vscode/vsce@^2.30.0":
+  version "2.30.0"
+  resolved "https://registry.yarnpkg.com/@vscode/vsce/-/vsce-2.30.0.tgz#7a0c16b20ef529fa291fe9d3c7fe51a2a613f773"
+  integrity sha512-MBYpXdCY1SCdc2u/y11kmJuSODKFyZRpeRTQq5p4rSg05QSjSy5pz6h/BGLNdSahgXfKRBATEkjAcJFdJuDz8Q==
   dependencies:
     "@azure/identity" "^4.1.0"
     "@vscode/vsce-sign" "^2.0.0"
