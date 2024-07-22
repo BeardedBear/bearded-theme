@@ -1,12 +1,15 @@
 # Changelog for Bearded Theme
 
-## 9.2.0 - 2024-07-12
+## 9.2.0 - 2024-07-23
 
 - 🎉 Add new feat variation for WebDevCody [Thanks Cody](https://github.com/webdevcody)
 - 🪄 Fix contrast background color for title bar
+- 🐛 Fix subvariable color for cpp [Thanks CodingOIer](https://github.com/BeardedBear/bearded-theme/issues/177)
 - 🐛 Fix highlight color for matching words
 - 🐛 Fix shadow for sticky scroll in tree view
 - 🐛 Fix compactHoverBackground color
+- 🐛 Fix licence info in readme [Thanks PauloDeSousa](https://github.com/BeardedBear/bearded-theme/issues/185)
+- 🐛 Fix color for `editor.foldPlaceholderForeground`
 
 ## 9.1.5 - 2024-03-27
 
