@@ -16,6 +16,8 @@ export const accessors = [
   "punctuation.tag.liquid support.class.liquid",
   "meta.scriptblock.powershell meta.group.simple.subexpression.powershell meta.group.simple.subexpression.powershell meta.scriptblock.powershell meta.scriptblock.powershell support.variable.automatic.powershell punctuation.definition.variable.powershell",
   "meta.scriptblock.powershell meta.group.simple.subexpression.powershell meta.group.simple.subexpression.powershell meta.scriptblock.powershell meta.scriptblock.powershell support.variable.automatic.powershell",
+  "source.cpp meta.block.class.cpp meta.body.class.cpp",
+  "source.cpp meta.block.class.cpp meta.body.class.cpp meta.function.definition.special.constructor.cpp meta.body.function.definition.special.constructor.cpp",
 ];
 
 export const classes = ["entity.name.type"];

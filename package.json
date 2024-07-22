@@ -3,7 +3,7 @@
   "displayName": "Bearded Theme",
   "description": "The theme with a long beard.",
   "publisher": "BeardedBear",
-  "version": "9.1.5",
+  "version": "9.2.0",
   "engines": {
     "vscode": "^1.69.0"
   },
@@ -377,7 +377,7 @@
     "@types/vscode": "^1.85.0",
     "@typescript-eslint/eslint-plugin": "^6.16.0",
     "@typescript-eslint/parser": "^6.16.0",
-    "@vscode/vsce": "^2.29.0",
+    "@vscode/vsce": "^2.31.1",
     "colord": "^2.9.3",
     "eslint": "^8.56.0",
     "eslint-plugin-perfectionist": "^2.5.0",

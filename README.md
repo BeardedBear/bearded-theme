@@ -21,7 +21,7 @@ Something's missing ? [create Issues](https://github.com/BeardedBear/BeardedThem
 
 ## 📄 License
 
-This theme is released under the MIT License.
+This theme is released under the GPL-3.0 license.
 
 Designed by [BeardedBear](https://github.com/BeardedBear).
 Follow me on [Twitter](https://twitter.com/Bearded__Bear) ! (You'll see, I never tweet)
