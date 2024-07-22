@@ -1476,6 +1476,42 @@
     "uiTheme": "vs-dark"
   },
   {
+    "name": "Bearded Theme Feat WebDevCody",
+    "slug": "feat-webdevcody",
+    "theme": {
+      "colors": {
+        "blue": "#82f0ff",
+        "green": "#f75f94",
+        "greenAlt": "#60e66f",
+        "orange": "#f75f94",
+        "pink": "#f75f94",
+        "purple": "#f75f94",
+        "red": "#ec5342",
+        "salmon": "#eeeeee",
+        "turquoize": "#f1d868",
+        "yellow": "#f1d868"
+      },
+      "levels": {
+        "danger": "#e61e3f",
+        "info": "#f1d868",
+        "success": "#60e66f",
+        "warning": "#e3946a"
+      },
+      "ui": {
+        "border": "#000000",
+        "default": "#81f0fe",
+        "defaultMain": "#4eeafe",
+        "defaultalt": "#018799",
+        "primary": "#e95d74",
+        "primaryalt": "#104c52",
+        "uibackground": "#00171a",
+        "uibackgroundalt": "#000d0f",
+        "uibackgroundmid": "#001315"
+      }
+    },
+    "uiTheme": "vs-dark"
+  },
+  {
     "name": "Bearded Theme Classics Anthracite",
     "slug": "classics-anthracite",
     "theme": {
