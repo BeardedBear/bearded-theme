@@ -89,7 +89,7 @@ export default function ui(
     "button.background": c(theme.ui.primary).alpha(0.5).toHex(),
     "button.border": c(theme.ui.default).alpha(0.3).toHex(),
     "button.foreground": light
-      ? c(theme.ui.primary).darken(0.22).toHex()
+      ? c(theme.ui.primary).darken(0.5).toHex()
       : c(theme.ui.primary).lighten(0.22).toHex(),
     "button.hoverBackground": c(theme.ui.primary).alpha(0.6).toHex(),
     "button.secondaryBackground": light
@@ -206,9 +206,15 @@ export default function ui(
     "editor.selectionForeground": theme.ui.default,
     "editor.selectionHighlightBackground": `${theme.ui.primary}15`,
     "editor.selectionHighlightBorder": createSelectionColor(1),
-    "editor.wordHighlightBackground": createSelectionColor(1.5),
-    "editor.wordHighlightBorder": createSelectionColor(1.8),
-    "editor.wordHighlightStrongBackground": createSelectionColor(1),
+    "editor.wordHighlightBackground": light
+      ? createSelectionColor(0.4)
+      : createSelectionColor(1.5),
+    "editor.wordHighlightBorder": light
+      ? createSelectionColor(0.8)
+      : createSelectionColor(1.8),
+    "editor.wordHighlightStrongBackground": light
+      ? createSelectionColor(0.8)
+      : createSelectionColor(1.8),
     "editorBracketHighlight.foreground1": theme.colors.yellow,
     "editorBracketHighlight.foreground2": theme.colors.pink,
     "editorBracketHighlight.foreground3": theme.colors.blue,
@@ -324,7 +330,7 @@ export default function ui(
     "errorLens.warningForeground": theme.levels.warning + 99,
     "extensionButton.background": c(theme.ui.primary).alpha(0.5).toHex(),
     "extensionButton.foreground": light
-      ? c(theme.ui.primary).darken(0.22).toHex()
+      ? c(theme.ui.primary).darken(0.5).toHex()
       : c(theme.ui.primary).lighten(0.22).toHex(),
     "extensionButton.hoverBackground": c(theme.ui.primary).alpha(0.6).toHex(),
     "extensionButton.prominentBackground": `${theme.ui.primary}9d`,
