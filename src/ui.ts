@@ -87,16 +87,19 @@ export default function ui(
       .toHex(),
     // button
     "button.background": c(theme.ui.primary).alpha(0.5).toHex(),
-
-    "button.border": c(theme.ui.primary).alpha(0.5).toHex(),
+    "button.border": c(theme.ui.default).alpha(0.3).toHex(),
     "button.foreground": light
       ? c(theme.ui.primary).darken(0.22).toHex()
       : c(theme.ui.primary).lighten(0.22).toHex(),
     "button.hoverBackground": c(theme.ui.primary).alpha(0.6).toHex(),
-    "button.secondaryBackground": `${theme.ui.primary}90`,
-
+    "button.secondaryBackground": light
+      ? c(theme.ui.uibackground).darken(0.07).toHex()
+      : c(theme.ui.uibackground).lighten(0.07).toHex(),
     "button.secondaryForeground": theme.ui.default,
-    "button.secondaryHoverBackground": `${theme.ui.primary}35`,
+    "button.secondaryHoverBackground": light
+      ? c(theme.ui.uibackground).darken(0.1).toHex()
+      : c(theme.ui.uibackground).lighten(0.1).toHex(),
+    "button.separator": c(theme.ui.uibackground).lighten(0.1).toHex(),
     // charts
     "charts.blue": theme.colors.blue,
 
