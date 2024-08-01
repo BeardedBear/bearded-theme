@@ -87,7 +87,9 @@ export default function ui(
       .toHex(),
     // button
     "button.background": c(theme.ui.primary).alpha(0.5).toHex(),
-    "button.border": c(theme.ui.default).alpha(0.3).toHex(),
+    "button.border": light
+      ? c("#000000").alpha(0.15).toHex()
+      : c("#FFFFFF").alpha(0.15).toHex(),
     "button.foreground": light
       ? c(theme.ui.primary).darken(0.5).toHex()
       : c(theme.ui.primary).lighten(0.22).toHex(),
@@ -214,7 +216,7 @@ export default function ui(
       : createSelectionColor(1.8),
     "editor.wordHighlightStrongBackground": light
       ? createSelectionColor(0.8)
-      : createSelectionColor(1.8),
+      : createSelectionColor(1),
     "editorBracketHighlight.foreground1": theme.colors.yellow,
     "editorBracketHighlight.foreground2": theme.colors.pink,
     "editorBracketHighlight.foreground3": theme.colors.blue,

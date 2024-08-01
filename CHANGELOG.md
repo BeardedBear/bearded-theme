@@ -1,7 +1,9 @@
 # Changelog for Bearded Theme
 
-## 9.2.1 - 2024-08-02
+## 9.3.0 - 2024-08-02
 
+- 🪄 Improve contrast in all light variations
+- 🐛 Fix highlight background color for light variations
 - 🐛 Fix secondary buttons background color [Thanks Loskir](https://github.com/BeardedBear/bearded-theme/issues/191)
 - 🐛 Fix button contrast in light themes [Thanks Loskir](https://github.com/BeardedBear/bearded-theme/issues/190)
 

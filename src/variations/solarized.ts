@@ -2,16 +2,16 @@ import { makeMainColorsDark, makeMainColorsLight } from "../helper";
 import { Theme, ThemeColors, ThemeLevels } from "../typing";
 
 const solarizedColors: ThemeColors = {
-  blue: "#399fe8",
-  green: "#94a522",
-  greenAlt: "#A4EF58",
-  orange: "#d8822c",
-  pink: "#ce81c8",
-  purple: "#767cde",
-  red: "#eb4937",
-  salmon: "#e54b95",
-  turquoize: "#38bbb0",
-  yellow: "#dfbe5a",
+  blue: "#4db0f7",
+  green: "#a5b82e",
+  greenAlt: "#97e24c",
+  orange: "#e8913b",
+  pink: "#df96d9",
+  purple: "#858bf7",
+  red: "#f45645",
+  salmon: "#f154a0",
+  turquoize: "#26bbae",
+  yellow: "#e2ae10",
 };
 
 const solarizedLevels: ThemeLevels = {
@@ -38,7 +38,18 @@ export const solarizedReversed: Theme = {
 };
 
 export const solarizedLight: Theme = {
-  colors: solarizedColors,
+  colors: {
+    blue: "#2c97e3",
+    green: "#819501",
+    greenAlt: "#56a506",
+    orange: "#ca6f13",
+    pink: "#c64fbc",
+    purple: "#666bd6",
+    red: "#eb4937",
+    salmon: "#e74492",
+    turquoize: "#1aaca0",
+    yellow: "#cf9c01",
+  },
   levels: solarizedLevels,
   ui: makeMainColorsLight({
     base: "#fdf6e3",
