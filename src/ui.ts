@@ -35,17 +35,17 @@ export default function ui(
   function inputBackground(): string {
     return light
       ? desaturateInputs
-        ? c(theme.ui.uibackground).desaturate(0.3).darken(0.02).toHex()
-        : c(theme.ui.uibackground).darken(0.02).toHex()
-      : c(theme.ui.uibackground).lighten(0.02).toHex();
+        ? c(theme.ui.uibackground).lighten(0.01).toHex()
+        : c(theme.ui.uibackground).lighten(0.02).toHex()
+      : c(theme.ui.uibackground).lighten(0.025).toHex();
   }
 
   function inputBorder(): string {
     return light
       ? desaturateInputs
-        ? c(theme.ui.uibackground).desaturate(0.5).darken(0.1).toHex()
-        : c(theme.ui.uibackground).darken(0.1).toHex()
-      : c(theme.ui.uibackground).desaturate(0.05).lighten(0.1).toHex();
+        ? c(theme.ui.uibackground).desaturate(0.5).darken(0.25).toHex()
+        : c(theme.ui.uibackground).darken(0.2).toHex()
+      : c(theme.ui.uibackground).desaturate(0.05).lighten(0.15).toHex();
   }
 
   const shadow = light
@@ -543,10 +543,9 @@ export default function ui(
     "sash.hoverBorder": `${theme.ui.primary}50`,
     // scrollbar
     "scrollbar.shadow": shadow,
-    "scrollbarSlider.activeBackground": `${theme.ui.primary}40`,
-    "scrollbarSlider.background": `${theme.ui.primary}20`,
-
-    "scrollbarSlider.hoverBackground": `${theme.ui.primary}30`,
+    "scrollbarSlider.activeBackground": c(theme.ui.default).alpha(0.3).toHex(),
+    "scrollbarSlider.background": c(theme.ui.default).alpha(0.15).toHex(),
+    "scrollbarSlider.hoverBackground": c(theme.ui.default).alpha(0.2).toHex(),
     "selection.background": `${theme.ui.primary}60`,
     // settings
     "settings.headerForeground": theme.ui.primary,
