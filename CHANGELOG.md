@@ -4,7 +4,7 @@
 
 - 🪄 Improve contrast in all light variations
 - 🐛 Fix highlight background color for light variations
-- 🐛 Fix extention foreground color
+- 🐛 Fix extension description foreground
 - 🐛 Fix secondary buttons background color [Thanks Loskir](https://github.com/BeardedBear/bearded-theme/issues/191)
 - 🐛 Fix button contrast in light themes [Thanks Loskir](https://github.com/BeardedBear/bearded-theme/issues/190)
 
