@@ -97,7 +97,9 @@ export default function ui(
     "button.secondaryBackground": light
       ? c(theme.ui.uibackground).darken(0.07).toHex()
       : c(theme.ui.uibackground).lighten(0.07).toHex(),
-    "button.secondaryForeground": theme.ui.default,
+    "button.secondaryForeground": light
+      ? theme.ui.default
+      : c(theme.ui.default).alpha(0.8).toHex(),
     "button.secondaryHoverBackground": light
       ? c(theme.ui.uibackground).darken(0.1).toHex()
       : c(theme.ui.uibackground).lighten(0.1).toHex(),
@@ -152,7 +154,9 @@ export default function ui(
       .mix(theme.ui.uibackground, 0.9)
       .toHex(),
     // description
-    descriptionForeground: c(theme.ui.default).alpha(0.3).toHex(),
+    descriptionForeground: light
+      ? c(theme.ui.default).alpha(0.8).toHex()
+      : c(theme.ui.default).alpha(0.5).toHex(),
     // diff
     "diffEditor.border": theme.ui.border,
     "diffEditor.diagonalFill": c(theme.ui.uibackground).lighten(0.05).toHex(),
