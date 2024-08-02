@@ -87,15 +87,15 @@ export const coffeeReversed: Theme = {
 
 export const coffeeCream: Theme = {
   colors: {
-    blue: "#009DB5",
-    green: "#51A200",
-    greenAlt: "#7E9E2D",
+    blue: "#008ea4",
+    green: "#4d9900",
+    greenAlt: "#6f8e20",
     orange: "#ce6700",
     pink: "#CE4985",
     purple: "#7056c4",
     red: "#dc2e2e",
     salmon: "#D8573E",
-    turquoize: "#00A47B",
+    turquoize: "#009b74",
     yellow: "#ad8200",
   },
   levels: {

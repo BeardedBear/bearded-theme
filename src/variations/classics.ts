@@ -29,16 +29,16 @@ export const anthracite: Theme = {
 
 export const light: Theme = {
   colors: {
-    blue: "#0f8fe4",
-    green: "#18ac31",
+    blue: "#0983d5",
+    green: "#0a9621",
     greenAlt: "#6b8d16",
-    orange: "#dd7404",
-    pink: "#dd39bf",
+    orange: "#e06900",
+    pink: "#d42bb5",
     purple: "#9244ec",
     red: "#df3c3c",
     salmon: "#ec4476",
-    turquoize: "#00aaaa",
-    yellow: "#d49408",
+    turquoize: "#009696",
+    yellow: "#c39c00",
   },
   levels,
   ui: makeMainColorsLight({

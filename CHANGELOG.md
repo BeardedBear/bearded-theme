@@ -1,5 +1,14 @@
 # Changelog for Bearded Theme
 
+## 9.3.0 - 2024-08-02
+
+- 🪄 Improve contrast in all light variations
+- 🪄 Improve scrollbarSlider color
+- 🐛 Fix highlight background color for light variations
+- 🐛 Fix extension description foreground
+- 🐛 Fix secondary buttons background color [Thanks Loskir](https://github.com/BeardedBear/bearded-theme/issues/191)
+- 🐛 Fix button contrast in light themes [Thanks Loskir](https://github.com/BeardedBear/bearded-theme/issues/190)
+
 ## 9.2.0 - 2024-07-23
 
 - 🎉 Add new feat variation for WebDevCody [Thanks Cody](https://github.com/webdevcody)

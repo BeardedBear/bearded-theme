@@ -2,16 +2,16 @@ import { makeMainColorsLight } from "../helper";
 import { Theme, ThemeColors, ThemeLevels } from "../typing";
 
 const colors: ThemeColors = {
-  blue: "#0f8fe4",
-  green: "#18ac31",
-  greenAlt: "#6b8d16",
-  orange: "#dd7404",
-  pink: "#dd39bf",
-  purple: "#9244ec",
-  red: "#df3c3c",
-  salmon: "#ec4476",
-  turquoize: "#00aaaa",
-  yellow: "#d49408",
+  blue: "#0076c5",
+  green: "#008b17",
+  greenAlt: "#668b07",
+  orange: "#b96000",
+  pink: "#c121a4",
+  purple: "#7522d3",
+  red: "#d12525",
+  salmon: "#da2a5f",
+  turquoize: "#008f8f",
+  yellow: "#c08403",
 };
 
 const levels: ThemeLevels = {

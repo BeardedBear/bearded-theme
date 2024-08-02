@@ -35,17 +35,17 @@ export default function ui(
   function inputBackground(): string {
     return light
       ? desaturateInputs
-        ? c(theme.ui.uibackground).desaturate(0.3).darken(0.02).toHex()
-        : c(theme.ui.uibackground).darken(0.02).toHex()
-      : c(theme.ui.uibackground).lighten(0.02).toHex();
+        ? c(theme.ui.uibackground).lighten(0.01).toHex()
+        : c(theme.ui.uibackground).lighten(0.02).toHex()
+      : c(theme.ui.uibackground).lighten(0.025).toHex();
   }
 
   function inputBorder(): string {
     return light
       ? desaturateInputs
-        ? c(theme.ui.uibackground).desaturate(0.5).darken(0.1).toHex()
-        : c(theme.ui.uibackground).darken(0.1).toHex()
-      : c(theme.ui.uibackground).desaturate(0.05).lighten(0.1).toHex();
+        ? c(theme.ui.uibackground).desaturate(0.5).darken(0.25).toHex()
+        : c(theme.ui.uibackground).darken(0.2).toHex()
+      : c(theme.ui.uibackground).desaturate(0.05).lighten(0.15).toHex();
   }
 
   const shadow = light
@@ -87,15 +87,19 @@ export default function ui(
       .toHex(),
     // button
     "button.background": c(theme.ui.primary).alpha(0.5).toHex(),
-    "button.border": c(theme.ui.default).alpha(0.3).toHex(),
+    "button.border": light
+      ? c("#000000").alpha(0.15).toHex()
+      : c("#FFFFFF").alpha(0.15).toHex(),
     "button.foreground": light
-      ? c(theme.ui.primary).darken(0.22).toHex()
+      ? c(theme.ui.primary).darken(0.5).toHex()
       : c(theme.ui.primary).lighten(0.22).toHex(),
     "button.hoverBackground": c(theme.ui.primary).alpha(0.6).toHex(),
     "button.secondaryBackground": light
       ? c(theme.ui.uibackground).darken(0.07).toHex()
       : c(theme.ui.uibackground).lighten(0.07).toHex(),
-    "button.secondaryForeground": theme.ui.default,
+    "button.secondaryForeground": light
+      ? theme.ui.default
+      : c(theme.ui.default).alpha(0.8).toHex(),
     "button.secondaryHoverBackground": light
       ? c(theme.ui.uibackground).darken(0.1).toHex()
       : c(theme.ui.uibackground).lighten(0.1).toHex(),
@@ -150,7 +154,9 @@ export default function ui(
       .mix(theme.ui.uibackground, 0.9)
       .toHex(),
     // description
-    descriptionForeground: c(theme.ui.default).alpha(0.3).toHex(),
+    descriptionForeground: light
+      ? c(theme.ui.default).alpha(0.8).toHex()
+      : c(theme.ui.default).alpha(0.5).toHex(),
     // diff
     "diffEditor.border": theme.ui.border,
     "diffEditor.diagonalFill": c(theme.ui.uibackground).lighten(0.05).toHex(),
@@ -206,9 +212,15 @@ export default function ui(
     "editor.selectionForeground": theme.ui.default,
     "editor.selectionHighlightBackground": `${theme.ui.primary}15`,
     "editor.selectionHighlightBorder": createSelectionColor(1),
-    "editor.wordHighlightBackground": createSelectionColor(1.5),
-    "editor.wordHighlightBorder": createSelectionColor(1.8),
-    "editor.wordHighlightStrongBackground": createSelectionColor(1),
+    "editor.wordHighlightBackground": light
+      ? createSelectionColor(0.4)
+      : createSelectionColor(1.5),
+    "editor.wordHighlightBorder": light
+      ? createSelectionColor(0.8)
+      : createSelectionColor(1.8),
+    "editor.wordHighlightStrongBackground": light
+      ? createSelectionColor(0.8)
+      : createSelectionColor(1),
     "editorBracketHighlight.foreground1": theme.colors.yellow,
     "editorBracketHighlight.foreground2": theme.colors.pink,
     "editorBracketHighlight.foreground3": theme.colors.blue,
@@ -324,7 +336,7 @@ export default function ui(
     "errorLens.warningForeground": theme.levels.warning + 99,
     "extensionButton.background": c(theme.ui.primary).alpha(0.5).toHex(),
     "extensionButton.foreground": light
-      ? c(theme.ui.primary).darken(0.22).toHex()
+      ? c(theme.ui.primary).darken(0.5).toHex()
       : c(theme.ui.primary).lighten(0.22).toHex(),
     "extensionButton.hoverBackground": c(theme.ui.primary).alpha(0.6).toHex(),
     "extensionButton.prominentBackground": `${theme.ui.primary}9d`,
@@ -531,10 +543,9 @@ export default function ui(
     "sash.hoverBorder": `${theme.ui.primary}50`,
     // scrollbar
     "scrollbar.shadow": shadow,
-    "scrollbarSlider.activeBackground": `${theme.ui.primary}40`,
-    "scrollbarSlider.background": `${theme.ui.primary}20`,
-
-    "scrollbarSlider.hoverBackground": `${theme.ui.primary}30`,
+    "scrollbarSlider.activeBackground": c(theme.ui.default).alpha(0.3).toHex(),
+    "scrollbarSlider.background": c(theme.ui.default).alpha(0.15).toHex(),
+    "scrollbarSlider.hoverBackground": c(theme.ui.default).alpha(0.2).toHex(),
     "selection.background": `${theme.ui.primary}60`,
     // settings
     "settings.headerForeground": theme.ui.primary,
