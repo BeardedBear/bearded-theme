@@ -127,7 +127,9 @@ export default function ui(
     "button.secondaryHoverBackground": light
       ? c(theme.ui.uibackground).darken(0.1).toHex()
       : c(theme.ui.uibackground).lighten(0.1).toHex(),
-    "button.separator": c(theme.ui.uibackground).lighten(0.1).toHex(),
+    "button.separator": light
+      ? c("#000000").alpha(0.3).toHex()
+      : c("#FFFFFF").alpha(0.3).toHex(),
   };
 
   const chartColors: Partial<VSCodeThemeColors> = {
