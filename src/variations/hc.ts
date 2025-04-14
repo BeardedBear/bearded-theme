@@ -106,8 +106,8 @@ export const HCFlurry: Theme = {
   ui: {
     border: "#c2c8ce",
     default: "#272d34",
-    defaultMain: "#3f4750",
     defaultalt: "#898989",
+    defaultMain: "#3f4750",
     primary: "#444c54",
     primaryalt: "#f9fbfe",
     uibackground: "#f5f8fc",

@@ -144,8 +144,8 @@ export const altica: Theme = {
   ui: {
     border: "#0a1217",
     default: "#c2ced1",
-    defaultMain: "#9FADB1",
     defaultalt: "#45565c",
+    defaultMain: "#9FADB1",
     primary: "#0187a6",
     primaryalt: "#15262e",
     uibackground: "#0f1c21",

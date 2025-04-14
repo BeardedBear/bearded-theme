@@ -85,18 +85,18 @@ import {
 } from "./variations/surprising";
 import { vividBlack, vividLight, vividPurple } from "./variations/vivid";
 
-interface ThemeOptions {
-  desaturateInputs?: boolean;
-  hc?: boolean;
-  light?: boolean;
-  untindedSelection?: boolean;
-}
-
 interface BridgeItem {
   name: string;
   slug: string;
   theme: Theme;
   uiTheme: string;
+}
+
+interface ThemeOptions {
+  desaturateInputs?: boolean;
+  hc?: boolean;
+  light?: boolean;
+  untindedSelection?: boolean;
 }
 
 const bfile: BridgeItem[] = JSON.parse(JSON.stringify(bridge));

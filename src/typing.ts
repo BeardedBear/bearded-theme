@@ -1,13 +1,17 @@
-export interface ThemeUi {
-  border: string;
-  default: string;
-  defaultMain: string;
-  defaultalt: string;
-  primary: string;
-  primaryalt: string;
-  uibackground: string;
-  uibackgroundalt: string;
-  uibackgroundmid: string;
+export type FontStyle = "bold" | "italic" | "normal";
+
+export interface Scope {
+  scope: string[];
+  settings: {
+    fontStyle?: FontStyle;
+    foreground: string;
+  };
+}
+
+export interface Theme {
+  colors: ThemeColors;
+  levels: ThemeLevels;
+  ui: ThemeUi;
 }
 
 export interface ThemeColors {
@@ -60,21 +64,19 @@ export interface ThemeLevels {
   warning: string;
 }
 
-export interface Theme {
-  colors: ThemeColors;
-  levels: ThemeLevels;
-  ui: ThemeUi;
+export interface ThemeUi {
+  border: string;
+  default: string;
+  defaultalt: string;
+  defaultMain: string;
+  primary: string;
+  primaryalt: string;
+  uibackground: string;
+  uibackgroundalt: string;
+  uibackgroundmid: string;
 }
 
-export type FontStyle = "bold" | "italic" | "normal";
-
-export interface Scope {
-  scope: string[];
-  settings: {
-    fontStyle?: FontStyle;
-    foreground: string;
-  };
-}
+export type UIKey = VSCodeThemeColors;
 
 /**
  * Represents all available color customization options in a VSCode theme
@@ -799,5 +801,3 @@ export type VSCodeThemeColors = {
   "window.activeBorder"?: string;
   "window.inactiveBorder"?: string;
 };
-
-export type UIKey = VSCodeThemeColors;

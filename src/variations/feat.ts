@@ -23,8 +23,8 @@ export const will: Theme = {
   ui: {
     border: "#000000",
     default: "#bdb6d3",
-    defaultMain: "#bfb9da",
     defaultalt: "#585775",
+    defaultMain: "#bfb9da",
     primary: "#b498f5",
     primaryalt: "#231e36",
     uibackground: "#14111f",

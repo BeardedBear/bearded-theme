@@ -13,6 +13,13 @@ interface ThemePropsDark {
   reversed?: boolean;
 }
 
+interface ThemePropsLight {
+  base: string;
+  desaturated?: boolean;
+  primary: string;
+  primaryAlt?: string;
+}
+
 /**
  * Calculates and returns an object with color values based on the input properties.
  *
@@ -35,12 +42,12 @@ export function makeMainColorsDark({
     default: fontTeinted
       ? c(base).lighten(0.6).saturate(0.15).toHex()
       : c(base).lighten(0.7).desaturate(sat).toHex(),
-    defaultMain: fontTeinted
-      ? c(base).lighten(0.55).saturate(0.07).toHex()
-      : c(base).lighten(0.6).desaturate(sat).toHex(),
     defaultalt: fontTeinted
       ? c(base).lighten(0.15).saturate(0.05).toHex()
       : c(base).lighten(0.25).desaturate(sat).toHex(),
+    defaultMain: fontTeinted
+      ? c(base).lighten(0.55).saturate(0.07).toHex()
+      : c(base).lighten(0.6).desaturate(sat).toHex(),
     // UI
     primary,
     primaryalt: primaryAlt ? primaryAlt : c(base).lighten(0.05).toHex(),
@@ -48,13 +55,6 @@ export function makeMainColorsDark({
     uibackgroundalt: reversed ? base : darkenColor,
     uibackgroundmid: c(base).mix(darkenColor).toHex(),
   };
-}
-
-interface ThemePropsLight {
-  base: string;
-  desaturated?: boolean;
-  primary: string;
-  primaryAlt?: string;
 }
 
 /**
@@ -79,12 +79,12 @@ export function makeMainColorsLight({
     default: desaturated
       ? c(fontColor).darken(0.4).desaturate(0.3).toHex()
       : c(fontColor).darken(0.3).desaturate(0.3).toHex(),
-    defaultMain: desaturated
-      ? c(fontColor).darken(0.3).desaturate(0.3).toHex()
-      : c(fontColor).darken(0.5).desaturate(0.3).toHex(),
     defaultalt: desaturated
       ? c(fontColor).lighten(0.3).desaturate(0.5).toHex()
       : c(fontColor).lighten(0.15).desaturate(0.5).toHex(),
+    defaultMain: desaturated
+      ? c(fontColor).darken(0.3).desaturate(0.3).toHex()
+      : c(fontColor).darken(0.5).desaturate(0.3).toHex(),
     // UI
     primary,
     primaryalt: primaryAlt ? primaryAlt : c(base).lighten(0.02).toHex(),
