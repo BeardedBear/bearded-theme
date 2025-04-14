@@ -1,6 +1,6 @@
 import { colord as c } from "colord";
 
-import { Theme, UIKey } from "./typing";
+import { Theme, VSCodeThemeColors } from "./typing";
 
 const transparent = "#00000000";
 
@@ -12,7 +12,7 @@ const transparent = "#00000000";
  * @param light - Optional. Specifies whether the UI should be in light mode.
  * @param untindedSelection - Optional. Specifies whether the selection color should be untinted.
  * @param desaturateInputs - Optional. Specifies whether the input colors should be desaturated.
- * @returns A partial UIKey object representing the UI configuration.
+ * @returns A partial VSCodeThemeColors object representing the UI configuration.
  */
 export default function ui(
   theme: Theme,
@@ -20,7 +20,7 @@ export default function ui(
   light?: boolean,
   untindedSelection?: boolean,
   desaturateInputs?: boolean,
-): Partial<UIKey> {
+): VSCodeThemeColors {
   function createSelectionColor(delta: number): string {
     return untindedSelection
       ? c(theme.ui.uibackground)
