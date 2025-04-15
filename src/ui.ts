@@ -374,6 +374,16 @@ export default function ui(
     "gitDecoration.untrackedResourceForeground": theme.levels.success,
   };
 
+  const multiDiffEditorColors: Partial<VSCodeThemeColors> = {
+    "multiDiffEditor.background": c(theme.ui.uibackground)
+      .lighten(0.02)
+      .toHex(),
+    "multiDiffEditor.border": theme.ui.border,
+    "multiDiffEditor.headerBackground": light
+      ? c(theme.ui.uibackground).darken(0.05).toHex()
+      : c(theme.ui.uibackground).lighten(0.05).toHex(),
+  };
+
   const scmGraphColors: Partial<VSCodeThemeColors> = {
     "scmGraph.historyItemBaseRefColor": theme.colors.purple,
     "scmGraph.historyItemHoverAdditionsForeground": theme.colors.green,
@@ -794,6 +804,7 @@ export default function ui(
     ...errorLensColors,
     ...extensionButtonColors,
     ...gitDecorationColors,
+    ...multiDiffEditorColors,
     ...scmGraphColors,
     ...inlineChatColors,
     ...inputColors,

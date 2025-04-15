@@ -214,6 +214,10 @@ export type VSCodeThemeColors = {
   "diffEditor.removedLineBackground"?: string;
   "diffEditor.removedTextBackground"?: string;
   "diffEditor.removedTextBorder"?: string;
+  "diffEditor.unchangedCodeBackground"?: string;
+  "diffEditor.unchangedRegionBackground"?: string;
+  "diffEditor.unchangedRegionForeground"?: string;
+  "diffEditor.unchangedRegionShadow"?: string;
   "diffEditorGutter.insertedLineBackground"?: string;
   "diffEditorGutter.removedLineBackground"?: string;
   "diffEditorOverview.insertedForeground"?: string;
