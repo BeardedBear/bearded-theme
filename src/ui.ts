@@ -374,6 +374,21 @@ export default function ui(
     "gitDecoration.untrackedResourceForeground": theme.levels.success,
   };
 
+  const scmGraphColors: Partial<VSCodeThemeColors> = {
+    "scmGraph.historyItemBaseRefColor": theme.colors.purple,
+    "scmGraph.historyItemHoverAdditionsForeground": theme.colors.green,
+    "scmGraph.historyItemHoverDefaultLabelBackground": theme.ui.defaultMain,
+    "scmGraph.historyItemHoverDefaultLabelForeground": c(theme.ui.defaultalt)
+      .darken(0.4)
+      .toHex(),
+    "scmGraph.historyItemHoverDeletionsForeground": theme.colors.red,
+    "scmGraph.historyItemHoverLabelForeground": c(theme.ui.defaultalt)
+      .darken(0.4)
+      .toHex(),
+    "scmGraph.historyItemRefColor": theme.colors.yellow,
+    "scmGraph.historyItemRemoteRefColor": theme.colors.blue,
+  };
+
   const inlineChatColors: Partial<VSCodeThemeColors> = {
     "inlineChat.background": c(theme.ui.uibackground).lighten(0.05).toHex(),
     "inlineChat.border": light
@@ -779,6 +794,7 @@ export default function ui(
     ...errorLensColors,
     ...extensionButtonColors,
     ...gitDecorationColors,
+    ...scmGraphColors,
     ...inlineChatColors,
     ...inputColors,
     ...keybindingLabelColors,

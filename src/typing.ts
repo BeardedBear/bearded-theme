@@ -632,6 +632,10 @@ export type VSCodeThemeColors = {
   "sash.hoverBorder"?: string;
 
   // SCM Graph
+  "scmGraph.foreground1"?: string;
+  "scmGraph.foreground2"?: string;
+  "scmGraph.foreground3"?: string;
+  "scmGraph.foreground4"?: string;
   "scmGraph.foreground5"?: string;
   "scmGraph.historyItemBaseRefColor"?: string;
   "scmGraph.historyItemHoverAdditionsForeground"?: string;
