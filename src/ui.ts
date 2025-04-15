@@ -181,25 +181,32 @@ export default function ui(
       .toHex(),
   };
 
+  // diffEditor colors
+  const diffBackgroundSaturationRatio = 0.15;
+  const diffBackgroundOpacity = 0.1;
+  const inserted = c(theme.levels.success)
+    .alpha(diffBackgroundOpacity)
+    .saturate(diffBackgroundSaturationRatio)
+    .toHex();
+  const removed = c(theme.levels.danger)
+    .alpha(diffBackgroundOpacity)
+    .saturate(diffBackgroundSaturationRatio)
+    .toHex();
+  const unchanged = c(theme.ui.uibackgroundalt).darken(0.01).toHex();
   const diffEditorColors: Partial<VSCodeThemeColors> = {
     "diffEditor.border": theme.ui.border,
     "diffEditor.diagonalFill": c(theme.ui.uibackground).lighten(0.05).toHex(),
-    "diffEditor.insertedLineBackground": c(theme.levels.success)
-      .alpha(0.1)
-      .toHex(),
-    "diffEditor.insertedTextBackground": c(theme.levels.success)
-      .alpha(0.15)
-      .toHex(),
+    "diffEditor.insertedLineBackground": inserted,
+    "diffEditor.insertedTextBackground": inserted,
     "diffEditor.insertedTextBorder": transparent,
     "diffEditor.move.border": c(theme.colors.yellow).alpha(0.3).toHex(),
     "diffEditor.moveActive.border": c(theme.colors.yellow).alpha(0.7).toHex(),
-    "diffEditor.removedLineBackground": c(theme.levels.danger)
-      .alpha(0.1)
-      .toHex(),
-    "diffEditor.removedTextBackground": c(theme.levels.danger)
-      .alpha(0.15)
-      .toHex(),
+    "diffEditor.removedLineBackground": removed,
+    "diffEditor.removedTextBackground": removed,
     "diffEditor.removedTextBorder": transparent,
+    "diffEditor.unchangedCodeBackground": unchanged,
+    "diffEditor.unchangedRegionBackground": unchanged,
+    "diffEditor.unchangedRegionShadow": shadow,
     "diffEditorGutter.insertedLineBackground": transparent,
     "diffEditorGutter.removedLineBackground": transparent,
     "diffEditorOverview.insertedForeground": `${theme.levels.success}25`,
@@ -388,12 +395,12 @@ export default function ui(
     "scmGraph.foreground4": theme.colors.turquoize,
     "scmGraph.foreground5": theme.colors.salmon,
     "scmGraph.historyItemBaseRefColor": theme.colors.purple,
-    "scmGraph.historyItemHoverAdditionsForeground": theme.colors.green,
+    "scmGraph.historyItemHoverAdditionsForeground": theme.levels.success,
     "scmGraph.historyItemHoverDefaultLabelBackground": theme.ui.defaultMain,
     "scmGraph.historyItemHoverDefaultLabelForeground": c(theme.ui.defaultalt)
       .darken(0.4)
       .toHex(),
-    "scmGraph.historyItemHoverDeletionsForeground": theme.colors.red,
+    "scmGraph.historyItemHoverDeletionsForeground": theme.levels.danger,
     "scmGraph.historyItemHoverLabelForeground": c(theme.ui.defaultalt)
       .darken(0.4)
       .toHex(),
