@@ -5,20 +5,6 @@ import * as markup from "./markup";
 import * as prog from "./prog";
 import * as styling from "./styling";
 
-function createScope(
-  scope: string[],
-  foreground: string,
-  fontStyle?: FontStyle,
-): Scope {
-  return {
-    scope,
-    settings: {
-      fontStyle,
-      foreground,
-    },
-  };
-}
-
 export default function syntax(theme: Theme, hc?: boolean): Scope[] {
   return Object.assign([
     createScope(prog.accessors, theme.colors.orange),
@@ -96,4 +82,18 @@ export default function syntax(theme: Theme, hc?: boolean): Scope[] {
     createScope(styling.nums, theme.colors.orange),
     createScope(styling.tag, theme.colors.blue),
   ]);
+}
+
+function createScope(
+  scope: string[],
+  foreground: string,
+  fontStyle?: FontStyle,
+): Scope {
+  return {
+    scope,
+    settings: {
+      fontStyle,
+      foreground,
+    },
+  };
 }

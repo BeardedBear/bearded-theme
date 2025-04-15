@@ -3,17 +3,22 @@
   "displayName": "Bearded Theme",
   "description": "The theme with a long beard.",
   "publisher": "BeardedBear",
-  "version": "9.3.0",
+  "version": "10.0.0",
   "engines": {
     "vscode": "^1.69.0"
   },
   "type": "module",
   "scripts": {
     "build": "vite-node src/index.ts",
-    "build:ext": "vsce package --out ./releases/%npm_package_version%.vsix --no-yarn",
-    "dev": "vite-node src/index.ts -w",
+    "build:ext": "vsce package --out ./releases/$npm_package_version.vsix",
+    "build:env": "tsc load-env.ts --esModuleInterop",
+    "dev": "nodemon --exec \"vite-node src/index.ts\"",
     "fix": "prettier --write ./src/**/*.ts && eslint src/**/*.{vue,ts} --fix",
-    "release": "gh release create v%npm_package_version% --notes-file ./releases/%npm_package_version%.md --generate-notes"
+    "release": "gh release create v$npm_package_version --notes-file ./releases/$npm_package_version.md --generate-notes",
+    "create:release-notes": "vite-node src/create-release-notes.ts",
+    "publish:vscode": "vsce publish --packagePath ./releases/$npm_package_version.vsix",
+    "publish:ovsx": "ovsx publish ./releases/$npm_package_version.vsix -p $OVSX_TOKEN",
+    "publish:all": "npm run build:ext && npm run publish:vscode && npm run publish:ovsx"
   },
   "__metadata": {
     "id": "dffaf5a1-2219-434b-9d87-cb586fd59260",
@@ -373,17 +378,21 @@
     ]
   },
   "dependencies": {
-    "@types/node": "^20.10.5",
+    "@types/node": "^22.14.1",
     "@types/vscode": "^1.85.0",
-    "@typescript-eslint/eslint-plugin": "^6.16.0",
-    "@typescript-eslint/parser": "^6.16.0",
-    "@vscode/vsce": "^2.31.1",
+    "@typescript-eslint/eslint-plugin": "^8.30.0",
+    "@typescript-eslint/parser": "^8.30.0",
+    "@vscode/vsce": "^3.3.2",
     "colord": "^2.9.3",
-    "eslint": "^8.56.0",
-    "eslint-plugin-perfectionist": "^2.5.0",
-    "ovsx": "^0.8.3",
+    "dotenv": "^16.5.0",
+    "eslint": "^9.24.0",
+    "eslint-plugin-perfectionist": "^4.11.0",
+    "ovsx": "^0.10.2",
     "prettier": "^3.1.1",
     "typescript": "^5.3.3",
-    "vite-node": "^0.33.0"
+    "vite-node": "^3.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
   }
 }
