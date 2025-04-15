@@ -375,9 +375,6 @@ export default function ui(
   };
 
   const multiDiffEditorColors: Partial<VSCodeThemeColors> = {
-    "multiDiffEditor.background": c(theme.ui.uibackground)
-      .lighten(0.02)
-      .toHex(),
     "multiDiffEditor.border": theme.ui.border,
     "multiDiffEditor.headerBackground": light
       ? c(theme.ui.uibackground).darken(0.05).toHex()
@@ -385,6 +382,11 @@ export default function ui(
   };
 
   const scmGraphColors: Partial<VSCodeThemeColors> = {
+    "scmGraph.foreground1": theme.colors.blue,
+    "scmGraph.foreground2": theme.colors.pink,
+    "scmGraph.foreground3": theme.colors.greenAlt,
+    "scmGraph.foreground4": theme.colors.turquoize,
+    "scmGraph.foreground5": theme.colors.salmon,
     "scmGraph.historyItemBaseRefColor": theme.colors.purple,
     "scmGraph.historyItemHoverAdditionsForeground": theme.colors.green,
     "scmGraph.historyItemHoverDefaultLabelBackground": theme.ui.defaultMain,
