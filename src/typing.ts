@@ -1,88 +1,7 @@
-export type FontStyle = "bold" | "italic" | "normal";
-
-export interface Scope {
-  scope: string[];
-  settings: {
-    fontStyle?: FontStyle;
-    foreground: string;
-  };
-}
-
-export interface Theme {
-  colors: ThemeColors;
-  levels: ThemeLevels;
-  ui: ThemeUi;
-}
-
-export interface ThemeColors {
-  /**
-   * Color for the functions
-   */
-  blue: string;
-  /**
-   * Color for the strings
-   */
-  green: string;
-  /**
-   * Color for the classes
-   */
-  greenAlt: string;
-  /**
-   * Color for the accessors
-   */
-  orange: string;
-  /**
-   * Color for the functions arguments or decorators
-   */
-  pink: string;
-  /**
-   * Color for typings
-   */
-  purple: string;
-  /**
-   * Color for the constants
-   */
-  red: string;
-  /**
-   * Color for the variables
-   */
-  salmon: string;
-  /**
-   * Color for the storages of type of functions
-   */
-  turquoize: string;
-  /**
-   * Color for the keywords
-   */
-  yellow: string;
-}
-
-export interface ThemeLevels {
-  danger: string;
-  info: string;
-  success: string;
-  warning: string;
-}
-
-export interface ThemeUi {
-  border: string;
-  default: string;
-  defaultalt: string;
-  defaultMain: string;
-  primary: string;
-  primaryalt: string;
-  uibackground: string;
-  uibackgroundalt: string;
-  uibackgroundmid: string;
-}
-
-export type UIKey = VSCodeThemeColors;
-
 /**
- * Represents all available color customization options in a VSCode theme
+ * Represents colors for Activity Bar & Action Bar
  */
-export type VSCodeThemeColors = {
-  // Activity Bar & Action Bar
+export type ActivityBarColors = {
   "actionBar.toggledBackground"?: string;
   "activityBar.activeBackground"?: string;
   "activityBar.activeBorder"?: string;
@@ -104,24 +23,40 @@ export type VSCodeThemeColors = {
   "activityErrorBadge.foreground"?: string;
   "activityWarningBadge.background"?: string;
   "activityWarningBadge.foreground"?: string;
+};
 
-  // Badge
+/**
+ * Represents colors for Badge
+ */
+export type BadgeColors = {
   "badge.background"?: string;
   "badge.foreground"?: string;
+};
 
-  // Banner
+/**
+ * Represents colors for Banner
+ */
+export type BannerColors = {
   "banner.background"?: string;
   "banner.foreground"?: string;
   "banner.iconForeground"?: string;
+};
 
-  // Breadcrumb
+/**
+ * Represents colors for Breadcrumb
+ */
+export type BreadcrumbColors = {
   "breadcrumb.activeSelectionForeground"?: string;
   "breadcrumb.background"?: string;
   "breadcrumb.focusForeground"?: string;
   "breadcrumb.foreground"?: string;
   "breadcrumbPicker.background"?: string;
+};
 
-  // Button
+/**
+ * Represents colors for Button
+ */
+export type ButtonColors = {
   "button.background"?: string;
   "button.border"?: string;
   "button.foreground"?: string;
@@ -130,8 +65,12 @@ export type VSCodeThemeColors = {
   "button.secondaryForeground"?: string;
   "button.secondaryHoverBackground"?: string;
   "button.separator"?: string;
+};
 
-  // Charts
+/**
+ * Represents colors for Charts
+ */
+export type ChartColors = {
   "chart.axis"?: string;
   "chart.guide"?: string;
   "chart.line"?: string;
@@ -143,8 +82,12 @@ export type VSCodeThemeColors = {
   "charts.purple"?: string;
   "charts.red"?: string;
   "charts.yellow"?: string;
+};
 
-  // Chat
+/**
+ * Represents colors for Chat
+ */
+export type ChatColors = {
   "chat.avatarBackground"?: string;
   "chat.avatarForeground"?: string;
   "chat.editedFileForeground"?: string;
@@ -152,15 +95,23 @@ export type VSCodeThemeColors = {
   "chat.requestBorder"?: string;
   "chat.slashCommandBackground"?: string;
   "chat.slashCommandForeground"?: string;
+};
 
-  // Checkbox
+/**
+ * Represents colors for Checkbox
+ */
+export type CheckboxColors = {
   "checkbox.background"?: string;
   "checkbox.border"?: string;
   "checkbox.foreground"?: string;
   "checkbox.selectBackground"?: string;
   "checkbox.selectBorder"?: string;
+};
 
-  // Command Center
+/**
+ * Represents colors for Command Center
+ */
+export type CommandCenterColors = {
   "commandCenter.activeBackground"?: string;
   "commandCenter.activeBorder"?: string;
   "commandCenter.activeForeground"?: string;
@@ -170,16 +121,28 @@ export type VSCodeThemeColors = {
   "commandCenter.foreground"?: string;
   "commandCenter.inactiveBorder"?: string;
   "commandCenter.inactiveForeground"?: string;
+};
 
-  // Comments View
+/**
+ * Represents colors for Comments View
+ */
+export type CommentsViewColors = {
   "commentsView.resolvedIcon"?: string;
   "commentsView.unresolvedIcon"?: string;
+};
 
-  // Contrast
+/**
+ * Represents colors for Contrast
+ */
+export type ContrastColors = {
   contrastActiveBorder?: string;
   contrastBorder?: string;
+};
 
-  // Debug
+/**
+ * Represents colors for Debug
+ */
+export type DebugColors = {
   "debugConsole.errorForeground"?: string;
   "debugConsole.infoForeground"?: string;
   "debugConsole.sourceForeground"?: string;
@@ -216,11 +179,19 @@ export type VSCodeThemeColors = {
   "debugView.stateLabelBackground"?: string;
   "debugView.stateLabelForeground"?: string;
   "debugView.valueChangedHighlight"?: string;
+};
 
-  // Description
+/**
+ * Represents colors for Description
+ */
+export type DescriptionColors = {
   descriptionForeground?: string;
+};
 
-  // Diff Editor
+/**
+ * Represents colors for Diff Editor
+ */
+export type DiffEditorColors = {
   "diffEditor.border"?: string;
   "diffEditor.diagonalFill"?: string;
   "diffEditor.insertedLineBackground"?: string;
@@ -239,17 +210,29 @@ export type VSCodeThemeColors = {
   "diffEditorGutter.removedLineBackground"?: string;
   "diffEditorOverview.insertedForeground"?: string;
   "diffEditorOverview.removedForeground"?: string;
+};
 
-  // Disabled
+/**
+ * Represents colors for Disabled
+ */
+export type DisabledColors = {
   disabledForeground?: string;
+};
 
-  // Dropdown
+/**
+ * Represents colors for Dropdown
+ */
+export type DropdownColors = {
   "dropdown.background"?: string;
   "dropdown.border"?: string;
   "dropdown.foreground"?: string;
   "dropdown.listBackground"?: string;
+};
 
-  // Editor
+/**
+ * Represents colors for Editor
+ */
+export type EditorColors = {
   "editor.background"?: string;
   "editor.compositionBorder"?: string;
   "editor.findMatchBackground"?: string;
@@ -448,8 +431,12 @@ export type VSCodeThemeColors = {
   "editorWidget.border"?: string;
   "editorWidget.foreground"?: string;
   "editorWidget.resizeBorder"?: string;
+};
 
-  // Error
+/**
+ * Represents colors for Error
+ */
+export type ErrorColors = {
   errorForeground?: string;
   "errorLens.errorBackground"?: string;
   "errorLens.errorBackgroundLight"?: string;
@@ -481,8 +468,12 @@ export type VSCodeThemeColors = {
   "errorLens.warningForegroundLight"?: string;
   "errorLens.warningMessageBackground"?: string;
   "errorLens.warningRangeBackground"?: string;
+};
 
-  // Extension
+/**
+ * Represents colors for Extension
+ */
+export type ExtensionColors = {
   "extensionBadge.remoteBackground"?: string;
   "extensionBadge.remoteForeground"?: string;
   "extensionButton.background"?: string;
@@ -497,12 +488,14 @@ export type VSCodeThemeColors = {
   "extensionIcon.sponsorForeground"?: string;
   "extensionIcon.starForeground"?: string;
   "extensionIcon.verifiedForeground"?: string;
+};
 
-  // Other Controls
-  focusBorder?: string;
-  foreground?: string;
+export type FontStyle = "bold" | "italic" | "normal";
 
-  // Gauge
+/**
+ * Represents colors for Gauge
+ */
+export type GaugeColors = {
   "gauge.background"?: string;
   "gauge.border"?: string;
   "gauge.errorBackground"?: string;
@@ -510,8 +503,20 @@ export type VSCodeThemeColors = {
   "gauge.foreground"?: string;
   "gauge.warningBackground"?: string;
   "gauge.warningForeground"?: string;
+};
 
-  // Git
+/**
+ * Represents general control colors
+ */
+export type GeneralControlColors = {
+  focusBorder?: string;
+  foreground?: string;
+};
+
+/**
+ * Represents colors for Git
+ */
+export type GitColors = {
   "git.blame.editorDecorationForeground"?: string;
   "gitDecoration.addedResourceForeground"?: string;
   "gitDecoration.conflictingResourceForeground"?: string;
@@ -523,11 +528,19 @@ export type VSCodeThemeColors = {
   "gitDecoration.stageModifiedResourceForeground"?: string;
   "gitDecoration.submoduleResourceForeground"?: string;
   "gitDecoration.untrackedResourceForeground"?: string;
+};
 
-  // Icon
+/**
+ * Represents colors for Icon
+ */
+export type IconColors = {
   "icon.foreground"?: string;
+};
 
-  // Inline Chat & Edit
+/**
+ * Represents colors for Inline Chat & Edit
+ */
+export type InlineChatAndEditColors = {
   "inlineChat.background"?: string;
   "inlineChat.border"?: string;
   "inlineChat.foreground"?: string;
@@ -558,20 +571,32 @@ export type VSCodeThemeColors = {
   "inlineEdit.originalChangedTextBackground"?: string;
   "inlineEdit.tabWillAcceptModifiedBorder"?: string;
   "inlineEdit.tabWillAcceptOriginalBorder"?: string;
+};
 
-  // Input
+/**
+ * Represents colors for Input
+ */
+export type InputColors = {
   "input.background"?: string;
   "input.border"?: string;
   "input.foreground"?: string;
   "input.placeholderForeground"?: string;
+};
 
-  // InputOption
+/**
+ * Represents colors for InputOption
+ */
+export type InputOptionColors = {
   "inputOption.activeBackground"?: string;
   "inputOption.activeBorder"?: string;
   "inputOption.activeForeground"?: string;
   "inputOption.hoverBackground"?: string;
+};
 
-  // InputValidation
+/**
+ * Represents colors for InputValidation
+ */
+export type InputValidationColors = {
   "inputValidation.errorBackground"?: string;
   "inputValidation.errorBorder"?: string;
   "inputValidation.errorForeground"?: string;
@@ -581,25 +606,41 @@ export type VSCodeThemeColors = {
   "inputValidation.warningBackground"?: string;
   "inputValidation.warningBorder"?: string;
   "inputValidation.warningForeground"?: string;
+};
 
-  // Interactive
+/**
+ * Represents colors for Interactive
+ */
+export type InteractiveColors = {
   "interactive.activeCodeBorder"?: string;
   "interactive.inactiveCodeBorder"?: string;
+};
 
-  // Issues
+/**
+ * Represents colors for Issues
+ */
+export type IssuesColors = {
   "issues.closed"?: string;
   "issues.newIssueDecoration"?: string;
   "issues.open"?: string;
+};
 
-  // KeyBinding
+/**
+ * Represents colors for KeyBinding
+ */
+export type KeyBindingColors = {
   "keybindingLabel.background"?: string;
   "keybindingLabel.border"?: string;
   "keybindingLabel.bottomBorder"?: string;
   "keybindingLabel.foreground"?: string;
   "keybindingTable.headerBackground"?: string;
   "keybindingTable.rowsBackground"?: string;
+};
 
-  // List
+/**
+ * Represents colors for List
+ */
+export type ListColors = {
   "list.activeSelectionBackground"?: string;
   "list.activeSelectionForeground"?: string;
   "list.activeSelectionIconForeground"?: string;
@@ -628,8 +669,12 @@ export type VSCodeThemeColors = {
   "listFilterWidget.noMatchesOutline"?: string;
   "listFilterWidget.outline"?: string;
   "listFilterWidget.shadow"?: string;
+};
 
-  // Menu
+/**
+ * Represents colors for Menu
+ */
+export type MenuColors = {
   "menu.background"?: string;
   "menu.border"?: string;
   "menu.foreground"?: string;
@@ -640,8 +685,12 @@ export type VSCodeThemeColors = {
   "menubar.selectionBackground"?: string;
   "menubar.selectionBorder"?: string;
   "menubar.selectionForeground"?: string;
+};
 
-  // Merge
+/**
+ * Represents colors for Merge
+ */
+export type MergeColors = {
   "merge.border"?: string;
   "merge.commonContentBackground"?: string;
   "merge.commonHeaderBackground"?: string;
@@ -662,8 +711,12 @@ export type VSCodeThemeColors = {
   "mergeEditor.conflict.unhandledFocused.border"?: string;
   "mergeEditor.conflict.unhandledUnfocused.border"?: string;
   "mergeEditor.conflictingLines.background"?: string;
+};
 
-  // Minimap
+/**
+ * Represents colors for Minimap
+ */
+export type MinimapColors = {
   "minimap.background"?: string;
   "minimap.chatEditHighlight"?: string;
   "minimap.errorHighlight"?: string;
@@ -679,13 +732,21 @@ export type VSCodeThemeColors = {
   "minimapSlider.activeBackground"?: string;
   "minimapSlider.background"?: string;
   "minimapSlider.hoverBackground"?: string;
+};
 
-  // Multi Diff Editor
+/**
+ * Represents colors for Multi Diff Editor
+ */
+export type MultiDiffEditorColors = {
   "multiDiffEditor.background"?: string;
   "multiDiffEditor.border"?: string;
   "multiDiffEditor.headerBackground"?: string;
+};
 
-  // Notebook
+/**
+ * Represents colors for Notebook
+ */
+export type NotebookColors = {
   "notebook.cellBorderColor"?: string;
   "notebook.cellEditorBackground"?: string;
   "notebook.cellHoverBackground"?: string;
@@ -710,8 +771,12 @@ export type VSCodeThemeColors = {
   "notebookStatusErrorIcon.foreground"?: string;
   "notebookStatusRunningIcon.foreground"?: string;
   "notebookStatusSuccessIcon.foreground"?: string;
+};
 
-  // Notifications
+/**
+ * Represents colors for Notifications
+ */
+export type NotificationsColors = {
   "notificationCenter.border"?: string;
   "notificationCenterHeader.background"?: string;
   "notificationCenterHeader.foreground"?: string;
@@ -723,12 +788,20 @@ export type VSCodeThemeColors = {
   "notificationsInfoIcon.foreground"?: string;
   "notificationsWarningIcon.foreground"?: string;
   "notificationToast.border"?: string;
+};
 
-  // Output View
+/**
+ * Represents colors for Output View
+ */
+export type OutputViewColors = {
   "outputView.background"?: string;
   "outputViewStickyScroll.background"?: string;
+};
 
-  // Panel
+/**
+ * Represents colors for Panel
+ */
+export type PanelColors = {
   "panel.background"?: string;
   "panel.border"?: string;
   "panel.dropBackground"?: string;
@@ -748,8 +821,12 @@ export type VSCodeThemeColors = {
   "panelTitle.inactiveForeground"?: string;
   "panelTitleBadge.background"?: string;
   "panelTitleBadge.foreground"?: string;
+};
 
-  // PeekView
+/**
+ * Represents colors for PeekView
+ */
+export type PeekViewColors = {
   "peekView.border"?: string;
   "peekViewEditor.background"?: string;
   "peekViewEditor.matchHighlightBackground"?: string;
@@ -765,42 +842,74 @@ export type VSCodeThemeColors = {
   "peekViewTitle.background"?: string;
   "peekViewTitleDescription.foreground"?: string;
   "peekViewTitleLabel.foreground"?: string;
+};
 
-  // PickerGroup
+/**
+ * Represents colors for PickerGroup
+ */
+export type PickerGroupColors = {
   "pickerGroup.border"?: string;
   "pickerGroup.foreground"?: string;
+};
 
-  // Ports
+/**
+ * Represents colors for Ports
+ */
+export type PortsColors = {
   "ports.iconRunningProcessForeground"?: string;
+};
 
-  // Problems
+/**
+ * Represents colors for Problems
+ */
+export type ProblemsColors = {
   "problemsErrorIcon.foreground"?: string;
   "problemsInfoIcon.foreground"?: string;
   "problemsWarningIcon.foreground"?: string;
+};
 
-  // Profile
+/**
+ * Represents colors for Profile
+ */
+export type ProfileColors = {
   "profileBadge.background"?: string;
   "profileBadge.foreground"?: string;
   "profiles.sashBorder"?: string;
+};
 
-  // ProgressBar
+/**
+ * Represents colors for ProgressBar
+ */
+export type ProgressBarColors = {
   "progressBar.background"?: string;
+};
 
-  // Pull Requests
+/**
+ * Represents colors for Pull Requests
+ */
+export type PullRequestsColors = {
   "pullRequests.draft"?: string;
   "pullRequests.merged"?: string;
   "pullRequests.notification"?: string;
   "pullRequests.open"?: string;
+};
 
-  // QuickInput
+/**
+ * Represents colors for QuickInput
+ */
+export type QuickInputColors = {
   "quickInput.background"?: string;
   "quickInput.foreground"?: string;
   "quickInputList.focusBackground"?: string;
   "quickInputList.focusForeground"?: string;
   "quickInputList.focusIconForeground"?: string;
   "quickInputTitle.background"?: string;
+};
 
-  // Radio
+/**
+ * Represents colors for Radio
+ */
+export type RadioColors = {
   "radio.activeBackground"?: string;
   "radio.activeBorder"?: string;
   "radio.activeForeground"?: string;
@@ -808,11 +917,19 @@ export type VSCodeThemeColors = {
   "radio.inactiveBorder"?: string;
   "radio.inactiveForeground"?: string;
   "radio.inactiveHoverBackground"?: string;
+};
 
-  // Sash
+/**
+ * Represents colors for Sash
+ */
+export type SashColors = {
   "sash.hoverBorder"?: string;
+};
 
-  // SCM Graph
+/**
+ * Represents colors for SCM Graph
+ */
+export type SCMGraphColors = {
   "scmGraph.foreground1"?: string;
   "scmGraph.foreground2"?: string;
   "scmGraph.foreground3"?: string;
@@ -826,23 +943,47 @@ export type VSCodeThemeColors = {
   "scmGraph.historyItemHoverLabelForeground"?: string;
   "scmGraph.historyItemRefColor"?: string;
   "scmGraph.historyItemRemoteRefColor"?: string;
+};
 
-  // ScrollBar
+export interface Scope {
+  scope: string[];
+  settings: {
+    fontStyle?: FontStyle;
+    foreground: string;
+  };
+}
+
+/**
+ * Represents colors for ScrollBar
+ */
+export type ScrollBarColors = {
   "scrollbar.shadow"?: string;
   "scrollbarSlider.activeBackground"?: string;
   "scrollbarSlider.background"?: string;
   "scrollbarSlider.hoverBackground"?: string;
+};
 
-  // Search
+/**
+ * Represents colors for Search
+ */
+export type SearchColors = {
   "search.resultsInfoForeground"?: string;
   "searchEditor.findMatchBackground"?: string;
   "searchEditor.findMatchBorder"?: string;
   "searchEditor.textInputBorder"?: string;
+};
 
-  // Selection
+/**
+ * Represents colors for Selection
+ */
+export type SelectionColors = {
   "selection.background"?: string;
+};
 
-  // Settings
+/**
+ * Represents colors for Settings
+ */
+export type SettingsColors = {
   "settings.checkboxBackground"?: string;
   "settings.checkboxBorder"?: string;
   "settings.checkboxForeground"?: string;
@@ -864,8 +1005,12 @@ export type VSCodeThemeColors = {
   "settings.textInputBackground"?: string;
   "settings.textInputBorder"?: string;
   "settings.textInputForeground"?: string;
+};
 
-  // SideBar
+/**
+ * Represents colors for SideBar
+ */
+export type SideBarColors = {
   "sideBar.background"?: string;
   "sideBar.border"?: string;
   "sideBar.dropBackground"?: string;
@@ -883,8 +1028,12 @@ export type VSCodeThemeColors = {
   "sideBySideEditor.horizontalBorder"?: string;
   "sideBySideEditor.verticalBorder"?: string;
   "simpleFindWidget.sashBorder"?: string;
+};
 
-  // StatusBar
+/**
+ * Represents colors for StatusBar
+ */
+export type StatusBarColors = {
   "statusBar.background"?: string;
   "statusBar.border"?: string;
   "statusBar.debuggingBackground"?: string;
@@ -920,8 +1069,12 @@ export type VSCodeThemeColors = {
   "statusBarItem.warningForeground"?: string;
   "statusBarItem.warningHoverBackground"?: string;
   "statusBarItem.warningHoverForeground"?: string;
+};
 
-  // Symbol Icons
+/**
+ * Represents colors for Symbol Icons
+ */
+export type SymbolIconColors = {
   "symbolIcon.arrayForeground"?: string;
   "symbolIcon.booleanForeground"?: string;
   "symbolIcon.classForeground"?: string;
@@ -955,8 +1108,12 @@ export type VSCodeThemeColors = {
   "symbolIcon.typeParameterForeground"?: string;
   "symbolIcon.unitForeground"?: string;
   "symbolIcon.variableForeground"?: string;
+};
 
-  // Tab
+/**
+ * Represents colors for Tab
+ */
+export type TabColors = {
   "tab.activeBackground"?: string;
   "tab.activeBorder"?: string;
   "tab.activeBorderTop"?: string;
@@ -984,8 +1141,12 @@ export type VSCodeThemeColors = {
   "tab.unfocusedHoverForeground"?: string;
   "tab.unfocusedInactiveForeground"?: string;
   "tab.unfocusedInactiveModifiedBorder"?: string;
+};
 
-  // Terminal
+/**
+ * Represents colors for Terminal
+ */
+export type TerminalColors = {
   "terminal.ansiBlack"?: string;
   "terminal.ansiBlue"?: string;
   "terminal.ansiBrightBlack"?: string;
@@ -1037,8 +1198,12 @@ export type VSCodeThemeColors = {
   "terminalSymbolIcon.methodForeground"?: string;
   "terminalSymbolIcon.optionForeground"?: string;
   "terminalSymbolIcon.optionValueForeground"?: string;
+};
 
-  // Testing
+/**
+ * Represents colors for Testing
+ */
+export type TestingColors = {
   "testing.coverCountBadgeBackground"?: string;
   "testing.coverCountBadgeForeground"?: string;
   "testing.coveredBackground"?: string;
@@ -1071,8 +1236,12 @@ export type VSCodeThemeColors = {
   "testing.uncoveredBorder"?: string;
   "testing.uncoveredBranchBackground"?: string;
   "testing.uncoveredGutterBackground"?: string;
+};
 
-  // Text
+/**
+ * Represents colors for Text
+ */
+export type TextColors = {
   "textBlockQuote.background"?: string;
   "textBlockQuote.border"?: string;
   "textCodeBlock.background"?: string;
@@ -1081,42 +1250,210 @@ export type VSCodeThemeColors = {
   "textPreformat.background"?: string;
   "textPreformat.foreground"?: string;
   "textSeparator.foreground"?: string;
+};
 
-  // TitleBar
+export interface Theme {
+  colors: ThemeColors;
+  levels: ThemeLevels;
+  ui: ThemeUi;
+}
+
+export interface ThemeColors {
+  /**
+   * Color for the functions
+   */
+  blue: string;
+  /**
+   * Color for the strings
+   */
+  green: string;
+  /**
+   * Color for the classes
+   */
+  greenAlt: string;
+  /**
+   * Color for the accessors
+   */
+  orange: string;
+  /**
+   * Color for the functions arguments or decorators
+   */
+  pink: string;
+  /**
+   * Color for typings
+   */
+  purple: string;
+  /**
+   * Color for the constants
+   */
+  red: string;
+  /**
+   * Color for the variables
+   */
+  salmon: string;
+  /**
+   * Color for the storages of type of functions
+   */
+  turquoize: string;
+  /**
+   * Color for the keywords
+   */
+  yellow: string;
+}
+
+export interface ThemeLevels {
+  danger: string;
+  info: string;
+  success: string;
+  warning: string;
+}
+
+export interface ThemeUi {
+  border: string;
+  default: string;
+  defaultalt: string;
+  defaultMain: string;
+  primary: string;
+  primaryalt: string;
+  uibackground: string;
+  uibackgroundalt: string;
+  uibackgroundmid: string;
+}
+
+/**
+ * Represents colors for TitleBar
+ */
+export type TitleBarColors = {
   "titleBar.activeBackground"?: string;
   "titleBar.activeForeground"?: string;
   "titleBar.border"?: string;
   "titleBar.inactiveBackground"?: string;
   "titleBar.inactiveForeground"?: string;
+};
 
-  // Toolbar
+/**
+ * Represents colors for Toolbar
+ */
+export type ToolbarColors = {
   "toolbar.activeBackground"?: string;
   "toolbar.hoverBackground"?: string;
   "toolbar.hoverOutline"?: string;
+};
 
-  // Tree
+/**
+ * Represents colors for Tree
+ */
+export type TreeColors = {
   "tree.inactiveIndentGuidesStroke"?: string;
   "tree.indentGuidesStroke"?: string;
   "tree.tableColumnsBorder"?: string;
   "tree.tableOddRowsBackground"?: string;
+};
 
-  // WalkThrough
+/**
+ * Represents all available color customization options in a VSCode theme
+ */
+export type VSCodeThemeColors = ActivityBarColors &
+  BadgeColors &
+  BannerColors &
+  BreadcrumbColors &
+  ButtonColors &
+  ChartColors &
+  ChatColors &
+  CheckboxColors &
+  CommandCenterColors &
+  CommentsViewColors &
+  ContrastColors &
+  DebugColors &
+  DescriptionColors &
+  DiffEditorColors &
+  DisabledColors &
+  DropdownColors &
+  EditorColors &
+  ErrorColors &
+  ExtensionColors &
+  GaugeColors &
+  GeneralControlColors &
+  GitColors &
+  IconColors &
+  InlineChatAndEditColors &
+  InputColors &
+  InputOptionColors &
+  InputValidationColors &
+  InteractiveColors &
+  IssuesColors &
+  KeyBindingColors &
+  ListColors &
+  MenuColors &
+  MergeColors &
+  MinimapColors &
+  MultiDiffEditorColors &
+  NotebookColors &
+  NotificationsColors &
+  OutputViewColors &
+  PanelColors &
+  PeekViewColors &
+  PickerGroupColors &
+  PortsColors &
+  ProblemsColors &
+  ProfileColors &
+  ProgressBarColors &
+  PullRequestsColors &
+  QuickInputColors &
+  RadioColors &
+  SashColors &
+  SCMGraphColors &
+  ScrollBarColors &
+  SearchColors &
+  SelectionColors &
+  SettingsColors &
+  SideBarColors &
+  StatusBarColors &
+  SymbolIconColors &
+  TabColors &
+  TerminalColors &
+  TestingColors &
+  TextColors &
+  TitleBarColors &
+  ToolbarColors &
+  TreeColors &
+  WalkThroughColors &
+  WelcomePageColors &
+  WidgetColors &
+  WindowColors;
+
+/**
+ * Represents colors for WalkThrough
+ */
+export type WalkThroughColors = {
   "walkThrough.embeddedEditorBackground"?: string;
   "walkthrough.stepTitle.foreground"?: string;
+};
 
-  // WelcomePage
+/**
+ * Represents colors for WelcomePage
+ */
+export type WelcomePageColors = {
   "welcomePage.background"?: string;
   "welcomePage.progress.background"?: string;
   "welcomePage.progress.foreground"?: string;
   "welcomePage.tileBackground"?: string;
   "welcomePage.tileBorder"?: string;
   "welcomePage.tileHoverBackground"?: string;
+};
 
-  // Widget
+/**
+ * Represents colors for Widget
+ */
+export type WidgetColors = {
   "widget.border"?: string;
   "widget.shadow"?: string;
+};
 
-  // Window
+/**
+ * Represents colors for Window
+ */
+export type WindowColors = {
   "window.activeBorder"?: string;
   "window.inactiveBorder"?: string;
 };
