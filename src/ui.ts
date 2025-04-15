@@ -119,8 +119,8 @@ export default function ui(
       ? c(theme.ui.uibackground).darken(0.2).toHex()
       : c(theme.ui.uibackground).lighten(0.2).toHex(),
     foreground: theme.ui.defaultMain,
-    "icon.foreground": `${theme.ui.defaultMain}AA`,
-    "selection.background": `${theme.ui.primary}60`,
+    "icon.foreground": c(theme.ui.defaultMain).alpha(0.67).toHex(),
+    "selection.background": c(theme.ui.primary).alpha(0.38).toHex(),
   };
 
   const activityBarColors: ActivityBarColors = {
@@ -195,10 +195,13 @@ export default function ui(
   const checkboxColors: CheckboxColors = {
     "checkbox.foreground": theme.ui.default,
   };
-
   const commandCenterColors: CommandCenterColors = {
-    "commandCenter.activeBackground": `${theme.ui.primaryalt}60`,
-    "commandCenter.activeForeground": `${theme.ui.defaultMain}90`,
+    "commandCenter.activeBackground": c(theme.ui.primaryalt)
+      .alpha(0.38)
+      .toHex(),
+    "commandCenter.activeForeground": c(theme.ui.defaultMain)
+      .alpha(0.56)
+      .toHex(),
     "commandCenter.background": theme.ui.uibackground,
     "commandCenter.border": theme.ui.border,
     "commandCenter.foreground": theme.ui.defaultalt,
@@ -258,8 +261,12 @@ export default function ui(
     "diffEditor.unchangedRegionShadow": shadow,
     "diffEditorGutter.insertedLineBackground": transparent,
     "diffEditorGutter.removedLineBackground": transparent,
-    "diffEditorOverview.insertedForeground": `${theme.levels.success}25`,
-    "diffEditorOverview.removedForeground": `${theme.levels.danger}30`,
+    "diffEditorOverview.insertedForeground": c(theme.levels.success)
+      .alpha(0.15)
+      .toHex(),
+    "diffEditorOverview.removedForeground": c(theme.levels.danger)
+      .alpha(0.19)
+      .toHex(),
   };
 
   const dropdownColors: DropdownColors = {
@@ -271,8 +278,8 @@ export default function ui(
 
   const editorColors: EditorColors = {
     "editor.background": theme.ui.uibackground,
-    "editor.findMatchBackground": `${theme.ui.primary}30`,
-    "editor.findMatchBorder": `${theme.ui.primary}60`,
+    "editor.findMatchBackground": c(theme.ui.primary).alpha(0.19).toHex(),
+    "editor.findMatchBorder": c(theme.ui.primary).alpha(0.38).toHex(),
     "editor.findMatchHighlightBackground": createSelectionColor(0.8),
     "editor.findMatchHighlightBorder": createSelectionColor(1.2),
     "editor.foldBackground": light
@@ -291,7 +298,9 @@ export default function ui(
     "editor.rangeHighlightBackground": createSelectionColor(0.8),
     "editor.selectionBackground": createSelectionColor(1),
     "editor.selectionForeground": theme.ui.default,
-    "editor.selectionHighlightBackground": `${theme.ui.primary}15`,
+    "editor.selectionHighlightBackground": c(theme.ui.primary)
+      .alpha(0.08)
+      .toHex(),
     "editor.selectionHighlightBorder": createSelectionColor(1),
     "editor.wordHighlightBackground": light
       ? createSelectionColor(0.4)
@@ -319,16 +328,16 @@ export default function ui(
     "editorGhostText.border": transparent,
     "editorGhostText.foreground": theme.ui.default + 70,
     "editorGroup.border": theme.ui.border,
-    "editorGroup.dropBackground": `${theme.ui.primary}15`,
+    "editorGroup.dropBackground": c(theme.ui.primary).alpha(0.08).toHex(),
     "editorGroupHeader.border": transparent,
     "editorGroupHeader.noTabsBackground": theme.ui.uibackground,
     "editorGroupHeader.tabsBackground": theme.ui.uibackgroundalt,
     "editorGroupHeader.tabsBorder": theme.ui.border,
-    "editorGutter.addedBackground": `${theme.levels.success}cc`,
+    "editorGutter.addedBackground": c(theme.levels.success).alpha(0.8).toHex(),
     "editorGutter.background": theme.ui.uibackground,
     "editorGutter.commentRangeForeground": theme.ui.primaryalt,
-    "editorGutter.deletedBackground": `${theme.levels.danger}cc`,
-    "editorGutter.modifiedBackground": `${theme.levels.info}cc`,
+    "editorGutter.deletedBackground": c(theme.levels.danger).alpha(0.8).toHex(),
+    "editorGutter.modifiedBackground": c(theme.levels.info).alpha(0.8).toHex(),
     "editorHoverWidget.background": theme.ui.primaryalt,
     "editorHoverWidget.border": theme.ui.border,
     "editorIndentGuide.activeBackground1": hc
@@ -351,9 +360,15 @@ export default function ui(
       .toHex(),
     "editorLink.activeForeground": theme.ui.default,
     "editorMarkerNavigation.background": theme.ui.uibackgroundalt,
-    "editorMarkerNavigationError.background": `${theme.levels.danger}90`,
-    "editorMarkerNavigationInfo.background": `${theme.levels.info}90`,
-    "editorMarkerNavigationWarning.background": `${theme.levels.warning}90`,
+    "editorMarkerNavigationError.background": c(theme.levels.danger)
+      .alpha(0.56)
+      .toHex(),
+    "editorMarkerNavigationInfo.background": c(theme.levels.info)
+      .alpha(0.56)
+      .toHex(),
+    "editorMarkerNavigationWarning.background": c(theme.levels.warning)
+      .alpha(0.56)
+      .toHex(),
     "editorOverviewRuler.addedForeground": c(theme.levels.success)
       .alpha(0.5)
       .toHex(),
@@ -396,12 +411,12 @@ export default function ui(
     "editorUnnecessaryCode.opacity": "#000000aa",
     "editorWarning.border": transparent,
     "editorWarning.foreground": theme.colors.yellow,
-    "editorWhitespace.foreground": `${theme.ui.defaultalt}60`,
+    "editorWhitespace.foreground": c(theme.ui.defaultalt).alpha(0.376).toHex(),
     "editorWidget.background": theme.ui.primaryalt,
     "editorWidget.border": light
       ? c(theme.ui.uibackground).darken(0.1).toHex()
       : c(theme.ui.uibackground).lighten(0.1).toHex(),
-    "editorWidget.resizeBorder": `${theme.ui.primary}50`,
+    "editorWidget.resizeBorder": c(theme.ui.primary).alpha(0.314).toHex(),
   };
 
   const errorLensColors: ErrorColors = {
@@ -417,7 +432,9 @@ export default function ui(
       ? c(theme.ui.primary).darken(0.5).toHex()
       : c(theme.ui.primary).lighten(0.22).toHex(),
     "extensionButton.hoverBackground": c(theme.ui.primary).alpha(0.6).toHex(),
-    "extensionButton.prominentBackground": `${theme.ui.primary}9d`,
+    "extensionButton.prominentBackground": c(theme.ui.primary)
+      .alpha(0.616)
+      .toHex(),
     "extensionButton.prominentForeground": theme.ui.default,
     "extensionButton.prominentHoverBackground": theme.ui.primary,
   };
@@ -516,9 +533,9 @@ export default function ui(
       ? c(theme.ui.defaultalt).alpha(0.2).toHex()
       : c(theme.ui.primaryalt).lighten(0.1).alpha(0.45).toHex(),
     "list.activeSelectionForeground": theme.ui.default,
-    "list.dropBackground": `${theme.ui.primary}15`,
+    "list.dropBackground": c(theme.ui.primary).alpha(0.082).toHex(),
     "list.errorForeground": theme.levels.danger,
-    "list.focusBackground": `${theme.ui.primary}40`,
+    "list.focusBackground": c(theme.ui.primary).alpha(0.25).toHex(),
     "list.focusForeground": theme.ui.defaultMain,
     "list.highlightForeground": theme.colors.yellow,
     "list.hoverBackground": light
@@ -543,19 +560,24 @@ export default function ui(
     "menu.selectionForeground": light
       ? theme.ui.defaultMain
       : c(theme.ui.primaryalt).lighten(0.8).desaturate(0.1).toHex(),
-    "menu.separatorBackground": theme.ui.border + 65,
+    "menu.separatorBackground": c(theme.ui.border).alpha(0.396).toHex(),
     "menubar.selectionBackground": theme.ui.primaryalt,
     "menubar.selectionForeground": theme.ui.defaultMain,
   };
-
   const mergeColors: MergeColors = {
     "merge.border": theme.ui.border,
-    "merge.commonContentBackground": `${theme.colors.yellow}30`,
-    "merge.commonHeaderBackground": `${theme.colors.yellow}80`,
-    "merge.currentContentBackground": `${theme.levels.success}30`,
-    "merge.currentHeaderBackground": `${theme.levels.success}80`,
-    "merge.incomingContentBackground": `${theme.levels.info}30`,
-    "merge.incomingHeaderBackground": `${theme.levels.info}80`,
+    "merge.commonContentBackground": c(theme.colors.yellow)
+      .alpha(0.188)
+      .toHex(),
+    "merge.commonHeaderBackground": c(theme.colors.yellow).alpha(0.5).toHex(),
+    "merge.currentContentBackground": c(theme.levels.success)
+      .alpha(0.188)
+      .toHex(),
+    "merge.currentHeaderBackground": c(theme.levels.success).alpha(0.5).toHex(),
+    "merge.incomingContentBackground": c(theme.levels.info)
+      .alpha(0.188)
+      .toHex(),
+    "merge.incomingHeaderBackground": c(theme.levels.info).alpha(0.5).toHex(),
   };
 
   const minimapColors: MinimapColors = {
@@ -605,7 +627,9 @@ export default function ui(
   const peekViewColors: PeekViewColors = {
     "peekView.border": theme.ui.border,
     "peekViewEditor.background": c(theme.ui.uibackground).lighten(0.04).toHex(),
-    "peekViewEditor.matchHighlightBackground": `${theme.ui.primaryalt}40`,
+    "peekViewEditor.matchHighlightBackground": c(theme.ui.primaryalt)
+      .alpha(0.25)
+      .toHex(),
     "peekViewEditor.matchHighlightBorder": transparent,
     "peekViewEditorGutter.background": c(theme.ui.uibackground)
       .lighten(0.04)
@@ -658,9 +682,8 @@ export default function ui(
     "quickInputList.focusIconForeground": theme.ui.defaultalt,
     "quickInputTitle.background": theme.ui.uibackgroundalt,
   };
-
   const sashColors: SashColors = {
-    "sash.hoverBorder": `${theme.ui.primary}50`,
+    "sash.hoverBorder": c(theme.ui.primary).alpha(0.314).toHex(),
   };
 
   const scrollbarColors: ScrollBarColors = {
@@ -674,11 +697,10 @@ export default function ui(
     "settings.headerForeground": theme.ui.primary,
     "settings.modifiedItemIndicator": theme.ui.primary,
   };
-
   const sideBarColors: SideBarColors = {
     "sideBar.background": theme.ui.uibackgroundalt,
     "sideBar.border": theme.ui.border,
-    "sideBar.foreground": `${theme.ui.defaultMain}CC`,
+    "sideBar.foreground": c(theme.ui.defaultMain).alpha(0.8).toHex(),
     "sideBarSectionHeader.background": theme.ui.uibackgroundalt,
     "sideBarSectionHeader.border": theme.ui.border,
     "sideBarSectionHeader.foreground": theme.ui.default,
@@ -795,11 +817,10 @@ export default function ui(
       .lighten(0.03)
       .toHex(),
   };
-
   const textColors: TextColors = {
-    "textBlockQuote.background": `${theme.levels.info}34`,
-    "textBlockQuote.border": `${theme.levels.info}b9`,
-    "textCodeBlock.background": `${theme.levels.info}34`,
+    "textBlockQuote.background": c(theme.levels.info).alpha(0.2).toHex(),
+    "textBlockQuote.border": c(theme.levels.info).alpha(0.725).toHex(),
+    "textCodeBlock.background": c(theme.levels.info).alpha(0.2).toHex(),
     "textLink.activeForeground": theme.levels.info,
     "textLink.foreground": theme.levels.info,
     "textPreformat.background": light
@@ -818,15 +839,14 @@ export default function ui(
     "titleBar.inactiveBackground": c(theme.ui.border).lighten(0.02).toHex(),
     "titleBar.inactiveForeground": theme.ui.defaultalt,
   };
-
   const toolbarColors: ToolbarColors = {
     "toolbar.hoverBackground": hc
-      ? theme.ui.defaultMain + 40
-      : theme.ui.defaultalt + 60,
+      ? c(theme.ui.defaultMain).alpha(0.25).toHex()
+      : c(theme.ui.defaultalt).alpha(0.376).toHex(),
   };
 
   const treeColors: TreeColors = {
-    "tree.indentGuidesStroke": theme.ui.defaultalt + 70,
+    "tree.indentGuidesStroke": c(theme.ui.defaultalt).alpha(0.439).toHex(),
   };
 
   const walkThroughColors: WalkThroughColors = {
