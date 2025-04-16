@@ -10,14 +10,14 @@
   "type": "module",
   "scripts": {
     "build": "vite-node src/index.ts",
-    "build:ext": "vsce package --out ./releases/$npm_package_version.vsix",
+    "build:ext": "vsce package --out ./releases/%npm_package_version%.vsix",
     "build:env": "tsc load-env.ts --esModuleInterop",
     "dev": "nodemon --exec \"vite-node src/index.ts\"",
     "fix": "prettier --write ./src/**/*.ts && eslint src/**/*.{vue,ts} --fix",
-    "release": "gh release create v$npm_package_version --notes-file ./releases/$npm_package_version.md --generate-notes",
+    "release": "gh release create v%npm_package_version% --notes-file ./releases/%npm_package_version%.md --generate-notes",
     "create:release-notes": "vite-node src/create-release-notes.ts",
-    "publish:vscode": "vsce publish --packagePath ./releases/$npm_package_version.vsix",
-    "publish:ovsx": "ovsx publish ./releases/$npm_package_version.vsix -p $OVSX_TOKEN",
+    "publish:vscode": "vsce publish --packagePath ./releases/%npm_package_version%.vsix",
+    "publish:ovsx": "ovsx publish ./releases/%npm_package_version%.vsix -p $OVSX_TOKEN",
     "publish:all": "npm run build:ext && npm run publish:vscode && npm run publish:ovsx"
   },
   "__metadata": {

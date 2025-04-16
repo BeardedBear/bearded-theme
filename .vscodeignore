@@ -9,4 +9,6 @@ vsc-extension-quickstart.md
 **/*.ts
 save/**
 node_modules
+assets/themes.png
+releases/**
 
