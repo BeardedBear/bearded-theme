@@ -106,7 +106,6 @@ export default function ui(
     ? c("#000000").alpha(0.05).toHex()
     : c("#000000").alpha(0.2).toHex();
 
-  // Group UI elements by category for better organization
   const baseColors: Partial<VSCodeThemeColors> = {
     contrastActiveBorder: transparent,
     contrastBorder: transparent,
@@ -490,6 +489,83 @@ export default function ui(
       : c(theme.ui.uibackground).lighten(0.2).toHex(),
   };
 
+  /**
+   * Creates a gutter background/border color for inline edit indicators
+   *
+   * @param color - The base color to adjust
+   * @param withAlpha - Whether to apply alpha transparency (defaults to true)
+   * @returns A color string suitable for gutter indicators
+   */
+  function inlineEditGutter(color: string, withAlpha: boolean = true): string {
+    if (light) {
+      return c(color)
+        .lighten(0.2)
+        .alpha(withAlpha ? 0.7 : 0)
+        .toHex();
+    }
+    return c(color)
+      .darken(0.2)
+      .alpha(withAlpha ? 0.7 : 1)
+      .toHex();
+  }
+  const inlineEditColors: InlineChatAndEditColors = {
+    // gutter
+    // primary
+    "inlineEdit.gutterIndicator.background": c(theme.ui.defaultMain)
+      .alpha(0.5)
+      .toHex(),
+    "inlineEdit.gutterIndicator.primaryBackground": inlineEditGutter(
+      theme.colors.yellow,
+    ),
+    "inlineEdit.gutterIndicator.primaryBorder": inlineEditGutter(
+      theme.colors.yellow,
+      false,
+    ),
+    "inlineEdit.gutterIndicator.primaryForeground": c(theme.ui.default)
+      .darken(0.8)
+      .toHex(),
+    // secondary
+    "inlineEdit.gutterIndicator.secondaryBackground": inlineEditGutter(
+      theme.ui.primary,
+    ),
+    "inlineEdit.gutterIndicator.secondaryBorder": inlineEditGutter(
+      theme.ui.primary,
+      false,
+    ),
+    "inlineEdit.gutterIndicator.secondaryForeground": c(theme.ui.primary)
+      .darken(0.8)
+      .toHex(),
+    // success
+    "inlineEdit.gutterIndicator.successfulBackground": inlineEditGutter(
+      theme.levels.success,
+    ),
+    "inlineEdit.gutterIndicator.successfulBorder": inlineEditGutter(
+      theme.levels.success,
+      false,
+    ),
+    "inlineEdit.gutterIndicator.successfulForeground": c(theme.levels.success)
+      .darken(0.8)
+      .toHex(),
+
+    // editor
+    "inlineEdit.modifiedBackground": c(theme.levels.success)
+      .alpha(0.15)
+      .toHex(),
+    "inlineEdit.modifiedBorder": c(theme.levels.success).alpha(0.8).toHex(),
+    "inlineEdit.modifiedChangedLineBackground": c(theme.levels.success)
+      .alpha(0.08)
+      .toHex(),
+    "inlineEdit.modifiedChangedTextBackground": transparent,
+    "inlineEdit.originalBackground": c(theme.colors.red).alpha(0.15).toHex(),
+    "inlineEdit.originalBorder": c(theme.colors.red).alpha(0.8).toHex(),
+    "inlineEdit.originalChangedLineBackground": c(theme.colors.red)
+      .alpha(0.8)
+      .toHex(),
+    "inlineEdit.originalChangedTextBackground": transparent,
+    "inlineEdit.tabWillAcceptModifiedBorder": theme.levels.success,
+    "inlineEdit.tabWillAcceptOriginalBorder": theme.colors.red,
+  };
+
   const inputColors: InputColors & InputOptionColors & InputValidationColors = {
     "input.background": inputBackground(),
     "input.border": inputBorder(),
@@ -839,6 +915,7 @@ export default function ui(
     "titleBar.inactiveBackground": c(theme.ui.border).lighten(0.02).toHex(),
     "titleBar.inactiveForeground": theme.ui.defaultalt,
   };
+
   const toolbarColors: ToolbarColors = {
     "toolbar.hoverBackground": hc
       ? c(theme.ui.defaultMain).alpha(0.25).toHex()
@@ -885,6 +962,7 @@ export default function ui(
     ...multiDiffEditorColors,
     ...scmGraphColors,
     ...inlineChatColors,
+    ...inlineEditColors,
     ...inputColors,
     ...keybindingLabelColors,
     ...listColors,
