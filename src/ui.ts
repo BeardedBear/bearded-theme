@@ -51,6 +51,8 @@ import type {
   WidgetColors,
 } from "./typing";
 
+import { isTooNeutral } from "./helper";
+
 const transparent = "#00000000";
 
 /**
@@ -194,6 +196,7 @@ export default function ui(
   const checkboxColors: CheckboxColors = {
     "checkbox.foreground": theme.ui.default,
   };
+
   const commandCenterColors: CommandCenterColors = {
     "commandCenter.activeBackground": c(theme.ui.primaryalt)
       .alpha(0.38)
@@ -319,13 +322,13 @@ export default function ui(
     "editorBracketHighlight.unexpectedBracket.foreground": theme.levels.danger,
     "editorBracketMatch.background": createSelectionColor(1),
     "editorBracketMatch.border": createSelectionColor(1.5),
-    "editorCodeLens.foreground": theme.ui.defaultMain + 80,
+    "editorCodeLens.foreground": c(theme.ui.defaultMain).alpha(0.5).toHex(),
     "editorCursor.background": theme.ui.primary,
     "editorCursor.foreground": theme.colors.yellow,
     "editorError.border": transparent,
     "editorError.foreground": theme.levels.danger,
     "editorGhostText.border": transparent,
-    "editorGhostText.foreground": theme.ui.default + 70,
+    "editorGhostText.foreground": c(theme.ui.default).alpha(0.44).toHex(),
     "editorGroup.border": theme.ui.border,
     "editorGroup.dropBackground": c(theme.ui.primary).alpha(0.08).toHex(),
     "editorGroupHeader.border": transparent,
@@ -346,10 +349,14 @@ export default function ui(
       ? c(theme.ui.defaultalt).alpha(0.4).toHex()
       : c(theme.ui.defaultalt).alpha(0.2).toHex(),
     "editorInfo.border": transparent,
-    "editorInlayHint.background": theme.ui.defaultMain + 20,
-    "editorInlayHint.foreground": theme.ui.defaultMain + "90",
-    "editorInlayHint.typeBackground": theme.colors.purple + 30,
-    "editorInlayHint.typeForeground": theme.colors.purple + "aa",
+    "editorInlayHint.background": c(theme.ui.defaultMain).alpha(0.12).toHex(),
+    "editorInlayHint.foreground": c(theme.ui.defaultMain).alpha(0.56).toHex(),
+    "editorInlayHint.typeBackground": c(theme.colors.purple)
+      .alpha(0.19)
+      .toHex(),
+    "editorInlayHint.typeForeground": c(theme.colors.purple)
+      .alpha(0.67)
+      .toHex(),
     "editorLineNumber.activeForeground": light
       ? c(theme.ui.uibackground).darken(0.7).toHex()
       : c(theme.ui.uibackgroundmid).lighten(0.5).desaturate(0.05).toHex(),
@@ -419,10 +426,10 @@ export default function ui(
   };
 
   const errorLensColors: ErrorColors = {
-    "errorLens.errorForeground": theme.levels.danger + 99,
-    "errorLens.hintForeground": theme.levels.info + 99,
-    "errorLens.infoForeground": theme.levels.info + 99,
-    "errorLens.warningForeground": theme.levels.warning + 99,
+    "errorLens.errorForeground": c(theme.levels.danger).alpha(0.99).toHex(),
+    "errorLens.hintForeground": c(theme.levels.info).alpha(0.99).toHex(),
+    "errorLens.infoForeground": c(theme.levels.info).alpha(0.99).toHex(),
+    "errorLens.warningForeground": c(theme.levels.warning).alpha(0.99).toHex(),
   };
 
   const extensionButtonColors: ExtensionColors = {
@@ -770,8 +777,29 @@ export default function ui(
   };
 
   const settingsColors: SettingsColors = {
-    "settings.headerForeground": theme.ui.primary,
+    // "settings.checkboxBackground": "#FF0000",
+    // "settings.checkboxBorder": "#FF0000",
+    // "settings.checkboxForeground": "#FF0000",
+    // "settings.dropdownBackground": "#FF0000",
+    // "settings.dropdownBorder": "#FF0000",
+    // "settings.dropdownForeground": "#FF0000",
+    // "settings.dropdownListBorder": "#FF0000",
+    // "settings.focusedRowBackground": "#FF0000",
+    // "settings.focusedRowBorder": "#FF0000",
+    // "settings.headerBorder": "#FF0000",
+    // "settings.headerForeground": theme.ui.primary,
+    "settings.headerForeground": theme.ui.default,
     "settings.modifiedItemIndicator": theme.ui.primary,
+    "settings.settingsHeaderHoverForeground": theme.ui.default,
+    // "settings.modifiedItemIndicator": "#FF0000",
+    // "settings.numberInputBackground": "#FF0000",
+    // "settings.numberInputBorder": "#FF0000",
+    // "settings.numberInputForeground": "#FF0000",
+    // "settings.rowHoverBackground": "#FF0000",
+    // "settings.sashBorder": "#FF0000",
+    // "settings.textInputBackground": "#FF0000",
+    // "settings.textInputBorder": "#FF0000",
+    // "settings.textInputForeground": "#FF0000",
   };
   const sideBarColors: SideBarColors = {
     "sideBar.background": theme.ui.uibackgroundalt,
@@ -893,12 +921,16 @@ export default function ui(
       .lighten(0.03)
       .toHex(),
   };
+
+  const getPrimaryOrInfo = (hex: string): string =>
+    isTooNeutral(hex) ? theme.levels.info : theme.ui.primary;
+
   const textColors: TextColors = {
     "textBlockQuote.background": c(theme.levels.info).alpha(0.2).toHex(),
     "textBlockQuote.border": c(theme.levels.info).alpha(0.725).toHex(),
     "textCodeBlock.background": c(theme.levels.info).alpha(0.2).toHex(),
-    "textLink.activeForeground": theme.levels.info,
-    "textLink.foreground": theme.levels.info,
+    "textLink.activeForeground": getPrimaryOrInfo(theme.ui.primary),
+    "textLink.foreground": getPrimaryOrInfo(theme.ui.primary),
     "textPreformat.background": light
       ? c(theme.colors.yellow).mix(theme.ui.uibackground, 0.5).toHex()
       : c(theme.colors.yellow).mix(theme.ui.uibackground, 0.8).toHex(),
@@ -933,9 +965,11 @@ export default function ui(
   const welcomePageColors: WelcomePageColors = {
     "welcomePage.progress.background": theme.ui.primaryalt,
     "welcomePage.progress.foreground": theme.ui.primary,
-    "welcomePage.tileBackground": theme.ui.defaultMain + 10,
-    "welcomePage.tileBorder": theme.ui.defaultMain + 20,
-    "welcomePage.tileHoverBackground": theme.ui.defaultMain + 20,
+    "welcomePage.tileBackground": c(theme.ui.defaultMain).alpha(0.1).toHex(),
+    "welcomePage.tileBorder": c(theme.ui.defaultMain).alpha(0.2).toHex(),
+    "welcomePage.tileHoverBackground": c(theme.ui.defaultMain)
+      .alpha(0.2)
+      .toHex(),
   };
 
   const widgetColors: WidgetColors = {
