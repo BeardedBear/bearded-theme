@@ -14,12 +14,6 @@ RELEASE_NOTES="./releases/$VERSION.md"
 echo -e "${BLUE}=== Bearded Theme Release Process ===${NC}"
 echo -e "${BLUE}Version: ${GREEN}v$VERSION${NC}"
 
-# Load environment variables from .env
-if [ -f ".env" ]; then
-    echo -e "${GREEN}✓ Loading environment variables from .env${NC}"
-    export $(grep -v '^#' .env | xargs)
-fi
-
 # Check if VSIX version already exists
 if [ -f "./releases/$VERSION.vsix" ]; then
     echo -e "${YELLOW}VSIX file for v$VERSION already exists.${NC}"

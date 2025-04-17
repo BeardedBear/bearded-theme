@@ -55,22 +55,31 @@ To publish the extension, you will need:
 1. A VS Code Marketplace token (VSCE_PAT)
 2. An Open VSX token (OVSX_TOKEN)
 
-These tokens can be configured in a `.env` file at the root of the project:
+You have two options for providing these tokens:
 
+#### Option 1: Environment Variables
+
+Set them as environment variables before running the publish script:
+
+```bash
+export VSCE_PAT=your_vscode_marketplace_token
+export OVSX_TOKEN=your_open_vsx_token
+./publish.sh
 ```
-VSCE_PAT=your_vscode_marketplace_token
-OVSX_TOKEN=your_open_vsx_token
-```
+
+#### Option 2: Manual Entry
+
+The publish script now supports entering tokens manually during the publication process. If the tokens are not found in environment variables, you will be prompted to enter them when needed.
 
 ### Manual Publication
 
-The `publish.sh` script (for Linux/Mac) or `publish.bat` (for Windows) guides the user through the publication process:
+Two scripts are available to guide you through the publication process:
 
 ```bash
-# Linux/Mac
+# On Linux/Mac
 ./publish.sh
 
-# Windows
+# On Windows
 publish.bat
 ```
 

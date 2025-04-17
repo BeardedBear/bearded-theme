@@ -384,7 +384,6 @@
     "@typescript-eslint/parser": "^8.30.0",
     "@vscode/vsce": "^3.3.2",
     "colord": "^2.9.3",
-    "dotenv": "^16.5.0",
     "eslint": "^9.24.0",
     "eslint-plugin-perfectionist": "^4.11.0",
     "ovsx": "^0.10.2",
