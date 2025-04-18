@@ -100,6 +100,9 @@ export default function ui(
       : c(theme.ui.uibackground).desaturate(0.05).lighten(0.15).toHex();
   }
 
+  const getPrimaryOrInfo = (hex: string): string =>
+    isTooNeutral(hex) ? theme.levels.info : theme.ui.primary;
+
   // Common values
   const shadow = light
     ? c("#000000").alpha(0.2).toHex()
@@ -922,9 +925,6 @@ export default function ui(
       .toHex(),
   };
 
-  const getPrimaryOrInfo = (hex: string): string =>
-    isTooNeutral(hex) ? theme.levels.info : theme.ui.primary;
-
   const textColors: TextColors = {
     "textBlockQuote.background": c(theme.levels.info).alpha(0.2).toHex(),
     "textBlockQuote.border": c(theme.levels.info).alpha(0.725).toHex(),
@@ -942,10 +942,14 @@ export default function ui(
 
   const titleBarColors: TitleBarColors = {
     "titleBar.activeBackground": c(theme.ui.border).lighten(0.02).toHex(),
-    "titleBar.activeForeground": theme.ui.defaultalt,
+    "titleBar.activeForeground": light
+      ? c(theme.ui.default).alpha(0.6).toHex()
+      : theme.ui.defaultalt,
     "titleBar.border": theme.ui.border,
     "titleBar.inactiveBackground": c(theme.ui.border).lighten(0.02).toHex(),
-    "titleBar.inactiveForeground": theme.ui.defaultalt,
+    "titleBar.inactiveForeground": light
+      ? c(theme.ui.default).alpha(0.6).toHex()
+      : theme.ui.defaultalt,
   };
 
   const toolbarColors: ToolbarColors = {

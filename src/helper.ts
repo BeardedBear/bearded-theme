@@ -20,10 +20,14 @@ interface ThemePropsLight {
   primaryAlt?: string;
 }
 
-// Helper to check if a color is "too neutral" (low saturation)
 export function isTooNeutral(hex: string, threshold = 0.3): boolean {
   const { s } = c(hex).toHsl();
   return s < threshold * 100;
+}
+
+export function isTooVibrant(hex: string, threshold = 0.3): boolean {
+  const { s } = c(hex).toHsl();
+  return s >= threshold * 100;
 }
 
 /**
