@@ -625,11 +625,11 @@ export default function ui(
     "list.focusForeground": theme.ui.defaultMain,
     "list.highlightForeground": theme.colors.yellow,
     "list.hoverBackground": light
-      ? c(theme.ui.defaultalt).alpha(0.05).toHex()
-      : c(theme.ui.primaryalt).lighten(0.05).alpha(0.2).toHex(),
+      ? c(theme.ui.defaultalt).alpha(0.1).toHex()
+      : c(theme.ui.primaryalt).lighten(0.1).alpha(0.3).toHex(),
     "list.hoverForeground": light
       ? c(theme.ui.defaultalt).darken(0.8).toHex()
-      : c(theme.ui.primaryalt).lighten(0.7).desaturate(0.1).toHex(),
+      : c(theme.ui.primaryalt).lighten(0.8).desaturate(0.1).toHex(),
     "list.inactiveSelectionBackground": light
       ? c(theme.ui.defaultalt).alpha(0.12).toHex()
       : c(theme.ui.primaryalt).lighten(0.1).alpha(0.25).toHex(),
@@ -820,42 +820,56 @@ export default function ui(
     "statusBarItem.compactHoverBackground": c(theme.ui.primary)
       .alpha(0.8)
       .toHex(),
-    "statusBarItem.errorBackground": c(theme.levels.danger).toHex(),
-    "statusBarItem.errorForeground": c(theme.levels.danger).darken(0.5).toHex(),
-    "statusBarItem.errorHoverBackground": c(theme.levels.danger)
-      .lighten(0.05)
-      .toHex(),
+    "statusBarItem.errorBackground": light
+      ? c(theme.levels.danger).lighten(0.05).toHex()
+      : c(theme.levels.danger).toHex(),
+    "statusBarItem.errorForeground": light
+      ? c(theme.ui.uibackground).toHex()
+      : c(theme.levels.danger).darken(0.5).toHex(),
+    "statusBarItem.errorHoverBackground": light
+      ? c(theme.levels.danger).lighten(0.1).toHex()
+      : c(theme.levels.danger).lighten(0.1).toHex(),
     "statusBarItem.errorHoverForeground": c(theme.ui.uibackground).toHex(),
     "statusBarItem.hoverBackground": c(theme.ui.primary)
       .mix(theme.ui.uibackground, 0.6)
       .toHex(),
     "statusBarItem.hoverForeground": c(theme.ui.default).toHex(),
-    "statusBarItem.offlineBackground": c(theme.colors.pink).toHex(),
-    "statusBarItem.offlineForeground": c(theme.colors.pink).darken(0.5).toHex(),
-    "statusBarItem.offlineHoverBackground": c(theme.colors.pink)
-      .lighten(0.05)
-      .toHex(),
+    "statusBarItem.offlineBackground": light
+      ? c(theme.colors.pink).lighten(0.05).toHex()
+      : c(theme.colors.pink).toHex(),
+    "statusBarItem.offlineForeground": light
+      ? c(theme.ui.uibackground).toHex()
+      : c(theme.colors.pink).darken(0.5).toHex(),
+    "statusBarItem.offlineHoverBackground": light
+      ? c(theme.colors.pink).lighten(0.1).toHex()
+      : c(theme.colors.pink).lighten(0.1).toHex(),
     "statusBarItem.prominentBackground": light
       ? c(theme.ui.uibackground).darken(0.1).toHex()
       : c(theme.ui.uibackground).lighten(0.1).toHex(),
-    "statusBarItem.prominentForeground": c(theme.ui.default).toHex(),
+    "statusBarItem.prominentForeground": light
+      ? c(theme.ui.uibackground).toHex()
+      : c(theme.ui.default).toHex(),
     "statusBarItem.prominentHoverBackground": light
       ? c(theme.ui.uibackground).darken(0.2).toHex()
       : c(theme.ui.uibackground).lighten(0.2).toHex(),
-    "statusBarItem.remoteBackground": c(theme.colors.turquoize).toHex(),
-    "statusBarItem.remoteForeground": c(theme.colors.turquoize)
-      .darken(0.5)
-      .toHex(),
+    "statusBarItem.remoteBackground": light
+      ? c(theme.colors.turquoize).lighten(0.05).toHex()
+      : c(theme.colors.turquoize).toHex(),
+    "statusBarItem.remoteForeground": light
+      ? c(theme.ui.uibackground).toHex()
+      : c(theme.colors.turquoize).darken(0.5).toHex(),
     "statusBarItem.remoteHoverBackground": c(theme.colors.turquoize)
-      .lighten(0.05)
+      .lighten(0.1)
       .toHex(),
     "statusBarItem.remoteHoverForeground": c(theme.ui.uibackground).toHex(),
-    "statusBarItem.warningBackground": c(theme.levels.warning).toHex(),
-    "statusBarItem.warningForeground": c(theme.levels.warning)
-      .darken(0.5)
-      .toHex(),
+    "statusBarItem.warningBackground": light
+      ? c(theme.levels.warning).lighten(0.05).toHex()
+      : c(theme.levels.warning).toHex(),
+    "statusBarItem.warningForeground": light
+      ? c(theme.ui.uibackground).toHex()
+      : c(theme.levels.warning).darken(0.5).toHex(),
     "statusBarItem.warningHoverBackground": c(theme.levels.warning)
-      .lighten(0.05)
+      .lighten(0.1)
       .toHex(),
     "statusBarItem.warningHoverForeground": c(theme.ui.uibackground).toHex(),
   };
