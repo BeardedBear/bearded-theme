@@ -765,9 +765,10 @@ export default function ui(
     "quickInputList.focusForeground": light
       ? theme.ui.defaultMain
       : c(theme.ui.primaryalt).lighten(0.8).desaturate(0.1).toHex(),
-    "quickInputList.focusIconForeground": theme.ui.defaultalt,
+    "quickInputList.focusIconForeground": theme.ui.default,
     "quickInputTitle.background": theme.ui.uibackgroundalt,
   };
+
   const sashColors: SashColors = {
     "sash.hoverBorder": c(theme.ui.primary).alpha(0.314).toHex(),
   };
@@ -780,30 +781,11 @@ export default function ui(
   };
 
   const settingsColors: SettingsColors = {
-    // "settings.checkboxBackground": "#FF0000",
-    // "settings.checkboxBorder": "#FF0000",
-    // "settings.checkboxForeground": "#FF0000",
-    // "settings.dropdownBackground": "#FF0000",
-    // "settings.dropdownBorder": "#FF0000",
-    // "settings.dropdownForeground": "#FF0000",
-    // "settings.dropdownListBorder": "#FF0000",
-    // "settings.focusedRowBackground": "#FF0000",
-    // "settings.focusedRowBorder": "#FF0000",
-    // "settings.headerBorder": "#FF0000",
-    // "settings.headerForeground": theme.ui.primary,
     "settings.headerForeground": theme.ui.default,
     "settings.modifiedItemIndicator": theme.ui.primary,
     "settings.settingsHeaderHoverForeground": theme.ui.default,
-    // "settings.modifiedItemIndicator": "#FF0000",
-    // "settings.numberInputBackground": "#FF0000",
-    // "settings.numberInputBorder": "#FF0000",
-    // "settings.numberInputForeground": "#FF0000",
-    // "settings.rowHoverBackground": "#FF0000",
-    // "settings.sashBorder": "#FF0000",
-    // "settings.textInputBackground": "#FF0000",
-    // "settings.textInputBorder": "#FF0000",
-    // "settings.textInputForeground": "#FF0000",
   };
+
   const sideBarColors: SideBarColors = {
     "sideBar.background": theme.ui.uibackgroundalt,
     "sideBar.border": theme.ui.border,
