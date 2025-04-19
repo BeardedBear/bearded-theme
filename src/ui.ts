@@ -884,7 +884,7 @@ export default function ui(
       : theme.ui.uibackground,
     "tab.activeBorder": theme.ui.uibackground,
     "tab.activeBorderTop": theme.ui.primary,
-    "tab.activeForeground": theme.ui.primary,
+    "tab.activeForeground": theme.ui.default,
     "tab.border": theme.ui.border,
     "tab.hoverBackground": theme.ui.uibackground,
     "tab.inactiveBackground": theme.ui.uibackgroundalt,
