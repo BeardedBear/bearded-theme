@@ -814,64 +814,44 @@ export default function ui(
     "statusBar.noFolderBorder": theme.ui.border,
     "statusBar.noFolderForeground": c(theme.ui.defaultMain).alpha(0.8).toHex(),
   };
+  /**
+   * Creates status bar item colors for a specific type (error, warning, etc.)
+   *
+   * @param baseColor - The base color for the status bar item
+   * @returns An object with status bar item colors
+   */
+  function createStatusBarItemColors(
+    prefix: string,
+    baseColor: string,
+  ): Partial<StatusBarColors> {
+    const foreground = light
+      ? c(theme.ui.uibackground).toHex()
+      : c(baseColor).darken(0.5).toHex();
+    const hoverBackground = c(baseColor).lighten(0.1).toHex();
+    const hoverForeground = c(theme.ui.uibackground).toHex();
+
+    return {
+      [`statusBarItem.${prefix}Background`]: baseColor,
+      [`statusBarItem.${prefix}Foreground`]: foreground,
+      [`statusBarItem.${prefix}HoverBackground`]: hoverBackground,
+      [`statusBarItem.${prefix}HoverForeground`]: hoverForeground,
+    };
+  }
 
   const statusBarItemColors: StatusBarColors = {
     "statusBarItem.activeBackground": theme.ui.primaryalt,
     "statusBarItem.compactHoverBackground": c(theme.ui.primary)
       .alpha(0.8)
       .toHex(),
-    "statusBarItem.errorBackground": light
-      ? c(theme.levels.danger).lighten(0.05).toHex()
-      : c(theme.levels.danger).toHex(),
-    "statusBarItem.errorForeground": light
-      ? c(theme.ui.uibackground).toHex()
-      : c(theme.levels.danger).darken(0.5).toHex(),
-    "statusBarItem.errorHoverBackground": light
-      ? c(theme.levels.danger).lighten(0.1).toHex()
-      : c(theme.levels.danger).lighten(0.1).toHex(),
-    "statusBarItem.errorHoverForeground": c(theme.ui.uibackground).toHex(),
     "statusBarItem.hoverBackground": c(theme.ui.primary)
-      .mix(theme.ui.uibackground, 0.6)
+      .mix(theme.ui.uibackground, 0.7)
       .toHex(),
     "statusBarItem.hoverForeground": c(theme.ui.default).toHex(),
-    "statusBarItem.offlineBackground": light
-      ? c(theme.colors.pink).lighten(0.05).toHex()
-      : c(theme.colors.pink).toHex(),
-    "statusBarItem.offlineForeground": light
-      ? c(theme.ui.uibackground).toHex()
-      : c(theme.colors.pink).darken(0.5).toHex(),
-    "statusBarItem.offlineHoverBackground": light
-      ? c(theme.colors.pink).lighten(0.1).toHex()
-      : c(theme.colors.pink).lighten(0.1).toHex(),
-    "statusBarItem.prominentBackground": light
-      ? c(theme.ui.uibackground).darken(0.1).toHex()
-      : c(theme.ui.uibackground).lighten(0.1).toHex(),
-    "statusBarItem.prominentForeground": light
-      ? c(theme.ui.uibackground).toHex()
-      : c(theme.ui.default).toHex(),
-    "statusBarItem.prominentHoverBackground": light
-      ? c(theme.ui.uibackground).darken(0.2).toHex()
-      : c(theme.ui.uibackground).lighten(0.2).toHex(),
-    "statusBarItem.remoteBackground": light
-      ? c(theme.colors.turquoize).lighten(0.05).toHex()
-      : c(theme.colors.turquoize).toHex(),
-    "statusBarItem.remoteForeground": light
-      ? c(theme.ui.uibackground).toHex()
-      : c(theme.colors.turquoize).darken(0.5).toHex(),
-    "statusBarItem.remoteHoverBackground": c(theme.colors.turquoize)
-      .lighten(0.1)
-      .toHex(),
-    "statusBarItem.remoteHoverForeground": c(theme.ui.uibackground).toHex(),
-    "statusBarItem.warningBackground": light
-      ? c(theme.levels.warning).lighten(0.05).toHex()
-      : c(theme.levels.warning).toHex(),
-    "statusBarItem.warningForeground": light
-      ? c(theme.ui.uibackground).toHex()
-      : c(theme.levels.warning).darken(0.5).toHex(),
-    "statusBarItem.warningHoverBackground": c(theme.levels.warning)
-      .lighten(0.1)
-      .toHex(),
-    "statusBarItem.warningHoverForeground": c(theme.ui.uibackground).toHex(),
+    ...createStatusBarItemColors("prominent", theme.ui.uibackground),
+    ...createStatusBarItemColors("error", theme.levels.danger),
+    ...createStatusBarItemColors("offline", theme.colors.pink),
+    ...createStatusBarItemColors("remote", theme.colors.turquoize),
+    ...createStatusBarItemColors("warning", theme.levels.warning),
   };
 
   const tabColors: TabColors = {
