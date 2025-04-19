@@ -953,9 +953,8 @@ export default function ui(
   };
 
   const toolbarColors: ToolbarColors = {
-    "toolbar.hoverBackground": hc
-      ? c(theme.ui.defaultMain).alpha(0.25).toHex()
-      : c(theme.ui.defaultalt).alpha(0.376).toHex(),
+    "toolbar.activeBackground": c(theme.ui.default).alpha(0.4).toHex(),
+    "toolbar.hoverBackground": c(theme.ui.defaultalt).alpha(0.3).toHex(),
   };
 
   const treeColors: TreeColors = {
