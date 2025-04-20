@@ -43,7 +43,9 @@ const createReleaseNotes = (): void => {
     }
 
     // Set to track commits that have already been processed
-    const processedCommits = new Set<string>(); // Function to convert GitHub issue numbers in commit messages to actual GitHub links
+    const processedCommits = new Set<string>();
+
+    // Function to convert GitHub issue numbers in commit messages to actual GitHub links with attribution
     const extractIssueNumbers = (commit: string): string => {
       // Look for #XXX patterns in the commit message
       const issueMatches = commit.match(/#(\d+)/g);
@@ -51,14 +53,41 @@ const createReleaseNotes = (): void => {
       if (issueMatches) {
         // Replace each #XXX with markdown link to GitHub issue
         let updatedCommit = commit;
+
         issueMatches.forEach((match) => {
-          // Extract the issue number without the # symbol
-          const issueNumber = match.substring(1);
-          // Create GitHub issue link
-          const issueLink = `[${match}](https://github.com/BeardedBear/bearded-theme/issues/${issueNumber})`;
-          // Replace the #XXX with the link
-          updatedCommit = updatedCommit.replace(match, issueLink);
+          try {
+            // Extract the issue number without the # symbol
+            const issueNumber = match.substring(1);
+
+            // Try to get issue author using curl command
+            let issueAuthor = "";
+            try {
+              // Use curl to get issue info (with a timeout to avoid hanging)
+              const curlCommand = `curl -s -m 5 -H "User-Agent: BeardedTheme-ReleaseNotes-Script" https://api.github.com/repos/BeardedBear/bearded-theme/issues/${issueNumber}`;
+              const issueData = JSON.parse(execSync(curlCommand).toString());
+
+              if (issueData && issueData.user && issueData.user.login) {
+                issueAuthor = ` (Thanks @${issueData.user.login})`;
+              }
+            } catch (error) {
+              console.warn(
+                `Could not fetch author for issue #${issueNumber}:`,
+                error,
+              );
+              // Continue without author info if there's an error
+            }
+
+            // Create GitHub issue link with author attribution if available
+            const issueLink = `[${match}${issueAuthor}](https://github.com/BeardedBear/bearded-theme/issues/${issueNumber})`;
+
+            // Replace the #XXX with the link
+            updatedCommit = updatedCommit.replace(match, issueLink);
+          } catch (error) {
+            console.error(`Error processing issue reference:`, error);
+            // If any error occurs, just keep original reference
+          }
         });
+
         return updatedCommit;
       }
 
