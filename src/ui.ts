@@ -929,7 +929,7 @@ export default function ui(
   };
 
   const toolbarColors: ToolbarColors = {
-    "toolbar.activeBackground": c(theme.ui.default).alpha(0.4).toHex(),
+    "toolbar.activeBackground": c(theme.ui.defaultalt).alpha(0.5).toHex(),
     "toolbar.hoverBackground": c(theme.ui.defaultalt).alpha(0.3).toHex(),
   };
 
