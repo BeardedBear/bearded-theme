@@ -920,7 +920,7 @@ export default function ui(
     "titleBar.activeBackground": c(theme.ui.border).lighten(0.02).toHex(),
     "titleBar.activeForeground": light
       ? c(theme.ui.default).alpha(0.6).toHex()
-      : theme.ui.defaultalt,
+      : c(theme.ui.default).alpha(0.4).toHex(),
     "titleBar.border": theme.ui.border,
     "titleBar.inactiveBackground": c(theme.ui.border).lighten(0.02).toHex(),
     "titleBar.inactiveForeground": light
