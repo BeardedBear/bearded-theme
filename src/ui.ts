@@ -916,13 +916,16 @@ export default function ui(
     "textSeparator.foreground": theme.ui.primary,
   };
 
+  const titleBarBackground = light
+    ? c(theme.ui.uibackgroundalt).darken(0.1).toHex()
+    : c(theme.ui.uibackgroundalt).darken(0.03).toHex();
   const titleBarColors: TitleBarColors = {
-    "titleBar.activeBackground": c(theme.ui.border).lighten(0.02).toHex(),
+    "titleBar.activeBackground": titleBarBackground,
     "titleBar.activeForeground": light
       ? c(theme.ui.default).alpha(0.6).toHex()
       : c(theme.ui.default).alpha(0.4).toHex(),
     "titleBar.border": theme.ui.border,
-    "titleBar.inactiveBackground": c(theme.ui.border).lighten(0.02).toHex(),
+    "titleBar.inactiveBackground": titleBarBackground,
     "titleBar.inactiveForeground": light
       ? c(theme.ui.default).alpha(0.6).toHex()
       : theme.ui.defaultalt,
