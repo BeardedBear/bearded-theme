@@ -89,6 +89,7 @@ export const keyword = [
   "keyword.operator.optional.ts",
   "keyword.cmake",
   "keyword.codetag.notation",
+  "keyword.operator.pipe.shell",
 ];
 
 export const constants = ["constant", "support.constant.core.php"];
@@ -340,6 +341,8 @@ export const strings = [
   "string.quoted.single.python punctuation.definition.string.end.python",
   "punctuation.definition.string.end.html source.css",
   "string.quoted.double.html source.css",
+  "punctuation.definition.subshell.single.shell",
+  "punctuation.section.parenthese.shell",
 ];
 
 export const stringsAlt = [

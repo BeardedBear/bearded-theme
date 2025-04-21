@@ -1,6 +1,57 @@
 import { colord as c } from "colord";
 
-import { Theme, VSCodeThemeColors } from "./typing";
+import type {
+  ActivityBarColors,
+  BadgeColors,
+  BreadcrumbColors,
+  ButtonColors,
+  ChartColors,
+  CheckboxColors,
+  CommandCenterColors,
+  DebugColors,
+  DiffEditorColors,
+  DropdownColors,
+  EditorColors,
+  ErrorColors,
+  ExtensionColors,
+  GitColors,
+  InlineChatAndEditColors,
+  InputColors,
+  InputOptionColors,
+  InputValidationColors,
+  KeyBindingColors,
+  ListColors,
+  MenuColors,
+  MergeColors,
+  MinimapColors,
+  MultiDiffEditorColors,
+  NotificationsColors,
+  PanelColors,
+  PeekViewColors,
+  PickerGroupColors,
+  ProfileColors,
+  ProgressBarColors,
+  QuickInputColors,
+  SashColors,
+  SCMGraphColors,
+  ScrollBarColors,
+  SettingsColors,
+  SideBarColors,
+  StatusBarColors,
+  TabColors,
+  TerminalColors,
+  TextColors,
+  Theme,
+  TitleBarColors,
+  ToolbarColors,
+  TreeColors,
+  VSCodeThemeColors,
+  WalkThroughColors,
+  WelcomePageColors,
+  WidgetColors,
+} from "./typing";
+
+import { isTooNeutral } from "./helper";
 
 const transparent = "#00000000";
 
@@ -49,6 +100,9 @@ export default function ui(
       : c(theme.ui.uibackground).desaturate(0.05).lighten(0.15).toHex();
   }
 
+  const getPrimaryOrInfo = (hex: string): string =>
+    isTooNeutral(hex) ? theme.levels.info : theme.ui.primary;
+
   // Common values
   const shadow = light
     ? c("#000000").alpha(0.2).toHex()
@@ -57,7 +111,6 @@ export default function ui(
     ? c("#000000").alpha(0.05).toHex()
     : c("#000000").alpha(0.2).toHex();
 
-  // Group UI elements by category for better organization
   const baseColors: Partial<VSCodeThemeColors> = {
     contrastActiveBorder: transparent,
     contrastBorder: transparent,
@@ -70,11 +123,11 @@ export default function ui(
       ? c(theme.ui.uibackground).darken(0.2).toHex()
       : c(theme.ui.uibackground).lighten(0.2).toHex(),
     foreground: theme.ui.defaultMain,
-    "icon.foreground": `${theme.ui.defaultMain}AA`,
-    "selection.background": `${theme.ui.primary}60`,
+    "icon.foreground": c(theme.ui.defaultMain).alpha(0.67).toHex(),
+    "selection.background": c(theme.ui.primary).alpha(0.38).toHex(),
   };
 
-  const activityBarColors: Partial<VSCodeThemeColors> = {
+  const activityBarColors: ActivityBarColors = {
     "activityBar.activeBackground": hc
       ? c(theme.ui.primary).alpha(0.2).toHex()
       : c(theme.ui.primary).alpha(0.15).toHex(),
@@ -97,19 +150,19 @@ export default function ui(
       : c(theme.ui.default).mix(theme.ui.uibackground, 0.7).toHex(),
   };
 
-  const badgeColors: Partial<VSCodeThemeColors> = {
+  const badgeColors: BadgeColors = {
     "badge.background": theme.ui.primary,
     "badge.foreground": theme.ui.uibackgroundalt,
   };
 
-  const breadcrumbColors: Partial<VSCodeThemeColors> = {
+  const breadcrumbColors: BreadcrumbColors = {
     "breadcrumb.background": theme.ui.uibackground,
     "breadcrumbPicker.background": c(theme.ui.uibackground)
       .lighten(0.05)
       .toHex(),
   };
 
-  const buttonColors: Partial<VSCodeThemeColors> = {
+  const buttonColors: ButtonColors = {
     "button.background": c(theme.ui.primary).alpha(0.5).toHex(),
     "button.border": light
       ? c("#000000").alpha(0.15).toHex()
@@ -132,7 +185,7 @@ export default function ui(
       : c("#FFFFFF").alpha(0.3).toHex(),
   };
 
-  const chartColors: Partial<VSCodeThemeColors> = {
+  const chartColors: ChartColors = {
     "charts.blue": theme.colors.blue,
     "charts.foreground": theme.ui.default,
     "charts.green": theme.colors.green,
@@ -143,19 +196,23 @@ export default function ui(
     "charts.yellow": theme.colors.yellow,
   };
 
-  const checkboxColors: Partial<VSCodeThemeColors> = {
+  const checkboxColors: CheckboxColors = {
     "checkbox.foreground": theme.ui.default,
   };
 
-  const commandCenterColors: Partial<VSCodeThemeColors> = {
-    "commandCenter.activeBackground": `${theme.ui.primaryalt}60`,
-    "commandCenter.activeForeground": `${theme.ui.defaultMain}90`,
+  const commandCenterColors: CommandCenterColors = {
+    "commandCenter.activeBackground": c(theme.ui.primaryalt)
+      .alpha(0.38)
+      .toHex(),
+    "commandCenter.activeForeground": c(theme.ui.defaultMain)
+      .alpha(0.56)
+      .toHex(),
     "commandCenter.background": theme.ui.uibackground,
     "commandCenter.border": theme.ui.border,
     "commandCenter.foreground": theme.ui.defaultalt,
   };
 
-  const debugColors: Partial<VSCodeThemeColors> = {
+  const debugColors: DebugColors = {
     "debugConsole.errorForeground": theme.levels.danger,
     "debugConsole.infoForeground": theme.levels.info,
     "debugConsole.warningForeground": theme.levels.warning,
@@ -181,42 +238,53 @@ export default function ui(
       .toHex(),
   };
 
-  const diffEditorColors: Partial<VSCodeThemeColors> = {
+  // diffEditor colors
+  const diffBackgroundSaturationRatio = 0.15;
+  const diffBackgroundOpacity = 0.1;
+  const inserted = c(theme.levels.success)
+    .alpha(diffBackgroundOpacity)
+    .saturate(diffBackgroundSaturationRatio)
+    .toHex();
+  const removed = c(theme.levels.danger)
+    .alpha(diffBackgroundOpacity)
+    .saturate(diffBackgroundSaturationRatio)
+    .toHex();
+  const unchanged = c(theme.ui.uibackgroundalt).darken(0.01).toHex();
+  const diffEditorColors: DiffEditorColors = {
     "diffEditor.border": theme.ui.border,
     "diffEditor.diagonalFill": c(theme.ui.uibackground).lighten(0.05).toHex(),
-    "diffEditor.insertedLineBackground": c(theme.levels.success)
-      .alpha(0.1)
-      .toHex(),
-    "diffEditor.insertedTextBackground": c(theme.levels.success)
-      .alpha(0.15)
-      .toHex(),
+    "diffEditor.insertedLineBackground": inserted,
+    "diffEditor.insertedTextBackground": inserted,
     "diffEditor.insertedTextBorder": transparent,
     "diffEditor.move.border": c(theme.colors.yellow).alpha(0.3).toHex(),
     "diffEditor.moveActive.border": c(theme.colors.yellow).alpha(0.7).toHex(),
-    "diffEditor.removedLineBackground": c(theme.levels.danger)
-      .alpha(0.1)
-      .toHex(),
-    "diffEditor.removedTextBackground": c(theme.levels.danger)
-      .alpha(0.15)
-      .toHex(),
+    "diffEditor.removedLineBackground": removed,
+    "diffEditor.removedTextBackground": removed,
     "diffEditor.removedTextBorder": transparent,
+    "diffEditor.unchangedCodeBackground": unchanged,
+    "diffEditor.unchangedRegionBackground": unchanged,
+    "diffEditor.unchangedRegionShadow": shadow,
     "diffEditorGutter.insertedLineBackground": transparent,
     "diffEditorGutter.removedLineBackground": transparent,
-    "diffEditorOverview.insertedForeground": `${theme.levels.success}25`,
-    "diffEditorOverview.removedForeground": `${theme.levels.danger}30`,
+    "diffEditorOverview.insertedForeground": c(theme.levels.success)
+      .alpha(0.15)
+      .toHex(),
+    "diffEditorOverview.removedForeground": c(theme.levels.danger)
+      .alpha(0.19)
+      .toHex(),
   };
 
-  const dropdownColors: Partial<VSCodeThemeColors> = {
+  const dropdownColors: DropdownColors = {
     "dropdown.background": inputBackground(),
     "dropdown.border": inputBorder(),
     "dropdown.foreground": theme.ui.default,
     "dropdown.listBackground": inputBackground(),
   };
 
-  const editorColors: Partial<VSCodeThemeColors> = {
+  const editorColors: EditorColors = {
     "editor.background": theme.ui.uibackground,
-    "editor.findMatchBackground": `${theme.ui.primary}30`,
-    "editor.findMatchBorder": `${theme.ui.primary}60`,
+    "editor.findMatchBackground": c(theme.ui.primary).alpha(0.19).toHex(),
+    "editor.findMatchBorder": c(theme.ui.primary).alpha(0.38).toHex(),
     "editor.findMatchHighlightBackground": createSelectionColor(0.8),
     "editor.findMatchHighlightBorder": createSelectionColor(1.2),
     "editor.foldBackground": light
@@ -235,7 +303,9 @@ export default function ui(
     "editor.rangeHighlightBackground": createSelectionColor(0.8),
     "editor.selectionBackground": createSelectionColor(1),
     "editor.selectionForeground": theme.ui.default,
-    "editor.selectionHighlightBackground": `${theme.ui.primary}15`,
+    "editor.selectionHighlightBackground": c(theme.ui.primary)
+      .alpha(0.08)
+      .toHex(),
     "editor.selectionHighlightBorder": createSelectionColor(1),
     "editor.wordHighlightBackground": light
       ? createSelectionColor(0.4)
@@ -255,24 +325,24 @@ export default function ui(
     "editorBracketHighlight.unexpectedBracket.foreground": theme.levels.danger,
     "editorBracketMatch.background": createSelectionColor(1),
     "editorBracketMatch.border": createSelectionColor(1.5),
-    "editorCodeLens.foreground": theme.ui.defaultMain + 80,
+    "editorCodeLens.foreground": c(theme.ui.defaultMain).alpha(0.5).toHex(),
     "editorCursor.background": theme.ui.primary,
     "editorCursor.foreground": theme.colors.yellow,
     "editorError.border": transparent,
     "editorError.foreground": theme.levels.danger,
     "editorGhostText.border": transparent,
-    "editorGhostText.foreground": theme.ui.default + 70,
+    "editorGhostText.foreground": c(theme.ui.default).alpha(0.44).toHex(),
     "editorGroup.border": theme.ui.border,
-    "editorGroup.dropBackground": `${theme.ui.primary}15`,
+    "editorGroup.dropBackground": c(theme.ui.primary).alpha(0.08).toHex(),
     "editorGroupHeader.border": transparent,
     "editorGroupHeader.noTabsBackground": theme.ui.uibackground,
     "editorGroupHeader.tabsBackground": theme.ui.uibackgroundalt,
     "editorGroupHeader.tabsBorder": theme.ui.border,
-    "editorGutter.addedBackground": `${theme.levels.success}cc`,
+    "editorGutter.addedBackground": c(theme.levels.success).alpha(0.8).toHex(),
     "editorGutter.background": theme.ui.uibackground,
     "editorGutter.commentRangeForeground": theme.ui.primaryalt,
-    "editorGutter.deletedBackground": `${theme.levels.danger}cc`,
-    "editorGutter.modifiedBackground": `${theme.levels.info}cc`,
+    "editorGutter.deletedBackground": c(theme.levels.danger).alpha(0.8).toHex(),
+    "editorGutter.modifiedBackground": c(theme.levels.info).alpha(0.8).toHex(),
     "editorHoverWidget.background": theme.ui.primaryalt,
     "editorHoverWidget.border": theme.ui.border,
     "editorIndentGuide.activeBackground1": hc
@@ -282,10 +352,20 @@ export default function ui(
       ? c(theme.ui.defaultalt).alpha(0.4).toHex()
       : c(theme.ui.defaultalt).alpha(0.2).toHex(),
     "editorInfo.border": transparent,
-    "editorInlayHint.background": theme.ui.defaultMain + 20,
-    "editorInlayHint.foreground": theme.ui.defaultMain + "90",
-    "editorInlayHint.typeBackground": theme.colors.purple + 30,
-    "editorInlayHint.typeForeground": theme.colors.purple + "aa",
+    "editorInlayHint.background": c(theme.ui.defaultMain).alpha(0.1).toHex(),
+    "editorInlayHint.foreground": c(theme.ui.defaultMain).alpha(0.7).toHex(),
+    "editorInlayHint.parameterBackground": c(theme.ui.defaultMain)
+      .alpha(0.1)
+      .toHex(),
+    "editorInlayHint.parameterForeground": c(theme.ui.defaultMain)
+      .alpha(0.7)
+      .toHex(),
+    "editorInlayHint.typeBackground": c(theme.ui.defaultMain)
+      .alpha(0.1)
+      .toHex(),
+    "editorInlayHint.typeForeground": c(theme.ui.defaultMain)
+      .alpha(0.7)
+      .toHex(),
     "editorLineNumber.activeForeground": light
       ? c(theme.ui.uibackground).darken(0.7).toHex()
       : c(theme.ui.uibackgroundmid).lighten(0.5).desaturate(0.05).toHex(),
@@ -295,9 +375,15 @@ export default function ui(
       .toHex(),
     "editorLink.activeForeground": theme.ui.default,
     "editorMarkerNavigation.background": theme.ui.uibackgroundalt,
-    "editorMarkerNavigationError.background": `${theme.levels.danger}90`,
-    "editorMarkerNavigationInfo.background": `${theme.levels.info}90`,
-    "editorMarkerNavigationWarning.background": `${theme.levels.warning}90`,
+    "editorMarkerNavigationError.background": c(theme.levels.danger)
+      .alpha(0.56)
+      .toHex(),
+    "editorMarkerNavigationInfo.background": c(theme.levels.info)
+      .alpha(0.56)
+      .toHex(),
+    "editorMarkerNavigationWarning.background": c(theme.levels.warning)
+      .alpha(0.56)
+      .toHex(),
     "editorOverviewRuler.addedForeground": c(theme.levels.success)
       .alpha(0.5)
       .toHex(),
@@ -340,33 +426,35 @@ export default function ui(
     "editorUnnecessaryCode.opacity": "#000000aa",
     "editorWarning.border": transparent,
     "editorWarning.foreground": theme.colors.yellow,
-    "editorWhitespace.foreground": `${theme.ui.defaultalt}60`,
+    "editorWhitespace.foreground": c(theme.ui.defaultalt).alpha(0.376).toHex(),
     "editorWidget.background": theme.ui.primaryalt,
     "editorWidget.border": light
       ? c(theme.ui.uibackground).darken(0.1).toHex()
       : c(theme.ui.uibackground).lighten(0.1).toHex(),
-    "editorWidget.resizeBorder": `${theme.ui.primary}50`,
+    "editorWidget.resizeBorder": c(theme.ui.primary).alpha(0.314).toHex(),
   };
 
-  const errorLensColors: Partial<VSCodeThemeColors> = {
-    "errorLens.errorForeground": theme.levels.danger + 99,
-    "errorLens.hintForeground": theme.levels.info + 99,
-    "errorLens.infoForeground": theme.levels.info + 99,
-    "errorLens.warningForeground": theme.levels.warning + 99,
+  const errorLensColors: ErrorColors = {
+    "errorLens.errorForeground": c(theme.levels.danger).alpha(0.99).toHex(),
+    "errorLens.hintForeground": c(theme.levels.info).alpha(0.99).toHex(),
+    "errorLens.infoForeground": c(theme.levels.info).alpha(0.99).toHex(),
+    "errorLens.warningForeground": c(theme.levels.warning).alpha(0.99).toHex(),
   };
 
-  const extensionButtonColors: Partial<VSCodeThemeColors> = {
+  const extensionButtonColors: ExtensionColors = {
     "extensionButton.background": c(theme.ui.primary).alpha(0.5).toHex(),
     "extensionButton.foreground": light
       ? c(theme.ui.primary).darken(0.5).toHex()
       : c(theme.ui.primary).lighten(0.22).toHex(),
     "extensionButton.hoverBackground": c(theme.ui.primary).alpha(0.6).toHex(),
-    "extensionButton.prominentBackground": `${theme.ui.primary}9d`,
+    "extensionButton.prominentBackground": c(theme.ui.primary)
+      .alpha(0.616)
+      .toHex(),
     "extensionButton.prominentForeground": theme.ui.default,
     "extensionButton.prominentHoverBackground": theme.ui.primary,
   };
 
-  const gitDecorationColors: Partial<VSCodeThemeColors> = {
+  const gitDecorationColors: GitColors = {
     "gitDecoration.conflictingResourceForeground": theme.ui.primary,
     "gitDecoration.deletedResourceForeground": theme.levels.danger,
     "gitDecoration.ignoredResourceForeground": theme.ui.defaultalt,
@@ -374,26 +462,26 @@ export default function ui(
     "gitDecoration.untrackedResourceForeground": theme.levels.success,
   };
 
-  const multiDiffEditorColors: Partial<VSCodeThemeColors> = {
+  const multiDiffEditorColors: MultiDiffEditorColors = {
     "multiDiffEditor.border": theme.ui.border,
     "multiDiffEditor.headerBackground": light
       ? c(theme.ui.uibackground).darken(0.05).toHex()
       : c(theme.ui.uibackground).lighten(0.05).toHex(),
   };
 
-  const scmGraphColors: Partial<VSCodeThemeColors> = {
+  const scmGraphColors: SCMGraphColors = {
     "scmGraph.foreground1": theme.colors.blue,
     "scmGraph.foreground2": theme.colors.pink,
     "scmGraph.foreground3": theme.colors.greenAlt,
     "scmGraph.foreground4": theme.colors.turquoize,
     "scmGraph.foreground5": theme.colors.salmon,
     "scmGraph.historyItemBaseRefColor": theme.colors.purple,
-    "scmGraph.historyItemHoverAdditionsForeground": theme.colors.green,
+    "scmGraph.historyItemHoverAdditionsForeground": theme.levels.success,
     "scmGraph.historyItemHoverDefaultLabelBackground": theme.ui.defaultMain,
     "scmGraph.historyItemHoverDefaultLabelForeground": c(theme.ui.defaultalt)
       .darken(0.4)
       .toHex(),
-    "scmGraph.historyItemHoverDeletionsForeground": theme.colors.red,
+    "scmGraph.historyItemHoverDeletionsForeground": theme.levels.danger,
     "scmGraph.historyItemHoverLabelForeground": c(theme.ui.defaultalt)
       .darken(0.4)
       .toHex(),
@@ -401,7 +489,7 @@ export default function ui(
     "scmGraph.historyItemRemoteRefColor": theme.colors.blue,
   };
 
-  const inlineChatColors: Partial<VSCodeThemeColors> = {
+  const inlineChatColors: InlineChatAndEditColors = {
     "inlineChat.background": c(theme.ui.uibackground).lighten(0.05).toHex(),
     "inlineChat.border": light
       ? c(theme.ui.uibackground).darken(0.1).toHex()
@@ -417,7 +505,84 @@ export default function ui(
       : c(theme.ui.uibackground).lighten(0.2).toHex(),
   };
 
-  const inputColors: Partial<VSCodeThemeColors> = {
+  /**
+   * Creates a gutter background/border color for inline edit indicators
+   *
+   * @param color - The base color to adjust
+   * @param withAlpha - Whether to apply alpha transparency (defaults to true)
+   * @returns A color string suitable for gutter indicators
+   */
+  function inlineEditGutter(color: string, withAlpha: boolean = true): string {
+    if (light) {
+      return c(color)
+        .lighten(0.2)
+        .alpha(withAlpha ? 0.7 : 0)
+        .toHex();
+    }
+    return c(color)
+      .darken(0.2)
+      .alpha(withAlpha ? 0.7 : 1)
+      .toHex();
+  }
+  const inlineEditColors: InlineChatAndEditColors = {
+    // gutter
+    // primary
+    "inlineEdit.gutterIndicator.background": c(theme.ui.defaultMain)
+      .alpha(0.5)
+      .toHex(),
+    "inlineEdit.gutterIndicator.primaryBackground": inlineEditGutter(
+      theme.colors.yellow,
+    ),
+    "inlineEdit.gutterIndicator.primaryBorder": inlineEditGutter(
+      theme.colors.yellow,
+      false,
+    ),
+    "inlineEdit.gutterIndicator.primaryForeground": c(theme.ui.default)
+      .darken(0.8)
+      .toHex(),
+    // secondary
+    "inlineEdit.gutterIndicator.secondaryBackground": inlineEditGutter(
+      theme.ui.primary,
+    ),
+    "inlineEdit.gutterIndicator.secondaryBorder": inlineEditGutter(
+      theme.ui.primary,
+      false,
+    ),
+    "inlineEdit.gutterIndicator.secondaryForeground": c(theme.ui.primary)
+      .darken(0.8)
+      .toHex(),
+    // success
+    "inlineEdit.gutterIndicator.successfulBackground": inlineEditGutter(
+      theme.levels.success,
+    ),
+    "inlineEdit.gutterIndicator.successfulBorder": inlineEditGutter(
+      theme.levels.success,
+      false,
+    ),
+    "inlineEdit.gutterIndicator.successfulForeground": c(theme.levels.success)
+      .darken(0.8)
+      .toHex(),
+
+    // editor
+    "inlineEdit.modifiedBackground": c(theme.levels.success)
+      .alpha(0.15)
+      .toHex(),
+    "inlineEdit.modifiedBorder": c(theme.levels.success).alpha(0.8).toHex(),
+    "inlineEdit.modifiedChangedLineBackground": c(theme.levels.success)
+      .alpha(0.08)
+      .toHex(),
+    "inlineEdit.modifiedChangedTextBackground": transparent,
+    "inlineEdit.originalBackground": c(theme.colors.red).alpha(0.15).toHex(),
+    "inlineEdit.originalBorder": c(theme.colors.red).alpha(0.8).toHex(),
+    "inlineEdit.originalChangedLineBackground": c(theme.colors.red)
+      .alpha(0.8)
+      .toHex(),
+    "inlineEdit.originalChangedTextBackground": transparent,
+    "inlineEdit.tabWillAcceptModifiedBorder": theme.levels.success,
+    "inlineEdit.tabWillAcceptOriginalBorder": theme.colors.red,
+  };
+
+  const inputColors: InputColors & InputOptionColors & InputValidationColors = {
     "input.background": inputBackground(),
     "input.border": inputBorder(),
     "input.foreground": theme.ui.default,
@@ -442,7 +607,7 @@ export default function ui(
     "inputValidation.warningBorder": theme.colors.yellow,
   };
 
-  const keybindingLabelColors: Partial<VSCodeThemeColors> = {
+  const keybindingLabelColors: KeyBindingColors = {
     "keybindingLabel.background": theme.ui.primaryalt,
     "keybindingLabel.border": light
       ? theme.ui.defaultalt
@@ -455,22 +620,22 @@ export default function ui(
       : c(theme.ui.primaryalt).lighten(0.4).desaturate(0.1).toHex(),
   };
 
-  const listColors: Partial<VSCodeThemeColors> = {
+  const listColors: ListColors = {
     "list.activeSelectionBackground": light
       ? c(theme.ui.defaultalt).alpha(0.2).toHex()
       : c(theme.ui.primaryalt).lighten(0.1).alpha(0.45).toHex(),
     "list.activeSelectionForeground": theme.ui.default,
-    "list.dropBackground": `${theme.ui.primary}15`,
+    "list.dropBackground": c(theme.ui.primary).alpha(0.082).toHex(),
     "list.errorForeground": theme.levels.danger,
-    "list.focusBackground": `${theme.ui.primary}40`,
+    "list.focusBackground": c(theme.ui.primary).alpha(0.25).toHex(),
     "list.focusForeground": theme.ui.defaultMain,
     "list.highlightForeground": theme.colors.yellow,
     "list.hoverBackground": light
-      ? c(theme.ui.defaultalt).alpha(0.05).toHex()
-      : c(theme.ui.primaryalt).lighten(0.05).alpha(0.2).toHex(),
+      ? c(theme.ui.defaultalt).alpha(0.1).toHex()
+      : c(theme.ui.primaryalt).lighten(0.1).alpha(0.3).toHex(),
     "list.hoverForeground": light
       ? c(theme.ui.defaultalt).darken(0.8).toHex()
-      : c(theme.ui.primaryalt).lighten(0.7).desaturate(0.1).toHex(),
+      : c(theme.ui.primaryalt).lighten(0.8).desaturate(0.1).toHex(),
     "list.inactiveSelectionBackground": light
       ? c(theme.ui.defaultalt).alpha(0.12).toHex()
       : c(theme.ui.primaryalt).lighten(0.1).alpha(0.25).toHex(),
@@ -478,7 +643,7 @@ export default function ui(
     "list.warningForeground": theme.levels.warning,
   };
 
-  const menuColors: Partial<VSCodeThemeColors> = {
+  const menuColors: MenuColors = {
     "menu.background": theme.ui.primaryalt,
     "menu.border": theme.ui.border,
     "menu.foreground": light
@@ -487,22 +652,27 @@ export default function ui(
     "menu.selectionForeground": light
       ? theme.ui.defaultMain
       : c(theme.ui.primaryalt).lighten(0.8).desaturate(0.1).toHex(),
-    "menu.separatorBackground": theme.ui.border + 65,
+    "menu.separatorBackground": c(theme.ui.border).alpha(0.396).toHex(),
     "menubar.selectionBackground": theme.ui.primaryalt,
     "menubar.selectionForeground": theme.ui.defaultMain,
   };
-
-  const mergeColors: Partial<VSCodeThemeColors> = {
+  const mergeColors: MergeColors = {
     "merge.border": theme.ui.border,
-    "merge.commonContentBackground": `${theme.colors.yellow}30`,
-    "merge.commonHeaderBackground": `${theme.colors.yellow}80`,
-    "merge.currentContentBackground": `${theme.levels.success}30`,
-    "merge.currentHeaderBackground": `${theme.levels.success}80`,
-    "merge.incomingContentBackground": `${theme.levels.info}30`,
-    "merge.incomingHeaderBackground": `${theme.levels.info}80`,
+    "merge.commonContentBackground": c(theme.colors.yellow)
+      .alpha(0.188)
+      .toHex(),
+    "merge.commonHeaderBackground": c(theme.colors.yellow).alpha(0.5).toHex(),
+    "merge.currentContentBackground": c(theme.levels.success)
+      .alpha(0.188)
+      .toHex(),
+    "merge.currentHeaderBackground": c(theme.levels.success).alpha(0.5).toHex(),
+    "merge.incomingContentBackground": c(theme.levels.info)
+      .alpha(0.188)
+      .toHex(),
+    "merge.incomingHeaderBackground": c(theme.levels.info).alpha(0.5).toHex(),
   };
 
-  const minimapColors: Partial<VSCodeThemeColors> = {
+  const minimapColors: MinimapColors = {
     "minimap.background": theme.ui.uibackground,
     "minimap.errorHighlight": theme.levels.danger,
     "minimap.findMatchHighlight": theme.ui.primary,
@@ -514,7 +684,7 @@ export default function ui(
     "minimapGutter.modifiedBackground": theme.levels.info,
   };
 
-  const notificationColors: Partial<VSCodeThemeColors> = {
+  const notificationColors: NotificationsColors = {
     "notificationCenterHeader.background": theme.ui.primaryalt,
     "notificationCenterHeader.foreground": theme.ui.default,
     "notificationLink.foreground": theme.colors.yellow,
@@ -526,7 +696,7 @@ export default function ui(
     "notificationsWarningIcon.foreground": theme.colors.orange,
   };
 
-  const panelColors: Partial<VSCodeThemeColors> = {
+  const panelColors: PanelColors = {
     "panel.background": theme.ui.uibackgroundmid,
     "panel.border": theme.ui.border,
     "panel.dropBorder": c(theme.ui.defaultalt).alpha(0.5).toHex(),
@@ -546,10 +716,12 @@ export default function ui(
     "panelTitle.inactiveForeground": theme.ui.defaultalt,
   };
 
-  const peekViewColors: Partial<VSCodeThemeColors> = {
+  const peekViewColors: PeekViewColors = {
     "peekView.border": theme.ui.border,
     "peekViewEditor.background": c(theme.ui.uibackground).lighten(0.04).toHex(),
-    "peekViewEditor.matchHighlightBackground": `${theme.ui.primaryalt}40`,
+    "peekViewEditor.matchHighlightBackground": c(theme.ui.primaryalt)
+      .alpha(0.25)
+      .toHex(),
     "peekViewEditor.matchHighlightBorder": transparent,
     "peekViewEditorGutter.background": c(theme.ui.uibackground)
       .lighten(0.04)
@@ -574,21 +746,21 @@ export default function ui(
     "peekViewTitleLabel.foreground": theme.ui.default,
   };
 
-  const pickerGroupColors: Partial<VSCodeThemeColors> = {
+  const pickerGroupColors: PickerGroupColors = {
     "pickerGroup.border": theme.ui.border,
     "pickerGroup.foreground": theme.ui.default,
   };
 
-  const profileBadgeColors: Partial<VSCodeThemeColors> = {
+  const profileBadgeColors: ProfileColors = {
     "profileBadge.background": theme.ui.primary,
     "profileBadge.foreground": theme.ui.uibackground,
   };
 
-  const progressBarColors: Partial<VSCodeThemeColors> = {
+  const progressBarColors: ProgressBarColors = {
     "progressBar.background": theme.colors.yellow,
   };
 
-  const quickInputColors: Partial<VSCodeThemeColors> = {
+  const quickInputColors: QuickInputColors = {
     "quickInput.background": c(theme.ui.uibackground).lighten(0.03).toHex(),
     "quickInput.foreground": light
       ? theme.ui.defaultMain
@@ -599,30 +771,31 @@ export default function ui(
     "quickInputList.focusForeground": light
       ? theme.ui.defaultMain
       : c(theme.ui.primaryalt).lighten(0.8).desaturate(0.1).toHex(),
-    "quickInputList.focusIconForeground": theme.ui.defaultalt,
+    "quickInputList.focusIconForeground": theme.ui.default,
     "quickInputTitle.background": theme.ui.uibackgroundalt,
   };
 
-  const sashColors: Partial<VSCodeThemeColors> = {
-    "sash.hoverBorder": `${theme.ui.primary}50`,
+  const sashColors: SashColors = {
+    "sash.hoverBorder": c(theme.ui.primary).alpha(0.314).toHex(),
   };
 
-  const scrollbarColors: Partial<VSCodeThemeColors> = {
+  const scrollbarColors: ScrollBarColors = {
     "scrollbar.shadow": shadow,
     "scrollbarSlider.activeBackground": c(theme.ui.default).alpha(0.3).toHex(),
     "scrollbarSlider.background": c(theme.ui.default).alpha(0.15).toHex(),
     "scrollbarSlider.hoverBackground": c(theme.ui.default).alpha(0.2).toHex(),
   };
 
-  const settingsColors: Partial<VSCodeThemeColors> = {
-    "settings.headerForeground": theme.ui.primary,
+  const settingsColors: SettingsColors = {
+    "settings.headerForeground": theme.ui.default,
     "settings.modifiedItemIndicator": theme.ui.primary,
+    "settings.settingsHeaderHoverForeground": theme.ui.default,
   };
 
-  const sideBarColors: Partial<VSCodeThemeColors> = {
+  const sideBarColors: SideBarColors = {
     "sideBar.background": theme.ui.uibackgroundalt,
     "sideBar.border": theme.ui.border,
-    "sideBar.foreground": `${theme.ui.defaultMain}CC`,
+    "sideBar.foreground": c(theme.ui.defaultMain).alpha(0.8).toHex(),
     "sideBarSectionHeader.background": theme.ui.uibackgroundalt,
     "sideBarSectionHeader.border": theme.ui.border,
     "sideBarSectionHeader.foreground": theme.ui.default,
@@ -633,7 +806,7 @@ export default function ui(
     "sideBarTitle.foreground": theme.ui.defaultalt,
   };
 
-  const statusBarColors: Partial<VSCodeThemeColors> = {
+  const statusBarColors: StatusBarColors = {
     "statusBar.background": theme.ui.uibackground,
     "statusBar.border": theme.ui.border,
     "statusBar.debuggingBackground": c(theme.ui.primary)
@@ -647,59 +820,53 @@ export default function ui(
     "statusBar.noFolderBorder": theme.ui.border,
     "statusBar.noFolderForeground": c(theme.ui.defaultMain).alpha(0.8).toHex(),
   };
+  /**
+   * Creates status bar item colors for a specific type (error, warning, etc.)
+   *
+   * @param baseColor - The base color for the status bar item
+   * @returns An object with status bar item colors
+   */
+  function createStatusBarItemColors(
+    prefix: string,
+    baseColor: string,
+  ): Partial<StatusBarColors> {
+    const foreground = light
+      ? c(theme.ui.uibackground).toHex()
+      : c(baseColor).darken(0.5).toHex();
+    const hoverBackground = c(baseColor).lighten(0.1).toHex();
+    const hoverForeground = c(theme.ui.uibackground).toHex();
 
-  const statusBarItemColors: Partial<VSCodeThemeColors> = {
+    return {
+      [`statusBarItem.${prefix}Background`]: baseColor,
+      [`statusBarItem.${prefix}Foreground`]: foreground,
+      [`statusBarItem.${prefix}HoverBackground`]: hoverBackground,
+      [`statusBarItem.${prefix}HoverForeground`]: hoverForeground,
+    };
+  }
+
+  const statusBarItemColors: StatusBarColors = {
     "statusBarItem.activeBackground": theme.ui.primaryalt,
     "statusBarItem.compactHoverBackground": c(theme.ui.primary)
       .alpha(0.8)
       .toHex(),
-    "statusBarItem.errorBackground": c(theme.levels.danger).toHex(),
-    "statusBarItem.errorForeground": c(theme.levels.danger).darken(0.5).toHex(),
-    "statusBarItem.errorHoverBackground": c(theme.levels.danger)
-      .lighten(0.05)
-      .toHex(),
-    "statusBarItem.errorHoverForeground": c(theme.ui.uibackground).toHex(),
     "statusBarItem.hoverBackground": c(theme.ui.primary)
-      .mix(theme.ui.uibackground, 0.6)
+      .mix(theme.ui.uibackground, 0.7)
       .toHex(),
     "statusBarItem.hoverForeground": c(theme.ui.default).toHex(),
-    "statusBarItem.offlineBackground": c(theme.colors.pink).toHex(),
-    "statusBarItem.offlineForeground": c(theme.colors.pink).darken(0.5).toHex(),
-    "statusBarItem.offlineHoverBackground": c(theme.colors.pink)
-      .lighten(0.05)
-      .toHex(),
-    "statusBarItem.prominentBackground": light
-      ? c(theme.ui.uibackground).darken(0.1).toHex()
-      : c(theme.ui.uibackground).lighten(0.1).toHex(),
-    "statusBarItem.prominentForeground": c(theme.ui.default).toHex(),
-    "statusBarItem.prominentHoverBackground": light
-      ? c(theme.ui.uibackground).darken(0.2).toHex()
-      : c(theme.ui.uibackground).lighten(0.2).toHex(),
-    "statusBarItem.remoteBackground": c(theme.colors.turquoize).toHex(),
-    "statusBarItem.remoteForeground": c(theme.colors.turquoize)
-      .darken(0.5)
-      .toHex(),
-    "statusBarItem.remoteHoverBackground": c(theme.colors.turquoize)
-      .lighten(0.05)
-      .toHex(),
-    "statusBarItem.remoteHoverForeground": c(theme.ui.uibackground).toHex(),
-    "statusBarItem.warningBackground": c(theme.levels.warning).toHex(),
-    "statusBarItem.warningForeground": c(theme.levels.warning)
-      .darken(0.5)
-      .toHex(),
-    "statusBarItem.warningHoverBackground": c(theme.levels.warning)
-      .lighten(0.05)
-      .toHex(),
-    "statusBarItem.warningHoverForeground": c(theme.ui.uibackground).toHex(),
+    ...createStatusBarItemColors("prominent", theme.ui.uibackground),
+    ...createStatusBarItemColors("error", theme.levels.danger),
+    ...createStatusBarItemColors("offline", theme.colors.pink),
+    ...createStatusBarItemColors("remote", theme.colors.turquoize),
+    ...createStatusBarItemColors("warning", theme.levels.warning),
   };
 
-  const tabColors: Partial<VSCodeThemeColors> = {
+  const tabColors: TabColors = {
     "tab.activeBackground": hc
       ? c(theme.ui.primary).mix(theme.ui.uibackground, 0.9).toHex()
       : theme.ui.uibackground,
     "tab.activeBorder": theme.ui.uibackground,
     "tab.activeBorderTop": theme.ui.primary,
-    "tab.activeForeground": theme.ui.primary,
+    "tab.activeForeground": theme.ui.default,
     "tab.border": theme.ui.border,
     "tab.hoverBackground": theme.ui.uibackground,
     "tab.inactiveBackground": theme.ui.uibackgroundalt,
@@ -711,7 +878,7 @@ export default function ui(
     "tab.unfocusedInactiveForeground": theme.ui.defaultalt,
   };
 
-  const terminalColors: Partial<VSCodeThemeColors> = {
+  const terminalColors: TerminalColors = {
     "terminal.ansiBlack": theme.ui.uibackground,
     "terminal.ansiBlue": theme.levels.info,
     "terminal.ansiBrightBlack": light
@@ -740,12 +907,12 @@ export default function ui(
       .toHex(),
   };
 
-  const textColors: Partial<VSCodeThemeColors> = {
-    "textBlockQuote.background": `${theme.levels.info}34`,
-    "textBlockQuote.border": `${theme.levels.info}b9`,
-    "textCodeBlock.background": `${theme.levels.info}34`,
-    "textLink.activeForeground": theme.levels.info,
-    "textLink.foreground": theme.levels.info,
+  const textColors: TextColors = {
+    "textBlockQuote.background": c(theme.levels.info).alpha(0.2).toHex(),
+    "textBlockQuote.border": c(theme.levels.info).alpha(0.725).toHex(),
+    "textCodeBlock.background": c(theme.levels.info).alpha(0.2).toHex(),
+    "textLink.activeForeground": getPrimaryOrInfo(theme.ui.primary),
+    "textLink.foreground": getPrimaryOrInfo(theme.ui.primary),
     "textPreformat.background": light
       ? c(theme.colors.yellow).mix(theme.ui.uibackground, 0.5).toHex()
       : c(theme.colors.yellow).mix(theme.ui.uibackground, 0.8).toHex(),
@@ -755,37 +922,45 @@ export default function ui(
     "textSeparator.foreground": theme.ui.primary,
   };
 
-  const titleBarColors: Partial<VSCodeThemeColors> = {
-    "titleBar.activeBackground": c(theme.ui.border).lighten(0.02).toHex(),
-    "titleBar.activeForeground": theme.ui.defaultalt,
+  const titleBarBackground = light
+    ? c(theme.ui.uibackgroundalt).darken(0.1).toHex()
+    : c(theme.ui.uibackgroundalt).darken(0.03).toHex();
+  const titleBarColors: TitleBarColors = {
+    "titleBar.activeBackground": titleBarBackground,
+    "titleBar.activeForeground": light
+      ? c(theme.ui.default).alpha(0.6).toHex()
+      : c(theme.ui.default).alpha(0.4).toHex(),
     "titleBar.border": theme.ui.border,
-    "titleBar.inactiveBackground": c(theme.ui.border).lighten(0.02).toHex(),
-    "titleBar.inactiveForeground": theme.ui.defaultalt,
+    "titleBar.inactiveBackground": titleBarBackground,
+    "titleBar.inactiveForeground": light
+      ? c(theme.ui.default).alpha(0.6).toHex()
+      : theme.ui.defaultalt,
   };
 
-  const toolbarColors: Partial<VSCodeThemeColors> = {
-    "toolbar.hoverBackground": hc
-      ? theme.ui.defaultMain + 40
-      : theme.ui.defaultalt + 60,
+  const toolbarColors: ToolbarColors = {
+    "toolbar.activeBackground": c(theme.ui.defaultalt).alpha(0.5).toHex(),
+    "toolbar.hoverBackground": c(theme.ui.defaultalt).alpha(0.3).toHex(),
   };
 
-  const treeColors: Partial<VSCodeThemeColors> = {
-    "tree.indentGuidesStroke": theme.ui.defaultalt + 70,
+  const treeColors: TreeColors = {
+    "tree.indentGuidesStroke": c(theme.ui.defaultalt).alpha(0.439).toHex(),
   };
 
-  const walkThroughColors: Partial<VSCodeThemeColors> = {
+  const walkThroughColors: WalkThroughColors = {
     "walkThrough.embeddedEditorBackground": theme.ui.uibackground,
   };
 
-  const welcomePageColors: Partial<VSCodeThemeColors> = {
+  const welcomePageColors: WelcomePageColors = {
     "welcomePage.progress.background": theme.ui.primaryalt,
     "welcomePage.progress.foreground": theme.ui.primary,
-    "welcomePage.tileBackground": theme.ui.defaultMain + 10,
-    "welcomePage.tileBorder": theme.ui.defaultMain + 20,
-    "welcomePage.tileHoverBackground": theme.ui.defaultMain + 20,
+    "welcomePage.tileBackground": c(theme.ui.defaultMain).alpha(0.1).toHex(),
+    "welcomePage.tileBorder": c(theme.ui.defaultMain).alpha(0.2).toHex(),
+    "welcomePage.tileHoverBackground": c(theme.ui.defaultMain)
+      .alpha(0.2)
+      .toHex(),
   };
 
-  const widgetColors: Partial<VSCodeThemeColors> = {
+  const widgetColors: WidgetColors = {
     "widget.shadow": widgetShadow,
   };
 
@@ -809,6 +984,7 @@ export default function ui(
     ...multiDiffEditorColors,
     ...scmGraphColors,
     ...inlineChatColors,
+    ...inlineEditColors,
     ...inputColors,
     ...keybindingLabelColors,
     ...listColors,

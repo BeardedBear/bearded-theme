@@ -3,21 +3,21 @@
   "displayName": "Bearded Theme",
   "description": "The theme with a long beard.",
   "publisher": "BeardedBear",
-  "version": "10.0.0",
+  "version": "10.1.0",
   "engines": {
     "vscode": "^1.69.0"
   },
   "type": "module",
   "scripts": {
     "build": "vite-node src/index.ts",
-    "build:ext": "vsce package --out ./releases/$npm_package_version.vsix",
+    "build:ext": "vsce package --out ./releases/%npm_package_version%.vsix",
     "build:env": "tsc load-env.ts --esModuleInterop",
     "dev": "nodemon --exec \"vite-node src/index.ts\"",
     "fix": "prettier --write ./src/**/*.ts && eslint src/**/*.{vue,ts} --fix",
-    "release": "gh release create v$npm_package_version --notes-file ./releases/$npm_package_version.md --generate-notes",
+    "release": "gh release create v%npm_package_version% --notes-file ./releases/%npm_package_version%.md --generate-notes",
     "create:release-notes": "vite-node src/create-release-notes.ts",
-    "publish:vscode": "vsce publish --packagePath ./releases/$npm_package_version.vsix",
-    "publish:ovsx": "ovsx publish ./releases/$npm_package_version.vsix -p $OVSX_TOKEN",
+    "publish:vscode": "bash -c \"read -p 'Enter your VS Code Marketplace token: ' TOKEN && vsce publish --packagePath ./releases/%npm_package_version%.vsix -p $TOKEN\"",
+    "publish:ovsx": "bash -c \"read -p 'Enter your OVSX token: ' TOKEN && ovsx publish ./releases/%npm_package_version%.vsix -p $TOKEN\"",
     "publish:all": "npm run build:ext && npm run publish:vscode && npm run publish:ovsx"
   },
   "__metadata": {
@@ -49,7 +49,8 @@
     "oceanic",
     "monokai",
     "milkshake",
-    "colorblind"
+    "colorblind",
+    "oled"
   ],
   "sponsor": {
     "url": "https://github.com/sponsors/BeardedBear"
@@ -374,6 +375,11 @@
         "label": "Bearded Theme Aquarelle Lilac",
         "uiTheme": "vs-dark",
         "path": "./themes/bearded-theme-aquarelle-lilac.json"
+      },
+      {
+        "label": "Bearded Theme OLED (Experimental)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bearded-theme-oled.json"
       }
     ]
   },
@@ -384,7 +390,6 @@
     "@typescript-eslint/parser": "^8.30.0",
     "@vscode/vsce": "^3.3.2",
     "colord": "^2.9.3",
-    "dotenv": "^16.5.0",
     "eslint": "^9.24.0",
     "eslint-plugin-perfectionist": "^4.11.0",
     "ovsx": "^0.10.2",

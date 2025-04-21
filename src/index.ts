@@ -70,6 +70,7 @@ import {
   monokaiStone,
   monokaiTerra,
 } from "./variations/monokai";
+import { oled } from "./variations/oled";
 import {
   oceanic,
   oceanicReverded,
@@ -128,7 +129,7 @@ async function makeTheme(
     name: `BeardedTheme ${name.charAt(0).toUpperCase()}${name.slice(1)}`,
     semanticHighlighting: true,
     semanticTokenColors: semanticTokens(theme),
-    tokenColors: syntax(theme, hc),
+    tokenColors: syntax(theme, hc, light),
   };
 
   writeFile(
@@ -261,3 +262,6 @@ makeTheme("Themanopia", colorBlind, { hc: true });
 makeTheme("aquarelle-cymbidium", aquarelleCymbidium);
 makeTheme("aquarelle-hydrangea", aquarelleHydrangea);
 makeTheme("aquarelle-lilac", aquarelleLilac);
+
+// OLED - Optimized for OLED screens
+makeTheme("oled", oled);

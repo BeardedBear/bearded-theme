@@ -9,4 +9,15 @@ vsc-extension-quickstart.md
 **/*.ts
 save/**
 node_modules
-
+assets/themes.png
+releases/**
+.vscode/**
+.vscode-test/**
+.github/
+.env*
+eslint.config.js
+themes/ui-key-tester.json
+README-DEV.md
+bridge.json
+*.sh
+*.bat

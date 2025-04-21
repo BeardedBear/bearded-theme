@@ -20,6 +20,16 @@ interface ThemePropsLight {
   primaryAlt?: string;
 }
 
+export function isTooNeutral(hex: string, threshold = 0.3): boolean {
+  const { s } = c(hex).toHsl();
+  return s < threshold * 100;
+}
+
+export function isTooVibrant(hex: string, threshold = 0.3): boolean {
+  const { s } = c(hex).toHsl();
+  return s >= threshold * 100;
+}
+
 /**
  * Calculates and returns an object with color values based on the input properties.
  *
