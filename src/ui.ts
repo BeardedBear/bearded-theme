@@ -352,13 +352,19 @@ export default function ui(
       ? c(theme.ui.defaultalt).alpha(0.4).toHex()
       : c(theme.ui.defaultalt).alpha(0.2).toHex(),
     "editorInfo.border": transparent,
-    "editorInlayHint.background": c(theme.ui.defaultMain).alpha(0.12).toHex(),
-    "editorInlayHint.foreground": c(theme.ui.defaultMain).alpha(0.56).toHex(),
-    "editorInlayHint.typeBackground": c(theme.colors.purple)
-      .alpha(0.19)
+    "editorInlayHint.background": c(theme.ui.defaultMain).alpha(0.1).toHex(),
+    "editorInlayHint.foreground": c(theme.ui.defaultMain).alpha(0.7).toHex(),
+    "editorInlayHint.parameterBackground": c(theme.ui.defaultMain)
+      .alpha(0.1)
       .toHex(),
-    "editorInlayHint.typeForeground": c(theme.colors.purple)
-      .alpha(0.67)
+    "editorInlayHint.parameterForeground": c(theme.ui.defaultMain)
+      .alpha(0.7)
+      .toHex(),
+    "editorInlayHint.typeBackground": c(theme.ui.defaultMain)
+      .alpha(0.1)
+      .toHex(),
+    "editorInlayHint.typeForeground": c(theme.ui.defaultMain)
+      .alpha(0.7)
       .toHex(),
     "editorLineNumber.activeForeground": light
       ? c(theme.ui.uibackground).darken(0.7).toHex()
