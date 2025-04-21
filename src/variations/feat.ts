@@ -60,7 +60,7 @@ export const goldDRaynh: Theme = {
 const colorsGoldDRaynhLight: ThemeColors = {
   blue: "#037ed1",
   green: "#03810d",
-  greenAlt: "#A4EF58",
+  greenAlt: "#75b138",
   orange: "#c0571f",
   pink: "#002e74",
   purple: "#7537d7",

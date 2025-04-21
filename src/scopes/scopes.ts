@@ -30,12 +30,21 @@ export default function syntax(
     createScope(prog.operators, theme.colors.yellow),
     createScope(
       prog.punctuation,
-      `${hc ? theme.ui.default : `${theme.ui.default}60`}`,
+      hc ? theme.ui.default : c(theme.ui.default).alpha(0.4).toHex(),
     ),
     createScope(prog.self, theme.colors.orange),
     createScope(prog.storages, theme.colors.turquoize),
     createScope(prog.strings, theme.colors.green),
-    createScope(prog.stringsAlt, `${theme.colors.green}60`),
+    createScope(
+      prog.stringsAlt,
+      light
+        ? c(theme.colors.greenAlt)
+            .desaturate(0.1)
+            .alpha(0.8)
+            .darken(0.1)
+            .toHex()
+        : c(theme.colors.greenAlt).desaturate(0.1).alpha(0.8).toHex(),
+    ),
     createScope(prog.types, theme.colors.purple),
     createScope(prog.variables, theme.colors.salmon),
 
@@ -53,7 +62,10 @@ export default function syntax(
     // HTML
     createScope(markup.variables, theme.colors.salmon),
     createScope(markup.tags, theme.colors.blue),
-    createScope(markup.tagsPunctuation, `${theme.colors.blue}aa`),
+    createScope(
+      markup.tagsPunctuation,
+      c(theme.colors.blue).alpha(0.7).toHex(),
+    ),
     createScope(markup.attributes, theme.colors.yellow),
     // MARKDOWN
     createScope(markup.mdCode, theme.colors.purple),
