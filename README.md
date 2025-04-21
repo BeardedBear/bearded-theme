@@ -24,4 +24,7 @@ Something's missing ? [create Issues](https://github.com/BeardedBear/BeardedThem
 This theme is released under the GPL-3.0 license.
 
 Designed by [BeardedBear](https://github.com/BeardedBear).
-Follow me on [Twitter](https://twitter.com/Bearded__Bear) ! (You'll see, I never tweet)
+
+~~Follow me on [Twitter](https://twitter.com/Bearded__Bear) ! (You'll see, I never tweet)~~
+
+🔔 I’m not on Twitter/X anymore — check out my [Bento](https://bento.me/bearded) to see where you can find me: https://bento.me/bearded
