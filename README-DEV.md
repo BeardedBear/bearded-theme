@@ -21,15 +21,13 @@ bearded-theme/
 │   ├── typing.ts                 # TypeScript type definitions
 │   ├── ui.ts                     # VS Code UI color mappings
 │   ├── helper.ts                 # Color utility functions
-│   ├── build.ts                  # Build orchestrator
-│   └── index.ts                  # Legacy build script
+│   └── build.ts                  # Build orchestrator
 ├── dist/
 │   ├── vscode/                   # Generated VS Code themes
 │   │   └── themes/
 │   └── zed/                      # Generated Zed themes
 │       ├── themes/
 │       └── extension.toml
-├── themes/                       # Legacy VS Code themes folder
 ├── releases/                     # VSIX packages and release notes
 └── assets/                       # Icons and images
 ```
@@ -59,17 +57,11 @@ npm run build:vscode
 
 # Build only Zed themes
 npm run build:zed
-
-# Build using the legacy system (outputs to themes/ folder)
-npm run build:legacy
 ```
 
 ### Development Mode with Auto-reload
 
 ```bash
-# Watch and rebuild all themes
-npm run dev
-
 # Watch VS Code themes only
 npm run dev:vscode
 
@@ -243,9 +235,3 @@ If tokens are not set as environment variables, the publish scripts will prompt 
 1. Verify tokens are valid and have correct permissions
 2. Ensure the version in `package.json` is unique
 3. Check that release notes exist for the current version
-
-## Legacy Support
-
-The legacy build system (`npm run build:legacy`) still outputs to the `themes/` folder for backwards compatibility. This is what the current VS Code extension uses for its `contributes.themes` paths.
-
-When migrating to the new system, update `package.json`'s `contributes.themes` paths to point to `./dist/vscode/themes/` instead of `./themes/`.

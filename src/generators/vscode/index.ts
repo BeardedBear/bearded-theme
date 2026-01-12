@@ -8,19 +8,9 @@ import {
   themeRegistry,
   ThemeRegistryEntry,
 } from "../../shared/theme-registry";
-import { Theme } from "../../typing";
 import ui from "../../ui";
 
 const OUTPUT_DIR = "dist/vscode/themes";
-
-interface BridgeItem {
-  name: string;
-  slug: string;
-  theme: Theme;
-  uiTheme: string;
-}
-
-const bridgeItems: BridgeItem[] = [];
 
 /**
  * Main build function for VSCode themes
@@ -32,13 +22,6 @@ async function buildVscodeThemes(): Promise<void> {
   for (const entry of themeRegistry) {
     await makeVscodeTheme(entry);
   }
-
-  // Write bridge.json to dist/vscode
-  writeFileSync(
-    "dist/vscode/bridge.json",
-    JSON.stringify(bridgeItems, null, 2),
-    { encoding: "utf8" },
-  );
 
   // Generate themes contribution for package.json
   const themesContribute = generateThemeContributes();
@@ -63,7 +46,7 @@ function generateThemeContributes(): Array<{
 }> {
   return themeRegistry.map((entry) => ({
     label: `Bearded Theme ${entry.name}`,
-    path: `./themes/bearded-theme-${entry.slug}.json`,
+    path: `./dist/vscode/themes/bearded-theme-${entry.slug}.json`,
     uiTheme: getVscodeUiTheme(entry.options),
   }));
 }
@@ -91,14 +74,6 @@ async function makeVscodeTheme(entry: ThemeRegistryEntry): Promise<void> {
 
   writeFile(outputPath, JSON.stringify(themeTemplate, null, 2), (err) => {
     if (err) console.log("error", err);
-  });
-
-  // Build bridge item for manifest generation
-  bridgeItems.push({
-    name: `Bearded Theme ${name}`,
-    slug: slug,
-    theme,
-    uiTheme: getVscodeUiTheme(options),
   });
 }
 

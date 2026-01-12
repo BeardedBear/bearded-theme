@@ -345,8 +345,7 @@ function buildZedThemeStyle(
   const ui = theme.ui;
 
   // Alpha helper
-  const alpha = (color: string, a: number): string =>
-    c(color).alpha(a).toHex();
+  const alpha = (color: string, a: number): string => c(color).alpha(a).toHex();
   const lightenOrDarken = (color: string, amount: number): string =>
     light ? c(color).darken(amount).toHex() : c(color).lighten(amount).toHex();
 
