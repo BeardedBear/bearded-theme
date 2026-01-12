@@ -411,7 +411,7 @@ function buildZedThemeStyle(
     hidden: ui.defaultalt,
     hint: levels.info,
     "hint.background": alpha(levels.info, 0.1),
-    ignored: alpha(ui.default, 0.5),
+    ignored: alpha(ui.defaultalt, 0.6),
 
     info: levels.info,
     "info.background": alpha(levels.info, 0.15),
