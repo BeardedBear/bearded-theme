@@ -10,6 +10,9 @@ import {
 } from "../../shared/theme-registry";
 import { Theme } from "../../typing";
 
+// example of available themes properties
+// https://github.com/zed-industries/zed/blob/main/assets/themes/one/one.json
+
 const OUTPUT_DIR = "dist/zed/themes";
 const ZED_DIR = "dist/zed";
 
@@ -66,6 +69,7 @@ interface ZedThemeStyle {
   "editor.invisible": string;
   "editor.line_number": string;
 
+  "editor.subheader.background": string;
   "editor.wrap_guide": string;
 
   "element.active": string;
@@ -111,7 +115,9 @@ interface ZedThemeStyle {
   "scrollbar.thumb.hover_background": string;
   "scrollbar.track.background": string;
   "scrollbar.track.border": string;
+
   // Search
+  "search.active_match_background": string;
   "search.match_background": string;
 
   // Status bar
@@ -447,25 +453,28 @@ function buildZedThemeStyle(
       ? alpha(c(ui.uibackground).darken(0.4).toHex(), 0.5)
       : alpha(c(ui.uibackground).lighten(0.3).toHex(), 0.5),
 
+    "editor.subheader.background": lightenOrDarken(ui.uibackgroundalt, 0.08),
     "editor.wrap_guide": alpha(ui.default, 0.1),
 
-    "element.active": lightenOrDarken(ui.uibackgroundalt, 0.1),
     // Elements
+    "element.active": lightenOrDarken(ui.uibackgroundalt, 0.1),
     "element.background": lightenOrDarken(ui.uibackgroundalt, 0.05),
     "element.disabled": alpha(ui.uibackgroundalt, 0.5),
     "element.hover": lightenOrDarken(ui.uibackgroundalt, 0.1),
     "element.selected": alpha(ui.primary, 0.2),
     "elevated_surface.background": ui.primaryalt,
+
     // Status colors
     error: levels.danger,
     "error.background": alpha(levels.danger, 0.15),
     foreground: ui.default,
-    "ghost_element.active": alpha(ui.default, 0.12),
 
     // Ghost elements
+    "ghost_element.active": alpha(ui.default, 0.12),
     "ghost_element.background": "transparent",
     "ghost_element.hover": alpha(ui.default, 0.08),
     "ghost_element.selected": alpha(ui.primary, 0.15),
+
     hidden: ui.defaultalt,
     hint: light
       ? c(theme.ui.defaultalt).alpha(0.7).toHex()
@@ -532,7 +541,8 @@ function buildZedThemeStyle(
     "scrollbar.thumb.hover_background": alpha(ui.default, 0.25),
     "scrollbar.track.background": "transparent",
     "scrollbar.track.border": "transparent",
-    // Search
+     // Search
+    // "search.active_match_background": "#e8af7466",
     "search.match_background": alpha(theme.colors.yellow, 0.3),
 
     // Status bar
