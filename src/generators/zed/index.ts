@@ -397,7 +397,7 @@ function buildZedThemeStyle(
     "element.disabled": alpha(ui.uibackgroundalt, 0.5),
     "element.hover": lightenOrDarken(ui.uibackgroundalt, 0.05),
     "element.selected": alpha(ui.primary, 0.2),
-    "elevated_surface.background": ui.uibackgroundalt,
+    "elevated_surface.background": ui.primaryalt,
     // Status colors
     error: levels.danger,
     "error.background": alpha(levels.danger, 0.15),
