@@ -14,6 +14,8 @@
     "build:zed": "vite-node src/generators/zed/index.ts",
     "build:ext:vscode": "npm run build:vscode && vsce package --out ./releases/%npm_package_version%.vsix",
     "build:ext:zed": "npm run build:zed",
+    "publish:zed": "echo 'To publish Zed extension: 1) Push changes to GitHub 2) Open PR to zed-industries/extensions repo'",
+    "zed:dev": "echo 'Install as dev extension: Open Zed > Extensions > Install Dev Extension > Select dist/zed folder'",
     "build:env": "tsc load-env.ts --esModuleInterop",
     "dev:vscode": "nodemon --exec \"vite-node src/generators/vscode/index.ts\"",
     "dev:zed": "nodemon --exec \"vite-node src/generators/zed/index.ts\"",

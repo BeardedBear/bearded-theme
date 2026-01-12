@@ -1,5 +1,6 @@
 import { colord as c } from "colord";
-import { mkdirSync, writeFileSync } from "fs";
+import { copyFileSync, mkdirSync, readFileSync, writeFileSync } from "fs";
+import { join } from "path";
 
 import {
   getZedAppearance,
@@ -10,6 +11,7 @@ import {
 import { Theme } from "../../typing";
 
 const OUTPUT_DIR = "dist/zed/themes";
+const ZED_DIR = "dist/zed";
 
 interface ZedSyntaxStyle {
   color?: string;
@@ -297,9 +299,13 @@ function buildSyntax(
 async function buildZedThemes(): Promise<void> {
   console.log("🎨 Building Zed themes...");
 
-  // Ensure output directory exists
+  // Get version from package.json
+  const version = getVersionFromPackageJson();
+  console.log(`📦 Using version: ${version}`);
+
+  // Ensure output directories exist
   mkdirSync(OUTPUT_DIR, { recursive: true });
-  mkdirSync("dist/zed", { recursive: true });
+  mkdirSync(ZED_DIR, { recursive: true });
 
   // Create the theme family with all themes
   const themeFamily: ZedThemeFamily = {
@@ -316,21 +322,73 @@ async function buildZedThemes(): Promise<void> {
     { encoding: "utf8" },
   );
 
-  // Generate extension.toml
+  // Generate extension.toml with synced version
   const extensionToml = `id = "bearded-theme"
 name = "Bearded Theme"
 description = "The theme with a long beard. A collection of carefully crafted color themes for Zed."
-version = "10.1.0"
+version = "${version}"
 schema_version = 1
 authors = ["BeardedBear <germain.poirrier@gmail.com>"]
 repository = "https://github.com/BeardedBear/bearded-theme"
 `;
 
-  writeFileSync("dist/zed/extension.toml", extensionToml, { encoding: "utf8" });
+  writeFileSync(`${ZED_DIR}/extension.toml`, extensionToml, {
+    encoding: "utf8",
+  });
+
+  // Copy LICENSE file (required by Zed as of October 2025)
+  try {
+    const licenseSrc = join(process.cwd(), "LICENSE");
+    const licenseDest = join(ZED_DIR, "LICENSE");
+    copyFileSync(licenseSrc, licenseDest);
+    console.log("📄 Copied LICENSE file to dist/zed/");
+  } catch {
+    console.warn(
+      "⚠️ Could not copy LICENSE file. Make sure LICENSE exists at project root.",
+    );
+  }
+
+  // Generate README for Zed extension
+  const readmeContent = `# Bearded Theme for Zed
+
+The theme with a long beard. 🧔
+
+A collection of ${themeRegistry.length} carefully crafted color themes for [Zed](https://zed.dev).
+
+## Installation
+
+1. Open Zed
+2. Open the Extensions panel (\`cmd+shift+x\` or \`ctrl+shift+x\`)
+3. Search for "Bearded Theme"
+4. Click Install
+
+## Available Themes
+
+${themeRegistry.map((entry) => `- Bearded Theme ${entry.name}`).join("\n")}
+
+## Links
+
+- [VS Code Extension](https://marketplace.visualstudio.com/items?itemName=BeardedBear.beardedtheme)
+- [GitHub Repository](https://github.com/BeardedBear/bearded-theme)
+- [Report Issues](https://github.com/BeardedBear/bearded-theme/issues)
+
+## License
+
+GNU General Public License v3.0
+
+## Author
+
+Made with ❤️ by [BeardedBear](https://github.com/BeardedBear)
+`;
+
+  writeFileSync(`${ZED_DIR}/README.md`, readmeContent, { encoding: "utf8" });
 
   console.log(
     `✅ Generated Zed theme family with ${themeRegistry.length} themes in ${OUTPUT_DIR}`,
   );
+  console.log(`✅ Generated extension.toml (version ${version})`);
+  console.log(`✅ Generated README.md`);
+  console.log(`\n📁 Zed extension ready in: ${ZED_DIR}/`);
 }
 
 /**
@@ -543,6 +601,20 @@ function createZedTheme(entry: ThemeRegistryEntry): ZedTheme {
     name: `Bearded Theme ${entry.name}`,
     style: buildZedThemeStyle(entry.theme, entry.options),
   };
+}
+
+/**
+ * Get version from package.json
+ */
+function getVersionFromPackageJson(): string {
+  try {
+    const packageJsonPath = join(process.cwd(), "package.json");
+    const packageJson = JSON.parse(readFileSync(packageJsonPath, "utf8"));
+    return packageJson.version || "1.0.0";
+  } catch {
+    console.warn("⚠️ Could not read package.json, using default version");
+    return "1.0.0";
+  }
 }
 
 // Run the build
