@@ -451,9 +451,9 @@ function buildZedThemeStyle(
 
     "element.active": lightenOrDarken(ui.uibackgroundalt, 0.1),
     // Elements
-    "element.background": ui.uibackgroundalt,
+    "element.background": lightenOrDarken(ui.uibackgroundalt, 0.05),
     "element.disabled": alpha(ui.uibackgroundalt, 0.5),
-    "element.hover": lightenOrDarken(ui.uibackgroundalt, 0.05),
+    "element.hover": lightenOrDarken(ui.uibackgroundalt, 0.1),
     "element.selected": alpha(ui.primary, 0.2),
     "elevated_surface.background": ui.primaryalt,
     // Status colors
@@ -467,10 +467,13 @@ function buildZedThemeStyle(
     "ghost_element.hover": alpha(ui.default, 0.08),
     "ghost_element.selected": alpha(ui.primary, 0.15),
     hidden: ui.defaultalt,
-    hint: levels.info,
-    "hint.background": alpha(levels.info, 0.1),
+    hint: light
+      ? c(theme.ui.defaultalt).alpha(0.7).toHex()
+      : theme.ui.defaultalt,
+    "hint.background": light
+      ? c(theme.ui.defaultalt).alpha(0.7).toHex()
+      : theme.ui.defaultalt,
     ignored: alpha(ui.defaultalt, 0.6),
-
     info: levels.info,
     "info.background": alpha(levels.info, 0.15),
     modified: theme.colors.blue,
