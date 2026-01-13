@@ -117,7 +117,6 @@ interface ZedThemeStyle {
   "scrollbar.track.border": string;
 
   // Search
-  "search.active_match_background": string;
   "search.match_background": string;
 
   // Status bar
@@ -433,7 +432,7 @@ function buildZedThemeStyle(
       ? alpha(c(ui.uibackground).darken(0.06).toHex(), 0.5)
       : alpha(c(ui.uibackground).lighten(0.05).toHex(), 0.3),
     "editor.active_line_number": light
-      ? c(ui.uibackground).darken(0.5).toHex()
+      ? c(ui.border).darken(0.4).toHex()
       : c(ui.uibackground).lighten(0.45).toHex(),
 
     "editor.active_wrap_guide": alpha(ui.default, 0.2),
@@ -450,7 +449,7 @@ function buildZedThemeStyle(
 
     "editor.invisible": alpha(ui.default, 0.15),
     "editor.line_number": light
-      ? alpha(c(ui.uibackground).darken(0.4).toHex(), 0.5)
+      ? c(ui.border).darken(0.05).toHex()
       : alpha(c(ui.uibackground).lighten(0.3).toHex(), 0.5),
 
     "editor.subheader.background": lightenOrDarken(ui.uibackgroundalt, 0.08),
@@ -542,7 +541,6 @@ function buildZedThemeStyle(
     "scrollbar.track.background": "transparent",
     "scrollbar.track.border": "transparent",
      // Search
-    // "search.active_match_background": "#e8af7466",
     "search.match_background": alpha(theme.colors.yellow, 0.3),
 
     // Status bar
