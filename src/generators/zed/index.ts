@@ -331,10 +331,10 @@ async function buildZedThemes(): Promise<void> {
   // Generate extension.toml with synced version
   const extensionToml = `id = "bearded-theme"
 name = "Bearded Theme"
-description = "The theme with a long beard. A collection of carefully crafted color themes for Zed."
+description = "The theme with a long beard."
 version = "${version}"
 schema_version = 1
-authors = ["BeardedBear <germain.poirrier@gmail.com>"]
+authors = ["BeardedBear <beardedbearbear@gmail.com>"]
 repository = "https://github.com/BeardedBear/bearded-theme"
 `;
 
@@ -357,9 +357,7 @@ repository = "https://github.com/BeardedBear/bearded-theme"
   // Generate README for Zed extension
   const readmeContent = `# Bearded Theme for Zed
 
-The theme with a long beard. 🧔
-
-A collection of ${themeRegistry.length} carefully crafted color themes for [Zed](https://zed.dev).
+The theme with a long beard.
 
 ## Installation
 
@@ -462,7 +460,7 @@ function buildZedThemeStyle(
     "element.disabled": alpha(ui.uibackgroundalt, 0.5),
     "element.hover": lightenOrDarken(ui.uibackgroundalt, 0.1),
     "element.selected": alpha(ui.primary, 0.2),
-    "elevated_surface.background": ui.primaryalt,
+    "elevated_surface.background": lightenOrDarken(ui.uibackgroundalt, 0.1),
 
     // Status colors
     error: levels.danger,
