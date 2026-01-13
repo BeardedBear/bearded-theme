@@ -555,9 +555,7 @@ function buildZedThemeStyle(
     syntax: buildSyntax(theme, options),
 
     // Tabs
-    "tab.active_background": light
-      ? c(ui.uibackground).toHex()
-      : c(ui.uibackground).lighten(0.03).toHex(),
+    "tab.active_background": ui.uibackground,
     "tab.inactive_background": ui.uibackgroundalt,
     "tab_bar.background": ui.uibackgroundalt,
     "terminal.ansi.black": light
