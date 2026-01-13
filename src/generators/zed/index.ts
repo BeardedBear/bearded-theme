@@ -1,5 +1,5 @@
 import { colord as c } from "colord";
-import { copyFileSync, mkdirSync, readFileSync, writeFileSync } from "fs";
+import { copyFileSync, mkdirSync, writeFileSync } from "fs";
 import { join } from "path";
 
 import {
@@ -9,6 +9,7 @@ import {
   ThemeRegistryEntry,
 } from "../../shared/theme-registry";
 import { Theme } from "../../typing";
+import { getZedVersion } from "../../version-manager";
 
 // example of available themes properties
 // https://github.com/zed-industries/zed/blob/main/assets/themes/one/one.json
@@ -304,9 +305,9 @@ function buildSyntax(
 async function buildZedThemes(): Promise<void> {
   console.log("🎨 Building Zed themes...");
 
-  // Get version from package.json
-  const version = getVersionFromPackageJson();
-  console.log(`📦 Using version: ${version}`);
+  // Get version from versions.json (Zed-specific version)
+  const version = getZedVersion();
+  console.log(`📦 Using Zed version: ${version}`);
 
   // Ensure output directories exist
   mkdirSync(OUTPUT_DIR, { recursive: true });
@@ -614,19 +615,7 @@ function createZedTheme(entry: ThemeRegistryEntry): ZedTheme {
   };
 }
 
-/**
- * Get version from package.json
- */
-function getVersionFromPackageJson(): string {
-  try {
-    const packageJsonPath = join(process.cwd(), "package.json");
-    const packageJson = JSON.parse(readFileSync(packageJsonPath, "utf8"));
-    return packageJson.version || "1.0.0";
-  } catch {
-    console.warn("⚠️ Could not read package.json, using default version");
-    return "1.0.0";
-  }
-}
+
 
 // Run the build
 buildZedThemes();
