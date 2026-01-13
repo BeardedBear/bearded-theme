@@ -556,7 +556,7 @@ function buildZedThemeStyle(
 
     // Tabs
     "tab.active_background": light
-      ? c(ui.uibackground).lighten(0.02).toHex()
+      ? c(ui.uibackground).toHex()
       : c(ui.uibackground).lighten(0.03).toHex(),
     "tab.inactive_background": ui.uibackgroundalt,
     "tab_bar.background": ui.uibackgroundalt,
@@ -590,7 +590,9 @@ function buildZedThemeStyle(
     "text.accent": ui.primary,
     "text.disabled": alpha(ui.default, 0.5),
     "text.muted": ui.defaultMain,
-    "text.placeholder": ui.defaultalt,
+    "text.placeholder": light ?
+      c(ui.border).darken(0.1).toHex()
+      : ui.defaultalt,
     // Title bar
     "title_bar.background": ui.uibackgroundalt,
     "title_bar.inactive_background": ui.uibackgroundalt,
