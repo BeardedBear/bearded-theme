@@ -39,13 +39,13 @@ bearded-theme/
 
 ## Critical Files
 
-| File | Purpose |
-|------|---------|
-| `src/shared/theme-registry.ts` | **Single source of truth** for all theme variants |
-| `src/typing.ts` | TypeScript interfaces for Theme, ThemeColors, ThemeUi |
-| `src/helper.ts` | Color manipulation utilities (`makeMainColorsDark`, `makeMainColorsLight`) |
-| `src/variations/*.ts` | Individual theme color palettes |
-| `package.json` | Extension manifest with theme contributions |
+| File                           | Purpose                                                                    |
+| ------------------------------ | -------------------------------------------------------------------------- |
+| `src/shared/theme-registry.ts` | **Single source of truth** for all theme variants                          |
+| `src/typing.ts`                | TypeScript interfaces for Theme, ThemeColors, ThemeUi                      |
+| `src/helper.ts`                | Color manipulation utilities (`makeMainColorsDark`, `makeMainColorsLight`) |
+| `src/variations/*.ts`          | Individual theme color palettes                                            |
+| `package.json`                 | Extension manifest with theme contributions                                |
 
 ## Coding Standards
 
@@ -60,22 +60,23 @@ bearded-theme/
 
 - **Always use hex colors** (e.g., `#69C3FF`)
 - Use the `colord` library for color manipulation:
+
   ```typescript
   import { colord as c } from "colord";
-  
+
   // Darken/lighten
-  c(color).darken(0.1).toHex()
-  c(color).lighten(0.1).toHex()
-  
+  c(color).darken(0.1).toHex();
+  c(color).lighten(0.1).toHex();
+
   // Alpha transparency
-  c(color).alpha(0.5).toHex()
-  
+  c(color).alpha(0.5).toHex();
+
   // Saturation
-  c(color).desaturate(0.3).toHex()
-  c(color).saturate(0.2).toHex()
-  
+  c(color).desaturate(0.3).toHex();
+  c(color).saturate(0.2).toHex();
+
   // Mix colors
-  c(color1).mix(color2).toHex()
+  c(color1).mix(color2).toHex();
   ```
 
 ### Theme Color Structure
@@ -97,20 +98,20 @@ interface ThemeColors {
 }
 
 interface ThemeLevels {
-  danger: string;   // Usually red
-  info: string;     // Usually blue
-  success: string;  // Usually green
-  warning: string;  // Usually orange
+  danger: string; // Usually red
+  info: string; // Usually blue
+  success: string; // Usually green
+  warning: string; // Usually orange
 }
 
 interface ThemeUi {
   border: string;
-  default: string;        // Main text color
-  defaultalt: string;     // Secondary text (comments, etc.)
-  defaultMain: string;    // Slightly dimmed main text
-  primary: string;        // Accent color
-  primaryalt: string;     // Secondary accent
-  uibackground: string;   // Main background
+  default: string; // Main text color
+  defaultalt: string; // Secondary text (comments, etc.)
+  defaultMain: string; // Slightly dimmed main text
+  primary: string; // Accent color
+  primaryalt: string; // Secondary accent
+  uibackground: string; // Main background
   uibackgroundalt: string; // Alt background (sidebar, panels)
   uibackgroundmid: string; // Mixed background
 }
@@ -121,6 +122,7 @@ interface ThemeUi {
 ### Adding a New Theme Variant
 
 1. **Create the color palette** in `src/variations/`:
+
    ```typescript
    // src/variations/my-theme.ts
    import { makeMainColorsDark } from "../helper";
@@ -154,6 +156,7 @@ interface ThemeUi {
    ```
 
 2. **Register in theme-registry.ts**:
+
    ```typescript
    import { myTheme } from "../variations/my-theme";
 
@@ -174,8 +177,8 @@ interface ThemeUi {
 
 ```typescript
 interface ThemeOptions {
-  light?: boolean;            // Light theme (vs-dark becomes vs)
-  hc?: boolean;              // High contrast theme
+  light?: boolean; // Light theme (vs-dark becomes vs)
+  hc?: boolean; // High contrast theme
   desaturateInputs?: boolean; // Desaturate input backgrounds
   untindedSelection?: boolean; // Use untinted selection color
 }
@@ -198,14 +201,14 @@ interface ThemeOptions {
 
 ## Build Commands
 
-| Command | Description |
-|---------|-------------|
-| `npm run build` | Build all themes (VS Code + Zed) |
-| `npm run build:vscode` | Build VS Code themes only |
-| `npm run build:zed` | Build Zed themes only |
-| `npm run dev:vscode` | Watch mode for VS Code |
-| `npm run dev:zed` | Watch mode for Zed |
-| `npm run fix` | Format with Prettier and fix ESLint issues |
+| Command                | Description                                |
+| ---------------------- | ------------------------------------------ |
+| `npm run build`        | Build all themes (VS Code + Zed)           |
+| `npm run build:vscode` | Build VS Code themes only                  |
+| `npm run build:zed`    | Build Zed themes only                      |
+| `npm run dev:vscode`   | Watch mode for VS Code                     |
+| `npm run dev:zed`      | Watch mode for Zed                         |
+| `npm run fix`          | Format with Prettier and fix ESLint issues |
 
 ## Testing Guidelines
 
@@ -234,6 +237,7 @@ interface ThemeOptions {
 - ❌ Don't forget to update `package.json` when adding VS Code themes
 - ❌ Don't use RGB/HSL directly - always use hex with colord conversions
 - ❌ Don't break existing theme slugs (used as identifiers)
+- ❌ Don't create new documentation files (README.md, CONTRIBUTING.md, etc.) unless explicitly requested
 
 ## Accessibility Considerations
 
@@ -242,7 +246,6 @@ When creating or modifying themes:
 1. **Contrast Ratios**: Ensure text has sufficient contrast against backgrounds
    - Normal text: minimum 4.5:1
    - Large text: minimum 3:1
-   
 2. **Color Blindness**: Consider colorblind users
    - Don't rely solely on red/green differentiation
    - See `src/variations/colorblind.ts` for reference
@@ -283,11 +286,11 @@ Key dependencies and their purposes:
 import { makeMainColorsDark } from "../helper";
 
 const ui = makeMainColorsDark({
-  base: "#1c2433",      // Base background color
-  primary: "#8196b5",   // Accent color
-  reversed: false,      // Swap background/backgroundAlt
-  fontTeinted: false,   // Add color tint to fonts
-  primaryAlt: "#...",   // Optional secondary accent
+  base: "#1c2433", // Base background color
+  primary: "#8196b5", // Accent color
+  reversed: false, // Swap background/backgroundAlt
+  fontTeinted: false, // Add color tint to fonts
+  primaryAlt: "#...", // Optional secondary accent
 });
 ```
 
@@ -297,21 +300,21 @@ const ui = makeMainColorsDark({
 import { makeMainColorsLight } from "../helper";
 
 const ui = makeMainColorsLight({
-  base: "#fafafa",      // Base background color
-  primary: "#5c6166",   // Accent color
-  desaturated: false,   // Desaturate colors for softer look
-  primaryAlt: "#...",   // Optional secondary accent
+  base: "#fafafa", // Base background color
+  primary: "#5c6166", // Accent color
+  desaturated: false, // Desaturate colors for softer look
+  primaryAlt: "#...", // Optional secondary accent
 });
 ```
 
 ## Troubleshooting
 
-| Issue | Solution |
-|-------|----------|
-| Theme not appearing | Check registration in `theme-registry.ts` |
-| Color errors | Verify all required colors are defined |
-| Type errors | Run `npx tsc --noEmit` to check |
-| Build fails | Check for syntax errors in variation files |
+| Issue                    | Solution                                             |
+| ------------------------ | ---------------------------------------------------- |
+| Theme not appearing      | Check registration in `theme-registry.ts`            |
+| Color errors             | Verify all required colors are defined               |
+| Type errors              | Run `npx tsc --noEmit` to check                      |
+| Build fails              | Check for syntax errors in variation files           |
 | Package.json out of sync | Regenerate from `dist/vscode/themes-contribute.json` |
 
 ## Questions?
