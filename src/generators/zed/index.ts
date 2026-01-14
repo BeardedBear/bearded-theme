@@ -473,7 +473,9 @@ function buildZedThemeStyle(
 
     hidden: ui.defaultalt,
     hint: mutedText(light, theme),
-    "hint.background": mutedText(light, theme),
+    "hint.background": light ?
+      c(ui.uibackground).lighten(0.05).toHex() :
+      c(ui.uibackground).darken(0.1).toHex(),
     ignored: alpha(ui.defaultalt, 0.6),
     "info": theme.ui.primary,
     "info.background": c(ui.primaryalt).toHex(),
