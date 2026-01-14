@@ -1,14 +1,14 @@
 import { mkdirSync, writeFile, writeFileSync } from "fs";
 import { dirname } from "path";
 
-import syntax from "../../scopes/scopes";
-import semanticTokens from "../../scopes/semanticTokens";
 import {
   getVscodeUiTheme,
   themeRegistry,
   ThemeRegistryEntry,
 } from "../../shared/theme-registry";
-import ui from "../../ui";
+import syntax from "./scopes/scopes";
+import semanticTokens from "./scopes/semanticTokens";
+import ui from "./ui";
 
 const OUTPUT_DIR = "dist/vscode/themes";
 

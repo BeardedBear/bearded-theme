@@ -1,6 +1,6 @@
 import { colord as c } from "colord";
 
-import { FontStyle, Scope, Theme } from "../typing";
+import { FontStyle, Scope, Theme } from "../../../typing";
 import * as markup from "./markup";
 import * as prog from "./prog";
 import * as styling from "./styling";

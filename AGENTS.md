@@ -22,30 +22,38 @@ bearded-theme/
 │   ├── shared/                    # Shared code between generators
 │   │   └── theme-registry.ts      # Central registry of all theme variants
 │   ├── generators/
-│   │   ├── vscode/               # VS Code theme generator
-│   │   └── zed/                  # Zed theme generator
-│   ├── variations/               # Theme color definitions (shared)
-│   ├── scopes/                   # Syntax highlighting scopes (VS Code)
-│   ├── typing.ts                 # TypeScript type definitions
-│   ├── ui.ts                     # VS Code UI color mappings
-│   ├── helper.ts                 # Color utility functions
-│   └── build.ts                  # Build orchestrator
-├── dist/                         # Generated output (DO NOT edit manually)
+│   │   ├── vscode/                # VS Code theme generator
+│   │   │   ├── index.ts           # VS Code build script
+│   │   │   ├── ui.ts              # VS Code UI color mappings
+│   │   │   └── scopes/            # Syntax highlighting scopes (VS Code)
+│   │   │       ├── scopes.ts
+│   │   │       ├── semanticTokens.ts
+│   │   │       ├── prog.ts
+│   │   │       ├── markup.ts
+│   │   │       └── styling.ts
+│   │   └── zed/                   # Zed theme generator
+│   ├── variations/                # Theme color definitions (shared)
+│   ├── typing.ts                  # TypeScript type definitions
+│   ├── helper.ts                  # Color utility functions
+│   └── build.ts                   # Build orchestrator
+├── dist/                          # Generated output (DO NOT edit manually)
 │   ├── vscode/themes/
 │   └── zed/themes/
-├── releases/                     # VSIX packages and release notes
-└── assets/                       # Icons and images
+├── releases/                      # VSIX packages and release notes
+└── assets/                        # Icons and images
 ```
 
 ## Critical Files
 
-| File                           | Purpose                                                                    |
-| ------------------------------ | -------------------------------------------------------------------------- |
-| `src/shared/theme-registry.ts` | **Single source of truth** for all theme variants                          |
-| `src/typing.ts`                | TypeScript interfaces for Theme, ThemeColors, ThemeUi                      |
-| `src/helper.ts`                | Color manipulation utilities (`makeMainColorsDark`, `makeMainColorsLight`) |
-| `src/variations/*.ts`          | Individual theme color palettes                                            |
-| `package.json`                 | Extension manifest with theme contributions                                |
+| File                                | Purpose                                                                    |
+| ----------------------------------- | -------------------------------------------------------------------------- |
+| `src/shared/theme-registry.ts`      | **Single source of truth** for all theme variants                          |
+| `src/typing.ts`                     | TypeScript interfaces for Theme, ThemeColors, ThemeUi                      |
+| `src/helper.ts`                     | Color manipulation utilities (`makeMainColorsDark`, `makeMainColorsLight`) |
+| `src/variations/*.ts`               | Individual theme color palettes                                            |
+| `src/generators/vscode/ui.ts`       | VS Code UI color mappings                                                  |
+| `src/generators/vscode/scopes/*.ts` | VS Code syntax highlighting scopes                                         |
+| `package.json`                      | Extension manifest with theme contributions                                |
 
 ## Coding Standards
 
@@ -186,7 +194,7 @@ interface ThemeOptions {
 
 ### Modifying Syntax Highlighting
 
-- **VS Code**: Edit files in `src/scopes/`
+- **VS Code**: Edit files in `src/generators/vscode/scopes/`
   - `prog.ts` - Programming language tokens
   - `markup.ts` - Markdown/HTML tokens
   - `styling.ts` - CSS/SCSS tokens
@@ -196,7 +204,7 @@ interface ThemeOptions {
 
 ### Modifying UI Colors
 
-- **VS Code**: Edit `src/ui.ts`
+- **VS Code**: Edit `src/generators/vscode/ui.ts`
 - **Zed**: Edit `buildZedThemeStyle()` in `src/generators/zed/index.ts`
 
 ## Build Commands

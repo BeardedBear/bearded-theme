@@ -49,9 +49,9 @@ import type {
   WalkThroughColors,
   WelcomePageColors,
   WidgetColors,
-} from "./typing";
+} from "../../typing";
 
-import { isTooNeutral } from "./helper";
+import { isTooNeutral } from "../../helper";
 
 const transparent = "#00000000";
 
