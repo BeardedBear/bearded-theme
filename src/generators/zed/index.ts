@@ -97,6 +97,7 @@ interface ZedThemeStyle {
 
   info: string;
   "info.background": string;
+  "info.border": string;
   modified: string;
   // Pane
   "pane.focused_border": string;
@@ -183,7 +184,6 @@ function buildSyntax(
   options: ThemeOptions,
 ): Record<string, ZedSyntaxStyle> {
   const { hc, light } = options;
-
   return {
     // Attributes (decorators)
     attribute: { color: theme.colors.pink },
@@ -191,15 +191,11 @@ function buildSyntax(
 
     // Comments
     comment: {
-      color: light
-        ? c(theme.ui.defaultalt).alpha(0.7).toHex()
-        : theme.ui.defaultalt,
+      color: mutedText(light, theme),
       font_style: "italic",
     },
     "comment.doc": {
-      color: light
-        ? c(theme.ui.defaultalt).alpha(0.7).toHex()
-        : theme.ui.defaultalt,
+      color: mutedText(light, theme),
       font_style: "italic",
     },
     // Constants
@@ -419,7 +415,7 @@ function buildZedThemeStyle(
     "border.disabled": alpha(ui.border, 0.3),
     "border.focused": ui.primary,
     "border.selected": ui.primary,
-    "border.variant": alpha(ui.border, 0.5),
+    "border.variant": alpha(ui.border, 0.7),
     conflict: theme.colors.orange,
 
     // Git status
@@ -460,7 +456,9 @@ function buildZedThemeStyle(
     "element.disabled": alpha(ui.uibackgroundalt, 0.5),
     "element.hover": lightenOrDarken(ui.uibackgroundalt, 0.1),
     "element.selected": alpha(ui.primary, 0.2),
-    "elevated_surface.background": lightenOrDarken(ui.uibackgroundalt, 0.1),
+    "elevated_surface.background": light ?
+      c(ui.uibackground).lighten(0.05).toHex() :
+      c(ui.uibackground).darken(0.1).toHex(),
 
     // Status colors
     error: levels.danger,
@@ -468,21 +466,18 @@ function buildZedThemeStyle(
     foreground: ui.default,
 
     // Ghost elements
-    "ghost_element.active": alpha(ui.default, 0.12),
+    "ghost_element.active": mutedText(light, theme),
     "ghost_element.background": "transparent",
     "ghost_element.hover": alpha(ui.default, 0.08),
     "ghost_element.selected": alpha(ui.primary, 0.15),
 
     hidden: ui.defaultalt,
-    hint: light
-      ? c(theme.ui.defaultalt).alpha(0.7).toHex()
-      : theme.ui.defaultalt,
-    "hint.background": light
-      ? c(theme.ui.defaultalt).alpha(0.7).toHex()
-      : theme.ui.defaultalt,
+    hint: mutedText(light, theme),
+    "hint.background": mutedText(light, theme),
     ignored: alpha(ui.defaultalt, 0.6),
-    info: levels.info,
-    "info.background": alpha(levels.info, 0.15),
+    "info": theme.ui.primary,
+    "info.background": c(ui.primaryalt).toHex(),
+    "info.border": c(ui.primaryalt).lighten(0.5).toHex(),
     modified: theme.colors.blue,
     // Pane
     "pane.focused_border": ui.primary,
@@ -537,11 +532,12 @@ function buildZedThemeStyle(
     // Scrollbar
     "scrollbar.thumb.background": alpha(ui.default, 0.15),
     "scrollbar.thumb.hover_background": alpha(ui.default, 0.25),
-    "scrollbar.track.background": "transparent",
-    "scrollbar.track.border": "transparent",
-     // Search
-    "search.match_background": alpha(theme.colors.yellow, 0.3),
+     "scrollbar.track.background": "transparent",
 
+    "scrollbar.track.border": "transparent",
+
+    // Search
+    "search.match_background": alpha(theme.colors.yellow, 0.3),
     // Status bar
     "status_bar.background": ui.uibackgroundalt,
 
@@ -552,26 +548,25 @@ function buildZedThemeStyle(
     "surface.background": ui.uibackgroundmid,
     // Syntax highlighting
     syntax: buildSyntax(theme, options),
-
     // Tabs
     "tab.active_background": ui.uibackground,
     "tab.inactive_background": ui.uibackgroundalt,
+
     "tab_bar.background": ui.uibackgroundalt,
     "terminal.ansi.black": light
       ? "#000000"
       : c(ui.uibackground).darken(0.1).toHex(),
-
     "terminal.ansi.blue": theme.colors.blue,
+
     "terminal.ansi.bright_black": c(ui.uibackground).lighten(0.25).toHex(),
     "terminal.ansi.bright_blue": c(theme.colors.blue).lighten(0.1).toHex(),
 
     "terminal.ansi.bright_cyan": c(theme.colors.turquoize).lighten(0.1).toHex(),
+
     "terminal.ansi.bright_green": c(theme.colors.green).lighten(0.1).toHex(),
 
     "terminal.ansi.bright_magenta": c(theme.colors.pink).lighten(0.1).toHex(),
-
     "terminal.ansi.bright_red": c(theme.colors.red).lighten(0.1).toHex(),
-
     "terminal.ansi.bright_white": c(ui.default).lighten(0.1).toHex(),
     "terminal.ansi.bright_yellow": c(theme.colors.yellow).lighten(0.1).toHex(),
     "terminal.ansi.cyan": theme.colors.turquoize,
@@ -592,13 +587,14 @@ function buildZedThemeStyle(
       : ui.defaultalt,
     // Title bar
     "title_bar.background": ui.uibackgroundalt,
+
     "title_bar.inactive_background": ui.uibackgroundalt,
+
     // Toolbar
     "toolbar.background": ui.uibackground,
-
     warning: levels.warning,
-
     "warning.background": alpha(levels.warning, 0.15),
+
   };
 }
 
@@ -611,6 +607,10 @@ function createZedTheme(entry: ThemeRegistryEntry): ZedTheme {
     name: `Bearded Theme ${entry.name}`,
     style: buildZedThemeStyle(entry.theme, entry.options),
   };
+}
+
+function mutedText(light: boolean | undefined, theme: Theme): string {
+  return theme.ui.defaultalt;
 }
 
 
