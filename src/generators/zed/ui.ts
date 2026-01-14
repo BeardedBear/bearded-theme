@@ -24,6 +24,7 @@ export function buildZedThemeStyle(
   return {
     // Base colors
     background: ui.uibackground,
+
     // Borders
     border: ui.border,
     "border.disabled": alpha(ui.border, 0.3),
@@ -35,6 +36,7 @@ export function buildZedThemeStyle(
     // Git status
     created: theme.colors.green,
     deleted: theme.colors.red,
+
     // Drop target
     "drop_target.background": alpha(ui.primary, 0.2),
     "editor.active_line.background": light
@@ -43,24 +45,21 @@ export function buildZedThemeStyle(
     "editor.active_line_number": light
       ? c(ui.border).darken(0.4).toHex()
       : c(ui.uibackground).lighten(0.45).toHex(),
-
     "editor.active_wrap_guide": alpha(ui.default, 0.2),
+
     // Editor
     "editor.background": ui.uibackground,
     "editor.document_highlight.read_background": alpha(ui.primary, 0.15),
     "editor.document_highlight.write_background": alpha(ui.primary, 0.25),
     "editor.foreground": ui.default,
-
     "editor.gutter.background": ui.uibackground,
     "editor.highlighted_line.background": alpha(ui.primary, 0.1),
     "editor.indent_guide": alpha(ui.default, 0.1),
     "editor.indent_guide_active": alpha(ui.default, 0.2),
-
     "editor.invisible": alpha(ui.default, 0.15),
     "editor.line_number": light
       ? c(ui.border).darken(0.05).toHex()
       : alpha(c(ui.uibackground).lighten(0.3).toHex(), 0.5),
-
     "editor.subheader.background": lightenOrDarken(ui.uibackgroundalt, 0.08),
     "editor.wrap_guide": alpha(ui.default, 0.1),
 
@@ -70,9 +69,7 @@ export function buildZedThemeStyle(
     "element.disabled": alpha(ui.uibackgroundalt, 0.5),
     "element.hover": lightenOrDarken(ui.uibackgroundalt, 0.1),
     "element.selected": alpha(ui.primary, 0.2),
-    "elevated_surface.background": light
-      ? c(ui.uibackground).lighten(0.05).toHex()
-      : c(ui.uibackground).darken(0.1).toHex(),
+    "elevated_surface.background": c(ui.uibackground).lighten(0.05).toHex(),
 
     // Status colors
     error: levels.danger,
@@ -90,17 +87,20 @@ export function buildZedThemeStyle(
     "hint.background": light
       ? c(ui.uibackground).lighten(0.05).toHex()
       : c(ui.uibackground).darken(0.1).toHex(),
-    ignored: alpha(ui.defaultalt, 0.6),
+    ignored: alpha(ui.defaultalt, 0.8),
     info: theme.ui.primary,
     "info.background": c(ui.primaryalt).toHex(),
     "info.border": c(ui.primaryalt).lighten(0.5).toHex(),
     modified: theme.colors.blue,
+
     // Pane
     "pane.focused_border": ui.primary,
     "pane_group.border": ui.border,
+
     // Panel
     "panel.background": ui.uibackgroundalt,
     "panel.focused_border": ui.primary,
+
     // Players (for collaboration) - generate a few player colors
     players: [
       {
@@ -145,42 +145,43 @@ export function buildZedThemeStyle(
       },
     ],
     renamed: theme.colors.purple,
+
     // Scrollbar
     "scrollbar.thumb.background": alpha(ui.default, 0.15),
     "scrollbar.thumb.hover_background": alpha(ui.default, 0.25),
     "scrollbar.track.background": "transparent",
-
     "scrollbar.track.border": "transparent",
 
     // Search
     "search.match_background": alpha(theme.colors.yellow, 0.3),
+
     // Status bar
     "status_bar.background": ui.uibackgroundalt,
 
+    // Success
     success: levels.success,
     "success.background": alpha(levels.success, 0.15),
 
     // Surfaces
     "surface.background": ui.uibackgroundmid,
+
     // Syntax highlighting
     syntax: buildSyntax(theme, options),
+
     // Tabs
     "tab.active_background": ui.uibackground,
     "tab.inactive_background": ui.uibackgroundalt,
-
     "tab_bar.background": ui.uibackgroundalt,
+
+    // Terminal
     "terminal.ansi.black": light
       ? "#000000"
       : c(ui.uibackground).darken(0.1).toHex(),
     "terminal.ansi.blue": theme.colors.blue,
-
     "terminal.ansi.bright_black": c(ui.uibackground).lighten(0.25).toHex(),
     "terminal.ansi.bright_blue": c(theme.colors.blue).lighten(0.1).toHex(),
-
     "terminal.ansi.bright_cyan": c(theme.colors.turquoize).lighten(0.1).toHex(),
-
     "terminal.ansi.bright_green": c(theme.colors.green).lighten(0.1).toHex(),
-
     "terminal.ansi.bright_magenta": c(theme.colors.pink).lighten(0.1).toHex(),
     "terminal.ansi.bright_red": c(theme.colors.red).lighten(0.1).toHex(),
     "terminal.ansi.bright_white": c(ui.default).lighten(0.1).toHex(),
@@ -189,11 +190,12 @@ export function buildZedThemeStyle(
     "terminal.ansi.green": theme.colors.green,
     "terminal.ansi.magenta": theme.colors.pink,
     "terminal.ansi.red": theme.colors.red,
-    "terminal.ansi.white": ui.default,
+    "terminal.ansi.white": light ? ui.default : "#FFFFFF",
     "terminal.ansi.yellow": theme.colors.yellow,
-    // Terminal colors
     "terminal.background": ui.uibackground,
     "terminal.foreground": ui.default,
+
+    // Text
     text: ui.default,
     "text.accent": ui.primary,
     "text.disabled": alpha(ui.default, 0.5),
@@ -201,13 +203,15 @@ export function buildZedThemeStyle(
     "text.placeholder": light
       ? c(ui.border).darken(0.1).toHex()
       : ui.defaultalt,
+
     // Title bar
     "title_bar.background": ui.uibackgroundalt,
-
     "title_bar.inactive_background": ui.uibackgroundalt,
 
     // Toolbar
     "toolbar.background": ui.uibackground,
+
+    // Warning
     warning: levels.warning,
     "warning.background": alpha(levels.warning, 0.15),
   };
