@@ -1,4 +1,21 @@
 /**
+ * VS Code specific type definitions
+ *
+ * This file contains type definitions specific to VS Code theme colors.
+ * For shared types used across all generators, see ../../shared/types.ts
+ */
+
+// Re-export shared types for convenience
+export type {
+  FontStyle,
+  Scope,
+  Theme,
+  ThemeColors,
+  ThemeLevels,
+  ThemeUi,
+} from "../../shared/types";
+
+/**
  * Represents colors for Activity Bar & Action Bar
  */
 export type ActivityBarColors = {
@@ -490,8 +507,6 @@ export type ExtensionColors = {
   "extensionIcon.verifiedForeground"?: string;
 };
 
-export type FontStyle = "bold" | "italic" | "normal";
-
 /**
  * Represents colors for Gauge
  */
@@ -945,14 +960,6 @@ export type SCMGraphColors = {
   "scmGraph.historyItemRemoteRefColor"?: string;
 };
 
-export interface Scope {
-  scope: string[];
-  settings: {
-    fontStyle?: FontStyle;
-    foreground: string;
-  };
-}
-
 /**
  * Represents colors for ScrollBar
  */
@@ -1251,74 +1258,6 @@ export type TextColors = {
   "textPreformat.foreground"?: string;
   "textSeparator.foreground"?: string;
 };
-
-export interface Theme {
-  colors: ThemeColors;
-  levels: ThemeLevels;
-  ui: ThemeUi;
-}
-
-export interface ThemeColors {
-  /**
-   * Color for the functions
-   */
-  blue: string;
-  /**
-   * Color for the strings
-   */
-  green: string;
-  /**
-   * Color for the classes
-   */
-  greenAlt: string;
-  /**
-   * Color for the accessors
-   */
-  orange: string;
-  /**
-   * Color for the functions arguments or decorators
-   */
-  pink: string;
-  /**
-   * Color for typings
-   */
-  purple: string;
-  /**
-   * Color for the constants
-   */
-  red: string;
-  /**
-   * Color for the variables
-   */
-  salmon: string;
-  /**
-   * Color for the storages of type of functions
-   */
-  turquoize: string;
-  /**
-   * Color for the keywords
-   */
-  yellow: string;
-}
-
-export interface ThemeLevels {
-  danger: string;
-  info: string;
-  success: string;
-  warning: string;
-}
-
-export interface ThemeUi {
-  border: string;
-  default: string;
-  defaultalt: string;
-  defaultMain: string;
-  primary: string;
-  primaryalt: string;
-  uibackground: string;
-  uibackgroundalt: string;
-  uibackgroundmid: string;
-}
 
 /**
  * Represents colors for TitleBar

@@ -1,5 +1,5 @@
+import { Theme, ThemeColors, ThemeLevels } from "../generators/vscode/types";
 import { makeMainColorsDark } from "../helper";
-import { Theme, ThemeColors, ThemeLevels } from "../typing";
 
 const arcColors: ThemeColors = {
   blue: "#69C3FF",

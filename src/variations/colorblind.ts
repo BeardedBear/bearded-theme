@@ -1,5 +1,5 @@
+import { Theme, ThemeColors } from "../generators/vscode/types";
 import { makeMainColorsDark } from "../helper";
-import { Theme, ThemeColors } from "../typing";
 
 const ui = makeMainColorsDark({ base: "#1b1e28", primary: "#9887eb" });
 

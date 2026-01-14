@@ -1,5 +1,5 @@
+import { Theme, ThemeColors } from "../generators/vscode/types";
 import { makeMainColorsDark, makeMainColorsLight } from "../helper";
-import { Theme, ThemeColors } from "../typing";
 
 export const will: Theme = {
   colors: {

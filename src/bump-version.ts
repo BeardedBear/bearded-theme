@@ -49,8 +49,12 @@ function main(): void {
     console.error("  type: major | minor | patch");
     console.error("");
     console.error("Examples:");
-    console.error("  npm run bump:version zed patch    # Bump Zed from 1.0.0 to 1.0.1");
-    console.error("  npm run bump:version vscode minor  # Bump VS Code from 11.0.0 to 11.1.0");
+    console.error(
+      "  npm run bump:version zed patch    # Bump Zed from 1.0.0 to 1.0.1",
+    );
+    console.error(
+      "  npm run bump:version vscode minor  # Bump VS Code from 11.0.0 to 11.1.0",
+    );
     console.error("  npm run bump:version all patch     # Bump both IDEs");
     process.exit(1);
   }
@@ -158,7 +162,11 @@ function readVersionConfig(): VersionConfig {
  */
 function writePackageJson(packageJson: Record<string, unknown>): void {
   const packagePath = join(process.cwd(), "package.json");
-  writeFileSync(packagePath, JSON.stringify(packageJson, null, 2) + "\n", "utf8");
+  writeFileSync(
+    packagePath,
+    JSON.stringify(packageJson, null, 2) + "\n",
+    "utf8",
+  );
 }
 
 /**

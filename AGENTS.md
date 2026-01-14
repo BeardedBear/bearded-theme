@@ -20,11 +20,13 @@ Bearded Theme is a color theme extension for **VS Code** and **Zed** editors. It
 bearded-theme/
 ├── src/
 │   ├── shared/                    # Shared code between generators
-│   │   └── theme-registry.ts      # Central registry of all theme variants
+│   │   ├── theme-registry.ts      # Central registry of all theme variants
+│   │   └── types.ts               # Shared TypeScript interfaces (Theme, ThemeColors, etc.)
 │   ├── generators/
 │   │   ├── vscode/                # VS Code theme generator
 │   │   │   ├── index.ts           # VS Code build script
 │   │   │   ├── ui.ts              # VS Code UI color mappings
+│   │   │   ├── types.ts           # VS Code specific type definitions
 │   │   │   └── scopes/            # Syntax highlighting scopes (VS Code)
 │   │   │       ├── scopes.ts
 │   │   │       ├── semanticTokens.ts
@@ -33,7 +35,6 @@ bearded-theme/
 │   │   │       └── styling.ts
 │   │   └── zed/                   # Zed theme generator
 │   ├── variations/                # Theme color definitions (shared)
-│   ├── typing.ts                  # TypeScript type definitions
 │   ├── helper.ts                  # Color utility functions
 │   └── build.ts                   # Build orchestrator
 ├── dist/                          # Generated output (DO NOT edit manually)
@@ -48,7 +49,8 @@ bearded-theme/
 | File                                | Purpose                                                                    |
 | ----------------------------------- | -------------------------------------------------------------------------- |
 | `src/shared/theme-registry.ts`      | **Single source of truth** for all theme variants                          |
-| `src/typing.ts`                     | TypeScript interfaces for Theme, ThemeColors, ThemeUi                      |
+| `src/shared/types.ts`               | Shared TypeScript interfaces (Theme, ThemeColors, ThemeUi, etc.)           |
+| `src/generators/vscode/types.ts`    | VS Code specific type definitions (ActivityBarColors, EditorColors, etc.)  |
 | `src/helper.ts`                     | Color manipulation utilities (`makeMainColorsDark`, `makeMainColorsLight`) |
 | `src/variations/*.ts`               | Individual theme color palettes                                            |
 | `src/generators/vscode/ui.ts`       | VS Code UI color mappings                                                  |
@@ -89,7 +91,7 @@ bearded-theme/
 
 ### Theme Color Structure
 
-Every theme must define these required color properties:
+Every theme must define these required color properties (defined in `src/shared/types.ts`):
 
 ```typescript
 interface ThemeColors {
@@ -125,6 +127,8 @@ interface ThemeUi {
 }
 ```
 
+These types are shared across all generators (VS Code, Zed, etc.). VS Code specific types (like `ActivityBarColors`, `EditorColors`) are in `src/generators/vscode/types.ts`.
+
 ## Common Tasks
 
 ### Adding a New Theme Variant
@@ -134,7 +138,7 @@ interface ThemeUi {
    ```typescript
    // src/variations/my-theme.ts
    import { makeMainColorsDark } from "../helper";
-   import { Theme, ThemeColors, ThemeLevels } from "../typing";
+   import { Theme, ThemeColors, ThemeLevels } from "../shared/types";
 
    const colors: ThemeColors = {
      blue: "#69C3FF",

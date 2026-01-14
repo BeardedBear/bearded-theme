@@ -1,5 +1,5 @@
 // https://code.visualstudio.com/api/language-extensions/semantic-highlight-guide#semantic-coloring-in-color-themes
-import { Theme } from "../../../typing";
+import { Theme } from "../types";
 
 interface SemanticToken {
   bold?: boolean;

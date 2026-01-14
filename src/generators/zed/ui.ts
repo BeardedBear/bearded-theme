@@ -1,7 +1,7 @@
 import { colord as c } from "colord";
 
 import { ThemeOptions } from "../../shared/theme-registry";
-import { Theme } from "../../typing";
+import { Theme } from "../vscode/types";
 import { buildSyntax } from "./syntax";
 import { ZedThemeStyle } from "./types";
 

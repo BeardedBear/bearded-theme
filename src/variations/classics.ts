@@ -1,5 +1,5 @@
+import { Theme, ThemeColors, ThemeLevels } from "../generators/vscode/types";
 import { makeMainColorsDark, makeMainColorsLight } from "../helper";
-import { Theme, ThemeColors, ThemeLevels } from "../typing";
 
 const classicsColors: ThemeColors = {
   blue: "#3398DB",

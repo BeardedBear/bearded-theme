@@ -49,7 +49,7 @@ import type {
   WalkThroughColors,
   WelcomePageColors,
   WidgetColors,
-} from "../../typing";
+} from "./types";
 
 import { isTooNeutral } from "../../helper";
 

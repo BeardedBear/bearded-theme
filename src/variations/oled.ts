@@ -1,7 +1,7 @@
 import { colord as c } from "colord";
 
+import { Theme, ThemeColors, ThemeLevels, ThemeUi } from "../generators/vscode/types";
 import { makeMainColorsDark } from "../helper";
-import { Theme, ThemeColors, ThemeLevels, ThemeUi } from "../typing";
 
 const pureBlack = "#000000";
 

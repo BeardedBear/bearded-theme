@@ -1,4 +1,3 @@
-import { Theme } from "../typing";
 // Import all theme variations
 import {
   aquarelleCymbidium,
@@ -80,6 +79,7 @@ import {
   surprisingWatermelon,
 } from "../variations/surprising";
 import { vividBlack, vividLight, vividPurple } from "../variations/vivid";
+import { Theme } from "./types";
 
 export interface ThemeOptions {
   desaturateInputs?: boolean;

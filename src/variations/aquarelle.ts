@@ -1,5 +1,5 @@
 import { makeMainColorsDark } from "../helper";
-import { Theme, ThemeColors, ThemeLevels } from "../typing";
+import { Theme, ThemeColors, ThemeLevels } from "../shared/types";
 
 const colors: ThemeColors = {
   blue: "#afd9ec",

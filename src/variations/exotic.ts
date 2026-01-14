@@ -1,5 +1,5 @@
+import { Theme, ThemeLevels } from "../generators/vscode/types";
 import { makeMainColorsDark, makeMainColorsLight } from "../helper";
-import { Theme, ThemeLevels } from "../typing";
 
 const levels: ThemeLevels = {
   danger: "#C13838",
