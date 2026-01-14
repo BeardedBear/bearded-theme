@@ -76,12 +76,12 @@ export default function ui(
   function createSelectionColor(delta: number): string {
     return untindedSelection
       ? c(theme.ui.uibackground)
-          .lighten(0.3 * delta)
-          .alpha(0.5)
-          .toHex()
+        .lighten(0.3 * delta)
+        .alpha(0.5)
+        .toHex()
       : c(theme.ui.primary)
-          .alpha(0.3 * delta)
-          .toHex();
+        .alpha(0.3 * delta)
+        .toHex();
   }
 
   function inputBackground(): string {

@@ -19,7 +19,8 @@
     "build:env": "tsc load-env.ts --esModuleInterop",
     "dev:vscode": "nodemon --exec \"vite-node src/generators/vscode/index.ts\"",
     "dev:zed": "nodemon --exec \"vite-node src/generators/zed/index.ts\"",
-    "fix": "prettier --write ./src/**/*.ts && eslint src/**/*.{vue,ts} --fix",
+    "lint": "eslint src/**/*.{js,ts}",
+    "fix": "eslint src/**/*.{js,ts} --fix",
     "release": "gh release create v%npm_package_version% --notes-file ./releases/%npm_package_version%.md --generate-notes",
     "create:release-notes": "vite-node src/create-release-notes.ts",
     "bump:version": "vite-node src/bump-version.ts",
@@ -400,11 +401,11 @@
     "eslint": "^9.39.2",
     "eslint-plugin-perfectionist": "^5.3.1",
     "ovsx": "^0.10.8",
-    "prettier": "^3.7.4",
     "typescript": "^5.9.3",
     "vite-node": "^5.2.0"
   },
   "devDependencies": {
+    "@stylistic/eslint-plugin": "^5.7.0",
     "nodemon": "^3.1.11"
   }
 }

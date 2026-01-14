@@ -91,10 +91,10 @@ export function buildSyntax(
     "string.special": {
       color: light
         ? c(theme.colors.greenAlt)
-            .desaturate(0.1)
-            .alpha(0.8)
-            .darken(0.1)
-            .toHex()
+          .desaturate(0.1)
+          .alpha(0.8)
+          .darken(0.1)
+          .toHex()
         : c(theme.colors.greenAlt).desaturate(0.1).alpha(0.8).toHex(),
     },
 

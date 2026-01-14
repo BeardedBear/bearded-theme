@@ -94,7 +94,7 @@ function main(): void {
       const packageJson = readPackageJson();
       packageJson.version = newVersion;
       writePackageJson(packageJson);
-      console.log(`   Updated package.json`);
+      console.log("   Updated package.json");
     }
 
     if (ide === "zed" || ide === "all") {

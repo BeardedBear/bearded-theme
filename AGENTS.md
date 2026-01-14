@@ -59,6 +59,48 @@ bearded-theme/
 
 ## Coding Standards
 
+### Code Formatting
+
+This project uses **ESLint Stylistic** for code formatting (not Prettier).
+
+**Configuration:**
+
+- Double quotes for strings
+- 2-space indentation
+- Semicolons required
+- Trailing commas in multiline structures
+- Max line length: 80 characters (with exceptions for strings, URLs, etc.)
+
+**Commands:**
+
+- `npm run lint` - Check formatting and code quality
+- `npm run fix` - Auto-fix formatting and linting issues
+
+All formatting rules are defined in `eslint.config.js` using `@stylistic/eslint-plugin`.
+
+**Interface Property Spacing:**
+
+For consistent interface formatting, follow these rules:
+
+- No blank lines between properties within the same logical group
+- One blank line after comment headers that introduce a new group
+- Properties are sorted alphabetically by default (via `perfectionist` plugin)
+- Exception: `src/generators/zed/types.ts` maintains logical grouping instead of alphabetical sorting
+
+Example:
+
+```typescript
+export interface MyInterface {
+  // Group 1
+  propertyA: string;
+  propertyB: string;
+
+  // Group 2
+  propertyC: string;
+  propertyD: string;
+}
+```
+
 ### TypeScript Conventions
 
 - Use ES Module syntax (`import`/`export`)
@@ -213,14 +255,15 @@ interface ThemeOptions {
 
 ## Build Commands
 
-| Command                | Description                                |
-| ---------------------- | ------------------------------------------ |
-| `npm run build`        | Build all themes (VS Code + Zed)           |
-| `npm run build:vscode` | Build VS Code themes only                  |
-| `npm run build:zed`    | Build Zed themes only                      |
-| `npm run dev:vscode`   | Watch mode for VS Code                     |
-| `npm run dev:zed`      | Watch mode for Zed                         |
-| `npm run fix`          | Format with Prettier and fix ESLint issues |
+| Command                | Description                          |
+| ---------------------- | ------------------------------------ |
+| `npm run build`        | Build all themes (VS Code + Zed)     |
+| `npm run build:vscode` | Build VS Code themes only            |
+| `npm run build:zed`    | Build Zed themes only                |
+| `npm run dev:vscode`   | Watch mode for VS Code               |
+| `npm run dev:zed`      | Watch mode for Zed                   |
+| `npm run lint`         | Check code with ESLint (no auto-fix) |
+| `npm run fix`          | Format and fix code with ESLint      |
 
 ## Testing Guidelines
 
@@ -237,7 +280,7 @@ interface ThemeOptions {
 - ✅ Use the existing color manipulation helpers in `helper.ts`
 - ✅ Follow the established pattern when creating new themes
 - ✅ Register new themes in `theme-registry.ts` (single source of truth)
-- ✅ Run `npm run fix` before committing
+- ✅ Run `npm run fix` before committing (uses ESLint Stylistic)
 - ✅ Test both VS Code and Zed output when modifying shared code
 - ✅ Use meaningful, descriptive theme names
 - ✅ Maintain color accessibility (contrast ratios)
@@ -289,6 +332,9 @@ Key dependencies and their purposes:
 - `vite-node` - TypeScript execution without compilation
 - `@vscode/vsce` - VS Code extension packaging
 - `ovsx` - Open VSX registry publishing
+- `@stylistic/eslint-plugin` - Code formatting (replaces Prettier)
+- `eslint` + `@typescript-eslint/*` - Linting and code quality
+- `eslint-plugin-perfectionist` - Import, object, and interface sorting (can be disabled per-file)
 
 ## Common Patterns
 

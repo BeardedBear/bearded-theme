@@ -105,7 +105,7 @@ Made with ❤️ by [BeardedBear](https://github.com/BeardedBear)
     `✅ Generated Zed theme family with ${themeRegistry.length} themes in ${OUTPUT_DIR}`,
   );
   console.log(`✅ Generated extension.toml (version ${version})`);
-  console.log(`✅ Generated README.md`);
+  console.log("✅ Generated README.md");
   console.log(`\n📁 Zed extension ready in: ${ZED_DIR}/`);
 }
 
