@@ -11,7 +11,7 @@ import { ZedThemeStyle } from "./types";
 export function buildZedThemeStyle(
   theme: Theme,
   options: ThemeOptions,
-): ZedThemeStyle {
+): Partial<ZedThemeStyle> {
   const { light } = options;
   const levels = theme.levels;
   const ui = theme.ui;
