@@ -1,0 +1,7 @@
+id = "bearded-theme"
+name = "Bearded Theme"
+description = "The theme with a long beard."
+version = "1.0.0"
+schema_version = 1
+authors = ["BeardedBear <beardedbearbear@gmail.com>"]
+repository = "https://github.com/BeardedBear/bearded-theme"
