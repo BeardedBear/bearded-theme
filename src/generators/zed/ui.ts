@@ -74,6 +74,7 @@ export function buildZedThemeStyle(
     // Status colors
     error: levels.danger,
     "error.background": alpha(levels.danger, 0.15),
+    "error.border": alpha(levels.danger, 0.5),
     foreground: ui.default,
 
     // Ghost elements
@@ -161,6 +162,7 @@ export function buildZedThemeStyle(
     // Success
     success: levels.success,
     "success.background": alpha(levels.success, 0.15),
+    "success.border": alpha(levels.success, 0.5),
 
     // Surfaces
     "surface.background": ui.uibackgroundmid,
@@ -211,8 +213,16 @@ export function buildZedThemeStyle(
     // Toolbar
     "toolbar.background": ui.uibackground,
 
+    // Version control
+    "version_control.added": levels.success,
+    "version_control.deleted": levels.danger,
+    "version_control.modified": levels.info,
+    "version_control.word_added": alpha(levels.success, 0.2),
+    "version_control.word_deleted": alpha(levels.danger, 0.2),
+
     // Warning
     warning: levels.warning,
     "warning.background": alpha(levels.warning, 0.15),
+    "warning.border": alpha(levels.warning, 0.5),
   };
 }
