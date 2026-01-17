@@ -83,7 +83,7 @@ const createReleaseNotes = (): void => {
             // Replace the #XXX with the link
             updatedCommit = updatedCommit.replace(match, issueLink);
           } catch (error) {
-            console.error(`Error processing issue reference:`, error);
+            console.error("Error processing issue reference:", error);
             // If any error occurs, just keep original reference
           }
         });
@@ -180,14 +180,14 @@ const createReleaseNotes = (): void => {
     if (features.length > 0) {
       content += `### Features and Improvements\n\n${features.join("\n")}\n\n`;
     } else {
-      content += `### Features and Improvements\n\nNo new features or improvements in this release.\n\n`;
+      content += "### Features and Improvements\n\nNo new features or improvements in this release.\n\n";
     } // Get bug fixes
     const bugsPattern = "^fix\\|^bug";
     const bugfixes = getCommits(bugsPattern);
     if (bugfixes.length > 0) {
       content += `### Bug Fixes\n\n${bugfixes.join("\n")}\n\n`;
     } else {
-      content += `### Bug Fixes\n\nNo bug fixes in this release.\n\n`;
+      content += "### Bug Fixes\n\nNo bug fixes in this release.\n\n";
     }
 
     // Process other changes without displaying them

@@ -1,5 +1,5 @@
+import { Theme, ThemeColors, ThemeLevels } from "../generators/vscode/types";
 import { makeMainColorsDark } from "../helper";
-import { Theme, ThemeColors, ThemeLevels } from "../typing";
 
 const surprisingColors = (primary: string): ThemeColors => {
   return {

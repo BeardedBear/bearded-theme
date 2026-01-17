@@ -1,5 +1,7 @@
 # Bearded Theme
 
+A vibrant color theme available for **VS Code** and **Zed** editors, featuring 60+ carefully crafted variants including dark, light, high-contrast, and accessibility-focused options.
+
 Font used in screenshots : [JetBrains Mono](https://www.jetbrains.com/lp/mono/)
 
 Icon pack used in screenshots : [Bearded Icons](https://marketplace.visualstudio.com/items?itemName=BeardedBear.beardedicons)
@@ -13,11 +15,21 @@ Something's missing ? [create Issues](https://github.com/BeardedBear/BeardedThem
 
 ## 🚀 Installation
 
+### VS Code
+
 - Open the Extensions sidebar in VS Code
-- Search for `Bearded`
+- Search for `Bearded Theme`
 - Click Install
 - Open the Command Palette with Ctrl+Shift+P or ⇧⌘P
-- Select Preferences: Color Theme and choose `Bearded Theme`.
+- Select Preferences: Color Theme and choose your preferred `Bearded Theme` variant
+
+### Zed
+
+- Open Zed's Extensions panel (Cmd+Shift+X or Ctrl+Shift+X)
+- Search for `Bearded Theme`
+- Click Install
+- Open the Command Palette (Cmd+Shift+P or Ctrl+Shift+P)
+- Select `theme selector: toggle` and choose your preferred `Bearded Theme` variant
 
 ## 📄 License
 

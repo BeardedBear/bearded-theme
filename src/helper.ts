@@ -1,7 +1,7 @@
 import { colord as c, extend } from "colord";
 import mixPlugin from "colord/plugins/mix";
 
-import { ThemeUi } from "./typing";
+import { ThemeUi } from "./shared/types";
 
 extend([mixPlugin]);
 

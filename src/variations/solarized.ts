@@ -1,5 +1,5 @@
+import { Theme, ThemeColors, ThemeLevels } from "../generators/vscode/types";
 import { makeMainColorsDark, makeMainColorsLight } from "../helper";
-import { Theme, ThemeColors, ThemeLevels } from "../typing";
 
 const solarizedColors: ThemeColors = {
   blue: "#4db0f7",
