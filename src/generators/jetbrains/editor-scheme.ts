@@ -61,6 +61,12 @@ function buildAttributeOptions(
 ): string {
   const { colors, ui } = theme;
 
+  // Helper to mix color with background to simulate transparency
+  // JetBrains attributes don't support alpha, so we pre-mix
+  const mixWithBg = (color: string, alpha: number): string => {
+    return c(color).mix(ui.uibackground, 1 - alpha).toHex();
+  };
+
   // Helper to create an attribute option
   const attr = (
     name: string,
@@ -216,17 +222,37 @@ function buildAttributeOptions(
     attr("DEFAULT_ENTITY", { foreground: colors.orange }),
 
     // HTML specific
+    attr("HTML_TAG", {
+      foreground: isHc ? colors.blue : mixWithBg(colors.blue, 0.7),
+    }),
     attr("HTML_TAG_NAME", { foreground: colors.blue }),
     attr("HTML_ATTRIBUTE_NAME", { foreground: colors.yellow }),
     attr("HTML_ATTRIBUTE_VALUE", { foreground: colors.green }),
     attr("HTML_ENTITY_REFERENCE", { foreground: colors.orange }),
+    attr("HTML_CUSTOM_TAG_NAME", { foreground: colors.greenAlt }),
 
     // XML specific
+    attr("XML_TAG", {
+      foreground: isHc ? colors.blue : mixWithBg(colors.blue, 0.7),
+    }),
     attr("XML_TAG_NAME", { foreground: colors.blue }),
     attr("XML_ATTRIBUTE_NAME", { foreground: colors.yellow }),
     attr("XML_ATTRIBUTE_VALUE", { foreground: colors.green }),
     attr("XML_ENTITY_REFERENCE", { foreground: colors.orange }),
-    attr("XML_TAG", { foreground: colors.blue }),
+
+    // Vue.js specific
+    attr("VUE_TAG", {
+      foreground: isHc ? colors.blue : mixWithBg(colors.blue, 0.7),
+    }),
+    attr("VUE_TAG_NAME", { foreground: colors.blue }),
+    attr("VUE_CUSTOM_TAG_NAME", { foreground: colors.greenAlt }),
+    attr("VUE_ATTRIBUTE_NAME", { foreground: colors.yellow }),
+    attr("VUE_ATTRIBUTE_VALUE", { foreground: colors.green }),
+    attr("VUE_DIRECTIVE", { foreground: colors.purple }),
+    attr("VUE_DIRECTIVE_ARGUMENT", { foreground: colors.pink }),
+    attr("VUE_DIRECTIVE_SHORTHAND_ARGUMENT", { foreground: colors.pink }),
+    attr("VUE_INTERPOLATION_DELIMITERS", { foreground: colors.yellow }),
+    attr("VUE_EXPRESSION", { foreground: ui.default }),
     attr("XML_TAG_DATA", { foreground: ui.default }),
     attr("XML_PROLOGUE", { foreground: ui.defaultalt }),
     attr("XML_NS_PREFIX", { foreground: colors.turquoize }),
