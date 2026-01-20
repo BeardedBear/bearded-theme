@@ -252,7 +252,7 @@ export function buildJetBrainsUiColors(
     "InplaceRefactoringPopup.borderColor": ui.primary,
     "Island.arc": 20,
     "Island.arc.compact": 16,
-    "Island.borderColor": ui.uibackground,
+    "Island.borderColor": borderColor,
     "Island.borderWidth": 5,
     "Island.borderWidth.compact": 4,
     "Island.inactiveAlpha": 0.44,
@@ -727,6 +727,7 @@ export function buildJetBrainsUiColors(
     "WelcomeScreen.SidePanel.background": ui.uibackgroundalt,
 
     // Window
+    "Window.border": `1,1,1,1,${borderColor.replace("#", "")}`,
     "window.border": hc ? ui.default : borderColor,
   };
 }

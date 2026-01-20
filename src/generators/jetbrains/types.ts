@@ -752,6 +752,7 @@ export interface JetBrainsUiColors {
   "WelcomeScreen.SidePanel.background"?: string;
 
   // Window
+  "Window.border"?: string;
   "window.border"?: string;
 }
 
