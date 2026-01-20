@@ -144,18 +144,34 @@ export interface JetBrainsUiColors {
   "Banner.warningBackground"?: string;
   "Banner.warningBorderColor"?: string;
 
+  // Bookmark
+  "Bookmark.iconBackground"?: string;
+  "Bookmark.Mnemonic.iconForeground"?: string;
+  "Bookmark.MnemonicAssigned.background"?: string;
+  "Bookmark.MnemonicAssigned.foreground"?: string;
+  "Bookmark.MnemonicAvailable.background"?: string;
+  "Bookmark.MnemonicAvailable.borderColor"?: string;
+  "Bookmark.MnemonicAvailable.foreground"?: string;
+  "Bookmark.MnemonicCurrent.background"?: string;
+  "Bookmark.MnemonicCurrent.foreground"?: string;
+
   // Borders
   "Borders.color"?: string;
   "Borders.ContrastBorderColor"?: string;
 
   // Button
   "Button.arc"?: number;
+  "Button.background"?: string;
+  "Button.borderColor"?: string;
+  "Button.default.borderColor"?: string;
   "Button.default.endBackground"?: string;
   "Button.default.focusColor"?: string;
   "Button.default.focusedBorderColor"?: string;
   "Button.default.foreground"?: string;
   "Button.default.shadowColor"?: string;
   "Button.default.startBackground"?: string;
+  "Button.disabledBackground"?: string;
+  "Button.disabledBorderColor"?: string;
   "Button.disabledText"?: string;
   "Button.endBackground"?: string;
   "Button.focusedBorderColor"?: string;
@@ -163,23 +179,44 @@ export interface JetBrainsUiColors {
   "Button.shadowColor"?: string;
   "Button.startBackground"?: string;
 
-  // Checkbox
+  // CheckBox (JDK Swing component)
+  "CheckBox.background"?: string;
+  // Checkbox (IntelliJ Platform component)
   "Checkbox.Background.Default"?: string;
   "Checkbox.Background.Disabled"?: string;
   "Checkbox.Background.Selected"?: string;
+
   "Checkbox.Border.Default"?: string;
   "Checkbox.Border.Disabled"?: string;
   "Checkbox.Border.Selected"?: string;
+  "CheckBox.disabledText"?: string;
   "Checkbox.Focus.Thin.Default"?: string;
   "Checkbox.Focus.Thin.Selected"?: string;
   "Checkbox.Focus.Wide"?: string;
+  "CheckBox.foreground"?: string;
   "Checkbox.Foreground.Disabled"?: string;
   "Checkbox.Foreground.Selected"?: string;
+  "CheckBox.select"?: string;
+
+  "Code.Block.backgroundColor"?: string;
+  "Code.Block.borderColor"?: string;
+  "Code.Block.borderRadius"?: number;
+  "Code.Block.borderWidth"?: number;
+  "Code.Block.EditorPane.backgroundColor"?: string;
+  "Code.Block.EditorPane.borderColor"?: string;
+  "Code.Block.foregroundColor"?: string;
+  // Code (inline and block code elements)
+  "Code.Inline.backgroundColor"?: string;
+  "Code.Inline.borderColor"?: string;
+  "Code.Inline.borderRadius"?: number;
+  "Code.Inline.borderWidth"?: number;
+  "Code.Inline.foregroundColor"?: string;
 
   // ComboBox
   "ComboBox.ArrowButton.background"?: string;
   "ComboBox.ArrowButton.disabledIconColor"?: string;
   "ComboBox.ArrowButton.iconColor"?: string;
+
   "ComboBox.ArrowButton.nonEditableBackground"?: string;
   "ComboBox.background"?: string;
   "ComboBox.disabledBackground"?: string;
@@ -189,38 +226,62 @@ export interface JetBrainsUiColors {
   "ComboBox.nonEditableBackground"?: string;
   "ComboBox.selectionBackground"?: string;
   "ComboBox.selectionForeground"?: string;
-
+  // CompletionPopup
+  "CompletionPopup.Advertiser.background"?: string;
+  "CompletionPopup.Advertiser.foreground"?: string;
   // CompletionPopup
   "CompletionPopup.background"?: string;
+
   "CompletionPopup.foreground"?: string;
   "CompletionPopup.matchForeground"?: string;
   "CompletionPopup.selectionBackground"?: string;
   "CompletionPopup.selectionForeground"?: string;
   "CompletionPopup.selectionInactiveBackground"?: string;
   "CompletionPopup.selectionInfoForeground"?: string;
+  // Component (Universal JDK component settings)
+  "Component.arc"?: number;
+  "Component.borderColor"?: string;
+  "Component.disabledBorderColor"?: string;
+  "Component.errorFocusColor"?: string;
+  "Component.focusColor"?: string;
 
+  "Component.focusedBorderColor"?: string;
+  "Component.focusWidth"?: number;
+  "Component.inactiveErrorFocusColor"?: string;
+  "Component.inactiveWarningFocusColor"?: string;
+  "Component.infoForeground"?: string;
+  "Component.warningFocusColor"?: string;
   // Counter
   "Counter.background"?: string;
   "Counter.foreground"?: string;
+  "Debugger.EvaluateExpression.background"?: string;
 
+  "Debugger.Variables.changedValueForeground"?: string;
   // Debugger
   "Debugger.Variables.collectingDataForeground"?: string;
+
   "Debugger.Variables.errorMessageForeground"?: string;
   "Debugger.Variables.evaluatingExpressionForeground"?: string;
   "Debugger.Variables.modifyingValueForeground"?: string;
-  "Debugger.Variables.type"?: string;
-
+  "Debugger.Variables.typeForeground"?: string;
+  "Debugger.Variables.valueForeground"?: string;
   // DefaultTabs (for all tabs except TabbedPane)
   "DefaultTabs.background"?: string;
   "DefaultTabs.borderColor"?: string;
   "DefaultTabs.hoverBackground"?: string;
+
   "DefaultTabs.inactiveColoredFileBackground"?: string;
   "DefaultTabs.inactiveMaskColor"?: string;
   "DefaultTabs.underlineColor"?: string;
   "DefaultTabs.underlinedTabBackground"?: string;
   "DefaultTabs.underlinedTabForeground"?: string;
   "DefaultTabs.underlineHeight"?: number;
+  // DisclosureButton
+  "DisclosureButton.arc"?: number;
+  "DisclosureButton.defaultBackground"?: string;
+  "DisclosureButton.hoverOverlay"?: string;
 
+  "DisclosureButton.pressedOverlay"?: string;
   // DragAndDrop
   "DragAndDrop.areaBackground"?: string;
   "DragAndDrop.areaBorderColor"?: string;
@@ -233,11 +294,18 @@ export interface JetBrainsUiColors {
 
   // EditorPane
   "EditorPane.background"?: string;
+  "EditorPane.caretForeground"?: string;
+  "EditorPane.foreground"?: string;
 
+  "EditorPane.inactiveBackground"?: string;
+  "EditorPane.inactiveForeground"?: string;
+  "EditorPane.selectionBackground"?: string;
+  "EditorPane.selectionForeground"?: string;
   // EditorTabs
   "EditorTabs.background"?: string;
   "EditorTabs.borderColor"?: string;
   "EditorTabs.hoverBackground"?: string;
+
   "EditorTabs.inactiveColoredFileBackground"?: string;
   "EditorTabs.inactiveMaskColor"?: string;
   "EditorTabs.inactiveUnderlineColor"?: string;
@@ -247,89 +315,99 @@ export interface JetBrainsUiColors {
   "EditorTabs.underlinedTabBackground"?: string;
   "EditorTabs.underlinedTabForeground"?: string;
   "EditorTabs.underlineHeight"?: number;
-
   // FileColor
   "FileColor.Blue"?: string;
   "FileColor.Green"?: string;
   "FileColor.Orange"?: string;
+
   "FileColor.Rose"?: string;
   "FileColor.Violet"?: string;
   "FileColor.Yellow"?: string;
-
   // Focus
   "Focus.borderColor"?: string;
   "Focus.color"?: string;
-
   // Git
   "Git.Log.Ref.LocalBranch"?: string;
+
   "Git.Log.Ref.Other"?: string;
   "Git.Log.Ref.RemoteBranch"?: string;
   "Git.Log.Ref.Tag"?: string;
-
   // Group
   "Group.disabledSeparatorColor"?: string;
   "Group.separatorColor"?: string;
-
   // GutterTooltip
   "GutterTooltip.backgroundColor"?: string;
   "GutterTooltip.borderColor"?: string;
   "GutterTooltip.lineSeparatorColor"?: string;
 
+  // IconBadge
+  "IconBadge.errorBackground"?: string;
+  "IconBadge.errorForeground"?: string;
+
+  "IconBadge.infoBackground"?: string;
+  "IconBadge.infoForeground"?: string;
+  "IconBadge.successBackground"?: string;
+  "IconBadge.successForeground"?: string;
+
+  "IconBadge.warningBackground"?: string;
+  "IconBadge.warningForeground"?: string;
+
   // InfoPanel
   "InfoPanel.background"?: string;
   "InfoPanel.foreground"?: string;
-
   // InplaceRefactoringPopup
   "InplaceRefactoringPopup.borderColor"?: string;
 
   // Islands (for Islands theme support)
   "Island.arc"?: number;
   "Island.arc.compact"?: number;
+
   "Island.borderColor"?: string;
+
   "Island.borderWidth"?: number;
   "Island.borderWidth.compact"?: number;
   "Island.inactiveAlpha"?: number;
   Islands?: number;
-
   // Label
   "Label.background"?: string;
   "Label.disabledForeground"?: string;
   "Label.errorForeground"?: string;
+
   "Label.foreground"?: string;
   "Label.infoForeground"?: string;
   "Label.selectedDisabledForeground"?: string;
   "Label.selectedForeground"?: string;
   "Label.successForeground"?: string;
   "Label.warningForeground"?: string;
-
   // Link
   "Link.activeForeground"?: string;
   "Link.hoverForeground"?: string;
   "Link.pressedForeground"?: string;
+
   "Link.secondaryForeground"?: string;
   "Link.visitedForeground"?: string;
-
   // List
   "List.background"?: string;
   "List.foreground"?: string;
   "List.hoverBackground"?: string;
+
   "List.selectionBackground"?: string;
   "List.selectionForeground"?: string;
   "List.selectionInactiveBackground"?: string;
   "List.selectionInactiveForeground"?: string;
-
   // MainMenu
   "MainMenu.background"?: string;
   "MainMenu.borderColor"?: string;
   "MainMenu.disabledForeground"?: string;
+
   "MainMenu.foreground"?: string;
   "MainMenu.selectionBackground"?: string;
   "MainMenu.selectionForeground"?: string;
-
   // MainToolbar
   "MainToolbar.background"?: string;
   "MainToolbar.borderColor"?: string;
   "MainToolbar.Dropdown.background"?: string;
+
   "MainToolbar.Dropdown.hoverBackground"?: string;
   "MainToolbar.Icon.hoverBackground"?: string;
   "MainToolbar.Icon.pressedBackground"?: string;
@@ -343,42 +421,42 @@ export interface JetBrainsUiColors {
   "MainWindow.Tab.selectedBackground"?: string;
   "MainWindow.Tab.underlineColor"?: string;
   "MainWindow.Tab.underlineHeight"?: number;
-
   // MemoryIndicator
   "MemoryIndicator.allocatedBackground"?: string;
   "MemoryIndicator.usedBackground"?: string;
-
   // Menu
   "Menu.acceleratorForeground"?: string;
+
   "Menu.acceleratorSelectionForeground"?: string;
   "Menu.background"?: string;
+
   "Menu.borderColor"?: string;
   "Menu.disabledForeground"?: string;
   "Menu.foreground"?: string;
   "Menu.selectionBackground"?: string;
   "Menu.selectionForeground"?: string;
   "Menu.separatorColor"?: string;
-
   // MenuItem
   "MenuItem.acceleratorForeground"?: string;
   "MenuItem.acceleratorSelectionForeground"?: string;
   "MenuItem.background"?: string;
+
   "MenuItem.disabledForeground"?: string;
   "MenuItem.foreground"?: string;
   "MenuItem.selectionBackground"?: string;
   "MenuItem.selectionForeground"?: string;
-
   // NavBar
   "NavBar.background"?: string;
   "NavBar.borderColor"?: string;
-
   // NewUI (for new UI components)
   "NewUI.activeBackground"?: string;
 
   // NotificationError
   "Notification.background"?: string;
   "Notification.borderColor"?: string;
+
   "Notification.errorBackground"?: string;
+
   "Notification.errorBorderColor"?: string;
   "Notification.errorForeground"?: string;
   "Notification.foreground"?: string;
@@ -391,23 +469,23 @@ export interface JetBrainsUiColors {
   "Notification.ToolWindow.informativeBorderColor"?: string;
   "Notification.ToolWindow.warningBackground"?: string;
   "Notification.ToolWindow.warningBorderColor"?: string;
-
   // Panel
   "Panel.background"?: string;
   "Panel.foreground"?: string;
-
   // ParameterInfo
   "ParameterInfo.background"?: string;
+
   "ParameterInfo.borderColor"?: string;
   "ParameterInfo.currentOverloadBackground"?: string;
+
   "ParameterInfo.currentParameterForeground"?: string;
   "ParameterInfo.disabledForeground"?: string;
   "ParameterInfo.foreground"?: string;
-
   // Plugins
   "Plugins.Button.installBackground"?: string;
   "Plugins.Button.installBorderColor"?: string;
   "Plugins.Button.installFillBackground"?: string;
+
   "Plugins.Button.installFillForeground"?: string;
   "Plugins.Button.installFocusedBackground"?: string;
   "Plugins.Button.installForeground"?: string;
@@ -432,11 +510,11 @@ export interface JetBrainsUiColors {
   "Plugins.tagForeground"?: string;
   "Plugins.trialTagBackground"?: string;
   "Plugins.trialTagForeground"?: string;
-
   // Popup
   "Popup.Advertiser.background"?: string;
   "Popup.Advertiser.borderColor"?: string;
   "Popup.Advertiser.borderInsets"?: string;
+
   "Popup.Advertiser.foreground"?: string;
   "Popup.background"?: string;
   "Popup.borderColor"?: string;
@@ -446,18 +524,18 @@ export interface JetBrainsUiColors {
   "Popup.Separator.foreground"?: string;
   "Popup.Toolbar.background"?: string;
   "Popup.Toolbar.borderColor"?: string;
-
   // PopupMenu
   "PopupMenu.background"?: string;
   "PopupMenu.foreground"?: string;
   "PopupMenu.selectionBackground"?: string;
+
   "PopupMenu.selectionForeground"?: string;
   "PopupMenu.translucentBackground"?: string;
-
   // ProgressBar
   "ProgressBar.backgroundColor"?: string;
   "ProgressBar.failedColor"?: string;
   "ProgressBar.failedEndColor"?: string;
+
   "ProgressBar.foreground"?: string;
   "ProgressBar.indeterminateEndColor"?: string;
   "ProgressBar.indeterminateStartColor"?: string;
@@ -467,6 +545,10 @@ export interface JetBrainsUiColors {
   "ProgressBar.selectionBackground"?: string;
   "ProgressBar.selectionForeground"?: string;
   "ProgressBar.trackColor"?: string;
+  // RadioButton (JDK Swing component)
+  "RadioButton.background"?: string;
+  "RadioButton.disabledText"?: string;
+  "RadioButton.foreground"?: string;
 
   // RunWidget
   "RunWidget.background"?: string;
@@ -752,7 +834,6 @@ export interface JetBrainsUiColors {
   "WelcomeScreen.SidePanel.background"?: string;
 
   // Window
-  "Window.border"?: string;
   "window.border"?: string;
 }
 

@@ -95,6 +95,25 @@ export function buildJetBrainsUiColors(
     "Banner.warningBackground": alpha(levels.warning, 0.15),
     "Banner.warningBorderColor": alpha(levels.warning, 0.5),
 
+    // Bookmark
+    "Bookmark.iconBackground": ui.primary,
+    "Bookmark.Mnemonic.iconForeground": light
+      ? "#FFFFFF"
+      : c(ui.primary).isDark()
+        ? "#FFFFFF"
+        : "#000000",
+    "Bookmark.MnemonicAssigned.background": alpha(ui.primary, 0.15),
+    "Bookmark.MnemonicAssigned.foreground": ui.default,
+    "Bookmark.MnemonicAvailable.background": ui.uibackgroundalt,
+    "Bookmark.MnemonicAvailable.borderColor": borderColor,
+    "Bookmark.MnemonicAvailable.foreground": ui.defaultalt,
+    "Bookmark.MnemonicCurrent.background": ui.primary,
+    "Bookmark.MnemonicCurrent.foreground": light
+      ? "#FFFFFF"
+      : c(ui.primary).isDark()
+        ? "#FFFFFF"
+        : "#000000",
+
     // Borders
     "Borders.color": borderColor,
     "Borders.ContrastBorderColor": hc
@@ -103,16 +122,17 @@ export function buildJetBrainsUiColors(
 
     // Button
     "Button.arc": 6,
-    "Button.default.endBackground": ui.primary,
+    "Button.background": ui.uibackgroundalt,
+    "Button.borderColor": borderColor,
+    "Button.default.borderColor": transparent(borderColor),
+    "Button.default.endBackground": alpha(ui.primary, 0.25),
     "Button.default.focusColor": alpha(ui.primary, 0.5),
-    "Button.default.focusedBorderColor": c(ui.primary).lighten(0.2).toHex(),
-    "Button.default.foreground": light
-      ? "#FFFFFF"
-      : c(ui.primary).isDark()
-        ? "#FFFFFF"
-        : "#000000",
+    "Button.default.focusedBorderColor": alpha(ui.primary, 0.5),
+    "Button.default.foreground": ui.default,
     "Button.default.shadowColor": transparent(ui.uibackground),
-    "Button.default.startBackground": ui.primary,
+    "Button.default.startBackground": alpha(ui.primary, 0.25),
+    "Button.disabledBackground": alpha(ui.uibackgroundalt, 0.5),
+    "Button.disabledBorderColor": alpha(borderColor, 0.5),
     "Button.disabledText": alpha(ui.default, 0.4),
     "Button.endBackground": ui.uibackgroundalt,
     "Button.focusedBorderColor": ui.primary,
@@ -120,46 +140,86 @@ export function buildJetBrainsUiColors(
     "Button.shadowColor": transparent(ui.uibackground),
     "Button.startBackground": ui.uibackgroundalt,
 
-    // Checkbox
+    // CheckBox (JDK Swing component)
+    "CheckBox.background": ui.uibackground,
+    // Checkbox (IntelliJ Platform component)
     "Checkbox.Background.Default": inputBg,
     "Checkbox.Background.Disabled": alpha(inputBg, 0.5),
     "Checkbox.Background.Selected": ui.primary,
+
     "Checkbox.Border.Default": borderColor,
     "Checkbox.Border.Disabled": alpha(borderColor, 0.5),
     "Checkbox.Border.Selected": ui.primary,
+    "CheckBox.disabledText": alpha(ui.default, 0.4),
     "Checkbox.Focus.Thin.Default": alpha(ui.primary, 0.5),
     "Checkbox.Focus.Thin.Selected": alpha(ui.primary, 0.5),
     "Checkbox.Focus.Wide": alpha(ui.primary, 0.3),
+    "CheckBox.foreground": ui.default,
     "Checkbox.Foreground.Disabled": alpha(ui.default, 0.4),
     "Checkbox.Foreground.Selected": light
       ? "#FFFFFF"
       : c(ui.primary).isDark()
         ? "#FFFFFF"
         : "#000000",
+    "CheckBox.select": ui.primary,
 
+    // Code (inline and block code elements)
+    "Code.Block.backgroundColor": alpha(ui.uibackgroundalt, 0.5),
+    "Code.Block.borderColor": borderColor,
+    "Code.Block.borderRadius": 4,
+
+    "Code.Block.borderWidth": 1,
+    "Code.Block.EditorPane.backgroundColor": alpha(ui.uibackgroundalt, 0.3),
+    "Code.Block.EditorPane.borderColor": alpha(borderColor, 0.5),
+    "Code.Block.foregroundColor": ui.default,
+    "Code.Inline.backgroundColor": alpha(colors.orange, 0.15),
+    "Code.Inline.borderColor": alpha(colors.orange, 0.3),
+    "Code.Inline.borderRadius": 3,
+    "Code.Inline.borderWidth": 1,
+    "Code.Inline.foregroundColor": colors.orange,
     // ComboBox
     "ComboBox.ArrowButton.background": inputBg,
     "ComboBox.ArrowButton.disabledIconColor": alpha(ui.default, 0.3),
     "ComboBox.ArrowButton.iconColor": ui.defaultalt,
+
     "ComboBox.ArrowButton.nonEditableBackground": inputBg,
     "ComboBox.background": inputBg,
     "ComboBox.disabledBackground": alpha(inputBg, 0.5),
     "ComboBox.disabledForeground": alpha(ui.default, 0.4),
     "ComboBox.foreground": ui.default,
     "ComboBox.modifiedItemForeground": levels.info,
+
     "ComboBox.nonEditableBackground": inputBg,
     "ComboBox.selectionBackground": selectedBg,
     "ComboBox.selectionForeground": ui.default,
+    // CompletionPopup
+    "CompletionPopup.Advertiser.background": ui.uibackgroundalt,
+    "CompletionPopup.Advertiser.foreground": ui.defaultalt,
 
     // CompletionPopup
     "CompletionPopup.background": ui.uibackgroundmid,
+
     "CompletionPopup.foreground": ui.default,
     "CompletionPopup.matchForeground": ui.primary,
     "CompletionPopup.selectionBackground": selectedBg,
     "CompletionPopup.selectionForeground": ui.default,
     "CompletionPopup.selectionInactiveBackground": alpha(ui.primary, 0.1),
     "CompletionPopup.selectionInfoForeground": ui.defaultalt,
+    // Component (Universal JDK component settings)
+    "Component.arc": 6,
+    // Component (Universal JDK component settings)
+    "Component.borderColor": borderColor,
+    "Component.disabledBorderColor": alpha(borderColor, 0.5),
 
+    "Component.errorFocusColor": alpha(levels.danger, 0.5),
+    "Component.focusColor": alpha(ui.primary, 0.5),
+    "Component.focusedBorderColor": ui.primary,
+    "Component.focusWidth": 2,
+    "Component.inactiveErrorFocusColor": alpha(levels.danger, 0.3),
+
+    "Component.inactiveWarningFocusColor": alpha(levels.warning, 0.3),
+    "Component.infoForeground": ui.defaultalt,
+    "Component.warningFocusColor": alpha(levels.warning, 0.5),
     // Counter
     "Counter.background": ui.primary,
     "Counter.foreground": light
@@ -167,25 +227,34 @@ export function buildJetBrainsUiColors(
       : c(ui.primary).isDark()
         ? "#FFFFFF"
         : "#000000",
+    "Debugger.EvaluateExpression.background": inputBg,
 
+    "Debugger.Variables.changedValueForeground": colors.yellow,
     // Debugger
     "Debugger.Variables.collectingDataForeground": ui.defaultalt,
+
     "Debugger.Variables.errorMessageForeground": levels.danger,
     "Debugger.Variables.evaluatingExpressionForeground": levels.info,
     "Debugger.Variables.modifyingValueForeground": levels.warning,
-    "Debugger.Variables.type": colors.purple,
-
+    "Debugger.Variables.typeForeground": colors.purple,
+    "Debugger.Variables.valueForeground": ui.default,
     // DefaultTabs
     "DefaultTabs.background": ui.uibackgroundalt,
     "DefaultTabs.borderColor": borderColor,
     "DefaultTabs.hoverBackground": hoverBg,
+
     "DefaultTabs.inactiveColoredFileBackground": transparent(ui.uibackground),
     "DefaultTabs.inactiveMaskColor": transparent(ui.uibackground),
     "DefaultTabs.underlineColor": ui.primary,
     "DefaultTabs.underlinedTabBackground": ui.uibackground,
     "DefaultTabs.underlinedTabForeground": ui.default,
     "DefaultTabs.underlineHeight": 3,
+    // DisclosureButton
+    "DisclosureButton.arc": 6,
+    "DisclosureButton.defaultBackground": ui.uibackgroundalt,
+    "DisclosureButton.hoverOverlay": alpha(ui.primary, 0.1),
 
+    "DisclosureButton.pressedOverlay": alpha(ui.primary, 0.2),
     // DragAndDrop
     "DragAndDrop.areaBackground": alpha(ui.primary, 0.1),
     "DragAndDrop.areaBorderColor": ui.primary,
@@ -198,59 +267,73 @@ export function buildJetBrainsUiColors(
 
     // EditorPane
     "EditorPane.background": ui.uibackground,
+    "EditorPane.caretForeground": ui.primary,
+    "EditorPane.foreground": ui.default,
 
+    "EditorPane.inactiveBackground": alpha(ui.uibackground, 0.5),
+    "EditorPane.inactiveForeground": ui.defaultalt,
+    "EditorPane.selectionBackground": selectedBg,
+    "EditorPane.selectionForeground": ui.default,
     // EditorTabs
     "EditorTabs.background": ui.uibackgroundalt,
     "EditorTabs.borderColor": borderColor,
     "EditorTabs.hoverBackground": hoverBg,
+
     "EditorTabs.inactiveColoredFileBackground": transparent(ui.uibackground),
     "EditorTabs.inactiveMaskColor": transparent(ui.uibackground),
     "EditorTabs.inactiveUnderlineColor": alpha(ui.primary, 0.5),
     "EditorTabs.inactiveUnderlinedTabBackground": ui.uibackgroundmid,
-    "EditorTabs.inactiveUnderlinedTabBorderColor": alpha(ui.primary, 0.5),
     "EditorTabs.underlineArc": 0,
     "EditorTabs.underlineColor": ui.primary,
     // Islands-specific tab colors
-    "EditorTabs.underlinedBorderColor": ui.primary,
     "EditorTabs.underlinedTabBackground": ui.uibackground,
-
     "EditorTabs.underlinedTabForeground": ui.default,
     "EditorTabs.underlineHeight": 3,
     // FileColor
     "FileColor.Blue": alpha(colors.blue, 0.15),
+
     "FileColor.Green": alpha(colors.green, 0.15),
     "FileColor.Orange": alpha(colors.orange, 0.15),
     "FileColor.Rose": alpha(colors.pink, 0.15),
-
     "FileColor.Violet": alpha(colors.purple, 0.15),
     "FileColor.Yellow": alpha(colors.yellow, 0.15),
-
     // Focus
     "Focus.borderColor": ui.primary,
     "Focus.color": alpha(ui.primary, 0.5),
     // Git
     "Git.Log.Ref.LocalBranch": colors.green,
-    "Git.Log.Ref.Other": colors.purple,
 
+    "Git.Log.Ref.Other": colors.purple,
     "Git.Log.Ref.RemoteBranch": colors.turquoize,
     "Git.Log.Ref.Tag": colors.yellow,
-
     // Group
     "Group.disabledSeparatorColor": alpha(borderColor, 0.5),
     "Group.separatorColor": borderColor,
     // GutterTooltip
     "GutterTooltip.backgroundColor": ui.uibackgroundmid,
-
     "GutterTooltip.borderColor": borderColor,
     "GutterTooltip.lineSeparatorColor": borderColor,
 
+    // IconBadge
+    "IconBadge.errorBackground": levels.danger,
+    "IconBadge.errorForeground": "#FFFFFF",
+    "IconBadge.infoBackground": levels.info,
+    "IconBadge.infoForeground": "#FFFFFF",
+
+    "IconBadge.successBackground": levels.success,
+    "IconBadge.successForeground": "#FFFFFF",
+
+    "IconBadge.warningBackground": levels.warning,
+    "IconBadge.warningForeground": "#FFFFFF",
     // InfoPanel
     "InfoPanel.background": ui.uibackgroundalt,
 
     "InfoPanel.foreground": ui.default,
     // InplaceRefactoringPopup
     "InplaceRefactoringPopup.borderColor": ui.primary,
+
     "Island.arc": 20,
+
     "Island.arc.compact": 16,
     "Island.borderColor": borderColor,
     "Island.borderWidth": 5,
@@ -259,34 +342,34 @@ export function buildJetBrainsUiColors(
     // Islands Theme Support
     // See: https://plugins.jetbrains.com/docs/intellij/supporting-islands-theme.html
     Islands: 1,
-
     // Label
     "Label.background": ui.uibackground,
     "Label.disabledForeground": alpha(ui.default, 0.4),
     "Label.errorForeground": levels.danger,
+
     "Label.foreground": ui.default,
     "Label.infoForeground": levels.info,
-
     "Label.selectedDisabledForeground": alpha(ui.default, 0.4),
     "Label.selectedForeground": ui.default,
     "Label.successForeground": levels.success,
+
     "Label.warningForeground": levels.warning,
     // Link
     "Link.activeForeground": c(ui.primary).lighten(0.1).toHex(),
     "Link.hoverForeground": c(ui.primary).lighten(0.1).toHex(),
     "Link.pressedForeground": c(ui.primary).darken(0.1).toHex(),
-
     "Link.secondaryForeground": ui.defaultalt,
     "Link.visitedForeground": colors.purple,
     // List
     "List.background": ui.uibackground,
+
     "List.foreground": ui.default,
     "List.hoverBackground": hoverBg,
     "List.selectionBackground": selectedBg,
-
     "List.selectionForeground": ui.default,
     "List.selectionInactiveBackground": alpha(ui.primary, 0.1),
     "List.selectionInactiveForeground": ui.default,
+
     // MainMenu
     "MainMenu.background": ui.uibackgroundalt,
     "MainMenu.borderColor": borderColor,
@@ -302,13 +385,13 @@ export function buildJetBrainsUiColors(
     "MainToolbar.Icon.hoverBackground": hoverBg,
     "MainToolbar.Icon.pressedBackground": activeBg,
     "MainToolbar.inactiveBackground": ui.uibackgroundalt,
-
     "MainToolbar.separatorColor": borderColor,
     "MainWindow.background": lightenOrDarken(ui.uibackgroundalt, 0.05),
-
     "MainWindow.Tab.background": ui.uibackgroundalt,
+
     "MainWindow.Tab.foreground": ui.defaultalt,
     "MainWindow.Tab.hoverBackground": hoverBg,
+
     "MainWindow.Tab.inactiveUnderlineColor": alpha(ui.primary, 0.5),
     "MainWindow.Tab.selectedBackground": ui.uibackground,
     "MainWindow.Tab.underlineColor": ui.primary,
@@ -316,23 +399,23 @@ export function buildJetBrainsUiColors(
     // MemoryIndicator
     "MemoryIndicator.allocatedBackground": alpha(ui.primary, 0.2),
     "MemoryIndicator.usedBackground": ui.primary,
-
     // Menu
     "Menu.acceleratorForeground": ui.defaultalt,
     "Menu.acceleratorSelectionForeground": ui.default,
     "Menu.background": ui.uibackgroundmid,
+
     "Menu.borderColor": borderColor,
     "Menu.disabledForeground": alpha(ui.default, 0.4),
     "Menu.foreground": ui.default,
     "Menu.selectionBackground": selectedBg,
-
     "Menu.selectionForeground": ui.default,
     "Menu.separatorColor": borderColor,
-
     // MenuItem
     "MenuItem.acceleratorForeground": ui.defaultalt,
+
     "MenuItem.acceleratorSelectionForeground": ui.default,
     "MenuItem.background": ui.uibackgroundmid,
+
     "MenuItem.disabledForeground": alpha(ui.default, 0.4),
     "MenuItem.foreground": ui.default,
     "MenuItem.selectionBackground": selectedBg,
@@ -347,21 +430,21 @@ export function buildJetBrainsUiColors(
     "Notification.errorBorderColor": levels.danger,
     "Notification.errorForeground": ui.default,
     "Notification.foreground": ui.default,
-
     "Notification.linkForeground": ui.primary,
     "Notification.MoreButton.background": ui.uibackgroundalt,
-
     "Notification.MoreButton.foreground": ui.default,
+
     "Notification.ToolWindow.errorBackground": alpha(levels.danger, 0.15),
     "Notification.ToolWindow.errorBorderColor": levels.danger,
+
     "Notification.ToolWindow.informativeBackground": alpha(levels.info, 0.15),
     "Notification.ToolWindow.informativeBorderColor": levels.info,
     "Notification.ToolWindow.warningBackground": alpha(levels.warning, 0.15),
-
     "Notification.ToolWindow.warningBorderColor": levels.warning,
     // Panel
     "Panel.background": ui.uibackground,
     "Panel.foreground": ui.default,
+
     // ParameterInfo
     "ParameterInfo.background": ui.uibackgroundmid,
     "ParameterInfo.borderColor": borderColor,
@@ -388,10 +471,10 @@ export function buildJetBrainsUiColors(
     "Plugins.paidTagForeground": colors.green,
     "Plugins.SearchField.background": inputBg,
     "Plugins.SearchField.borderColor": borderColor,
-
     "Plugins.SectionHeader.background": ui.uibackgroundalt,
     "Plugins.SectionHeader.foreground": ui.default,
     "Plugins.Tab.hoverBackground": hoverBg,
+
     "Plugins.Tab.selectedBackground": selectedBg,
     "Plugins.Tab.selectedForeground": ui.default,
     "Plugins.tagBackground": alpha(ui.primary, 0.15),
@@ -402,16 +485,16 @@ export function buildJetBrainsUiColors(
     "Popup.Advertiser.background": ui.uibackgroundalt,
     "Popup.Advertiser.borderColor": borderColor,
     "Popup.Advertiser.borderInsets": "1,1,1,1",
-
     "Popup.Advertiser.foreground": ui.defaultalt,
     "Popup.background": ui.uibackgroundmid,
     "Popup.borderColor": borderColor,
+
     "Popup.Header.activeBackground": ui.uibackgroundalt,
     "Popup.Header.inactiveBackground": ui.uibackgroundalt,
-
     "Popup.inactiveBorderColor": alpha(borderColor, 0.5),
     "Popup.Separator.foreground": borderColor,
     "Popup.Toolbar.background": ui.uibackgroundalt,
+
     "Popup.Toolbar.borderColor": borderColor,
     // PopupMenu
     "PopupMenu.background": ui.uibackgroundmid,
@@ -423,16 +506,20 @@ export function buildJetBrainsUiColors(
     "ProgressBar.backgroundColor": ui.uibackgroundalt,
     "ProgressBar.failedColor": levels.danger,
     "ProgressBar.failedEndColor": c(levels.danger).lighten(0.1).toHex(),
-
     "ProgressBar.foreground": ui.primary,
     "ProgressBar.indeterminateEndColor": c(ui.primary).lighten(0.15).toHex(),
     "ProgressBar.indeterminateStartColor": ui.primary,
+
     "ProgressBar.passedColor": levels.success,
     "ProgressBar.passedEndColor": c(levels.success).lighten(0.1).toHex(),
     "ProgressBar.progressColor": ui.primary,
     "ProgressBar.selectionBackground": ui.uibackgroundalt,
     "ProgressBar.selectionForeground": ui.default,
     "ProgressBar.trackColor": ui.uibackgroundalt,
+    // RadioButton (JDK Swing component)
+    "RadioButton.background": ui.uibackground,
+    "RadioButton.disabledText": alpha(ui.default, 0.4),
+    "RadioButton.foreground": ui.default,
     // RunWidget
     "RunWidget.background": ui.uibackgroundalt,
     "RunWidget.foreground": ui.default,
@@ -727,7 +814,6 @@ export function buildJetBrainsUiColors(
     "WelcomeScreen.SidePanel.background": ui.uibackgroundalt,
 
     // Window
-    "Window.border": `1,1,1,1,${borderColor.replace("#", "")}`,
     "window.border": hc ? ui.default : borderColor,
   };
 }
