@@ -540,13 +540,13 @@ ${codeBlock}
 ## Available Themes
 
 ${themeRegistry.map((entry) => `- ${Meta.name} ${entry.name}`).join(
-    "\n",
+  "\n",
 )}
 
 ## Theme Categories
 
 ${Meta.categories.map((c) => `- **${c.name}** - ${c.description}`).join(
-    "\n",
+  "\n",
 )}
 
 ## Links
