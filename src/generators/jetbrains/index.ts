@@ -6,21 +6,22 @@
  *
  * Output structure:
  * dist/jetbrains/
- * ├── resources/
- * │   └── META-INF/
- * │       └── plugin.xml
- * ├── themes/
- * │   ├── bearded-theme-{slug}.theme.json
- * │   └── bearded-theme-{slug}.xml (editor schemes)
- * ├── build.gradle.kts
- * ├── settings.gradle.kts
- * ├── gradle.properties
- * └── README.md
+ * ⌂ resources/
+ * ⌂ ⌂ META-INF/
+ * ⌂ ⌂ ⌂ plugin.xml
+ * ⌂ themes/
+ * ⌂ ⌂ bearded-theme-{slug}.theme.json
+ * ⌂ ⌂ bearded-theme-{slug}.xml (editor schemes)
+ * ⌂ build.gradle.kts
+ * ⌂ settings.gradle.kts
+ * ⌂ gradle.properties
+ * ⌂ README.md
  */
 
 import { chmodSync, mkdirSync, writeFileSync } from "fs";
 import { join } from "path";
 
+import { Meta } from "../../shared/meta";
 import { themeRegistry, ThemeRegistryEntry } from "../../shared/theme-registry";
 import { getJetBrainsVersion } from "../../version-manager";
 import { buildEditorScheme } from "./editor-scheme";
@@ -41,7 +42,7 @@ async function buildJetBrainsThemes(): Promise<void> {
 
   // Get version from versions.json
   const version = getJetBrainsVersion();
-  console.log(`📦 Using JetBrains version: ${version}`);
+  console.log(`Using JetBrains version: ${version}`);
 
   // Ensure output directories exist
   mkdirSync(THEMES_DIR, { recursive: true });
@@ -66,13 +67,15 @@ async function buildJetBrainsThemes(): Promise<void> {
   generateReadme();
 
   console.log(
-    `✅ Generated ${themeRegistry.length} JetBrains themes in ${OUTPUT_DIR}`,
+    `Generated ${themeRegistry.length} JetBrains themes in ${OUTPUT_DIR}`,
   );
-  console.log(`✅ Generated plugin.xml (version ${version})`);
+  console.log(`Generated plugin.xml (version ${version})`);
   console.log("✅ Generated Gradle build files");
   console.log("✅ Generated README.md");
-  console.log(`\n📁 JetBrains plugin ready in: ${OUTPUT_DIR}/`);
-  console.log("\n📝 To build the plugin:");
+  console.log(`
+ JetBrains plugin ready in: ${OUTPUT_DIR}/
+`);
+  console.log("\n To build the plugin:");
   console.log("   cd dist/jetbrains");
   console.log("   ./gradlew buildPlugin");
   console.log("\n   The plugin ZIP will be in build/distributions/");
@@ -121,9 +124,9 @@ dependencies {
 
 intellijPlatform {
     pluginConfiguration {
-        name = "Bearded Theme"
+        name = "${Meta.name}"
         version = "${version}"
-        description = "The theme with a long beard. A collection of carefully crafted color themes."
+        description = "${Meta.description} A collection of carefully crafted color themes."
         changeNotes = "See GitHub releases for changelog."
 
         ideaVersion {
@@ -132,9 +135,9 @@ intellijPlatform {
         }
 
         vendor {
-            name = "BeardedBear"
-            email = "beardedbearbear@gmail.com"
-            url = "https://github.com/BeardedBear/bearded-theme"
+            name = "${Meta.author.name}"
+            email = "${Meta.author.email}"
+            url = "${Meta.urls.github}"
         }
     }
 
@@ -163,7 +166,7 @@ tasks {
   });
 
   // settings.gradle.kts
-  const settingsGradle = `rootProject.name = "bearded-theme"
+  const settingsGradle = `rootProject.name = "${Meta.slug}"
 
 pluginManagement {
     repositories {
@@ -249,7 +252,7 @@ do
     link=\${ls#*' -> '}
     case $link in             #(
       /*)   app_path=$link ;; #(
-      *)    app_path=$APP_HOME$link ;;
+      *)    app_path=$APP_HOME$link ;; #(
     esac
 done
 
@@ -295,19 +298,13 @@ if [ -n "$JAVA_HOME" ] ; then
         JAVACMD=$JAVA_HOME/bin/java
     fi
     if [ ! -x "$JAVACMD" ] ; then
-        die "ERROR: JAVA_HOME is set to an invalid directory: $JAVA_HOME
-
-Please set the JAVA_HOME variable in your environment to match the
-location of your Java installation."
+        die "ERROR: JAVA_HOME is set to an invalid directory: $JAVA_HOME\n\nPlease set the JAVA_HOME variable in your environment to match the\nlocation of your Java installation."
     fi
 else
     JAVACMD=java
     if ! command -v java >/dev/null 2>&1
     then
-        die "ERROR: JAVA_HOME is not set and no 'java' command could be found in your PATH.
-
-Please set the JAVA_HOME variable in your environment to match the
-location of your Java installation."
+        die "ERROR: JAVA_HOME is not set and no 'java' command could be found in your PATH.\n\nPlease set the JAVA_HOME variable in your environment to match the\nlocation of your Java installation."
     fi
 fi
 
@@ -351,8 +348,8 @@ if "$cygwin" || "$msys" ; then
             case $arg in                                #(
               -*)   false ;;                            #(
               /?*)  t=\${arg#)}; t=/\${t%%/*}           #(
-                    [ -e "$t" ] ;;
-              *)    false ;;
+                    [ -e "$t" ] ;;                    #(
+              *)    false ;; #(
             esac
         then
             arg=$( cygpath --path --ignore --mixed "$arg" )
@@ -372,10 +369,10 @@ DEFAULT_JVM_OPTS='"-Xmx64m" "-Xms64m"'
 #     temporary shell commands that run inside "" and get evaluated
 #     within "" by the exec below.
 #   * DEFAULT_JVM_OPTS://
-set -- \\
-        "-Dorg.gradle.appname=$APP_BASE_NAME" \\
-        -classpath "$CLASSPATH" \\
-        org.gradle.wrapper.GradleWrapperMain \\
+set -- \
+        "-Dorg.gradle.appname=$APP_BASE_NAME" \
+        -classpath "$CLASSPATH" \
+        org.gradle.wrapper.GradleWrapperMain \
         "$@"
 
 # Stop when "xeli" has created that special file indicating that the initialization is complete
@@ -418,7 +415,7 @@ set APP_HOME=%DIRNAME%
 for %%i in ("%APP_HOME%") do set APP_HOME=%%~fi
 
 @rem Add default JVM options here.
-set DEFAULT_JVM_OPTS="-Xmx64m" "-Xms64m"
+set DEFAULT_JVM_OPTS "-Xmx64m" "-Xms64m"
 
 @rem Find java.exe
 if defined JAVA_HOME goto findJavaFromJavaHome
@@ -427,11 +424,11 @@ set JAVA_EXE=java.exe
 %JAVA_EXE% -version >NUL 2>&1
 if %ERRORLEVEL% equ 0 goto execute
 
-echo.
-echo ERROR: JAVA_HOME is not set and no 'java' command could be found in your PATH.
-echo.
-echo Please set the JAVA_HOME variable in your environment to match the
-echo location of your Java installation.
+ echo.
+ echo ERROR: JAVA_HOME is not set and no 'java' command could be found in your PATH.
+ echo.
+ echo Please set the JAVA_HOME variable in your environment to match the
+ echo location of your Java installation.
 
 goto fail
 
@@ -441,11 +438,11 @@ set JAVA_EXE=%JAVA_HOME%/bin/java.exe
 
 if exist "%JAVA_EXE%" goto execute
 
-echo.
-echo ERROR: JAVA_HOME is set to an invalid directory: %JAVA_HOME%
-echo.
-echo Please set the JAVA_HOME variable in your environment to match the
-echo location of your Java installation.
+ echo.
+ echo ERROR: JAVA_HOME is set to an invalid directory: %JAVA_HOME%
+ echo.
+ echo Please set the JAVA_HOME variable in your environment to match the
+ echo location of your Java installation.
 
 goto fail
 
@@ -490,9 +487,11 @@ if "%OS%"=="Windows_NT" endlocal
  * Generate README for the JetBrains plugin
  */
 function generateReadme(): void {
-  const readmeContent = `# Bearded Theme for JetBrains IDEs
+  const codeBlock = "```";
 
-The theme with a long beard. A collection of carefully crafted color themes for JetBrains IDEs.
+  const readmeContent = `# ${Meta.name} for JetBrains IDEs
+
+${Meta.description} A collection of carefully crafted color themes for JetBrains IDEs.
 
 ## Installation
 
@@ -500,11 +499,11 @@ The theme with a long beard. A collection of carefully crafted color themes for 
 
 1. Open your JetBrains IDE (WebStorm, IntelliJ IDEA, PyCharm, etc.)
 2. Go to **Settings/Preferences** → **Plugins** → **Marketplace**
-3. Search for "Bearded Theme"
+3. Search for "${Meta.name}"
 4. Click **Install**
 5. Restart the IDE
 6. Go to **Settings/Preferences** → **Appearance & Behavior** → **Appearance**
-7. Select your preferred Bearded Theme from the Theme dropdown
+7. Select your preferred ${Meta.name} from the Theme dropdown
 
 ### From ZIP File (Manual Installation)
 
@@ -525,7 +524,7 @@ The theme with a long beard. A collection of carefully crafted color themes for 
 
 ### Build Commands
 
-\`\`\`bash
+${codeBlock}bash
 # Build the plugin
 ./gradlew buildPlugin
 
@@ -536,40 +535,34 @@ The theme with a long beard. A collection of carefully crafted color themes for 
 
 # Verify plugin compatibility
 ./gradlew verifyPlugin
-\`\`\`
+${codeBlock}
 
 ## Available Themes
 
-${themeRegistry.map((entry) => `- Bearded Theme ${entry.name}`).join("\n")}
+${themeRegistry.map((entry) => `- ${Meta.name} ${entry.name}`).join(
+    "\n",
+)}
 
 ## Theme Categories
 
-- **Arc** - Clean, modern dark themes
-- **Solarized** - Classic solarized color schemes
-- **Oceanic** - Ocean-inspired color palettes
-- **Monokai** - Monokai-inspired variants
-- **Black & Gems** - Pure black backgrounds with gem accent colors
-- **High Contrast (HC)** - Accessibility-focused themes
-- **Milkshake** - Soft, pastel light themes
-- **Coffee** - Warm, earthy tones
-- **Vivid** - Vibrant, saturated colors
-- **Aquarelle** - Watercolor-inspired themes
-- **Surprising** - Unique, unexpected color combinations
+${Meta.categories.map((c) => `- **${c.name}** - ${c.description}`).join(
+    "\n",
+)}
 
 ## Links
 
-- [VS Code Extension](https://marketplace.visualstudio.com/items?itemName=BeardedBear.beardedtheme)
-- [Zed Extension](https://github.com/BeardedBear/bearded-theme)
-- [GitHub Repository](https://github.com/BeardedBear/bearded-theme)
-- [Report Issues](https://github.com/BeardedBear/bearded-theme/issues)
+- [VS Code Extension](${Meta.urls.marketplace.vscode})
+- [Zed Extension](${Meta.urls.github})
+- [GitHub Repository](${Meta.urls.github})
+- [Report Issues](${Meta.urls.issues})
 
 ## License
 
-GNU General Public License v3.0
+${Meta.license}
 
 ## Author
 
-Made with ❤️ by [BeardedBear](https://github.com/BeardedBear)
+Made with ❤️ by [${Meta.author.name}](https://github.com/${Meta.author.name})
 `;
 
   writeFileSync(join(OUTPUT_DIR, "README.md"), readmeContent, {
