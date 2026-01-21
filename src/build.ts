@@ -6,7 +6,13 @@
  */
 
 import { execSync } from "child_process";
-import { existsSync } from "fs";
+import {
+  copyFileSync,
+  existsSync,
+  mkdirSync,
+  readdirSync,
+  readFileSync,
+} from "fs";
 import { join } from "path";
 
 type BuildTarget = "all" | "jetbrains" | "vscode" | "zed";
@@ -62,8 +68,29 @@ function buildJetBrainsPlugin(): void {
       stdio: "inherit",
     });
 
+    // Copy ZIP to releases/jetbrains/ with version number
+    const distDir = join(jetbrainsDir, "build", "distributions");
+    const releaseDir = join(process.cwd(), "releases", "jetbrains");
+
+    if (!existsSync(releaseDir)) {
+      mkdirSync(releaseDir, { recursive: true });
+    }
+
+    // Get version from versions.json
+    const versionsPath = join(process.cwd(), "versions.json");
+    const versions = JSON.parse(readFileSync(versionsPath, "utf8"));
+    const version = versions.jetbrains;
+
+    // Find and copy ZIP files
+    const zips = readdirSync(distDir).filter((f) => f.endsWith(".zip"));
+    zips.forEach((zip) => {
+      const destName = `bearded-theme-${version}.zip`;
+      copyFileSync(join(distDir, zip), join(releaseDir, destName));
+      console.log(`\n   📦 Copied to releases/jetbrains/${destName}`);
+    });
+
     console.log("\n✅ JetBrains plugin built successfully!");
-    console.log("   Plugin ZIP: dist/jetbrains/build/distributions/\n");
+    console.log(`   Plugin ZIP: releases/jetbrains/bearded-theme-${version}.zip\n`);
   } catch {
     console.warn("\n⚠️ Gradle build failed.");
     console.warn("   Check the error messages above for details.");
