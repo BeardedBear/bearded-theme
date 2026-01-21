@@ -437,11 +437,94 @@ When creating or modifying themes:
 
 ## Version and Release
 
-1. Update version in `package.json`
-2. Create release notes: `npm run create:release-notes`
-3. Edit `releases/{version}.md` with changes
-4. Build extension: `npm run build:ext:vscode`
-5. Publish: `npm run publish:all`
+Each IDE is versioned and released independently. Versions are stored in `versions.json`.
+
+### Commit Convention
+
+Use IDE prefixes to target specific platforms in changelogs:
+
+```bash
+# VS Code specific
+[vscode] feat: add new color token
+[vscode] fix: correct bracket highlighting
+
+# Zed specific
+[zed] feat: add panel styling
+[zed] fix: correct status bar colors
+
+# JetBrains specific
+[jetbrains] feat: add bookmark UI support
+[jetbrains] fix: correct editor gutter colors
+
+# Global changes (included in ALL IDEs)
+feat: update syntax colors
+fix: improve contrast ratios
+```
+
+### Commit Types
+
+- `feat:` / `add:` - New features
+- `fix:` / `bug:` - Bug fixes
+- `improve:` / `enhancement:` - Improvements
+- `chore:` - Maintenance tasks
+- `docs:` - Documentation
+- `refactor:` - Code refactoring
+
+### Release Workflow
+
+**For VS Code:**
+
+```bash
+npm run bump:version vscode minor
+npm run build:vscode
+npm run create:release-notes vscode
+# Edit releases/vscode/{version}.md
+npm run build:ext:vscode
+./publish.sh vscode
+```
+
+**For Zed:**
+
+```bash
+npm run bump:version zed patch
+npm run build:zed
+npm run create:release-notes zed
+# Edit releases/zed/{version}.md
+# Commit and push, then open PR to zed-industries/extensions
+./publish.sh zed
+```
+
+**For JetBrains:**
+
+```bash
+npm run bump:version jetbrains patch
+npm run build:jetbrains
+npm run create:release-notes jetbrains
+# Edit releases/jetbrains/{version}.md
+npm run build:ext:jetbrains
+./publish.sh jetbrains
+```
+
+### Git Tags
+
+Each IDE has its own tag format:
+
+- VS Code: `vscode-v11.0.1`
+- Zed: `zed-v1.0.1`
+- JetBrains: `jetbrains-v1.0.1`
+
+### Release Notes Structure
+
+```
+releases/
+├── vscode/
+│   ├── 11.0.0.md
+│   └── 11.0.0.vsix
+├── zed/
+│   └── 1.0.0.md
+└── jetbrains/
+    └── 1.0.0.md
+```
 
 ## Dependencies
 

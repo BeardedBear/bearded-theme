@@ -9,12 +9,13 @@ type BumpType = "major" | "minor" | "patch";
 /**
  * IDE types
  */
-type IDE = "all" | "vscode" | "zed";
+type IDE = "all" | "jetbrains" | "vscode" | "zed";
 
 /**
  * Version configuration interface
  */
 interface VersionConfig {
+  jetbrains: string;
   vscode: string;
   zed: string;
 }
@@ -45,17 +46,20 @@ function main(): void {
 
   if (args.length !== 2) {
     console.error("Usage: npm run bump:version <ide> <type>");
-    console.error("  ide:  vscode | zed | all");
+    console.error("  ide:  vscode | zed | jetbrains | all");
     console.error("  type: major | minor | patch");
     console.error("");
     console.error("Examples:");
     console.error(
-      "  npm run bump:version zed patch    # Bump Zed from 1.0.0 to 1.0.1",
+      "  npm run bump:version zed patch       # Bump Zed from 1.0.0 to 1.0.1",
     );
     console.error(
-      "  npm run bump:version vscode minor  # Bump VS Code from 11.0.0 to 11.1.0",
+      "  npm run bump:version vscode minor    # Bump VS Code from 11.0.0 to 11.1.0",
     );
-    console.error("  npm run bump:version all patch     # Bump both IDEs");
+    console.error(
+      "  npm run bump:version jetbrains patch # Bump JetBrains from 1.0.0 to 1.0.1",
+    );
+    console.error("  npm run bump:version all patch       # Bump all IDEs");
     process.exit(1);
   }
 
@@ -63,9 +67,9 @@ function main(): void {
   const bumpType = args[1] as BumpType;
 
   // Validate arguments
-  if (!["all", "vscode", "zed"].includes(ide)) {
+  if (!["all", "jetbrains", "vscode", "zed"].includes(ide)) {
     console.error(`❌ Invalid IDE: ${ide}`);
-    console.error("   Must be: vscode | zed | all");
+    console.error("   Must be: vscode | zed | jetbrains | all");
     process.exit(1);
   }
 
@@ -79,8 +83,9 @@ function main(): void {
     // Read current versions
     const versions = readVersionConfig();
     console.log("📦 Current versions:");
-    console.log(`   VS Code: ${versions.vscode}`);
-    console.log(`   Zed:     ${versions.zed}`);
+    console.log(`   VS Code:   ${versions.vscode}`);
+    console.log(`   Zed:       ${versions.zed}`);
+    console.log(`   JetBrains: ${versions.jetbrains}`);
     console.log("");
 
     // Bump versions
@@ -101,7 +106,14 @@ function main(): void {
       const oldVersion = versions.zed;
       const newVersion = bumpVersion(oldVersion, bumpType);
       versions.zed = newVersion;
-      console.log(`✅ Zed:     ${oldVersion} → ${newVersion}`);
+      console.log(`✅ Zed:       ${oldVersion} → ${newVersion}`);
+    }
+
+    if (ide === "jetbrains" || ide === "all") {
+      const oldVersion = versions.jetbrains;
+      const newVersion = bumpVersion(oldVersion, bumpType);
+      versions.jetbrains = newVersion;
+      console.log(`✅ JetBrains: ${oldVersion} → ${newVersion}`);
     }
 
     // Save updated versions
@@ -112,17 +124,33 @@ function main(): void {
     console.log("📝 Next steps:");
 
     if (ide === "vscode" || ide === "all") {
+      console.log("");
+      console.log("   VS Code:");
       console.log("   1. Run: npm run build:vscode");
-      console.log("   2. Run: npm run create:release-notes");
-      console.log(`   3. Edit: releases/${versions.vscode}.md`);
+      console.log("   2. Run: npm run create:release-notes vscode");
+      console.log(`   3. Edit: releases/vscode/${versions.vscode}.md`);
       console.log("   4. Run: npm run build:ext:vscode");
-      console.log("   5. Run: npm run publish:all");
+      console.log("   5. Run: publish.bat vscode");
     }
 
     if (ide === "zed" || ide === "all") {
+      console.log("");
+      console.log("   Zed:");
       console.log("   1. Run: npm run build:zed");
-      console.log("   2. Commit and push changes");
-      console.log("   3. Open PR to zed-industries/extensions");
+      console.log("   2. Run: npm run create:release-notes zed");
+      console.log(`   3. Edit: releases/zed/${versions.zed}.md`);
+      console.log("   4. Commit and push changes");
+      console.log("   5. Open PR to zed-industries/extensions");
+    }
+
+    if (ide === "jetbrains" || ide === "all") {
+      console.log("");
+      console.log("   JetBrains:");
+      console.log("   1. Run: npm run build:jetbrains");
+      console.log("   2. Run: npm run create:release-notes jetbrains");
+      console.log(`   3. Edit: releases/jetbrains/${versions.jetbrains}.md`);
+      console.log("   4. Run: npm run build:ext:jetbrains");
+      console.log("   5. Run: publish.bat jetbrains");
     }
   } catch (error) {
     console.error("❌ Error:", error);
