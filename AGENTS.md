@@ -4,7 +4,7 @@ This document provides guidelines and best practices for AI agents working on th
 
 ## Project Overview
 
-Bearded Theme is a color theme extension for **VS Code** and **Zed** editors. It features 60+ theme variants including dark, light, high-contrast, and accessibility-focused options.
+Bearded Theme is a color theme extension for **VS Code**, **Zed**, and **JetBrains IDEs** (WebStorm, IntelliJ IDEA, PyCharm, PhpStorm, GoLand, Rider, etc.). It features 60+ theme variants including dark, light, high-contrast, and accessibility-focused options.
 
 ### Key Technologies
 
@@ -33,13 +33,33 @@ bearded-theme/
 │   │   │       ├── prog.ts
 │   │   │       ├── markup.ts
 │   │   │       └── styling.ts
-│   │   └── zed/                   # Zed theme generator
+│   │   ├── zed/                   # Zed theme generator
+│   │   │   ├── index.ts           # Zed build script
+│   │   │   ├── types.ts           # Zed specific type definitions
+│   │   │   ├── ui.ts              # Zed UI color mappings
+│   │   │   └── syntax.ts          # Zed syntax highlighting
+│   │   └── jetbrains/             # JetBrains theme generator
+│   │       ├── index.ts           # JetBrains build script (generates full plugin)
+│   │       ├── ui.ts              # JetBrains UI color mappings
+│   │       ├── types.ts           # JetBrains specific type definitions
+│   │       ├── theme.ts           # Theme JSON builder
+│   │       ├── editor-scheme.ts   # Editor color scheme XML generator
+│   │       ├── plugin.ts          # Plugin manifest (plugin.xml) generator
+│   │       ├── utils.ts           # Color utility functions
+│   │       └── README.md          # Installation instructions
 │   ├── variations/                # Theme color definitions (shared)
 │   ├── helper.ts                  # Color utility functions
 │   └── build.ts                   # Build orchestrator
 ├── dist/                          # Generated output (DO NOT edit manually)
 │   ├── vscode/themes/
-│   └── zed/themes/
+│   ├── zed/themes/
+│   └── jetbrains/                 # Complete JetBrains plugin structure
+│       ├── resources/META-INF/plugin.xml  # Plugin manifest
+│       ├── themes/*.theme.json    # UI theme files
+│       ├── themes/*.xml           # Editor color schemes
+│       ├── build.gradle.kts       # Gradle build file
+│       ├── settings.gradle.kts    # Gradle settings
+│       └── gradle.properties      # Gradle properties
 ├── releases/                      # VSIX packages and release notes
 └── assets/                        # Icons and images
 ```
@@ -51,10 +71,12 @@ bearded-theme/
 | `src/shared/theme-registry.ts`      | **Single source of truth** for all theme variants                          |
 | `src/shared/types.ts`               | Shared TypeScript interfaces (Theme, ThemeColors, ThemeUi, etc.)           |
 | `src/generators/vscode/types.ts`    | VS Code specific type definitions (ActivityBarColors, EditorColors, etc.)  |
+| `src/generators/jetbrains/types.ts` | JetBrains specific type definitions (JetBrainsTheme, JetBrainsUiColors)    |
 | `src/helper.ts`                     | Color manipulation utilities (`makeMainColorsDark`, `makeMainColorsLight`) |
 | `src/variations/*.ts`               | Individual theme color palettes                                            |
 | `src/generators/vscode/ui.ts`       | VS Code UI color mappings                                                  |
 | `src/generators/vscode/scopes/*.ts` | VS Code syntax highlighting scopes                                         |
+| `src/generators/jetbrains/ui.ts`    | JetBrains UI color mappings                                                |
 | `package.json`                      | Extension manifest with theme contributions                                |
 
 ## Coding Standards
@@ -246,32 +268,128 @@ interface ThemeOptions {
   - `styling.ts` - CSS/SCSS tokens
   - `semanticTokens.ts` - Semantic token colors
 
-- **Zed**: Edit `buildSyntax()` function in `src/generators/zed/index.ts`
+- **Zed**: Edit `buildSyntax()` function in `src/generators/zed/syntax.ts`
+
+- **JetBrains**: Edit `buildAttributeOptions()` in `src/generators/jetbrains/editor-scheme.ts`
 
 ### Modifying UI Colors
 
 - **VS Code**: Edit `src/generators/vscode/ui.ts`
-- **Zed**: Edit `buildZedThemeStyle()` in `src/generators/zed/index.ts`
+- **Zed**: Edit `buildZedThemeStyle()` in `src/generators/zed/ui.ts`
+- **JetBrains**: Edit `src/generators/jetbrains/ui.ts`
 
 ## Build Commands
 
-| Command                | Description                          |
-| ---------------------- | ------------------------------------ |
-| `npm run build`        | Build all themes (VS Code + Zed)     |
-| `npm run build:vscode` | Build VS Code themes only            |
-| `npm run build:zed`    | Build Zed themes only                |
-| `npm run dev:vscode`   | Watch mode for VS Code               |
-| `npm run dev:zed`      | Watch mode for Zed                   |
-| `npm run lint`         | Check code with ESLint (no auto-fix) |
-| `npm run fix`          | Format and fix code with ESLint      |
+| Command                           | Description                                             |
+| --------------------------------- | ------------------------------------------------------- |
+| `npm run clean`                   | Clean all dist folders                                  |
+| `npm run clean:vscode`            | Clean dist/vscode folder only                           |
+| `npm run clean:zed`               | Clean dist/zed folder only                              |
+| `npm run clean:jetbrains`         | Clean dist/jetbrains folder only                        |
+| `npm run build`                   | Build all themes + JetBrains plugin (requires Java 11+) |
+| `npm run build:vscode`            | Build VS Code themes only (auto-cleans first)           |
+| `npm run build:zed`               | Build Zed themes only (auto-cleans first)               |
+| `npm run build:jetbrains`         | Build JetBrains themes only (auto-cleans first)         |
+| `npm run build:ext:jetbrains`     | Build JetBrains plugin package (requires Java 11+)      |
+| `npm run install:jetbrains:local` | Install JetBrains themes to local IDE (for testing)     |
+| `npm run dev:jetbrains:install`   | Build + install JetBrains themes in one command         |
+| `npm run dev:vscode`              | Watch mode for VS Code                                  |
+| `npm run dev:zed`                 | Watch mode for Zed                                      |
+| `npm run dev:jetbrains`           | Watch mode for JetBrains                                |
+| `npm run lint`                    | Check code with ESLint (no auto-fix)                    |
+| `npm run fix`                     | Format and fix code with ESLint                         |
+
+### JetBrains Plugin Build
+
+The main `npm run build` command will:
+
+1. Build all VS Code, Zed, and JetBrains themes
+2. Download the Gradle wrapper automatically
+3. Attempt to build the JetBrains plugin package (`.zip` file)
+
+**Requirements for plugin build:**
+
+- Java 11 or higher (download from [adoptium.net](https://adoptium.net/))
+- If Java is not installed, the build will skip the plugin packaging step but still succeed
+- Theme files will still be generated and can be installed manually
+
+**To build the plugin manually:**
+
+```bash
+npm run build:ext:jetbrains
+```
+
+### JetBrains Editor Color Schemes - IMPORTANT
+
+**Critical: Always use the official JetBrains method for editor schemes to avoid IDE crashes.**
+
+Per [official JetBrains documentation](https://plugins.jetbrains.com/docs/intellij/themes-extras.html#adding-a-custom-editor-scheme):
+
+#### ✅ Correct Method (Currently Used)
+
+1. **File Extension**: Generate editor schemes as `.xml` files (not `.icls`)
+   - While IDEs export schemes as `.icls`, they must be renamed to `.xml` for bundling
+2. **Reference Location**: Reference schemes **ONLY** in `.theme.json` files:
+
+   ```json
+   {
+     "name": "My Theme",
+     "editorScheme": "/my-theme.xml",
+     "ui": { ... }
+   }
+   ```
+
+3. **NO plugin.xml Declaration**: Do NOT use `<bundledColorScheme>` in `plugin.xml`
+   - This causes `NullPointerException` crashes in WebStorm and other IDEs
+
+4. **Color Format**: Always use 6-digit hex RGB (e.g., `0187A6`) without `#` prefix
+   - Pre-mix alpha transparency using `colord().mix()` before generating values
+
+#### ❌ Incorrect Method (DO NOT USE)
+
+```xml
+<!-- plugin.xml - NEVER DO THIS -->
+<extensions defaultExtensionNs="com.intellij">
+  <bundledColorScheme path="themes/my-theme"/>  <!-- ❌ CAUSES CRASH -->
+</extensions>
+```
+
+```json
+// my-theme.theme.json - WRONG EXTENSION
+{
+  "editorScheme": "/themes/my-theme.icls" // ❌ WRONG
+}
+```
+
+#### Implementation Files
+
+- **Generator**: `src/generators/jetbrains/editor-scheme.ts` - Generates `.xml` files
+- **Theme Builder**: `src/generators/jetbrains/theme.ts` - References schemes in JSON
+- **Color Utility**: `src/generators/jetbrains/utils.ts` - `toHex()` function
+
+#### Testing Editor Schemes
+
+After modifying editor scheme generation:
+
+1. Build: `npm run build:jetbrains`
+2. Verify `.xml` files exist: `ls dist/jetbrains/themes/*.xml`
+3. Check theme JSON references: `grep editorScheme dist/jetbrains/themes/*.theme.json`
+4. Confirm NO bundledColorScheme: `grep bundledColorScheme dist/jetbrains/resources/META-INF/plugin.xml`
+5. Install and test: `npm run install:jetbrains:local`
+6. Restart IDE and verify no crashes
+
+**See `JETBRAINS-EDITOR-SCHEMES-FIX.md` for detailed troubleshooting history.**
 
 ## Testing Guidelines
 
-1. **Always run build after changes**: `npm run build`
+1. **Always run build after changes**: `npm run build` (automatically cleans dist folder and builds plugin)
 2. **Test in VS Code**: Press F5 to launch Extension Development Host
-3. **Test multiple themes**: Check at least one dark, one light, and one HC theme
-4. **Check syntax highlighting**: Open files in JS, TS, Python, Markdown, CSS
-5. **Verify UI elements**: Sidebar, tabs, status bar, panels, notifications
+3. **Test in JetBrains**:
+   - For quick testing: Run `npm run install:jetbrains:local` and restart IDE
+   - For plugin testing: Install the built `.zip` from `dist/jetbrains/build/distributions/`
+4. **Test multiple themes**: Check at least one dark, one light, and one HC theme
+5. **Check syntax highlighting**: Open files in JS, TS, Python, Markdown, CSS
+6. **Verify UI elements**: Sidebar, tabs, status bar, panels, notifications
 
 ## Do's and Don'ts
 
@@ -281,7 +399,7 @@ interface ThemeOptions {
 - ✅ Follow the established pattern when creating new themes
 - ✅ Register new themes in `theme-registry.ts` (single source of truth)
 - ✅ Run `npm run fix` before committing (uses ESLint Stylistic)
-- ✅ Test both VS Code and Zed output when modifying shared code
+- ✅ Test VS Code, Zed, and JetBrains output when modifying shared code
 - ✅ Use meaningful, descriptive theme names
 - ✅ Maintain color accessibility (contrast ratios)
 
@@ -293,6 +411,7 @@ interface ThemeOptions {
 - ❌ Don't use RGB/HSL directly - always use hex with colord conversions
 - ❌ Don't break existing theme slugs (used as identifiers)
 - ❌ Don't create new documentation files (README.md, CONTRIBUTING.md, etc.) unless explicitly requested
+- ❌ Don't use unsupported JetBrains color keys (check IntelliJ Platform SDK docs)
 
 ## Accessibility Considerations
 
@@ -318,11 +437,94 @@ When creating or modifying themes:
 
 ## Version and Release
 
-1. Update version in `package.json`
-2. Create release notes: `npm run create:release-notes`
-3. Edit `releases/{version}.md` with changes
-4. Build extension: `npm run build:ext:vscode`
-5. Publish: `npm run publish:all`
+Each IDE is versioned and released independently. Versions are stored in `versions.json`.
+
+### Commit Convention
+
+Use IDE prefixes to target specific platforms in changelogs:
+
+```bash
+# VS Code specific
+[vscode] feat: add new color token
+[vscode] fix: correct bracket highlighting
+
+# Zed specific
+[zed] feat: add panel styling
+[zed] fix: correct status bar colors
+
+# JetBrains specific
+[jetbrains] feat: add bookmark UI support
+[jetbrains] fix: correct editor gutter colors
+
+# Global changes (included in ALL IDEs)
+feat: update syntax colors
+fix: improve contrast ratios
+```
+
+### Commit Types
+
+- `feat:` / `add:` - New features
+- `fix:` / `bug:` - Bug fixes
+- `improve:` / `enhancement:` - Improvements
+- `chore:` - Maintenance tasks
+- `docs:` - Documentation
+- `refactor:` - Code refactoring
+
+### Release Workflow
+
+**For VS Code:**
+
+```bash
+npm run bump:version vscode minor
+npm run build:vscode
+npm run create:release-notes vscode
+# Edit releases/vscode/{version}.md
+npm run build:ext:vscode
+./publish.sh vscode
+```
+
+**For Zed:**
+
+```bash
+npm run bump:version zed patch
+npm run build:zed
+npm run create:release-notes zed
+# Edit releases/zed/{version}.md
+# Commit and push, then open PR to zed-industries/extensions
+./publish.sh zed
+```
+
+**For JetBrains:**
+
+```bash
+npm run bump:version jetbrains patch
+npm run build:jetbrains
+npm run create:release-notes jetbrains
+# Edit releases/jetbrains/{version}.md
+npm run build:ext:jetbrains
+./publish.sh jetbrains
+```
+
+### Git Tags
+
+Each IDE has its own tag format:
+
+- VS Code: `vscode-v11.0.1`
+- Zed: `zed-v1.0.1`
+- JetBrains: `jetbrains-v1.0.1`
+
+### Release Notes Structure
+
+```
+releases/
+├── vscode/
+│   ├── 11.0.0.md
+│   └── 11.0.0.vsix
+├── zed/
+│   └── 1.0.0.md
+└── jetbrains/
+    └── 1.0.0.md
+```
 
 ## Dependencies
 

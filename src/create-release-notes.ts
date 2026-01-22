@@ -3,20 +3,45 @@ import * as fs from "fs";
 import * as path from "path";
 
 /**
- * Creates release notes for the current version of the package
+ * IDE types
  */
-const createReleaseNotes = (): void => {
+type IDE = "jetbrains" | "vscode" | "zed";
+
+/**
+ * Version configuration interface
+ */
+interface VersionConfig {
+  jetbrains: string;
+  vscode: string;
+  zed: string;
+}
+
+/**
+ * Read versions.json
+ */
+function readVersionConfig(): VersionConfig {
+  const versionsPath = path.resolve(process.cwd(), "versions.json");
+  return JSON.parse(fs.readFileSync(versionsPath, "utf8"));
+}
+
+/**
+ * Creates release notes for a specific IDE
+ */
+const createReleaseNotes = (ide: IDE): void => {
   try {
-    // Get the current package version from package.json
-    const packagePath = path.resolve(process.cwd(), "package.json");
-    const packageJson = JSON.parse(fs.readFileSync(packagePath, "utf8"));
-    const version = packageJson.version;
+    // Get the version for the specified IDE from versions.json
+    const versions = readVersionConfig();
+    const version = versions[ide];
 
     // Get the current branch
     const branch = execSync("git branch --show-current").toString().trim();
 
-    // Create the output path
-    const outputPath = path.resolve(process.cwd(), "releases", `${version}.md`);
+    // Create the output directory and path
+    const outputDir = path.resolve(process.cwd(), "releases", ide);
+    if (!fs.existsSync(outputDir)) {
+      fs.mkdirSync(outputDir, { recursive: true });
+    }
+    const outputPath = path.resolve(outputDir, `${version}.md`);
 
     // Create the header with version and date
     const today = new Date();
@@ -26,16 +51,25 @@ const createReleaseNotes = (): void => {
     // Fetch all tags
     execSync("git fetch --tags");
 
-    // Check if there are previous tags
+    // Check if there are previous tags for this IDE
     let hasPreviousTag = false;
     let lastTag = "";
     try {
-      // Use a more Windows-friendly approach to check for tags
-      const tagsOutput = execSync("git tag -l").toString().trim();
-      hasPreviousTag = tagsOutput.length > 0;
-
-      if (hasPreviousTag) {
-        lastTag = execSync("git describe --tags --abbrev=0").toString().trim();
+      // Look for IDE-specific tags first, then fall back to any tag
+      const tagsOutput = execSync(`git tag -l "${ide}-v*"`).toString().trim();
+      if (tagsOutput.length > 0) {
+        // Get the most recent IDE-specific tag
+        lastTag = execSync(`git describe --tags --abbrev=0 --match "${ide}-v*"`)
+          .toString()
+          .trim();
+        hasPreviousTag = true;
+      } else {
+        // Fall back to any tag
+        const anyTagsOutput = execSync("git tag -l").toString().trim();
+        hasPreviousTag = anyTagsOutput.length > 0;
+        if (hasPreviousTag) {
+          lastTag = execSync("git describe --tags --abbrev=0").toString().trim();
+        }
       }
     } catch (error) {
       console.error("Error checking for tags:", error);
@@ -94,6 +128,26 @@ const createReleaseNotes = (): void => {
       return commit;
     };
 
+    // Function to check if a commit is relevant for the current IDE
+    const isRelevantForIDE = (commit: string): boolean => {
+      // Check for IDE-specific prefixes: [vscode], [zed], [jetbrains]
+      const idePrefixMatch = commit.match(/^\[(\w+)\]/);
+
+      if (idePrefixMatch) {
+        // If commit has an IDE prefix, only include if it matches current IDE
+        const commitIDE = idePrefixMatch[1].toLowerCase();
+        return commitIDE === ide;
+      }
+
+      // Commits without IDE prefix are global (included in all IDEs)
+      return true;
+    };
+
+    // Function to remove IDE prefix from commit message
+    const removeIDEPrefix = (commit: string): string => {
+      return commit.replace(/^\[\w+\]\s*/, "");
+    };
+
     // Function to get all commits between two points
     const getAllCommits = (): string[] => {
       try {
@@ -108,7 +162,8 @@ const createReleaseNotes = (): void => {
           return [];
         }
 
-        return allCommits.split("\n");
+        // Filter commits relevant for this IDE
+        return allCommits.split("\n").filter(isRelevantForIDE);
       } catch (error) {
         console.error("Error getting commits:", error);
         return [];
@@ -133,10 +188,15 @@ const createReleaseNotes = (): void => {
             return false;
           }
 
+          // Remove IDE prefix for pattern matching
+          const commitWithoutIDEPrefix = removeIDEPrefix(commit);
+
           // Check if commit matches any of the patterns
           const matches = patternPrefixes.some((prefix) => {
             const cleanPrefix = prefix.trim();
-            return commit.toLowerCase().startsWith(cleanPrefix.toLowerCase());
+            return commitWithoutIDEPrefix
+              .toLowerCase()
+              .startsWith(cleanPrefix.toLowerCase());
           });
 
           // If it matches, mark it as processed
@@ -149,11 +209,13 @@ const createReleaseNotes = (): void => {
 
         // Format the filtered commits
         const processedLines = filteredCommits.map((line) => {
+          // Remove IDE prefix first
+          let cleanedLine = removeIDEPrefix(line);
+
           // Process the line to extract issue numbers and format them correctly
-          const processedLine = extractIssueNumbers(line);
+          cleanedLine = extractIssueNumbers(cleanedLine);
 
           // Remove the commit type prefix (e.g., "fix: ", "feat: ")
-          let cleanedLine = processedLine;
           patternPrefixes.forEach((prefix) => {
             const prefixRegex = new RegExp(`^${prefix}\\s*:\\s*`, "i");
             cleanedLine = cleanedLine.replace(prefixRegex, "");
@@ -180,8 +242,11 @@ const createReleaseNotes = (): void => {
     if (features.length > 0) {
       content += `### Features and Improvements\n\n${features.join("\n")}\n\n`;
     } else {
-      content += "### Features and Improvements\n\nNo new features or improvements in this release.\n\n";
-    } // Get bug fixes
+      content +=
+        "### Features and Improvements\n\nNo new features or improvements in this release.\n\n";
+    }
+
+    // Get bug fixes
     const bugsPattern = "^fix\\|^bug";
     const bugfixes = getCommits(bugsPattern);
     if (bugfixes.length > 0) {
@@ -204,5 +269,38 @@ const createReleaseNotes = (): void => {
   }
 };
 
-// Run the function when the script is executed
-createReleaseNotes();
+// Main function
+function main(): void {
+  const args = process.argv.slice(2);
+
+  if (args.length !== 1) {
+    console.error("Usage: npm run create:release-notes <ide>");
+    console.error("  ide: vscode | zed | jetbrains");
+    console.error("");
+    console.error("Examples:");
+    console.error("  npm run create:release-notes vscode");
+    console.error("  npm run create:release-notes zed");
+    console.error("  npm run create:release-notes jetbrains");
+    console.error("");
+    console.error("Commit prefix convention:");
+    console.error("  [vscode] feat: VS Code specific feature");
+    console.error("  [zed] fix: Zed specific fix");
+    console.error("  [jetbrains] add: JetBrains specific addition");
+    console.error("  feat: Global feature (included in all IDEs)");
+    process.exit(1);
+  }
+
+  const ide = args[0] as IDE;
+
+  // Validate arguments
+  if (!["jetbrains", "vscode", "zed"].includes(ide)) {
+    console.error(`Invalid IDE: ${ide}`);
+    console.error("   Must be: vscode | zed | jetbrains");
+    process.exit(1);
+  }
+
+  createReleaseNotes(ide);
+}
+
+// Run the script
+main();

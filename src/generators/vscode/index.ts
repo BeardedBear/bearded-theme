@@ -1,6 +1,7 @@
 import { mkdirSync, writeFile, writeFileSync } from "fs";
 import { dirname } from "path";
 
+import { Meta } from "../../shared/meta";
 import {
   getVscodeUiTheme,
   themeRegistry,
@@ -45,8 +46,8 @@ function generateThemeContributes(): Array<{
   uiTheme: string;
 }> {
   return themeRegistry.map((entry) => ({
-    label: `Bearded Theme ${entry.name}`,
-    path: `./dist/vscode/themes/bearded-theme-${entry.slug}.json`,
+    label: `${Meta.name} ${entry.name}`,
+    path: `./dist/vscode/themes/${Meta.slug}-${entry.slug}.json`,
     uiTheme: getVscodeUiTheme(entry.options),
   }));
 }
@@ -61,13 +62,13 @@ async function makeVscodeTheme(entry: ThemeRegistryEntry): Promise<void> {
   const themeTemplate = {
     $schema: "vscode://schemas/color-theme",
     colors: ui(theme, hc, light, untindedSelection, desaturateInputs),
-    name: `BeardedTheme ${name}`,
+    name: `${Meta.name} ${name}`,
     semanticHighlighting: true,
     semanticTokenColors: semanticTokens(theme),
     tokenColors: syntax(theme, hc, light),
   };
 
-  const outputPath = `${OUTPUT_DIR}/bearded-theme-${slug}.json`;
+  const outputPath = `${OUTPUT_DIR}/${Meta.slug}-${slug}.json`;
 
   // Ensure directory exists
   mkdirSync(dirname(outputPath), { recursive: true });
