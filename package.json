@@ -392,20 +392,20 @@
     ]
   },
   "dependencies": {
-    "@types/node": "^25.0.6",
-    "@types/vscode": "^1.108.1",
-    "@typescript-eslint/eslint-plugin": "^8.52.0",
-    "@typescript-eslint/parser": "^8.52.0",
+    "@types/node": "^25.3.3",
+    "@types/vscode": "^1.109.0",
+    "@typescript-eslint/eslint-plugin": "^8.56.1",
+    "@typescript-eslint/parser": "^8.56.1",
     "@vscode/vsce": "^3.7.1",
     "colord": "^2.9.3",
-    "eslint": "^9.39.2",
-    "eslint-plugin-perfectionist": "^5.3.1",
-    "ovsx": "^0.10.8",
+    "eslint": "^10.0.2",
+    "eslint-plugin-perfectionist": "^5.6.0",
+    "ovsx": "^0.10.9",
     "typescript": "^5.9.3",
-    "vite-node": "^5.2.0"
+    "vite-node": "^5.3.0"
   },
   "devDependencies": {
-    "@stylistic/eslint-plugin": "^5.7.0",
-    "nodemon": "^3.1.11"
+    "@stylistic/eslint-plugin": "^5.9.0",
+    "nodemon": "^3.1.14"
   }
 }
