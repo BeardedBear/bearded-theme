@@ -1,6 +1,7 @@
 import { copyFileSync, mkdirSync, writeFileSync } from "fs";
 import { join } from "path";
 
+import { Meta } from "../../shared/meta";
 import {
   getZedAppearance,
   themeRegistry,
@@ -30,8 +31,8 @@ async function buildZedThemes(): Promise<void> {
   // Create the theme family with all themes
   const themeFamily: ZedThemeFamily = {
     $schema: "https://zed.dev/schema/themes/v0.2.0.json",
-    author: "BeardedBear",
-    name: "Bearded Theme",
+    author: Meta.author.name,
+    name: Meta.name,
     themes: themeRegistry.map(createZedTheme),
   };
 
@@ -43,13 +44,13 @@ async function buildZedThemes(): Promise<void> {
   );
 
   // Generate extension.toml with synced version
-  const extensionToml = `id = "bearded-theme"
-name = "Bearded Theme"
-description = "The theme with a long beard."
+  const extensionToml = `id = "${Meta.slug}"
+name = "${Meta.name}"
+description = "${Meta.description}"
 version = "${version}"
 schema_version = 1
-authors = ["BeardedBear <beardedbearbear@gmail.com>"]
-repository = "https://github.com/BeardedBear/bearded-theme"
+authors = ["${Meta.author.name} <${Meta.author.email}>"]
+repository = "${Meta.urls.github}"
 `;
 
   writeFileSync(`${ZED_DIR}/extension.toml`, extensionToml, {
@@ -69,34 +70,34 @@ repository = "https://github.com/BeardedBear/bearded-theme"
   }
 
   // Generate README for Zed extension
-  const readmeContent = `# Bearded Theme for Zed
+  const readmeContent = `# ${Meta.name} for Zed
 
-The theme with a long beard.
+${Meta.description}
 
 ## Installation
 
 1. Open Zed
 2. Open the Extensions panel (\`cmd+shift+x\` or \`ctrl+shift+x\`)
-3. Search for "Bearded Theme"
+3. Search for "${Meta.name}"
 4. Click Install
 
 ## Available Themes
 
-${themeRegistry.map((entry) => `- Bearded Theme ${entry.name}`).join("\n")}
+${themeRegistry.map((entry) => `- ${Meta.name} ${entry.name}`).join("\n")}
 
 ## Links
 
-- [VS Code Extension](https://marketplace.visualstudio.com/items?itemName=BeardedBear.beardedtheme)
-- [GitHub Repository](https://github.com/BeardedBear/bearded-theme)
-- [Report Issues](https://github.com/BeardedBear/bearded-theme/issues)
+- [VS Code Extension](${Meta.urls.marketplace.vscode})
+- [GitHub Repository](${Meta.urls.github})
+- [Report Issues](${Meta.urls.issues})
 
 ## License
 
-GNU General Public License v3.0
+${Meta.license}
 
 ## Author
 
-Made with ❤️ by [BeardedBear](https://github.com/BeardedBear)
+Made with ❤️ by [${Meta.author.name}](https://github.com/${Meta.author.name})
 `;
 
   writeFileSync(`${ZED_DIR}/README.md`, readmeContent, { encoding: "utf8" });
@@ -115,7 +116,7 @@ Made with ❤️ by [BeardedBear](https://github.com/BeardedBear)
 function createZedTheme(entry: ThemeRegistryEntry): ZedTheme {
   return {
     appearance: getZedAppearance(entry.options),
-    name: `Bearded Theme ${entry.name}`,
+    name: `${Meta.name} ${entry.name}`,
     style: buildZedThemeStyle(entry.theme, entry.options),
   };
 }

@@ -5,6 +5,7 @@ import { join } from "path";
  * Configuration interface for IDE versions
  */
 export interface VersionConfig {
+  jetbrains: string;
   vscode: string;
   zed: string;
 }
@@ -14,6 +15,14 @@ export interface VersionConfig {
  */
 export function getAllVersions(): VersionConfig {
   return getVersionConfig();
+}
+
+/**
+ * Get JetBrains version from versions.json
+ */
+export function getJetBrainsVersion(): string {
+  const config = getVersionConfig();
+  return config.jetbrains;
 }
 
 /**
@@ -62,6 +71,7 @@ function getVersionConfig(): VersionConfig {
       error,
     );
     return {
+      jetbrains: "1.0.0",
       vscode: "1.0.0",
       zed: "1.0.0",
     };
