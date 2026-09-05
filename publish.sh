@@ -21,7 +21,7 @@ if [ -f "./releases/$VERSION.vsix" ]; then
     echo
     if [[ $REPLY =~ ^[Yy]$ ]]; then
         echo -e "${BLUE}Building VSIX package...${NC}"
-        npm run build:ext
+        npm run build:ext:vscode
     fi
 else
     echo -e "${BLUE}Building VSIX package...${NC}"
