@@ -1,6 +1,8 @@
 import { readFileSync, writeFileSync } from "fs";
 import { join } from "path";
 
+import { getVersionConfig, VersionConfig } from "./version-manager";
+
 /**
  * Version bump types
  */
@@ -10,14 +12,6 @@ type BumpType = "major" | "minor" | "patch";
  * IDE types
  */
 type IDE = "all" | "vscode" | "zed";
-
-/**
- * Version configuration interface
- */
-interface VersionConfig {
-  vscode: string;
-  zed: string;
-}
 
 /**
  * Bump a version string
@@ -77,7 +71,7 @@ function main(): void {
 
   try {
     // Read current versions
-    const versions = readVersionConfig();
+    const versions = getVersionConfig();
     console.log("📦 Current versions:");
     console.log(`   VS Code: ${versions.vscode}`);
     console.log(`   Zed:     ${versions.zed}`);
@@ -147,14 +141,6 @@ function parseVersion(version: string): [number, number, number] {
 function readPackageJson(): Record<string, unknown> {
   const packagePath = join(process.cwd(), "package.json");
   return JSON.parse(readFileSync(packagePath, "utf8"));
-}
-
-/**
- * Read versions.json
- */
-function readVersionConfig(): VersionConfig {
-  const versionsPath = join(process.cwd(), "versions.json");
-  return JSON.parse(readFileSync(versionsPath, "utf8"));
 }
 
 /**
