@@ -3,6 +3,7 @@ import { colord as c } from "colord";
 import type {
   ActivityBarColors,
   BadgeColors,
+  BannerColors,
   BreadcrumbColors,
   ButtonColors,
   ChartColors,
@@ -153,6 +154,12 @@ export default function ui(
   const badgeColors: BadgeColors = {
     "badge.background": theme.ui.primary,
     "badge.foreground": theme.ui.uibackgroundalt,
+  };
+
+  const bannerColors: BannerColors = {
+    "banner.background": theme.ui.primary,
+    "banner.foreground": theme.ui.uibackground,
+    "banner.iconForeground": theme.ui.uibackground,
   };
 
   const breadcrumbColors: BreadcrumbColors = {
@@ -853,7 +860,7 @@ export default function ui(
       .mix(theme.ui.uibackground, 0.7)
       .toHex(),
     "statusBarItem.hoverForeground": c(theme.ui.default).toHex(),
-    ...createStatusBarItemColors("prominent", theme.ui.uibackground),
+    ...createStatusBarItemColors("prominent", theme.ui.primary),
     ...createStatusBarItemColors("error", theme.levels.danger),
     ...createStatusBarItemColors("offline", theme.colors.pink),
     ...createStatusBarItemColors("remote", theme.colors.turquoize),
@@ -969,6 +976,7 @@ export default function ui(
     ...baseColors,
     ...activityBarColors,
     ...badgeColors,
+    ...bannerColors,
     ...breadcrumbColors,
     ...buttonColors,
     ...chartColors,
