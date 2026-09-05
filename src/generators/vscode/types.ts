@@ -43,6 +43,16 @@ export type ActivityBarColors = {
 };
 
 /**
+ * Represents colors for Agent Sessions & Status
+ */
+export type AgentColors = {
+  "agentSessionReadIndicator.foreground"?: string;
+  "agentSessionSelectedBadge.border"?: string;
+  "agentSessionSelectedUnfocusedBadge.border"?: string;
+  "agentStatusIndicator.background"?: string;
+};
+
+/**
  * Represents colors for Badge
  */
 export type BadgeColors = {
@@ -79,6 +89,7 @@ export type ButtonColors = {
   "button.foreground"?: string;
   "button.hoverBackground"?: string;
   "button.secondaryBackground"?: string;
+  "button.secondaryBorder"?: string;
   "button.secondaryForeground"?: string;
   "button.secondaryHoverBackground"?: string;
   "button.separator"?: string;
@@ -105,13 +116,22 @@ export type ChartColors = {
  * Represents colors for Chat
  */
 export type ChatColors = {
+  "aiCustomizationManagement.sashBorder"?: string;
   "chat.avatarBackground"?: string;
   "chat.avatarForeground"?: string;
+  "chat.checkpointSeparator"?: string;
   "chat.editedFileForeground"?: string;
+  "chat.linesAddedForeground"?: string;
+  "chat.linesRemovedForeground"?: string;
   "chat.requestBackground"?: string;
   "chat.requestBorder"?: string;
+  "chat.requestBubbleBackground"?: string;
+  "chat.requestBubbleHoverBackground"?: string;
+  "chat.requestCodeBorder"?: string;
   "chat.slashCommandBackground"?: string;
   "chat.slashCommandForeground"?: string;
+  "chat.thinkingShimmer"?: string;
+  "chatManagement.sashBorder"?: string;
 };
 
 /**
@@ -120,6 +140,8 @@ export type ChatColors = {
 export type CheckboxColors = {
   "checkbox.background"?: string;
   "checkbox.border"?: string;
+  "checkbox.disabled.background"?: string;
+  "checkbox.disabled.foreground"?: string;
   "checkbox.foreground"?: string;
   "checkbox.selectBackground"?: string;
   "checkbox.selectBorder"?: string;
@@ -265,6 +287,7 @@ export type EditorColors = {
   "editor.foldPlaceholderForeground"?: string;
   "editor.foreground"?: string;
   "editor.hoverHighlightBackground"?: string;
+  "editor.inactiveLineHighlightBackground"?: string;
   "editor.inactiveSelectionBackground"?: string;
   "editor.inlineValuesBackground"?: string;
   "editor.inlineValuesForeground"?: string;
@@ -304,6 +327,7 @@ export type EditorColors = {
   "editorBracketHighlight.unexpectedBracket.foreground"?: string;
   "editorBracketMatch.background"?: string;
   "editorBracketMatch.border"?: string;
+  "editorBracketMatch.foreground"?: string;
   "editorBracketPairGuide.activeBackground1"?: string;
   "editorBracketPairGuide.activeBackground2"?: string;
   "editorBracketPairGuide.activeBackground3"?: string;
@@ -342,15 +366,19 @@ export type EditorColors = {
   "editorGroupHeader.tabsBackground"?: string;
   "editorGroupHeader.tabsBorder"?: string;
   "editorGutter.addedBackground"?: string;
+  "editorGutter.addedSecondaryBackground"?: string;
   "editorGutter.background"?: string;
+  "editorGutter.commentDraftGlyphForeground"?: string;
   "editorGutter.commentGlyphForeground"?: string;
   "editorGutter.commentRangeForeground"?: string;
   "editorGutter.commentUnresolvedGlyphForeground"?: string;
   "editorGutter.deletedBackground"?: string;
+  "editorGutter.deletedSecondaryBackground"?: string;
   "editorGutter.foldingControlForeground"?: string;
   "editorGutter.itemBackground"?: string;
   "editorGutter.itemGlyphForeground"?: string;
   "editorGutter.modifiedBackground"?: string;
+  "editorGutter.modifiedSecondaryBackground"?: string;
   "editorHint.border"?: string;
   "editorHint.foreground"?: string;
   "editorHoverWidget.background"?: string;
@@ -358,12 +386,14 @@ export type EditorColors = {
   "editorHoverWidget.foreground"?: string;
   "editorHoverWidget.highlightForeground"?: string;
   "editorHoverWidget.statusBarBackground"?: string;
+  "editorIndentGuide.activeBackground"?: string;
   "editorIndentGuide.activeBackground1"?: string;
   "editorIndentGuide.activeBackground2"?: string;
   "editorIndentGuide.activeBackground3"?: string;
   "editorIndentGuide.activeBackground4"?: string;
   "editorIndentGuide.activeBackground5"?: string;
   "editorIndentGuide.activeBackground6"?: string;
+  "editorIndentGuide.background"?: string;
   "editorIndentGuide.background1"?: string;
   "editorIndentGuide.background2"?: string;
   "editorIndentGuide.background3"?: string;
@@ -402,6 +432,7 @@ export type EditorColors = {
   "editorOverviewRuler.background"?: string;
   "editorOverviewRuler.border"?: string;
   "editorOverviewRuler.bracketMatchForeground"?: string;
+  "editorOverviewRuler.commentDraftForeground"?: string;
   "editorOverviewRuler.commentForeground"?: string;
   "editorOverviewRuler.commentUnresolvedForeground"?: string;
   "editorOverviewRuler.commonContentForeground"?: string;
@@ -425,6 +456,7 @@ export type EditorColors = {
   "editorStickyScroll.background"?: string;
   "editorStickyScroll.border"?: string;
   "editorStickyScroll.shadow"?: string;
+  "editorStickyScrollGutter.background"?: string;
   "editorStickyScrollHover.background"?: string;
   "editorSuggestWidget.background"?: string;
   "editorSuggestWidget.border"?: string;
@@ -494,6 +526,7 @@ export type ExtensionColors = {
   "extensionBadge.remoteBackground"?: string;
   "extensionBadge.remoteForeground"?: string;
   "extensionButton.background"?: string;
+  "extensionButton.border"?: string;
   "extensionButton.foreground"?: string;
   "extensionButton.hoverBackground"?: string;
   "extensionButton.prominentBackground"?: string;
@@ -505,6 +538,7 @@ export type ExtensionColors = {
   "extensionIcon.sponsorForeground"?: string;
   "extensionIcon.starForeground"?: string;
   "extensionIcon.verifiedForeground"?: string;
+  "mcpIcon.starForeground"?: string;
 };
 
 /**
@@ -750,6 +784,41 @@ export type MinimapColors = {
 };
 
 /**
+ * Represents colors for the modern UI / design refresh layout
+ *
+ * Registered on VS Code `main` (Insiders); only applied when the modern UI
+ * layout is enabled. Not yet in the stable theme-color reference.
+ */
+export type ModernUiColors = {
+  "browser.border"?: string;
+  "editor.border"?: string;
+  "modernActivityBar.background"?: string;
+  "modernActivityBar.border"?: string;
+  "modernActivityBar.inactiveBackground"?: string;
+  "modernActivityBarItem.activeBackground"?: string;
+  "modernActivityBarItem.activeForeground"?: string;
+  "modernActivityBarItem.hoverBackground"?: string;
+  "modernActivityBarItem.hoverForeground"?: string;
+  "modernEditorTab.activeActionBackground"?: string;
+  "modernEditorTab.activeBackground"?: string;
+  "modernEditorTab.activeForeground"?: string;
+  "modernEditorTab.activeHoverActionBackground"?: string;
+  "modernEditorTab.activeHoverBackground"?: string;
+  "modernEditorTab.hoverActionBackground"?: string;
+  "modernEditorTab.hoverBackground"?: string;
+  "modernEditorTab.hoverForeground"?: string;
+  "modernEditorTab.inactiveBackground"?: string;
+  "modernEditorTab.selectedActionBackground"?: string;
+  "modernTab.activeBackground"?: string;
+  "modernTab.activeForeground"?: string;
+  "modernTab.hoverBackground"?: string;
+  "modernTab.hoverForeground"?: string;
+  "surface.background"?: string;
+  "surface.border"?: string;
+  "surface.foreground"?: string;
+};
+
+/**
  * Represents colors for Multi Diff Editor
  */
 export type MultiDiffEditorColors = {
@@ -848,6 +917,7 @@ export type PeekViewColors = {
   "peekViewEditor.matchHighlightBorder"?: string;
   "peekViewEditorGutter.background"?: string;
   "peekViewEditorStickyScroll.background"?: string;
+  "peekViewEditorStickyScrollGutter.background"?: string;
   "peekViewResult.background"?: string;
   "peekViewResult.fileForeground"?: string;
   "peekViewResult.lineForeground"?: string;
@@ -964,6 +1034,7 @@ export type SCMGraphColors = {
  * Represents colors for ScrollBar
  */
 export type ScrollBarColors = {
+  "scrollbar.background"?: string;
   "scrollbar.shadow"?: string;
   "scrollbarSlider.activeBackground"?: string;
   "scrollbarSlider.background"?: string;
@@ -1146,6 +1217,7 @@ export type TabColors = {
   "tab.unfocusedHoverBackground"?: string;
   "tab.unfocusedHoverBorder"?: string;
   "tab.unfocusedHoverForeground"?: string;
+  "tab.unfocusedInactiveBackground"?: string;
   "tab.unfocusedInactiveForeground"?: string;
   "tab.unfocusedInactiveModifiedBorder"?: string;
 };
@@ -1198,6 +1270,8 @@ export type TerminalColors = {
   "terminalStickyScrollHover.background"?: string;
   "terminalSymbolIcon.aliasForeground"?: string;
   "terminalSymbolIcon.argumentForeground"?: string;
+  "terminalSymbolIcon.branchForeground"?: string;
+  "terminalSymbolIcon.commitForeground"?: string;
   "terminalSymbolIcon.fileForeground"?: string;
   "terminalSymbolIcon.flagForeground"?: string;
   "terminalSymbolIcon.folderForeground"?: string;
@@ -1205,6 +1279,14 @@ export type TerminalColors = {
   "terminalSymbolIcon.methodForeground"?: string;
   "terminalSymbolIcon.optionForeground"?: string;
   "terminalSymbolIcon.optionValueForeground"?: string;
+  "terminalSymbolIcon.pullRequestDoneForeground"?: string;
+  "terminalSymbolIcon.pullRequestForeground"?: string;
+  "terminalSymbolIcon.remoteForeground"?: string;
+  "terminalSymbolIcon.stashForeground"?: string;
+  "terminalSymbolIcon.symbolicLinkFileForeground"?: string;
+  "terminalSymbolIcon.symbolicLinkFolderForeground"?: string;
+  "terminalSymbolIcon.symbolText"?: string;
+  "terminalSymbolIcon.tagForeground"?: string;
 };
 
 /**
@@ -1249,12 +1331,18 @@ export type TestingColors = {
  * Represents colors for Text
  */
 export type TextColors = {
+  "markdownAlert.caution.foreground"?: string;
+  "markdownAlert.important.foreground"?: string;
+  "markdownAlert.note.foreground"?: string;
+  "markdownAlert.tip.foreground"?: string;
+  "markdownAlert.warning.foreground"?: string;
   "textBlockQuote.background"?: string;
   "textBlockQuote.border"?: string;
   "textCodeBlock.background"?: string;
   "textLink.activeForeground"?: string;
   "textLink.foreground"?: string;
   "textPreformat.background"?: string;
+  "textPreformat.border"?: string;
   "textPreformat.foreground"?: string;
   "textSeparator.foreground"?: string;
 };
@@ -1293,6 +1381,7 @@ export type TreeColors = {
  * Represents all available color customization options in a VSCode theme
  */
 export type VSCodeThemeColors = ActivityBarColors &
+  AgentColors &
   BadgeColors &
   BannerColors &
   BreadcrumbColors &
@@ -1326,6 +1415,7 @@ export type VSCodeThemeColors = ActivityBarColors &
   MenuColors &
   MergeColors &
   MinimapColors &
+  ModernUiColors &
   MultiDiffEditorColors &
   NotebookColors &
   NotificationsColors &
